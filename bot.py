@@ -96,7 +96,8 @@ async def send_question(query, state):
         keyboard.append([InlineKeyboardButton(opt, callback_data=f"answer_{i}")])
     keyboard.append([InlineKeyboardButton(lang_btn, callback_data="toggle_lang")])
 
-    await query.edit_message_text(f"❓ Вопрос {state['q_index']+1} / Question {state['q_index']+1}\n\n{question}",
+    await query.edit_message_text(
+        f"❓ Вопрос {state['q_index']+1} / Question {state['q_index']+1}\n\n{question}",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
