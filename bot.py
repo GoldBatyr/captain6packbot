@@ -1,4 +1,5 @@
 import logging
+import asyncio
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
@@ -95,15 +96,15 @@ async def send_question(query, state):
         keyboard.append([InlineKeyboardButton(opt, callback_data=f"answer_{i}")])
     keyboard.append([InlineKeyboardButton(lang_btn, callback_data="toggle_lang")])
 
-    await query.edit_message_text(
-        f"❓ Вопрос {state['q_index']+1} / Question {state['q_index']+1}\n\n{question}",reply_markup=InlineKeyboardMarkup(keyboard)
+    await query.edit_message_text(f"❓ Вопрос {state['q_index']+1} / Question {state['q_index']+1}\n\n{question}",
+        reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
-def main():
+async def main():
     app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(button))
-    app.run_polling()
+    await app.run_polling(drop_pending_updates=True)
 
 if name == "__main__":
-    main()
+    asyncio.run(main())
