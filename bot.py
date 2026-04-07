@@ -106,5 +106,5 @@ async def main():
     app.add_handler(CallbackQueryHandler(button))
     await app.run_polling(drop_pending_updates=True)
 
-if name == "__main__":
+if __name__ == "__main__":
     asyncio.run(main())
