@@ -2,7 +2,7 @@ import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext
 
-TOKEN = "8222684433:AAGl7T3wcl3ix-K-yaLcHLtkWOeWZd4EaUA"
+TOKEN = "8222684433:AAGl7T3wcl3ix-K-yaLcHLtkW0eWZd4EaUA"
 
 logging.basicConfig(level=logging.INFO)
 
@@ -49,7 +49,7 @@ QUESTIONS = [
         "en_options": ["A) Contact her by radiotelephone to arrange the passage", "B) Overtake without sounding whistle signals", "C) Sound five short blasts", "D) All of the above"],
         "ru_options": ["A) Связаться по радиотелефону для согласования манёвра", "B) Обогнать без звуковых сигналов", "C) Подать пять коротких сигналов", "D) Всё из вышеперечисленного"],
         "correct": 0,
-        "en_explain": "Overtaking on the starboard side (non-standard) requires radio agreement. No whistle signals are defined for this maneuver under Inland Rules.",
+        "en_explain": "Overtaking on the starboard side requires radio agreement. No whistle signals are defined for this maneuver under Inland Rules.",
         "ru_explain": "Обгон с правого борта — нестандартный манёвр, требующий согласования по радио. Звуковые сигналы для этого случая правилами не предусмотрены."
     },
     {
@@ -65,9 +65,9 @@ QUESTIONS = [
         "en_q": "INLAND ONLY. Maneuvering signals shall be sounded on inland waters by:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Манёвренные звуковые сигналы на внутренних водах подаются:",
         "en_options": ["A) All vessels when meeting, crossing, or overtaking in sight of one another", "B) All vessels meeting or crossing within half a mile, not in sight", "C) Power-driven vessels overtaking in sight / crossing within half a mile and in sight", "D) Power-driven vessels crossing within half a mile and NOT in sight"],
-        "ru_options": ["A) Всеми судами при встрече, пересечении или обгоне в пределах видимости", "B) Всеми судами в пределах полумили вне видимости", "C) Моторными судами при обгоне в пределах видимости / при пересечении в пределах полумили и в пределах видимости", "D) Моторными судами при пересечении в пределах полумили вне видимости"],
+        "ru_options": ["A) Всеми судами при встрече, пересечении или обгоне в пределах видимости", "B) Всеми судами в пределах полумили вне видимости", "C) Моторными судами при обгоне в видимости / пересечении в пределах полумили и в видимости", "D) Моторными судами при пересечении в пределах полумили вне видимости"],
         "correct": 2,
-        "en_explain": "Maneuvering signals apply only to power-driven vessels. Vessels must be in sight of each other and within half a mile when crossing.",
+        "en_explain": "Maneuvering signals apply only to power-driven vessels in sight of each other, and within half a mile when crossing.",
         "ru_explain": "Манёвренные сигналы обязательны только для моторных судов в пределах видимости. При пересечении курсов — дополнительно в пределах полумили."
     },
     {
@@ -98,16 +98,41 @@ QUESTIONS = [
         "ru_explain": "Один продолжительный сигнал каждые 2 минуты — туманный сигнал моторного судна, идущего вперёд. Буксировщик подаёт один продолжительный и два коротких."
     },
 ]
+
 user_state = {}
 
 def start(update: Update, context: CallbackContext):
     keyboard = [
         [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
-        [InlineKeyboardButton("📚 Глоссарий / Glossary", callback_data="menu_glossary")],
+        [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
         [InlineKeyboardButton("🚗 За рулём / Drive Mode", callback_data="menu_drive")],
     ]
     update.message.reply_text(
-        "🚢 Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
+        "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
+        reply_markup=InlineKeyboardMarkup(keyboard)
+    )
+
+def send_question(query, state):
+    q = QUESTIONS[state["q_index"]]
+    lang = state["lang"]
+    question = q["ru_q"] if lang == "ru" else q["en_q"]
+    options = q["ru_options"] if lang == "ru" else q["en_options"]
+    lang_btn = "🇺🇸 Switch to English" if lang == "ru" else "🇷🇺 Переключить на русский"
+
+    options_text = "\n".join(options)
+    full_text = f"❓ Вопрос {state['q_index'] + 1}\n\n{question}\n\n{options_text}"
+
+    keyboard = [
+        [
+            InlineKeyboardButton("A", callback_data="answer_0"),
+            InlineKeyboardButton("B", callback_data="answer_1"),
+            InlineKeyboardButton("C", callback_data="answer_2"),
+            InlineKeyboardButton("D", callback_data="answer_3"),
+        ],
+        [InlineKeyboardButton(lang_btn, callback_data="toggle_lang")],
+    ]
+    query.edit_message_text(
+        full_text,
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
@@ -134,31 +159,17 @@ def button(update: Update, context: CallbackContext):
         if chosen == q["correct"]:
             result = "✅ Правильно! / Correct!\n\n" + explain
         else:
-            result = "❌ Неверно / Wrong!\n\n" + explain
+            correct_letter = ["A", "B", "C", "D"][q["correct"]]
+            result = f"❌ Неверно! Правильный ответ: {correct_letter}\n\n" + explain
         keyboard = [[InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")]]
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(keyboard))
     elif query.data == "next_question":
         state["q_index"] = (state["q_index"] + 1) % len(QUESTIONS)
         send_question(query, state)
     elif query.data == "menu_glossary":
-        query.edit_message_text("📚 Глоссарий в разработке / Glossary coming soon!")
+        query.edit_message_text("📖 Глоссарий в разработке / Glossary coming soon!")
     elif query.data == "menu_drive":
         query.edit_message_text("🚗 Режим за рулём в разработке / Drive mode coming soon!")
-
-def send_question(query, state):
-    q = QUESTIONS[state["q_index"]]
-    lang = state["lang"]
-    question = q["ru_q"] if lang == "ru" else q["en_q"]
-    options = q["ru_options"] if lang == "ru" else q["en_options"]
-    lang_btn = "🇺🇸 Switch to English" if lang == "ru" else "🇷🇺 Переключить на русский"
-    keyboard = []
-    for i, opt in enumerate(options):
-        keyboard.append([InlineKeyboardButton(opt, callback_data=f"answer_{i}")])
-    keyboard.append([InlineKeyboardButton(lang_btn, callback_data="toggle_lang")])
-    query.edit_message_text(
-        f"❓ Вопрос {state['q_index']+1}\n\n{question}",
-        reply_markup=InlineKeyboardMarkup(keyboard)
-    )
 
 def main():
     updater = Updater(TOKEN)
