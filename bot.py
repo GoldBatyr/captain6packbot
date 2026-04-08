@@ -153,10 +153,12 @@ def start(update: Update, context: CallbackContext):
 def send_glossary(chat_id, context, index, message_to_delete=None):
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
+    prev_index = (index - 1) % len(GLOSSARY)
+    next_index = (index + 1) % len(GLOSSARY)
     keyboard = [
         [
-            InlineKeyboardButton("⬅️", callback_data=f"gl_{(index - 1) % len(GLOSSARY)}"),
-            InlineKeyboardButton("➡️", callback_data=f"gl_{(index + 1) % len(GLOSSARY)}"),
+            InlineKeyboardButton("⬅️", callback_data=f"glo{prev_index}"),
+            InlineKeyboardButton("➡️", callback_data=f"glo{next_index}"),
         ],
         [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
     ]
@@ -219,8 +221,8 @@ def button(update: Update, context: CallbackContext):
         state["g_index"] = 0
         send_glossary(query.message.chat_id, context, 0, query.message)
 
-    elif query.data.startswith("gl_"):
-        index = int(query.data.split("_")[1])
+    elif query.data.startswith("glo"):
+        index = int(query.data[3:])
         state["g_index"] = index
         send_glossary(query.message.chat_id, context, index, query.message)
 
@@ -231,20 +233,14 @@ def button(update: Update, context: CallbackContext):
             [InlineKeyboardButton("🚗 За рулём / Drive Mode", callback_data="menu_drive")],
         ]
         try:
-            query.edit_message_text(
-                "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
-                reply_markup=InlineKeyboardMarkup(keyboard)
-            )
+            query.message.delete()
         except:
-            try:
-                query.message.delete()
-            except:
-                pass
-            context.bot.send_message(
-                chat_id=query.message.chat_id,
-                text="⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
-                reply_markup=InlineKeyboardMarkup(keyboard)
-            )
+            pass
+        context.bot.send_message(
+            chat_id=query.message.chat_id,
+            text="⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
+            reply_markup=InlineKeyboardMarkup(keyboard)
+        )
 
     elif query.data == "toggle_lang":
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
@@ -259,4 +255,25 @@ def button(update: Update, context: CallbackContext):
             result = f"✅ Правильно! / Correct!\n\n{explain}"
         else:
             chosen_letter = ["A", "B", "C", "D"][chosen]
-            r
+            result = f"❌ Неверно! Вы выбрали {chosen_letter}, правильный ответ: {correct_letter}\n\n{explain}"
+        keyboard = [[InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")]]
+        query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(keyboard))
+
+    elif query.data == "next_question":
+        state["q_index"] = (state["q_index"] + 1) % len(QUESTIONS)
+        send_question(query, state)
+
+    elif query.data == "menu_drive":
+        query.edit_message_text("🚗 Режим за рулём в разработке / Drive mode coming soon!")
+
+def main():
+    updater = Updater(TOKEN)
+    dp = updater.dispatcher
+    dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CallbackQueryHandler(button))
+    dp.add_handler(MessageHandler(Filters.audio | Filters.document, get_file_id))
+    updater.start_polling()
+    updater.idle()
+
+if __name__ == "__main__":
+    main()
