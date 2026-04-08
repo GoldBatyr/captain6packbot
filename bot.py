@@ -6,6 +6,44 @@ TOKEN = "8222684433:AAGl7T3wcl3ix-K-yaLcHLtkWOeWZd4EaUA"
 
 logging.basicConfig(level=logging.INFO)
 
+GLOSSARY = [
+    {
+        "term": "Port",
+        "ru": "Левый борт",
+        "file_id": "CQACAgIAAxkBAAMdadW4TGAhwHmzRyXnJbqSv6ewVBIAAnqeAAIXELFKZX9-mXLEUkU7BA"
+    },
+    {
+        "term": "Starboard",
+        "ru": "Правый борт",
+        "file_id": "CQACAgIAAxkBAAMbadW4TDgWnvdPf7qq_scWI_yFRCYAanieAAIXELFK3uGIBiPuSII7BA"
+    },
+    {
+        "term": "Underway",
+        "ru": "На ходу",
+        "file_id": "CQACAgIAAxkBAAMeadW4TCirSAABQzFKQNCrorYwPCkXAAJ7ngACFxCxSpL8H-CBi_BbOwQ"
+    },
+    {
+        "term": "Overtaking",
+        "ru": "Обгон",
+        "file_id": "CQACAgIAAxkBAAMZadW4TIR3oU6eb7cE-mpWYAI66DkAAnaeAAIXELFKX4lLnsLEOug7BA"
+    },
+    {
+        "term": "Stand-on vessel",
+        "ru": "Привилегированное судно",
+        "file_id": "CQACAgIAAxkBAAMcadW4TNDISQVB_rkXQg18rBXIs10AAnmeAAIXELFKWToEjKf_myY7BA"
+    },
+    {
+        "term": "Give-way vessel",
+        "ru": "Уступающее судно",
+        "file_id": "CQACAgIAAxkBAAMfadW4TD_GyIjTekzxb5SXQYE-ZRwAAnyeAAIXELFKIMD_bOWOVTE7BA"
+    },
+    {
+        "term": "Rules of the Road",
+        "ru": "Правила плавания",
+        "file_id": "CQACAgIAAxkBAAMaadW4TGT9JISiKDuFDptjii8tCGsAAneeAAIXELFKiytUC_no1GE7BA"
+    },
+]
+
 QUESTIONS = [
     {
         "en_q": "INLAND ONLY. Your vessel is meeting another vessel head to head. To comply with the steering and sailing rules, you should:",
@@ -112,15 +150,18 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
-def get_file_id(update: Update, context: CallbackContext):
-    if update.message.audio:
-        file_id = update.message.audio.file_id
-        name = update.message.audio.file_name
-        update.message.reply_text(f"{name}:\n{file_id}")
-    elif update.message.document:
-        file_id = update.message.document.file_id
-        name = update.message.document.file_name
-        update.message.reply_text(f"{name}:\n{file_id}")
+def send_glossary(query, index):
+    term = GLOSSARY[index]
+    text = f"📖 Глоссарий {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}\n\n🔊 НажмиPlay чтобы услышать произношение"
+    keyboard = [
+        [InlineKeyboardButton("🔊 Слушать / Listen", callback_data=f"play_audio_{index}")],
+        [
+            InlineKeyboardButton("⬅️", callback_data=f"glossary_{(index - 1) % len(GLOSSARY)}"),
+            InlineKeyboardButton("➡️", callback_data=f"glossary_{(index + 1) % len(GLOSSARY)}"),
+        ],
+        [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
+    ]
+    query.edit_message_text(text, reply_markup=InlineKeyboardMarkup(keyboard))
 
 def send_question(query, state):
     q = QUESTIONS[state["q_index"]]
@@ -141,10 +182,17 @@ def send_question(query, state):
         ],
         [InlineKeyboardButton(lang_btn, callback_data="toggle_lang")],
     ]
-    query.edit_message_text(
-        full_text,
-        reply_markup=InlineKeyboardMarkup(keyboard)
-    )
+    query.edit_message_text(full_text, reply_markup=InlineKeyboardMarkup(keyboard))
+
+def get_file_id(update: Update, context: CallbackContext):
+    if update.message.audio:
+        file_id = update.message.audio.file_id
+        name = update.message.audio.file_name
+        update.message.reply_text(f"{name}:\n{file_id}")
+    elif update.message.document:
+        file_id = update.message.document.file_id
+        name = update.message.document.file_name
+        update.message.reply_text(f"{name}:\n{file_id}")
 
 def button(update: Update, context: CallbackContext):
     query = update.callback_query
@@ -152,13 +200,34 @@ def button(update: Update, context: CallbackContext):
     user_id = query.from_user.id
 
     if user_id not in user_state:
-        user_state[user_id] = {"lang": "ru", "q_index": 0}
+        user_state[user_id] = {"lang": "ru", "q_index": 0, "g_index": 0}
 
     state = user_state[user_id]
 
     if query.data == "menu_quiz":
         state["q_index"] = 0
         send_question(query, state)
+    elif query.data == "menu_glossary":
+        state["g_index"] = 0
+        send_glossary(query, 0)
+    elif query.data == "main_menu":
+        keyboard = [
+            [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
+            [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
+            [InlineKeyboardButton("🚗 За рулём / Drive Mode", callback_data="menu_drive")],
+        ]
+        query.edit_message_text(
+            "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
+            reply_markup=InlineKeyboardMarkup(keyboard)
+        )
+    elif query.data.startswith("glossary_"):
+        index = int(query.data.split("_")[1])
+        state["g_index"] = index
+        send_glossary(query, index)
+    elif query.data.startswith("play_audio_"):
+        index = int(query.data.split("_")[2])
+        term = GLOSSARY[index]
+        query.message.reply_audio(audio=term["file_id"], title=term["term"])
     elif query.data == "toggle_lang":
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
         send_question(query, state)
@@ -177,8 +246,6 @@ def button(update: Update, context: CallbackContext):
     elif query.data == "next_question":
         state["q_index"] = (state["q_index"] + 1) % len(QUESTIONS)
         send_question(query, state)
-    elif query.data == "menu_glossary":
-        query.edit_message_text("📖 Глоссарий в разработке / Glossary coming soon!")
     elif query.data == "menu_drive":
         query.edit_message_text("🚗 Режим за рулём в разработке / Drive mode coming soon!")
 
