@@ -1,6 +1,6 @@
 import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext, MessageHandler, Filters
 
 TOKEN = "8222684433:AAGl7T3wcl3ix-K-yaLcHLtkWOeWZd4EaUA"
 
@@ -13,8 +13,8 @@ QUESTIONS = [
         "en_options": ["A) Sound the danger signal", "B) Sound one prolonged and two short blasts", "C) Exchange two short blasts", "D) Exchange one short blast"],
         "ru_options": ["A) Подать сигнал опасности", "B) Один продолжительный и два коротких", "C) Обменяться двумя короткими", "D) Обменяться одним коротким"],
         "correct": 3,
-        "en_explain": "Inland Rule 34: vessels meeting head-on exchange ONE short blast and pass port-to-port (each vessel turns right).",
-        "ru_explain": "Правило 34 (внутренние воды): суда обмениваются ОДНИМ коротким сигналом, каждый берёт вправо и расходятся левыми бортами."
+        "en_explain": "Inland Rule 34: vessels meeting head-on exchange ONE short blast, each vessel turns right and passes port-to-port.",
+        "ru_explain": "Правило 34: суда обмениваются ОДНИМ коротким сигналом, каждый берёт вправо и расходятся левыми бортами."
     },
     {
         "en_q": "INLAND ONLY. What is the whistle signal for a power-driven vessel leaving a dock?",
@@ -23,7 +23,7 @@ QUESTIONS = [
         "ru_options": ["A) Один короткий", "B) Три коротких", "C) Один продолжительный", "D) Три продолжительных"],
         "correct": 2,
         "en_explain": "Inland Rules: a vessel leaving a dock sounds ONE prolonged blast (4-6 sec) to warn nearby vessels.",
-        "ru_explain": "Внутренние воды: судно, отходящее от причала, подаёт ОДИН продолжительный сигнал (4-6 сек) для предупреждения других судов."
+        "ru_explain": "Внутренние воды: судно, отходящее от причала, подаёт ОДИН продолжительный сигнал (4-6 сек)."
     },
     {
         "en_q": "INLAND ONLY. You are overtaking a vessel in a narrow channel and wish to overtake on her PORT side. You sound:",
@@ -49,8 +49,8 @@ QUESTIONS = [
         "en_options": ["A) Contact her by radio to arrange passage", "B) Overtake without whistle signals", "C) Sound five short blasts", "D) All of the above"],
         "ru_options": ["A) Связаться по радио для согласования", "B) Обогнать без сигналов", "C) Подать пять коротких", "D) Всё вышеперечисленное"],
         "correct": 0,
-        "en_explain": "Inland Rules: overtaking on STARBOARD side is non-standard. Only permitted after radio agreement. No whistle signal defined for this.",
-        "ru_explain": "Обгон с правого борта — нестандартный манёвр. Разрешён только после согласования по радио. Звуковой сигнал не предусмотрен."
+        "en_explain": "Inland Rules: overtaking on STARBOARD side is non-standard. Only permitted after radio agreement.",
+        "ru_explain": "Обгон с правого борта — нестандартный манёвр. Разрешён только после согласования по радио."
     },
     {
         "en_q": "Another vessel is crossing your course starboard to port and you doubt her intentions. You:",
@@ -59,16 +59,16 @@ QUESTIONS = [
         "ru_options": ["A) Обязаны подать сигнал опасности", "B) Обязаны дать задний ход", "C) Можете подать сигнал опасности", "D) Подать один короткий"],
         "correct": 0,
         "en_explain": "Rule 34(d): in doubt about another vessel's intentions — MUST sound danger signal (5+ short blasts). Mandatory.",
-        "ru_explain": "Правило 34(d): при сомнении в намерениях другого судна — ОБЯЗАНЫ подать сигнал опасности (5+ коротких). Обязательно, не по желанию."
+        "ru_explain": "Правило 34(d): при сомнении в намерениях — ОБЯЗАНЫ подать сигнал опасности (5+ коротких). Обязательно."
     },
     {
         "en_q": "INLAND ONLY. Maneuvering signals on inland waters are sounded by:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Манёвренные сигналы на внутренних водах подаются:",
         "en_options": ["A) All vessels meeting/crossing/overtaking in sight", "B) All vessels within half a mile, not in sight", "C) Power-driven vessels overtaking in sight / crossing within half a mile in sight", "D) Power-driven vessels crossing within half a mile, NOT in sight"],
-        "ru_options": ["A) Всеми судами при встрече/пересечении/обгоне в пределах видимости", "B) Всеми судами в пределах полумили вне видимости", "C) Моторными судами: при обгоне в видимости / при пересечении в пределах полумили и в видимости", "D) Моторными судами при пересечении в пределах полумили вне видимости"],
+        "ru_options": ["A) Всеми судами при встрече/пересечении/обгоне в видимости", "B) Всеми судами в пределах полумили вне видимости", "C) Моторными: при обгоне в видимости / пересечении в полумиле и в видимости", "D) Моторными при пересечении в полумиле вне видимости"],
         "correct": 2,
-        "en_explain": "Inland Rules: maneuvering signals apply to power-driven vessels only, when in sight of each other. For crossing: also within half a mile.",
-        "ru_explain": "Манёвренные сигналы — только для моторных судов в пределах видимости. При пересечении курсов — дополнительно в пределах полумили."
+        "en_explain": "Inland Rules: maneuvering signals for power-driven vessels only, in sight of each other. Crossing: also within half a mile.",
+        "ru_explain": "Манёвренные сигналы — только для моторных судов в пределах видимости. Пересечение курсов — дополнительно в пределах полумили."
     },
     {
         "en_q": "INLAND ONLY. A light used to signal passing intentions must be:",
@@ -77,25 +77,25 @@ QUESTIONS = [
         "ru_options": ["A) Круговой белый ИЛИ жёлтый", "B) Только круговой жёлтый", "C) Только круговой белый", "D) Только белый 225°"],
         "correct": 0,
         "en_explain": "Inland Rule 34(b): all-round white OR yellow light permitted for signaling passing intentions.",
-        "ru_explain": "Правило 34(b): разрешён круговой белый ИЛИ жёлтый огонь для сигнализации намерений при расхождении."
+        "ru_explain": "Правило 34(b): разрешён круговой белый ИЛИ жёлтый огонь для сигнализации намерений."
     },
     {
         "en_q": "INLAND ONLY. What MAY indicate a partly submerged object being towed?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Что МОЖЕТ обозначать частично погружённый буксируемый объект?",
         "en_options": ["A) Black cone, apex up", "B) Two all-round yellow lights at each end", "C) Searchlight from towing vessel aimed at the tow", "D) All of the above"],
-        "ru_options": ["A) Чёрный конус вершиной вверх", "B) Два круговых жёлтых огня на каждом конце", "C) Прожектор с буксировщика, направленный на объект", "D) Всё вышеперечисленное"],
+        "ru_options": ["A) Чёрный конус вершиной вверх", "B) Два круговых жёлтых огня на каждом конце", "C) Прожектор с буксировщика на объект", "D) Всё вышеперечисленное"],
         "correct": 2,
         "en_explain": "Inland Rules: searchlight from towing vessel aimed at the tow is permitted when lights cannot be mounted on the object.",
-        "ru_explain": "Внутренние воды: прожектор с буксировщика допускается когда огни невозможно установить непосредственно на объекте."
+        "ru_explain": "Прожектор с буксировщика допускается когда огни невозможно установить на объекте."
     },
     {
         "en_q": "BOTH INT & INLAND. Underway in fog, you hear ONE prolonged blast. This indicates:",
-        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. В тумане вы слышите ОДИН продолжительный сигнал. Это:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. В тумане слышите ОДИН продолжительный сигнал. Это:",
         "en_options": ["A) Sailboat underway", "B) Vessel towing", "C) Power vessel making way", "D) Vessel being towed"],
-        "ru_options": ["A) Парусное судно на ходу", "B) Судно с буксиром", "C) Моторное судно, движущееся вперёд", "D) Буксируемое судно"],
+        "ru_options": ["A) Парусное судно на ходу", "B) Судно с буксиром", "C) Моторное судно, идущее вперёд", "D) Буксируемое судно"],
         "correct": 2,
-        "en_explain": "Rule 35: ONE prolonged blast every 2 min = power-driven vessel making way. Towing vessel: one prolonged + two short.",
-        "ru_explain": "Правило 35: ОДИН продолжительный каждые 2 мин = моторное судно, идущее вперёд. Буксировщик: один продолжительный + два коротких."
+        "en_explain": "Rule 35: ONE prolonged blast every 2 min = power-driven vessel making way. Towing: one prolonged + two short.",
+        "ru_explain": "Правило 35: ОДИН продолжительный каждые 2 мин = моторное судно идёт вперёд. Буксировщик: один продолжительный + два коротких."
     },
 ]
 
@@ -111,6 +111,16 @@ def start(update: Update, context: CallbackContext):
         "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
+
+def get_file_id(update: Update, context: CallbackContext):
+    if update.message.audio:
+        file_id = update.message.audio.file_id
+        name = update.message.audio.file_name
+        update.message.reply_text(f"{name}:\n{file_id}")
+    elif update.message.document:
+        file_id = update.message.document.file_id
+        name = update.message.document.file_name
+        update.message.reply_text(f"{name}:\n{file_id}")
 
 def send_question(query, state):
     q = QUESTIONS[state["q_index"]]
@@ -177,6 +187,7 @@ def main():
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CallbackQueryHandler(button))
+    dp.add_handler(MessageHandler(Filters.audio | Filters.document, get_file_id))
     updater.start_polling()
     updater.idle()
 
