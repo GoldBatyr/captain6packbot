@@ -150,21 +150,23 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
-def send_glossary(query, index):
+def send_glossary(chat_id, context, index, message_to_delete=None):
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
     keyboard = [
         [
-            InlineKeyboardButton("⬅️", callback_data=f"glossary_{(index - 1) % len(GLOSSARY)}"),
-            InlineKeyboardButton("➡️", callback_data=f"glossary_{(index + 1) % len(GLOSSARY)}"),
+            InlineKeyboardButton("⬅️", callback_data=f"gl_{(index - 1) % len(GLOSSARY)}"),
+            InlineKeyboardButton("➡️", callback_data=f"gl_{(index + 1) % len(GLOSSARY)}"),
         ],
         [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
     ]
-    try:
-        query.message.delete()
-    except:
-        pass
-    query.message.reply_audio(
+    if message_to_delete:
+        try:
+            message_to_delete.delete()
+        except:
+            pass
+    context.bot.send_audio(
+        chat_id=chat_id,
         audio=term["file_id"],
         caption=caption,
         reply_markup=InlineKeyboardMarkup(keyboard)
@@ -212,9 +214,16 @@ def button(update: Update, context: CallbackContext):
     if query.data == "menu_quiz":
         state["q_index"] = 0
         send_question(query, state)
+
     elif query.data == "menu_glossary":
         state["g_index"] = 0
-        send_glossary(query, 0)
+        send_glossary(query.message.chat_id, context, 0, query.message)
+
+    elif query.data.startswith("gl_"):
+        index = int(query.data.split("_")[1])
+        state["g_index"] = index
+        send_glossary(query.message.chat_id, context, index, query.message)
+
     elif query.data == "main_menu":
         keyboard = [
             [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
@@ -227,18 +236,20 @@ def button(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(keyboard)
             )
         except:
-            query.message.delete()
-            query.message.reply_text(
-                "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
+            try:
+                query.message.delete()
+            except:
+                pass
+            context.bot.send_message(
+                chat_id=query.message.chat_id,
+                text="⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
                 reply_markup=InlineKeyboardMarkup(keyboard)
             )
-    elif query.data.startswith("glossary_"):
-        index = int(query.data.split("_")[1])
-        state["g_index"] = index
-        send_glossary(query, index)
+
     elif query.data == "toggle_lang":
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
         send_question(query, state)
+
     elif query.data.startswith("answer_"):
         chosen = int(query.data.split("_")[1])
         q = QUESTIONS[state["q_index"]]
@@ -248,23 +259,4 @@ def button(update: Update, context: CallbackContext):
             result = f"✅ Правильно! / Correct!\n\n{explain}"
         else:
             chosen_letter = ["A", "B", "C", "D"][chosen]
-            result = f"❌ Неверно! Вы выбрали {chosen_letter}, правильный ответ: {correct_letter}\n\n{explain}"
-        keyboard = [[InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")]]
-        query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(keyboard))
-    elif query.data == "next_question":
-        state["q_index"] = (state["q_index"] + 1) % len(QUESTIONS)
-        send_question(query, state)
-    elif query.data == "menu_drive":
-        query.edit_message_text("🚗 Режим за рулём в разработке / Drive mode coming soon!")
-
-def main():
-    updater = Updater(TOKEN)
-    dp = updater.dispatcher
-    dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CallbackQueryHandler(button))
-    dp.add_handler(MessageHandler(Filters.audio | Filters.document, get_file_id))
-    updater.start_polling()
-    updater.idle()
-
-if __name__ == "__main__":
-    main()
+            r
