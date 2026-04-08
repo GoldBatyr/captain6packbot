@@ -2,7 +2,7 @@ import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext
 
-TOKEN = "8222684433:AAGl7T3wcl3ix-K-yaLcHLtkW0eWZd4EaUA"
+TOKEN = "8222684433:AAGl7T3wcl3ix-K-yaLcHLtkWOeWZd4EaUA"
 
 logging.basicConfig(level=logging.INFO)
 
