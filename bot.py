@@ -152,16 +152,23 @@ def start(update: Update, context: CallbackContext):
 
 def send_glossary(query, index):
     term = GLOSSARY[index]
-    text = f"📖 Глоссарий {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}\n\n🔊 НажмиPlay чтобы услышать произношение"
+    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
     keyboard = [
-        [InlineKeyboardButton("🔊 Слушать / Listen", callback_data=f"play_audio_{index}")],
         [
             InlineKeyboardButton("⬅️", callback_data=f"glossary_{(index - 1) % len(GLOSSARY)}"),
             InlineKeyboardButton("➡️", callback_data=f"glossary_{(index + 1) % len(GLOSSARY)}"),
         ],
         [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
     ]
-    query.edit_message_text(text, reply_markup=InlineKeyboardMarkup(keyboard))
+    try:
+        query.message.delete()
+    except:
+        pass
+    query.message.reply_audio(
+        audio=term["file_id"],
+        caption=caption,
+        reply_markup=InlineKeyboardMarkup(keyboard)
+    )
 
 def send_question(query, state):
     q = QUESTIONS[state["q_index"]]
@@ -169,10 +176,8 @@ def send_question(query, state):
     question = q["ru_q"] if lang == "ru" else q["en_q"]
     options = q["ru_options"] if lang == "ru" else q["en_options"]
     lang_btn = "🇺🇸 English" if lang == "ru" else "🇷🇺 Русский"
-
     options_text = "\n".join(options)
     full_text = f"❓ Вопрос {state['q_index'] + 1} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
-
     keyboard = [
         [
             InlineKeyboardButton("A", callback_data="answer_0"),
@@ -216,18 +221,21 @@ def button(update: Update, context: CallbackContext):
             [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
             [InlineKeyboardButton("🚗 За рулём / Drive Mode", callback_data="menu_drive")],
         ]
-        query.edit_message_text(
-            "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
-            reply_markup=InlineKeyboardMarkup(keyboard)
-        )
+        try:
+            query.edit_message_text(
+                "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
+                reply_markup=InlineKeyboardMarkup(keyboard)
+            )
+        except:
+            query.message.delete()
+            query.message.reply_text(
+                "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
+                reply_markup=InlineKeyboardMarkup(keyboard)
+            )
     elif query.data.startswith("glossary_"):
         index = int(query.data.split("_")[1])
         state["g_index"] = index
         send_glossary(query, index)
-    elif query.data.startswith("play_audio_"):
-        index = int(query.data.split("_")[2])
-        term = GLOSSARY[index]
-        query.message.reply_audio(audio=term["file_id"], title=term["term"])
     elif query.data == "toggle_lang":
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
         send_question(query, state)
