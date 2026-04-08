@@ -7,133 +7,105 @@ TOKEN = "8222684433:AAGl7T3wcl3ix-K-yaLcHLtkWOeWZd4EaUA"
 logging.basicConfig(level=logging.INFO)
 
 GLOSSARY = [
-    {
-        "term": "Port",
-        "ru": "Levyj bort",
-        "file_id": "CQACAgIAAxkBAAMdadW4TGAhwHmzRyXnJbqSv6ewVBIAAnqeAAIXELFKZX9-mXLEUkU7BA"
-    },
-    {
-        "term": "Starboard",
-        "ru": "Pravyj bort",
-        "file_id": "CQACAgIAAxkBAAMbadW4TDgWnvdPf7qq_scWI_yFRCYAanieAAIXELFK3uGIBiPuSII7BA"
-    },
-    {
-        "term": "Underway",
-        "ru": "Na hodu",
-        "file_id": "CQACAgIAAxkBAAMeadW4TCirSAABQzFKQNCrorYwPCkXAAJ7ngACFxCxSpL8H-CBi_BbOwQ"
-    },
-    {
-        "term": "Overtaking",
-        "ru": "Obgon",
-        "file_id": "CQACAgIAAxkBAAMZadW4TIR3oU6eb7cE-mpWYAI66DkAAnaeAAIXELFKX4lLnsLEOug7BA"
-    },
-    {
-        "term": "Stand-on vessel",
-        "ru": "Privilegirovannoe sudno",
-        "file_id": "CQACAgIAAxkBAAMcadW4TNDISQVB_rkXQg18rBXIs10AAnmeAAIXELFKWToEjKf_myY7BA"
-    },
-    {
-        "term": "Give-way vessel",
-        "ru": "Ustupayushee sudno",
-        "file_id": "CQACAgIAAxkBAAMfadW4TD_GyIjTekzxb5SXQYE-ZRwAAnyeAAIXELFKIMD_bOWOVTE7BA"
-    },
-    {
-        "term": "Rules of the Road",
-        "ru": "Pravila plavaniya",
-        "file_id": "CQACAgIAAxkBAAMaadW4TGT9JISiKDuFDptjii8tCGsAAneeAAIXELFKiytUC_no1GE7BA"
-    },
+    {"term": "Port", "ru": "Левый борт", "file_id": "CQACAgIAAxkBAAMdadW4TGAhwHmzRyXnJbqSv6ewVBIAAnqeAAIXELFKZX9-mXLEUkU7BA"},
+    {"term": "Starboard", "ru": "Правый борт", "file_id": "CQACAgIAAxkBAAMbadW4TDgWnvdPf7qq_scWI_yFRCYAanieAAIXELFK3uGIBiPuSII7BA"},
+    {"term": "Underway", "ru": "На ходу", "file_id": "CQACAgIAAxkBAAMeadW4TCirSAABQzFKQNCrorYwPCkXAAJ7ngACFxCxSpL8H-CBi_BbOwQ"},
+    {"term": "Overtaking", "ru": "Обгон", "file_id": "CQACAgIAAxkBAAMZadW4TIR3oU6eb7cE-mpWYAI66DkAAnaeAAIXELFKX4lLnsLEOug7BA"},
+    {"term": "Stand-on vessel", "ru": "Привилегированное судно", "file_id": "CQACAgIAAxkBAAMcadW4TNDISQVB_rkXQg18rBXIs10AAnmeAAIXELFKWToEjKf_myY7BA"},
+    {"term": "Give-way vessel", "ru": "Уступающее судно", "file_id": "CQACAgIAAxkBAAMfadW4TD_GyIjTekzxb5SXQYE-ZRwAAnyeAAIXELFKIMD_bOWOVTE7BA"},
+    {"term": "Rules of the Road", "ru": "Правила плавания", "file_id": "CQACAgIAAxkBAAMaadW4TGT9JISiKDuFDptjii8tCGsAAneeAAIXELFKiytUC_no1GE7BA"},
 ]
 
 QUESTIONS = [
     {
         "en_q": "INLAND ONLY. Your vessel is meeting another vessel head to head. To comply with the steering and sailing rules, you should:",
-        "ru_q": "INLAND ONLY. Vashe sudno vstrechaetsya s drugim sudnom nos k nosu. Soglasno pravilam, vy dolzhny:",
+        "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Ваше судно встречается с другим судном нос к носу. Согласно правилам маневрирования, вы должны:",
         "en_options": ["A) Sound the danger signal", "B) Sound one prolonged and two short blasts", "C) Exchange two short blasts", "D) Exchange one short blast"],
-        "ru_options": ["A) Podat signal opasnosti", "B) Odin prolongirovanny i dva korotkih", "C) Obmenyatsya dvumya korotkimi", "D) Obmenyatsya odnim korotkim"],
+        "ru_options": ["A) Подать сигнал опасности", "B) Один продолжительный и два коротких", "C) Обменяться двумя короткими", "D) Обменяться одним коротким"],
         "correct": 3,
         "en_explain": "Inland Rule 34: vessels meeting head-on exchange ONE short blast, each vessel turns right and passes port-to-port.",
-        "ru_explain": "Pravilo 34: suda obmenivauytsya ODNIM korotkim signalom, kazhdyj beryot vpravo i raskhodyatsya levymi bortami."
+        "ru_explain": "Правило 34: суда обмениваются ОДНИМ коротким сигналом, каждый берёт вправо и расходятся левыми бортами."
     },
     {
         "en_q": "INLAND ONLY. What is the whistle signal for a power-driven vessel leaving a dock?",
-        "ru_q": "INLAND ONLY. Kakoj signal podayet motornoe sudno pri otkhode ot prichala?",
+        "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Какой сигнал подаёт моторное судно при отходе от причала?",
         "en_options": ["A) One short blast", "B) Three short blasts", "C) One prolonged blast", "D) Three prolonged blasts"],
-        "ru_options": ["A) Odin korotkij", "B) Tri korotkih", "C) Odin prolongirovanny", "D) Tri prolongirovannykh"],
+        "ru_options": ["A) Один короткий", "B) Три коротких", "C) Один продолжительный", "D) Три продолжительных"],
         "correct": 2,
         "en_explain": "Inland Rules: a vessel leaving a dock sounds ONE prolonged blast (4-6 sec) to warn nearby vessels.",
-        "ru_explain": "Vnutrennie vody: sudno otkhodyashee ot prichala podayet ODIN prolongirovanny signal (4-6 sek)."
+        "ru_explain": "Внутренние воды: судно отходящее от причала подаёт ОДИН продолжительный сигнал (4-6 сек)."
     },
     {
         "en_q": "INLAND ONLY. You are overtaking a vessel in a narrow channel and wish to overtake on her PORT side. You sound:",
-        "ru_q": "INLAND ONLY. Vy obgonyaete sudno v uzkom kanale i khotite obognat ego s LEVOGO borta. Vy podayote:",
+        "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Вы обгоняете судно в узком канале и хотите обогнать его с ЛЕВОГО борта. Вы подаёте:",
         "en_options": ["A) One short blast", "B) Two short blasts", "C) Two prolonged + one short", "D) Two prolonged + two short"],
-        "ru_options": ["A) Odin korotkij", "B) Dva korotkih", "C) Dva prolongirovannykh + odin korotkij", "D) Dva prolongirovannykh + dva korotkih"],
+        "ru_options": ["A) Один короткий", "B) Два коротких", "C) Два продолжительных + один короткий", "D) Два продолжительных + два коротких"],
         "correct": 1,
         "en_explain": "Inland Rule 34: overtaking on PORT side = TWO short blasts. Overtaken vessel responds with same signal.",
-        "ru_explain": "Pravilo 34: obgon s levogo (PORT) borta = DVA korotkih signala. Obgonyaemoe sudno otvechaet tem zhe signalom."
+        "ru_explain": "Правило 34: обгон с левого (PORT) борта = ДВА коротких сигнала. Обгоняемое судно отвечает тем же сигналом."
     },
     {
         "en_q": "INLAND ONLY. You agreed by radio to pass ASTERN of a vessel on your starboard. You MUST:",
-        "ru_q": "INLAND ONLY. Po radio dogovorilis projti za kormoj sudna sprava. Vy OBYAZANY:",
+        "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. По радио договорились пройти за кормой судна справа. Вы ОБЯЗАНЫ:",
         "en_options": ["A) Sound one short blast", "B) Sound two short blasts", "C) Change course to starboard", "D) None of the above"],
-        "ru_options": ["A) Odin korotkij signal", "B) Dva korotkih signala", "C) Izmenit kurs vpravo", "D) Nichego iz vyssheperechislennogo"],
+        "ru_options": ["A) Один короткий сигнал", "B) Два коротких сигнала", "C) Изменить курс вправо", "D) Ничего из вышеперечисленного"],
         "correct": 3,
         "en_explain": "Inland Rule 34(h): agreement by radiotelephone is sufficient. No additional whistle signals required.",
-        "ru_explain": "Pravilo 34(h): soglashenie po radio dostatochno. Dopolnitelnykh zvukovykh signalov ne trebuetsya."
+        "ru_explain": "Правило 34(h): соглашение по радио достаточно. Дополнительных звуковых сигналов не требуется."
     },
     {
         "en_q": "INLAND ONLY. You are overtaking a vessel in a narrow channel and wish to pass on her STARBOARD side. You may:",
-        "ru_q": "INLAND ONLY. Vy obgonyaete sudno v uzkom kanale i khotite obojti ego s PRAVOGO borta. Vy mozhete:",
+        "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Вы обгоняете судно в узком канале и хотите обойти его с ПРАВОГО борта. Вы можете:",
         "en_options": ["A) Contact her by radio to arrange passage", "B) Overtake without whistle signals", "C) Sound five short blasts", "D) All of the above"],
-        "ru_options": ["A) Svyazatsya po radio dlya soglasovaniya", "B) Obognat bez signalov", "C) Podat pyat korotkih", "D) Vsyo iz vyssheperechislennogo"],
+        "ru_options": ["A) Связаться по радио для согласования", "B) Обогнать без сигналов", "C) Подать пять коротких", "D) Всё вышеперечисленное"],
         "correct": 0,
         "en_explain": "Inland Rules: overtaking on STARBOARD side is non-standard. Only permitted after radio agreement.",
-        "ru_explain": "Obgon s pravogo borta - nestandartny manyovr. Razreshen tolko posle soglasovaniya po radio."
+        "ru_explain": "Обгон с правого борта - нестандартный манёвр. Разрешён только после согласования по радио."
     },
     {
         "en_q": "Another vessel is crossing your course starboard to port and you doubt her intentions. You:",
-        "ru_q": "Drugoe sudno peresekaet vash kurs sprava nalevo, vy somnevayetes v ego namereniyakh. Vy:",
+        "ru_q": "Другое судно пересекает ваш курс справа налево, вы сомневаетесь в его намерениях. Вы:",
         "en_options": ["A) Must sound the danger signal", "B) Must back down", "C) May sound the danger signal", "D) Sound one short blast"],
-        "ru_options": ["A) Obyazany podat signal opasnosti", "B) Obyazany dat zadnij khod", "C) Mozhete podat signal opasnosti", "D) Podat odin korotkij"],
+        "ru_options": ["A) Обязаны подать сигнал опасности", "B) Обязаны дать задний ход", "C) Можете подать сигнал опасности", "D) Подать один короткий"],
         "correct": 0,
         "en_explain": "Rule 34(d): in doubt about another vessel's intentions - MUST sound danger signal (5+ short blasts). Mandatory.",
-        "ru_explain": "Pravilo 34(d): pri somnenii v namereniyakh - OBYAZANY podat signal opasnosti (5+ korotkih). Obyazatelno."
+        "ru_explain": "Правило 34(d): при сомнении в намерениях - ОБЯЗАНЫ подать сигнал опасности (5+ коротких). Обязательно."
     },
     {
         "en_q": "INLAND ONLY. Maneuvering signals on inland waters are sounded by:",
-        "ru_q": "INLAND ONLY. Manyovrennye signaly na vnutrennikh vodakh podayutsya:",
+        "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Манёвренные сигналы на внутренних водах подаются:",
         "en_options": ["A) All vessels meeting/crossing/overtaking in sight", "B) All vessels within half a mile, not in sight", "C) Power-driven vessels overtaking in sight / crossing within half a mile in sight", "D) Power-driven vessels crossing within half a mile, NOT in sight"],
-        "ru_options": ["A) Vsemi sudami pri vstreche/peresechenii/obgone v vidimosti", "B) Vsemi sudami v predelakh polumili vne vidimosti", "C) Motornymi: obgon v vidimosti / peresechenie v polumile i v vidimosti", "D) Motornymi pri peresechenii v polumile vne vidimosti"],
+        "ru_options": ["A) Всеми судами при встрече/пересечении/обгоне в видимости", "B) Всеми судами в пределах полумили вне видимости", "C) Моторными: обгон в видимости / пересечение в полумиле и в видимости", "D) Моторными при пересечении в полумиле вне видимости"],
         "correct": 2,
         "en_explain": "Inland Rules: maneuvering signals for power-driven vessels only, in sight. Crossing: also within half a mile.",
-        "ru_explain": "Manyovrennye signaly - tolko dlya motornykh sudov v predelakh vidimosti. Peresechenie kursov - dopolnitelno v predelakh polumili."
+        "ru_explain": "Манёвренные сигналы - только для моторных судов в пределах видимости. Пересечение курсов - дополнительно в пределах полумили."
     },
     {
         "en_q": "INLAND ONLY. A light used to signal passing intentions must be:",
-        "ru_q": "INLAND ONLY. Ogon dlya signalizatsii namerenij pri raskhozdenii dolzhen byt:",
+        "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Огонь для сигнализации намерений при расхождении должен быть:",
         "en_options": ["A) All-round white OR yellow", "B) All-round yellow only", "C) All-round white only", "D) 225 degree white only"],
-        "ru_options": ["A) Krugovoj belyj ILI zholtyj", "B) Tolko krugovoj zholtyj", "C) Tolko krugovoj belyj", "D) Tolko belyj 225 gradusov"],
+        "ru_options": ["A) Круговой белый ИЛИ жёлтый", "B) Только круговой жёлтый", "C) Только круговой белый", "D) Только белый 225 градусов"],
         "correct": 0,
         "en_explain": "Inland Rule 34(b): all-round white OR yellow light permitted for signaling passing intentions.",
-        "ru_explain": "Pravilo 34(b): razreshen krugovoj belyj ILI zholtyj ogon dlya signalizatsii namerenij."
+        "ru_explain": "Правило 34(b): разрешён круговой белый ИЛИ жёлтый огонь для сигнализации намерений."
     },
     {
         "en_q": "INLAND ONLY. What MAY indicate a partly submerged object being towed?",
-        "ru_q": "INLAND ONLY. Chto MOZHET oboznachat chastichno pogruzhennyj buksiruemyj obekt?",
+        "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Что МОЖЕТ обозначать частично погружённый буксируемый объект?",
         "en_options": ["A) Black cone, apex up", "B) Two all-round yellow lights at each end", "C) Searchlight from towing vessel aimed at the tow", "D) All of the above"],
-        "ru_options": ["A) Chernyj konus vershinoj vverkh", "B) Dva krugovykh zholtykh ognya na kazhdom kontse", "C) Prozhektor s buksirovshhika na obekt", "D) Vsyo iz vyssheperechislennogo"],
+        "ru_options": ["A) Чёрный конус вершиной вверх", "B) Два круговых жёлтых огня на каждом конце", "C) Прожектор с буксировщика на объект", "D) Всё вышеперечисленное"],
         "correct": 2,
         "en_explain": "Inland Rules: searchlight from towing vessel aimed at tow permitted when lights cannot be mounted on object.",
-        "ru_explain": "Prozhektor s buksirovshhika dopuskaetsya kogda ogni nevozmozhno ustanovit na obekte."
+        "ru_explain": "Прожектор с буксировщика допускается когда огни невозможно установить на объекте."
     },
     {
         "en_q": "BOTH INT & INLAND. Underway in fog, you hear ONE prolonged blast. This indicates:",
-        "ru_q": "BOTH INT & INLAND. V tumane slyshite ODIN prolongirovanny signal. Eto:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. В тумане слышите ОДИН продолжительный сигнал. Это:",
         "en_options": ["A) Sailboat underway", "B) Vessel towing", "C) Power vessel making way", "D) Vessel being towed"],
-        "ru_options": ["A) Parusnoe sudno na khodu", "B) Sudno s buksirom", "C) Motornoe sudno idushee vperyod", "D) Buksiruemoe sudno"],
+        "ru_options": ["A) Парусное судно на ходу", "B) Судно с буксиром", "C) Моторное судно идущее вперёд", "D) Буксируемое судно"],
         "correct": 2,
         "en_explain": "Rule 35: ONE prolonged blast every 2 min = power-driven vessel making way. Towing: one prolonged + two short.",
-        "ru_explain": "Pravilo 35: ODIN prolongirovanny kazhdye 2 min = motornoe sudno idyot vperyod. Buksirovshhik: odin prolongirovanny + dva korotkih."
+        "ru_explain": "Правило 35: ОДИН продолжительный каждые 2 мин = моторное судно идёт вперёд. Буксировщик: один продолжительный + два коротких."
     },
 ]
 
@@ -141,22 +113,22 @@ user_state = {}
 
 def start(update: Update, context: CallbackContext):
     keyboard = [
-        [InlineKeyboardButton("Test / Quiz", callback_data="menu_quiz")],
-        [InlineKeyboardButton("Glossarij / Glossary", callback_data="menu_glossary")],
-        [InlineKeyboardButton("Za rulyom / Drive Mode", callback_data="menu_drive")],
+        [InlineKeyboardButton("Тест / Quiz", callback_data="menu_quiz")],
+        [InlineKeyboardButton("Глоссарий / Glossary", callback_data="menu_glossary")],
+        [InlineKeyboardButton("За рулём / Drive Mode", callback_data="menu_drive")],
     ]
     update.message.reply_text(
-        "Dobro pozhalovat v Captain6PackBot!\n\nVyberite rezhim / Choose mode:",
+        "Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
 def send_glossary(chat_id, context, index, message_to_delete=None):
     term = GLOSSARY[index]
-    caption = f"Glossarij {index + 1} iz {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}"
+    caption = f"Глоссарий {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}"
     prev_index = (index - 1) % len(GLOSSARY)
     keyboard = [
-        [InlineKeyboardButton("<< Nazad / Back", callback_data=f"glo{prev_index}")],
-        [InlineKeyboardButton("Menyu / Menu", callback_data="main_menu")],
+        [InlineKeyboardButton("<< Назад", callback_data=f"glo{prev_index}")],
+        [InlineKeyboardButton("Меню / Menu", callback_data="main_menu")],
     ]
     if message_to_delete:
         try:
@@ -175,9 +147,9 @@ def send_question(query, state):
     lang = state["lang"]
     question = q["ru_q"] if lang == "ru" else q["en_q"]
     options = q["ru_options"] if lang == "ru" else q["en_options"]
-    lang_btn = "Switch to English" if lang == "ru" else "Switch to Russian"
+    lang_btn = "Switch to English" if lang == "ru" else "Переключить на русский"
     options_text = "\n".join(options)
-    full_text = f"Vopros {state['q_index'] + 1} iz {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
+    full_text = f"Вопрос {state['q_index'] + 1} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
     keyboard = [
         [
             InlineKeyboardButton("A", callback_data="answer_0"),
@@ -224,9 +196,9 @@ def button(update: Update, context: CallbackContext):
 
     elif query.data == "main_menu":
         keyboard = [
-            [InlineKeyboardButton("Test / Quiz", callback_data="menu_quiz")],
-            [InlineKeyboardButton("Glossarij / Glossary", callback_data="menu_glossary")],
-            [InlineKeyboardButton("Za rulyom / Drive Mode", callback_data="menu_drive")],
+            [InlineKeyboardButton("Тест / Quiz", callback_data="menu_quiz")],
+            [InlineKeyboardButton("Глоссарий / Glossary", callback_data="menu_glossary")],
+            [InlineKeyboardButton("За рулём / Drive Mode", callback_data="menu_drive")],
         ]
         try:
             query.message.delete()
@@ -234,7 +206,7 @@ def button(update: Update, context: CallbackContext):
             pass
         context.bot.send_message(
             chat_id=query.message.chat_id,
-            text="Dobro pozhalovat v Captain6PackBot!\n\nVyberite rezhim / Choose mode:",
+            text="Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
             reply_markup=InlineKeyboardMarkup(keyboard)
         )
 
@@ -248,11 +220,11 @@ def button(update: Update, context: CallbackContext):
         explain = q["ru_explain"] if state["lang"] == "ru" else q["en_explain"]
         correct_letter = ["A", "B", "C", "D"][q["correct"]]
         if chosen == q["correct"]:
-            result = f"Pravilno! / Correct!\n\n{explain}"
+            result = f"Правильно! / Correct!\n\n{explain}"
         else:
             chosen_letter = ["A", "B", "C", "D"][chosen]
-            result = f"Neverno! Vy vybrali {chosen_letter}, pravilnyj otvet: {correct_letter}\n\n{explain}"
-        keyboard = [[InlineKeyboardButton("Sleduyushij / Next >>", callback_data="next_question")]]
+            result = f"Неверно! Вы выбрали {chosen_letter}, правильный ответ: {correct_letter}\n\n{explain}"
+        keyboard = [[InlineKeyboardButton("Следующий / Next >>", callback_data="next_question")]]
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(keyboard))
 
     elif query.data == "next_question":
@@ -260,7 +232,7 @@ def button(update: Update, context: CallbackContext):
         send_question(query, state)
 
     elif query.data == "menu_drive":
-        query.edit_message_text("Rezhim za rulyom v razrabotke / Drive mode coming soon!")
+        query.edit_message_text("Режим за рулём в разработке / Drive mode coming soon!")
 
 def main():
     updater = Updater(TOKEN)
