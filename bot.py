@@ -253,6 +253,15 @@ QUESTIONS = [
 user_state = {}
 
 
+def delete_audio_messages(context, chat_id, state):
+    for msg_id in state.get("audio_msg_ids", []):
+        try:
+            context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
+        except Exception:
+            pass
+    state["audio_msg_ids"] = []
+
+
 def start(update: Update, context: CallbackContext):
     keyboard = [
         [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
@@ -279,6 +288,17 @@ def build_question_keyboard(state, has_audio_q=False):
     ]
     if has_audio_q:
         rows.append([InlineKeyboardButton("🔊 Listen", callback_data="listen_q")])
+    return InlineKeyboardMarkup(rows)
+
+
+def build_answer_keyboard(state, has_audio_a=False):
+    lang = state["lang"]
+    lang_btn = "🇺🇸 English" if lang == "ru" else "🇷🇺 Русский"
+    rows = []
+    if has_audio_a:
+        rows.append([InlineKeyboardButton("🔊 Correct Answer", callback_data="listen_a")])
+    rows.append([InlineKeyboardButton(lang_btn, callback_data="toggle_answer_lang")])
+    rows.append([InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")])
     return InlineKeyboardMarkup(rows)
 
 
@@ -320,6 +340,19 @@ def send_question(query, state, context):
             )
 
 
+def get_answer_text(state):
+    q = QUESTIONS[state["order"][state["pos"]]]
+    lang = state["lang"]
+    explain = q["ru_explain"] if lang == "ru" else q["en_explain"]
+    correct_letter = ["A", "B", "C", "D"][q["correct"]]
+    chosen = state.get("last_chosen")
+    if chosen == q["correct"]:
+        return f"✅ Правильно! / Correct!\n\n{explain}"
+    else:
+        chosen_letter = ["A", "B", "C", "D"][chosen]
+        return f"❌ Неверно! Вы выбрали {chosen_letter}, правильный ответ: {correct_letter}\n\n{explain}"
+
+
 def send_glossary(chat_id, context, index, message_to_delete=None):
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
@@ -359,29 +392,38 @@ def button(update: Update, context: CallbackContext):
     query = update.callback_query
     query.answer()
     user_id = query.from_user.id
+    chat_id = query.message.chat_id
 
     if user_id not in user_state:
-        user_state[user_id] = {"lang": "ru", "pos": 0, "g_index": 0, "order": list(range(len(QUESTIONS)))}
+        user_state[user_id] = {
+            "lang": "ru", "pos": 0, "g_index": 0,
+            "order": list(range(len(QUESTIONS))),
+            "audio_msg_ids": [], "last_chosen": None
+        }
 
     state = user_state[user_id]
 
     if query.data == "menu_quiz":
+        delete_audio_messages(context, chat_id, state)
         order = list(range(len(QUESTIONS)))
         random.shuffle(order)
         state["order"] = order
         state["pos"] = 0
+        state["last_chosen"] = None
         send_question(query, state, context)
 
     elif query.data == "menu_glossary":
+        delete_audio_messages(context, chat_id, state)
         state["g_index"] = 0
-        send_glossary(query.message.chat_id, context, 0, query.message)
+        send_glossary(chat_id, context, 0, query.message)
 
     elif query.data.startswith("glo"):
         index = int(query.data[3:])
         state["g_index"] = index
-        send_glossary(query.message.chat_id, context, index, query.message)
+        send_glossary(chat_id, context, index, query.message)
 
     elif query.data == "main_menu":
+        delete_audio_messages(context, chat_id, state)
         keyboard = [
             [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
             [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
@@ -392,7 +434,7 @@ def button(update: Update, context: CallbackContext):
         except Exception:
             pass
         context.bot.send_message(
-            chat_id=query.message.chat_id,
+            chat_id=chat_id,
             text="⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
             reply_markup=InlineKeyboardMarkup(keyboard)
         )
@@ -401,42 +443,34 @@ def button(update: Update, context: CallbackContext):
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
         send_question(query, state, context)
 
+    elif query.data == "toggle_answer_lang":
+        state["lang"] = "en" if state["lang"] == "ru" else "ru"
+        q = QUESTIONS[state["order"][state["pos"]]]
+        result = get_answer_text(state)
+        keyboard = build_answer_keyboard(state, has_audio_a=bool(q.get("audio_a")))
+        try:
+            query.edit_message_text(result, reply_markup=keyboard)
+        except Exception:
+            pass
+
     elif query.data == "listen_q":
         q = QUESTIONS[state["order"][state["pos"]]]
         if q.get("audio_q"):
-            context.bot.send_audio(
-                chat_id=query.message.chat_id,
-                audio=q["audio_q"]
-            )
+            msg = context.bot.send_audio(chat_id=chat_id, audio=q["audio_q"])
+            state["audio_msg_ids"].append(msg.message_id)
 
     elif query.data == "listen_a":
         q = QUESTIONS[state["order"][state["pos"]]]
         if q.get("audio_a"):
-            context.bot.send_audio(
-                chat_id=query.message.chat_id,
-                audio=q["audio_a"]
-            )
+            msg = context.bot.send_audio(chat_id=chat_id, audio=q["audio_a"])
+            state["audio_msg_ids"].append(msg.message_id)
 
     elif query.data.startswith("answer_"):
         chosen = int(query.data.split("_")[1])
+        state["last_chosen"] = chosen
         q = QUESTIONS[state["order"][state["pos"]]]
-        explain = q["ru_explain"] if state["lang"] == "ru" else q["en_explain"]
-        correct_letter = ["A", "B", "C", "D"][q["correct"]]
-        if chosen == q["correct"]:
-            result = f"✅ Правильно! / Correct!\n\n{explain}"
-        else:
-            chosen_letter = ["A", "B", "C", "D"][chosen]
-            result = f"❌ Неверно! Вы выбрали {chosen_letter}, правильный ответ: {correct_letter}\n\n{explain}"
-
-        next_btn = [InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")]
-        if q.get("audio_a"):
-            keyboard = InlineKeyboardMarkup([
-                [InlineKeyboardButton("🔊 Correct Answer", callback_data="listen_a")],
-                next_btn
-            ])
-        else:
-            keyboard = InlineKeyboardMarkup([next_btn])
-
+        result = get_answer_text(state)
+        keyboard = build_answer_keyboard(state, has_audio_a=bool(q.get("audio_a")))
         if q.get("image"):
             try:
                 query.edit_message_caption(caption=result, reply_markup=keyboard)
@@ -446,7 +480,9 @@ def button(update: Update, context: CallbackContext):
             query.edit_message_text(result, reply_markup=keyboard)
 
     elif query.data == "next_question":
+        delete_audio_messages(context, chat_id, state)
         state["pos"] = (state["pos"] + 1) % len(QUESTIONS)
+        state["last_chosen"] = None
         send_question(query, state, context)
 
     elif query.data == "menu_drive":
