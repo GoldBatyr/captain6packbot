@@ -48,6 +48,8 @@ GLOSSARY = [
 QUESTIONS = [
     {
         "num": 1,
+        "audio_q": "CQACAgIAAxkBAAIBiGnYvLWlqj0YrvMpnLMAAYDrt3t6tAACJZEAAuXmwEqqVQX99gbJ-DsE",
+        "audio_a": "CQACAgIAAxkBAAIBimnYvXlaPOf-vCDTK73JWy2FlH_cAAItkQAC5ebASqjv8yZdih40OwQ",
         "en_q": "INLAND ONLY. Your vessel is meeting another vessel head to head. To comply with the steering and sailing rules, you should:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Ваше судно встречается с другим судном нос к носу. Согласно правилам маневрирования, вы должны:",
         "en_options": ["A) Sound the danger signal", "B) Sound one prolonged and two short blasts", "C) Exchange two short blasts", "D) Exchange one short blast"],
@@ -263,10 +265,10 @@ def start(update: Update, context: CallbackContext):
     )
 
 
-def build_question_keyboard(state):
+def build_question_keyboard(state, has_audio_q=False):
     lang = state["lang"]
     lang_btn = "🇺🇸 English" if lang == "ru" else "🇷🇺 Русский"
-    return InlineKeyboardMarkup([
+    rows = [
         [
             InlineKeyboardButton("A", callback_data="answer_0"),
             InlineKeyboardButton("B", callback_data="answer_1"),
@@ -274,7 +276,10 @@ def build_question_keyboard(state):
             InlineKeyboardButton("D", callback_data="answer_3"),
         ],
         [InlineKeyboardButton(lang_btn, callback_data="toggle_lang")],
-    ])
+    ]
+    if has_audio_q:
+        rows.append([InlineKeyboardButton("🔊 Listen", callback_data="listen_q")])
+    return InlineKeyboardMarkup(rows)
 
 
 def send_question(query, state, context):
@@ -286,7 +291,7 @@ def send_question(query, state, context):
     options = q["ru_options"] if lang == "ru" else q["en_options"]
     options_text = "\n".join(options)
     full_text = f"❓ Вопрос {q['num']} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
-    keyboard = build_question_keyboard(state)
+    keyboard = build_question_keyboard(state, has_audio_q=bool(q.get("audio_q")))
     chat_id = query.message.chat_id
 
     if q.get("image"):
@@ -396,6 +401,22 @@ def button(update: Update, context: CallbackContext):
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
         send_question(query, state, context)
 
+    elif query.data == "listen_q":
+        q = QUESTIONS[state["order"][state["pos"]]]
+        if q.get("audio_q"):
+            context.bot.send_audio(
+                chat_id=query.message.chat_id,
+                audio=q["audio_q"]
+            )
+
+    elif query.data == "listen_a":
+        q = QUESTIONS[state["order"][state["pos"]]]
+        if q.get("audio_a"):
+            context.bot.send_audio(
+                chat_id=query.message.chat_id,
+                audio=q["audio_a"]
+            )
+
     elif query.data.startswith("answer_"):
         chosen = int(query.data.split("_")[1])
         q = QUESTIONS[state["order"][state["pos"]]]
@@ -406,7 +427,16 @@ def button(update: Update, context: CallbackContext):
         else:
             chosen_letter = ["A", "B", "C", "D"][chosen]
             result = f"❌ Неверно! Вы выбрали {chosen_letter}, правильный ответ: {correct_letter}\n\n{explain}"
-        keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")]])
+
+        next_btn = [InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")]
+        if q.get("audio_a"):
+            keyboard = InlineKeyboardMarkup([
+                [InlineKeyboardButton("🔊 Correct Answer", callback_data="listen_a")],
+                next_btn
+            ])
+        else:
+            keyboard = InlineKeyboardMarkup([next_btn])
+
         if q.get("image"):
             try:
                 query.edit_message_caption(caption=result, reply_markup=keyboard)
