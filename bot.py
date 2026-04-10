@@ -320,7 +320,7 @@ def send_glossary(chat_id, context, index, message_to_delete=None):
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
     prev_index = (index - 1) % len(GLOSSARY)
     keyboard = [
-        [InlineKeyboardButton("Next", callback_data=f"glo{next_index}")],
+        [InlineKeyboardButton("Next", callback_data=f"glo{prev_index}")],
         [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
     ]
     if message_to_delete:
