@@ -318,7 +318,7 @@ def send_question(query, state, context):
 def send_glossary(chat_id, context, index, message_to_delete=None):
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
-    next_index = (index + 1) % len(GLOSSARY)
+    prev_index = (index - 1) % len(GLOSSARY)
     keyboard = [
         [InlineKeyboardButton("Next", callback_data=f"glo{next_index}")],
         [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
