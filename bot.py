@@ -284,7 +284,10 @@ def build_question_keyboard(state, has_audio_q=False):
             InlineKeyboardButton("C", callback_data="answer_2"),
             InlineKeyboardButton("D", callback_data="answer_3"),
         ],
-        [InlineKeyboardButton(lang_btn, callback_data="toggle_lang")],
+        [
+            InlineKeyboardButton(lang_btn, callback_data="toggle_lang"),
+            InlineKeyboardButton("🏠 Меню", callback_data="main_menu"),
+        ],
     ]
     if has_audio_q:
         rows.append([InlineKeyboardButton("🔊 Listen", callback_data="listen_q")])
@@ -297,7 +300,10 @@ def build_answer_keyboard(state, has_audio_a=False):
     rows = []
     if has_audio_a:
         rows.append([InlineKeyboardButton("🔊 Correct Answer", callback_data="listen_a")])
-    rows.append([InlineKeyboardButton(lang_btn, callback_data="toggle_answer_lang")])
+    rows.append([
+        InlineKeyboardButton(lang_btn, callback_data="toggle_answer_lang"),
+        InlineKeyboardButton("🏠 Меню", callback_data="main_menu"),
+    ])
     rows.append([InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")])
     return InlineKeyboardMarkup(rows)
 
