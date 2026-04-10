@@ -16,7 +16,7 @@ GLOSSARY = [
     {
         "term": "Starboard",
         "ru": "Правый борт",
-        "file_id": "CQACAgIAAxkBAAMbadW4TDgWnvdPf7qq_scWI_yFRCYAanieAAIXELFK3uGIBiPuSII7BA"
+        "file_id": "CQACAgIAAxkBAAIBW2nYqWNz0x91KSBedQ6164aS9ZepAAJskAAC5ebASp6vSEct0wuJOwQ"
     },
     {
         "term": "Underway",
