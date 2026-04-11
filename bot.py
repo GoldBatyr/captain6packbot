@@ -169,8 +169,8 @@ QUESTIONS = [
         "en_options": ["A) Decrease speed", "B) Increase speed", "C) Turn to port for a vessel on her own port side", "D) Turn to starboard for a vessel on her own port side"],
         "ru_options": ["A) Уменьшать скорость", "B) Увеличивать скорость", "C) Поворачивать влево в сторону судна слева", "D) Поворачивать вправо в сторону судна слева"],
         "correct": 2,
-        "en_explain": "Rule 17(c): stand-on vessel shall NOT turn to port when a give-way vessel is on her port side — this would close the gap.",
-        "ru_explain": "Правило 17(c): привилегированное судно НЕ должно поворачивать влево если уступающее судно находится слева — это сокращает дистанцию.",
+        "en_explain": "Rule 17(c): stand-on vessel shall NOT turn to port when a give-way vessel is on her port side.",
+        "ru_explain": "Правило 17(c): привилегированное судно НЕ должно поворачивать влево если уступающее судно находится слева.",
         "audio_q": "CQACAgIAAxkBAAIB9WnZ1M3CN3mEu1-cfW37jJH1ymqFAAI-oQACZJzJSsPFMoXWQxraOwQ",
         "audio_a": "CQACAgIAAxkBAAIB92nZ1OOlsQdBUf3eD9wxi25-sm1HAAJBoQACZJzJSpEay5GioNpGOwQ",
     },
@@ -181,8 +181,8 @@ QUESTIONS = [
         "en_options": ["A) When at anchor", "B) Only when making way", "C) At any time when underway", "D) Only when the identifying lights are not being shown"],
         "ru_options": ["A) На якоре", "B) Только при движении вперёд", "C) В любое время на ходу", "D) Только когда не горят опознавательные огни"],
         "correct": 2,
-        "en_explain": "Rule 29: a pilot vessel underway shows sidelights and sternlight at any time, regardless of identifying lights.",
-        "ru_explain": "Правило 29: лоцманское судно на ходу показывает бортовые и кормовой огни в любое время, независимо от опознавательных огней.",
+        "en_explain": "Rule 29: a pilot vessel underway shows sidelights and sternlight at any time.",
+        "ru_explain": "Правило 29: лоцманское судно на ходу показывает бортовые и кормовой огни в любое время.",
         "audio_q": "CQACAgIAAxkBAAIB-WnZ1PFgKH1vr0VOvE4sVH7-IJN9AAJDoQACZJzJSoG-Ve-bIJ46OwQ",
         "audio_a": "CQACAgIAAxkBAAIB-2nZ1QcLv9s-kBuEy59Bc78NZJ-SAAJFoQACZJzJSkppBA0bfP46OwQ",
     },
@@ -205,8 +205,8 @@ QUESTIONS = [
         "en_options": ["A) A 16-meter sailing vessel", "B) A 25-meter power-driven vessel", "C) A 28-meter sailing vessel", "D) Any non-self-propelled vessel"],
         "ru_options": ["A) Парусное судно длиной 16 м", "B) Моторное судно длиной 25 м", "C) Парусное судно длиной 28 м", "D) Любое несамоходное судно"],
         "correct": 0,
-        "en_explain": "Rule 25(c): sailing vessels under 20 meters may combine sidelights and sternlight in one all-round lantern at the masthead.",
-        "ru_explain": "Правило 25(c): только парусные суда менее 20 метров могут использовать комбинированный трёхцветный фонарь на мачте.",
+        "en_explain": "Rule 25(c): sailing vessels under 20 meters may combine sidelights and sternlight in one lantern at the masthead.",
+        "ru_explain": "Правило 25(c): только парусные суда менее 20 метров могут использовать комбинированный фонарь на мачте.",
         "audio_q": "CQACAgIAAxkBAAICAWnZ1UgaOhZ15_5We4jKPIqaO18cAAJKoQACZJzJStrnlb6vfOPcOwQ",
         "audio_a": "CQACAgIAAxkBAAICA2nZ1VYLf4U2VKrrR9TpfF-5WyAkAAJLoQACZJzJSuR0vdY85fOJOwQ",
     },
@@ -217,7 +217,7 @@ QUESTIONS = [
         "en_options": ["A) An anchor light", "B) Sidelights and a sternlight", "C) Three lights in a vertical line, the highest and lowest being red, and the middle being white", "D) None of the above"],
         "ru_options": ["A) Якорный огонь", "B) Бортовые и кормовой огни", "C) Три огня вертикально: верхний и нижний красные, средний белый", "D) Ничего из вышеперечисленного"],
         "correct": 3,
-        "en_explain": "Rule 26: a fishing vessel at anchor shows fishing lights only (green over white), not anchor lights or sidelights.",
+        "en_explain": "Rule 26: a fishing vessel at anchor shows fishing lights only (green over white).",
         "ru_explain": "Правило 26: рыболовное судно на якоре показывает только огни рыболовства (зелёный над белым).",
         "audio_q": "CQACAgIAAxkBAAICBWnZ1Wm0-hpRuP_0u9ovCxyaAaEVAAJMoQACZJzJSttiwgxal7KcOwQ",
         "audio_a": "CQACAgIAAxkBAAICB2nZ1XenCEp4ExzB3U5qLOHnVwl6AAJNoQACZJzJSkK58fGTqFoUOwQ",
@@ -230,7 +230,7 @@ QUESTIONS = [
         "ru_options": ["A) Судно не способное избежать опасного сближения должно снизить скорость до минимальной управляемой.", "B) Судно услышавшее туманный сигнал по носу должно застопорить машины.", "C) Судно услышавшее туманный сигнал по носу должно следовать с осторожностью.", "D) Если радар показывает опасное сближение — манёвр должен быть выполнен заблаговременно."],
         "correct": 1,
         "en_explain": "Rule 19(e): hearing a fog signal forward — reduce to minimum steerageway. Stopping engines is not required.",
-        "ru_explain": "Правило 19(e): услышав туманный сигнал по носу — снизить до минимальной управляемой скорости. Останавливать машины не обязательно.",
+        "ru_explain": "Правило 19(e): услышав туманный сигнал по носу — снизить до минимума. Останавливать машины не обязательно.",
         "audio_q": "CQACAgIAAxkBAAICCWnZ1dCHqfaNtMPzxoEkJ6ANTZ3oAAJOoQACZJzJSpFBKr0EkGtqOwQ",
         "audio_a": "CQACAgIAAxkBAAICC2nZ1d-ku0SZS7_xHDs2_12TOh2KAAJQoQACZJzJSpjoeSl-90JqOwQ",
     },
@@ -241,8 +241,8 @@ QUESTIONS = [
         "en_options": ["A) A red light over a green light at the masthead", "B) A white masthead light", "C) A combined lantern", "D) A sternlight"],
         "ru_options": ["A) Красный над зелёным на мачте", "B) Белый топовый огонь", "C) Комбинированный фонарь", "D) Кормовой огонь"],
         "correct": 3,
-        "en_explain": "Rule 25: a sailing vessel over 20m must show sidelights and a sternlight. Combined lantern only permitted under 20m.",
-        "ru_explain": "Правило 25: парусное судно более 20 м обязано показывать бортовые и кормовой огонь. Комбинированный фонарь — только до 20 м.",
+        "en_explain": "Rule 25: sailing vessel over 20m shows sidelights and sternlight. Combined lantern only under 20m.",
+        "ru_explain": "Правило 25: парусное судно более 20 м показывает бортовые и кормовой огонь. Комбинированный фонарь — только до 20 м.",
         "audio_q": "CQACAgIAAxkBAAICDWnZ1esZ30n7WmAitxMAAd2CG2tTbQACUqEAAmScyUp4rRITr9GQnTsE",
         "audio_a": "CQACAgIAAxkBAAICD2nZ1flvD4nJFNZ1XdtW-qwDGUYWAAJToQACZJzJSkt3j1nRpTXcOwQ",
     },
@@ -253,7 +253,7 @@ QUESTIONS = [
         "en_options": ["A) Two towing lights in a vertical line", "B) A towing light in a vertical line above the sternlight", "C) Two towing lights in addition to the sternlight", "D) A small white light in lieu of the sternlight"],
         "ru_options": ["A) Два буксировочных огня вертикально", "B) Буксировочный огонь над кормовым огнём вертикально", "C) Два буксировочных огня в дополнение к кормовому", "D) Малый белый огонь вместо кормового"],
         "correct": 1,
-        "en_explain": "Rule 24(a): towing vessel shows a yellow towing light in a vertical line directly above the sternlight.",
+        "en_explain": "Rule 24(a): towing vessel shows a yellow towing light directly above the sternlight.",
         "ru_explain": "Правило 24(a): буксировщик показывает жёлтый буксировочный огонь вертикально над кормовым огнём.",
         "audio_q": "CQACAgIAAxkBAAICEWnZ1gc4LYIg7xEp2JrMLZwnp__PAAJUoQACZJzJSqfS_AqhBWLZOwQ",
         "audio_a": "CQACAgIAAxkBAAICE2nZ1haJ1rdXxqbgSPLjCcacPx5RAAJWoQACZJzJSnrHgL4vPH3fOwQ",
@@ -262,12 +262,12 @@ QUESTIONS = [
 
 user_state = {}
 
+MAIN_MENU_TEXT = "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:"
 MAIN_MENU_KEYBOARD = [
     [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
     [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
     [InlineKeyboardButton("🚗 За рулём / Drive Mode", callback_data="menu_drive")],
 ]
-MAIN_MENU_TEXT = "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:"
 
 
 def show_main_menu(chat_id, context):
@@ -320,7 +320,6 @@ def send_question(query, state, context, clear_audio=True):
     options_text = "\n".join(options)
     full_text = f"❓ Вопрос {q['num']} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
     keyboard = build_question_keyboard(state)
-
     try:
         query.edit_message_text(full_text, reply_markup=keyboard)
     except Exception:
@@ -335,7 +334,7 @@ def send_question(query, state, context, clear_audio=True):
         )
 
 
-def send_glossary(chat_id, context, index, prev_message=None):
+def send_glossary(chat_id, context, index):
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
     next_index = (index + 1) % len(GLOSSARY)
@@ -343,17 +342,13 @@ def send_glossary(chat_id, context, index, prev_message=None):
         [InlineKeyboardButton("Next", callback_data=f"glo{next_index}")],
         [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
     ])
-    if prev_message:
-        try:
-            prev_message.delete()
-        except Exception:
-            pass
-    context.bot.send_audio(
+    msg = context.bot.send_audio(
         chat_id=chat_id,
         audio=term["file_id"],
         caption=caption,
         reply_markup=keyboard
     )
+    return msg.message_id
 
 
 def get_file_id(update: Update, context: CallbackContext):
@@ -381,12 +376,14 @@ def button(update: Update, context: CallbackContext):
         random.shuffle(order)
         user_state[user_id] = {
             "lang": "ru", "pos": 0, "g_index": 0,
-            "order": order, "audio_msg_ids": []
+            "order": order, "audio_msg_ids": [], "glo_msg_ids": []
         }
 
     state = user_state[user_id]
     if "audio_msg_ids" not in state:
         state["audio_msg_ids"] = []
+    if "glo_msg_ids" not in state:
+        state["glo_msg_ids"] = []
 
     if query.data == "menu_quiz":
         order = list(range(len(QUESTIONS)))
@@ -398,12 +395,24 @@ def button(update: Update, context: CallbackContext):
 
     elif query.data == "menu_glossary":
         state["g_index"] = 0
-        send_glossary(chat_id, context, 0, prev_message=query.message)
+        state["glo_msg_ids"] = []
+        try:
+            query.message.delete()
+        except Exception:
+            pass
+        msg_id = send_glossary(chat_id, context, 0)
+        state["glo_msg_ids"].append(msg_id)
 
     elif query.data.startswith("glo"):
         index = int(query.data[3:])
-        # Если дошли до конца — показываем меню
+        # Дошли до конца — показываем меню и удаляем все аудио глоссария
         if index == 0 and state.get("g_index") == len(GLOSSARY) - 1:
+            for msg_id in state.get("glo_msg_ids", []):
+                try:
+                    context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
+                except Exception:
+                    pass
+            state["glo_msg_ids"] = []
             try:
                 query.message.delete()
             except Exception:
@@ -411,9 +420,18 @@ def button(update: Update, context: CallbackContext):
             show_main_menu(chat_id, context)
         else:
             state["g_index"] = index
-            send_glossary(chat_id, context, index, prev_message=query.message)
+            msg_id = send_glossary(chat_id, context, index)
+            state["glo_msg_ids"].append(msg_id)
 
     elif query.data == "main_menu":
+        # Удаляем все аудио глоссария
+        for msg_id in state.get("glo_msg_ids", []):
+            try:
+                context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
+            except Exception:
+                pass
+        state["glo_msg_ids"] = []
+        # Удаляем аудио квиза
         for msg_id in state.get("audio_msg_ids", []):
             try:
                 context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
