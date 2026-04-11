@@ -294,14 +294,15 @@ def build_question_keyboard(state):
     return InlineKeyboardMarkup(buttons)
 
 
-def send_question(query, state, context):
-    # Удаляем старые аудио сообщения
-    for msg_id in state.get("audio_msg_ids", []):
-        try:
-            context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
-        except Exception:
-            pass
-    state["audio_msg_ids"] = []
+def send_question(query, state, context, clear_audio=True):
+    # Удаляем аудио только когда явно указано (Next или Меню)
+    if clear_audio:
+        for msg_id in state.get("audio_msg_ids", []):
+            try:
+                context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
+            except Exception:
+                pass
+        state["audio_msg_ids"] = []
 
     order = state["order"]
     pos = state["pos"]
@@ -344,14 +345,11 @@ def send_glossary(chat_id, context, index, message_to_delete=None):
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
     next_index = (index + 1) % len(GLOSSARY)
     keyboard = [
-        [InlineKeyboardButton("Next", callback_data=f"glo{next_index}")],
+        [InlineKeyboardButton("Next ➡️", callback_data=f"glo{next_index}")],
         [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
     ]
-    if message_to_delete:
-        try:
-            message_to_delete.delete()
-        except Exception:
-            pass
+    # При Next — НЕ удаляем предыдущее аудио, просто отправляем новое
+    # При Меню — удаление происходит в обработчике main_menu
     context.bot.send_audio(
         chat_id=chat_id,
         audio=term["file_id"],
@@ -382,11 +380,16 @@ def button(update: Update, context: CallbackContext):
     if user_id not in user_state:
         order = list(range(len(QUESTIONS)))
         random.shuffle(order)
-        user_state[user_id] = {"lang": "ru", "pos": 0, "g_index": 0, "order": order, "audio_msg_ids": []}
+        user_state[user_id] = {
+            "lang": "ru", "pos": 0, "g_index": 0,
+            "order": order, "audio_msg_ids": [], "glo_msg_ids": []
+        }
 
     state = user_state[user_id]
     if "audio_msg_ids" not in state:
         state["audio_msg_ids"] = []
+    if "glo_msg_ids" not in state:
+        state["glo_msg_ids"] = []
 
     if query.data == "menu_quiz":
         order = list(range(len(QUESTIONS)))
@@ -394,18 +397,33 @@ def button(update: Update, context: CallbackContext):
         state["order"] = order
         state["pos"] = 0
         state["audio_msg_ids"] = []
-        send_question(query, state, context)
+        send_question(query, state, context, clear_audio=True)
 
     elif query.data == "menu_glossary":
         state["g_index"] = 0
-        send_glossary(query.message.chat_id, context, 0, query.message)
+        state["glo_msg_ids"] = []
+        send_glossary(query.message.chat_id, context, 0)
+        try:
+            query.message.delete()
+        except Exception:
+            pass
 
     elif query.data.startswith("glo"):
         index = int(query.data[3:])
         state["g_index"] = index
-        send_glossary(query.message.chat_id, context, index, query.message)
+        # Запоминаем message_id текущего аудио глоссария
+        state["glo_msg_ids"].append(query.message.message_id)
+        send_glossary(query.message.chat_id, context, index)
 
     elif query.data == "main_menu":
+        # Удаляем все аудио глоссария
+        for msg_id in state.get("glo_msg_ids", []):
+            try:
+                context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
+            except Exception:
+                pass
+        state["glo_msg_ids"] = []
+        # Удаляем аудио квиза
         for msg_id in state.get("audio_msg_ids", []):
             try:
                 context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
@@ -429,7 +447,8 @@ def button(update: Update, context: CallbackContext):
 
     elif query.data == "toggle_lang":
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
-        send_question(query, state, context)
+        # НЕ удаляем аудио при переключении языка
+        send_question(query, state, context, clear_audio=False)
 
     elif query.data == "play_q":
         q = QUESTIONS[state["order"][state["pos"]]]
@@ -489,7 +508,8 @@ def button(update: Update, context: CallbackContext):
 
     elif query.data == "next_question":
         state["pos"] = (state["pos"] + 1) % len(QUESTIONS)
-        send_question(query, state, context)
+        # Удаляем аудио при переходе к следующему вопросу
+        send_question(query, state, context, clear_audio=True)
 
     elif query.data == "menu_drive":
         query.edit_message_text("🚗 Режим за рулём в разработке / Drive mode coming soon!")
