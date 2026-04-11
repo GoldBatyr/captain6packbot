@@ -193,8 +193,8 @@ QUESTIONS = [
         "en_options": ["A) Make sure the action is taken in enough time", "B) Not make any large course changes", "C) Not make any large speed changes", "D) All of the above"],
         "ru_options": ["A) Убедиться что манёвр выполнен заблаговременно", "B) Не делать резких изменений курса", "C) Не делать резких изменений скорости", "D) Всё вышеперечисленное"],
         "correct": 0,
-        "en_explain": "Rule 8: action to avoid collision must be taken in ample time. Large course/speed changes are encouraged if needed to be effective.",
-        "ru_explain": "Правило 8: главное требование — манёвр выполнен заблаговременно и достаточно решительно.",
+        "en_explain": "Rule 8: action to avoid collision must be taken in ample time.",
+        "ru_explain": "Правило 8: манёвр должен быть выполнен заблаговременно и достаточно решительно.",
         "audio_q": "CQACAgIAAxkBAAIB_WnZ1RtfHqoQGSA0FOjCbZUhszo6AAJGoQACZJzJSv8LjDsFgZmyOwQ",
         "audio_a": "CQACAgIAAxkBAAIB_2nZ1SqAnheLLkc1-fa2hKMqTFKZAAJHoQACZJzJShrCjTEceBFnOwQ",
     },
@@ -227,7 +227,7 @@ QUESTIONS = [
         "en_q": "BOTH INTERNATIONAL & INLAND. Which statement concerning maneuvering in restricted visibility is FALSE?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Какое утверждение о манёврировании в условиях ограниченной видимости НЕВЕРНО?",
         "en_options": ["A) A vessel which cannot avoid a close-quarters situation shall reduce her speed to bare steerageway.", "B) A vessel which hears a fog signal forward of her beam shall stop her engines.", "C) A vessel which hears a fog signal forward of the beam shall navigate with caution.", "D) If a vessel determines by radar that a close-quarters situation is developing, she shall take avoiding action in ample time."],
-        "ru_options": ["A) Судно, не способное избежать опасного сближения, должно снизить скорость до минимальной управляемой.", "B) Судно, услышавшее туманный сигнал по носу, должно застопорить машины.", "C) Судно, услышавшее туманный сигнал по носу, должно следовать с осторожностью.", "D) Если радар показывает опасное сближение — манёвр должен быть выполнен заблаговременно."],
+        "ru_options": ["A) Судно не способное избежать опасного сближения должно снизить скорость до минимальной управляемой.", "B) Судно услышавшее туманный сигнал по носу должно застопорить машины.", "C) Судно услышавшее туманный сигнал по носу должно следовать с осторожностью.", "D) Если радар показывает опасное сближение — манёвр должен быть выполнен заблаговременно."],
         "correct": 1,
         "en_explain": "Rule 19(e): hearing a fog signal forward — reduce to minimum steerageway. Stopping engines is not required.",
         "ru_explain": "Правило 19(e): услышав туманный сигнал по носу — снизить до минимальной управляемой скорости. Останавливать машины не обязательно.",
@@ -262,16 +262,26 @@ QUESTIONS = [
 
 user_state = {}
 
+MAIN_MENU_KEYBOARD = [
+    [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
+    [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
+    [InlineKeyboardButton("🚗 За рулём / Drive Mode", callback_data="menu_drive")],
+]
+MAIN_MENU_TEXT = "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:"
+
+
+def show_main_menu(chat_id, context):
+    context.bot.send_message(
+        chat_id=chat_id,
+        text=MAIN_MENU_TEXT,
+        reply_markup=InlineKeyboardMarkup(MAIN_MENU_KEYBOARD)
+    )
+
 
 def start(update: Update, context: CallbackContext):
-    keyboard = [
-        [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
-        [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
-        [InlineKeyboardButton("🚗 За рулём / Drive Mode", callback_data="menu_drive")],
-    ]
     update.message.reply_text(
-        "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
-        reply_markup=InlineKeyboardMarkup(keyboard)
+        MAIN_MENU_TEXT,
+        reply_markup=InlineKeyboardMarkup(MAIN_MENU_KEYBOARD)
     )
 
 
@@ -295,7 +305,6 @@ def build_question_keyboard(state):
 
 
 def send_question(query, state, context, clear_audio=True):
-    # Удаляем аудио только когда явно указано (Next или Меню)
     if clear_audio:
         for msg_id in state.get("audio_msg_ids", []):
             try:
@@ -304,9 +313,7 @@ def send_question(query, state, context, clear_audio=True):
                 pass
         state["audio_msg_ids"] = []
 
-    order = state["order"]
-    pos = state["pos"]
-    q = QUESTIONS[order[pos]]
+    q = QUESTIONS[state["order"][state["pos"]]]
     lang = state["lang"]
     question = q["ru_q"] if lang == "ru" else q["en_q"]
     options = q["ru_options"] if lang == "ru" else q["en_options"]
@@ -314,47 +321,38 @@ def send_question(query, state, context, clear_audio=True):
     full_text = f"❓ Вопрос {q['num']} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
     keyboard = build_question_keyboard(state)
 
-    if q.get("image"):
+    try:
+        query.edit_message_text(full_text, reply_markup=keyboard)
+    except Exception:
         try:
             query.message.delete()
         except Exception:
             pass
-        context.bot.send_photo(
+        context.bot.send_message(
             chat_id=query.message.chat_id,
-            photo=q["image"],
-            caption=full_text,
+            text=full_text,
             reply_markup=keyboard
         )
-    else:
-        try:
-            query.edit_message_text(full_text, reply_markup=keyboard)
-        except Exception:
-            try:
-                query.message.delete()
-            except Exception:
-                pass
-            context.bot.send_message(
-                chat_id=query.message.chat_id,
-                text=full_text,
-                reply_markup=keyboard
-            )
 
 
-def send_glossary(chat_id, context, index, message_to_delete=None):
+def send_glossary(chat_id, context, index, prev_message=None):
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
     next_index = (index + 1) % len(GLOSSARY)
-    keyboard = [
-        [InlineKeyboardButton("Next ➡️", callback_data=f"glo{next_index}")],
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton("Next", callback_data=f"glo{next_index}")],
         [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
-    ]
-    # При Next — НЕ удаляем предыдущее аудио, просто отправляем новое
-    # При Меню — удаление происходит в обработчике main_menu
+    ])
+    if prev_message:
+        try:
+            prev_message.delete()
+        except Exception:
+            pass
     context.bot.send_audio(
         chat_id=chat_id,
         audio=term["file_id"],
         caption=caption,
-        reply_markup=InlineKeyboardMarkup(keyboard)
+        reply_markup=keyboard
     )
 
 
@@ -376,20 +374,19 @@ def button(update: Update, context: CallbackContext):
     query = update.callback_query
     query.answer()
     user_id = query.from_user.id
+    chat_id = query.message.chat_id
 
     if user_id not in user_state:
         order = list(range(len(QUESTIONS)))
         random.shuffle(order)
         user_state[user_id] = {
             "lang": "ru", "pos": 0, "g_index": 0,
-            "order": order, "audio_msg_ids": [], "glo_msg_ids": []
+            "order": order, "audio_msg_ids": []
         }
 
     state = user_state[user_id]
     if "audio_msg_ids" not in state:
         state["audio_msg_ids"] = []
-    if "glo_msg_ids" not in state:
-        state["glo_msg_ids"] = []
 
     if query.data == "menu_quiz":
         order = list(range(len(QUESTIONS)))
@@ -401,65 +398,48 @@ def button(update: Update, context: CallbackContext):
 
     elif query.data == "menu_glossary":
         state["g_index"] = 0
-        state["glo_msg_ids"] = []
-        send_glossary(query.message.chat_id, context, 0)
-        try:
-            query.message.delete()
-        except Exception:
-            pass
+        send_glossary(chat_id, context, 0, prev_message=query.message)
 
     elif query.data.startswith("glo"):
         index = int(query.data[3:])
-        state["g_index"] = index
-        # Запоминаем message_id текущего аудио глоссария
-        state["glo_msg_ids"].append(query.message.message_id)
-        send_glossary(query.message.chat_id, context, index)
-
-    elif query.data == "main_menu":
-        # Удаляем все аудио глоссария
-        for msg_id in state.get("glo_msg_ids", []):
+        # Если дошли до конца — показываем меню
+        if index == 0 and state.get("g_index") == len(GLOSSARY) - 1:
             try:
-                context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
+                query.message.delete()
             except Exception:
                 pass
-        state["glo_msg_ids"] = []
-        # Удаляем аудио квиза
+            show_main_menu(chat_id, context)
+        else:
+            state["g_index"] = index
+            send_glossary(chat_id, context, index, prev_message=query.message)
+
+    elif query.data == "main_menu":
         for msg_id in state.get("audio_msg_ids", []):
             try:
-                context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
+                context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
             except Exception:
                 pass
         state["audio_msg_ids"] = []
-        keyboard = [
-            [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
-            [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
-            [InlineKeyboardButton("🚗 За рулём / Drive Mode", callback_data="menu_drive")],
-        ]
         try:
             query.message.delete()
         except Exception:
             pass
-        context.bot.send_message(
-            chat_id=query.message.chat_id,
-            text="⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:",
-            reply_markup=InlineKeyboardMarkup(keyboard)
-        )
+        show_main_menu(chat_id, context)
 
     elif query.data == "toggle_lang":
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
-        # НЕ удаляем аудио при переключении языка
         send_question(query, state, context, clear_audio=False)
 
     elif query.data == "play_q":
         q = QUESTIONS[state["order"][state["pos"]]]
         if q.get("audio_q"):
-            msg = context.bot.send_audio(chat_id=query.message.chat_id, audio=q["audio_q"])
+            msg = context.bot.send_audio(chat_id=chat_id, audio=q["audio_q"])
             state["audio_msg_ids"].append(msg.message_id)
 
     elif query.data == "play_a":
         q = QUESTIONS[state["order"][state["pos"]]]
         if q.get("audio_a"):
-            msg = context.bot.send_audio(chat_id=query.message.chat_id, audio=q["audio_a"])
+            msg = context.bot.send_audio(chat_id=chat_id, audio=q["audio_a"])
             state["audio_msg_ids"].append(msg.message_id)
 
     elif query.data.startswith("answer_"):
@@ -481,13 +461,7 @@ def button(update: Update, context: CallbackContext):
         ]
         if q.get("audio_a"):
             buttons.insert(1, [InlineKeyboardButton("🔊 Слушать ответ", callback_data="play_a")])
-        if q.get("image"):
-            try:
-                query.edit_message_caption(caption=result, reply_markup=InlineKeyboardMarkup(buttons))
-            except Exception:
-                query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
-        else:
-            query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
+        query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "toggle_lang_answer":
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
@@ -508,7 +482,6 @@ def button(update: Update, context: CallbackContext):
 
     elif query.data == "next_question":
         state["pos"] = (state["pos"] + 1) % len(QUESTIONS)
-        # Удаляем аудио при переходе к следующему вопросу
         send_question(query, state, context, clear_audio=True)
 
     elif query.data == "menu_drive":
