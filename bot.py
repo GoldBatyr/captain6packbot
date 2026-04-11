@@ -1,4 +1,5 @@
 import logging
+import random
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext, MessageHandler, Filters
 
@@ -7,45 +8,18 @@ TOKEN = "8222684433:AAGl7T3wcl3ix-K-yaLcHLtkWOeWZd4EaUA"
 logging.basicConfig(level=logging.INFO)
 
 GLOSSARY = [
-    {
-        "term": "Port",
-        "ru": "Левый борт",
-        "file_id": "CQACAgIAAxkBAAMdadW4TGAhwHmzRyXnJbqSv6ewVBIAAnqeAAIXELFKZX9-mXLEUkU7BA"
-    },
-    {
-        "term": "Starboard",
-        "ru": "Правый борт",
-        "file_id": "CQACAgIAAxkBAAMbadW4TDgWnvdPf7qq_scWI_yFRCYAanieAAIXELFK3uGIBiPuSII7BA"
-    },
-    {
-        "term": "Underway",
-        "ru": "На ходу",
-        "file_id": "CQACAgIAAxkBAAMeadW4TCirSAABQzFKQNCrorYwPCkXAAJ7ngACFxCxSpL8H-CBi_BbOwQ"
-    },
-    {
-        "term": "Overtaking",
-        "ru": "Обгон",
-        "file_id": "CQACAgIAAxkBAAMZadW4TIR3oU6eb7cE-mpWYAI66DkAAnaeAAIXELFKX4lLnsLEOug7BA"
-    },
-    {
-        "term": "Stand-on vessel",
-        "ru": "Привилегированное судно",
-        "file_id": "CQACAgIAAxkBAAMcadW4TNDISQVB_rkXQg18rBXIs10AAnmeAAIXELFKWToEjKf_myY7BA"
-    },
-    {
-        "term": "Give-way vessel",
-        "ru": "Уступающее судно",
-        "file_id": "CQACAgIAAxkBAAMfadW4TD_GyIjTekzxb5SXQYE-ZRwAAnyeAAIXELFKIMD_bOWOVTE7BA"
-    },
-    {
-        "term": "Rules of the Road",
-        "ru": "Правила плавания",
-        "file_id": "CQACAgIAAxkBAAMaadW4TGT9JISiKDuFDptjii8tCGsAAneeAAIXELFKiytUC_no1GE7BA"
-    },
+    {"term": "Port", "ru": "Левый борт", "file_id": "CQACAgIAAxkBAAMdadW4TGAhwHmzRyXnJbqSv6ewVBIAAnqeAAIXELFKZX9-mXLEUkU7BA"},
+    {"term": "Starboard", "ru": "Правый борт", "file_id": "CQACAgIAAxkBAAMbadW4TDgWnvdPf7qq_scWI_yFRCYAanieAAIXELFK3uGIBiPuSII7BA"},
+    {"term": "Underway", "ru": "На ходу", "file_id": "CQACAgIAAxkBAAMeadW4TCirSAABQzFKQNCrorYwPCkXAAJ7ngACFxCxSpL8H-CBi_BbOwQ"},
+    {"term": "Overtaking", "ru": "Обгон", "file_id": "CQACAgIAAxkBAAMZadW4TIR3oU6eb7cE-mpWYAI66DkAAnaeAAIXELFKX4lLnsLEOug7BA"},
+    {"term": "Stand-on vessel", "ru": "Привилегированное судно", "file_id": "CQACAgIAAxkBAAMcadW4TNDISQVB_rkXQg18rBXIs10AAnmeAAIXELFKWToEjKf_myY7BA"},
+    {"term": "Give-way vessel", "ru": "Уступающее судно", "file_id": "CQACAgIAAxkBAAMfadW4TD_GyIjTekzxb5SXQYE-ZRwAAnyeAAIXELFKIMD_bOWOVTE7BA"},
+    {"term": "Rules of the Road", "ru": "Правила плавания", "file_id": "CQACAgIAAxkBAAMaadW4TGT9JISiKDuFDptjii8tCGsAAneeAAIXELFKiytUC_no1GE7BA"},
 ]
 
 QUESTIONS = [
     {
+        "num": 1,
         "en_q": "INLAND ONLY. Your vessel is meeting another vessel head to head. To comply with the steering and sailing rules, you should:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Ваше судно встречается с другим судном нос к носу. Согласно правилам маневрирования, вы должны:",
         "en_options": ["A) Sound the danger signal", "B) Sound one prolonged and two short blasts", "C) Exchange two short blasts", "D) Exchange one short blast"],
@@ -57,6 +31,7 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAICHGnZ26-25tlg94FOi4c234gV_eFNAAKCoQACZJzJSgXLPSVZHLiAOwQ",
     },
     {
+        "num": 2,
         "en_q": "INLAND ONLY. What is the whistle signal for a power-driven vessel leaving a dock?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Какой сигнал подаёт моторное судно при отходе от причала?",
         "en_options": ["A) One short blast", "B) Three short blasts", "C) One prolonged blast", "D) Three prolonged blasts"],
@@ -68,6 +43,7 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAIBy2nZnTp77Cb62yudny_7dG-PF875AAJbmQAC5ebISrZIXYwr2tzQOwQ",
     },
     {
+        "num": 3,
         "en_q": "INLAND ONLY. You are overtaking a vessel in a narrow channel and wish to overtake on her PORT side. You sound:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Вы обгоняете судно в узком канале и хотите обогнать его с ЛЕВОГО борта. Вы подаёте:",
         "en_options": ["A) One short blast", "B) Two short blasts", "C) Two prolonged + one short", "D) Two prolonged + two short"],
@@ -79,6 +55,7 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAIBz2nZo9otkbPV12PrZ4Q4EkinzXitAAJ9mQAC5ebISoDLTOefFwSYOwQ",
     },
     {
+        "num": 4,
         "en_q": "INLAND ONLY. You agreed by radio to pass ASTERN of a vessel on your starboard. You MUST:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. По радио договорились пройти за кормой судна справа. Вы ОБЯЗАНЫ:",
         "en_options": ["A) Sound one short blast", "B) Sound two short blasts", "C) Change course to starboard", "D) None of the above"],
@@ -90,6 +67,7 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAIB02nZ0dA1z_kjvXrQhKLSsIYveCvjAAIPoQACZJzJSrWIjBqimgK7OwQ",
     },
     {
+        "num": 5,
         "en_q": "INLAND ONLY. You are overtaking a vessel in a narrow channel and wish to pass on her STARBOARD side. You may:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Вы обгоняете судно в узком канале и хотите обойти его с ПРАВОГО борта. Вы можете:",
         "en_options": ["A) Contact her by radio to arrange passage", "B) Overtake without whistle signals", "C) Sound five short blasts", "D) All of the above"],
@@ -101,6 +79,7 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAIB12nZ0gi3BdawU0h_wGD9ElUXl4VoAAIToQACZJzJStz-qqatYazmOwQ",
     },
     {
+        "num": 6,
         "en_q": "Another vessel is crossing your course starboard to port and you doubt her intentions. You:",
         "ru_q": "Другое судно пересекает ваш курс справа налево, вы сомневаетесь в его намерениях. Вы:",
         "en_options": ["A) Must sound the danger signal", "B) Must back down", "C) May sound the danger signal", "D) Sound one short blast"],
@@ -112,6 +91,7 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAIB22nZ04rk7NByXOTZxxNX4isbqlp2AAIfoQACZJzJSqZG5tu8PtJlOwQ",
     },
     {
+        "num": 7,
         "en_q": "INLAND ONLY. Maneuvering signals on inland waters are sounded by:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Манёвренные сигналы на внутренних водах подаются:",
         "en_options": ["A) All vessels meeting/crossing/overtaking in sight", "B) All vessels within half a mile, not in sight", "C) Power-driven vessels overtaking in sight / crossing within half a mile in sight", "D) Power-driven vessels crossing within half a mile, NOT in sight"],
@@ -123,6 +103,7 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAIB32nZ063DVxMJV3X6GeSc1ZKzoED_AAIioQACZJzJSqIMQmX9L7BAOwQ",
     },
     {
+        "num": 8,
         "en_q": "INLAND ONLY. A light used to signal passing intentions must be:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Огонь для сигнализации намерений при расхождении должен быть:",
         "en_options": ["A) All-round white OR yellow", "B) All-round yellow only", "C) All-round white only", "D) 225° white only"],
@@ -134,6 +115,7 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAIB42nZ08yB-Ea7O4YCcSCP6nQ9ZG54AAIkoQACZJzJStmnVAc942RlOwQ",
     },
     {
+        "num": 9,
         "en_q": "INLAND ONLY. What MAY indicate a partly submerged object being towed?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Что МОЖЕТ обозначать частично погружённый буксируемый объект?",
         "en_options": ["A) Black cone, apex up", "B) Two all-round yellow lights at each end", "C) Searchlight from towing vessel aimed at the tow", "D) All of the above"],
@@ -145,6 +127,7 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAIB52nZ0_ONn6EnneiqDKiLkygycIidAAInoQACZJzJSr7AWv4ojcTXOwQ",
     },
     {
+        "num": 10,
         "en_q": "BOTH INT & INLAND. Underway in fog, you hear ONE prolonged blast. This indicates:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. В тумане слышите ОДИН продолжительный сигнал. Это:",
         "en_options": ["A) Sailboat underway", "B) Vessel towing", "C) Power vessel making way", "D) Vessel being towed"],
@@ -156,118 +139,129 @@ QUESTIONS = [
         "audio_a": "CQACAgIAAxkBAAIB62nZ1FedxxFoCcnz5hENyme-0iBlAAIzoQACZJzJSkXaFE6fm4yaOwQ",
     },
     {
-        "en_q": "A vessel is 'in sight' of another vessel when:",
-        "ru_q": "Судно находится 'в пределах видимости' другого судна когда:",
-        "en_options": ["A) She is visible on radar", "B) She can be observed visually from the other vessel", "C) She is within VHF radio range", "D) She is within one mile"],
-        "ru_options": ["A) Она видна на радаре", "B) Её можно наблюдать визуально с другого судна", "C) Она в зоне VHF радио", "D) Она в пределах одной мили"],
+        "num": 11,
+        "en_q": "BOTH INTERNATIONAL & INLAND. A vessel is in sight of another vessel when:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно находится в зоне видимости другого судна, когда:",
+        "en_options": ["A) She can be observed by radar", "B) She can be observed visually from the other vessel", "C) She can be plotted on radar well enough to determine her heading", "D) Her fog signal can be heard"],
+        "ru_options": ["A) Она наблюдается по радару", "B) Она наблюдается визуально с другого судна", "C) Её курс определяется по радару", "D) Слышен её туманный сигнал"],
         "correct": 1,
-        "en_explain": "Rule 3(k): 'in sight' means observed visually. Radar contact alone does not count.",
-        "ru_explain": "Правило 3(k): 'в пределах видимости' означает визуальное наблюдение. Только радар не считается.",
+        "en_explain": "Rule 3(k): a vessel is 'in sight' only when she can be observed visually. Radar contact alone does not count.",
+        "ru_explain": "Правило 3(k): судно находится в зоне видимости только при визуальном наблюдении. Радар не считается.",
         "audio_q": "CQACAgIAAxkBAAIB7WnZ1G1i2hj120s5wCZuEkbia5MZAAI1oQACZJzJSvgkqv6OvIOSOwQ",
         "audio_a": "CQACAgIAAxkBAAIB72nZ1IQm2ayNiq9oizhUFt91Tp2SAAI2oQACZJzJSoJn6SnHcj5eOwQ",
     },
     {
-        "en_q": "You see a vessel displaying the code flag 'LIMA' below which is an 'O' flag. This vessel is:",
-        "ru_q": "Вы видите судно с флагом 'LIMA' под которым флаг 'O'. Это судно:",
-        "en_options": ["A) requesting a pilot", "B) in distress", "C) carrying dangerous cargo", "D) restricted in ability to maneuver"],
-        "ru_options": ["A) запрашивает лоцмана", "B) терпит бедствие", "C) перевозит опасный груз", "D) ограничено в манёвре"],
-        "correct": 1,
-        "en_explain": "Flag 'O' (Oscar) means 'man overboard' — vessel in distress.",
-        "ru_explain": "Флаг 'O' (Оскар) означает 'человек за бортом' — судно терпит бедствие.",
+        "num": 12,
+        "en_q": "BOTH INTERNATIONAL & INLAND. You see a vessel displaying the code flag 'LIMA' below which is a red ball. The vessel is:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно показывает флаг 'LIMA' и под ним красный шар. Это означает:",
+        "en_options": ["A) Trolling", "B) Getting ready to receive aircraft", "C) Aground", "D) In distress"],
+        "ru_options": ["A) Занято троллингом", "B) Готовится принять воздушное судно", "C) На мели", "D) Терпит бедствие"],
+        "correct": 3,
+        "en_explain": "Flag 'L' (LIMA) + red ball = distress signal. This combination indicates a vessel in distress and needing assistance.",
+        "ru_explain": "Флаг 'L' (LIMA) + красный шар = сигнал бедствия. Судно терпит бедствие и нуждается в помощи.",
         "audio_q": "CQACAgIAAxkBAAIB8WnZ1J4b1CMOe3d6S81v_kDVtGpPAAI4oQACZJzJStuhTSixWpdNOwQ",
         "audio_a": "CQACAgIAAxkBAAIB82nZ1LYAAeT-StKi1t3w9jFdXpbnbQACO6EAAmScyUpT9w8TPXfsyjsE",
     },
     {
-        "en_q": "If it becomes necessary for a stand-on vessel to take action to avoid collision, she shall NOT:",
-        "ru_q": "Если привилегированному судну необходимо предпринять действия для предотвращения столкновения, оно НЕ должно:",
-        "en_options": ["A) alter course to starboard", "B) turn to port for a vessel on her own port side", "C) slow down", "D) sound the danger signal"],
-        "ru_options": ["A) изменить курс вправо", "B) повернуть влево навстречу судну со своего левого борта", "C) сбросить скорость", "D) подать сигнал опасности"],
-        "correct": 1,
-        "en_explain": "Rule 17(c): stand-on vessel shall NOT turn to port for a vessel on her own port side.",
-        "ru_explain": "Правило 17(c): привилегированное судно НЕ должно поворачивать влево навстречу судну со своего левого борта.",
+        "num": 13,
+        "en_q": "BOTH INTERNATIONAL & INLAND. If it becomes necessary for a stand-on vessel to take action to avoid collision, she shall NOT, if possible:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Если привилегированному судну необходимо маневрировать для предотвращения столкновения, оно НЕ должно, если возможно:",
+        "en_options": ["A) Decrease speed", "B) Increase speed", "C) Turn to port for a vessel on her own port side", "D) Turn to starboard for a vessel on her own port side"],
+        "ru_options": ["A) Уменьшать скорость", "B) Увеличивать скорость", "C) Поворачивать влево в сторону судна слева", "D) Поворачивать вправо в сторону судна слева"],
+        "correct": 2,
+        "en_explain": "Rule 17(c): stand-on vessel shall NOT turn to port when a give-way vessel is on her port side — this would close the gap.",
+        "ru_explain": "Правило 17(c): привилегированное судно НЕ должно поворачивать влево если уступающее судно находится слева — это сокращает дистанцию.",
         "audio_q": "CQACAgIAAxkBAAIB9WnZ1M3CN3mEu1-cfW37jJH1ymqFAAI-oQACZJzJSsPFMoXWQxraOwQ",
         "audio_a": "CQACAgIAAxkBAAIB92nZ1OOlsQdBUf3eD9wxi25-sm1HAAJBoQACZJzJSpEay5GioNpGOwQ",
     },
     {
-        "en_q": "A pilot vessel on pilotage duty at night will show sidelights and a sternlight:",
-        "ru_q": "Лоцманское судно при исполнении обязанностей ночью показывает бортовые огни и кормовой огонь:",
-        "en_options": ["A) only when anchored", "B) only when making way", "C) at any time when underway", "D) only in restricted visibility"],
-        "ru_options": ["A) только на якоре", "B) только на ходу с движением", "C) в любое время когда на ходу", "D) только при ограниченной видимости"],
+        "num": 14,
+        "en_q": "BOTH INTERNATIONAL & INLAND. A pilot vessel on pilotage duty at night will show sidelights and a sternlight:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Лоцманское судно на дежурстве ночью показывает бортовые огни и кормовой огонь:",
+        "en_options": ["A) When at anchor", "B) Only when making way", "C) At any time when underway", "D) Only when the identifying lights are not being shown"],
+        "ru_options": ["A) На якоре", "B) Только при движении вперёд", "C) В любое время на ходу", "D) Только когда не горят опознавательные огни"],
         "correct": 2,
-        "en_explain": "Rule 29: pilot vessel on duty shows white over red all-round lights, plus sidelights and sternlight at any time when underway.",
-        "ru_explain": "Правило 29: лоцманское судно при исполнении обязанностей показывает белый над красным, плюс бортовые и кормовой в любое время на ходу.",
+        "en_explain": "Rule 29: a pilot vessel underway shows sidelights and sternlight at any time, regardless of identifying lights.",
+        "ru_explain": "Правило 29: лоцманское судно на ходу показывает бортовые и кормовой огни в любое время, независимо от опознавательных огней.",
         "audio_q": "CQACAgIAAxkBAAIB-WnZ1PFgKH1vr0VOvE4sVH7-IJN9AAJDoQACZJzJSoG-Ve-bIJ46OwQ",
         "audio_a": "CQACAgIAAxkBAAIB-2nZ1QcLv9s-kBuEy59Bc78NZJ-SAAJFoQACZJzJSkppBA0bfP46OwQ",
     },
     {
-        "en_q": "When taking action to avoid collision, you should:",
-        "ru_q": "При выполнении манёвра для предотвращения столкновения вы должны:",
-        "en_options": ["A) always turn to starboard", "B) always slow down", "C) make sure the action is taken in enough time", "D) sound one short blast"],
-        "ru_options": ["A) всегда поворачивать вправо", "B) всегда сбрасывать скорость", "C) убедиться что манёвр выполнен заблаговременно", "D) подать один короткий сигнал"],
-        "correct": 2,
-        "en_explain": "Rule 8: any action to avoid collision shall be taken in ample time, shall be large enough to be readily apparent.",
-        "ru_explain": "Правило 8: любой манёвр для предотвращения столкновения должен быть предпринят заблаговременно и быть достаточно значительным.",
+        "num": 15,
+        "en_q": "BOTH INTERNATIONAL & INLAND. When taking action to avoid collision, you should:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. При манёвре для предотвращения столкновения вы должны:",
+        "en_options": ["A) Make sure the action is taken in enough time", "B) Not make any large course changes", "C) Not make any large speed changes", "D) All of the above"],
+        "ru_options": ["A) Убедиться что манёвр выполнен заблаговременно", "B) Не делать резких изменений курса", "C) Не делать резких изменений скорости", "D) Всё вышеперечисленное"],
+        "correct": 0,
+        "en_explain": "Rule 8: action to avoid collision must be taken in ample time. Large course/speed changes are encouraged if needed to be effective.",
+        "ru_explain": "Правило 8: главное требование — манёвр выполнен заблаговременно и достаточно решительно.",
         "audio_q": "CQACAgIAAxkBAAIB_WnZ1RtfHqoQGSA0FOjCbZUhszo6AAJGoQACZJzJSv8LjDsFgZmyOwQ",
         "audio_a": "CQACAgIAAxkBAAIB_2nZ1SqAnheLLkc1-fa2hKMqTFKZAAJHoQACZJzJShrCjTEceBFnOwQ",
     },
     {
-        "en_q": "Which vessel may combine her sidelights and sternlight in one lantern on the centerline?",
-        "ru_q": "Какое судно может объединить бортовые огни и кормовой огонь в один фонарь по centerline?",
-        "en_options": ["A) Any vessel under 20 meters", "B) A 16-meter sailing vessel", "C) A 12-meter power vessel", "D) Any vessel under 12 meters"],
-        "ru_options": ["A) Любое судно до 20 метров", "B) Парусное судно 16 метров", "C) Моторное судно 12 метров", "D) Любое судно до 12 метров"],
-        "correct": 1,
-        "en_explain": "Rule 25(b): a sailing vessel under 20 meters may combine sidelights and sternlight in one lantern at or near the top of the mast.",
-        "ru_explain": "Правило 25(b): парусное судно менее 20 метров может объединить бортовые и кормовой огни в один фонарь на верхушке мачты.",
+        "num": 16,
+        "en_q": "BOTH INTERNATIONAL & INLAND. Which vessel may combine her sidelights and sternlight in one lantern on the fore and aft centerline?",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Какое судно может объединить бортовые огни и кормовой огонь в один фонарь на осевой линии?",
+        "en_options": ["A) A 16-meter sailing vessel", "B) A 25-meter power-driven vessel", "C) A 28-meter sailing vessel", "D) Any non-self-propelled vessel"],
+        "ru_options": ["A) Парусное судно длиной 16 м", "B) Моторное судно длиной 25 м", "C) Парусное судно длиной 28 м", "D) Любое несамоходное судно"],
+        "correct": 0,
+        "en_explain": "Rule 25(c): sailing vessels under 20 meters may combine sidelights and sternlight in one all-round lantern at the masthead.",
+        "ru_explain": "Правило 25(c): только парусные суда менее 20 метров могут использовать комбинированный трёхцветный фонарь на мачте.",
         "audio_q": "CQACAgIAAxkBAAICAWnZ1UgaOhZ15_5We4jKPIqaO18cAAJKoQACZJzJStrnlb6vfOPcOwQ",
         "audio_a": "CQACAgIAAxkBAAICA2nZ1VYLf4U2VKrrR9TpfF-5WyAkAAJLoQACZJzJSuR0vdY85fOJOwQ",
     },
     {
-        "en_q": "A vessel engaged in fishing, and at anchor, shall show:",
-        "ru_q": "Судно, занятое рыболовством и стоящее на якоре, должно показывать:",
-        "en_options": ["A) fishing lights only", "B) anchor light and fishing lights", "C) an anchor light", "D) no lights required"],
-        "ru_options": ["A) только огни рыболовства", "B) якорный огонь и огни рыболовства", "C) якорный огонь", "D) огни не требуются"],
-        "correct": 2,
-        "en_explain": "Rule 26: a vessel fishing at anchor shows anchor light only — fishing lights are not required at anchor.",
-        "ru_explain": "Правило 26: судно на якоре занятое рыболовством показывает только якорный огонь — огни рыболовства на якоре не требуются.",
+        "num": 17,
+        "en_q": "BOTH INTERNATIONAL & INLAND. A vessel engaged in fishing, and at anchor, shall show:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно, занятое рыболовством и стоящее на якоре, должно показывать:",
+        "en_options": ["A) An anchor light", "B) Sidelights and a sternlight", "C) Three lights in a vertical line, the highest and lowest being red, and the middle being white", "D) None of the above"],
+        "ru_options": ["A) Якорный огонь", "B) Бортовые и кормовой огни", "C) Три огня вертикально: верхний и нижний красные, средний белый", "D) Ничего из вышеперечисленного"],
+        "correct": 3,
+        "en_explain": "Rule 26: a fishing vessel at anchor shows fishing lights only (green over white), not anchor lights or sidelights.",
+        "ru_explain": "Правило 26: рыболовное судно на якоре показывает только огни рыболовства (зелёный над белым).",
         "audio_q": "CQACAgIAAxkBAAICBWnZ1Wm0-hpRuP_0u9ovCxyaAaEVAAJMoQACZJzJSttiwgxal7KcOwQ",
         "audio_a": "CQACAgIAAxkBAAICB2nZ1XenCEp4ExzB3U5qLOHnVwl6AAJNoQACZJzJSkK58fGTqFoUOwQ",
     },
     {
-        "en_q": "Which statement concerning maneuvering in restricted visibility is TRUE?",
-        "ru_q": "Какое утверждение о манёврировании в условиях ограниченной видимости ВЕРНО?",
-        "en_options": ["A) You may only use engine to maneuver", "B) A vessel which hears a fog signal forward of her beam shall stop her engines", "C) You must anchor immediately", "D) Speed must be reduced to bare steerageway"],
-        "ru_options": ["A) Можно использовать только двигатель", "B) Судно слышащее туманный сигнал впереди траверза должно застопорить машины", "C) Нужно немедленно встать на якорь", "D) Скорость должна быть снижена до минимальной управляемой"],
+        "num": 18,
+        "en_q": "BOTH INTERNATIONAL & INLAND. Which statement concerning maneuvering in restricted visibility is FALSE?",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Какое утверждение о манёврировании в условиях ограниченной видимости НЕВЕРНО?",
+        "en_options": ["A) A vessel which cannot avoid a close-quarters situation shall reduce her speed to bare steerageway.", "B) A vessel which hears a fog signal forward of her beam shall stop her engines.", "C) A vessel which hears a fog signal forward of the beam shall navigate with caution.", "D) If a vessel determines by radar that a close-quarters situation is developing, she shall take avoiding action in ample time."],
+        "ru_options": ["A) Судно, не способное избежать опасного сближения, должно снизить скорость до минимальной управляемой.", "B) Судно, услышавшее туманный сигнал по носу, должно застопорить машины.", "C) Судно, услышавшее туманный сигнал по носу, должно следовать с осторожностью.", "D) Если радар показывает опасное сближение — манёвр должен быть выполнен заблаговременно."],
         "correct": 1,
-        "en_explain": "Rule 19(e): vessel hearing fog signal forward of beam shall reduce speed to minimum, stop engines if necessary, navigate with extreme caution.",
-        "ru_explain": "Правило 19(e): судно слышащее туманный сигнал впереди траверза должно снизить скорость до минимума, застопорить машины при необходимости.",
+        "en_explain": "Rule 19(e): hearing a fog signal forward — reduce to minimum steerageway. Stopping engines is not required.",
+        "ru_explain": "Правило 19(e): услышав туманный сигнал по носу — снизить до минимальной управляемой скорости. Останавливать машины не обязательно.",
         "audio_q": "CQACAgIAAxkBAAICCWnZ1dCHqfaNtMPzxoEkJ6ANTZ3oAAJOoQACZJzJSpFBKr0EkGtqOwQ",
         "audio_a": "CQACAgIAAxkBAAICC2nZ1d-ku0SZS7_xHDs2_12TOh2KAAJQoQACZJzJSpjoeSl-90JqOwQ",
     },
     {
-        "en_q": "A sailing vessel of over 20 meters in length underway must show:",
-        "ru_q": "Парусное судно длиной более 20 метров на ходу должно показывать:",
-        "en_options": ["A) masthead light and sidelights only", "B) sidelights and sternlight only", "C) a sternlight", "D) all-round white light"],
-        "ru_options": ["A) топовый огонь и бортовые огни", "B) только бортовые огни и кормовой", "C) кормовой огонь", "D) круговой белый огонь"],
-        "correct": 2,
-        "en_explain": "Rule 25(a): sailing vessel underway shall exhibit sidelights and a sternlight. No masthead light.",
-        "ru_explain": "Правило 25(a): парусное судно на ходу показывает бортовые огни и кормовой огонь. Топовый огонь не требуется.",
+        "num": 19,
+        "en_q": "BOTH INTERNATIONAL & INLAND. A sailing vessel of over 20 meters in length underway must show:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Парусное судно длиной более 20 метров на ходу обязано показывать:",
+        "en_options": ["A) A red light over a green light at the masthead", "B) A white masthead light", "C) A combined lantern", "D) A sternlight"],
+        "ru_options": ["A) Красный над зелёным на мачте", "B) Белый топовый огонь", "C) Комбинированный фонарь", "D) Кормовой огонь"],
+        "correct": 3,
+        "en_explain": "Rule 25: a sailing vessel over 20m must show sidelights and a sternlight. Combined lantern only permitted under 20m.",
+        "ru_explain": "Правило 25: парусное судно более 20 м обязано показывать бортовые и кормовой огонь. Комбинированный фонарь — только до 20 м.",
         "audio_q": "CQACAgIAAxkBAAICDWnZ1esZ30n7WmAitxMAAd2CG2tTbQACUqEAAmScyUp4rRITr9GQnTsE",
         "audio_a": "CQACAgIAAxkBAAICD2nZ1flvD4nJFNZ1XdtW-qwDGUYWAAJToQACZJzJSkt3j1nRpTXcOwQ",
     },
     {
-        "en_q": "A power-driven vessel, when towing astern, shall show:",
-        "ru_q": "Моторное судно при буксировке на кормовом тросе должно показывать:",
-        "en_options": ["A) two masthead lights and sidelights only", "B) one all-round yellow light", "C) a towing light in a vertical line above the sternlight", "D) three masthead lights in a vertical line"],
-        "ru_options": ["A) два топовых огня и бортовые огни", "B) один круговой жёлтый огонь", "C) буксировочный огонь вертикально над кормовым огнём", "D) три топовых огня в вертикальной линии"],
-        "correct": 2,
-        "en_explain": "Rule 24(a): towing vessel shows masthead lights, sidelights, sternlight, and a towing light (yellow) in a vertical line above the sternlight.",
-        "ru_explain": "Правило 24(a): буксировщик показывает топовые огни, бортовые, кормовой и буксировочный (жёлтый) вертикально над кормовым.",
+        "num": 20,
+        "en_q": "BOTH INTERNATIONAL & INLAND. A power-driven vessel, when towing astern, shall show:",
+        "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Моторное судно при буксировке за кормой должно показывать:",
+        "en_options": ["A) Two towing lights in a vertical line", "B) A towing light in a vertical line above the sternlight", "C) Two towing lights in addition to the sternlight", "D) A small white light in lieu of the sternlight"],
+        "ru_options": ["A) Два буксировочных огня вертикально", "B) Буксировочный огонь над кормовым огнём вертикально", "C) Два буксировочных огня в дополнение к кормовому", "D) Малый белый огонь вместо кормового"],
+        "correct": 1,
+        "en_explain": "Rule 24(a): towing vessel shows a yellow towing light in a vertical line directly above the sternlight.",
+        "ru_explain": "Правило 24(a): буксировщик показывает жёлтый буксировочный огонь вертикально над кормовым огнём.",
         "audio_q": "CQACAgIAAxkBAAICEWnZ1gc4LYIg7xEp2JrMLZwnp__PAAJUoQACZJzJSqfS_AqhBWLZOwQ",
         "audio_a": "CQACAgIAAxkBAAICE2nZ1haJ1rdXxqbgSPLjCcacPx5RAAJWoQACZJzJSnrHgL4vPH3fOwQ",
     },
 ]
 
 user_state = {}
+
 
 def start(update: Update, context: CallbackContext):
     keyboard = [
@@ -280,34 +274,11 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
-def send_glossary(chat_id, context, index, message_to_delete=None):
-    term = GLOSSARY[index]
-    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
-    prev_index = (index - 1) % len(GLOSSARY)
-    keyboard = [
-        [InlineKeyboardButton("⬅️", callback_data=f"glo{prev_index}")],
-        [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
-    ]
-    if message_to_delete:
-        try:
-            message_to_delete.delete()
-        except:
-            pass
-    context.bot.send_audio(
-        chat_id=chat_id,
-        audio=term["file_id"],
-        caption=caption,
-        reply_markup=InlineKeyboardMarkup(keyboard)
-    )
 
-def send_question(query, state):
-    q = QUESTIONS[state["q_index"]]
+def build_question_keyboard(state):
     lang = state["lang"]
-    question = q["ru_q"] if lang == "ru" else q["en_q"]
-    options = q["ru_options"] if lang == "ru" else q["en_options"]
     lang_btn = "🇺🇸 English" if lang == "ru" else "🇷🇺 Русский"
-    options_text = "\n".join(options)
-    full_text = f"❓ Вопрос {state['q_index'] + 1} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
+    q = QUESTIONS[state["order"][state["pos"]]]
     buttons = [
         [
             InlineKeyboardButton("A", callback_data="answer_0"),
@@ -316,23 +287,92 @@ def send_question(query, state):
             InlineKeyboardButton("D", callback_data="answer_3"),
         ],
         [InlineKeyboardButton(lang_btn, callback_data="toggle_lang")],
+        [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
     ]
     if q.get("audio_q"):
-        buttons.append([InlineKeyboardButton("🔊 Слушать вопрос", callback_data="play_q")])
-    query.edit_message_text(full_text, reply_markup=InlineKeyboardMarkup(buttons))
+        buttons.insert(2, [InlineKeyboardButton("🔊 Слушать вопрос", callback_data="play_q")])
+    return InlineKeyboardMarkup(buttons)
+
+
+def send_question(query, state, context):
+    # Удаляем старые аудио сообщения
+    for msg_id in state.get("audio_msg_ids", []):
+        try:
+            context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
+        except Exception:
+            pass
+    state["audio_msg_ids"] = []
+
+    order = state["order"]
+    pos = state["pos"]
+    q = QUESTIONS[order[pos]]
+    lang = state["lang"]
+    question = q["ru_q"] if lang == "ru" else q["en_q"]
+    options = q["ru_options"] if lang == "ru" else q["en_options"]
+    options_text = "\n".join(options)
+    full_text = f"❓ Вопрос {q['num']} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
+    keyboard = build_question_keyboard(state)
+
+    if q.get("image"):
+        try:
+            query.message.delete()
+        except Exception:
+            pass
+        context.bot.send_photo(
+            chat_id=query.message.chat_id,
+            photo=q["image"],
+            caption=full_text,
+            reply_markup=keyboard
+        )
+    else:
+        try:
+            query.edit_message_text(full_text, reply_markup=keyboard)
+        except Exception:
+            try:
+                query.message.delete()
+            except Exception:
+                pass
+            context.bot.send_message(
+                chat_id=query.message.chat_id,
+                text=full_text,
+                reply_markup=keyboard
+            )
+
+
+def send_glossary(chat_id, context, index, message_to_delete=None):
+    term = GLOSSARY[index]
+    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
+    next_index = (index + 1) % len(GLOSSARY)
+    keyboard = [
+        [InlineKeyboardButton("Next", callback_data=f"glo{next_index}")],
+        [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
+    ]
+    if message_to_delete:
+        try:
+            message_to_delete.delete()
+        except Exception:
+            pass
+    context.bot.send_audio(
+        chat_id=chat_id,
+        audio=term["file_id"],
+        caption=caption,
+        reply_markup=InlineKeyboardMarkup(keyboard)
+    )
+
 
 def get_file_id(update: Update, context: CallbackContext):
     if update.message.photo:
         file_id = update.message.photo[-1].file_id
-        update.message.reply_text(f"📷 Фото file_id:\n{file_id}")
+        update.message.reply_text(f"🖼 Photo file_id:\n<code>{file_id}</code>", parse_mode="HTML")
     elif update.message.audio:
         file_id = update.message.audio.file_id
         name = update.message.audio.file_name
-        update.message.reply_text(f"{name}:\n{file_id}")
+        update.message.reply_text(f"🔊 {name}:\n<code>{file_id}</code>", parse_mode="HTML")
     elif update.message.document:
         file_id = update.message.document.file_id
         name = update.message.document.file_name
-        update.message.reply_text(f"{name}:\n{file_id}")
+        update.message.reply_text(f"📎 {name}:\n<code>{file_id}</code>", parse_mode="HTML")
+
 
 def button(update: Update, context: CallbackContext):
     query = update.callback_query
@@ -340,13 +380,21 @@ def button(update: Update, context: CallbackContext):
     user_id = query.from_user.id
 
     if user_id not in user_state:
-        user_state[user_id] = {"lang": "ru", "q_index": 0, "g_index": 0}
+        order = list(range(len(QUESTIONS)))
+        random.shuffle(order)
+        user_state[user_id] = {"lang": "ru", "pos": 0, "g_index": 0, "order": order, "audio_msg_ids": []}
 
     state = user_state[user_id]
+    if "audio_msg_ids" not in state:
+        state["audio_msg_ids"] = []
 
     if query.data == "menu_quiz":
-        state["q_index"] = 0
-        send_question(query, state)
+        order = list(range(len(QUESTIONS)))
+        random.shuffle(order)
+        state["order"] = order
+        state["pos"] = 0
+        state["audio_msg_ids"] = []
+        send_question(query, state, context)
 
     elif query.data == "menu_glossary":
         state["g_index"] = 0
@@ -358,6 +406,12 @@ def button(update: Update, context: CallbackContext):
         send_glossary(query.message.chat_id, context, index, query.message)
 
     elif query.data == "main_menu":
+        for msg_id in state.get("audio_msg_ids", []):
+            try:
+                context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
+            except Exception:
+                pass
+        state["audio_msg_ids"] = []
         keyboard = [
             [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
             [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
@@ -365,7 +419,7 @@ def button(update: Update, context: CallbackContext):
         ]
         try:
             query.message.delete()
-        except:
+        except Exception:
             pass
         context.bot.send_message(
             chat_id=query.message.chat_id,
@@ -375,60 +429,71 @@ def button(update: Update, context: CallbackContext):
 
     elif query.data == "toggle_lang":
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
-        send_question(query, state)
+        send_question(query, state, context)
 
     elif query.data == "play_q":
-        q = QUESTIONS[state["q_index"]]
+        q = QUESTIONS[state["order"][state["pos"]]]
         if q.get("audio_q"):
-            context.bot.send_audio(chat_id=query.message.chat_id, audio=q["audio_q"])
+            msg = context.bot.send_audio(chat_id=query.message.chat_id, audio=q["audio_q"])
+            state["audio_msg_ids"].append(msg.message_id)
+
+    elif query.data == "play_a":
+        q = QUESTIONS[state["order"][state["pos"]]]
+        if q.get("audio_a"):
+            msg = context.bot.send_audio(chat_id=query.message.chat_id, audio=q["audio_a"])
+            state["audio_msg_ids"].append(msg.message_id)
 
     elif query.data.startswith("answer_"):
         chosen = int(query.data.split("_")[1])
-        q = QUESTIONS[state["q_index"]]
+        q = QUESTIONS[state["order"][state["pos"]]]
         lang = state["lang"]
         explain = q["ru_explain"] if lang == "ru" else q["en_explain"]
         correct_letter = ["A", "B", "C", "D"][q["correct"]]
+        lang_btn = "🇺🇸 English" if lang == "ru" else "🇷🇺 Русский"
         if chosen == q["correct"]:
             result = f"✅ Правильно! / Correct!\n\n{explain}"
         else:
             chosen_letter = ["A", "B", "C", "D"][chosen]
             result = f"❌ Неверно! Вы выбрали {chosen_letter}, правильный ответ: {correct_letter}\n\n{explain}"
-        lang_btn = "🇺🇸 English" if lang == "ru" else "🇷🇺 Русский"
         buttons = [
             [InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")],
             [InlineKeyboardButton(lang_btn, callback_data="toggle_lang_answer")],
+            [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
         ]
         if q.get("audio_a"):
-            buttons.append([InlineKeyboardButton("🔊 Слушать ответ", callback_data="play_a")])
-        query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
+            buttons.insert(1, [InlineKeyboardButton("🔊 Слушать ответ", callback_data="play_a")])
+        if q.get("image"):
+            try:
+                query.edit_message_caption(caption=result, reply_markup=InlineKeyboardMarkup(buttons))
+            except Exception:
+                query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
+        else:
+            query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "toggle_lang_answer":
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
-        q = QUESTIONS[state["q_index"]]
+        q = QUESTIONS[state["order"][state["pos"]]]
         lang = state["lang"]
         explain = q["ru_explain"] if lang == "ru" else q["en_explain"]
         correct_letter = ["A", "B", "C", "D"][q["correct"]]
-        result = f"💡 Правильный ответ: {correct_letter}\n\n{explain}"
         lang_btn = "🇺🇸 English" if lang == "ru" else "🇷🇺 Русский"
+        result = f"💡 Правильный ответ: {correct_letter}\n\n{explain}"
         buttons = [
             [InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question")],
             [InlineKeyboardButton(lang_btn, callback_data="toggle_lang_answer")],
+            [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
         ]
         if q.get("audio_a"):
-            buttons.append([InlineKeyboardButton("🔊 Слушать ответ", callback_data="play_a")])
+            buttons.insert(1, [InlineKeyboardButton("🔊 Слушать ответ", callback_data="play_a")])
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
-    elif query.data == "play_a":
-        q = QUESTIONS[state["q_index"]]
-        if q.get("audio_a"):
-            context.bot.send_audio(chat_id=query.message.chat_id, audio=q["audio_a"])
-
     elif query.data == "next_question":
-        state["q_index"] = (state["q_index"] + 1) % len(QUESTIONS)
-        send_question(query, state)
+        state["pos"] = (state["pos"] + 1) % len(QUESTIONS)
+        send_question(query, state, context)
 
     elif query.data == "menu_drive":
         query.edit_message_text("🚗 Режим за рулём в разработке / Drive mode coming soon!")
+
 
 def main():
     updater = Updater(TOKEN)
@@ -438,6 +503,7 @@ def main():
     dp.add_handler(MessageHandler(Filters.photo | Filters.audio | Filters.document, get_file_id))
     updater.start_polling()
     updater.idle()
+
 
 if __name__ == "__main__":
     main()
