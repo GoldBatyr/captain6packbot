@@ -334,13 +334,22 @@ def send_question(query, state, context, clear_audio=True):
         )
 
 
-def send_glossary(chat_id, context, index):
+def send_glossary(chat_id, context, index, prev_msg_id=None):
+    # Удаляем предыдущее аудио
+    if prev_msg_id:
+        try:
+            context.bot.delete_message(chat_id=chat_id, message_id=prev_msg_id)
+        except Exception:
+            pass
+
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
+    next_index = index + 1
     buttons = []
-    if index > 0:
-        buttons.append([InlineKeyboardButton("Next", callback_data=f"glo{index - 1}")])
+    if next_index < len(GLOSSARY):
+        buttons.append([InlineKeyboardButton("Next", callback_data=f"glo{next_index}")])
     buttons.append([InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")])
+
     msg = context.bot.send_audio(
         chat_id=chat_id,
         audio=term["file_id"],
@@ -375,14 +384,14 @@ def button(update: Update, context: CallbackContext):
         random.shuffle(order)
         user_state[user_id] = {
             "lang": "ru", "pos": 0, "g_index": 0,
-            "order": order, "audio_msg_ids": [], "glo_msg_ids": []
+            "order": order, "audio_msg_ids": [], "glo_msg_id": None
         }
 
     state = user_state[user_id]
     if "audio_msg_ids" not in state:
         state["audio_msg_ids"] = []
-    if "glo_msg_ids" not in state:
-        state["glo_msg_ids"] = []
+    if "glo_msg_id" not in state:
+        state["glo_msg_id"] = None
 
     if query.data == "menu_quiz":
         order = list(range(len(QUESTIONS)))
@@ -393,29 +402,30 @@ def button(update: Update, context: CallbackContext):
         send_question(query, state, context, clear_audio=True)
 
     elif query.data == "menu_glossary":
-        last = len(GLOSSARY) - 1
-        state["g_index"] = last
-        state["glo_msg_ids"] = []
+        state["g_index"] = 0
         try:
             query.message.delete()
         except Exception:
             pass
-        msg_id = send_glossary(chat_id, context, last)
-        state["glo_msg_ids"].append(msg_id)
+        msg_id = send_glossary(chat_id, context, 0)
+        state["glo_msg_id"] = msg_id
 
     elif query.data.startswith("glo"):
         index = int(query.data[3:])
         state["g_index"] = index
-        msg_id = send_glossary(chat_id, context, index)
-        state["glo_msg_ids"].append(msg_id)
+        # Передаём предыдущий msg_id чтобы удалить его
+        msg_id = send_glossary(chat_id, context, index, prev_msg_id=state.get("glo_msg_id"))
+        state["glo_msg_id"] = msg_id
 
     elif query.data == "main_menu":
-        for msg_id in state.get("glo_msg_ids", []):
+        # Удаляем аудио глоссария если есть
+        if state.get("glo_msg_id"):
             try:
-                context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
+                context.bot.delete_message(chat_id=chat_id, message_id=state["glo_msg_id"])
             except Exception:
                 pass
-        state["glo_msg_ids"] = []
+            state["glo_msg_id"] = None
+        # Удаляем аудио квиза
         for msg_id in state.get("audio_msg_ids", []):
             try:
                 context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
