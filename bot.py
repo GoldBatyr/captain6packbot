@@ -17,7 +17,6 @@ GLOSSARY = [
     {"term": "Rules of the Road", "ru": "Правила плавания", "file_id": "CQACAgIAAxkBAAMaadW4TGT9JISiKDuFDptjii8tCGsAAneeAAIXELFKiytUC_no1GE7BA"},
 ]
 
-# Порядок показа: Port(0), Rules(6), Give-way(5), Stand-on(4), Overtaking(3), Underway(2), Starboard(1), Port(0)
 GLOSSARY_ORDER = [0, 6, 5, 4, 3, 2, 1, 0]
 
 QUESTIONS = [
@@ -288,6 +287,32 @@ def start(update: Update, context: CallbackContext):
     )
 
 
+def get_or_init_state(user_id):
+    if user_id not in user_state:
+        order = list(range(len(QUESTIONS)))
+        random.shuffle(order)
+        user_state[user_id] = {
+            "lang": "ru",
+            "pos": 0,
+            "glo_pos": 0,
+            "order": order,
+            "audio_msg_ids": [],
+            "glo_msg_id": None,
+        }
+    state = user_state[user_id]
+    if "audio_msg_ids" not in state:
+        state["audio_msg_ids"] = []
+    if "glo_msg_id" not in state:
+        state["glo_msg_id"] = None
+    if "order" not in state:
+        order = list(range(len(QUESTIONS)))
+        random.shuffle(order)
+        state["order"] = order
+    if "pos" not in state:
+        state["pos"] = 0
+    return state
+
+
 def build_question_keyboard(state):
     lang = state["lang"]
     lang_btn = "🇺🇸 English" if lang == "ru" else "🇷🇺 Русский"
@@ -352,7 +377,6 @@ def send_glossary(chat_id, context, glo_pos, prev_msg_id=None):
     if next_pos < len(GLOSSARY_ORDER):
         buttons.append([InlineKeyboardButton("Next", callback_data=f"glopos{next_pos}")])
     else:
-        # Последнее слово — кнопка Next ведёт в меню
         buttons.append([InlineKeyboardButton("Next", callback_data="glo_to_menu")])
     buttons.append([InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")])
 
@@ -384,20 +408,7 @@ def button(update: Update, context: CallbackContext):
     query.answer()
     user_id = query.from_user.id
     chat_id = query.message.chat_id
-
-    if user_id not in user_state:
-        order = list(range(len(QUESTIONS)))
-        random.shuffle(order)
-        user_state[user_id] = {
-            "lang": "ru", "pos": 0, "glo_pos": 0,
-            "order": order, "audio_msg_ids": [], "glo_msg_id": None
-        }
-
-    state = user_state[user_id]
-    if "audio_msg_ids" not in state:
-        state["audio_msg_ids"] = []
-    if "glo_msg_id" not in state:
-        state["glo_msg_id"] = None
+    state = get_or_init_state(user_id)
 
     if query.data == "menu_quiz":
         order = list(range(len(QUESTIONS)))
@@ -424,7 +435,6 @@ def button(update: Update, context: CallbackContext):
         state["glo_msg_id"] = msg_id
 
     elif query.data == "glo_to_menu":
-        # Удаляем последнее аудио и показываем меню
         if state.get("glo_msg_id"):
             try:
                 context.bot.delete_message(chat_id=chat_id, message_id=state["glo_msg_id"])
