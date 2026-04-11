@@ -337,16 +337,15 @@ def send_question(query, state, context, clear_audio=True):
 def send_glossary(chat_id, context, index):
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
-    next_index = (index + 1) % len(GLOSSARY)
-    keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Next", callback_data=f"glo{next_index}")],
-        [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
-    ])
+    buttons = []
+    if index > 0:
+        buttons.append([InlineKeyboardButton("Next", callback_data=f"glo{index - 1}")])
+    buttons.append([InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")])
     msg = context.bot.send_audio(
         chat_id=chat_id,
         audio=term["file_id"],
         caption=caption,
-        reply_markup=keyboard
+        reply_markup=InlineKeyboardMarkup(buttons)
     )
     return msg.message_id
 
@@ -394,44 +393,29 @@ def button(update: Update, context: CallbackContext):
         send_question(query, state, context, clear_audio=True)
 
     elif query.data == "menu_glossary":
-        state["g_index"] = 0
+        last = len(GLOSSARY) - 1
+        state["g_index"] = last
         state["glo_msg_ids"] = []
         try:
             query.message.delete()
         except Exception:
             pass
-        msg_id = send_glossary(chat_id, context, 0)
+        msg_id = send_glossary(chat_id, context, last)
         state["glo_msg_ids"].append(msg_id)
 
     elif query.data.startswith("glo"):
         index = int(query.data[3:])
-        # Дошли до конца — показываем меню и удаляем все аудио глоссария
-        if index == 0 and state.get("g_index") == len(GLOSSARY) - 1:
-            for msg_id in state.get("glo_msg_ids", []):
-                try:
-                    context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
-                except Exception:
-                    pass
-            state["glo_msg_ids"] = []
-            try:
-                query.message.delete()
-            except Exception:
-                pass
-            show_main_menu(chat_id, context)
-        else:
-            state["g_index"] = index
-            msg_id = send_glossary(chat_id, context, index)
-            state["glo_msg_ids"].append(msg_id)
+        state["g_index"] = index
+        msg_id = send_glossary(chat_id, context, index)
+        state["glo_msg_ids"].append(msg_id)
 
     elif query.data == "main_menu":
-        # Удаляем все аудио глоссария
         for msg_id in state.get("glo_msg_ids", []):
             try:
                 context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
             except Exception:
                 pass
         state["glo_msg_ids"] = []
-        # Удаляем аудио квиза
         for msg_id in state.get("audio_msg_ids", []):
             try:
                 context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
