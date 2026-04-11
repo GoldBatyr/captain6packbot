@@ -17,6 +17,9 @@ GLOSSARY = [
     {"term": "Rules of the Road", "ru": "Правила плавания", "file_id": "CQACAgIAAxkBAAMaadW4TGT9JISiKDuFDptjii8tCGsAAneeAAIXELFKiytUC_no1GE7BA"},
 ]
 
+# Порядок показа глоссария: 0, 6, 5, 4, 3, 2, 1, 0, меню
+GLOSSARY_ORDER = [0, 6, 5, 4, 3, 2, 1]
+
 QUESTIONS = [
     {
         "num": 1,
@@ -157,8 +160,8 @@ QUESTIONS = [
         "en_options": ["A) Trolling", "B) Getting ready to receive aircraft", "C) Aground", "D) In distress"],
         "ru_options": ["A) Занято троллингом", "B) Готовится принять воздушное судно", "C) На мели", "D) Терпит бедствие"],
         "correct": 3,
-        "en_explain": "Flag 'L' (LIMA) + red ball = distress signal. This combination indicates a vessel in distress and needing assistance.",
-        "ru_explain": "Флаг 'L' (LIMA) + красный шар = сигнал бедствия. Судно терпит бедствие и нуждается в помощи.",
+        "en_explain": "Flag 'L' (LIMA) + red ball = distress signal.",
+        "ru_explain": "Флаг 'L' (LIMA) + красный шар = сигнал бедствия.",
         "audio_q": "CQACAgIAAxkBAAIB8WnZ1J4b1CMOe3d6S81v_kDVtGpPAAI4oQACZJzJStuhTSixWpdNOwQ",
         "audio_a": "CQACAgIAAxkBAAIB82nZ1LYAAeT-StKi1t3w9jFdXpbnbQACO6EAAmScyUpT9w8TPXfsyjsE",
     },
@@ -334,7 +337,7 @@ def send_question(query, state, context, clear_audio=True):
         )
 
 
-def send_glossary(chat_id, context, index, prev_msg_id=None):
+def send_glossary(chat_id, context, glo_pos, prev_msg_id=None):
     # Удаляем предыдущее аудио
     if prev_msg_id:
         try:
@@ -342,12 +345,13 @@ def send_glossary(chat_id, context, index, prev_msg_id=None):
         except Exception:
             pass
 
-    term = GLOSSARY[index]
-    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
-    next_index = index + 1
+    term_index = GLOSSARY_ORDER[glo_pos]
+    term = GLOSSARY[term_index]
+    caption = f"📖 {glo_pos + 1} из {len(GLOSSARY_ORDER)}\n\n🇺🇸 {term['term']}\n🇷🇺 {term['ru']}"
+    next_pos = glo_pos + 1
     buttons = []
-    if next_index < len(GLOSSARY):
-        buttons.append([InlineKeyboardButton("Next", callback_data=f"glo{next_index}")])
+    if next_pos < len(GLOSSARY_ORDER):
+        buttons.append([InlineKeyboardButton("Next", callback_data=f"glopos{next_pos}")])
     buttons.append([InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")])
 
     msg = context.bot.send_audio(
@@ -383,7 +387,7 @@ def button(update: Update, context: CallbackContext):
         order = list(range(len(QUESTIONS)))
         random.shuffle(order)
         user_state[user_id] = {
-            "lang": "ru", "pos": 0, "g_index": 0,
+            "lang": "ru", "pos": 0, "glo_pos": 0,
             "order": order, "audio_msg_ids": [], "glo_msg_id": None
         }
 
@@ -402,7 +406,7 @@ def button(update: Update, context: CallbackContext):
         send_question(query, state, context, clear_audio=True)
 
     elif query.data == "menu_glossary":
-        state["g_index"] = 0
+        state["glo_pos"] = 0
         try:
             query.message.delete()
         except Exception:
@@ -410,22 +414,19 @@ def button(update: Update, context: CallbackContext):
         msg_id = send_glossary(chat_id, context, 0)
         state["glo_msg_id"] = msg_id
 
-    elif query.data.startswith("glo"):
-        index = int(query.data[3:])
-        state["g_index"] = index
-        # Передаём предыдущий msg_id чтобы удалить его
-        msg_id = send_glossary(chat_id, context, index, prev_msg_id=state.get("glo_msg_id"))
+    elif query.data.startswith("glopos"):
+        glo_pos = int(query.data[6:])
+        state["glo_pos"] = glo_pos
+        msg_id = send_glossary(chat_id, context, glo_pos, prev_msg_id=state.get("glo_msg_id"))
         state["glo_msg_id"] = msg_id
 
     elif query.data == "main_menu":
-        # Удаляем аудио глоссария если есть
         if state.get("glo_msg_id"):
             try:
                 context.bot.delete_message(chat_id=chat_id, message_id=state["glo_msg_id"])
             except Exception:
                 pass
             state["glo_msg_id"] = None
-        # Удаляем аудио квиза
         for msg_id in state.get("audio_msg_ids", []):
             try:
                 context.bot.delete_message(chat_id=chat_id, message_id=msg_id)
