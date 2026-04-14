@@ -286,16 +286,23 @@ def send_glossary(chat_id, context, index, old_msg_id=None):
         except Exception:
             pass
 
+    if index >= len(GLOSSARY):
+        context.bot.send_message(
+            chat_id=chat_id,
+            text=MAIN_MENU_TEXT,
+            reply_markup=get_main_menu_keyboard()
+        )
+        return
+
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}"
-    prev_index = (index - 1) % len(GLOSSARY)
 
     context.bot.send_audio(
         chat_id=chat_id,
         audio=term["file_id"],
         caption=caption,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Next", callback_data=f"glo_{prev_index}")],
+            [InlineKeyboardButton("Next", callback_data=f"glo_{index + 1}")],
             [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu_from_glo")],
         ])
     )
@@ -503,25 +510,10 @@ def button(update: Update, context: CallbackContext):
     # ── Глоссарий ──
     elif query.data == "menu_glossary":
         state["g_index"] = 0
-        # Начинаем с последнего слова — листаем назад
-        last = len(GLOSSARY) - 1
-        state["g_index"] = last
-        send_glossary(query.message.chat_id, context, last, old_msg_id=query.message.message_id)
+        send_glossary(query.message.chat_id, context, 0, old_msg_id=query.message.message_id)
 
     elif query.data.startswith("glo_"):
         index = int(query.data[4:])
-        # Если дошли до -1 — показываем меню
-        if index < 0:
-            try:
-                query.message.delete()
-            except Exception:
-                pass
-            context.bot.send_message(
-                chat_id=query.message.chat_id,
-                text=MAIN_MENU_TEXT,
-                reply_markup=get_main_menu_keyboard()
-            )
-            return
         state["g_index"] = index
         send_glossary(query.message.chat_id, context, index, old_msg_id=query.message.message_id)
 
