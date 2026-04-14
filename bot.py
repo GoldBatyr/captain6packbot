@@ -279,73 +279,26 @@ def start(update: Update, context: CallbackContext):
 
 # ── ГЛОССАРИЙ ──
 
-def glossary_keyboard(index):
-    nav_row = []
-    if index > 0:
-        nav_row.append(InlineKeyboardButton("Prev", callback_data=f"glo_{index - 1}"))
-    nav_row.append(InlineKeyboardButton("Next", callback_data=f"glo_{index + 1}"))
-    return InlineKeyboardMarkup([
-        nav_row,
-        [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu_from_glo")],
-    ])
-
-
-def send_glossary_first(chat_id, context, old_msg_id=None):
-    """Отправляет первую карточку, удаляя предыдущее сообщение (текстовое меню)."""
+def send_glossary(chat_id, context, index, old_msg_id=None):
     if old_msg_id:
         try:
             context.bot.delete_message(chat_id=chat_id, message_id=old_msg_id)
         except Exception:
             pass
-    term = GLOSSARY[0]
-    caption = f"📖 1 из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}"
+
+    term = GLOSSARY[index]
+    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}"
+    prev_index = (index - 1) % len(GLOSSARY)
+
     context.bot.send_audio(
         chat_id=chat_id,
         audio=term["file_id"],
         caption=caption,
-        reply_markup=glossary_keyboard(0)
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton("Next", callback_data=f"glo_{prev_index}")],
+            [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu_from_glo")],
+        ])
     )
-
-
-def update_glossary(query, context, index):
-    """Листает глоссарий — меняет аудио через edit_message_media."""
-    from telegram import InputMediaAudio
-
-    # После последнего слова — удаляем аудио и показываем меню
-    if index >= len(GLOSSARY):
-        try:
-            query.message.delete()
-        except Exception:
-            pass
-        context.bot.send_message(
-            chat_id=query.message.chat_id,
-            text=MAIN_MENU_TEXT,
-            reply_markup=get_main_menu_keyboard()
-        )
-        return
-
-    term = GLOSSARY[index]
-    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}"
-
-    try:
-        context.bot.edit_message_media(
-            chat_id=query.message.chat_id,
-            message_id=query.message.message_id,
-            media=InputMediaAudio(media=term["file_id"], caption=caption),
-            reply_markup=glossary_keyboard(index)
-        )
-    except Exception:
-        # Если edit не сработал — удаляем и отправляем заново
-        try:
-            query.message.delete()
-        except Exception:
-            pass
-        context.bot.send_audio(
-            chat_id=query.message.chat_id,
-            audio=term["file_id"],
-            caption=caption,
-            reply_markup=glossary_keyboard(index)
-        )
 
 
 # ── ТЕСТ ──
@@ -550,12 +503,27 @@ def button(update: Update, context: CallbackContext):
     # ── Глоссарий ──
     elif query.data == "menu_glossary":
         state["g_index"] = 0
-        send_glossary_first(query.message.chat_id, context, old_msg_id=query.message.message_id)
+        # Начинаем с последнего слова — листаем назад
+        last = len(GLOSSARY) - 1
+        state["g_index"] = last
+        send_glossary(query.message.chat_id, context, last, old_msg_id=query.message.message_id)
 
     elif query.data.startswith("glo_"):
         index = int(query.data[4:])
+        # Если дошли до -1 — показываем меню
+        if index < 0:
+            try:
+                query.message.delete()
+            except Exception:
+                pass
+            context.bot.send_message(
+                chat_id=query.message.chat_id,
+                text=MAIN_MENU_TEXT,
+                reply_markup=get_main_menu_keyboard()
+            )
+            return
         state["g_index"] = index
-        update_glossary(query, context, index)
+        send_glossary(query.message.chat_id, context, index, old_msg_id=query.message.message_id)
 
     # ── Аудирование ──
     elif query.data == "menu_drive":
