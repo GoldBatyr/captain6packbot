@@ -278,10 +278,15 @@ def start(update: Update, context: CallbackContext):
 
 
 # ── ГЛОССАРИЙ ──
-# При нажатии Next старое аудио удаляется,
-# просто отправляется новое. При нажатии Меню — удаляется текущее.
 
-def send_glossary(chat_id, context, index):
+def send_glossary(chat_id, context, index, old_msg_id=None):
+    # Сначала удаляем старое аудио-сообщение по message_id
+    if old_msg_id:
+        try:
+            context.bot.delete_message(chat_id=chat_id, message_id=old_msg_id)
+        except Exception:
+            pass
+
     # После последнего слова — главное меню
     if index >= len(GLOSSARY):
         context.bot.send_message(
@@ -515,16 +520,12 @@ def button(update: Update, context: CallbackContext):
     # ── Глоссарий ──
     elif query.data == "menu_glossary":
         state["g_index"] = 0
-        try:
-            query.message.delete()
-        except Exception:
-            pass
-        send_glossary(query.message.chat_id, context, 0)
+        send_glossary(query.message.chat_id, context, 0, old_msg_id=query.message.message_id)
 
     elif query.data.startswith("glo_"):
         index = int(query.data[4:])
         state["g_index"] = index
-        send_glossary(query.message.chat_id, context, index)
+        send_glossary(query.message.chat_id, context, index, old_msg_id=query.message.message_id)
 
     # ── Аудирование ──
     elif query.data == "menu_drive":
