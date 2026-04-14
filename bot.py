@@ -44,6 +44,8 @@ GLOSSARY = [
     },
 ]
 
+# audio_question / audio_answer — file_id аудио на английском.
+# Когда добавите аудио — вставьте file_id вместо None.
 QUESTIONS = [
     {
         "en_q": "INLAND ONLY. Your vessel is meeting another vessel head to head. To comply with the steering and sailing rules, you should:",
@@ -52,7 +54,9 @@ QUESTIONS = [
         "ru_options": ["A) Подать сигнал опасности", "B) Один продолжительный и два коротких", "C) Обменяться двумя короткими", "D) Обменяться одним коротким"],
         "correct": 3,
         "en_explain": "Inland Rule 34: vessels meeting head-on exchange ONE short blast, each vessel turns right and passes port-to-port.",
-        "ru_explain": "Правило 34: суда обмениваются ОДНИМ коротким сигналом, каждый берёт вправо и расходятся левыми бортами."
+        "ru_explain": "Правило 34: суда обмениваются ОДНИМ коротким сигналом, каждый берёт вправо и расходятся левыми бортами.",
+        "audio_question": None,
+        "audio_answer": None,
     },
     {
         "en_q": "INLAND ONLY. What is the whistle signal for a power-driven vessel leaving a dock?",
@@ -61,7 +65,9 @@ QUESTIONS = [
         "ru_options": ["A) Один короткий", "B) Три коротких", "C) Один продолжительный", "D) Три продолжительных"],
         "correct": 2,
         "en_explain": "Inland Rules: a vessel leaving a dock sounds ONE prolonged blast (4-6 sec) to warn nearby vessels.",
-        "ru_explain": "Внутренние воды: судно, отходящее от причала, подаёт ОДИН продолжительный сигнал (4-6 сек)."
+        "ru_explain": "Внутренние воды: судно, отходящее от причала, подаёт ОДИН продолжительный сигнал (4-6 сек).",
+        "audio_question": None,
+        "audio_answer": None,
     },
     {
         "en_q": "INLAND ONLY. You are overtaking a vessel in a narrow channel and wish to overtake on her PORT side. You sound:",
@@ -70,7 +76,9 @@ QUESTIONS = [
         "ru_options": ["A) Один короткий", "B) Два коротких", "C) Два продолжительных + один короткий", "D) Два продолжительных + два коротких"],
         "correct": 1,
         "en_explain": "Inland Rule 34: overtaking on PORT side = TWO short blasts. Overtaken vessel responds with same signal to confirm.",
-        "ru_explain": "Правило 34: обгон с левого (PORT) борта = ДВА коротких сигнала. Обгоняемое судно отвечает тем же сигналом."
+        "ru_explain": "Правило 34: обгон с левого (PORT) борта = ДВА коротких сигнала. Обгоняемое судно отвечает тем же сигналом.",
+        "audio_question": None,
+        "audio_answer": None,
     },
     {
         "en_q": "INLAND ONLY. You agreed by radio to pass ASTERN of a vessel on your starboard. You MUST:",
@@ -79,7 +87,9 @@ QUESTIONS = [
         "ru_options": ["A) Один короткий сигнал", "B) Два коротких сигнала", "C) Изменить курс вправо", "D) Ничего из вышеперечисленного"],
         "correct": 3,
         "en_explain": "Inland Rule 34(h): agreement by radiotelephone is sufficient. No additional whistle signals required.",
-        "ru_explain": "Правило 34(h): соглашение по радио достаточно. Дополнительных звуковых сигналов не требуется."
+        "ru_explain": "Правило 34(h): соглашение по радио достаточно. Дополнительных звуковых сигналов не требуется.",
+        "audio_question": None,
+        "audio_answer": None,
     },
     {
         "en_q": "INLAND ONLY. You are overtaking a vessel in a narrow channel and wish to pass on her STARBOARD side. You may:",
@@ -88,7 +98,9 @@ QUESTIONS = [
         "ru_options": ["A) Связаться по радио для согласования", "B) Обогнать без сигналов", "C) Подать пять коротких", "D) Всё вышеперечисленное"],
         "correct": 0,
         "en_explain": "Inland Rules: overtaking on STARBOARD side is non-standard. Only permitted after radio agreement.",
-        "ru_explain": "Обгон с правого борта — нестандартный манёвр. Разрешён только после согласования по радио."
+        "ru_explain": "Обгон с правого борта — нестандартный манёвр. Разрешён только после согласования по радио.",
+        "audio_question": None,
+        "audio_answer": None,
     },
     {
         "en_q": "Another vessel is crossing your course starboard to port and you doubt her intentions. You:",
@@ -97,7 +109,9 @@ QUESTIONS = [
         "ru_options": ["A) Обязаны подать сигнал опасности", "B) Обязаны дать задний ход", "C) Можете подать сигнал опасности", "D) Подать один короткий"],
         "correct": 0,
         "en_explain": "Rule 34(d): in doubt about another vessel's intentions — MUST sound danger signal (5+ short blasts). Mandatory.",
-        "ru_explain": "Правило 34(d): при сомнении в намерениях — ОБЯЗАНЫ подать сигнал опасности (5+ коротких). Обязательно."
+        "ru_explain": "Правило 34(d): при сомнении в намерениях — ОБЯЗАНЫ подать сигнал опасности (5+ коротких). Обязательно.",
+        "audio_question": None,
+        "audio_answer": None,
     },
     {
         "en_q": "INLAND ONLY. Maneuvering signals on inland waters are sounded by:",
@@ -106,7 +120,9 @@ QUESTIONS = [
         "ru_options": ["A) Всеми судами при встрече/пересечении/обгоне в видимости", "B) Всеми судами в пределах полумили вне видимости", "C) Моторными: при обгоне в видимости / пересечении в полумиле и в видимости", "D) Моторными при пересечении в полумиле вне видимости"],
         "correct": 2,
         "en_explain": "Inland Rules: maneuvering signals for power-driven vessels only, in sight of each other. Crossing: also within half a mile.",
-        "ru_explain": "Манёвренные сигналы — только для моторных судов в пределах видимости. Пересечение курсов — дополнительно в пределах полумили."
+        "ru_explain": "Манёвренные сигналы — только для моторных судов в пределах видимости. Пересечение курсов — дополнительно в пределах полумили.",
+        "audio_question": None,
+        "audio_answer": None,
     },
     {
         "en_q": "INLAND ONLY. A light used to signal passing intentions must be:",
@@ -115,7 +131,9 @@ QUESTIONS = [
         "ru_options": ["A) Круговой белый ИЛИ жёлтый", "B) Только круговой жёлтый", "C) Только круговой белый", "D) Только белый 225°"],
         "correct": 0,
         "en_explain": "Inland Rule 34(b): all-round white OR yellow light permitted for signaling passing intentions.",
-        "ru_explain": "Правило 34(b): разрешён круговой белый ИЛИ жёлтый огонь для сигнализации намерений."
+        "ru_explain": "Правило 34(b): разрешён круговой белый ИЛИ жёлтый огонь для сигнализации намерений.",
+        "audio_question": None,
+        "audio_answer": None,
     },
     {
         "en_q": "INLAND ONLY. What MAY indicate a partly submerged object being towed?",
@@ -124,7 +142,9 @@ QUESTIONS = [
         "ru_options": ["A) Чёрный конус вершиной вверх", "B) Два круговых жёлтых огня на каждом конце", "C) Прожектор с буксировщика на объект", "D) Всё вышеперечисленное"],
         "correct": 2,
         "en_explain": "Inland Rules: searchlight from towing vessel aimed at the tow is permitted when lights cannot be mounted on the object.",
-        "ru_explain": "Прожектор с буксировщика допускается когда огни невозможно установить на объекте."
+        "ru_explain": "Прожектор с буксировщика допускается когда огни невозможно установить на объекте.",
+        "audio_question": None,
+        "audio_answer": None,
     },
     {
         "en_q": "BOTH INT & INLAND. Underway in fog, you hear ONE prolonged blast. This indicates:",
@@ -133,7 +153,9 @@ QUESTIONS = [
         "ru_options": ["A) Парусное судно на ходу", "B) Судно с буксиром", "C) Моторное судно, идущее вперёд", "D) Буксируемое судно"],
         "correct": 2,
         "en_explain": "Rule 35: ONE prolonged blast every 2 min = power-driven vessel making way. Towing: one prolonged + two short.",
-        "ru_explain": "Правило 35: ОДИН продолжительный каждые 2 мин = моторное судно идёт вперёд. Буксировщик: один продолжительный + два коротких."
+        "ru_explain": "Правило 35: ОДИН продолжительный каждые 2 мин = моторное судно идёт вперёд. Буксировщик: один продолжительный + два коротких.",
+        "audio_question": None,
+        "audio_answer": None,
     },
 ]
 
@@ -141,14 +163,14 @@ user_state = {}
 
 MAIN_MENU_TEXT = "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:"
 
+
 def get_main_menu_keyboard():
-    # Задача 2: флаги заменены на аббревиатуры EN/RU
-    # Задача 3: "За рулём" → "Аудирование" с иконками
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
         [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
-        [InlineKeyboardButton("🔊👂 Аудирование / Listening 🚗 🏋️", callback_data="menu_drive")],
+        [InlineKeyboardButton("🔊👂 Аудирование / Listening 🏋️", callback_data="menu_drive")],
     ])
+
 
 def start(update: Update, context: CallbackContext):
     update.message.reply_text(
@@ -156,22 +178,23 @@ def start(update: Update, context: CallbackContext):
         reply_markup=get_main_menu_keyboard()
     )
 
+
 # ──────────────────────────────────────────────
 # ГЛОССАРИЙ
-# Задача 1: при листании старое аудио-сообщение удаляется,
-#            при достижении конца — показывается главное меню.
+# Ключевое исправление: листание через send_audio (не edit_message),
+# старое сообщение удаляется перед отправкой нового.
+# Кнопка «Next» без стрелки.
 # ──────────────────────────────────────────────
 
 def send_glossary(chat_id, context, index, message_to_delete=None):
-    """Отправляет аудио глоссария. Если дошли до конца — главное меню."""
-    # Удаляем предыдущее аудио-сообщение
+    """Удаляет предыдущее аудио и отправляет следующее."""
     if message_to_delete:
         try:
             message_to_delete.delete()
         except Exception:
             pass
 
-    # Конец списка → главное меню
+    # После последнего слова — главное меню
     if index >= len(GLOSSARY):
         context.bot.send_message(
             chat_id=chat_id,
@@ -181,39 +204,46 @@ def send_glossary(chat_id, context, index, message_to_delete=None):
         return
 
     term = GLOSSARY[index]
-    # Задача 2: флаги → аббревиатуры EN / RU
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}"
 
-    # Кнопки: ← предыдущий  |  → следующий
-    buttons = []
     nav_row = []
     if index > 0:
-        nav_row.append(InlineKeyboardButton("⬅️", callback_data=f"glo{index - 1}"))
-    nav_row.append(InlineKeyboardButton("➡️", callback_data=f"glo{index + 1}"))
-    buttons.append(nav_row)
-    buttons.append([InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu_audio")])
+        nav_row.append(InlineKeyboardButton("Prev", callback_data=f"glo_{index - 1}"))
+    nav_row.append(InlineKeyboardButton("Next", callback_data=f"glo_{index + 1}"))
+
+    keyboard = [
+        nav_row,
+        [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu_audio")],
+    ]
 
     context.bot.send_audio(
         chat_id=chat_id,
         audio=term["file_id"],
         caption=caption,
-        reply_markup=InlineKeyboardMarkup(buttons)
+        reply_markup=InlineKeyboardMarkup(keyboard)
     )
+
 
 # ──────────────────────────────────────────────
 # ТЕСТ
-# Задача 4: кнопки "Слушать вопрос на английском" / "Слушать ответ на английском"
-# Задача 5: после ответа показывать текст ответа без ABCD-префикса
-# Задача 6: кнопка "← Вернуться к вопросу" рядом с "→ Следующий"
 # ──────────────────────────────────────────────
+
+def strip_letter(opt_text):
+    """Убирает префикс 'A) ' из текста варианта ответа."""
+    if len(opt_text) >= 3 and opt_text[1] == ")":
+        return opt_text[3:].strip()
+    return opt_text.strip()
+
 
 def send_question(query, state):
     q = QUESTIONS[state["q_index"]]
     lang = state["lang"]
     question = q["ru_q"] if lang == "ru" else q["en_q"]
     options = q["ru_options"] if lang == "ru" else q["en_options"]
-    # Задача 2: флаги → аббревиатуры
-    lang_btn = "EN" if lang == "ru" else "RU"
+
+    # Исправление 2: понятная надпись на кнопке переключения языка
+    lang_btn = "🇬🇧 Изменить вопрос на EN" if lang == "ru" else "🇷🇺 Изменить вопрос на RU"
+
     options_text = "\n".join(options)
     full_text = f"❓ Вопрос {state['q_index'] + 1} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
     keyboard = [
@@ -224,20 +254,17 @@ def send_question(query, state):
             InlineKeyboardButton("D", callback_data="answer_3"),
         ],
         [InlineKeyboardButton(lang_btn, callback_data="toggle_lang")],
-        # Задача 4: кнопка "Слушать вопрос на английском"
         [InlineKeyboardButton("🔊 Слушать вопрос на английском", callback_data="listen_question")],
     ]
     query.edit_message_text(full_text, reply_markup=InlineKeyboardMarkup(keyboard))
 
+
 def get_file_id(update: Update, context: CallbackContext):
     if update.message.audio:
-        file_id = update.message.audio.file_id
-        name = update.message.audio.file_name
-        update.message.reply_text(f"{name}:\n{file_id}")
+        update.message.reply_text(f"{update.message.audio.file_name}:\n{update.message.audio.file_id}")
     elif update.message.document:
-        file_id = update.message.document.file_id
-        name = update.message.document.file_name
-        update.message.reply_text(f"{name}:\n{file_id}")
+        update.message.reply_text(f"{update.message.document.file_name}:\n{update.message.document.file_id}")
+
 
 def button(update: Update, context: CallbackContext):
     query = update.callback_query
@@ -251,28 +278,15 @@ def button(update: Update, context: CallbackContext):
 
     # ── Главное меню ──
     if query.data in ("main_menu", "main_menu_audio"):
-        # При возврате из аудио (glossary) сообщение уже удалено внутри send_glossary,
-        # но при нажатии кнопки «Меню» на аудио-сообщении нужно его удалить вручную
-        if query.data == "main_menu_audio":
-            try:
-                query.message.delete()
-            except Exception:
-                pass
-            context.bot.send_message(
-                chat_id=query.message.chat_id,
-                text=MAIN_MENU_TEXT,
-                reply_markup=get_main_menu_keyboard()
-            )
-        else:
-            try:
-                query.message.delete()
-            except Exception:
-                pass
-            context.bot.send_message(
-                chat_id=query.message.chat_id,
-                text=MAIN_MENU_TEXT,
-                reply_markup=get_main_menu_keyboard()
-            )
+        try:
+            query.message.delete()
+        except Exception:
+            pass
+        context.bot.send_message(
+            chat_id=query.message.chat_id,
+            text=MAIN_MENU_TEXT,
+            reply_markup=get_main_menu_keyboard()
+        )
         return
 
     # ── Тест ──
@@ -284,29 +298,40 @@ def button(update: Update, context: CallbackContext):
         state["lang"] = "en" if state["lang"] == "ru" else "ru"
         send_question(query, state)
 
+    # Исправление 1: отправляем аудио вопроса отдельным сообщением
     elif query.data == "listen_question":
-        # Заглушка: уведомление (аудио вопросов нет в текущем коде)
-        query.answer("🔊 Аудио для этого вопроса ещё не добавлено", show_alert=True)
+        q = QUESTIONS[state["q_index"]]
+        audio_fid = q.get("audio_question")
+        if audio_fid:
+            context.bot.send_audio(
+                chat_id=query.message.chat_id,
+                audio=audio_fid,
+                caption=f"🔊 Вопрос на английском:\n{q['en_q']}"
+            )
+        else:
+            query.answer("🔊 Аудио для этого вопроса ещё не добавлено", show_alert=True)
 
+    # Исправление 1: отправляем аудио ответа отдельным сообщением
     elif query.data == "listen_answer":
-        # Задача 4: кнопка "Слушать ответ на английском" — заглушка
-        query.answer("🔊 Аудио для этого ответа ещё не добавлено", show_alert=True)
+        q = QUESTIONS[state["q_index"]]
+        audio_fid = q.get("audio_answer")
+        if audio_fid:
+            answer_text = strip_letter(q["en_options"][q["correct"]])
+            context.bot.send_audio(
+                chat_id=query.message.chat_id,
+                audio=audio_fid,
+                caption=f"🔊 Ответ на английском:\n{answer_text}"
+            )
+        else:
+            query.answer("🔊 Аудио для этого ответа ещё не добавлено", show_alert=True)
 
     elif query.data.startswith("answer_"):
         chosen = int(query.data.split("_")[1])
         q = QUESTIONS[state["q_index"]]
         lang = state["lang"]
         explain = q["ru_explain"] if lang == "ru" else q["en_explain"]
-
-        # Задача 5: показываем полный текст ответа без ABCD-префикса
         correct_idx = q["correct"]
         options = q["ru_options"] if lang == "ru" else q["en_options"]
-
-        # Убираем "A) ", "B) " и т.д. из начала строки
-        def strip_letter(opt_text):
-            if len(opt_text) >= 3 and opt_text[1] == ")":
-                return opt_text[3:].strip()
-            return opt_text.strip()
 
         correct_answer_text = strip_letter(options[correct_idx])
 
@@ -321,8 +346,6 @@ def button(update: Update, context: CallbackContext):
                 f"{explain}"
             )
 
-        # Задача 6: кнопки "← Вернуться к вопросу" и "→ Следующий / Next"
-        # Задача 4: кнопка "Слушать ответ на английском"
         keyboard = [
             [
                 InlineKeyboardButton("⬅️ Вернуться к вопросу", callback_data="back_to_question"),
@@ -333,7 +356,6 @@ def button(update: Update, context: CallbackContext):
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(keyboard))
 
     elif query.data == "back_to_question":
-        # Задача 6: возврат к вопросу
         send_question(query, state)
 
     elif query.data == "next_question":
@@ -345,14 +367,14 @@ def button(update: Update, context: CallbackContext):
         state["g_index"] = 0
         send_glossary(query.message.chat_id, context, 0, query.message)
 
-    elif query.data.startswith("glo"):
-        index = int(query.data[3:])
+    elif query.data.startswith("glo_"):
+        index = int(query.data[4:])
         state["g_index"] = index
         send_glossary(query.message.chat_id, context, index, query.message)
 
-    # ── Аудирование (бывший Drive Mode) ──
+    # ── Аудирование ──
     elif query.data == "menu_drive":
-        query.edit_message_text("🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🚗 🏋️")
+        query.edit_message_text("🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🏋️")
 
 
 def main():
@@ -363,6 +385,7 @@ def main():
     dp.add_handler(MessageHandler(Filters.audio | Filters.document, get_file_id))
     updater.start_polling()
     updater.idle()
+
 
 if __name__ == "__main__":
     main()
