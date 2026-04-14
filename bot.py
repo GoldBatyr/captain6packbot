@@ -147,7 +147,7 @@ def get_main_menu_keyboard():
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
         [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
-        [InlineKeyboardButton("🔊👂 Аудирование / Listening 🏋️", callback_data="menu_drive")],
+        [InlineKeyboardButton("🔊👂 Аудирование / Listening 🚗 🏋️", callback_data="menu_drive")],
     ])
 
 def start(update: Update, context: CallbackContext):
@@ -352,7 +352,7 @@ def button(update: Update, context: CallbackContext):
 
     # ── Аудирование (бывший Drive Mode) ──
     elif query.data == "menu_drive":
-        query.edit_message_text("🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🚗🏋️")
+        query.edit_message_text("🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🚗 🏋️")
 
 
 def main():
