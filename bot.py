@@ -269,7 +269,7 @@ def get_main_menu_keyboard():
     return InlineKeyboardMarkup([
         [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
         [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
-        [InlineKeyboardButton("🔊👂 Аудирование / Listening 🏋️", callback_data="menu_drive")],
+        [InlineKeyboardButton("🔊👂 Аудирование / Listening 🚗 🏋️", callback_data="menu_drive")],
     ])
 
 
@@ -321,7 +321,7 @@ def strip_letter(opt_text):
 def build_question_keyboard(state):
     lang = state["lang"]
     # Задача 2: понятная надпись на кнопке переключения языка
-    lang_btn = "🇬🇧 Изменить вопрос на EN" if lang == "ru" else "🇷🇺 Изменить вопрос на RU"
+    lang_btn = "Изменить вопрос на EN" if lang == "ru" else "Изменить вопрос на RU"
     q = QUESTIONS[state["order"][state["pos"]]]
     buttons = [
         [
@@ -470,7 +470,7 @@ def button(update: Update, context: CallbackContext):
                 f"{explain}"
             )
 
-        lang_btn = "🇬🇧 Изменить вопрос на EN" if lang == "ru" else "🇷🇺 Изменить вопрос на RU"
+        lang_btn = "Изменить вопрос на EN" if lang == "ru" else "Изменить вопрос на RU"
         buttons = [
             [
                 InlineKeyboardButton("⬅️ Вернуться к вопросу", callback_data="back_to_question"),
@@ -494,7 +494,7 @@ def button(update: Update, context: CallbackContext):
         correct_idx = q["correct"]
         options = q["ru_options"] if lang == "ru" else q["en_options"]
         correct_answer_text = strip_letter(options[correct_idx])
-        lang_btn = "🇬🇧 Изменить вопрос на EN" if lang == "ru" else "🇷🇺 Изменить вопрос на RU"
+        lang_btn = "Изменить вопрос на EN" if lang == "ru" else "Изменить вопрос на RU"
         result = f"💡 Правильный ответ: {correct_answer_text}\n\n{explain}"
         buttons = [
             [
@@ -528,7 +528,7 @@ def button(update: Update, context: CallbackContext):
 
     # ── Аудирование ──
     elif query.data == "menu_drive":
-        query.edit_message_text("🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🏋️")
+        query.edit_message_text("🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🚗 🏋️")
 
 
 def main():
