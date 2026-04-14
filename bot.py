@@ -283,8 +283,8 @@ def send_glossary(chat_id, context, index, old_msg_id=None):
     if old_msg_id:
         try:
             context.bot.delete_message(chat_id=chat_id, message_id=old_msg_id)
-        except Exception:
-            pass
+        except Exception as e:
+            logging.error(f"DELETE ERROR: {e}")
 
     if index >= len(GLOSSARY):
         context.bot.send_message(
@@ -296,16 +296,21 @@ def send_glossary(chat_id, context, index, old_msg_id=None):
 
     term = GLOSSARY[index]
     caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}"
+    logging.info(f"SENDING GLOSSARY index={index} file_id={term['file_id'][:20]}")
 
-    context.bot.send_audio(
-        chat_id=chat_id,
-        audio=term["file_id"],
-        caption=caption,
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Next", callback_data=f"glo_{index + 1}")],
-            [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu_from_glo")],
-        ])
-    )
+    try:
+        context.bot.send_audio(
+            chat_id=chat_id,
+            audio=term["file_id"],
+            caption=caption,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("Next", callback_data=f"glo_{index + 1}")],
+                [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu_from_glo")],
+            ])
+        )
+        logging.info(f"GLOSSARY SENT OK index={index}")
+    except Exception as e:
+        logging.error(f"SEND_AUDIO ERROR: {e}")
 
 
 # ── ТЕСТ ──
