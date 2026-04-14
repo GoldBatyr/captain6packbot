@@ -352,7 +352,7 @@ def button(update: Update, context: CallbackContext):
 
     # ── Аудирование (бывший Drive Mode) ──
     elif query.data == "menu_drive":
-        query.edit_message_text("🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🏋️")
+        query.edit_message_text("🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🚗🏋️")
 
 
 def main():
