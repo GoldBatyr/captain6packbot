@@ -278,7 +278,7 @@ def start(update: Update, context: CallbackContext):
 
 
 # ── ГЛОССАРИЙ ──
-# При нажатии Next старое аудио НЕ удаляется (как в рабочей версии),
+# При нажатии Next старое аудио удаляется,
 # просто отправляется новое. При нажатии Меню — удаляется текущее.
 
 def send_glossary(chat_id, context, index):
