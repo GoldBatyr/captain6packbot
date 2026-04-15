@@ -330,6 +330,7 @@ QUESTIONS = [
         "ru_explain": "Правило 14: при встрече нос к носу оба судна берут вправо и расходятся левыми бортами.",
         "audio_q": "",
         "audio_a": "",
+        "image": "AgACAgIAAxkBAAID4WnfCp-zFlpMN5G2o8lzRWVlDRHqAAI-EGsbWUf5SgtgkehpxpUIAQADAgADeAADOwQ",
     },
     {
         "num": 27,
@@ -596,6 +597,17 @@ def send_question(query, state, context):
     options_text = "\n".join(options)
     full_text = f"❓ Вопрос {q['num']} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
     keyboard = build_question_keyboard(state)
+
+    # Если у вопроса есть картинка — отправляем её отдельным сообщением перед вопросом
+    if q.get("image"):
+        try:
+            img_msg = context.bot.send_photo(
+                chat_id=query.message.chat_id,
+                photo=q["image"]
+            )
+            state["audio_msg_ids"].append(img_msg.message_id)
+        except Exception as e:
+            logging.error(f"SEND_PHOTO ERROR: {e}")
 
     try:
         query.edit_message_text(full_text, reply_markup=keyboard)
