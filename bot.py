@@ -1130,8 +1130,38 @@ def button(update: Update, context: CallbackContext):
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "next_question":
-        state["pos"] = (state["pos"] + 1) % len(QUESTIONS)
-        send_question(query, state, context)
+        next_pos = state["pos"] + 1
+        if next_pos >= len(state["order"]):
+            # Определяем это тема или общий тест
+            current_topic = None
+            if len(state["order"]) < len(QUESTIONS):
+                # Это тест по теме — ищем какая тема
+                first_q = QUESTIONS[state["order"][0]]
+                current_topic = first_q.get("topic")
+
+            if current_topic and current_topic in TOPICS:
+                topic = TOPICS[current_topic]
+                count = len(state["order"])
+                text = (
+                    f"🎉 Topic complete! / Тема завершена!\n\n"
+                    f"{topic['en']} / {topic['ru']}\n\n"
+                    f"✅ {count} questions done / {count} вопросов пройдено\n\n"
+                    f"What's next? / Что дальше?"
+                )
+                buttons = InlineKeyboardMarkup([
+                    [InlineKeyboardButton("🔄 Repeat / Повторить", callback_data=f"start_topic_{current_topic}")],
+                    [InlineKeyboardButton("📚 Topics / Темы", callback_data="menu_topics")],
+                    [InlineKeyboardButton("📝 All questions / Все вопросы", callback_data="menu_quiz")],
+                    [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
+                ])
+                query.edit_message_text(text, reply_markup=buttons)
+            else:
+                # Общий тест — начинаем сначала
+                state["pos"] = 0
+                send_question(query, state, context)
+        else:
+            state["pos"] = next_pos
+            send_question(query, state, context)
 
     # ── Глоссарий ──
     elif query.data == "menu_glossary":
