@@ -749,7 +749,7 @@ QUESTIONS = [
 
 user_state = {}
 
-MAIN_MENU_TEXT = "⚓ Добро пожаловать в Captain6PackBot!\n\nВыберите режим / Choose mode:"
+MAIN_MENU_TEXT = "⚓ Добро пожаловать! / Welcome to Captain6PackBot!\n\nВыберите режим / Choose mode:"
 
 
 def get_main_menu_keyboard():
@@ -810,7 +810,7 @@ def strip_letter(opt_text):
 
 def build_question_keyboard(state):
     lang = state["lang"]
-    lang_btn = "Изменить вопрос на EN" if lang == "ru" else "Изменить вопрос на RU"
+    lang_btn = "🌐 English / На русском" if lang == "ru" else "🌐 Russian / На английском"
     q = QUESTIONS[state["order"][state["pos"]]]
     buttons = [
         [
@@ -820,10 +820,10 @@ def build_question_keyboard(state):
             InlineKeyboardButton("D", callback_data="answer_3"),
         ],
         [InlineKeyboardButton(lang_btn, callback_data="toggle_lang")],
-        [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
+        [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
     ]
     if q.get("audio_q"):
-        buttons.insert(2, [InlineKeyboardButton("🔊 Слушать вопрос на английском", callback_data="play_q")])
+        buttons.insert(2, [InlineKeyboardButton("▶️ Play / Слушать", callback_data="play_q")])
     return InlineKeyboardMarkup(buttons)
 
 
@@ -968,17 +968,17 @@ def button(update: Update, context: CallbackContext):
                 f"{explain}"
             )
 
-        lang_btn = "Изменить вопрос на EN" if lang == "ru" else "Изменить вопрос на RU"
+        lang_btn = "🌐 English / На русском" if lang == "ru" else "🌐 Russian / На английском"
         buttons = [
             [
-                InlineKeyboardButton("⬅️ Вернуться к вопросу", callback_data="back_to_question"),
-                InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question"),
+                InlineKeyboardButton("⬅️ Back / Назад", callback_data="back_to_question"),
+                InlineKeyboardButton("➡️ Next / Далее", callback_data="next_question"),
             ],
             [InlineKeyboardButton(lang_btn, callback_data="toggle_lang_answer")],
-            [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
+            [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
         ]
         if q.get("audio_a"):
-            buttons.insert(1, [InlineKeyboardButton("🔊 Слушать ответ на английском", callback_data="play_a")])
+            buttons.insert(1, [InlineKeyboardButton("▶️ Play / Слушать", callback_data="play_a")])
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "back_to_question":
@@ -992,18 +992,18 @@ def button(update: Update, context: CallbackContext):
         correct_idx = q["correct"]
         options = q["ru_options"] if lang == "ru" else q["en_options"]
         correct_answer_text = strip_letter(options[correct_idx])
-        lang_btn = "Изменить вопрос на EN" if lang == "ru" else "Изменить вопрос на RU"
+        lang_btn = "🌐 English / На русском" if lang == "ru" else "🌐 Russian / На английском"
         result = f"💡 Правильный ответ: {correct_answer_text}\n\n{explain}"
         buttons = [
             [
-                InlineKeyboardButton("⬅️ Вернуться к вопросу", callback_data="back_to_question"),
-                InlineKeyboardButton("➡️ Следующий / Next", callback_data="next_question"),
+                InlineKeyboardButton("⬅️ Back / Назад", callback_data="back_to_question"),
+                InlineKeyboardButton("➡️ Next / Далее", callback_data="next_question"),
             ],
             [InlineKeyboardButton(lang_btn, callback_data="toggle_lang_answer")],
-            [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu")],
+            [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
         ]
         if q.get("audio_a"):
-            buttons.insert(1, [InlineKeyboardButton("🔊 Слушать ответ на английском", callback_data="play_a")])
+            buttons.insert(1, [InlineKeyboardButton("▶️ Play / Слушать", callback_data="play_a")])
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "next_question":
