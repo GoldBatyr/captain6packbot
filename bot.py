@@ -20,6 +20,7 @@ GLOSSARY = [
 QUESTIONS = [
     {
         "num": 1,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. Your vessel is meeting another vessel head to head. To comply with the steering and sailing rules, you should:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Ваше судно встречается с другим судном нос к носу. Согласно правилам маневрирования, вы должны:",
         "en_options": ["A) Sound the danger signal", "B) Sound one prolonged and two short blasts", "C) Exchange two short blasts", "D) Exchange one short blast"],
@@ -32,6 +33,7 @@ QUESTIONS = [
     },
     {
         "num": 2,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. What is the whistle signal for a power-driven vessel leaving a dock?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Какой сигнал подаёт моторное судно при отходе от причала?",
         "en_options": ["A) One short blast", "B) Three short blasts", "C) One prolonged blast", "D) Three prolonged blasts"],
@@ -44,6 +46,7 @@ QUESTIONS = [
     },
     {
         "num": 3,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. You are overtaking a vessel in a narrow channel and wish to overtake on her PORT side. You sound:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Вы обгоняете судно в узком канале и хотите обогнать его с ЛЕВОГО борта. Вы подаёте:",
         "en_options": ["A) One short blast", "B) Two short blasts", "C) Two prolonged + one short", "D) Two prolonged + two short"],
@@ -56,6 +59,7 @@ QUESTIONS = [
     },
     {
         "num": 4,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. You agreed by radio to pass ASTERN of a vessel on your starboard. You MUST:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. По радио договорились пройти за кормой судна справа. Вы ОБЯЗАНЫ:",
         "en_options": ["A) Sound one short blast", "B) Sound two short blasts", "C) Change course to starboard", "D) None of the above"],
@@ -68,6 +72,7 @@ QUESTIONS = [
     },
     {
         "num": 5,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. You are overtaking a vessel in a narrow channel and wish to pass on her STARBOARD side. You may:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Вы обгоняете судно в узком канале и хотите обойти его с ПРАВОГО борта. Вы можете:",
         "en_options": ["A) Contact her by radio to arrange passage", "B) Overtake without whistle signals", "C) Sound five short blasts", "D) All of the above"],
@@ -80,6 +85,7 @@ QUESTIONS = [
     },
     {
         "num": 6,
+        "topic": "sound_signals",
         "en_q": "Another vessel is crossing your course starboard to port and you doubt her intentions. You:",
         "ru_q": "Другое судно пересекает ваш курс справа налево, вы сомневаетесь в его намерениях. Вы:",
         "en_options": ["A) Must sound the danger signal", "B) Must back down", "C) May sound the danger signal", "D) Sound one short blast"],
@@ -92,6 +98,7 @@ QUESTIONS = [
     },
     {
         "num": 7,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. Maneuvering signals on inland waters are sounded by:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Манёвренные сигналы на внутренних водах подаются:",
         "en_options": ["A) All vessels meeting/crossing/overtaking in sight", "B) All vessels within half a mile, not in sight", "C) Power-driven vessels overtaking in sight / crossing within half a mile in sight", "D) Power-driven vessels crossing within half a mile, NOT in sight"],
@@ -104,6 +111,7 @@ QUESTIONS = [
     },
     {
         "num": 8,
+        "topic": "lights_shapes",
         "en_q": "INLAND ONLY. A light used to signal passing intentions must be:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Огонь для сигнализации намерений при расхождении должен быть:",
         "en_options": ["A) All-round white OR yellow", "B) All-round yellow only", "C) All-round white only", "D) 225° white only"],
@@ -116,6 +124,7 @@ QUESTIONS = [
     },
     {
         "num": 9,
+        "topic": "lights_shapes",
         "en_q": "INLAND ONLY. What MAY indicate a partly submerged object being towed?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Что МОЖЕТ обозначать частично погружённый буксируемый объект?",
         "en_options": ["A) Black cone, apex up", "B) Two all-round yellow lights at each end", "C) Searchlight from towing vessel aimed at the tow", "D) All of the above"],
@@ -128,6 +137,7 @@ QUESTIONS = [
     },
     {
         "num": 10,
+        "topic": "sound_signals",
         "en_q": "BOTH INT & INLAND. Underway in fog, you hear ONE prolonged blast. This indicates:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. В тумане слышите ОДИН продолжительный сигнал. Это:",
         "en_options": ["A) Sailboat underway", "B) Vessel towing", "C) Power vessel making way", "D) Vessel being towed"],
@@ -140,10 +150,11 @@ QUESTIONS = [
     },
     {
         "num": 11,
+        "topic": "definitions",
         "en_q": "BOTH INTERNATIONAL & INLAND. A vessel is in sight of another vessel when:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно находится в зоне видимости другого судна, когда:",
         "en_options": ["A) She can be observed by radar", "B) She can be observed visually from the other vessel", "C) She can be plotted on radar well enough to determine her heading", "D) Her fog signal can be heard"],
-        "ru_options": ["A) Она наблюдается по радару", "B) Она наблюдается визуально с другого судна", "C) Её курс определяется по радару", "D) Слышен её туманный сигнал"],
+        "ru_options": ["A) Оно наблюдается по радару", "B) Оно наблюдается визуально с другого судна", "C) Его курс определяется по радару", "D) Слышен его туманный сигнал"],
         "correct": 1,
         "en_explain": "Rule 3(k): a vessel is 'in sight' only when she can be observed visually. Radar contact alone does not count.",
         "ru_explain": "Правило 3(k): судно находится в зоне видимости только при визуальном наблюдении. Радар не считается.",
@@ -152,6 +163,7 @@ QUESTIONS = [
     },
     {
         "num": 12,
+        "topic": "distress",
         "en_q": "BOTH INTERNATIONAL & INLAND. You see a vessel displaying the code flag 'LIMA' below which is a red ball. The vessel is:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно показывает флаг 'LIMA' и под ним красный шар. Это означает:",
         "en_options": ["A) Trolling", "B) Getting ready to receive aircraft", "C) Aground", "D) In distress"],
@@ -164,6 +176,7 @@ QUESTIONS = [
     },
     {
         "num": 13,
+        "topic": "steering_rules",
         "en_q": "BOTH INTERNATIONAL & INLAND. If it becomes necessary for a stand-on vessel to take action to avoid collision, she shall NOT, if possible:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Если привилегированному судну необходимо маневрировать для предотвращения столкновения, оно НЕ должно, если возможно:",
         "en_options": ["A) Decrease speed", "B) Increase speed", "C) Turn to port for a vessel on her own port side", "D) Turn to starboard for a vessel on her own port side"],
@@ -176,6 +189,7 @@ QUESTIONS = [
     },
     {
         "num": 14,
+        "topic": "lights_shapes",
         "en_q": "BOTH INTERNATIONAL & INLAND. A pilot vessel on pilotage duty at night will show sidelights and a sternlight:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Лоцманское судно на дежурстве ночью показывает бортовые огни и кормовой огонь:",
         "en_options": ["A) When at anchor", "B) Only when making way", "C) At any time when underway", "D) Only when the identifying lights are not being shown"],
@@ -188,6 +202,7 @@ QUESTIONS = [
     },
     {
         "num": 15,
+        "topic": "steering_rules",
         "en_q": "BOTH INTERNATIONAL & INLAND. When taking action to avoid collision, you should:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. При манёвре для предотвращения столкновения вы должны:",
         "en_options": ["A) Make sure the action is taken in enough time", "B) Not make any large course changes", "C) Not make any large speed changes", "D) All of the above"],
@@ -200,6 +215,7 @@ QUESTIONS = [
     },
     {
         "num": 16,
+        "topic": "lights_shapes",
         "en_q": "BOTH INTERNATIONAL & INLAND. Which vessel may combine her sidelights and sternlight in one lantern on the fore and aft centerline?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Какое судно может объединить бортовые огни и кормовой огонь в один фонарь на осевой линии?",
         "en_options": ["A) A 16-meter sailing vessel", "B) A 25-meter power-driven vessel", "C) A 28-meter sailing vessel", "D) Any non-self-propelled vessel"],
@@ -212,6 +228,7 @@ QUESTIONS = [
     },
     {
         "num": 17,
+        "topic": "lights_shapes",
         "en_q": "BOTH INTERNATIONAL & INLAND. A vessel engaged in fishing, and at anchor, shall show:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно, занятое рыболовством и стоящее на якоре, должно показывать:",
         "en_options": ["A) An anchor light", "B) Sidelights and a sternlight", "C) Three lights in a vertical line, the highest and lowest being red, and the middle being white", "D) None of the above"],
@@ -224,6 +241,7 @@ QUESTIONS = [
     },
     {
         "num": 18,
+        "topic": "visibility",
         "en_q": "BOTH INTERNATIONAL & INLAND. Which statement concerning maneuvering in restricted visibility is FALSE?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Какое утверждение о манёврировании в условиях ограниченной видимости НЕВЕРНО?",
         "en_options": ["A) A vessel which cannot avoid a close-quarters situation shall reduce her speed to bare steerageway.", "B) A vessel which hears a fog signal forward of her beam shall stop her engines.", "C) A vessel which hears a fog signal forward of the beam shall navigate with caution.", "D) If a vessel determines by radar that a close-quarters situation is developing, she shall take avoiding action in ample time."],
@@ -236,6 +254,7 @@ QUESTIONS = [
     },
     {
         "num": 19,
+        "topic": "lights_shapes",
         "en_q": "BOTH INTERNATIONAL & INLAND. A sailing vessel of over 20 meters in length underway must show:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Парусное судно длиной более 20 метров на ходу обязано показывать:",
         "en_options": ["A) A red light over a green light at the masthead", "B) A white masthead light", "C) A combined lantern", "D) A sternlight"],
@@ -248,6 +267,7 @@ QUESTIONS = [
     },
     {
         "num": 20,
+        "topic": "lights_shapes",
         "en_q": "BOTH INTERNATIONAL & INLAND. A power-driven vessel, when towing astern, shall show:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Моторное судно при буксировке за кормой должно показывать:",
         "en_options": ["A) Two towing lights in a vertical line", "B) A towing light in a vertical line above the sternlight", "C) Two towing lights in addition to the sternlight", "D) A small white light in lieu of the sternlight"],
@@ -261,6 +281,7 @@ QUESTIONS = [
     # ── НОВЫЕ ВОПРОСЫ 21-40 ──
     {
         "num": 21,
+        "topic": "sound_signals",
         "en_q": "BOTH INTERNATIONAL & INLAND. A 200-meter vessel restricted in her ability to maneuver, at anchor, will sound a fog signal of:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно длиной 200 метров, ограниченное в возможности маневрировать, на якоре, подаёт туманный сигнал:",
         "en_options": ["A) A 5 second ringing of a bell forward and a 5 second sounding of a gong aft at intervals of 1 minute", "B) One prolonged followed by two short blasts every 2 minutes", "C) One prolonged followed by three short blasts every minute", "D) One prolonged followed by three short blasts every 2 minutes"],
@@ -273,6 +294,7 @@ QUESTIONS = [
     },
     {
         "num": 22,
+        "topic": "sound_signals",
         "en_q": "BOTH INTERNATIONAL & INLAND. If your vessel is underway in fog and you hear one prolonged and three short blasts, this indicates a:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Ваше судно на ходу в тумане, вы слышите один продолжительный и три коротких сигнала. Это:",
         "en_options": ["A) Vessel not under command", "B) Sailing vessel", "C) Vessel in distress", "D) Vessel being towed"],
@@ -285,6 +307,7 @@ QUESTIONS = [
     },
     {
         "num": 23,
+        "topic": "distress",
         "en_q": "BOTH INTERNATIONAL & INLAND. An orange flag showing a black circle and square is a:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Оранжевый флаг с чёрным кругом и квадратом — это:",
         "en_options": ["A) Signal indicating a course change", "B) Distress signal", "C) Signal of asking to communicate with another vessel", "D) Signal indicating danger"],
@@ -297,6 +320,7 @@ QUESTIONS = [
     },
     {
         "num": 24,
+        "topic": "lights_shapes",
         "en_q": "BOTH INTERNATIONAL & INLAND. A partially submerged object towed by a vessel must show during the day:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Частично погружённый буксируемый объект днём должен показывать:",
         "en_options": ["A) One diamond shape when the length of the tow is 200 meters or less", "B) One diamond shape ONLY when the length of the tow exceeds 200 meters in length", "C) One black ball", "D) One black ball only when the length of the tow exceeds 200 meters in length"],
@@ -309,6 +333,7 @@ QUESTIONS = [
     },
     {
         "num": 25,
+        "topic": "narrow_channels",
         "en_q": "BOTH INTERNATIONAL & INLAND. You are crossing a narrow channel in a small motorboat. You sight a tankship off your port bow coming up the channel. Which statement is TRUE?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Вы пересекаете узкий канал на небольшом моторном катере. Слева по носу — танкер, идущий по каналу. Какое утверждение верно?",
         "en_options": ["A) You are the stand-on vessel because the tankship is to port.", "B) You cannot impede the safe passage of the tankship.", "C) The tankship has the right of way because it is to port of your vessel.", "D) The tankship has the right of way because it is the larger of the two vessels."],
@@ -321,6 +346,7 @@ QUESTIONS = [
     },
     {
         "num": 26,
+        "topic": "steering_rules",
         "en_q": "BOTH INTERNATIONAL & INLAND. In DIAGRAM 8, vessel A and vessel B (which is pushing ahead) are meeting head and head as shown. How must the vessels pass?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. На ДИАГРАММЕ 8 судно A и судно B (толкач) встречаются нос к носу. Как должны разойтись суда?",
         "en_options": ["A) Vessel A must alter course while vessel B continues on its present course.", "B) The vessels should determine which will alter course by exchanging whistle signals.", "C) Both vessels should alter course to port and pass starboard to starboard.", "D) Both vessels should alter course to starboard and pass port to port."],
@@ -334,6 +360,7 @@ QUESTIONS = [
     },
     {
         "num": 27,
+        "topic": "sound_signals",
         "en_q": "BOTH INTERNATIONAL & INLAND. Each prolonged blast on whistle signals used by a power-driven vessel in fog, whether making way or underway but not making way, is:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Каждый продолжительный сигнал свистка моторного судна в тумане, независимо от того идёт ли оно вперёд или стоит на месте, длится:",
         "en_options": ["A) About one second", "B) Two to four seconds", "C) Four to six seconds", "D) Eight to ten seconds"],
@@ -346,6 +373,7 @@ QUESTIONS = [
     },
     {
         "num": 28,
+        "topic": "steering_rules",
         "en_q": "BOTH INTERNATIONAL & INLAND. The rules state that vessels may depart from the requirements of the Rules when:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Правила допускают отступление от своих требований когда:",
         "en_options": ["A) There are no other vessels around", "B) Operating in a narrow channel", "C) The Master enters it in the ship's log", "D) Necessary to avoid immediate danger"],
@@ -358,6 +386,7 @@ QUESTIONS = [
     },
     {
         "num": 29,
+        "topic": "sound_signals",
         "en_q": "BOTH INTERNATIONAL & INLAND. A vessel 50 meters in length at anchor must sound which fog signal?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно длиной 50 метров на якоре должно подавать какой туманный сигнал?",
         "en_options": ["A) 5-second ringing of a bell every minute", "B) 5-second ringing of a bell every two minutes", "C) 5-second sounding of a gong every minute", "D) 5-second sounding of both a bell and gong every two minutes"],
@@ -370,6 +399,7 @@ QUESTIONS = [
     },
     {
         "num": 30,
+        "topic": "sound_signals",
         "en_q": "BOTH INTERNATIONAL & INLAND. What is the minimum sound signaling equipment required aboard a vessel 10 meters in length?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Какое минимальное звуковое сигнальное оборудование требуется на судне длиной 10 метров?",
         "en_options": ["A) Any means of making an efficient sound signal", "B) A bell only", "C) A whistle only", "D) A bell and a whistle"],
@@ -382,6 +412,7 @@ QUESTIONS = [
     },
     {
         "num": 31,
+        "topic": "definitions",
         "en_q": "INTERNATIONAL ONLY. The International Rules of the Road apply:",
         "ru_q": "ТОЛЬКО МЕЖДУНАРОДНЫЕ ВОДЫ. Международные правила предупреждения столкновений судов применяются:",
         "en_options": ["A) To all waters which are not inland waters", "B) Only to waters outside the territorial waters of the United States", "C) Only to waters where foreign vessels travel", "D) Upon the high seas and connecting waters navigable by seagoing vessels"],
@@ -394,6 +425,7 @@ QUESTIONS = [
     },
     {
         "num": 32,
+        "topic": "sound_signals",
         "en_q": "BOTH INTERNATIONAL & INLAND. A vessel engaged in fishing while at anchor shall sound a fog signal of:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно, занятое рыболовством и стоящее на якоре, подаёт туманный сигнал:",
         "en_options": ["A) One prolonged and three short blasts at one minute intervals", "B) A rapid ringing of the bell for five seconds at one minute intervals", "C) One prolonged and two short blasts at two minute intervals", "D) A sounding of the bell and gong at one minute intervals"],
@@ -406,6 +438,7 @@ QUESTIONS = [
     },
     {
         "num": 33,
+        "topic": "definitions",
         "en_q": "BOTH INTERNATIONAL & INLAND. What determines if a vessel is \"restricted in her ability to maneuver\"?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Что определяет статус судна «ограниченного в возможности маневрировать»?",
         "en_options": ["A) Whether or not all of the vessel's control equipment is in working order", "B) The vessel's draft in relation to the available depth of water", "C) Whether the vessel is operating in a narrow channel", "D) The nature of the vessel's work, limiting maneuverability required by the Rules"],
@@ -418,6 +451,7 @@ QUESTIONS = [
     },
     {
         "num": 34,
+        "topic": "lights_shapes",
         "en_q": "BOTH INTERNATIONAL & INLAND. The stern light shall be positioned such that it will show from dead astern to how many degrees on each side of the stern of the vessel?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Кормовой огонь должен быть расположен так, чтобы освещать дугу от прямо за кормой до скольких градусов с каждого борта?",
         "en_options": ["A) 135.0°", "B) 112.5°", "C) 67.5°", "D) 22.5°"],
@@ -430,6 +464,7 @@ QUESTIONS = [
     },
     {
         "num": 35,
+        "topic": "steering_rules",
         "en_q": "BOTH INTERNATIONAL & INLAND. If two sailing vessels are running free with the wind on the same side, which one must keep clear of the other?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Если два парусных судна идут при попутном ветре с ветром на одном борту, какое из них должно уступить дорогу?",
         "en_options": ["A) The one with the wind closest abeam", "B) The one to windward", "C) The one to leeward", "D) The one that sounds the first whistle signal"],
@@ -442,6 +477,7 @@ QUESTIONS = [
     },
     {
         "num": 36,
+        "topic": "steering_rules",
         "en_q": "BOTH INTERNATIONAL & INLAND. Which statement is TRUE, according to the Rules?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Какое утверждение верно согласно Правилам?",
         "en_options": ["A) A vessel not under command shall keep out of the way of a vessel restricted in her ability to maneuver.", "B) A vessel not under command shall keep out of the way of a vessel engaged in fishing.", "C) A vessel engaged in fishing while underway shall, so far as possible, keep out of the way of a vessel restricted in her ability to maneuver.", "D) A vessel engaged in fishing shall keep out of the way of a sailing vessel."],
@@ -454,6 +490,7 @@ QUESTIONS = [
     },
     {
         "num": 37,
+        "topic": "narrow_channels",
         "en_q": "INTERNATIONAL ONLY. Your vessel is crossing a narrow channel. A vessel to port is within the channel and crossing your course. She is showing a black cylinder. What is your responsibility?",
         "ru_q": "ТОЛЬКО МЕЖДУНАРОДНЫЕ ВОДЫ. Ваше судно пересекает узкий канал. Судно слева находится в канале и пересекает ваш курс. Оно показывает чёрный цилиндр. Каковы ваши обязанности?",
         "en_options": ["A) Hold your course and speed.", "B) Sound the danger signal.", "C) Begin an exchange of passing signals.", "D) Do not cross the channel if you might impede the other vessel."],
@@ -466,6 +503,7 @@ QUESTIONS = [
     },
     {
         "num": 38,
+        "topic": "lights_shapes",
         "en_q": "INTERNATIONAL ONLY. Lighting requirements in inland waters are different from those for international waters for:",
         "ru_q": "ТОЛЬКО МЕЖДУНАРОДНЫЕ ВОДЫ. Требования к огням на внутренних водах отличаются от международных для:",
         "en_options": ["A) Barges being towed by pushing ahead", "B) Vessels restricted in their ability to maneuver", "C) Vessels towing astern", "D) Barges being towed astern"],
@@ -478,6 +516,7 @@ QUESTIONS = [
     },
     {
         "num": 39,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. You have made your vessel up to a tow and are moving from a pier out into the main channel. If your engines are turning ahead, what whistle signal should you sound?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Вы сформировали буксир и отходите от причала в основной канал. Если машины работают вперёд, какой звуковой сигнал следует подать?",
         "en_options": ["A) One prolonged and two short blasts", "B) Three long blasts", "C) One prolonged blast", "D) Five or more short rapid blasts"],
@@ -490,6 +529,7 @@ QUESTIONS = [
     },
     {
         "num": 40,
+        "topic": "sound_signals",
         "en_q": "INTERNATIONAL ONLY. You are approaching another vessel and will pass safely starboard to starboard without changing course. You should:",
         "ru_q": "ТОЛЬКО МЕЖДУНАРОДНЫЕ ВОДЫ. Вы сближаетесь с другим судном и безопасно разойдётесь правыми бортами без изменения курса. Вы должны:",
         "en_options": ["A) Hold course and sound no whistle signal", "B) Hold course and sound a two blast whistle signal", "C) Change course to starboard and sound one blast", "D) Hold course and sound one blast"],
@@ -503,10 +543,11 @@ QUESTIONS = [
     # ── НОВЫЕ ВОПРОСЫ 41-60 ──
     {
         "num": 41,
+        "topic": "narrow_channels",
         "en_q": "INLAND ONLY. Which is true of a downbound vessel, when meeting an upbound vessel on the Western Rivers?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Что верно в отношении судна идущего вниз по течению при встрече с судном идущим вверх на Западных реках?",
         "en_options": ["A) She has the right of way only if she is a power-driven vessel.", "B) She has the right of way only if she has a tow.", "C) She does not have the right of way, since the other vessel is not crossing the river.", "D) She must wait for a whistle signal from the upbound vessel."],
-        "ru_options": ["A) Она имеет преимущество только если является моторным судном.", "B) Она имеет преимущество только если имеет буксир.", "C) Она не имеет преимущества, так как другое судно не пересекает реку.", "D) Она должна ждать звукового сигнала от судна идущего вверх."],
+        "ru_options": ["A) Оно имеет преимущество только если является моторным судном.", "B) Оно имеет преимущество только если имеет буксир.", "C) Оно не имеет преимущества, так как другое судно не пересекает реку.", "D) Оно должно ждать звукового сигнала от судна идущего вверх."],
         "correct": 0,
         "en_explain": "On Western Rivers: a downbound vessel always has the right of way over an upbound vessel due to reduced maneuverability with the current.",
         "ru_explain": "На Западных реках: судно идущее вниз по течению всегда имеет преимущество перед судном идущим вверх, так как у него меньше манёвренности при управлении течением.",
@@ -515,6 +556,7 @@ QUESTIONS = [
     },
     {
         "num": 42,
+        "topic": "lights_shapes",
         "en_q": "INLAND ONLY. The lights illustrated in DIAGRAM 75 are those of a:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Огни изображённые на ДИАГРАММЕ 75 принадлежат:",
         "en_options": ["A) Pipeline", "B) Vessel towing by pushing ahead", "C) Vessel being towed astern", "D) Vessel underway and dredging"],
@@ -528,6 +570,7 @@ QUESTIONS = [
     },
     {
         "num": 43,
+        "topic": "lights_shapes",
         "en_q": "INLAND ONLY. While underway, you sight the lights illustrated with the yellow lights flashing. You should (see DIAGRAM 81):",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. На ходу вы видите огни изображённые на диаграмме с мигающими жёлтыми огнями. Вы должны (см. ДИАГРАММУ 81):",
         "en_options": ["A) Wait until the vessel ahead crosses your bow", "B) Stop until the red lights turn green", "C) Proceed leaving all the lights on your starboard side", "D) Pass between the two sets of vertical red lights"],
@@ -541,6 +584,7 @@ QUESTIONS = [
     },
     {
         "num": 44,
+        "topic": "lights_shapes",
         "en_q": "INLAND ONLY. A law enforcement boat may display a:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Катер правоохранительных органов может показывать:",
         "en_options": ["A) Blue flag", "B) Flashing blue light", "C) Flashing red light", "D) Flashing amber light"],
@@ -553,6 +597,7 @@ QUESTIONS = [
     },
     {
         "num": 45,
+        "topic": "lights_shapes",
         "en_q": "INLAND ONLY. Which of the following is used to indicate the presence of a partly submerged object being towed?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Что из перечисленного используется для обозначения частично погружённого буксируемого объекта?",
         "en_options": ["A) A diamond shape on the towed object", "B) An all-round light at each end of the towed object", "C) A searchlight from the towing vessel in the direction of the tow", "D) All of the above"],
@@ -565,6 +610,7 @@ QUESTIONS = [
     },
     {
         "num": 46,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. What is the required whistle signal for a vessel leaving a dock or berth?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Какой звуковой сигнал обязано подать судно при отходе от причала или берта?",
         "en_options": ["A) One short blast", "B) One prolonged blast", "C) Two short blasts", "D) One long blast"],
@@ -577,6 +623,7 @@ QUESTIONS = [
     },
     {
         "num": 47,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. Vessels 'A' and 'B' are passing in a narrow channel as shown in DIAGRAM 29. Which of the following is true concerning whistle signals between vessels?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Суда A и B расходятся в узком канале как показано на ДИАГРАММЕ 29. Что верно в отношении звуковых сигналов?",
         "en_options": ["A) Both vessels should sound two short blasts.", "B) Both vessels should sound one short blast.", "C) Vessel 'A' should sound one short blast and vessel 'B' should sound two short blasts.", "D) Neither vessel should sound any signal as no course change is necessary."],
@@ -590,6 +637,7 @@ QUESTIONS = [
     },
     {
         "num": 48,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. Your vessel is meeting another vessel head to head. To comply with the rules, you should:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Ваше судно встречается с другим судном нос к носу. Согласно правилам вы должны:",
         "en_options": ["A) Exchange one short blast, alter course to the left and pass starboard to starboard", "B) Exchange one short blast, alter course to the right and pass port to port", "C) Exchange two short blasts, alter course to the left and pass starboard to starboard", "D) Exchange two short blasts, alter course to the right and pass port to port"],
@@ -602,6 +650,7 @@ QUESTIONS = [
     },
     {
         "num": 49,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. A vessel intends to overtake another vessel on the overtaken vessel's port side. What whistle signal should be sounded in order to state this intention?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Судно намерено обогнать другое судно с левого борта обгоняемого. Какой сигнал следует подать?",
         "en_options": ["A) 1 short blast", "B) 2 short blasts", "C) 2 prolonged and 1 short blast", "D) 2 prolonged and 2 short blasts"],
@@ -614,6 +663,7 @@ QUESTIONS = [
     },
     {
         "num": 50,
+        "topic": "lights_shapes",
         "en_q": "INLAND ONLY. At night a barge moored in a slip used primarily for mooring purposes shall:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Ночью баржа ошвартованная в слипе используемом преимущественно для швартовки:",
         "en_options": ["A) Not be required to be lighted", "B) Show a white light at each corner", "C) Show a red light at the bow and stern", "D) Show a flashing yellow light at each corner"],
@@ -626,6 +676,7 @@ QUESTIONS = [
     },
     {
         "num": 51,
+        "topic": "lights_shapes",
         "en_q": "INLAND ONLY. Which statement is true concerning the light used for maneuvering signals?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Какое утверждение верно в отношении огня используемого для манёвренных сигналов?",
         "en_options": ["A) It must be synchronized with the whistle.", "B) It may be white or yellow.", "C) It must be an all-round light.", "D) All of the above."],
@@ -638,6 +689,7 @@ QUESTIONS = [
     },
     {
         "num": 52,
+        "topic": "narrow_channels",
         "en_q": "INLAND ONLY. On the Western Rivers, a vessel crossing a river must:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. На Западных реках судно пересекающее реку должно:",
         "en_options": ["A) Only keep out of the way of a power-driven vessel descending the river", "B) Keep out of the way of any vessel descending the river", "C) Keep out of the way of a power-driven vessel ascending or descending the river", "D) Keep out of the way of any vessel ascending or descending the river"],
@@ -650,6 +702,7 @@ QUESTIONS = [
     },
     {
         "num": 53,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. You are overtaking another vessel in a narrow channel. You wish to overtake her on her starboard side. You should sound a whistle signal of:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Вы обгоняете другое судно в узком канале и хотите обойти его с правого борта. Вы должны подать сигнал:",
         "en_options": ["A) One short blast", "B) Two prolonged blasts followed by one short blast", "C) One prolonged and one short blast", "D) At least five short blasts"],
@@ -662,6 +715,7 @@ QUESTIONS = [
     },
     {
         "num": 54,
+        "topic": "sound_signals",
         "en_q": "INLAND ONLY. You are meeting another vessel in inland waters, and she sounds one short blast on the whistle. This means that:",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Вы встречаете другое судно на внутренних водах и оно подаёт один короткий сигнал. Это означает что:",
         "en_options": ["A) She is changing course to starboard", "B) She is changing course to port", "C) She intends to leave you on her port side", "D) She desires to depart from the Rules"],
@@ -674,6 +728,7 @@ QUESTIONS = [
     },
     {
         "num": 55,
+        "topic": "lights_shapes",
         "en_q": "INLAND ONLY. A barge more than 50-meters long would be required to show how many white anchor lights when anchored in a Secretary of Transportation approved 'special anchorage area'?",
         "ru_q": "ТОЛЬКО ВНУТРЕННИЕ ВОДЫ. Сколько белых якорных огней обязана показывать баржа длиной более 50 метров на якоре в специальной якорной зоне одобренной Министерством транспорта?",
         "en_options": ["A) 1", "B) 2", "C) 3", "D) 4"],
@@ -686,6 +741,7 @@ QUESTIONS = [
     },
     {
         "num": 56,
+        "topic": "steering_rules",
         "en_q": "BOTH INTERNATIONAL & INLAND. A vessel must proceed at a safe speed:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Судно обязано следовать с безопасной скоростью:",
         "en_options": ["A) In restricted visibility", "B) In congested waters", "C) During darkness", "D) At all times"],
@@ -698,6 +754,7 @@ QUESTIONS = [
     },
     {
         "num": 57,
+        "topic": "lights_shapes",
         "en_q": "BOTH INTERNATIONAL & INLAND. Which of the following is used to show the presence of a partly submerged object being towed?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Что из перечисленного используется для обозначения частично погружённого буксируемого объекта?",
         "en_options": ["A) A diamond shape on the towed object", "B) An all-round light at each end of the towed object", "C) A searchlight from the towing vessel in the direction of the tow", "D) All of the above"],
@@ -710,6 +767,7 @@ QUESTIONS = [
     },
     {
         "num": 58,
+        "topic": "steering_rules",
         "en_q": "BOTH INTERNATIONAL & INLAND. You are underway on vessel 'A' and sight vessel 'B' which is a vessel underway and fishing. Which statement is true?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Вы на ходу на судне A и видите судно B которое занято рыболовством на ходу. Какое утверждение верно?",
         "en_options": ["A) Vessel 'A' must keep out of the way of vessel 'B' because 'B' is to port.", "B) Vessel 'A' must keep out of the way of vessel 'B' because 'B' is fishing.", "C) Vessel 'B' must keep out of the way of vessel 'A' because 'A' is to starboard.", "D) In this case, both vessels are required by the Rules to keep clear of each other."],
@@ -723,6 +781,7 @@ QUESTIONS = [
     },
     {
         "num": 59,
+        "topic": "steering_rules",
         "en_q": "BOTH INTERNATIONAL & INLAND. If it becomes necessary for a stand-on vessel to take action to avoid collision, she shall, if possible:",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Если привилегированному судну необходимо маневрировать для предотвращения столкновения, оно должно по возможности:",
         "en_options": ["A) Not decrease speed", "B) Not increase speed", "C) Not turn to port for a vessel on her own port side", "D) Not turn to starboard for a vessel on her own port side"],
@@ -735,6 +794,7 @@ QUESTIONS = [
     },
     {
         "num": 60,
+        "topic": "lights_shapes",
         "en_q": "BOTH INTERNATIONAL & INLAND. What type of vessel or operation is indicated by a vessel displaying two cones with the apexes together?",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ВОДЫ. Какой тип судна или операции обозначают два конуса вершинами вместе?",
         "en_options": ["A) Sailing", "B) Trawling", "C) Minesweeping", "D) Dredging"],
@@ -751,17 +811,42 @@ user_state = {}
 
 MAIN_MENU_TEXT = "⚓ Добро пожаловать! / Welcome to Captain6PackBot!\n\nВыберите режим / Choose mode:"
 
+TOPICS = {
+    "sound_signals":   {"ru": "🔊 Звуковые сигналы",     "en": "Sound Signals"},
+    "lights_shapes":   {"ru": "💡 Огни и знаки",          "en": "Lights & Shapes"},
+    "steering_rules":  {"ru": "🚢 Маневрирование",        "en": "Steering Rules"},
+    "narrow_channels": {"ru": "🌊 Узкие каналы и реки",   "en": "Narrow Channels"},
+    "visibility":      {"ru": "🌫️ Ограниченная видимость", "en": "Visibility"},
+    "distress":        {"ru": "🆘 Сигналы бедствия",      "en": "Distress Signals"},
+    "definitions":     {"ru": "📋 Определения",           "en": "Definitions"},
+}
+
 
 def get_main_menu_keyboard():
     return InlineKeyboardMarkup([
-        [InlineKeyboardButton("📝 Тест / Quiz", callback_data="menu_quiz")],
-        [InlineKeyboardButton("📖 Глоссарий / Glossary", callback_data="menu_glossary")],
-        [InlineKeyboardButton("🔊👂 Аудирование / Listening 🚗 🏋️", callback_data="menu_drive")],
+        [InlineKeyboardButton("📝 Тест / Quiz — все вопросы", callback_data="menu_quiz")],
+        [InlineKeyboardButton("📚 Topics / Темы — по разделам", callback_data="menu_topics")],
+        [InlineKeyboardButton("📖 Glossary / Глоссарий", callback_data="menu_glossary")],
+        [InlineKeyboardButton("🔊👂 Listening / Аудирование 🚗🏋️", callback_data="menu_drive")],
     ])
 
 
-def start(update: Update, context: CallbackContext):
-    update.message.reply_text(MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
+def get_topics_keyboard():
+    buttons = []
+    for key, names in TOPICS.items():
+        count = sum(1 for q in QUESTIONS if q.get("topic") == key)
+        btn_text = f"{names['en']} / {names['ru']} ({count})"
+        buttons.append([InlineKeyboardButton(btn_text, callback_data=f"topic_{key}")])
+    buttons.append([InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")])
+    return InlineKeyboardMarkup(buttons)
+
+
+def get_topic_start_keyboard(topic_key):
+    return InlineKeyboardMarkup([
+        [InlineKeyboardButton("▶️ Start / Начать", callback_data=f"start_topic_{topic_key}")],
+        [InlineKeyboardButton("📚 Topics / Темы", callback_data="menu_topics")],
+        [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
+    ])
 
 
 # ── ГЛОССАРИЙ ──
@@ -929,6 +1014,40 @@ def button(update: Update, context: CallbackContext):
         order = list(range(len(QUESTIONS)))
         random.shuffle(order)
         state["order"] = order
+        state["pos"] = 0
+        send_question(query, state, context)
+
+    # ── Темы ──
+    elif query.data == "menu_topics":
+        try:
+            query.message.delete()
+        except Exception:
+            pass
+        context.bot.send_message(
+            chat_id=query.message.chat_id,
+            text="📚 Choose topic / Выберите тему:",
+            reply_markup=get_topics_keyboard()
+        )
+
+    elif query.data.startswith("topic_"):
+        topic_key = query.data[6:]
+        topic = TOPICS.get(topic_key, {})
+        count = sum(1 for q in QUESTIONS if q.get("topic") == topic_key)
+        text = (
+            f"{topic.get('en', '')} / {topic.get('ru', '')}\n\n"
+            f"{count} questions / {count} вопросов\n\n"
+            f"Questions on this topic only / Вопросы только по этой теме"
+        )
+        try:
+            query.edit_message_text(text, reply_markup=get_topic_start_keyboard(topic_key))
+        except Exception:
+            pass
+
+    elif query.data.startswith("start_topic_"):
+        topic_key = query.data[12:]
+        topic_order = [i for i, q in enumerate(QUESTIONS) if q.get("topic") == topic_key]
+        random.shuffle(topic_order)
+        state["order"] = topic_order
         state["pos"] = 0
         send_question(query, state, context)
 
