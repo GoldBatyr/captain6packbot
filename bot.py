@@ -849,6 +849,10 @@ def get_topic_start_keyboard(topic_key):
     ])
 
 
+def start(update: Update, context: CallbackContext):
+    update.message.reply_text(MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
+
+
 # ── ГЛОССАРИЙ ──
 
 def send_glossary(chat_id, context, index, old_msg_id=None):
