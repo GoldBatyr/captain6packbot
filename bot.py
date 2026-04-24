@@ -1175,7 +1175,12 @@ def button(update: Update, context: CallbackContext):
 
     # ── Аудирование ──
     elif query.data == "menu_drive":
-        query.edit_message_text("🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🚗 🏋️")
+        query.edit_message_text(
+            "🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🚗 🏋️",
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
+            ])
+        )
 
 
 def main():
