@@ -5358,7 +5358,7 @@ QUESTIONS = [
         "correct": 3,
         "en_explain": "Under Rule 14 (Head-on Situation) of both International and Inland Rules, when two power-driven vessels are meeting on reciprocal or nearly reciprocal courses so as to involve risk of collision, each shall alter her course to starboard so that each shall pass on the port side of the other. A vessel pushing ahead is considered a power-driven vessel, so both vessel A and the pushing vessel B must alter course to starboard and pass port-to-port.",
         "ru_explain": "Согласно Правилу 14 COLREGS (Ситуация сближения судов, идущих прямо друг на друга): когда два судна с механическим двигателем сближаются на противоположных или почти противоположных курсах так, что возникает опасность столкновения, каждое из них должно изменить свой курс вправо, чтобы разойтись левыми бортами.  Судно B, толкающее другое судно впереди себя, остаётся судном с механическим двигателем и подчиняется тем же правилам, что и судно A. При встречной ситуации (head-on situation) оба судна имеют равные обязательства — ни одно не является «привилегированным».  Правило 14(a) чётко указывает: каждое судно должно изменить курс вправо (to starboard), чтобы пройти по левому борту друг друга (port to port). Это стандартный манёвр расхождения при встречных курсах, применяемый как в международных, так и во внутренних водах США.",
-        "image": None,
+        "image": "AgACAgEAAxkDAAOJaf8bAcoj3VK5gliBUvr9m7eAoAAmkMaxuEc_lH3gABcOnd96DwAQADAgADeQAD0wQ",
         "audio_q": None,
         "audio_a": None
     },
@@ -9390,7 +9390,7 @@ QUESTIONS = [
         "correct": 0,
         "en_explain": "Under Inland Rules 33 CFR 88.15, pipelines are required to display special yellow lights visible from all directions to warn mariners of their presence. These yellow lights distinguish pipelines from other obstructions or vessels operating in inland waters. This lighting configuration is unique to U.S. Inland Rules and has no equivalent under International COLREGS.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США, трубопроводы (подводные или надводные) обозначаются специальными огнями для предупреждения судоводителей об опасности. Обычно это жёлтые проблесковые огни, расположенные на буях или опорах, маркирующих местоположение трубопровода. Эти огни отличаются от навигационных огней судов и служат для обозначения стационарных подводных сооружений, представляющих потенциальную опасность для судоходства. Судоводители обязаны соблюдать безопасную дистанцию от таких объектов и не становиться на якорь вблизи трубопроводов.",
-        "image": None,
+        "image": "AgACAgEAAxkDAANqaf8HTmuDuWJXL9Gmaifpy6C6egADWgxrG4Rz-UdidviI7cHrcQEAAWIAA3gAAzsE",
         "audio_q": None,
         "audio_a": None
     },
@@ -9630,7 +9630,7 @@ QUESTIONS = [
         "correct": 3,
         "en_explain": "This question refers to Inland Rule 9(a)(ii) and the Vessel Bridge-to-Bridge Radiotelephone Act regulations regarding vessels navigating through drawbridges. When you observe a vessel displaying flashing yellow lights (indicating a vessel engaged in public safety activities or a special operation), you should wait until the vessel ahead crosses your bow before proceeding. The flashing yellow lights serve as a warning signal that requires other vessels to exercise caution and yield the right-of-way until the signaling vessel has completed its crossing maneuver.",
         "ru_explain": "На внутренних водных путях США жёлтые проблесковые огни в сочетании с вертикальными красными огнями обозначают разводной (подъёмный или поворотный) мост в процессе открытия или закрытия. Два вертикальных ряда красных огней указывают на судоходный пролёт моста. Когда жёлтые огни мигают, это означает, что мост находится в движении. Судоводитель должен проходить между двумя рядами красных огней, которые обозначают границы судоходного пролёта. Это стандартная сигнализация для разводных мостов согласно Правилам плавания по внутренним водам США (Inland Navigation Rules).",
-        "image": None,
+        "image": "AgACAgEAAxkDAANraf8HUZDC_JffPL_h6efSU5fgFxYAAlsMaxuEc_lH0FBexn9PIngBAAMCAAN4AAM7BA",
         "audio_q": None,
         "audio_a": None
     },
@@ -10326,7 +10326,7 @@ QUESTIONS = [
         "correct": 0,
         "en_explain": "Under Inland Rules Rule 34(a), when power-driven vessels are meeting or crossing within half a mile, one short blast signals intent to leave the other vessel on your port side, while two short blasts signal intent to leave the other on your starboard side. In a narrow channel situation where vessels are passing port-to-port (the normal arrangement), both vessels should sound one short blast to indicate their intent to leave the other vessel on their port side. This exchange of signals serves as a proposal and agreement between the two vessels.",
         "ru_explain": "Согласно Правилам плавания во внутренних водах США, при расхождении судов левыми бортами в узком канале оба судна должны подать два коротких звуковых сигнала (свистком). Два коротких сигнала означают намерение «Я изменяю свой курс влево» или согласие на расхождение левыми бортами. На схеме 29 суда идут встречными курсами и расходятся левыми бортами, что является нестандартным манёвром (обычно суда расходятся правыми бортами с подачей одного короткого сигнала). Поэтому оба судна должны обменяться сигналами из двух коротких звуков для подтверждения взаимного согласия на такое расхождение.",
-        "image": None,
+        "image": "AgACAgEAAxkDAANOaf8UM4AtK_sZ-eLapsJyDH7dkxYAAmUMaxuEc_lH6Vr1d9QB2l4BAAMCAAN4AAM7BA",
         "audio_q": None,
         "audio_a": None
     },
@@ -10662,7 +10662,7 @@ QUESTIONS = [
         "correct": 0,
         "en_explain": "A vessel displaying only a single white light at night, as shown in Diagram 46, indicates a sailing vessel under 7 meters in length, or alternatively a vessel under oars, which may exhibit this light to prevent collision instead of the standard navigation lights. Under Rule 25(d) of both International and Inland Rules, sailing vessels less than 7 meters in length shall, if practicable, display sidelights and sternlight, but if not, shall have ready a white light to show in sufficient time to prevent collision.",
         "ru_explain": "На схеме 46 показан один белый круговой огонь. Согласно Правилу 25 МППСС-72, парусное судно длиной менее 7 метров, если это практически возможно, должно нести бортовые и кормовой огни, но если это невозможно — должно иметь наготове электрический фонарь или зажжённый фонарь с белым светом, который должен заблаговременно выставляться для предупреждения столкновения. Также парусное судно на ходу может нести топовый огонь, бортовые огни и кормовой огонь, либо комбинированный фонарь на топе мачты. Один белый огонь в данном контексте указывает на малое парусное судно, использующее упрощённую схему огней.",
-        "image": None,
+        "image": "AgACAgEAAxkDAANtaf8HVCqXFdD3ccXO1vEBFz7BA-0AAl0MaxuEc_lH5ZoB-5oX5ycBAAMCAAN4AAM7BA",
         "audio_q": None,
         "audio_a": None
     },
@@ -10782,7 +10782,7 @@ QUESTIONS = [
         "correct": 0,
         "en_explain": "I cannot provide a complete explanation for this question because the critical information is missing. The question references \"DIAGRAM 6\" which is not shown, and all four answer choices (A through D) as well as the correct answer are listed as not visible (\"не видны на скриншоте\" / \"не виден\").  To properly answer this question, I would need to see the day signal diagram and the answer options. Day signals under Rule 27 (vessels not under command or restricted in ability to maneuver), Rule 28 (vessels constrained by draft), Rule 30 (anchored vessels and vessels aground), or other applicable COLREGS/Inland Rules could apply depending on what shapes are displayed.",
         "ru_explain": "Без изображения схемы 6 невозможно определить точный ответ. Дневные сигналы (знаки) — это фигуры (шары, конусы, цилиндры, ромбы), которые суда обязаны нести в дневное время для обозначения своего состояния или рода деятельности. Например: • **Один шар** — судно на якоре • **Два шара по вертикали** — судно, не управляющееся с помощью руля • **Три шара по вертикали** — судно на мели • **Шар-ромб-шар** — судно, ограниченное в возможности маневрировать • **Конус вершиной вниз** — парусное судно, идущее под мотором • **Два конуса вершинами вместе** — судно, занятое ловом рыбы  Для точного перевода вариантов ответов необходимо предоставить изображение схемы 6.",
-        "image": None,
+        "image": "AgACAgEAAxkDAANuaf8HV3nC8LY-G9d8uEqJVa-dQVsAAl4MaxuEc_lH8HRJtmiOLrEBAAMCAANSAAM7BA",
         "audio_q": None,
         "audio_a": None
     },
@@ -10950,7 +10950,7 @@ QUESTIONS = [
         "correct": 3,
         "en_explain": "Under International Rules (COLREGS), whistle signals are used to indicate actions being taken, not intentions. Since vessel \"A\" is overtaking vessel \"B\" and will pass without changing course, no whistle signal is required because no course alteration is being made. Rule 34(a) requires sound signals only when vessels are maneuvering by altering course, so if the overtaking vessel maintains its heading, no signal is necessary.",
         "ru_explain": "Согласно МППСС-72 (Международные правила предупреждения столкновений судов), в открытом море при обгоне судно-обгоняющее НЕ ОБЯЗАНО подавать звуковые сигналы манёвроуказания, если оно проходит без изменения курса. Сигналы манёвроуказания (один короткий — «Я изменяю курс вправо», два коротких — «Я изменяю курс влево») подаются только при фактическом изменении курса. Это отличается от Внутренних правил США (Inland Rules), где требуется обмен сигналами о намерениях между судами. В данной ситуации судно \"А\" следует прежним курсом, поэтому звуковые сигналы не требуются.",
-        "image": None,
+        "image": "AgACAgEAAxkDAANzaf8KMiQRkzAzpZWb3cBmKC4L7rcAAmIMaxuEc_lHo2KU2DVzIWMBAAMCAANSAAM7BA",
         "audio_q": None,
         "audio_a": None
     },
@@ -10974,7 +10974,7 @@ QUESTIONS = [
         "correct": 3,
         "en_explain": "Under Inland Rules (Rule 34(a)), one short blast means \"I intend to leave you on my port side\" — in other words, \"I intend to pass port-to-port.\" This is a statement of intent requiring agreement from the other vessel, not a rudder action signal as in International Rules. The correct answer indicates vessel \"A\" is proposing a port-to-port passage, which is the normal meeting situation for two power-driven vessels.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США (Inland Rules), при встречном расхождении паровых (механических) судов используются сигналы намерения, а не сигналы действия. Один короткий звуковой сигнал (длительностью около 1 секунды) означает намерение разойтись правыми бортами — то есть \"Я намерен разойтись вашим правым бортом\" (пройти так, чтобы другое судно осталось справа). Это отличается от международных правил (COLREGS), где один короткий гудок означает \"Я изменяю курс вправо\". В данном случае вариант D правильный, так как вопрос относится именно к внутренним водам (Inland Only), где сигналы обозначают намерение, а не фактическое действие по изменению курса.",
-        "image": None,
+        "image": "AgACAgEAAxkDAANzaf8UN4VQxMg4_dnqtoa9QL1MoDoAAmYMaxuEc_lHEVZU0ASNC4ABAAMCAANSAAM7BA",
         "audio_q": None,
         "audio_a": None
     },
@@ -11262,7 +11262,7 @@ QUESTIONS = [
         "correct": 0,
         "en_explain": "Under Rule 14 (Head-on Situation), when two power-driven vessels are meeting on reciprocal or nearly reciprocal courses, each vessel shall alter her course to starboard so that each shall pass on the port side of the other. This applies regardless of whether one vessel is engaged in towing operations, as the towing vessel remains a power-driven vessel subject to the steering and sailing rules. Both Vessel A (the towing vessel) and Vessel B must take action to ensure a safe port-to-port passage.",
         "ru_explain": "Согласно Правилу 14 МППСС-72 (ситуация сближения судов, идущих прямо друг на друга), когда два судна с механическими двигателями сближаются на противоположных или почти противоположных курсах так, что возникает опасность столкновения, каждое из них должно изменить свой курс вправо, чтобы разойтись левыми бортами. Тот факт, что судно \"A\" осуществляет буксировку, не изменяет данного правила — оба судна являются судами с механическими двигателями и обязаны выполнять маневр расхождения влево по борту (левыми бортами), изменяя курс вправо.",
-        "image": None,
+        "image": "AgACAgEAAxkDAANxaf8HWy6r0Rx92VJK1ARbYokf6LAAAmAMaxuEc_lHzP9SJYfPiLABAAMCAANSAAM7BA",
         "audio_q": None,
         "audio_a": None
     },
