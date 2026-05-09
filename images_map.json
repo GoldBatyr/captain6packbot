@@ -1,0 +1,2608 @@
+{
+  "checked": 505,
+  "diagrams": 15,
+  "diagram_list": [
+    {
+      "photo": "photo_28@27-09-2025_07-38-59.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_30@27-09-2025_07-38-59.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_46@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_47@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_50@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_52@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_54@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_61@27-09-2025_07-40-32.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_63@27-09-2025_07-40-32.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_68@27-09-2025_07-40-56.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_70@27-09-2025_07-40-56.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_73@27-09-2025_07-40-56.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_80@27-09-2025_07-41-21.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_81@27-09-2025_07-41-21.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_93@27-09-2025_07-46-45.jpg",
+      "is_diagram": true,
+      "context": ""
+    }
+  ],
+  "all": [
+    {
+      "photo": "photo_1@27-09-2025_07-33-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_2@27-09-2025_07-33-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_3@27-09-2025_07-33-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_4@27-09-2025_07-33-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_5@27-09-2025_07-37-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_6@27-09-2025_07-37-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_7@27-09-2025_07-37-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_8@27-09-2025_07-37-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_9@27-09-2025_07-37-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_10@27-09-2025_07-37-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_11@27-09-2025_07-37-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_12@27-09-2025_07-37-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_13@27-09-2025_07-37-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_14@27-09-2025_07-37-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_15@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_16@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_17@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_18@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_19@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_20@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_21@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_22@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_23@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_24@27-09-2025_07-38-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_25@27-09-2025_07-38-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_26@27-09-2025_07-38-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_27@27-09-2025_07-38-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_28@27-09-2025_07-38-59.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_29@27-09-2025_07-38-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_30@27-09-2025_07-38-59.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_31@27-09-2025_07-38-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_32@27-09-2025_07-38-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_33@27-09-2025_07-38-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_34@27-09-2025_07-38-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_35@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_36@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_37@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_38@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_39@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_40@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_41@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_42@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_43@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_44@27-09-2025_07-39-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_45@27-09-2025_07-40-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_46@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_47@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_48@27-09-2025_07-40-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_49@27-09-2025_07-40-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_50@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_51@27-09-2025_07-40-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_52@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_53@27-09-2025_07-40-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_54@27-09-2025_07-40-06.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_55@27-09-2025_07-40-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_56@27-09-2025_07-40-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_57@27-09-2025_07-40-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_58@27-09-2025_07-40-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_59@27-09-2025_07-40-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_60@27-09-2025_07-40-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_61@27-09-2025_07-40-32.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_62@27-09-2025_07-40-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_63@27-09-2025_07-40-32.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_64@27-09-2025_07-40-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_65@27-09-2025_07-40-56.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_66@27-09-2025_07-40-56.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_67@27-09-2025_07-40-56.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_68@27-09-2025_07-40-56.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_69@27-09-2025_07-40-56.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_70@27-09-2025_07-40-56.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_71@27-09-2025_07-40-56.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_72@27-09-2025_07-40-56.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_73@27-09-2025_07-40-56.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_74@27-09-2025_07-40-56.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_75@27-09-2025_07-41-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_76@27-09-2025_07-41-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_77@27-09-2025_07-41-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_78@27-09-2025_07-41-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_79@27-09-2025_07-41-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_80@27-09-2025_07-41-21.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_81@27-09-2025_07-41-21.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_82@27-09-2025_07-41-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_83@27-09-2025_07-41-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_84@27-09-2025_07-41-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_85@27-09-2025_07-46-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_86@27-09-2025_07-46-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_87@27-09-2025_07-46-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_88@27-09-2025_07-46-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_89@27-09-2025_07-46-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_90@27-09-2025_07-46-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_91@27-09-2025_07-46-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_92@27-09-2025_07-46-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_93@27-09-2025_07-46-45.jpg",
+      "is_diagram": true,
+      "context": ""
+    },
+    {
+      "photo": "photo_94@27-09-2025_07-46-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_95@27-09-2025_07-47-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_96@27-09-2025_07-47-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_97@27-09-2025_07-47-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_98@27-09-2025_07-47-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_99@27-09-2025_07-47-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_100@27-09-2025_07-47-06.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_101@27-09-2025_07-47-57.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_102@27-09-2025_07-47-57.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_103@27-09-2025_07-47-57.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_104@27-09-2025_07-47-57.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_105@27-09-2025_07-47-57.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_106@27-09-2025_07-47-57.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_107@27-09-2025_07-47-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_108@27-09-2025_07-47-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_109@27-09-2025_07-47-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_110@27-09-2025_07-47-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_111@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_112@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_113@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_114@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_115@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_116@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_117@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_118@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_119@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_120@27-09-2025_07-48-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_121@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_122@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_123@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_124@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_125@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_126@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_127@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_128@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_129@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_130@27-09-2025_07-48-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_131@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_132@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_133@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_134@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_135@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_136@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_137@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_138@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_139@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_140@27-09-2025_07-49-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_141@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_142@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_143@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_144@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_145@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_146@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_147@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_148@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_149@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_150@27-09-2025_07-50-03.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_151@27-09-2025_07-50-24.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_152@27-09-2025_07-50-24.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_153@27-09-2025_07-50-24.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_154@27-09-2025_07-50-24.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_155@27-09-2025_07-50-24.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_156@27-09-2025_07-50-24.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_157@27-09-2025_07-50-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_158@27-09-2025_07-50-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_159@27-09-2025_07-50-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_160@27-09-2025_07-50-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_161@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_162@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_163@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_164@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_165@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_166@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_167@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_168@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_169@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_170@27-09-2025_07-50-50.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_171@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_172@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_173@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_174@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_175@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_176@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_177@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_178@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_179@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_180@27-09-2025_07-51-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_181@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_182@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_183@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_184@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_185@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_186@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_187@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_188@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_189@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_190@27-09-2025_07-51-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_191@27-09-2025_07-51-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_192@27-09-2025_07-51-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_193@27-09-2025_07-51-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_194@27-09-2025_07-51-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_195@27-09-2025_07-51-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_196@27-09-2025_07-51-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_197@27-09-2025_07-52-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_198@27-09-2025_07-52-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_199@27-09-2025_07-52-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_200@27-09-2025_07-52-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_201@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_202@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_203@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_204@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_205@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_206@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_207@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_208@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_209@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_210@27-09-2025_07-52-22.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_211@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_212@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_213@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_214@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_215@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_216@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_217@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_218@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_219@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_220@27-09-2025_07-52-45.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_221@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_222@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_223@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_224@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_225@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_226@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_227@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_228@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_229@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_230@27-09-2025_07-53-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_231@27-09-2025_07-53-37.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_232@27-09-2025_07-53-37.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_233@27-09-2025_07-53-37.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_234@27-09-2025_07-53-37.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_235@27-09-2025_07-53-37.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_236@27-09-2025_07-53-37.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_237@27-09-2025_07-53-38.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_238@27-09-2025_07-53-38.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_239@27-09-2025_07-53-38.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_240@27-09-2025_07-53-38.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_241@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_242@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_243@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_244@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_245@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_246@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_247@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_248@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_249@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_250@27-09-2025_07-54-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_251@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_252@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_253@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_254@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_255@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_256@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_257@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_258@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_259@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_260@27-09-2025_07-54-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_261@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_262@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_263@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_264@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_265@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_266@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_267@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_268@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_269@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_270@27-09-2025_07-54-47.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_271@27-09-2025_07-55-10.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_272@27-09-2025_07-55-10.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_273@27-09-2025_07-55-10.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_274@27-09-2025_07-55-10.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_275@27-09-2025_07-55-10.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_276@27-09-2025_07-55-10.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_277@27-09-2025_07-55-11.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_278@27-09-2025_07-55-11.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_279@27-09-2025_07-55-11.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_280@27-09-2025_07-55-11.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_281@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_282@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_283@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_284@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_285@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_286@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_287@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_288@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_289@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_290@27-09-2025_07-55-34.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_291@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_292@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_293@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_294@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_295@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_296@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_297@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_298@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_299@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_300@27-09-2025_07-55-58.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_301@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_302@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_303@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_304@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_305@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_306@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_307@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_308@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_309@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_310@27-09-2025_07-56-21.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_311@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_312@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_313@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_314@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_315@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_316@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_317@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_318@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_319@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_320@27-09-2025_07-56-48.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_321@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_322@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_323@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_324@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_325@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_326@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_327@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_328@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_329@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_330@27-09-2025_07-57-12.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_331@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_332@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_333@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_334@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_335@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_336@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_337@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_338@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_339@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_340@27-09-2025_07-57-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_341@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_342@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_343@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_344@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_345@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_346@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_347@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_348@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_349@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_350@27-09-2025_07-57-59.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_351@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_352@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_353@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_354@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_355@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_356@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_357@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_358@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_359@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_360@27-09-2025_07-58-23.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_361@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_362@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_363@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_364@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_365@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_366@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_367@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_368@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_369@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_370@27-09-2025_07-58-46.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_371@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_372@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_373@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_374@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_375@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_376@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_377@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_378@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_379@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_380@27-09-2025_07-59-14.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_381@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_382@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_383@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_384@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_385@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_386@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_387@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_388@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_389@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_390@27-09-2025_07-59-41.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_391@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_392@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_393@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_394@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_395@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_396@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_397@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_398@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_399@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_400@27-09-2025_08-00-05.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_401@27-09-2025_08-00-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_402@27-09-2025_08-00-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_403@27-09-2025_08-00-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_404@27-09-2025_08-00-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_405@27-09-2025_08-00-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_406@27-09-2025_08-00-31.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_407@27-09-2025_08-00-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_408@27-09-2025_08-00-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_409@27-09-2025_08-00-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_410@27-09-2025_08-00-32.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_411@27-09-2025_08-01-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_412@27-09-2025_08-01-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_413@27-09-2025_08-01-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_414@27-09-2025_08-01-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_415@27-09-2025_08-01-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_416@27-09-2025_08-01-00.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_417@27-09-2025_08-01-01.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_418@27-09-2025_08-01-01.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_419@27-09-2025_08-01-01.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_420@27-09-2025_08-01-01.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_421@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_422@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_423@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_424@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_425@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_426@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_427@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_428@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_429@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_430@27-09-2025_08-01-25.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_431@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_432@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_433@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_434@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_435@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_436@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_437@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_438@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_439@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_440@27-09-2025_08-01-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_441@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_442@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_443@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_444@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_445@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_446@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_447@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_448@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_449@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_450@27-09-2025_08-02-15.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_451@27-09-2025_08-02-39.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_452@27-09-2025_08-02-39.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_453@27-09-2025_08-02-39.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_454@27-09-2025_08-02-39.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_455@27-09-2025_08-02-39.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_456@27-09-2025_08-02-39.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_457@27-09-2025_08-02-40.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_458@27-09-2025_08-02-40.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_459@27-09-2025_08-02-40.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_460@27-09-2025_08-02-40.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_461@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_462@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_463@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_464@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_465@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_466@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_467@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_468@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_469@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_470@27-09-2025_08-03-04.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_471@27-09-2025_08-03-27.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_472@27-09-2025_08-03-27.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_473@27-09-2025_08-03-27.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_474@27-09-2025_08-03-27.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_475@27-09-2025_08-03-27.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_476@27-09-2025_08-03-27.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_477@27-09-2025_08-03-27.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_478@27-09-2025_08-03-28.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_479@27-09-2025_08-03-28.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_480@27-09-2025_08-03-28.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_481@27-09-2025_08-03-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_482@27-09-2025_08-03-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_483@27-09-2025_08-03-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_484@27-09-2025_08-03-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_485@27-09-2025_08-03-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_486@27-09-2025_08-03-51.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_487@27-09-2025_08-03-52.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_488@27-09-2025_08-03-52.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_489@27-09-2025_08-03-52.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_490@27-09-2025_08-03-52.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_491@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_492@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_493@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_494@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_495@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_496@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_497@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_498@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_499@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_500@27-09-2025_08-04-16.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_501@27-09-2025_08-04-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_502@27-09-2025_08-04-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_503@27-09-2025_08-04-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_504@27-09-2025_08-04-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    },
+    {
+      "photo": "photo_505@27-09-2025_08-04-35.jpg",
+      "is_diagram": false,
+      "context": ""
+    }
+  ]
+}
