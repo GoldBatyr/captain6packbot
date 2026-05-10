@@ -10672,20 +10672,20 @@ QUESTIONS = [
         "en_q": "BOTH INTERNATIONAL & INLAND The maximum length of a power-driven vessel which may show an all-round white light and sidelights is ___________________.",
         "ru_q": "МЕЖДУНАРОДНЫЕ И ВНУТРЕННИЕ ПРАВИЛА: Максимальная длина моторного судна, которое может нести круговой белый огонь и бортовые огни, составляет ___________________.",
         "en_options": [
-            "A) not under command",
-            "B) fishing with trawls",
-            "C) laying cable",
-            "D) aground"
+            "A) 7 meters",
+            "B) 12 meters",
+            "C) 20 meters",
+            "D) 50 meters"
         ],
         "ru_options": [
-            "A) не управляемое судно",
-            "B) судно, занятое ловом рыбы тралом",
-            "C) судно, занятое прокладкой кабеля",
-            "D) судно на мели"
+            "A) 7 метров",
+            "B) 12 метров",
+            "C) 20 метров",
+            "D) 50 метров"
         ],
-        "correct": 2,
-        "en_explain": "Under Rule 23(c) of both International and Inland Rules, a power-driven vessel of less than 12 meters in length may display an all-round white light and sidelights instead of the masthead light, sternlight, and sidelights required for larger vessels. This simplified lighting arrangement is permitted as an alternative for smaller vessels where the standard configuration may be impractical.",
-        "ru_explain": "⚠️ **ВНИМАНИЕ: В данном вопросе несоответствие между текстом вопроса и вариантами ответов.**",
+        "correct": 1,
+        "en_explain": "Under Rule 23(c) of both International and Inland Rules (COLREGS Rule 23(c) / 33 CFR Part 83.23(c)), a power-driven vessel of less than 12 meters in length may exhibit an all-round white light and sidelights instead of the masthead light, sternlight, and sidelights required for larger vessels. ANSWER: B",
+        "ru_explain": "Согласно Правилу 23(c) МППСС-72 и 33 CFR Part 83.23(c) (Правила для внутренних вод США): моторное судно длиной менее 12 метров может нести круговой белый огонь и бортовые огни вместо топового огня, кормового огня и бортовых огней, предусмотренных для судов большего размера. ОТВЕТ: B",
         "image": None,
         "audio_q": None,
         "audio_a": None
