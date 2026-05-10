@@ -3,7 +3,7 @@ import json
 with open('/Users/Batyr/Documents/exam_screens/questions.json', encoding='utf-8') as f:
     data = json.load(f)
 
-q_str = 'QUESTIONS = ' + json.dumps(data, ensure_ascii=False, indent=4)
+q_str = "QUESTIONS = " + json.dumps(data, ensure_ascii=False, indent=4).replace("null", "None").replace("true", "True").replace("false", "False")
 
 rest = r"""
 user_state = {}
