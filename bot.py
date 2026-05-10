@@ -11605,20 +11605,20 @@ def send_progress_snapshot(chat_id, context, state):
     else:
         delta_text = (
             f"📅 {date_str} — since last time / с прошлого раза:\n"
-            f"🇺🇸 English: +{en_done - last['en']}\n"
-            f"🇷🇺 Russian: +{ru_done - last['ru']}\n"
+            f"EN: +{en_done - last['en']}\n"
+            f"RU: +{ru_done - last['ru']}\n"
             f"🎧 Audio: +{audio_done - last['audio']}"
         )
 
     text = (
         f"📊 My Progress / Мой прогресс\n\n"
-        f"🇺🇸 English answered:  {en_done} / {total}\n"
+        f"EN answered:  {en_done} / {total}\n"
         f"{bar(en_done, total)}\n\n"
-        f"🇷🇺 На русском:  {ru_done} / {total}\n"
+        f"RU answered:  {ru_done} / {total}\n"
         f"{bar(ru_done, total)}\n\n"
-        f"🎧 Audio listened:  {audio_done} / {total}\n"
+        f"Audio listened:  {audio_done} / {total}\n"
         f"{bar(audio_done, total)}\n\n"
-        f"By topic / По темам (🇺🇸 EN):\n"
+        f"By topic / По темам (EN):\n"
         f"{topics_text}\n\n"
         f"{'─' * 20}\n"
         f"{delta_text}"
@@ -11659,6 +11659,10 @@ def button(update: Update, context: CallbackContext):
         context.bot.send_message(chat_id=query.message.chat_id, text=MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
 
     elif query.data == "main_menu_from_progress":
+        try:
+            query.message.delete()
+        except Exception:
+            pass
         context.bot.send_message(chat_id=query.message.chat_id, text=MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
 
     elif query.data == "menu_quiz":
