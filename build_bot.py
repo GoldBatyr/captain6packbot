@@ -65,11 +65,23 @@ def get_topic_start_keyboard(topic_key):
 
 
 def start(update: Update, context: CallbackContext):
+    user_id = update.message.from_user.id
+    # Удаляем старое меню если есть
+    if user_id in user_state and user_state[user_id].get("last_menu_id"):
+        try:
+            update.message.bot.delete_message(
+                chat_id=update.message.chat_id,
+                message_id=user_state[user_id]["last_menu_id"]
+            )
+        except Exception:
+            pass
     try:
         update.message.delete()
     except Exception:
         pass
-    update.message.reply_text(MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
+    msg = update.message.reply_text(MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
+    if user_id in user_state:
+        user_state[user_id]["last_menu_id"] = msg.message_id
 
 
 def send_glossary(chat_id, context, index, old_msg_id=None):
@@ -234,7 +246,7 @@ def button(update: Update, context: CallbackContext):
         random.shuffle(order)
         user_state[user_id] = {
             "lang": "ru", "pos": 0, "g_index": 0, "order": order, "audio_msg_ids": [],
-            "progress_en": set(), "progress_ru": set(), "progress_audio": set(), "last_snapshot": None,
+            "progress_en": set(), "progress_ru": set(), "progress_audio": set(), "last_snapshot": None, "last_menu_id": None,
         }
     state = user_state[user_id]
     for key in ["audio_msg_ids", "progress_en", "progress_ru", "progress_audio"]:
