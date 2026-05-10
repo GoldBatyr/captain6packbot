@@ -11471,6 +11471,10 @@ def get_topic_start_keyboard(topic_key):
 
 
 def start(update: Update, context: CallbackContext):
+    try:
+        update.message.delete()
+    except Exception:
+        pass
     update.message.reply_text(MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
 
 
