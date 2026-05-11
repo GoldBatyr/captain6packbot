@@ -34,7 +34,7 @@ body {
     linear-gradient(90deg, rgba(0,198,212,.03) 1px, transparent 1px);
   background-size: 72px 72px;
 }
-#starfield { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+#starfield { display: none; }
 
 .page {
   position: relative; z-index: 1;
@@ -526,30 +526,7 @@ async function handleSubmit(e){
 }
 
 (function(){
-  const canvas = document.getElementById('starfield');
-  const ctx = canvas.getContext('2d');
-  let stars = [];
-  function resize(){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    stars = Array.from({length:110}, () => ({
-      x: Math.random()*canvas.width, y: Math.random()*canvas.height,
-      r: Math.random()*1.1+.2, o: Math.random()*.4+.1,
-      s: (Math.random()*.003+.001)*(Math.random()<.5?1:-1)
-    }));
-  }
-  function draw(){
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    stars.forEach(s => {
-      s.o += s.s;
-      if(s.o>.55||s.o<.08) s.s*=-1;
-      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
-      ctx.fillStyle=`rgba(0,198,212,${s.o})`; ctx.fill();
-    });
-    requestAnimationFrame(draw);
-  }
-  window.addEventListener('resize', resize);
-  resize(); draw();
+  // starfield disabled for performance
 })();
 </script>
 </body>
