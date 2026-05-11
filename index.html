@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Captain6PackBot — Скоро запуск</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&family=Literata:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --ink:   #07111f;
+  --teal:  #00c6d4;
+  --gold:  #e8a020;
+  --fog:   #8ba4c0;
+  --white: #eef3f8;
+}
+body {
+  background: var(--ink); color: var(--white);
+  font-family: 'Literata', Georgia, serif;
+  min-height: 100vh; overflow-x: hidden;
+}
+.glow-bg {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 110%, rgba(0,198,212,.13) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 10% 60%, rgba(232,160,32,.07) 0%, transparent 60%);
+}
+.grid-bg {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background-image:
+    linear-gradient(rgba(0,198,212,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,198,212,.03) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+#starfield { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+
+.page {
+  position: relative; z-index: 1;
+  display: flex; flex-direction: column; align-items: center;
+  padding: 60px 24px 80px; text-align: center;
+}
+
+.compass-wrap { margin-bottom: 36px; animation: rise .9s cubic-bezier(.22,1,.36,1) both; }
+.compass { width: 76px; height: 76px; animation: spin 40s linear infinite; opacity: .85; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(0,198,212,.08); border: 1px solid rgba(0,198,212,.22);
+  border-radius: 999px; padding: 7px 18px;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--teal);
+  margin-bottom: 32px; animation: rise .9s .1s cubic-bezier(.22,1,.36,1) both;
+}
+.pill-dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--teal);
+  animation: blink 2.2s ease-in-out infinite;
+}
+@keyframes blink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.65)} }
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(56px, 13vw, 104px);
+  line-height: .92; letter-spacing: .015em;
+  animation: rise .9s .18s cubic-bezier(.22,1,.36,1) both; margin-bottom: 6px;
+}
+h1 em { font-style: normal; color: var(--teal); display: block; }
+
+.mono-sub {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--gold);
+  margin-bottom: 20px; animation: rise .9s .26s cubic-bezier(.22,1,.36,1) both;
+}
+.rule {
+  width: 64px; height: 1px;
+  background: linear-gradient(to right, transparent, var(--teal), transparent);
+  margin: 0 auto 32px; animation: rise .9s .3s cubic-bezier(.22,1,.36,1) both;
+}
+
+.lead {
+  max-width: 500px; font-size: 17px; line-height: 1.8; color: var(--fog);
+  margin-bottom: 14px; animation: rise .9s .36s cubic-bezier(.22,1,.36,1) both;
+}
+.lead strong { color: var(--white); font-weight: 600; }
+.lead-2 {
+  max-width: 460px; font-size: 16px; line-height: 1.75; color: var(--fog);
+  margin-bottom: 14px; animation: rise .9s .4s cubic-bezier(.22,1,.36,1) both;
+}
+.lead-2 strong { color: var(--teal); font-weight: 600; }
+.lead-italic {
+  max-width: 440px; font-style: italic; font-size: 15px; line-height: 1.65;
+  color: rgba(139,164,192,.65); margin-bottom: 52px;
+  animation: rise .9s .44s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* LICENSE BOX */
+.license-box {
+  max-width: 460px; width: 100%;
+  background: rgba(0,198,212,.05);
+  border: 1px solid rgba(0,198,212,.18);
+  border-radius: 16px; padding: 22px 24px;
+  margin-bottom: 52px; text-align: left;
+  animation: rise .9s .46s cubic-bezier(.22,1,.36,1) both;
+}
+.license-box-title {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  letter-spacing: .15em; text-transform: uppercase; color: var(--teal);
+  margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
+}
+.license-row {
+  display: flex; gap: 10px; align-items: flex-start;
+  margin-bottom: 10px; font-size: 14px; line-height: 1.6; color: var(--fog);
+}
+.license-row:last-child { margin-bottom: 0; }
+.license-row strong { color: var(--white); font-weight: 600; }
+.license-bullet {
+  color: var(--teal); font-family: 'JetBrains Mono', monospace;
+  font-size: 12px; margin-top: 2px; flex-shrink: 0;
+}
+
+.section-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  letter-spacing: .15em; text-transform: uppercase; color: var(--fog);
+  margin-bottom: 16px;
+}
+
+.for-whom {
+  display: flex; flex-direction: column; gap: 10px;
+  max-width: 460px; width: 100%; margin-bottom: 52px;
+  animation: rise .9s .5s cubic-bezier(.22,1,.36,1) both;
+}
+.fwrow {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.07);
+  border-radius: 12px; padding: 14px 18px; text-align: left; transition: border-color .2s;
+}
+.fwrow:hover { border-color: rgba(0,198,212,.25); }
+.fwrow-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.fwrow-text { font-size: 14px; line-height: 1.6; color: var(--fog); }
+.fwrow-text strong { color: var(--white); font-weight: 600; display: block; margin-bottom: 3px; }
+
+.chips {
+  display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+  max-width: 500px; margin-bottom: 56px;
+  animation: rise .9s .56s cubic-bezier(.22,1,.36,1) both;
+}
+.chip {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+  border-radius: 10px; padding: 10px 16px; font-size: 13.5px; color: var(--fog);
+  transition: border-color .2s, color .2s;
+}
+.chip:hover { border-color: rgba(0,198,212,.3); color: var(--white); }
+
+.vdiv {
+  width: 1px; height: 56px;
+  background: linear-gradient(to bottom, transparent, rgba(0,198,212,.25), transparent);
+  margin: 0 auto 52px;
+}
+
+/* AUTHOR BLOCK */
+.author-block {
+  max-width: 460px; width: 100%;
+  background: linear-gradient(135deg, rgba(232,160,32,.07) 0%, rgba(0,198,212,.06) 100%);
+  border: 1px solid rgba(232,160,32,.2);
+  border-radius: 20px; padding: 28px 28px 24px;
+  margin-bottom: 52px;
+  animation: rise .9s .6s cubic-bezier(.22,1,.36,1) both;
+  position: relative; overflow: hidden;
+}
+.author-block::before {
+  content: '5';
+  position: absolute; right: -10px; top: -20px;
+  font-family: 'Bebas Neue', sans-serif; font-size: 140px;
+  color: rgba(232,160,32,.06); line-height: 1; pointer-events: none; user-select: none;
+}
+.author-season {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 14px;
+  background: rgba(232,160,32,.1); border: 1px solid rgba(232,160,32,.2);
+  border-radius: 999px; padding: 5px 14px;
+}
+.author-wave { font-size: 36px; margin-bottom: 12px; display: block; }
+.author-name {
+  font-family: 'Bebas Neue', sans-serif; font-size: 28px;
+  letter-spacing: .06em; color: var(--white); margin-bottom: 14px;
+}
+.author-text {
+  font-size: 15px; line-height: 1.8; color: var(--fog);
+  font-style: italic; text-align: left;
+}
+.author-text strong { color: var(--white); font-style: normal; font-weight: 600; }
+.author-text em { color: var(--gold); font-style: normal; }
+
+/* SOCIAL */
+.social-grid {
+  display: flex; flex-direction: column; gap: 12px;
+  max-width: 400px; width: 100%; margin-bottom: 52px;
+  animation: rise .9s .66s cubic-bezier(.22,1,.36,1) both;
+}
+.soc-btn {
+  display: flex; align-items: center; gap: 14px;
+  padding: 15px 20px; border-radius: 14px;
+  text-decoration: none; transition: all .22s; border: 1px solid transparent;
+}
+.soc-btn:hover { transform: translateY(-2px); }
+.soc-tg  { background: rgba(0,198,212,.08);  border-color: rgba(0,198,212,.22);  color: var(--teal); }
+.soc-tg:hover  { background: rgba(0,198,212,.15);  border-color: rgba(0,198,212,.45);  box-shadow: 0 0 24px rgba(0,198,212,.12); }
+.soc-ig  { background: rgba(232,107,44,.07);  border-color: rgba(232,107,44,.2);   color: #f4845f; }
+.soc-ig:hover  { background: rgba(232,107,44,.14);  border-color: rgba(232,107,44,.42); box-shadow: 0 0 24px rgba(232,107,44,.1); }
+.soc-fb  { background: rgba(66,103,178,.08); border-color: rgba(66,103,178,.22); color: #7a9fd4; }
+.soc-fb:hover  { background: rgba(66,103,178,.15); border-color: rgba(66,103,178,.45); box-shadow: 0 0 24px rgba(66,103,178,.1); }
+.soc-icon { width: 26px; height: 26px; flex-shrink: 0; }
+.soc-info { text-align: left; }
+.soc-name { font-family: 'JetBrains Mono', monospace; font-weight: 600; font-size: 14px; display: block; }
+.soc-desc { font-size: 12px; opacity: .65; margin-top: 3px; display: block; font-style: italic; line-height: 1.5; }
+
+.wave-wrap { position: fixed; bottom: 0; left: 0; width: 100%; pointer-events: none; z-index: 0; opacity: .1; }
+
+/* EARLY ACCESS */
+.early-block {
+  max-width: 460px; width: 100%;
+  background: linear-gradient(135deg, rgba(0,198,212,.07) 0%, rgba(232,160,32,.06) 100%);
+  border: 1px solid rgba(0,198,212,.25);
+  border-radius: 20px; padding: 32px 28px;
+  margin-bottom: 52px; text-align: center;
+  animation: rise .9s .7s cubic-bezier(.22,1,.36,1) both;
+  position: relative; overflow: hidden;
+}
+.early-block::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(0,198,212,.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.early-icon { font-size: 38px; margin-bottom: 12px; }
+.early-title {
+  font-family: 'Bebas Neue', sans-serif; font-size: 30px;
+  letter-spacing: .05em; color: var(--white); margin-bottom: 12px;
+}
+.early-text {
+  font-size: 15px; line-height: 1.7; color: var(--fog); margin-bottom: 24px;
+}
+.early-text em { color: var(--teal); font-style: normal; }
+.early-form { width: 100%; }
+.early-row {
+  display: flex; border-radius: 12px; overflow: hidden;
+  border: 1px solid rgba(0,198,212,.3); margin-bottom: 12px;
+}
+.early-row input {
+  flex: 1; background: rgba(255,255,255,.05); border: none; outline: none;
+  padding: 15px 18px; color: var(--white); font-family: 'Literata', serif; font-size: 14px;
+}
+.early-row input::placeholder { color: rgba(255,255,255,.22); }
+.early-row button {
+  background: var(--teal); border: none; color: var(--ink);
+  font-family: 'JetBrains Mono', monospace; font-weight: 600;
+  font-size: 12px; letter-spacing: .06em; padding: 15px 20px;
+  cursor: pointer; transition: background .2s; white-space: nowrap;
+}
+.early-row button:hover { background: #00dde9; }
+.early-ok {
+  display: none; font-family: 'JetBrains Mono', monospace;
+  font-size: 13px; color: var(--teal); letter-spacing: .06em;
+  margin-bottom: 12px; line-height: 1.6;
+}
+.early-note {
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  letter-spacing: .1em; color: rgba(139,164,192,.4); text-transform: uppercase;
+}
+
+footer {
+  position: relative; z-index: 1; padding: 20px 24px 28px;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  color: rgba(139,164,192,.3); letter-spacing: .07em; text-align: center;
+}
+
+@keyframes rise {
+  from { opacity:0; transform:translateY(20px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@media (max-width: 480px) {
+  .chip { font-size: 12.5px; padding: 9px 13px; }
+  .fwrow-text { font-size: 13.5px; }
+  .author-block { padding: 22px 20px; }
+  .license-box { padding: 18px; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="glow-bg"></div>
+<div class="grid-bg"></div>
+
+<div class="wave-wrap">
+  <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 50 C360 0 720 100 1080 50 C1260 25 1380 70 1440 50 L1440 100 L0 100 Z" fill="#00c6d4"/>
+  </svg>
+</div>
+
+<div class="page">
+
+  <!-- COMPASS -->
+  <div class="compass-wrap">
+    <svg class="compass" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="40" cy="40" r="37" stroke="rgba(0,198,212,.25)" stroke-width="1.5"/>
+      <circle cx="40" cy="40" r="27" stroke="rgba(0,198,212,.1)" stroke-width="1"/>
+      <line x1="40" y1="3"  x2="40" y2="13" stroke="#00c6d4" stroke-width="2" stroke-linecap="round"/>
+      <line x1="40" y1="67" x2="40" y2="77" stroke="rgba(0,198,212,.35)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="3"  y1="40" x2="13" y2="40" stroke="rgba(0,198,212,.35)" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="67" y1="40" x2="77" y2="40" stroke="rgba(0,198,212,.35)" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="36.5" y="24" font-family="'JetBrains Mono',monospace" font-size="8" fill="#00c6d4">N</text>
+      <polygon points="40,14 43,40 40,47 37,40" fill="#00c6d4" opacity=".9"/>
+      <polygon points="40,66 43,40 40,47 37,40" fill="rgba(139,164,192,.25)"/>
+      <circle cx="40" cy="40" r="4" fill="#07111f" stroke="#00c6d4" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <!-- PILL -->
+  <div class="pill"><div class="pill-dot"></div>В разработке · Скоро запуск</div>
+
+  <!-- HEADLINE -->
+  <h1>Captain<em>6Pack</em>Bot</h1>
+  <div class="mono-sub">Telegram · USCG · Russian-speaking mariners</div>
+  <div class="rule"></div>
+
+  <!-- PITCH -->
+  <p class="lead">
+    Хочешь <strong>сдать экзамен на лицензию капитана США</strong> (USCG 6-Pack)
+    и работать на воде в Америке?
+    Готовься к тесту <strong>на русском</strong> — без стресса, прямо в Telegram.
+  </p>
+  <p class="lead-2">
+    Заодно прокачаешь <strong>морской английский</strong> —
+    термины которые реально используют американские моряки,
+    с правильным произношением и контекстом.
+  </p>
+  <p class="lead-italic">
+    Сдал экзамен → получил лицензию → новая профессия в США → хорошие деньги.
+  </p>
+
+  <!-- WHAT YOU GET WITH LICENSE -->
+  <div class="section-label" style="animation: rise .9s .42s cubic-bezier(.22,1,.36,1) both;">С лицензией USCG 6-Pack ты сможешь</div>
+  <div class="license-box">
+    <div class="license-row">
+      <span class="license-bullet">▸</span>
+      <span>Официально <strong>управлять судами до 26 футов (8 метров)</strong> в коммерческих целях</span>
+    </div>
+    <div class="license-row">
+      <span class="license-bullet">▸</span>
+      <span>Брать пассажиров на борт коммерчески — <strong>экскурсии, уроки, туры</strong></span>
+    </div>
+    <div class="license-row">
+      <span class="license-bullet">▸</span>
+      <span>Работать в <strong>каботажных водах США</strong> — реки, озёра, прибрежные зоны, океан</span>
+    </div>
+    <div class="license-row">
+      <span class="license-bullet">▸</span>
+      <span>Управлять <strong>моторными лодками, катерами, вейкботами, яхтами</strong></span>
+    </div>
+    <div class="license-row">
+      <span class="license-bullet">▸</span>
+      <span>Официально <strong>зарабатывать как капитан</strong> — сезонно или на постоянной основе</span>
+    </div>
+  </div>
+
+  <!-- FOR WHOM -->
+  <div class="section-label" style="animation: rise .9s .46s cubic-bezier(.22,1,.36,1) both;">Для кого этот бот</div>
+  <div class="for-whom">
+    <div class="fwrow">
+      <div class="fwrow-icon">🚕</div>
+      <div class="fwrow-text">
+        <strong>Таксист, курьер, доставщик</strong>
+        Устал крутить баранку за копейки? Пройди курс — и управляй судном за хорошие деньги. Сдай направо, почувствуй себя настоящим американцем.
+      </div>
+    </div>
+    <div class="fwrow">
+      <div class="fwrow-icon">⚓</div>
+      <div class="fwrow-text">
+        <strong>Хочешь сменить профессию</strong>
+        Мечтаешь профессионально управлять лодкой, яхтой, катером в Америке — официально и зарабатывать на этом хорошие деньги.
+      </div>
+    </div>
+    <div class="fwrow">
+      <div class="fwrow-icon">🌊</div>
+      <div class="fwrow-text">
+        <strong>Уже на воде, но без лицензии</strong>
+        Инструктор, гид, работник марины — хочешь получить официальные капитанские права USCG 6-Pack.
+      </div>
+    </div>
+    <div class="fwrow">
+      <div class="fwrow-icon">RU</div>
+      <div class="fwrow-text">
+        <strong>Русскоязычные в США</strong>
+        Готовишься к USCG тесту, но учебники на английском — тяжело. Здесь всё объяснено на русском.
+      </div>
+    </div>
+    <div class="fwrow">
+      <div class="fwrow-icon">🎧</div>
+      <div class="fwrow-text">
+        <strong>Прокачиваешь морской английский</strong>
+        Хочешь говорить как настоящий американский моряк — термины, команды, VHF радио.
+      </div>
+    </div>
+  </div>
+
+  <!-- CHIPS -->
+  <div class="section-label" style="animation: rise .9s .54s cubic-bezier(.22,1,.36,1) both;">Что внутри бота</div>
+  <div class="chips">
+    <div class="chip">📋 Реальные вопросы экзамена</div>
+    <div class="chip">🎧 Аудио вопросов и ответов на EN</div>
+    <div class="chip">⚓ Морской глоссарий EN/RU</div>
+    <div class="chip">🚗🏋️ Учи за рулём или в спортзале</div>
+    <div class="chip">🔄 Квиз на русском и английском</div>
+    <div class="chip">🆓 Бесплатный старт</div>
+  </div>
+
+  <div class="vdiv"></div>
+
+  <!-- AUTHOR -->
+  <div class="author-block">
+    <div class="author-season">🌊 Лето 2026 · Пятый сезон кайфа</div>
+    <span class="author-wave">🏄‍♂️</span>
+    <div class="author-name">Кто за этим стоит</div>
+    <p class="author-text">
+      Меня зовут <strong>Батыр</strong> — капитан катера, провожу экскурсии и уроки вейксёрфинга в Сиэтле.
+      Лето 2026 — это мой <em>пятый сезон кайфа, удовольствия и заработка</em>.
+      Это моё любимое дело.<br><br>
+      Делюсь тем что знаю — и сделал этот бот чтобы
+      как можно больше людей могли подготовиться к сдаче <strong>Captain6Pack</strong>
+      без языкового барьера.<br><br>
+      Потому что знаю: когда занимаешься тем что любишь — <strong>это не работа. Это жизнь.</strong> 🌊
+    </p>
+  </div>
+
+  <!-- SOCIAL -->
+  <div class="section-label" style="animation: rise .9s .64s cubic-bezier(.22,1,.36,1) both;">
+    Следи за историей · Подписывайся
+  </div>
+  <div class="social-grid">
+
+    <a href="https://t.me/SurfWhisperer" class="soc-btn soc-tg" target="_blank" rel="noopener">
+      <svg class="soc-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+      </svg>
+      <div class="soc-info">
+        <span class="soc-name">@SurfWhisperer</span>
+        <span class="soc-desc">Telegram · 5-й сезон на воде — смотри историю изнутри</span>
+      </div>
+    </a>
+
+    <a href="https://instagram.com/GoldBatyr" class="soc-btn soc-ig" target="_blank" rel="noopener">
+      <svg class="soc-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      <div class="soc-info">
+        <span class="soc-name">@GoldBatyr</span>
+        <span class="soc-desc">Wakesurfing 🛥️🌊🏄🏄🏻‍♂️🏄🏾‍♀️ & Romantic Trips 🛥️🌇🥂🍾</span>
+      </div>
+    </a>
+
+    <a href="https://www.facebook.com/share/1GFdrKGpMA/?mibextid=wwXIfr" class="soc-btn soc-fb" target="_blank" rel="noopener">
+      <svg class="soc-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+      </svg>
+      <div class="soc-info">
+        <span class="soc-name">Батыр Галеев</span>
+        <span class="soc-desc">Wakesurfing in Seattle · SurfWhisperer</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- EARLY ACCESS -->
+  <div class="early-block">
+    <div class="early-icon">🚀</div>
+    <div class="early-title">Хочешь ранний доступ?</div>
+    <p class="early-text">
+      Оставь email — напишем первым когда бот выйдет.<br>
+      <em>Ранние пользователи получат особые условия старта.</em>
+    </p>
+    <form class="early-form" action="https://formspree.io/f/xbdwqypj" method="POST" onsubmit="handleSubmit(event)">
+      <input type="hidden" name="_subject" value="Captain6PackBot — ранний доступ">
+      <div class="early-row">
+        <input type="email" name="email" id="earlyEmail" placeholder="твой@email.com" required>
+        <button type="submit">Хочу первым →</button>
+      </div>
+    </form>
+    <div class="early-ok" id="earlyOk">✓ Записали! Ты в списке первых. Напишем при запуске. 🎯</div>
+    <div class="early-note">Никакого спама · Только одно письмо при запуске</div>
+  </div>
+
+</div>
+
+<footer>© 2026 · Made for Russian-speaking mariners in the USA</footer>
+
+<script>
+async function handleSubmit(e){
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button');
+  btn.textContent = 'Отправляем...';
+  btn.disabled = true;
+  try {
+    const resp = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if(resp.ok){
+      form.style.display = 'none';
+      document.getElementById('earlyOk').style.display = 'block';
+    } else {
+      btn.textContent = 'Попробуй снова';
+      btn.disabled = false;
+    }
+  } catch(err){
+    btn.textContent = 'Попробуй снова';
+    btn.disabled = false;
+  }
+}
+
+(function(){
+  const canvas = document.getElementById('starfield');
+  const ctx = canvas.getContext('2d');
+  let stars = [];
+  function resize(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    stars = Array.from({length:110}, () => ({
+      x: Math.random()*canvas.width, y: Math.random()*canvas.height,
+      r: Math.random()*1.1+.2, o: Math.random()*.4+.1,
+      s: (Math.random()*.003+.001)*(Math.random()<.5?1:-1)
+    }));
+  }
+  function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    stars.forEach(s => {
+      s.o += s.s;
+      if(s.o>.55||s.o<.08) s.s*=-1;
+      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(0,198,212,${s.o})`; ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize', resize);
+  resize(); draw();
+})();
+</script>
+</body>
+</html>
