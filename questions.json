@@ -405,7 +405,7 @@
         "ru_explain": "Согласно официальным источникам NGA, Национальное агентство геопространственной разведки (National Geospatial-Intelligence Agency) отвечает за издание навигационных карт открытого моря (high seas) и иностранных вод для нужд ВМС США и гражданских мореплавателей. NGA использует данные собственных гидрографических исследований, а также материалы гидрографических служб других стран. NOAA и её подразделение NOS (National Ocean Service) издают карты только прибрежных вод США и внутренних водных путей. NIMA — это прежнее название NGA (до 2003 года), поэтому правильный современный ответ — NGA.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIGzWoBMR-jmDQdP-3uvyKD0g7kop_nAAItBwACHuIIRDN20SEY6MVNOwQ",
-        "audio_a": "CQACAgEAAxkDAAIGzmoBMSDTaXsRfMb-bNFBvQYayxiLAAIuBwACHuIIRJ_vfgSWuRhZOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKbWoBRVDISIi-j9B4qTaY30q--SZUAALLCgACHuIIRHFUifqsjxxvOwQ"
     },
     {
         "num": 18,
@@ -1317,7 +1317,7 @@
         "ru_explain": "Согласно системе IALA (применяемой в водах США), знаки безопасной воды (Safe Water Marks) обозначают, что вокруг них со всех сторон находится судоходная вода. Они устанавливаются на осевых линиях фарватеров и в середине каналов. Характеристики: вертикальные красные и белые полосы (не бело-оранжевые), один красный шар в качестве топового знака. Огонь — белый изофазный, затмевающийся, длительно-проблесковый с периодом 10 секунд, или характеристика Морзе «A» (точка-тире): Mo(A). Эти знаки НЕ нумеруются и НЕ указывают конкретную сторону для обхода препятствия — они показывают, что безопасно проходить с любой стороны.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIHGWoBMaFCWLx6jbiIC9pVJn3ro2i5AAJ5BwACHuIIRGcMddc-FLzBOwQ",
-        "audio_a": "CQACAgEAAxkDAAIHGmoBMaT0tasfbmzjeVrnveZwwZbrAAJ6BwACHuIIRMrq5-J7DnH4OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKbmoBRVNTASh-g93Wh4QYyRO8h0YTAALMCgACHuIIRCJZi46rqfYaOwQ"
     },
     {
         "num": 56,
@@ -2085,7 +2085,7 @@
         "ru_explain": "Допустимая рабочая нагрузка на трос составляет 1/5 (или 20%) его разрывной прочности, что обеспечивает адекватный коэффициент безопасности 5:1 для учёта износа, ударных нагрузок и деградации. Этот стандарт установлен в общепринятой практике морского дела и приводится в документации USCG по обращению с тросами и безопасности палубы. Превышение допустимой рабочей нагрузки на трос значительно увеличивает риск разрыва троса, что может привести к серьёзным травмам или гибели членов экипажа.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIHWWoBMhLp_z1KwYZqAyz0XbQeNV_SAAK5BwACHuIIRCoBkmbbliEaOwQ",
-        "audio_a": "CQACAgEAAxkDAAIHWmoBMhQD4S_ZjGk4a7P3fyRWd99rAAK6BwACHuIIRMJlwW4Ew_j9OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKb2oBRVUkiMA-vmzlH5dfi9IWWfL4AALNCgACHuIIRJ7DDGlsHmbSOwQ"
     },
     {
         "num": 88,
@@ -4173,7 +4173,7 @@
         "ru_explain": "MARPOL 73/78 (Международная конвенция по предотвращению загрязнения с судов 1973 года, изменённая Протоколом 1978 года) — это основной международный документ, регулирующий сброс загрязняющих веществ с судов. Конвенция включает 6 приложений, охватывающих: нефть, вредные жидкие вещества, вредные вещества в упаковке, сточные воды, мусор и загрязнение воздуха. США ратифицировали МАРПОЛ, и её требования включены в национальное законодательство (33 CFR). Варианта \"MARPOL 76/87\" не существует — это вымышленное название.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIIB2oBMzZVsjj3sj5BqtYK3LKy1KEKAAJnCAACHuIIRKIN5WXapqBbOwQ",
-        "audio_a": "CQACAgEAAxkDAAIICGoBMzjPrTPO3gwZ9LsC3fZ37An6AAJoCAACHuIIRFxXDYd-BYqxOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKcGoBRVdrmHIp3yM6YPG0UZ1EeQTrAALOCgACHuIIRJx0MeW4DTD0OwQ"
     },
     {
         "num": 175,
@@ -4893,7 +4893,7 @@
         "ru_explain": "Согласно требованиям USCG по пожарной безопасности на малых судах (46 CFR), все противопожарное оборудование должно содержаться в исправном состоянии и быть готовым к немедленному использованию. Огнетушители должны регулярно проверяться и обслуживаться. Вариант A (ежедневные учения) избыточен для малых судов. Вариант B опасен — топливо нельзя хранить в открытых ёмкостях из-за риска воспламенения паров. Правильный ответ C — поддержание огнетушителей в рабочем состоянии является обязательным требованием и эффективным методом снижения риска пожара.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIIQ2oBM5zbvOOXaP9VWUhsdY4nFGpwAAKjCAACHuIIRAsv1Dqzj3Q8OwQ",
-        "audio_a": "CQACAgEAAxkDAAIIRGoBM51fZun9XFqpoNGyd-gj2v73AAKkCAACHuIIRMGpvQUIjuM9OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKcWoBRVkTKfFoaAAB_HoB8f_YCq1GqgACzwoAAh7iCEScF2aVRmZ94DsE"
     },
     {
         "num": 205,
@@ -5301,7 +5301,7 @@
         "ru_explain": "⚠️ Данный вопрос относится к законодательству США о предотвращении загрязнения нефтью (Oil Pollution Laws), которое регулируется Title 33 (Navigation and Navigable Waters) Code of Federal Regulations, части 154-156. Эти части CFR охватывают требования к перевалке нефти и операции по предотвращению загрязнения. Это административное законодательство, не входящее в COLREGS или 33 CFR Part 83.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIIZWoBM9T98NVpsyWB1m7_9KkPhnyvAALGCAACHuIIRGg52t4H3F0ROwQ",
-        "audio_a": "CQACAgEAAxkDAAIIZmoBM9ZIm1-1T8nX13snhAsQ1KlpAALHCAACHuIIRHzvt0IWjnV0OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKcmoBRVsqSbOjdh_h7uugpOFC8VqdAALQCgACHuIIRDeioM6uix0LOwQ"
     },
     {
         "num": 222,
@@ -5325,7 +5325,7 @@
         "ru_explain": "Согласно правилам FCC (47 CFR Part 80) и требованиям USCG, канал VHF 16 (156.8 МГц) является международным каналом бедствия, безопасности и вызова. Все суда, оборудованные УКВ-радиостанцией, обязаны нести постоянную вахту на этом канале во время плавания. Канал 16 используется для: передачи сигналов бедствия (MAYDAY), срочных сообщений (PAN-PAN), сообщений безопасности (SECURITÉ), а также для первоначального вызова других судов и береговых станций. После установления связи на канале 16 суда должны перейти на рабочий канал. Канал 13 используется для связи между судами при маневрировании, канал 6 — для межсудовой связи по безопасности.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIIZ2oBM9gYbROJ4CKPOQxbeZrSkG5eAALICAACHuIIRG2bkhpCsUXrOwQ",
-        "audio_a": "CQACAgEAAxkDAAIIaGoBM9ozHppfzQRGMHRko8brmKXlAALJCAACHuIIRK186txlEH9POwQ"
+        "audio_a": "CQACAgEAAxkDAAIKc2oBRV30Pn2evHl6UfjOPfxRG59vAALRCgACHuIIRNbKiWet9fjqOwQ"
     },
     {
         "num": 223,
@@ -5781,7 +5781,7 @@
         "ru_explain": "Согласно международному фонетическому алфавиту НАТО/IMO (используется в морской радиосвязи), буква \"W\" произносится как \"WHISKEY\" (УИСКИ). Этот алфавит стандартизирован Международной морской организацией (IMO) и используется для чёткой передачи информации по радио, чтобы избежать ошибок из-за помех или акцента. Каждой букве латинского алфавита соответствует кодовое слово: A-Alfa, B-Bravo, C-Charlie... W-Whiskey, X-X-ray, Y-Yankee, Z-Zulu.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIIjWoBNBnjsOSciMS5Clnke39QsdLhAALuCAACHuIIRKXkGI6_jG1SOwQ",
-        "audio_a": "CQACAgEAAxkDAAIIjmoBNBr6N2cq5-bbb_yZLLEZfrXuAALvCAACHuIIRL1cqOIO92E2OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKdGoBRV54Ggmwws5DXbVQ9atd-CTgAALSCgACHuIIRNL9m8LVjUL1OwQ"
     },
     {
         "num": 242,
@@ -5805,7 +5805,7 @@
         "ru_explain": "Согласно 33 CFR Part 26 (Bridge-to-Bridge Radiotelephone Act) и правилам FCC для морской радиосвязи: **VHF канал 13** (156.650 МГц) — обязательный канал для связи «мостик-мостик» (Bridge-to-Bridge) для координации маневров и обеспечения безопасности судоходства. Используется для согласования расхождения судов, особенно в узких проходах и акваториях портов. **VHF канал 67** — дополнительный канал для связи «мостик-мостик» в определённых районах США, также используется для получения навигационной информации от береговых служб (VTS — Vessel Traffic Services). Канал 16 — канал бедствия и вызова, не для рутинной навигационной связи. Канал 68 — рабочий канал для не-коммерческих судов. Канал 22A — связь с Береговой охраной после первичного вызова.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIIj2oBNBy34sRiuQajPH9lnD0MwblHAALwCAACHuIIRO-D3RK2BteCOwQ",
-        "audio_a": "CQACAgEAAxkDAAIIkGoBNB4N1MJYMbgBGaNr3qHE7f0tAALxCAACHuIIREbxfXNTdvd7OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKdWoBRWCWCMfKPUy6YdNNy-OjQkvEAALTCgACHuIIRBW7eXwqQOt-OwQ"
     },
     {
         "num": 243,
@@ -5925,7 +5925,7 @@
         "ru_explain": "Согласно Международному своду сигналов (International Code of Signals) и правилам радиосвязи ITU (Международного союза электросвязи), при передаче по радиотелефону используется фонетический алфавит NATO/ICAO. Буква \"O\" произносится как \"OSCAR\" (ОСС-КАР). Это стандарт морской радиосвязи, обеспечивающий чёткое понимание передаваемой информации независимо от языка и помех в эфире. Полный фонетический алфавит: Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIImWoBNC3kRces_P-V6pNqEeXb5sH1AAL6CAACHuIIRHldXNkSD8NyOwQ",
-        "audio_a": "CQACAgEAAxkDAAIImmoBNC9MBcBClWIUM3Y0MwAB6l2MVAAC-wgAAh7iCERo-HnG1AtRmzsE"
+        "audio_a": "CQACAgEAAxkDAAIKdmoBRWHplhRZ2BXt55rs3z9wK6HuAALUCgACHuIIRJwcTO3HBk4yOwQ"
     },
     {
         "num": 248,
@@ -5997,7 +5997,7 @@
         "ru_explain": "# Морские термины\n\nПередачи морского радио с частотной модуляцией (ЧМ) используют вертикальную поляризацию, которая требует установки антенн в вертикальной ориентации для достижения оптимального приема и передачи сигнала. Поэтому антенны УКВ морского радио на судах всегда устанавливаются вертикально. Это техническое требование для морской радиосвязи, определенное правилами ФКК, регулирующими морское радиооборудование, а не вопрос Международных правил предупреждения столкновений судов в море (МППСС).",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIIn2oBNDguzsUh0wkVNCc1cxswoqpEAAMJAAIe4ghEZPGsJ4ERgM47BA",
-        "audio_a": "CQACAgEAAxkDAAIIoGoBNDniAiAxOW4ySSmLe1uoUSChAAIBCQACHuIIRBZjG3XNSWeKOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKd2oBRWRZ79rUTDJq3BtHUAPyfEd0AALVCgACHuIIRFTzuUm1USrqOwQ"
     },
     {
         "num": 251,
@@ -6213,7 +6213,7 @@
         "ru_explain": "DSC (Digital Selective Calling — цифровой избирательный вызов) — это технология, встроенная в современные морские УКВ-радиостанции, которая позволяет отправить сигнал бедствия одним нажатием специальной кнопки \"DISTRESS\". При активации автоматически передаётся цифровое сообщение с идентификатором судна (MMSI), координатами (если подключён GPS) и характером бедствия. Эта функция является ключевым элементом Глобальной морской системы связи при бедствии и для обеспечения безопасности (GMDSS). SSB, VHF и UHF — это типы радиочастот/модуляции, но именно DSC обеспечивает функцию автоматической передачи сигнала бедствия нажатием одной кнопки.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIIsWoBNFZf8jjl_J2EiQn8RLbtKIz_AAISCQACHuIIRMvBUYBA_P9fOwQ",
-        "audio_a": "CQACAgEAAxkDAAIIsmoBNFfOziFr8w7WzXzS4HyfonCnAAITCQACHuIIRF2QgziHWUs9OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKeGoBRWYjIMML4PqAkyN6DuCSl27YAALWCgACHuIIRPc--KzATrsUOwQ"
     },
     {
         "num": 260,
@@ -7341,7 +7341,7 @@
         "ru_explain": "Кормовой огонь — это белый огонь, расположенный как можно ближе к корме судна. Согласно МППСС (Правило 21), кормовой огонь должен освещать непрерывную дугу горизонта в 135°. Это означает, что он виден в секторе по **67,5° на каждый борт** от направления прямо по корме (135° ÷ 2 = 67,5°). Таким образом, кормовой огонь освещает сектор, не перекрываемый бортовыми огнями (которые светят от направления прямо по носу до 112,5° в сторону кормы на каждый борт). Вместе бортовые и кормовой огни обеспечивают круговое освещение в 360°.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJD2oBNPQsbJguzPni1zu43LSY6zOsAAJwCQACHuIIRN4nzHbLb8WROwQ",
-        "audio_a": "CQACAgEAAxkDAAIJEGoBNPb6ZWceYmQmAAEsYshaK53YGwACcQkAAh7iCEST9Bx3SWMU3TsE"
+        "audio_a": "CQACAgEAAxkDAAIKeWoBRWfQqs8w4F4Ppcdd-fK8dQrTAALXCgACHuIIRAi6qUARCG0COwQ"
     },
     {
         "num": 307,
@@ -7701,7 +7701,7 @@
         "ru_explain": "Маяк Саутист-Лайт (Southeast Light) расположен на юго-восточной оконечности острова Блок-Айленд в штате Род-Айленд. Для определения географических координат навигационного знака необходимо использовать морскую карту NOAA № 13205 и снять координаты с помощью измерительного циркуля и шкал широты (на боковых рамках карты) и долготы (на верхней и нижней рамках). Правильный ответ — 41°9'12.3\" северной широты и 71°33'7.7\" западной долготы. Варианты A и C содержат ошибки в градусах широты или долготы, а вариант D указывает на совершенно другое местоположение.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJLWoBNSbP2Nl-Rf4CFdjvckB5fqHzAAKOCQACHuIIRKhXNqWzfuooOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJLmoBNSct8tQ1E5tBZ9MdXLKJjKtYAAKPCQACHuIIRAjZE1hH2xFQOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKemoBRWkvQakYgGuscBVPjL0JwuZoAALYCgACHuIIRJnxvaacCgpWOwQ"
     },
     {
         "num": 322,
@@ -7749,7 +7749,7 @@
         "ru_explain": "Для определения истинного курса между двумя маяками необходимо использовать навигационную карту района. Маяк Пойнт-Джудит расположен на побережье Род-Айленда, а маяк Сэнди-Пойнт находится на северной оконечности острова Блок-Айленд. Истинный курс определяется путём прокладки линии пеленга между двумя точками на карте и измерения угла относительно истинного (географического) меридиана с помощью параллельной линейки и картушки компаса. Курс 209° истинный указывает направление примерно на юго-юго-запад, что соответствует географическому расположению острова Блок-Айленд относительно Пойнт-Джудит.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJMWoBNS1mmjuXL6asNRn3xkvXxP_9AAKSCQACHuIIRNbzM4JwxGOMOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJMmoBNS_EriRRAqe7Kw3hV1t4Ssj6AAKTCQACHuIIRKFu4ytraNmrOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKe2oBRWt8D1qmxla-_ATUzq37JvtfAALZCgACHuIIRJMjEbvYTr9uOwQ"
     },
     {
         "num": 324,
@@ -7797,7 +7797,7 @@
         "ru_explain": "Данный вопрос проверяет умение читать морские карты и определять объекты по заданным координатам. Обозначение \"E INT 6SEC 89 FT\" расшифровывается следующим образом: - **E** — равнофазный (Equal interval) или проблесковый огонь - **INT** — международный (International), указывает на соответствие международным стандартам IALA - **6SEC** — период огня составляет 6 секунд - **89 FT** — высота огня 89 футов над уровнем моря  Варианты B, C и D содержат ошибочные интерпретации: 89 — это высота в футах, а не период в секундах; направление \"на запад\" не указывается в данном обозначении. Для определения местоположения объекта необходимо найти пересечение указанных параллели и меридиана на навигационной карте данного района (пролив Лонг-Айленд, побережье Коннектикута).",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJNWoBNTUX8B2pOkKchk5bj2Y4EFdRAAKWCQACHuIIRPZSXyXnAltKOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJNmoBNTY-3hK0N5Gv7SD9VLQGprqsAAKXCQACHuIIRMSRT60AAV3f4zsE"
+        "audio_a": "CQACAgEAAxkDAAIKfGoBRW2_lSE0q6uwAgMuWy7gpnYAA9oKAAIe4ghE20lU4e7gNAABOwQ"
     },
     {
         "num": 326,
@@ -7845,7 +7845,7 @@
         "ru_explain": "Маяк Рейс-Пойнт расположен на острове Фишерс в проливе Лонг-Айленд (штаты Нью-Йорк/Коннектикут). Для определения точных координат навигационных знаков и маяков судоводитель должен использовать официальные издания: навигационные карты (морские карты NOAA), Список огней и знаков (Light List) или лоции. Согласно этим источникам, маяк Рейс-Пойнт находится в позиции 41°14,6'N 72°02,8'W. Знание точных координат СНО необходимо для прокладки курса, определения места судна и безопасного плавания в прибрежных водах.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJOWoBNTyyTE7z0mIP5BsfY-Q9jTyGAAKaCQACHuIIRN5OAuM2pus3OwQ",
-        "audio_a": "CQACAgEAAxkDAAIJOmoBNT0uCiDMZqei42qFhpGkmRaaAAKbCQACHuIIRGyF3kXYCgx4OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKfWoBRW9aqgEqbt3gVshJr34H9zunAALbCgACHuIIRC7fhmOYGcdVOwQ"
     },
     {
         "num": 328,
@@ -8301,7 +8301,7 @@
         "ru_explain": "Для решения данной задачи необходимо: 1. **Определить истинный курс (ИК)** — проложить линию на карте от точки 0,2 мили к югу от маяка Рейс-Рок до входа в канал озера Монток и измерить направление транспортиром или с помощью параллельных линеек и картушки компаса. 2. **Учесть магнитное склонение (d)** — найти на карте величину магнитного склонения для данного района и привести его к текущему году. 3. **Перейти к магнитному курсу (МК)**: МК = ИК - d (для западного склонения прибавляем, для восточного вычитаем). 4. **Учесть девиацию компаса (δ)** — по таблице девиации стандартного магнитного компаса найти поправку для данного курса. 5. **Рассчитать компасный курс (ККп)**: ККп = МК - δ  Формула перехода: **ККп = ИК ± d ± δ**  Правильный ответ 168,5° ККп получается после учёта всех поправок компаса для данного района плавания.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJX2oBNYBzDmUUl9ZN_KTbXKQ4B3S5AALACQACHuIIRFtASjyKINhjOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJYGoBNYL1v9IlAemJHcgOLqcQS73aAALBCQACHuIIRJ4aoZ0jE-q_OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKfmoBRXG3RgMesTigMziSqmm1NJsBAALcCgACHuIIRCRjdWgT5Vh1OwQ"
     },
     {
         "num": 347,
@@ -8469,7 +8469,7 @@
         "ru_explain": "Для определения истинного курса (курса относительно географического меридиана) между двумя точками необходимо рассчитать разность широт (РШ) и разность долгот (РД):  - РШ = 41°07.6' - 41°01.4' = 6.2' к югу (S) - РД = 71°38.5' - 71°29.4' = 9.1' к востоку (E)  Для расчёта курса используется формула: tg(К) = отшествие / РШ  Отшествие = РД × cos(средней широты) Средняя широта ≈ 41°04.5' Отшествие = 9.1' × cos(41°04.5') ≈ 9.1 × 0.754 ≈ 6.86'  tg(К) = 6.86 / 6.2 ≈ 1.106 К ≈ 48° (от южного направления к востоку)  Истинный курс = 180° - 48° = 132° T  Судно двигалось на юго-восток, что соответствует курсу 132° истинный.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJbWoBNZr6yGOtJcA72T1w2sotKjo-AALOCQACHuIIRLHRlbUTYbH7OwQ",
-        "audio_a": "CQACAgEAAxkDAAIJbmoBNZuhpncv4QSJO_ATa1oj-1lRAALPCQACHuIIRJKouQiBT0AnOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKf2oBRXIcDqVct2PfqFIgY7ehIMB-AALdCgACHuIIREkd4dPcN4XNOwQ"
     },
     {
         "num": 354,
@@ -8493,7 +8493,7 @@
         "ru_explain": "Для определения местоположения судна используется метод крюйс-пеленга (пересечения трёх пеленгов). Компасные пеленги (ПСК — пеленг по судовому компасу) на три известных ориентира (маяки) наносятся на навигационную карту после исправления на девиацию и магнитное склонение для получения истинных пеленгов. Точка пересечения трёх линий пеленгов (или центр образовавшегося треугольника погрешностей) даёт обсервованное место судна. В данном случае пересечение пеленгов на маяки Уотч-Хилл-Пойнт, Монток-Пойнт и Рейс-Рок даёт координаты: широта 41°15,2' северная, долгота 71°54,4' западная.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJb2oBNZ4nwf1kh5XQWp03LFqF0IrGAALQCQACHuIIRBUXLBrDM4oWOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJcGoBNZ84dL9u4DHHBXK1VHgz8_WxAALRCQACHuIIRPWXWoPrDJR-OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKgGoBRXSwgQUrDT9hZocJlSbrfpwMAALeCgACHuIIROub0sgZv0hCOwQ"
     },
     {
         "num": 355,
@@ -8541,7 +8541,7 @@
         "ru_explain": "Для решения данной задачи необходимо:  1. **Определить координаты исходной точки** — 3 мили на восток (090°) от маяка Монток-Пойнт.  2. **Определить координаты конечной точки** — 0,5 мили на юг (180°) от маяка Рейс-Рок.  3. **Проложить линию истинного курса (ИК)** между этими двумя точками на карте и измерить истинный пеленг.  4. **Перевести истинный курс в компасный курс (ККп)**, применяя поправки:    - **Магнитное склонение (d)** — учитывается по данным карты для данного района    - **Девиация компаса (δ)** — берётся из таблицы девиации для данного судна на соответствующем курсе     Формула: **ИК → МК → ККп**    - МК = ИК ± d (магнитное склонение)    - ККп = МК ± δ (девиация)  5. Аббревиатура **psc** (per standard compass) означает «по стандартному компасу» — это компасный курс с учётом всех поправок.  Правильный ответ **324° пкк** получается после применения магнитного склонения и девиации к истинному курсу, проложенному на карте.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJc2oBNaUujcITpl2YWxjHaabhPZuKAALUCQACHuIIRCexILdQEBB5OwQ",
-        "audio_a": "CQACAgEAAxkDAAIJdGoBNaaQPX8fFc2tccCiKK2meUzqAALVCQACHuIIRLEb7u08IhcYOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKgWoBRXbH9DRcAaQD9rmy0R85Y1_2AALfCgACHuIIRDF8xOqqsMp9OwQ"
     },
     {
         "num": 357,
@@ -8565,7 +8565,7 @@
         "ru_explain": "Для решения задачи необходимо: 1. Определить координаты буя NCA по навигационному пособию Light List (#375) 2. Вычислить точку назначения (0,3 мили к норду от буя) 3. Проложить курс от текущей GPS-позиции до точки назначения и определить истинный курс (ИК) 4. Перевести истинный курс в магнитный (МК), учитывая магнитное склонение (variation) района 5. Перевести магнитный курс в компасный курс (ГМК), учитывая девиацию компаса из таблицы девиации для данного судна  Формула перехода: ИК → МК (учёт склонения) → ГМК (учёт девиации)  Правильный ответ 234° ГМК учитывает все поправки компаса для данного района и курса.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJdWoBNajphIz3AmFMRVYiNtVplktKAALWCQACHuIIRD1GZEh9VEuDOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJdmoBNapRcosOK6vT9G5zNXMvXK15AALXCQACHuIIRLLFpFqhFfKbOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKgmoBRXhMZAKJ8e4YixB7jjKpHwo7AALgCgACHuIIRB6q4KqpW8v6OwQ"
     },
     {
         "num": 358,
@@ -8589,7 +8589,7 @@
         "ru_explain": "Для решения задачи необходимо: 1. Определить координаты буя NCA по списку огней и знаков (LL #375) 2. Рассчитать координаты точки назначения (0,3 мили к норду от буя) 3. Проложить на карте линию от текущей GPS-позиции до точки назначения 4. Снять истинный курс (ИК) с карты 5. Перевести истинный курс в компасный, учитывая:    - Магнитное склонение (variation) района плавания    - Девиацию компаса (deviation) на данном курсе  Формула перевода: ГМК = ИК - Склонение - Девиация  Правильный ответ 231° ГМК учитывает все поправки компаса для данного района Чесапикского залива.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJd2oBNax6_YtB2E7PZJ4wH5On8EGMAALYCQACHuIIRES0Gwx62aYIOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJeGoBNa2PfKkJFpv5vmX8hvkWJMNfAALZCQACHuIIRCADcHsfMnTbOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKg2oBRXoUQDW-qJDlt_5h6dCBbPLKAALhCgACHuIIRM50cbv8v1aqOwQ"
     },
     {
         "num": 359,
@@ -8613,7 +8613,7 @@
         "ru_explain": "Для решения задачи необходимо сравнить счислимое место (DR position) с фактическим обсервованным местом.  **Расчёт счислимого места:** - Время в пути: с 09:19 до 10:00 = 41 минута = 0,683 часа - Пройденное расстояние по лагу: 8,7 × 0,683 = 5,94 морских миль - Курс 270° (чистый вест): судно идёт строго на запад - Счислимая широта: 37°00.0' N (без изменений, т.к. курс широтный) - Счислимая долгота: 75°30.0' W + 5,94' = 75°35.94' W ≈ 75°36.0' W  **Фактическое место в 10:00:** - Широта: 36°59.5' N - Долгота: 75°37.0' W  **Невязка (снос течением):** - По широте: 37°00.0' - 36°59.5' = 0,5' к югу - По долготе: 75°37.0' - 75°36.0' = 1,0' к западу  **Расчёт течения:** - Вектор сноса: 0,5' S и 1,0' W - Расстояние сноса: √(0,5² + 1,0²) ≈ 1,12' ≈ 0,6 морских миль за 41 мин - Скорость течения: 0,6 / 0,683 ≈ 0,9 узла - Направление течения (куда несёт): arctg(1,0/0,5) ≈ 63° от юга к западу = 180° + 63° - 90° ≈ 150°  Течение направлено примерно на 150° со скоростью около 0,9 узла.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJeWoBNbClcY5jRJrV6-48TF9tzBbkAALaCQACHuIIREtlkbwGZ-oOOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJemoBNbH7vX5vUx9RY1Dd6tn_8En6AALbCQACHuIIREe-xt2OYYhXOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKhGoBRXsp1hh2QiQksZYwxjYxq8LoAALiCgACHuIIRCM_9bMsyyqBOwQ"
     },
     {
         "num": 360,
@@ -8661,7 +8661,7 @@
         "ru_explain": "Для определения обсервованной точки (фикса) необходимо взять пеленги на три известных навигационных ориентира. Пеленги, снятые по стандартному магнитному компасу (СМК/PSC), должны быть исправлены на девиацию и магнитное склонение для получения истинных пеленгов. Затем от каждого ориентира на карте прокладываются обратные пеленги (отличающиеся на 180°). Точка пересечения трёх линий положения (или центр образовавшегося треугольника погрешностей) даёт обсервованное место судна. В данной задаче пересечение линий пеленгов на огонь буя у косы Нью-Пойнт-Комфорт, входной огонь гавани Хорн-Харбор и огонь маяка Вулф-Трэп даёт координаты: широта 37°20,8' N, долгота 76°11,0' W.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJfWoBNbbJLzqCxpFW7yLjCuWn4KkIAALeCQACHuIIRCRE9fUZ-lTXOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJfmoBNbiZUt3H9jlcE9YkXWCKNJp9AALfCQACHuIIRFGJ4SSN6Li0OwQ"
+        "audio_a": "CQACAgEAAxkDAAIKhWoBRX3qLkiWrW59WUorV41Jl5LCAALjCgACHuIIRHNc4lMAAWMOtzsE"
     },
     {
         "num": 362,
@@ -8709,7 +8709,7 @@
         "ru_explain": "Для решения данной задачи необходимо: 1) Определить истинный пеленг (ИП) от начальной точки к конечной по координатам — получаем генеральный курс примерно 268° истинного. 2) Учесть снос от течения: течение 043°T со скоростью 1,3 узла при собственной скорости 8,7 узла создаёт угол сноса, который необходимо компенсировать. 3) Учесть дрейф от ветра: зюйд-зюйд-остовый ветер (SSE, примерно 157°) вызывает дрейф 3° — при движении на запад судно будет сноситься вправо (к северу), поэтому нужно взять курс левее. 4) Получив истинный курс (ИК), перевести его в компасный курс (ГКК) с учётом магнитного склонения (δ) для данного района и девиации (d) компаса, используя формулу: ИК = ГКК + (δ + d). Правильный ответ 267,5° ГКК учитывает все поправки: на течение, дрейф от ветра, магнитное склонение и девиацию компаса.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJgWoBNb6r1kBmFonpFDmZAqal6H0zAALiCQACHuIIRA-3Cn3xNYSMOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJgmoBNcCqjGp0bj3_VmlS76SNBCuzAALjCQACHuIIRNWZf-EY1l0mOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKhmoBRX9kbMeEv8R21TP5J5MC7zHTAALkCgACHuIIRGvCU2Dhj8JWOwQ"
     },
     {
         "num": 364,
@@ -8733,7 +8733,7 @@
         "ru_explain": "Для решения этой задачи необходимо сравнить компасный пеленг с истинным пеленгом створных ориентиров (резервуаров), который определяется по карте.  **Исходные данные:** - Компасный пеленг (КП) на створ: 277° - Истинный пеленг створа (с карты): 265° (створные линии указываются на картах)  **Расчёт поправки компаса (ΔК):** ΔК = Истинный пеленг − Компасный пеленг ΔК = 265° − 277° = −12° (или 12° W)  **Формула перевода:** Истинный = Компасный + ΔК 265° = 277° + (−12°) ✓  Поправка компаса включает в себя магнитное склонение (d) и девиацию (δ): ΔК = d + δ  Важно понимать, что девиация зависит от **курса судна** (243°), а не от направления пеленгования. Поэтому вариант D неверен — девиация не определяется «для пеленгов».  **Ответ C верен:** общая поправка компаса составляет 12° W (западная).",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJg2oBNcI04yj0bn5ePNkrm7ddTDgMAALkCQACHuIIRPeuA9D94ZAYOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJhGoBNcRR_5nm609xgtPAwbCF8P1fAALlCQACHuIIRLGpG9khv-iSOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKh2oBRYGj8cbZoGojgYvNidb-7lc7AALlCgACHuIIRCXFYdKLZUCSOwQ"
     },
     {
         "num": 365,
@@ -8757,7 +8757,7 @@
         "ru_explain": "Для определения истинного курса (Course Made Good — CMG) между двумя обсервованными точками необходимо рассчитать разность широт (РШ) и разность долгот (РД):  **Расчёт разности широт (РШ):** - Начальная широта: 37°07.5' N - Конечная широта: 36°57.0' N - РШ = 37°07.5' - 36°57.0' = 10.5' к S (судно шло на юг)  **Расчёт разности долгот (РД):** - Начальная долгота: 75°39.1' W - Конечная долгота: 75°41.0' W - РД = 75°41.0' - 75°39.1' = 1.9' к W (судно шло на запад)  **Расчёт отшествия (Departure):** - Средняя широта: (37°07.5' + 36°57.0') / 2 ≈ 37°02' N - Отшествие = РД × cos(средней широты) = 1.9' × cos(37°) ≈ 1.9' × 0.799 ≈ 1.52 мили  **Расчёт курса:** - tg(курса) = Отшествие / РШ = 1.52 / 10.5 ≈ 0.145 - Угол ≈ 8° к западу от юга - Истинный курс = 180° + 8° = **188° T**  Ответ **B: 188° истинный** — правильный.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJhWoBNcadClli5ZxKlAMCwpjJ15W3AALmCQACHuIIROxam2VhhXEpOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJhmoBNcfZTmJPZ7JEn7f-WfrII6NSAALnCQACHuIIRNooCDuu-kCpOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKiGoBRYP6PhhSnUXOiSdZWmV9T93OAALmCgACHuIIRJsSdGbm8fn1OwQ"
     },
     {
         "num": 366,
@@ -8781,7 +8781,7 @@
         "ru_explain": "Для определения истинного курса (Course Made Good, CMG) между двумя обсервованными точками необходимо рассчитать разность широт (РШ) и разность долгот (РД):  • РШ = 37°07,5' - 36°37,0' = 30,5' к югу (S) • РД = 75°41,0' - 75°39,1' = 1,9' к западу (W)  Средняя широта ≈ 36°52' N  Отшествие (Departure) = РД × cos(средней широты) = 1,9' × cos(36°52') ≈ 1,9' × 0,8 ≈ 1,5 мили к западу  Курсовой угол: tg(КУ) = Отшествие / РШ = 1,5 / 30,5 ≈ 0,049 КУ ≈ 2,8° к западу от юга  Истинный курс = 180° + 8° = 188° T  Судно следовало генеральным курсом на юго-юго-запад. Правильный ответ: **B (188° истинный)**.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJh2oBNcl2BJcNm9sJ70hEO6Xh6694AALoCQACHuIIROhg93AiGxTUOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJiGoBNcudyfg8T0_Qs0L2KAQ98aa-AALpCQACHuIIRNkRLXTBa2PGOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKiWoBRYTdYiR3O3w68m3w0Z8Wk7LjAALnCgACHuIIRB0P_chveb7cOwQ"
     },
     {
         "num": 367,
@@ -8997,7 +8997,7 @@
         "ru_explain": "Для определения места судна используется метод крюйс-пеленга (пересечения пеленгов). Судоводитель взял компасные пеленги на три известных навигационных ориентира (маяки). Для нанесения на карту компасные пеленги необходимо перевести в истинные, учитывая девиацию и магнитное склонение. Затем от каждого маяка прокладываются обратные пеленги (отличающиеся на 180°). Точка пересечения трёх линий положения и будет обсервованным местом судна. Использование трёх пеленгов повышает точность определения и позволяет выявить возможные ошибки (если линии не сходятся в одной точке, образуя «треугольник погрешности»). Правильный ответ B соответствует точке пересечения данных линий положения на карте пролива Лонг-Айленд.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIJmWoBNe4OiLxHm5oFBL2TrAVYY0BGAAL6CQACHuIIRGY7QxJhqgJmOwQ",
-        "audio_a": "CQACAgEAAxkDAAIJmmoBNfDA_ZL--gR_xVL1BKVKKB9iAAL7CQACHuIIRE_tIRjflQqCOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKimoBRYb16ZVLPay2JYNAlozfZougAALoCgACHuIIRME1CGUjznr5OwQ"
     },
     {
         "num": 376,
@@ -11301,7 +11301,7 @@
         "ru_explain": "Специальный проблесковый огонь (special flashing light) — это жёлтый огонь, используемый на составах толкаемых барж на внутренних водных путях США. Согласно Правилам плавания по внутренним водам (Inland Rules), этот огонь должен светить в секторе (дуге видимости) не менее 180° — от направления прямо по носу до 90° на каждый борт. Частота проблесков составляет 50-70 проблесков в минуту (а не 120). Огонь является обязательным для толкаемых составов, следующих впереди толкача, на всей акватории внутренних вод, а не только в определённых районах. Таким образом, верным является только утверждение B о секторе освещения не менее 180°.",
         "image": null,
         "audio_q": "CQACAgEAAxkDAAIKWWoBN0GW47T8wJvBfnGeHnj9_27VAAK6CgACHuIIREZ_wR1dGyqEOwQ",
-        "audio_a": "CQACAgEAAxkDAAIKWmoBN0PwiWsPV0mrcnAa_Yq1lyeJAAK7CgACHuIIRG8sC_N_SdMQOwQ"
+        "audio_a": "CQACAgEAAxkDAAIKi2oBRYgboL5WKLYMXifq5BRXuN3VAALpCgACHuIIRHZ9rvggtQGcOwQ"
     },
     {
         "num": 472,
