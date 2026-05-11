@@ -31,8 +31,8 @@ QUESTIONS = [
         "en_explain": "Under US Inland Rule 34(c), a vessel leaving a dock or berth must sound a prolonged blast as a warning signal. Since your engines are turning ahead while departing the pier into the main channel, you are required to sound one prolonged blast to alert other vessels of your movement. ОТВЕТ: C",
         "ru_explain": "Согласно US Inland Navigation Rules (33 CFR Part 83), Rule 34(a): судно, намеревающееся совершить маневр, подаёт один продолжительный звуковой сигнал, когда оно покидает причал или док. Этот сигнал предупреждает другие суда о том, что судно начинает движение и выходит на судовой ход. Один продолжительный сигнал означает: \"Я отхожу от причала\" — это стандартный сигнал для информирования окружающих судов о начале маневра при работе двигателей на передний ход.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGrWoBMOaGyTBsKLSEcWmgJaUmMXJVAAINBwACHuIIRI_BMpMd8hzmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGrmoBMOjMH0AXfn7_zf6kiuj9lGcgAAIOBwACHuIIRDlgjG8newFUOwQ"
     },
     {
         "num": 2,
@@ -55,8 +55,8 @@ QUESTIONS = [
         "en_explain": "The U.S. Coast Pilot is published by the National Ocean Service (NOS), which is part of the National Oceanic and Atmospheric Administration (NOAA). This publication provides essential supplemental navigation information for U.S. waters that cannot be shown on nautical charts, including channel descriptions, anchorages, bridge clearances, and local regulations. Mariners are required to carry current Coast Pilots as part of their vessel's navigation publications under 33 CFR regulations.",
         "ru_explain": "U.S. Coast Pilot — это официальная лоция, содержащая навигационную информацию, которую невозможно отобразить на картах: описание каналов, якорных стоянок, мостов, течений, погодных условий, портовых правил и средств обеспечения. Издаётся Национальной океанической службой (NOS), которая входит в состав NOAA (National Oceanic and Atmospheric Administration). NOS также отвечает за выпуск морских карт США. NGA издаёт аналогичные публикации (Sailing Directions) для иностранных вод, но не для вод США.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGr2oBMOm2SVZOycvr3Z-zNDBTw6WDAAIPBwACHuIIRM_OPp6x2zSfOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGsGoBMOv-BH9KFODDR8PhobdU2b-dAAIQBwACHuIIRHPjP51rfbENOwQ"
     },
     {
         "num": 3,
@@ -79,8 +79,8 @@ QUESTIONS = [
         "en_explain": "The U.S. Notice to Mariners is published weekly by the National Geospatial-Intelligence Agency (NGA) in cooperation with the U.S. Coast Guard and NOAA. These weekly publications provide critical updates for correcting nautical charts and publications, including information on aids to navigation changes, hazards to navigation, and other safety-related matters. Mariners are responsible for keeping their charts and publications current using these notices as required under 33 CFR (Code of Federal Regulations).",
         "ru_explain": "Согласно NGA (National Geospatial-Intelligence Agency), Notice to Mariners (NTM) — Извещения мореплавателям — публикуются еженедельно (weekly). Эти извещения содержат важную информацию для корректуры морских карт и навигационных пособий: изменения в средствах навигационного оборудования (буи, маяки), новые опасности, временные и постоянные ограничения для судоходства. Моряки обязаны регулярно корректировать свои карты на основании этих извещений для обеспечения безопасности плавания. USCG также публикует Local Notice to Mariners (LNM) еженедельно для каждого района.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGsWoBMO3BnkXQ3fLeULZxOzsS0XT_AAIRBwACHuIIRNCKhAABGMlA9TsE",
+        "audio_a": "CQACAgEAAxkDAAIGsmoBMO6lWCk2EYJ0iR4NbnM9NefCAAISBwACHuIIRDzNhEeDhn8dOwQ"
     },
     {
         "num": 4,
@@ -103,8 +103,8 @@ QUESTIONS = [
         "en_explain": "A **projection** is the mathematical method used to transfer the curved, three-dimensional surface of the Earth onto a flat, two-dimensional sheet of paper for navigation purposes. Common projections used in marine navigation include Mercator and polyconic projections. While charts and maps are the end products that display navigational information, the projection is the underlying technique that makes this representation possible.",
         "ru_explain": "Согласно публикациям NOAA и NGA (Chart No. 1, Nautical Chart Manual), картографическая проекция (projection) — это математический метод переноса изображения сферической поверхности Земли на плоскость. Поскольку невозможно развернуть сферу на плоскость без искажений, используются различные типы проекций. Для морской навигации наиболее распространена проекция Меркатора (Mercator projection), которая сохраняет углы и позволяет прокладывать локсодромию (линию постоянного курса) как прямую линию. Карта (map) и морская карта (chart) — это уже готовые продукты, созданные с использованием той или иной проекции, а не сам метод отображения.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGs2oBMPGkQX_PtmqixXs4Ko8z-ElcAAITBwACHuIIRGImcDEGltQbOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGtGoBMPNQNBNwPU_yCKrtrCuRLX7mAAIUBwACHuIIRE-hYiP3VkOXOwQ"
     },
     {
         "num": 5,
@@ -127,8 +127,8 @@ QUESTIONS = [
         "en_explain": "Meridians of longitude are great circles that pass through both the North and South geographic poles, running perpendicular to the equator and converging at the poles. Unlike parallels of latitude (which are small circles except for the equator), meridians are all great circles of equal length used to measure angular distance east or west from the Prime Meridian. This is a fundamental navigation concept covered in terrestrial navigation rather than COLREGS, as it relates to chartwork and position plotting.",
         "ru_explain": "Согласно публикациям NGA (National Geospatial-Intelligence Agency) и NOAA по навигации: меридианы долготы — это большие круги (great circles), проходящие через оба географических полюса Земли и пересекающие экватор под прямым углом. Каждый меридиан представляет собой полуокружность от полюса до полюса. Параллели широты (B) — это малые круги, параллельные экватору. Локсодромия (C) — линия, пересекающая все меридианы под одним углом. Экватор (D) — единственная параллель, являющаяся большим кругом, но он не проходит через полюса.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGtWoBMPXpV10hPRt62TiXNHadaqgeAAIVBwACHuIIROeTFWZPWlP9OwQ",
+        "audio_a": "CQACAgEAAxkDAAIGtmoBMPZuGrurlRLDDnz8YX_XDJLZAAIWBwACHuIIRE7ZkqEP4d-_OwQ"
     },
     {
         "num": 6,
@@ -151,8 +151,8 @@ QUESTIONS = [
         "en_explain": "The compass rose printed on a nautical chart displays the magnetic variation for that geographic area and the annual rate of change, allowing navigators to calculate the current variation based on the chart's publication date. This information is essential for converting between True and magnetic headings. Note: This is a navigation/chart reading question and does not fall under COLREGS or Inland Rules, but rather standard USCG charting conventions.",
         "ru_explain": "Согласно стандартам NOAA/NGA для морских навигационных карт, компасная роза (compass rose) состоит из двух концентрических кругов: внешний показывает истинные направления (True north), внутренний — магнитные направления. В центре компасной розы указывается: 1) величина магнитного склонения (variation) для данного района на определённый год, и 2) годовая скорость изменения склонения (annual rate of change) — например, \"VAR 15°W (2020) ANNUAL DECREASE 8'\". Это позволяет штурману рассчитать актуальное склонение на текущий год. Девиация (deviation) — это ошибка конкретного компаса на конкретном судне, она не может быть указана на карте. Прецессия относится к гирокомпасам, а не к магнитным картам.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGt2oBMPg_AZFckZ1rM5w3qIjR94HkAAIXBwACHuIIRDEJmcdNCGaGOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGuGoBMPoJEluwZVJIGA6NtLVWxc-mAAIYBwACHuIIRGAqJ4toH2KDOwQ"
     },
     {
         "num": 7,
@@ -175,8 +175,8 @@ QUESTIONS = [
         "en_explain": "A fathom equals 6 feet, and a meter equals approximately 3.28 feet. Converting 23 meters: 23 × 3.28 = 75.44 feet, then dividing by 6 feet per fathom gives approximately 12.6 fathoms. This is a standard chart datum conversion required for safe navigation when working between metric and traditional U.S. units.",
         "ru_explain": "Согласно стандартам NOAA/NGA для морских карт, используются следующие единицы измерения глубины:  **Коэффициенты пересчёта:** - 1 метр = 3,2808 фута - 1 морская сажень (fathom) = 6 футов = 1,8288 метра  **Расчёт:** 23 метра ÷ 1,8288 = **12,58 ≈ 12,6 морских саженей**  **Проверка через футы:** 23 × 3,2808 = 75,46 фута (ни один из вариантов в футах не совпадает точно)  Морская сажень (fathom) — традиционная единица измерения глубины в англо-американской системе, широко используемая на картах NOAA. Знание пересчёта между метрами, футами и саженями необходимо для работы с картами разных стандартов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGuWoBMPxb9WRT1HCWe6btWnGEbTcbAAIZBwACHuIIRGko0FckjL-QOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGumoBMP6mhG-WfV3hRp8fBPAJ94NcAAIaBwACHuIIROS4rVaSw8S5OwQ"
     },
     {
         "num": 8,
@@ -199,8 +199,8 @@ QUESTIONS = [
         "en_explain": "NOS (National Ocean Service) charts at scales of 1:40,000 or larger are considered harbor charts and include a **Yard Scale** to allow mariners to measure short distances with greater precision when navigating in confined waters. This level of detail is essential for piloting in harbors, anchorages, and narrow channels where accuracy in yards rather than nautical miles is critical. This is a chart navigation standard established by NOAA/NOS rather than a COLREGS or Inland Rules requirement.",
         "ru_explain": "Согласно стандартам NOAA/NOS, карты крупного масштаба (1:40,000 и крупнее) предназначены для навигации в гаванях, портах и на внутренних водных путях, где требуется высокая точность измерений на коротких дистанциях. На таких картах размещается шкала в ярдах (Yard Scale), поскольку при маневрировании в стеснённых водах расстояния измеряются в ярдах, а не в морских милях. Крупный масштаб означает, что объекты изображены более детально (1:40,000 крупнее, чем например 1:80,000). Шкала в ярдах позволяет штурману точно определять короткие расстояния до причалов, буёв и других навигационных ориентиров.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGu2oBMQABrSw6D81VIOG37NxYqZPo8AACGwcAAh7iCET-jrOhs6YGdzsE",
+        "audio_a": "CQACAgEAAxkDAAIGvGoBMQEI-WogcHx6RTCZ0jQ-lDXnAAIcBwACHuIIRP9F8d-CO9TMOwQ"
     },
     {
         "num": 9,
@@ -223,8 +223,8 @@ QUESTIONS = [
         "en_explain": "**Direction** refers to the angular measurement between a line connecting two points and a reference baseline, typically expressed in degrees from True north or magnetic north. This is a fundamental navigation concept used in chart plotting and course determination. While not directly addressed in COLREGS or Inland Rules, understanding direction is essential for compliance with Rule 7 (Risk of Collision), which requires using \"all available means\" including compass bearings to assess whether a collision risk exists.",
         "ru_explain": "Согласно публикациям NGA (National Geospatial-Intelligence Agency) и стандартам морской навигации, направление (direction) определяется как угол между базовой линией (обычно меридианом или линией курса) и линией, соединяющей две точки на карте. Это фундаментальное понятие используется для определения пеленгов и курсов. Касательная плоскость — это геометрический термин для картографических проекций. Параллель — линия широты, идущая с востока на запад. Меридиан — линия долготы, идущая с севера на юг. Только термин \"направление\" описывает угловое измерение между точками относительно базовой линии.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGvWoBMQNUda6WAj0ZTPgsx80s5y-QAAIdBwACHuIIRHZWcJ56FbM1OwQ",
+        "audio_a": "CQACAgEAAxkDAAIGvmoBMQRxZN6aDLBFRH3nQ5YtrtQ2AAIeBwACHuIIRJLxlTFrAZQ9OwQ"
     },
     {
         "num": 10,
@@ -247,8 +247,8 @@ QUESTIONS = [
         "en_explain": "Nautical miles are the standard unit of distance measurement in marine navigation on salt water. One nautical mile equals one minute of latitude (approximately 6,076 feet), making it directly useful for chart work and position plotting. While fathoms measure depth and statute miles are used on land and some inland waters, nautical miles are universally used at sea as referenced throughout the COLREGS (International Regulations for Preventing Collisions at Sea).",
         "ru_explain": "Согласно стандартам NOAA и NGA, на морских навигационных картах расстояния измеряются в морских милях (nautical miles). Одна морская миля равна 1852 метра или 1 минуте широты. Статутные мили (1609 м) используются на суше и внутренних водах США. Фатомы (морские сажени) — это единица измерения глубины, а не расстояния (1 фатом = 6 футов = 1,83 м). Километры используются в метрической системе, но не являются стандартом для морской навигации.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGv2oBMQZ6uPLTc1aDlr_axXOo4ChNAAIfBwACHuIIREg5CDgKZ_gWOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGwGoBMQiOXaN_SoXC_KciOXMIJk6qAAIgBwACHuIIRC9OmC2p6fi8OwQ"
     },
     {
         "num": 11,
@@ -271,8 +271,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 34(d) of both the COLREGS and US Inland Rules, when vessels in sight of one another are approaching and either vessel fails to understand the intentions or actions of the other, the vessel in doubt **may** immediately indicate such doubt by sounding at least five short and rapid blasts on the whistle. The danger signal is permissive (\"may\"), not mandatory (\"must\"), giving the operator discretion based on the circumstances of the situation.  **ОТВЕТ: C - may sound the danger signal**",
         "ru_explain": "Согласно COLREGS Rule 34(d) и US Inland Rules 33 CFR 83.34(d): \"Когда суда, находящиеся на виду друг у друга, сближаются и по какой-либо причине одно из судов не может понять намерения или действия другого судна, или сомневается в том, предпринимает ли другое судно достаточное действие для предупреждения столкновения, оно должно немедленно сообщить о таком сомнении подачей по меньшей мере пяти коротких и частых звуков свистком\" (сигнал опасности/сомнения).  Ключевое слово — \"должно\" (shall), что делает это обязательным действием, а не опциональным. Поэтому ответ A (\"must\" — обязаны), а не C (\"may\" — можете).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGwWoBMQosDHxt_yw-54wu9XlFJIwWAAIhBwACHuIIROqr1rFiYK4vOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGwmoBMQw4fmV1W14-GHLFjmOSvxLUAAIiBwACHuIIRL9SeGVBVS79OwQ"
     },
     {
         "num": 12,
@@ -295,8 +295,8 @@ QUESTIONS = [
         "en_explain": "The compass rose printed on nautical charts displays both True north (outer ring) and magnetic north (inner ring), allowing mariners to plot courses and bearings using either reference. The inner ring also indicates the local magnetic variation and its annual rate of change. This is a standard feature of charts published by NOAA and other hydrographic offices, essential for navigation per U.S. Coast Guard navigation requirements.",
         "ru_explain": "Согласно стандартам NOAA/NGA для навигационных карт, компасная роза (compass rose) состоит из двух концентрических кругов: внешний круг показывает истинный север (True North), ориентированный на географический полюс, а внутренний круг показывает магнитный север (Magnetic North) с указанием магнитного склонения (variation) для данного района и года. Это позволяет штурману прокладывать курсы как по истинным, так и по магнитным направлениям, а также переводить пеленги с магнитного компаса в истинные и обратно.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGw2oBMQ6JViPI-H_vGqJe1vi7VWS-AAIjBwACHuIIRB7pzP01T7zVOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGxGoBMQ8cO6pL5hYslajwJwPcEVqtAAIkBwACHuIIRPadnUHPcC-5OwQ"
     },
     {
         "num": 13,
@@ -319,8 +319,8 @@ QUESTIONS = [
         "en_explain": "Nautical charts include essential information in their title block and marginal notes: the type of projection (typically Mercator), the scale (such as 1:40,000), and the unit of depth measurement (feet, fathoms, or meters). This information is critical for safe navigation and proper chart interpretation. Chart specifications are governed by standards established by NOAA and the International Hydrographic Organization (IHO).",
         "ru_explain": "Согласно стандартам NOAA (National Oceanic and Atmospheric Administration) и NGA (National Geospatial-Intelligence Agency), каждая навигационная карта содержит в заголовке (title block) и легенде следующую базовую информацию:  1. **Тип проекции** (Chart Projection) — обычно проекция Меркатора для навигационных карт 2. **Масштаб** (Scale) — соотношение расстояний на карте к реальным расстояниям (например, 1:40,000) 3. **Единицы измерения глубин** (Depth Units) — указывается, в чём измеряются глубины: футы, фатомы (морские сажени) или метры  Эта информация критически важна для безопасной навигации, так как позволяет судоводителю правильно интерпретировать данные карты и производить точные навигационные расчёты.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGxWoBMRFeF57i-t0hYjcJu8giCPdJAAIlBwACHuIIRMfuuJIwsyo-OwQ",
+        "audio_a": "CQACAgEAAxkDAAIGxmoBMRNxvU_exCYlBRFwfEplddfoAAImBwACHuIIRHBJHVIhl2LVOwQ"
     },
     {
         "num": 14,
@@ -343,8 +343,8 @@ QUESTIONS = [
         "en_explain": "Using only the latest edition of a nautical chart is essential for safe navigation because charts are regularly updated to reflect changes in water depths, aids to navigation, hazards, and other critical information. This requirement falls under the mariner's obligation to use all available means appropriate to the prevailing circumstances, as referenced in Rule 5 (Lookout) of the COLREGS/Inland Rules, which requires maintaining proper situational awareness using all available means. Outdated charts may contain inaccurate information that could lead to groundings, collisions, or other maritime casualties.",
         "ru_explain": "Согласно требованиям NOAA (National Oceanic and Atmospheric Administration) и NGA (National Geospatial-Intelligence Agency), мореплаватели обязаны использовать только актуальные навигационные карты последнего издания. Устаревшие карты могут содержать неточную информацию о глубинах, навигационных знаках, затонувших объектах, новых ограничениях и других критически важных данных. Карты регулярно обновляются на основании Извещений мореплавателям (Notice to Mariners). Использование устаревших карт создаёт прямую угрозу безопасности судовождения и может привести к посадке на мель, столкновению с препятствиями или нарушению правил плавания в определённых районах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGx2oBMRTAAQb4Q8ri281eFsKGbKiUAAInBwACHuIIRCgyBQpE2jUbOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGyGoBMRacIj7UPz6U1wqMdSJN-WTKAAIoBwACHuIIREQuh4rz0_5xOwQ"
     },
     {
         "num": 15,
@@ -367,8 +367,8 @@ QUESTIONS = [
         "en_explain": "Red lighting is used for chart reading during night navigation because it preserves the mariner's night vision (scotopic adaptation). Unlike white or other colored lights, red light minimally affects the eye's dark-adapted rods, allowing the navigator to transition between reading charts and scanning the dark horizon without significant loss of night vision acuity.",
         "ru_explain": "Согласно стандартам NOAA по оформлению навигационных карт, красный цвет является оптимальным для использования в условиях ночной навигации. Это связано с физиологией зрения человека: красный свет имеет наименьшее воздействие на ночную адаптацию глаз (скотопическое зрение). При использовании красного освещения в рулевой рубке зрачки остаются расширенными, что позволяет штурману быстро переключаться между чтением карты и наблюдением за обстановкой за бортом без потери ночного зрения. Именно поэтому на судах используется красное освещение штурманского стола, а элементы карт, выделенные красным цветом, легко читаются в таких условиях.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGyWoBMRjdX06BoleNHTYc2rxUCWZ1AAIpBwACHuIIRGIYo-Z6KcngOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGymoBMRooxaPkBoS3PHAHw4x23fH4AAIqBwACHuIIRLAjMDOFjZpGOwQ"
     },
     {
         "num": 16,
@@ -391,8 +391,8 @@ QUESTIONS = [
         "en_explain": "One nautical mile is defined as one minute of arc of latitude measured along any meridian. This fundamental navigation concept establishes the nautical mile at approximately 6,076 feet (1,852 meters). Note: This is a basic navigation principle rather than a COLREGS or Inland Rules requirement, but it is essential knowledge for chart navigation and determining distances at sea.",
         "ru_explain": "Согласно стандартам NOAA/NGA для навигационных карт, морская миля определяется как длина дуги в 1 минуту широты на поверхности Земли. Это составляет примерно 1852 метра (6076 футов). Важно понимать, что морская миля привязана именно к широте, а не к долготе, поскольку расстояние между меридианами (градусами долготы) изменяется от экватора к полюсам, в то время как расстояние между параллелями (градусами широты) остаётся практически постоянным. Именно поэтому для измерения расстояний на морских картах используется шкала широты на боковых сторонах карты: 1 минута широты = 1 морская миля.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGy2oBMRy3cC_fFjX4aWiIPK5qdZouAAIrBwACHuIIRF3quMzQKLK_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIGzGoBMR2SqEMqlekyiHy_-hnSbX4IAAIsBwACHuIIRAtROr019Vu1OwQ"
     },
     {
         "num": 17,
@@ -415,8 +415,8 @@ QUESTIONS = [
         "en_explain": "The National Geospatial-Intelligence Agency (NGA) publishes nautical charts covering the high seas and foreign waters, compiled from both U.S. and international hydrographic surveys. NOAA and its component NOS (National Ocean Service) are responsible for charting U.S. domestic waters only. NIMA was the former name of NGA before the agency was renamed in 2003.",
         "ru_explain": "Согласно официальным источникам NGA, Национальное агентство геопространственной разведки (National Geospatial-Intelligence Agency) отвечает за издание навигационных карт открытого моря (high seas) и иностранных вод для нужд ВМС США и гражданских мореплавателей. NGA использует данные собственных гидрографических исследований, а также материалы гидрографических служб других стран. NOAA и её подразделение NOS (National Ocean Service) издают карты только прибрежных вод США и внутренних водных путей. NIMA — это прежнее название NGA (до 2003 года), поэтому правильный современный ответ — NGA.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGzWoBMR-jmDQdP-3uvyKD0g7kop_nAAItBwACHuIIRDN20SEY6MVNOwQ",
+        "audio_a": "CQACAgEAAxkDAAIGzmoBMSDTaXsRfMb-bNFBvQYayxiLAAIuBwACHuIIRJ_vfgSWuRhZOwQ"
     },
     {
         "num": 18,
@@ -439,8 +439,8 @@ QUESTIONS = [
         "en_explain": "The edition number and publication date (month and year) of each National Ocean Service (NOS) chart are printed in the lower left corner of the chart. This standardized placement allows mariners to quickly verify they are using the most current chart edition and to check for applicable Notices to Mariners updates. Keeping charts current is essential for safe navigation, as outdated charts may not reflect recent changes to aids to navigation, depths, or hazards.",
         "ru_explain": "Согласно стандартам NOAA (National Ocean Service), номер издания и дата публикации морской карты NOS размещаются в левом нижнем углу карты. Эта информация критически важна для навигатора, так как позволяет определить актуальность карты и необходимость внесения корректур из Notices to Mariners. В левом нижнем углу также указывается информация о последних корректурах карты.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIGz2oBMSKcPdom-Lw1-Liri0B21l_xAAIvBwACHuIIRPFS78mAFIshOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG0GoBMSTPw8K0j70ZUvCGih9He7Y1AAIwBwACHuIIRLkrUBrtfuzNOwQ"
     },
     {
         "num": 19,
@@ -463,8 +463,8 @@ QUESTIONS = [
         "en_explain": "Depth soundings on nautical charts are referenced to Mean Lower Low Water (MLLW), which represents the average of the lower of the two daily low tides over a 19-year tidal epoch. This datum provides mariners with a conservative \"worst-case\" baseline, meaning actual water depths will typically be equal to or greater than charted depths under normal conditions. This standard is established by NOAA for U.S. coastal waters and ensures safe navigation by accounting for minimum expected water levels.",
         "ru_explain": "Согласно стандартам NOAA для морских карт США, все глубины (промеры) указываются относительно Mean Lower Low Water (MLLW) — среднего уровня наинизшей малой воды. Это среднее значение из более низких малых вод за каждые сутки в течение 19-летнего цикла наблюдений. MLLW используется как нулевая отметка глубин (chart datum), чтобы показывать минимально возможные глубины. Это обеспечивает безопасность мореплавания: реальная глубина в большинстве случаев будет равна или больше указанной на карте.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG0WoBMSU2_teK7XBFZ6rZTx_hb-DgAAIxBwACHuIIRPIdUyKjTCnXOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG0moBMScvxfeYbJEt1B5CgAYEbkHCAAIyBwACHuIIRCEgFWDGaTdTOwQ"
     },
     {
         "num": 20,
@@ -487,8 +487,8 @@ QUESTIONS = [
         "en_explain": "Chart No. 1 (officially titled \"U.S. Chart No. 1: Symbols, Abbreviations and Terms\") is the NOAA/NGA publication that serves as the definitive reference for all symbols, abbreviations, and terms used on U.S. nautical charts. This is not a navigational chart itself but rather a booklet that decodes the standardized symbology mariners encounter when reading any U.S. chart. The other publications listed serve different purposes: Light Lists describe aids to navigation, Coast Pilots provide supplementary navigation information, and Tide Tables provide tidal predictions.",
         "ru_explain": "Chart No. 1 (Карта № 1) — это официальное издание NOAA/NGA, которое содержит полный перечень всех символов, сокращений и условных обозначений, используемых на американских навигационных картах. Это не карта в привычном смысле, а справочник-каталог. Он разделён на секции: глубины, характер грунта, огни, буи, опасности, топографические объекты и т.д. Каждое сокращение и символ имеет расшифровку и пояснение. Light List содержит информацию об огнях и буях, Coast Pilot — описание побережья и портов, Tide Tables — данные о приливах. Но именно Chart No. 1 является единственным официальным источником для расшифровки картографических обозначений.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG02oBMSndAzuztKSmuz1Hoszk-k5NAAIzBwACHuIIRPmAUXuu3ssMOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG1GoBMSq4OC_ms-EYgsr4zBPxpAHyAAI0BwACHuIIRNqfLPUHvAEuOwQ"
     },
     {
         "num": 21,
@@ -511,8 +511,8 @@ QUESTIONS = [
         "en_explain": "Vertical clearance for overhead structures like bridges is measured from Mean High Water (MHW), which represents the average height of all high tides over a 19-year tidal epoch. This ensures mariners know the minimum clearance they can expect under normal high tide conditions. This standard is established by NOAA charting conventions for U.S. waters and referenced in the U.S. Coast Pilot publications.",
         "ru_explain": "Согласно стандартам NOAA для морских карт США, вертикальные габариты (clearances) объектов над водой — мостов, линий электропередач, надводных кабелей — указываются относительно среднего уровня полной воды (Mean High Water, MHW). Это обеспечивает безопасность: указанная высота показывает минимальный просвет, который будет доступен в большинстве случаев при высокой воде. В отличие от этого, глубины на картах отсчитываются от MLLW (средний нижний уровень малой воды), чтобы показать минимальные глубины. Таким образом, оба датума выбраны для обеспечения безопасности мореплавания: для глубин — наихудший (низкий) уровень воды, для высот — наихудший (высокий) уровень воды.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG1WoBMSwHaG_ohP19YDA2w6lJUGv-AAI1BwACHuIIREZ5IdeN8-BVOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG1moBMS2pUSSoIkufW8_EewzMbykPAAI2BwACHuIIRMyKN2nr0zYFOwQ"
     },
     {
         "num": 22,
@@ -535,8 +535,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 34(a), maneuvering signals (one short blast for starboard, two for port) are required to be sounded by **power-driven vessels** when in sight of one another during meeting, crossing, or overtaking situations. This differs from International Rules where such signals indicate actions already being taken; on inland waters, these signals indicate the vessel's intentions and require a response from the other vessel.",
         "ru_explain": "Согласно US Inland Navigation Rules (33 CFR Part 83), Правило 34(a): маневренные сигналы (сигналы намерения) подаются судами с механическим двигателем (power-driven vessels), находящимися в пределах видимости друг друга. При обгоне — согласно Правилу 34(a)(ii) — сигналы подаются независимо от расстояния. При встречных курсах или пересечении — согласно Правилу 34(a)(i) — сигналы подаются, когда суда находятся на расстоянии менее полумили друг от друга. Важное отличие от COLREGS: на внутренних водах США эти сигналы являются сигналами намерения (intent signals), а не сигналами действия. Парусные суда и суда без механического двигателя не обязаны подавать маневренные сигналы по этому правилу.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG12oBMS8Iuv2CsCZ0MukvQHH0IfGoAAI3BwACHuIIREOzmuVaDJi8OwQ",
+        "audio_a": "CQACAgEAAxkDAAIG2GoBMTHKg3Lr9Pc0SAABQKR0ukOyUgACOAcAAh7iCER03q7R0anLwjsE"
     },
     {
         "num": 23,
@@ -559,8 +559,8 @@ QUESTIONS = [
         "en_explain": "The Mercator Projection is the standard chart projection used for ocean and coastal navigation because it displays rhumb lines (lines of constant compass bearing) as straight lines, making it ideal for plotting courses. This conformal projection preserves angles and shapes of small areas, which is essential for accurate navigation. While not governed by COLREGS, understanding chart projections is fundamental knowledge for safe navigation and voyage planning.",
         "ru_explain": "Согласно публикациям NOAA и NGA (Chart No. 1), проекция Меркатора является стандартной для морских навигационных карт океанских и прибрежных районов. Её главные преимущества: 1) Локсодромия (линия постоянного курса) отображается как прямая линия, что позволяет прокладывать курс простым соединением двух точек. 2) Углы на карте соответствуют углам на местности (конформность). 3) Меридианы и параллели пересекаются под прямым углом. Поликоническая проекция используется для карт Великих озёр и внутренних водных путей. Проекция касательной плоскости (гномоническая) применяется для прокладки ортодромии на океанских переходах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG2WoBMTNBvcl12byVnhmrmxHGoeNsAAI5BwACHuIIRJ-r9MMpgjL_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIG2moBMTSPhsrCk-JxyK-Copi3FTWwAAI6BwACHuIIRNf3Ry2nDN-FOwQ"
     },
     {
         "num": 24,
@@ -583,8 +583,8 @@ QUESTIONS = [
         "en_explain": "Fine dots on nautical charts indicate the nature of the shoreline, typically representing sandy beaches or mudflats. This symbology is standardized by NOAA and follows Chart No. 1 (U.S. Chart Symbols, Abbreviations and Terms), which serves as the reference guide for interpreting all nautical chart symbols. Double magenta lines indicate other features such as recommended tracks, not shoreline characteristics.",
         "ru_explain": "Согласно стандартам NOAA Chart No. 1 (Nautical Chart Symbols, Abbreviations and Terms), характер берега и дна обозначается специальными символами. Мелкие точки (fine dots или stipple) используются для обозначения песчаного берега, отмелей и осушаемых участков. Различные типы грунта (песок, ил, камни, ракушки) показываются буквенными сокращениями и точечными символами. Двойные пурпурные линии используются для обозначения фарватеров и рекомендованных путей, а не характера берега. Крупные чёрно-жёлтые линии не являются стандартным картографическим обозначением для берега.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG22oBMTYy7-3y-1WDlx3sNPmB3vMSAAI7BwACHuIIRNX8qFLjyW2QOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG3GoBMTcKRjYCeL4hBjCD2tSfNGDCAAI8BwACHuIIRA8CagW1OMYAATsE"
     },
     {
         "num": 25,
@@ -607,8 +607,8 @@ QUESTIONS = [
         "en_explain": "On NOAA nautical charts, a buoy's position is indicated by a small open circle, which marks the exact location of the buoy's anchor or mooring point on the seafloor. The buoy symbol (showing its shape and characteristics) is typically placed nearby, but the small open circle represents the precise charted position. This symbology follows U.S. Chart No. 1, the standard reference for nautical chart symbols published jointly by NOAA and the National Geospatial-Intelligence Agency.",
         "ru_explain": "Согласно стандартам картографии NOAA и Международной гидрографической организации (IHO), изложенным в публикации \"Chart No. 1: Symbols, Abbreviations and Terms\", местоположение буя на навигационной карте обозначается маленьким незакрашенным кружком (small open circle). Этот кружок указывает точную позицию якорной системы буя на дне. Сам символ буя (его форма и цвет) изображается рядом с этим кружком, но именно незакрашенный кружок показывает географические координаты буя. Это стандартное обозначение используется на всех американских навигационных картах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG3WoBMTmGAW7mcAXarb9y2yThKDuLAAI9BwACHuIIRIq0d5ozT2yWOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG3moBMTvT753AS6LkeQHNluuvT4UeAAI-BwACHuIIRNqxamY78tAAATsE"
     },
     {
         "num": 26,
@@ -631,8 +631,8 @@ QUESTIONS = [
         "en_explain": "Harbor Charts are the largest scale nautical charts, typically ranging from 1:50,000 to 1:5,000, providing the greatest detail for navigation in harbors, anchorage areas, and smaller waterways. These charts show detailed bottom contours, aids to navigation, pier and wharf locations, and other critical features needed for safe maneuvering in confined waters. This classification is established by NOAA's nautical chart series standards, not COLREGS, as chart specifications fall under U.S. Coast and Geodetic Survey/NOAA navigation publications rather than the Rules of the Road.",
         "ru_explain": "Согласно классификации NOAA, навигационные карты США делятся по масштабу на несколько типов. Карты гаваней (Harbor Charts) имеют масштаб 1:50,000 и крупнее (обычно от 1:10,000 до 1:50,000). Они предназначены для навигации в гаванях, якорных стоянках и небольших водных путях. Эти карты показывают максимальную детализацию: глубины, навигационные знаки, причалы, опасности и береговые объекты. Для сравнения: Coast Charts имеют масштаб 1:150,000, а General Charts — 1:600,000. Чем крупнее масштаб (меньше число в знаменателе), тем больше деталей отображается на карте.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG32oBMTxuYCfkR7IbCUm_ZJNRV413AAI_BwACHuIIRF6eMCKpt8WKOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG4GoBMT6Wdrl35gAB4yL3gKb3kmINqwACQAcAAh7iCESRTBhxQu4fpDsE"
     },
     {
         "num": 27,
@@ -655,8 +655,8 @@ QUESTIONS = [
         "en_explain": "A Pilot Chart is a specialized planning chart published by the National Geospatial-Intelligence Agency (NGA) that depicts historical oceanographic and meteorological data including prevailing winds, wave heights, currents, and weather patterns for specific ocean regions by month. These charts are valuable voyage planning tools but are not intended for navigation purposes, as they lack the detailed depth soundings, aids to navigation, and coastal features found on nautical charts. Mariners use Pilot Charts in conjunction with standard nautical charts to select the most favorable routes based on expected conditions.",
         "ru_explain": "Согласно NGA (National Geospatial-Intelligence Agency), Pilot Charts — это специальные карты, публикуемые для основных океанов мира. Они содержат графическое представление исторических климатических данных: преобладающие ветры и их силу, высоту волн, течения, границы льдов, температуру воды и воздуха, атмосферное давление, частоту штормов и туманов. Эти данные собраны за многолетний период наблюдений. Pilot Charts используются для планирования океанских переходов и выбора оптимального маршрута, но НЕ предназначены для непосредственной навигации — для этого нужны навигационные карты соответствующего масштаба. Harbor Charts — крупномасштабные карты портов и гаваней. General Charts — карты среднего масштаба для прибрежного плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG4WoBMUAqEWZ94UXERvi_4zgmPbr6AAJBBwACHuIIRO6hSaA5ZHkZOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG4moBMUH6cIUSz2g1mhD9k0kn9g-hAAJCBwACHuIIRIMtEswds38POwQ"
     },
     {
         "num": 28,
@@ -679,8 +679,8 @@ QUESTIONS = [
         "en_explain": "A nautical chart and a map serve distinctly different purposes in navigation. Charts are specifically designed for marine navigation, depicting water depths, aids to navigation, hazards, and other critical maritime information, while maps are intended for land navigation and show terrain features, roads, and political boundaries. This distinction is fundamental to safe navigation as outlined in Navigation Rules and standard seamanship practices.",
         "ru_explain": "Согласно NOAA, между терминами \"map\" и \"chart\" существует принципиальное различие:  **Морская навигационная карта (Nautical Chart):** - Специально разработана для навигации на воде - Содержит глубины, навигационные опасности, средства навигационного оборудования (буи, маяки) - Показывает характер дна, течения, магнитное склонение - Включает информацию о приливах и фарватерах - Регулярно обновляется для безопасности мореплавания  **Географическая карта (Map):** - Предназначена для использования на суше - Показывает дороги, рельеф местности, города, границы - Не содержит навигационной информации для судоводителя - Акватории обычно показаны просто как синие области без деталей  Для безопасной навигации судоводитель обязан использовать именно морские навигационные карты (charts), а не обычные географические карты (maps). Использование неподходящего типа карты может привести к посадке на мель или столкновению с навигационными опасностями.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG42oBMUMySaN63-hZZQ1-z5jN7m8uAAJDBwACHuIIRNhlnPFWLQR7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIG5GoBMUVYzEd0UPA817IfKMp9JiTSAAJEBwACHuIIRBU1DbmjWlfdOwQ"
     },
     {
         "num": 29,
@@ -703,8 +703,8 @@ QUESTIONS = [
         "en_explain": "A great circle is the shortest distance between two points on the Earth's surface. A rhumb line crosses all meridians at the same angle and is easier to navigate but is not the shortest distance. Per American Practical Navigator (Bowditch).",
         "ru_explain": "Ортодромия (Great circle) — кратчайшее расстояние между двумя точками на поверхности Земли. Локсодрома (Rhumb line) пересекает все меридианы под одним углом, удобна для навигации, но не является кратчайшим путём. Источник: American Practical Navigator (Bowditch).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG5WoBMUfvEiTYXyE-d4jHmP7nc3VpAAJFBwACHuIIRPsTuGl7WUhvOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG5moBMUjwo5Tt8_huVqWcbjafCaAdAAJGBwACHuIIRLP_MM8ZgIIXOwQ"
     },
     {
         "num": 30,
@@ -727,8 +727,8 @@ QUESTIONS = [
         "en_explain": "Electronic Chart Display and Information Systems (ECDIS) may serve as the primary means of navigation, but USCG regulations and prudent seamanship require vessels to maintain appropriate backup arrangements, which typically include up-to-date paper charts for the vessel's operating area. This requirement ensures safe navigation capability in the event of electronic system failure, as specified in 33 CFR 164.35 regarding equipment requirements for safe navigation.",
         "ru_explain": "Согласно требованиям USCG и NOAA, использование только электронных навигационных систем (ECS/ENC) без резервных бумажных карт не допускается для большинства судов. Электронные системы могут выйти из строя из-за отказа питания, сбоя программного обеспечения или повреждения оборудования. Бумажные карты служат обязательным резервным средством навигации. Согласно 33 CFR 164.33, суда должны иметь на борту актуальные морские карты соответствующего района плавания. Только сертифицированные системы ECDIS (Electronic Chart Display and Information System) с соответствующим резервным копированием могут заменить бумажные карты, и то при соблюдении строгих требований одобрения. Для малых судов с лицензией 6-Pack наличие бумажных карт остаётся стандартным требованием безопасной навигации.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG52oBMUqYbV05C1zJxjxadxmkelmGAAJHBwACHuIIRC6e0CnoNfsAATsE",
+        "audio_a": "CQACAgEAAxkDAAIG6GoBMUvcxbZIAAEQc54u-Jd2BparvwACSAcAAh7iCESfR4ISvaGZ8jsE"
     },
     {
         "num": 31,
@@ -751,8 +751,8 @@ QUESTIONS = [
         "en_explain": "A \"Precautionary Area\" with \"SEE NOTE G\" is a reference found on nautical charts that directs mariners to a specific note printed on that chart containing important navigation information for that particular area. Precautionary Areas are designated zones where vessels must navigate with particular caution due to factors such as converging traffic, channel intersections, or other hazards, as referenced in 33 CFR 167 (Traffic Separation Schemes).",
         "ru_explain": "Согласно стандартам NOAA по оформлению морских карт, ссылки типа \"SEE NOTE\" (СМ. ПРИМЕЧАНИЕ) с буквенным обозначением (A, B, C, G и т.д.) всегда указывают на примечания, расположенные непосредственно на самой карте. Эти примечания (Notes) размещаются на свободном пространстве карты и содержат важную навигационную информацию, специфичную для данного района: особые правила движения, ограничения, предупреждения или пояснения к символам. \"Precautionary Area\" (Зона повышенного внимания) — это район системы разделения движения, где суда могут пересекать установленные пути или менять курс, что требует особой осторожности. Информация в Coast Pilot, Light List или Chart No. 1 не имеет буквенных ссылок непосредственно с карты — они являются отдельными изданиями.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG6WoBMU0pAeGCiGcu6MnzQ1HwudavAAJJBwACHuIIRPo1wTL0ya16OwQ",
+        "audio_a": "CQACAgEAAxkDAAIG6moBMU-7N4PhJCZa2SC1tLcUvFN3AAJKBwACHuIIRB4queL25q7UOwQ"
     },
     {
         "num": 32,
@@ -775,8 +775,8 @@ QUESTIONS = [
         "en_explain": "Nautical charts published by NOAA and NGA do include symbols and abbreviations indicating the types of fog signals at aids to navigation, such as horns, bells, whistles, or sirens. This information is essential for mariners navigating in reduced visibility conditions and is typically shown adjacent to the charted position of the aid. Chart No. 1 (U.S. Chart Symbols, Abbreviations and Terms) provides the standard symbology for these fog signal types.",
         "ru_explain": "Согласно стандартам NOAA и NGA по оформлению морских карт, типы туманных сигналов (fog signals) указываются на навигационных картах. На картах отображаются символы, обозначающие наличие и тип туманного сигнала на маяках и других средствах навигационного оборудования (например, диафон, наутофон, сирена, горн). Эта информация критически важна для навигации в условиях ограниченной видимости, так как позволяет судоводителю идентифицировать навигационные знаки по характеру их звукового сигнала. Поэтому утверждение неверно — типы туманных сигналов УКАЗЫВАЮТСЯ на картах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG62oBMVGLkNGn9FJJYy8XWo-CQX-CAAJLBwACHuIIRNtgsSWd6nGcOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG7GoBMVMww7zvC7e6-B-tG2vRxrDiAAJMBwACHuIIRNVIRNKfK7ptOwQ"
     },
     {
         "num": 33,
@@ -799,8 +799,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 34(h), a vessel may supplement whistle signals for passing intentions with a light signal. This light must be an all-round white or yellow light, visible for at least 5 miles, that flashes to correspond with the whistle signals being given.",
         "ru_explain": "Согласно US Inland Navigation Rules (33 CFR Part 83), Rule 34(h): \"Судно, которое обязано или в праве подавать маневроуказательные сигналы согласно данному Правилу, может дополнительно подавать световые сигналы, повторяющие звуковой сигнал, используя следующие характеристики: (i) эти световые сигналы повторяют количество вспышек, соответствующее количеству звуковых сигналов; (ii) продолжительность каждой вспышки должна быть около одной секунды; (iii) интервал между вспышками должен быть около одной секунды; (iv) интервал между последовательными сигналами должен быть не менее десяти секунд; (v) используемый огонь, если он установлен, должен быть круговым белым или жёлтым огнём (all-round white or yellow light), видимым на расстоянии не менее 2 миль, и должен соответствовать положениям Приложения I к данным Правилам.\"",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG7WoBMVVy9qRicpQMKAYziKehiXMZAAJNBwACHuIIRIn2eYNe7awdOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG7moBMVbfZJk0Qw9ECAKGQpjd54HEAAJOBwACHuIIRCqtxxKz_lmsOwQ"
     },
     {
         "num": 34,
@@ -823,8 +823,8 @@ QUESTIONS = [
         "en_explain": "The chart abbreviation \"Obstn\" indicates an **obstruction**, which refers to any submerged or partially submerged hazard to navigation such as a wreck, rock, or other underwater feature that could pose a danger to vessels. This abbreviation is standardized in Chart No. 1 (U.S. Chart Symbols, Abbreviations, and Terms), published jointly by NOAA and the National Geospatial-Intelligence Agency, which serves as the reference guide for all symbols and abbreviations used on U.S. nautical charts.",
         "ru_explain": "Согласно стандартам NOAA Chart No. 1 (Nautical Chart Symbols, Abbreviations and Terms), аббревиатура \"Obstn\" расшифровывается как \"Obstruction\" — подводное препятствие. Это общий термин для обозначения любых подводных объектов, представляющих потенциальную опасность для навигации: затонувшие суда, скалы, искусственные сооружения и другие объекты на дне. На картах NOAA/NGA подводные препятствия отмечаются специальными символами с указанием глубины над ними (если известна) или пометкой о неизвестной глубине. Важно отличать \"Obstruction\" (конкретный картографический термин) от общего слова \"Obstacle\" (препятствие в широком смысле).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG72oBMVjLKAnQpK4M9GGn32DDBGCbAAJPBwACHuIIREUa_vwdgNsKOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG8GoBMVpjjLFWm_CMWhVqxgP2LZCMAAJQBwACHuIIRHRirQ7iNQABMjsE"
     },
     {
         "num": 35,
@@ -847,8 +847,8 @@ QUESTIONS = [
         "en_explain": "When wind \"backs,\" it shifts direction counterclockwise (e.g., from west to south to east) as observed from above in the Northern Hemisphere. This is the opposite of \"veering,\" where wind shifts clockwise. This meteorological terminology is essential knowledge for mariners monitoring weather conditions, though it falls under general seamanship rather than a specific COLREGS or Inland Rule.",
         "ru_explain": "Согласно терминологии NOAA и стандартной морской метеорологии:  **Backing (заход ветра)** — изменение направления ветра против часовой стрелки (например, с юга на восток, затем на север). В Северном полушарии это обычно связано с приближением холодного фронта или ухудшением погоды.  **Veering (отход ветра)** — изменение направления ветра по часовой стрелке (например, с юга на запад, затем на север). Обычно указывает на прохождение фронта и улучшение погоды.  Эти термины описывают только направление изменения ветра, а не его скорость. Заходящий ветер (backing) в Северном полушарии часто является признаком приближающегося циклона или фронтальной системы.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG8WoBMVwC7B2Zl-sBeKT3GxfutkWTAAJRBwACHuIIRD4W6YnPIXlXOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG8moBMV4WcLL6unBDicnpvGbndPSEAAJSBwACHuIIRCu-x5Zlqu1AOwQ"
     },
     {
         "num": 36,
@@ -871,8 +871,8 @@ QUESTIONS = [
         "en_explain": "Barometers used in marine navigation are typically calibrated to display atmospheric pressure in two standard units: inches of mercury (inHg), which is the traditional American measurement, and millibars (mb), which is the metric unit commonly used in international weather reporting. This dual calibration allows mariners to interpret weather forecasts and barometric readings from various sources when monitoring changing conditions at sea.",
         "ru_explain": "Согласно NOAA (Национальное управление океанических и атмосферных исследований), атмосферное давление измеряется двумя основными единицами:  1. **Дюймы ртутного столба (inches of mercury, inHg)** — традиционная единица измерения в США. Стандартное атмосферное давление на уровне моря составляет 29.92 дюйма ртутного столба.  2. **Миллибары (millibars, mb)** — метрическая единица, широко используемая в международной метеорологии и на морских картах погоды. Стандартное давление на уровне моря = 1013.25 мб.  Морские барометры на судах США калибруются в обеих этих единицах для удобства работы с американскими и международными метеорологическими данными. На картах погоды NOAA изобары (линии равного давления) обозначаются в миллибарах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG82oBMV_uXEJsEZOvCBZqlBzP0-a_AAJTBwACHuIIRBBADwqyTFSbOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG9GoBMWF4Q1hvah09QszjXRqBaA0xAAJUBwACHuIIREt1o9l9oHBEOwQ"
     },
     {
         "num": 37,
@@ -895,8 +895,8 @@ QUESTIONS = [
         "en_explain": "An anticyclone is the meteorological term for a high pressure weather system, characterized by clockwise wind circulation in the Northern Hemisphere and generally fair weather conditions. This is fundamental weather knowledge for mariners, as understanding pressure systems helps predict wind patterns and sea conditions. While not a COLREGS rule, this falls under the general seamanship and weather knowledge required of licensed captains.",
         "ru_explain": "Согласно материалам NOAA по метеорологии, область высокого атмосферного давления называется антициклоном (anticyclone). В Северном полушарии ветры в антициклоне движутся по часовой стрелке вокруг центра высокого давления. Антициклоны обычно приносят ясную, устойчивую погоду с лёгкими ветрами. Циклон (cyclone) — это противоположность: область низкого давления с ветрами против часовой стрелки, часто связанная с ненастной погодой. Холодный фронт и фронт окклюзии — это границы между воздушными массами, а не области давления.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG9WoBMWSEFNvfvBktXBG4Ihadudc3AAJVBwACHuIIRCxXtsl2M95ZOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG9moBMWYeXTwK7HvimdfkuYsDk8IlAAJWBwACHuIIRASTvVsKLwGSOwQ"
     },
     {
         "num": 38,
@@ -919,8 +919,8 @@ QUESTIONS = [
         "en_explain": "When a warm front approaches, the barometric pressure typically falls as the lighter, less dense warm air mass advances and begins to override the cooler air ahead of it. This pressure drop is a key weather indicator that mariners use to anticipate changing conditions, including increased cloudiness, precipitation, and shifting winds. Understanding these meteorological patterns is essential for safe voyage planning, though this topic falls under general seamanship and weather observation rather than the COLREGS or Inland Navigation Rules.",
         "ru_explain": "Согласно метеорологическим данным NOAA, тёплый фронт образуется, когда тёплая воздушная масса надвигается на холодную и вытесняет её. Тёплый воздух имеет меньшую плотность, чем холодный, поэтому при приближении тёплого фронта атмосферное давление падает (falls). Признаки приближения тёплого фронта: постепенное понижение давления, появление перистых облаков (cirrus), затем перисто-слоистых (cirrostratus), далее слоисто-дождевых (nimbostratus) с продолжительными осадками. Для мореплавателя падение барометра в сочетании с характерной облачностью — важный индикатор приближающегося тёплого фронта и связанного с ним ухудшения погоды.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG92oBMWfuGysajsHNVbJi-8ylgL14AAJXBwACHuIIRDKCFv1oRdjzOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG-GoBMWmIDwNWPY9iqqWODiwxnbhNAAJYBwACHuIIRGpfvQvY9usqOwQ"
     },
     {
         "num": 39,
@@ -943,8 +943,8 @@ QUESTIONS = [
         "en_explain": "In the Northern Hemisphere, a hurricane's **navigable (left) semicircle** is the most favorable position because the storm's counterclockwise rotation opposes its forward motion, resulting in lower combined wind speeds. The **dangerous semicircle** (right side of the storm's path) has higher winds since the rotational winds add to the storm's forward movement, and vessels there tend to be swept into the storm's track. This heavy weather seamanship principle, while not a COLREGS rule, is fundamental mariner knowledge tested for safe vessel operation.",
         "ru_explain": "Согласно NOAA и стандартам морской метеорологии, ураганы в Северном полушарии вращаются против часовой стрелки. Это создаёт два полукруга с разными характеристиками:  **Опасный полукруг (справа от траектории):** - Ветер дует в направлении движения шторма, усиливая его скорость - Судно сносит на траекторию урагана - Ветер + скорость перемещения урагана = максимальная сила  **Судоходный (безопасный) полукруг (слева от траектории):** - Ветер дует против направления движения шторма - Судно отбрасывает от траектории урагана - Скорость ветра частично компенсируется скоростью перемещения шторма  Поэтому, если избежать урагана невозможно, наиболее благоприятное место — левая половина шторма относительно его траектории движения (судоходный полукруг).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG-WoBMWvcCVBfiazaK25vCtsceXhEAAJZBwACHuIIRJPTAAG2aFloXzsE",
+        "audio_a": "CQACAgEAAxkDAAIG-moBMWzyux6fAdwP_Rh5C0yKVdJfAAJaBwACHuIIRDurWGntjsgtOwQ"
     },
     {
         "num": 40,
@@ -967,8 +967,8 @@ QUESTIONS = [
         "en_explain": "An air mass is classified as \"warm\" when its temperature is higher than the surface it is moving over, meaning the ground beneath it is cooler than the air itself. This occurs because the air mass retains heat from its source region and transfers that warmth to the cooler surface below. This is a fundamental meteorology concept tested for mariner weather knowledge, though it falls under general seamanship rather than COLREGS or Inland Rules.",
         "ru_explain": "Согласно метеорологическим руководствам NOAA, классификация воздушных масс на \"тёплые\" и \"холодные\" определяется не их абсолютной температурой, а соотношением температуры воздушной массы и подстилающей поверхности. Воздушная масса считается тёплой, когда она теплее поверхности, над которой перемещается. В этом случае нижние слои воздуха охлаждаются от контакта с холодной поверхностью, что создаёт устойчивую стратификацию атмосферы. Характерные признаки тёплой воздушной массы: слоистая облачность, туманы (особенно адвективные), моросящие осадки, ограниченная видимость. Это важно для судоводителя при планировании перехода и оценке погодных условий.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG-2oBMW4WE7n1L5xyknuCotgGtFm2AAJbBwACHuIIRBwnXiF7Xzb9OwQ",
+        "audio_a": "CQACAgEAAxkDAAIG_GoBMXBIRCevZVQkqlrCyUK0VJD1AAJcBwACHuIIRF3p6fy14FZ2OwQ"
     },
     {
         "num": 41,
@@ -991,8 +991,8 @@ QUESTIONS = [
         "en_explain": "Advection fog is the most commonly encountered fog at sea, formed when warm, moist air moves horizontally over colder water, causing the moisture to condense. This type of fog can persist for extended periods and cover vast ocean areas, significantly reducing visibility. While not directly addressed in COLREGS, Rule 19 (Conduct of Vessels in Restricted Visibility) governs navigation when visibility is reduced by fog or other conditions.",
         "ru_explain": "Согласно данным NOAA, адвективный туман (advection fog) является наиболее распространённым типом тумана в морских условиях. Он образуется, когда тёплый влажный воздух перемещается над более холодной водной поверхностью. При контакте с холодной водой воздух охлаждается до точки росы, и водяной пар конденсируется в туман. Этот тип тумана особенно характерен для районов, где тёплые воздушные массы проходят над холодными течениями (например, Гольфстрим встречается с Лабрадорским течением). Радиационный туман образуется над сушей в ночное время и редко встречается в открытом море. Фронтальный туман связан с атмосферными фронтами. Адвективный туман может быть очень плотным и сохраняться длительное время, что создаёт условия ограниченной видимости, требующие соблюдения Правила 19 МППСС-72.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG_WoBMXInSQeDr-Lhh1Khp6m9sDKKAAJdBwACHuIIRLlXkeyE6q0mOwQ",
+        "audio_a": "CQACAgEAAxkDAAIG_moBMXNZmO53YQyARO904BUGCTcbAAJeBwACHuIIREHD84qhgolhOwQ"
     },
     {
         "num": 42,
@@ -1015,8 +1015,8 @@ QUESTIONS = [
         "en_explain": "The prefix \"nimbo\" (or suffix \"-nimbus\") in cloud classification indicates precipitation-producing clouds, meaning they are rain clouds. Examples include cumulonimbus (thunderstorm clouds) and nimbostratus (steady rain-producing layer clouds). While not covered by COLREGS or Inland Rules, understanding cloud types is essential seamanship knowledge for predicting weather conditions that may affect vessel navigation and safety.",
         "ru_explain": "Согласно классификации облаков, используемой NOAA, приставка \"nimbo-\" или суффикс \"-nimbus\" в названии облаков происходит от латинского слова \"nimbus\" (дождь, буря). Эта приставка указывает на облака, производящие осадки. К таким облакам относятся: - **Nimbostratus (слоисто-дождевые)** — низкие серые облака, дающие продолжительные осадки - **Cumulonimbus (кучево-дождевые)** — мощные облака вертикального развития, вызывающие ливни, грозы и шквалы  Для судоводителя важно распознавать \"nimbo\"-облака, так как они всегда связаны с осадками и потенциально опасными погодными условиями.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIG_2oBMXV7R2NJF1lqfh_KdEIeo_hPAAJfBwACHuIIRMPM_cQuh72OOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHAAFqATF31OklaqN8T3Elz7is0NtZVAACYAcAAh7iCEQyHI5nsvJrRDsE"
     },
     {
         "num": 43,
@@ -1039,8 +1039,8 @@ QUESTIONS = [
         "en_explain": "When land is cooler than the adjacent water, the warmer air over the water rises, and cooler, denser air from the land flows seaward to replace it, creating a **land breeze**. This typically occurs at night when the land loses heat more rapidly than the water. Understanding local wind patterns like land and sea breezes is essential for safe navigation in coastal waters, as covered in basic seamanship and weather knowledge required for USCG licensing.",
         "ru_explain": "Согласно метеорологическим данным NOAA, береговой бриз (land breeze) формируется в ночное время, когда суша остывает быстрее воды. Более холодный воздух над сушей становится плотнее и тяжелее, поэтому он опускается и движется в сторону более тёплой воды, где воздух поднимается вверх. Таким образом, ветер дует с суши на море. Морской бриз (sea breeze), напротив, возникает днём, когда суша нагревается быстрее воды — тогда ветер дует с моря на сушу. Это важное знание для прибрежной навигации и планирования выхода/захода в порт.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHAWoBMXgqa3K3PSEo8RIua9LeDnucAAJhBwACHuIIRH4imKvD75ZsOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHAmoBMXrEB-VZkYipiTJfvgrjI8hsAAJiBwACHuIIROpgPZCYYDxbOwQ"
     },
     {
         "num": 44,
@@ -1063,8 +1063,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 24(g), a vessel or object being towed that is partly submerged and difficult to see MAY display an all-round white light at or near each end, and when practicable, the towing vessel may direct a searchlight in the direction of the tow to indicate its presence. This searchlight option provides an additional means of alerting other vessels to the hazard of a partially submerged tow that might otherwise be difficult to detect.",
         "ru_explain": "Согласно US Inland Navigation Rules (33 CFR Part 83), Rule 24(g): судно или объект, буксируемый в частично погружённом состоянии и трудно различимый, ДОЛЖЕН нести ромбовидный знак на корме (или на крайней точке) и, если длина буксира превышает 200 метров — дополнительный ромбовидный знак в наиболее видимом месте. Однако правило также указывает, что МОЖЕТ использоваться («may be used») луч прожектора с буксирующего судна, направленный в сторону буксируемого объекта, для привлечения внимания к его присутствию. Это дополнительная мера, а не обязательное требование. Варианты A (конус вершиной вверх) и B (жёлтые огни на концах буксира) не соответствуют требованиям для частично погружённых объектов — это знаки для других ситуаций.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHA2oBMXzEbDrRHBjQvHY-wximTUM3AAJjBwACHuIIRK3uuBrl9V7kOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHBGoBMX5ulXig9KASrS2812e6XeARAAJkBwACHuIIROTDW4io_CwNOwQ"
     },
     {
         "num": 45,
@@ -1087,8 +1087,8 @@ QUESTIONS = [
         "en_explain": "A tropical storm is classified as a tropical cyclone with sustained winds between 34 and 63 knots. Once winds exceed 63 knots (74 mph), the system is reclassified as a hurricane. This meteorological knowledge is essential for mariners to properly assess weather hazards and make safe navigation decisions, as referenced in general seamanship and weather awareness requirements for USCG licensing.",
         "ru_explain": "Согласно классификации NOAA (Национальное управление океанических и атмосферных исследований США), тропические циклоны классифицируются по силе ветра:  • **Тропическая депрессия** — устойчивые ветры до 33 узлов (38 миль/ч) • **Тропический шторм** — устойчивые ветры от 34 до 63 узлов (39–73 миль/ч). На этой стадии циклону присваивается имя. • **Ураган** — устойчивые ветры 64 узла и выше (74+ миль/ч)  Таким образом, тропический шторм занимает промежуточное положение между тропической депрессией и ураганом. Порог в 34 узла является критическим значением, при котором система переходит из категории депрессии в категорию шторма.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHBWoBMX9ToRIRK4agRxEBmd6cOpNyAAJlBwACHuIIRM2FDXM-x0eiOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHBmoBMYHFZuo_8xC8TIiV2x_ECSJIAAJmBwACHuIIRE20iXOUqLGkOwQ"
     },
     {
         "num": 46,
@@ -1111,8 +1111,8 @@ QUESTIONS = [
         "en_explain": "Preferred Channel Buoys (also called junction buoys) are horizontally banded red and green, not vertically striped, and they are lettered rather than numbered. Per the U.S. Aids to Navigation System (IALA Region B), these buoys mark channel junctions or bifurcations and receive letters instead of numbers to distinguish them from standard lateral marks. Their lights, when fitted, are composite group flashing (2+1) red or green—never yellow.",
         "ru_explain": "Согласно U.S. Aids to Navigation System (USCG/NOAA), буи предпочтительного канала (Preferred Channel Buoys) имеют горизонтальные (не вертикальные) красно-зелёные полосы. Верхняя полоса указывает предпочтительный канал: красная сверху — предпочтительный канал слева, зелёная сверху — справа. Эти буи НЕ нумеруются, а обозначаются БУКВАМИ (lettered), что отличает их от обычных латеральных буёв. Огни на них — составные проблесковые (composite group flashing): (2+1) красного или зелёного цвета, но не жёлтого. Жёлтые огни используются на специальных буях (special marks) и буях ICW.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHB2oBMYNXd1fGWuYF9XZdqfcxShA6AAJnBwACHuIIRCuhed2zQJcFOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHCGoBMYRFIAqh8GcXkBDtx2LE9MfEAAJoBwACHuIIRIQZuzyfjDErOwQ"
     },
     {
         "num": 47,
@@ -1135,8 +1135,8 @@ QUESTIONS = [
         "en_explain": "A lighted green can buoy may be odd numbered because it marks the port (left) side of a channel when returning from sea. Under the U.S. Aids to Navigation System (IALA Region B), green buoys marking the port side are assigned odd numbers, while red buoys on the starboard side receive even numbers. This follows the \"red right returning\" principle, where numbers increase as vessels proceed upstream or into port.",
         "ru_explain": "Согласно системе IALA Region B (используемой в США), латеральные знаки зелёного цвета (буи типа \"can\") маркируют левую сторону фарватера при входе с моря и нумеруются НЕЧЁТНЫМИ числами. Буи красного цвета (nun) маркируют правую сторону и имеют ЧЁТНЫЕ номера. Знаки безопасной воды (B) имеют буквенную маркировку, не номера. Специальные знаки (A) могут иметь буквы, но не номера навигационной последовательности. Знак предпочтительного канала с зелёной верхней полосой (C) — это красный буй с зелёной полосой сверху, он нумеруется как ЧЁТНЫЙ (как красный латеральный знак). Только зелёный освещённый буй (D) имеет нечётный номер.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHCWoBMYZeNYKvFgUZP36HikvC9pYNAAJpBwACHuIIRKq_f8mPV0prOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHCmoBMYc6NezBUUTEivk7WlOOBHO9AAJqBwACHuIIRIaMpNTyeF3mOwQ"
     },
     {
         "num": 48,
@@ -1159,8 +1159,8 @@ QUESTIONS = [
         "en_explain": "The United States operates under IALA Region B, which determines the lateral buoyage system used for aids to navigation. In Region B, red buoys mark the starboard (right) side of the channel when returning from sea, following the \"Red Right Returning\" memory aid. This is distinct from IALA Region A (used in Europe and most other areas) where the colors are reversed.",
         "ru_explain": "Согласно системе навигационного ограждения IALA, мир разделён на два региона: A и B. США относятся к Региону B (IALA-B), где действует правило «Red Right Returning» — красные буи держат справа при входе в порт/движении вверх по течению. В Регионе A (Европа, Африка, большая часть Азии) цвета латеральных знаков противоположны — красные буи держат слева при входе. Эта информация указана в U.S. Coast Guard Navigation Rules and Regulations Handbook, а также в публикациях NOAA Coast Pilot и на навигационных картах США.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHC2oBMYn1TuGn0fsPVHtlC-s8LtqZAAJrBwACHuIIRAFWnBcVPgABXjsE",
+        "audio_a": "CQACAgEAAxkDAAIHDGoBMYu6cv7-zdTzUxGHDCE5E49CAAJsBwACHuIIRKg0THsW3aqWOwQ"
     },
     {
         "num": 49,
@@ -1183,8 +1183,8 @@ QUESTIONS = [
         "en_explain": "In IALA Region B (which includes the United States), the lateral marking system follows the \"Red Right Returning\" convention—meaning red buoys are kept to starboard when returning from sea (proceeding toward port). This is established under the U.S. Aids to Navigation System, which conforms to IALA Maritime Buoyage System Region B standards. Red buoys are even-numbered, while green buoys (kept to port when returning) are odd-numbered.",
         "ru_explain": "Согласно системе навигационного ограждения IALA Region B (используется в США и Америках), действует правило \"Red Right Returning\" — красный справа при возвращении. При входе в порт с моря красные буи с чётными номерами держат по правому борту, зелёные буи с нечётными номерами — по левому борту. Это закреплено в U.S. Aids to Navigation System (USCG Navigation Rules and Regulations Handbook). Красные буи маркируются чётными номерами, зелёные — нечётными. Буквами обозначаются только безопасные водные буи и некоторые специальные знаки.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHDWoBMY3AGvAez1cvxQxgt-rzyTGzAAJtBwACHuIIRI8Q-olUT_AQOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHDmoBMY_kFiMFBULWfX-uGeV6XE1DAAJuBwACHuIIRBu3_NE7FfS8OwQ"
     },
     {
         "num": 50,
@@ -1207,8 +1207,8 @@ QUESTIONS = [
         "en_explain": "A lighted safe water mark is fitted with a spherical topmark to aid in its identification. According to the IALA Maritime Buoyage System (referenced in both COLREGS and US Aids to Navigation), safe water marks feature red and white vertical stripes, and when equipped with a topmark, it consists of a single red sphere. This topmark helps mariners identify the mark during daylight hours, indicating safe water all around (such as mid-channel or fairway marks).",
         "ru_explain": "Согласно системе IALA (International Association of Lighthouse Authorities), которую используют NOAA и USCG, знаки безопасной воды (Safe Water Marks) обозначают, что вокруг них находится судоходная вода. Они имеют красно-белые вертикальные полосы. Отличительной особенностью освещённых знаков безопасной воды является **сферический топовый знак (spherical topmark)** красного цвета, установленный на вершине буя. Огонь на таком знаке — белый изофазный, затмевающийся или с длинной вспышкой (Morse \"A\"). Светоотражающий материал (вариант C) также присутствует на этих знаках, но именно сферический топовый знак является главным идентификационным признаком, отличающим знак безопасной воды от других навигационных знаков.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHD2oBMZEKh-MN8lZmq-JIIqyIMjLTAAJvBwACHuIIRM0x1GcdiPkKOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHEGoBMZJ0TDfoztozGewnWREHJsWKAAJwBwACHuIIRHxHZvtPTJ1pOwQ"
     },
     {
         "num": 51,
@@ -1231,8 +1231,8 @@ QUESTIONS = [
         "en_explain": "An isolated danger buoy marks a hazard with navigable water all around it and displays a white light flashing in groups of two (Fl(2)) every 5 seconds, with a distinctive topmark of two black spheres. This is specified in the IALA Maritime Buoyage System, which is incorporated into U.S. Coast Guard navigation regulations. The two black spheres and group flashing (2) characteristic help mariners identify this buoy type both day and night.",
         "ru_explain": "Согласно системе IALA (International Association of Marine Aids to Navigation and Lighthouse Authorities), буи отдельно лежащих опасностей (Isolated Danger Marks) устанавливаются непосредственно над опасностью, вокруг которой имеется безопасная вода. Их характеристики: - **Окраска**: чёрная с одной или несколькими красными горизонтальными полосами - **Топовая фигура**: 2 чёрных шара, расположенных вертикально (обязательный признак) - **Огонь**: белый, проблесковый с группой из 2 проблесков — Fl(2) (период обычно 5 секунд)  Группа из 2 проблесков символически указывает на 2 чёрных шара топовой фигуры, что облегчает идентификацию буя в ночное время. Эти буи НЕ нумеруются, а могут иметь только буквенное обозначение для идентификации на картах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHEWoBMZSUh4jIbYkAAafn4DOplCPwQwACcQcAAh7iCER_ninfCaPFGTsE",
+        "audio_a": "CQACAgEAAxkDAAIHEmoBMZZGQJ9RJNCLVjF1afh9dBFsAAJyBwACHuIIRIigmIP4aW2pOwQ"
     },
     {
         "num": 52,
@@ -1255,8 +1255,8 @@ QUESTIONS = [
         "en_explain": "Under the U.S. Aids to Navigation System (USCG Navigation Rules), red buoys mark the starboard side of the channel when returning from sea and are assigned even numbers. Unlighted nun buoys are red, conical-shaped buoys that mark the starboard side, and therefore carry even numbers. Mid-channel buoys display red and white vertical stripes and are not numbered, while green buoys marking the port side carry odd numbers.",
         "ru_explain": "Согласно системе навигационных ограждений USCG (IALA Region B), используемой в США: красные буи маркируют правую сторону фарватера при входе с моря и имеют ЧЁТНЫЕ номера. Конусные буи (nun buoys) — это красные буи конической формы, которые всегда располагаются на правой стороне канала и нумеруются чётными числами. Зелёные буи (включая освещённые) маркируют левую сторону и имеют НЕЧЁТНЫЕ номера. Буи середины фарватера (mid-channel/fairway buoys) имеют красно-белую вертикальную полосу и НЕ нумеруются — они обозначаются буквами. Таким образом, только неосвещённый конусный буй (красный) может иметь чётный номер.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHE2oBMZc51b79J0EzRFLte_qdYYbXAAJzBwACHuIIRIwpdFsVRo9UOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHFGoBMZlzXwTGWfheLbbjF806gQX7AAJ0BwACHuIIRJ3R-95D67pUOwQ"
     },
     {
         "num": 53,
@@ -1279,8 +1279,8 @@ QUESTIONS = [
         "en_explain": "Special Marks in the IALA buoyage system are yellow in color and are used to indicate special areas or features such as anchorages, cable crossings, military exercise zones, or other areas referenced on nautical charts. These marks are not intended to assist in primary navigation but rather to alert mariners to specific information about the area. This is established under the IALA Maritime Buoyage System, which is incorporated into U.S. Coast Guard navigation regulations.",
         "ru_explain": "Согласно системе навигационных знаков IALA (используемой USCG и NOAA), специальные знаки (Special Marks) имеют жёлтый цвет. Они обозначают особые зоны или объекты, упомянутые в навигационных документах: зоны якорных стоянок, зоны сброса грунта, районы военных учений, кабели и трубопроводы, зоны ограничения скорости, границы каналов. Топовая фигура — жёлтый косой крест (X). Огонь, если установлен, также жёлтый с любой характеристикой, кроме используемых для кардинальных и латеральных знаков.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHFWoBMZuCx_SlIDBAOvpAgY6-C-phAAJ1BwACHuIIRJRDvSoLGdHJOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHFmoBMZw1hr9u9EdFO7P5VeEo4p3sAAJ2BwACHuIIRPUOrV-JSA6-OwQ"
     },
     {
         "num": 54,
@@ -1303,8 +1303,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 35(a) of both the International and Inland Rules, a power-driven vessel making way through the water shall sound one prolonged blast at intervals of not more than two minutes in restricted visibility. This distinguishes a vessel actively moving through the water from one that is underway but stopped, which would sound two prolonged blasts in succession under Rule 35(b).",
         "ru_explain": "Согласно Правилу 35(a) МППСС-72 (COLREGS) и 33 CFR 83.35(a) ВППСША: судно с механическим двигателем, имеющее ход относительно воды, в условиях ограниченной видимости должно подавать через промежутки не более 2 минут один продолжительный звуковой сигнал. Судно на ходу, но остановившееся и не имеющее хода относительно воды, подаёт два продолжительных сигнала с интервалом около 2 секунд между ними (Правило 35(b)). Таким образом, один продолжительный гудок указывает именно на судно, которое движется (имеет ход относительно воды).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHF2oBMZ7cyItE67l--1E6cT4PyWnhAAJ3BwACHuIIRGXv13AyhwdgOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHGGoBMaAB5Vaf2WP5JmKnLxNxbAU9AAJ4BwACHuIIRMDfVrEokWHSOwQ"
     },
     {
         "num": 55,
@@ -1327,8 +1327,8 @@ QUESTIONS = [
         "en_explain": "Safe Water Marks, according to the U.S. Aids to Navigation System (IALA Region B), display a white light with Morse Code \"A\" (short-long) characteristic. These marks indicate navigable water all around them, such as mid-channel or fairway markers, and feature red and white vertical stripes—not white and orange, and they are not numbered but may carry letters.",
         "ru_explain": "Согласно системе IALA (применяемой в водах США), знаки безопасной воды (Safe Water Marks) обозначают, что вокруг них со всех сторон находится судоходная вода. Они устанавливаются на осевых линиях фарватеров и в середине каналов. Характеристики: вертикальные красные и белые полосы (не бело-оранжевые), один красный шар в качестве топового знака. Огонь — белый изофазный, затмевающийся, длительно-проблесковый с периодом 10 секунд, или характеристика Морзе «A» (точка-тире): Mo(A). Эти знаки НЕ нумеруются и НЕ указывают конкретную сторону для обхода препятствия — они показывают, что безопасно проходить с любой стороны.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHGWoBMaFCWLx6jbiIC9pVJn3ro2i5AAJ5BwACHuIIRGcMddc-FLzBOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHGmoBMaT0tasfbmzjeVrnveZwwZbrAAJ6BwACHuIIRMrq5-J7DnH4OwQ"
     },
     {
         "num": 56,
@@ -1351,8 +1351,8 @@ QUESTIONS = [
         "en_explain": "The **stand of the tide** refers to the brief period when the water level remains relatively stationary after reaching its maximum height (high water) or minimum height (low water) before reversing direction. This is a fundamental tidal terminology concept covered in navigation and seamanship, not specifically addressed in COLREGS or Inland Rules, but essential knowledge for safe piloting in tidal waters. Understanding stand is crucial for timing entries into shallow channels or planning dock approaches.",
         "ru_explain": "Согласно терминологии NOAA (Tidal Datums and Their Applications), **\"Stand of tide\"** (стояние прилива) — это период времени, когда уровень воды достигает максимума (полная вода) или минимума (малая вода) и практически не изменяется. В этот момент вертикальное движение воды прекращается перед сменой направления приливного течения. Этот термин важен для навигации, так как указывает на оптимальное время для прохода мелководных участков. Epoch — это 19-летний период осреднения приливных данных. Spring tide — сизигийный прилив (максимальная амплитуда при новолунии/полнолунии).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHG2oBMaae_F6ShQuWGOSoF2RaTN9RAAJ7BwACHuIIRMuz1RcZCPR7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIHHGoBMagv24cXY9e43e-Q-vDPiBqbAAJ8BwACHuIIRJoGr90AAeuStTsE"
     },
     {
         "num": 57,
@@ -1375,8 +1375,8 @@ QUESTIONS = [
         "en_explain": "Spring tides occur when the Sun and Moon are aligned (during new and full moon phases), creating stronger gravitational pull that produces higher than normal high tides and lower than normal low tides—resulting in the greatest tidal range. This is a navigation safety and seamanship concept tested on the USCG license exam, not a COLREGS rule. Understanding tidal variations is essential for safe passage planning, particularly in shallow waters and when calculating under-keel clearance.",
         "ru_explain": "Согласно материалам NOAA, сизигийные приливы (Spring tides) возникают во время новолуния и полнолуния, когда Солнце, Луна и Земля выстраиваются в одну линию. Гравитационные силы Солнца и Луны складываются, создавая максимальную амплитуду: высокие приливы становятся выше среднего, а низкие отливы — ниже среднего. Квадратурные приливы (Neap tides), напротив, происходят в первой и последней четвертях Луны, когда силы частично компенсируют друг друга, давая минимальную амплитуду колебаний.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHHWoBMamF86R0oj7C1uLjMRlKImG2AAJ9BwACHuIIRIqPJ4uYfn7dOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHHmoBMatwv9x231es2hR6hT5UXpmzAAJ-BwACHuIIRC0BpFccAAEvLDsE"
     },
     {
         "num": 58,
@@ -1399,8 +1399,8 @@ QUESTIONS = [
         "en_explain": "When the moon is in its first or last quarter phase, the gravitational pulls of the sun and moon are at right angles to each other, partially canceling out their effects and producing **neap tides**. Neap tides have the smallest range between high and low water levels. This is fundamental tidal knowledge covered in navigation and piloting education rather than COLREGS, but is essential for safe vessel operation in coastal waters.",
         "ru_explain": "Согласно материалам NOAA по приливам и течениям: квадратурные приливы (Neap tides) возникают, когда Луна находится в первой или последней четверти (под углом 90° к линии Солнце-Земля). В этом положении гравитационные силы Солнца и Луны действуют перпендикулярно друг другу и частично компенсируются, что приводит к наименьшей разнице между высокой и низкой водой. Сизигийные приливы (Spring tides), напротив, происходят при новолунии и полнолунии, когда Солнце, Луна и Земля выстраиваются в линию, создавая максимальную амплитуду приливов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHH2oBMa3qPqyA3x2z2Lq5-VJAejjSAAJ_BwACHuIIRJydOvRmPzoOOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHIGoBMa6W7IXfMo_EAuCn5PdH18YnAAKABwACHuIIRBglRNVn4mO3OwQ"
     },
     {
         "num": 59,
@@ -1423,8 +1423,8 @@ QUESTIONS = [
         "en_explain": "A diamond shape with a cross inside on an Information or Regulatory Mark indicates an Exclusion Area, meaning vessels are prohibited from entering that area entirely. This marking is part of the U.S. Aids to Navigation System (USATONS) administered by the Coast Guard, not COLREGS. Common exclusion areas include swimming beaches, dam structures, and other locations where boat traffic poses a hazard or is strictly forbidden.",
         "ru_explain": "Согласно системе навигационных знаков США (U.S. Aids to Navigation System), информационные и регулирующие буи имеют оранжевую маркировку на белом фоне. Форма оранжевого символа определяет тип предупреждения:  • **Ромб (Diamond)** — опасность (скалы, мели, отмели) • **Ромб с крестом внутри (Diamond with Cross)** — зона исключения/запретная зона, вход в которую полностью запрещён (лодки должны держаться в стороне) • **Круг (Circle)** — ограничения в эксплуатации (ограничение скорости, запрет на создание волны и т.д.) • **Квадрат или прямоугольник** — общая информация (направления, расстояния, места)  Ромб с крестом указывает на зоны, куда судам категорически запрещено заходить — например, плотины, водозаборы, зоны купания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHIWoBMbAjXUb_wyDdS5DeW8GVU-1QAAKBBwACHuIIRJGRsWB6EgfGOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHImoBMbIsuP7mTdIdWA_RjGsPK-XfAAKCBwACHuIIRGtXpsB5bZrnOwQ"
     },
     {
         "num": 60,
@@ -1447,8 +1447,8 @@ QUESTIONS = [
         "en_explain": "A **semi-diurnal tide** occurs when there are two high tides and two low tides of approximately equal height within a 24-hour period, which is the predominant tidal pattern along the U.S. Atlantic coast including the northeastern states. This differs from diurnal tides (one high/one low daily) and mixed tides (two unequal highs and lows daily). This is basic tidal knowledge covered in USCG navigation and seamanship requirements, not addressed by COLREGS or Inland Rules.",
         "ru_explain": "Согласно данным NOAA (National Ocean Service), существуют три основных типа приливных циклов:  • **Полусуточный (Semi-diurnal)** — два прилива и два отлива примерно равной высоты каждые лунные сутки (~24 ч 50 мин). Характерен для Атлантического побережья США, включая северо-восток.  • **Суточный (Diurnal)** — один прилив и один отлив в сутки. Встречается в Мексиканском заливе.  • **Смешанный (Mixed)** — два прилива и два отлива в сутки, но с заметной разницей в высоте. Типичен для Тихоокеанского побережья США.  **Spring tide (сизигийный прилив)** — это не тип цикла, а фаза прилива с максимальной амплитудой, возникающая при новолунии и полнолунии, когда Солнце и Луна находятся на одной линии с Землёй.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHI2oBMbQFKhR06VppjAd8qWQ2Ax-RAAKDBwACHuIIRPoWngpHXpdgOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHJGoBMbXqii5ANq99nolZgLOWR-6eAAKEBwACHuIIROJDvNqqnP9vOwQ"
     },
     {
         "num": 61,
@@ -1471,8 +1471,8 @@ QUESTIONS = [
         "en_explain": "Depth soundings on NOAA charts are referenced to Mean Lower Low Water (MLLW), which is the average height of the lower of the two daily low tides observed over a 19-year tidal epoch. This datum provides mariners with a conservative \"worst-case\" depth measurement, ensuring that actual water depths will typically be equal to or greater than the charted depth. This standard is established by NOAA's Office of Coast Survey for all U.S. coastal and harbor charts.",
         "ru_explain": "Согласно стандартам NOAA (Chart No. 1), глубины на картах США указываются относительно Mean Lower Low Water (MLLW) — среднего уровня нижней малой воды. Это средняя высота более низкой из двух ежедневных малых вод за 19-летний период наблюдений. MLLW выбран как нуль глубин (chart datum), потому что он представляет консервативную оценку — реальная глубина в большинстве случаев будет равна или больше указанной на карте. Это обеспечивает безопасность судовождения, так как судоводитель видит минимально ожидаемые глубины.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHJWoBMbenOYwzyji9EDlVZQttteJ0AAKFBwACHuIIRC_Pom42k65xOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHJmoBMbnl7_0KAAFduH2ZRXZ7ZsPPTAAChgcAAh7iCETfNvudUzpy1jsE"
     },
     {
         "num": 62,
@@ -1495,8 +1495,8 @@ QUESTIONS = [
         "en_explain": "The Moon completes one orbit around Earth in approximately 28 days (more precisely, 27.3 days for a sidereal month or 29.5 days for a synodic month). This lunar cycle is fundamental knowledge for mariners because it directly governs tidal patterns, with spring and neap tides occurring at predictable intervals based on the Moon's position relative to the Earth and Sun. Understanding this cycle helps captains predict tidal heights and currents for safe navigation in coastal waters.",
         "ru_explain": "Согласно данным NOAA, лунный (синодический) цикл составляет приблизительно 28 дней (точнее — 29,5 суток). Это знание критически важно для судоводителей, поскольку фазы Луны напрямую влияют на приливы и отливы. Во время новолуния и полнолуния (каждые ~14 дней) возникают сизигийные приливы с максимальной амплитудой, а в первую и последнюю четверти — квадратурные приливы с минимальной амплитудой. Понимание лунного цикла помогает капитану планировать проход по мелководью, заход в порты и работу с якорем.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHJ2oBMboBCxQ1gOh-AAFBsC64f2HYHwAChwcAAh7iCERWVWuMmHQKvDsE",
+        "audio_a": "CQACAgEAAxkDAAIHKGoBMbzmdGzVLHrDRF2uB6211IFdAAKIBwACHuIIRD4odO-lZDMnOwQ"
     },
     {
         "num": 63,
@@ -1519,8 +1519,8 @@ QUESTIONS = [
         "en_explain": "**Slack water** refers to the brief period when a tidal current reaches its minimum velocity (essentially zero) as it transitions between flood (incoming) and ebb (outgoing) phases. This occurs approximately at the time of high tide and low tide, though the exact timing varies by location. Understanding slack water is essential for safe navigation in tidal waters, as referenced in general seamanship principles underlying the Navigation Rules.",
         "ru_explain": "Согласно терминологии NOAA (National Oceanic and Atmospheric Administration), используемой в таблицах приливных течений (Tidal Current Tables): **Slack water** (тиховод) — это момент, когда приливное течение меняет направление и его скорость падает до нуля или минимума. Это происходит дважды в течение приливного цикла: при смене приливного течения на отливное и наоборот. Важно различать: - **Slack water** — минимальная скорость течения (ответ на данный вопрос) - **Stand** — период, когда уровень воды практически не меняется (относится к высоте воды, а не к течению) - **Low water** — низшая точка уровня воды при отливе",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHKWoBMb4ka6CI1EUnM7k7sHjzl3kAA4kHAAIe4ghEziLXR4fMagE7BA",
+        "audio_a": "CQACAgEAAxkDAAIHKmoBMb8vV2zsZ2Rmaxngt4vTBiHkAAKKBwACHuIIRMDb2yb5Y4rSOwQ"
     },
     {
         "num": 64,
@@ -1543,8 +1543,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 3(k) of both International and Inland Rules, vessels are considered \"in sight of one another\" only when one can be observed visually from the other. This distinction is critical because certain Rules—such as those governing crossing, overtaking, and head-on situations (Rules 11-18)—apply only when vessels are in sight of one another. Radar contact, AIS detection, or hearing a fog signal does not constitute being \"in sight.\"",
         "ru_explain": "Согласно Правилу 3(k) МППСС-72 (COLREGS) и идентичному положению 33 CFR 83.03(k) для внутренних вод США: «Суда должны считаться находящимися на виду друг у друга только тогда, когда одно из них может визуально наблюдаться с другого» (\"Vessels shall be deemed to be in sight of one another only when one can be observed visually from the other\"). Это определение принципиально важно, поскольку многие правила расхождения (Правила 11-18) применяются ТОЛЬКО когда суда находятся на виду друг у друга. Радиолокационное обнаружение или звуковые сигналы НЕ являются критерием нахождения «на виду» — только прямое визуальное наблюдение.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHK2oBMcGogT8nhoFlCxMokRqkgQHeAAKLBwACHuIIRCOSxKAqpddWOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHLGoBMcOolLsoesKdl3YTGRX8NvZNAAKMBwACHuIIRDsaYWlxLyl-OwQ"
     },
     {
         "num": 65,
@@ -1567,8 +1567,8 @@ QUESTIONS = [
         "en_explain": "A diurnal tide cycle is characterized by one high tide and one low tide occurring within approximately a 24-hour period. This differs from the more common semidiurnal tide cycle, which produces two high tides and two low tides daily. Diurnal tides are found in certain areas such as the Gulf of Mexico and parts of Southeast Asia.",
         "ru_explain": "Согласно данным NOAA, существует три основных типа приливных циклов:  1. **Суточный (Diurnal)** — один полный прилив и один отлив за 24 часа. Характерен для Мексиканского залива.  2. **Полусуточный (Semidiurnal)** — два прилива и два отлива примерно равной высоты за 24 часа. Типичен для Атлантического побережья США.  3. **Смешанный (Mixed)** — два прилива и два отлива за сутки, но разной высоты.  При суточном цикле период между последовательными приливами составляет около 24 часов 50 минут, поэтому за 24-часовой период наблюдается только **один** полный прилив.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHLWoBMcR8M8wRVaWDa9LZ02CUsjJFAAKNBwACHuIIRGh6g2UYdz7_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIHLmoBMcbtaHeiaMCFAAGvTatqKJxTWQACjgcAAh7iCESLzplxkX-HNTsE"
     },
     {
         "num": 66,
@@ -1591,8 +1591,8 @@ QUESTIONS = [
         "en_explain": "The difference in height between consecutive high and low tides is called the **tidal range**. This is a fundamental navigation and piloting term used when calculating water depths for safe vessel transit, particularly important when crossing bars or navigating shallow channels. Note: This is a seamanship/navigation question rather than a COLREGS or Inland Rules question.",
         "ru_explain": "Согласно терминологии NOAA (National Oceanic and Atmospheric Administration), **tidal range (величина прилива)** — это вертикальная разница в высоте между полной водой (high tide) и малой водой (low tide). Этот термин является стандартным в навигационных публикациях и на картах NOAA. Величина прилива важна для расчёта глубин под килем и безопасного прохода через мелководные участки. Tidal duration — продолжительность приливного цикла, tidal epoch — 19-летний период осреднения приливных данных, tidal flow — движение воды, вызванное приливами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHL2oBMchEmIMBa2oqc15umt_QaNKHAAKPBwACHuIIRH2KiM-ApdxeOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHMGoBMcq9TFrhwH11hbmpJadg0IwAA5AHAAIe4ghEKKE-HyuDx207BA"
     },
     {
         "num": 67,
@@ -1615,8 +1615,8 @@ QUESTIONS = [
         "en_explain": "Tide Tables published by NOAA provide predicted times and heights of high and low tides for reference stations and subordinate stations throughout U.S. waters. This publication is essential for navigation in coastal and inland waters where tidal range affects underkeel clearance and passage planning. Note: This is a general navigation question regarding publications rather than a COLREGS or Inland Rules matter.",
         "ru_explain": "Согласно публикациям NOAA, **Tide Tables (Таблицы приливов)** — это официальное справочное издание, содержащее предвычисленные данные о времени и высоте полных (high tide) и малых (low tide) вод для основных и дополнительных пунктов. Важно различать: **Tide Tables** показывают вертикальное движение воды (уровень), а **Tidal Current Tables** — горизонтальное движение воды (скорость и направление течения). Light List содержит информацию о навигационных огнях и знаках. Chart No. 1 — это справочник условных обозначений, используемых на морских картах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHMWoBMcvgUrv7gwM0yC4-9vDylopJAAKRBwACHuIIROWyaq3ZQHLfOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHMmoBMc1_k1fh7THM3ECqpviJLZL9AAKSBwACHuIIRBR2QVzbd382OwQ"
     },
     {
         "num": 68,
@@ -1639,8 +1639,8 @@ QUESTIONS = [
         "en_explain": "On NOAA nautical charts, vertical clearances (such as bridge heights) and heights of shore structures (such as lighthouses) are referenced to Mean High Water (MHW). This datum is used because it represents a conservative measure for vessels to determine overhead clearance—if a vessel can pass under a bridge at MHW, it can generally pass safely at most tide levels. This convention is established by NOAA charting standards and differs from soundings, which are referenced to Mean Lower Low Water (MLLW).",
         "ru_explain": "Согласно официальным стандартам NOAA Chart No. 1 (U.S. Chart Symbols, Abbreviations and Terms):  **Вертикальные измерения (высоты над водой):** - Высоты мостов, воздушных кабелей и береговых сооружений (маяков, башен и т.д.) указываются от **Mean High Water (MHW)** — среднего уровня полной воды  **Глубины (измерения под водой):** - Глубины указываются от **Chart Datum**, которым на картах США обычно является Mean Lower Low Water (MLLW)  **Логика этого стандарта:** - Для судоводителя важен **минимальный** просвет под мостом — он будет именно при высокой воде - Поэтому высоты отсчитываются от MHW, что даёт безопасную оценку вертикального габарита - Глубины же отсчитываются от низкой воды (MLLW), чтобы показать минимальные глубины  Источник: NOAA Chart No. 1, раздел \"Datums\" и \"Heights\"",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHM2oBMdDIq4W7JtO6xFwr_kX5lTYLAAKTBwACHuIIRCN01SO-LUXCOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHNGoBMdHkKAM89FcSsgqXaSbgGrmmAAKUBwACHuIIRMjEd5ws3LpeOwQ"
     },
     {
         "num": 69,
@@ -1663,8 +1663,8 @@ QUESTIONS = [
         "en_explain": "A **meteorological tide** (also called a \"weather tide\" or storm surge component) refers to changes in water level caused by atmospheric conditions such as wind and barometric pressure, rather than by the gravitational pull of the moon and sun. This differs from **astronomical tides**, which are the predictable, regular tides caused by celestial bodies, and **spring tides**, which occur during full and new moons. This is a seamanship and navigation concept related to tidal calculations rather than a COLREGS rule.",
         "ru_explain": "Согласно материалам NOAA, приливы делятся на два основных типа по причине возникновения:  **Астрономический прилив (astronomical tide)** — вызван гравитационным притяжением Луны и Солнца. Это предсказуемые, регулярные приливы, публикуемые в таблицах приливов.  **Метеорологический прилив (meteorological tide)** — отклонение фактического уровня воды от предсказанного астрономического прилива, вызванное метеорологическими факторами: - Изменения атмосферного давления (низкое давление поднимает уровень воды, высокое — опускает) - Сильный ветер (нагоняет или отгоняет воду от берега)  **Сизигийный прилив (spring tide)** — максимальный астрономический прилив во время новолуния и полнолуния, когда Солнце и Луна действуют в одном направлении.  Ключевые слова в вопросе — \"wind\" (ветер) и \"atmospheric pressure\" (атмосферное давление) — прямо указывают на метеорологическую природу прилива.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHNWoBMdMdM1m1T8XFur1ksC1gPUEAA5UHAAIe4ghE6Pellov55C07BA",
+        "audio_a": "CQACAgEAAxkDAAIHNmoBMdVIejfG9yQNLPSGUYq1h2OqAAKWBwACHuIIRM0WvCfM3VATOwQ"
     },
     {
         "num": 70,
@@ -1687,8 +1687,8 @@ QUESTIONS = [
         "en_explain": "The Moon's gravitational effect on Earth's tides is approximately twice that of the Sun's, despite the Sun's much greater mass, because the Moon is significantly closer to Earth. This proximity makes the Moon the dominant factor in producing tidal forces. This principle is fundamental knowledge for mariners when calculating tides for navigation, as covered in general seamanship and piloting education rather than COLREGS specifically.",
         "ru_explain": "Согласно данным NOAA, хотя Солнце значительно массивнее Луны, Луна находится гораздо ближе к Земле. Приливообразующая сила зависит от массы небесного тела и обратно пропорциональна кубу расстояния до него. Из-за близости Луны её гравитационное воздействие на земные приливы примерно в 2,2 раза сильнее солнечного. Именно поэтому Луна является основным фактором, определяющим приливные циклы. Когда Солнце и Луна выстраиваются в линию (новолуние и полнолуние), их силы складываются, создавая сизигийные приливы (spring tides) с максимальной амплитудой. Когда они расположены под прямым углом (первая и третья четверти), возникают квадратурные приливы (neap tides) с минимальной амплитудой.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHN2oBMdcd3H4C1K5yNihud__cgPEFAAKXBwACHuIIRLk3XoYYu10tOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHOGoBMdhpOE64WglrBivHN2MC8HlCAAKYBwACHuIIRGYVK86RhJv5OwQ"
     },
     {
         "num": 71,
@@ -1711,8 +1711,8 @@ QUESTIONS = [
         "en_explain": "Tides are caused by the gravitational interaction between the sun, moon, and Earth, with the moon having the greatest influence due to its proximity. This is fundamental knowledge in navigation and seamanship, covered under basic piloting and coastal navigation principles rather than COLREGS. Understanding tidal patterns is essential for safe navigation in coastal and inland waters, particularly when calculating water depths and planning transits through shallow areas.",
         "ru_explain": "Согласно публикациям NOAA (Tide and Current Glossary), приливы и отливы возникают в результате гравитационного притяжения между Солнцем, Луной и Землёй. Луна оказывает наибольшее влияние на приливы из-за близости к Земле, несмотря на меньшую массу по сравнению с Солнцем. Когда Солнце и Луна выстраиваются на одной линии с Землёй (сизигия), возникают максимальные сизигийные приливы (spring tides). Когда они расположены под прямым углом относительно Земли (квадратура), наблюдаются минимальные квадратурные приливы (neap tides). Другие небесные тела (Юпитер, звёзды) не оказывают значимого влияния на земные приливы.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHOWoBMdq5UMjuDUN7QW53M-INLssKAAKZBwACHuIIRHhX2NdAfigmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHOmoBMdzPh_WFCIFZy_oC7QaQlgzUAAKaBwACHuIIRHkCeD3GvjCVOwQ"
     },
     {
         "num": 72,
@@ -1735,8 +1735,8 @@ QUESTIONS = [
         "en_explain": "The Coriolis Effect is caused by Earth's rotation and deflects moving air masses to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. This principle is fundamental to understanding weather patterns, wind circulation, and ocean currents that mariners must consider for voyage planning. While not a COLREGS rule, understanding the Coriolis Effect is essential seamanship knowledge required for safe navigation.",
         "ru_explain": "Согласно материалам NOAA по метеорологии, эффект Кориолиса — это результат вращения Земли вокруг своей оси. Он вызывает отклонение движущихся воздушных масс и водных течений вправо в Северном полушарии и влево — в Южном. Этот эффект определяет направление вращения циклонов и антициклонов, формирование глобальных ветровых систем (пассаты, западные ветры) и является ключевым фактором для понимания морской метеорологии и навигации.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHO2oBMd5vyvZgPIDTJSoNJv-HIBCaAAKbBwACHuIIRIVYFqbiZ5FDOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHPGoBMd-IwIxLXrnDaPKijvBY6ofjAAKcBwACHuIIREPGiD8BFrsHOwQ"
     },
     {
         "num": 73,
@@ -1759,8 +1759,8 @@ QUESTIONS = [
         "en_explain": "A **flood tide** refers to the rising tide between low water and high water, when tidal currents flow inland and water levels increase toward their maximum height. This is the opposite of an **ebb tide**, which occurs when water levels fall from high water to low water. While \"incoming\" is colloquially used, \"flood\" is the proper American maritime terminology found in navigation publications and NOAA tide tables.",
         "ru_explain": "Согласно терминологии NOAA (National Oceanic and Atmospheric Administration): - **Flood tide (приливное течение/прилив)** — период, когда уровень воды поднимается от малой воды к полной воде (от низшей точки к высшей) - **Ebb tide (отливное течение/отлив)** — период, когда уровень воды опускается от полной воды к малой воде - **High water (полная вода)** — максимальный уровень воды во время прилива - **Low water (малая вода)** — минимальный уровень воды во время отлива  Когда вода поднимается и приближается к высшей точке — это flood tide (приливное течение). Термины \"incoming\" и \"washing\" не являются официальными навигационными терминами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHPWoBMeGbNa_RQh9nQXkBa8oX1KchAAKdBwACHuIIRHDXEzm-QOfUOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHPmoBMeLjVZxlyqt6HGJiyuCqECu8AAKeBwACHuIIRH8EuuOUNwUMOwQ"
     },
     {
         "num": 74,
@@ -1783,8 +1783,8 @@ QUESTIONS = [
         "en_explain": "Spring tides occur when the sun and moon are aligned (during new and full moons), creating a combined gravitational pull that produces higher high tides and lower low tides, resulting in a larger tidal range. Neap tides occur during quarter moons when the sun and moon are at right angles, partially canceling each other's gravitational effects and producing a smaller tidal range. This is fundamental tidal theory covered in NOAA tide publications and essential knowledge for safe navigation in coastal waters.",
         "ru_explain": "Согласно данным NOAA (National Ocean Service), сизигийные приливы (Spring tides) возникают во время новолуния и полнолуния, когда Солнце, Луна и Земля выстраиваются в одну линию. Гравитационные силы Солнца и Луны складываются, создавая максимальную амплитуду прилива — высокие воды выше, а низкие воды ниже обычного. Квадратурные приливы (Neap tides) происходят в первую и третью четверти Луны, когда Солнце и Луна расположены под прямым углом относительно Земли. Их гравитационные силы частично компенсируют друг друга, что приводит к минимальной амплитуде прилива. Таким образом, сизигийные приливы всегда имеют бо́льшую амплитуду (tidal range), чем квадратурные.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHP2oBMeSeP6VDfeHvhCXZCsRMV9PXAAKfBwACHuIIREUbTkKrM9-gOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHQGoBMeZsdwZNW_dAyS-BU0Xj5URcAAKgBwACHuIIRBZooG7GitmdOwQ"
     },
     {
         "num": 75,
@@ -1807,8 +1807,8 @@ QUESTIONS = [
         "en_explain": "The International Code flag \"LIMA\" (yellow and black squares) means \"You should stop your vessel instantly\" and is used to signal distress or request assistance. When displayed with a red ball beneath it, this combination serves as a recognized distress signal under Rule 37 (COLREGS) and Rule 37 (Inland Rules), which list various signals to be used by vessels in distress to indicate need of assistance. This two-flag combination is one of the accepted methods for signaling distress when other means may not be available.",
         "ru_explain": "Флаг Международного кода \"ЛИМА\" (жёлтый и чёрный квадраты) означает \"Вы должны немедленно остановить своё судно\" и используется для сигнализации бедствия или запроса помощи. При вывешивании с красным шаром под ним эта комбинация служит признанным сигналом бедствия согласно Правилу 37 (МППСС) и Правилу 37 (Внутренних правил), в которых перечислены различные сигналы, используемые судами в бедствии для указания необходимости помощи. Эта комбинация двух флагов является одним из признанных методов сигнализации бедствия, когда другие средства могут быть недоступны.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHQWoBMecMmSwfYSdWDC8cAxMFZ2a_AAKhBwACHuIIRNzJoFm0N0XlOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHQmoBMenX8Ew5myFXGD8EkiYf1z28AAKiBwACHuIIRNod7EhFeuhGOwQ"
     },
     {
         "num": 76,
@@ -1831,8 +1831,8 @@ QUESTIONS = [
         "en_explain": "The tidal day is approximately 24.84 hours (24 hours and 50 minutes), which corresponds to the time between two successive lunar transits over the same meridian. This occurs because the Moon advances in its orbit around Earth each day, requiring an additional 50 minutes beyond a standard 24-hour solar day for Earth to rotate back into alignment with the Moon. This concept is fundamental to understanding tide prediction as covered in NOAA navigation publications and the U.S. Coast Pilot.",
         "ru_explain": "Согласно данным NOAA, приливные сутки (Tidal Day) — это время между двумя последовательными верхними кульминациями Луны над одним меридианом. Поскольку Луна движется по орбите в том же направлении, что и вращение Земли, Земле требуется дополнительное время, чтобы «догнать» Луну. Это время составляет примерно 24 часа 50 минут, или 24,84 часа. Именно поэтому приливы каждый день наступают примерно на 50 минут позже, чем накануне. Это фундаментальная величина для расчёта приливов и работы с таблицами приливов (Tide Tables).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHQ2oBMeptjiO23G5pKgihlm849MncAAKjBwACHuIIRCIEjJhN3bRROwQ",
+        "audio_a": "CQACAgEAAxkDAAIHRGoBMezdm4VFkHz0FszOB5Eyy8peAAKkBwACHuIIRB5-ki2u0ddoOwQ"
     },
     {
         "num": 77,
@@ -1855,8 +1855,8 @@ QUESTIONS = [
         "en_explain": "The mechanical advantage of a block and tackle system equals the number of lines supporting the moving block (the load). With 5 lines passing through and attached to the bottom (moving) block, the mechanical advantage is 5:1, meaning the effort required to lift a load is reduced to one-fifth of the load's weight. This principle of marlinespike seamanship is fundamental knowledge for deck operations involving cargo handling and rigging.",
         "ru_explain": "⚠️  Дополнительно (неофициальное пояснение): Механическое преимущество полиспаста (block and tackle) определяется количеством ходовых концов (лопарей), поддерживающих подвижный блок. В данном случае через нижний (подвижный) блок проходит 5 лопарей — следовательно, механическое преимущество равно 5. Это стандартное правило морской такелажной практики, но не относится к COLREGS, Navigation Rules или картографическим источникам NOAA/NGA.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHRWoBMe7kK0esBENHa4ql2pXqVVLSAAKlBwACHuIIRM48LhDhn9QpOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHRmoBMe8Op2i-zb1FR6dXujzHrbFDAAKmBwACHuIIRBH4-U-vL9_5OwQ"
     },
     {
         "num": 78,
@@ -1879,8 +1879,8 @@ QUESTIONS = [
         "en_explain": "The mechanical advantage of a block and tackle system is calculated by counting the total number of lines supporting the load. With 3 lines through the bottom block and 4 lines through the top block, you add them together (3 + 4 = 7), but since the question indicates the answer is 8, this suggests counting all line parts including the standing and running parts in a rove-to-advantage configuration. This is a seamanship and marlinspike topic covered in USCG deck examination requirements rather than COLREGS or Inland Rules.",
         "ru_explain": "⚠️  Примечание: Данный вопрос относится к морскому такелажному делу (seamanship) и механике талей/полиспастов. Указанный ответ D (8) представляется ошибочным с точки зрения стандартной механики. При 3 лопарях на нижнем блоке и 4 на верхнем механическое преимущество обычно равно количеству лопарей, поддерживающих подвижный блок (3 или 4, в зависимости от конфигурации). Возможна ошибка в оригинальном тесте или особая интерпретация подсчёта. Официальные источники COLREGS, 33 CFR Part 83 и NOAA/NGA не содержат информации о расчёте механического преимущества талей.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHR2oBMfNzBL6fEp-y0Yy3hnr3iZu5AAKnBwACHuIIRNr4Jrz-hGq4OwQ",
+        "audio_a": "CQACAgEAAxkDAAIHSGoBMfRvxzBAOuvOuEKxdUlhGv5tAAKoBwACHuIIRDMgFfpNSsvFOwQ"
     },
     {
         "num": 79,
@@ -1903,8 +1903,8 @@ QUESTIONS = [
         "en_explain": "Chafing gear is protective material (such as canvas wrapping, leather, or rubber hose) placed around lines or cables at points where they contact hard surfaces to prevent abrasion and wear. This is standard seamanship practice essential for maintaining the integrity of tow lines during towing operations. This relates to general seamanship principles rather than a specific COLREGS or Inland Rule, as it concerns vessel equipment maintenance and safe towing practices.",
         "ru_explain": "# Защитное снаряжение от истирания — защитный материал (такой как парусиновая обмотка, кожа или резиновый шланг), размещаемый вокруг тросов или кабелей в местах их контакта с твёрдыми поверхностями для предотвращения истирания и износа. Это стандартная практика морского дела, необходимая для поддержания целостности буксирных тросов во время буксировочных операций. Это относится к общим принципам мореходства, а не к конкретным МППСС или Внутренним правилам, так как касается обслуживания судового оборудования и безопасных практик буксировки.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHSWoBMfYnu_28op2Z-gmYHyHvuIm2AAKpBwACHuIIRHENcRCClDI0OwQ",
+        "audio_a": "CQACAgEAAxkDAAIHSmoBMfjNVDNd6gTI9r4a-SQAAYmCPQACqgcAAh7iCESOiZFq9y-wozsE"
     },
     {
         "num": 80,
@@ -1927,8 +1927,8 @@ QUESTIONS = [
         "en_explain": "In the open ocean, tidal currents are classified as **rotary currents** because they continuously change direction, completing a full 360-degree rotation during each tidal cycle rather than simply reversing direction like reversing currents found in restricted waters. In the Northern Hemisphere, this rotation typically occurs in a clockwise direction due to the Coriolis effect. This is a navigation and seamanship concept covered in USCG licensing examinations rather than a COLREGS or Inland Rules requirement.",
         "ru_explain": "Согласно данным NOAA (Tidal Current Tables и Coast Pilot), в открытом океане, вдали от берегов и мелководья, приливные течения являются вращательными (rotary currents). В отличие от реверсивных течений у берега, которые меняют направление на противоположное, вращательные течения непрерывно изменяют направление в течение приливного цикла, совершая полный оборот на 360° за один приливный период (примерно 12 часов 25 минут). В Северном полушарии под влиянием силы Кориолиса эти течения вращаются против часовой стрелки (counterclockwise). В Южном полушарии — по часовой стрелке. Скорость течения также меняется: она максимальна в определённых направлениях и минимальна в других, образуя эллиптическую траекторию.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHS2oBMfqPqxZSshWFQCQ8ynmu1KbwAAKrBwACHuIIRHSvwO-S9xreOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHTGoBMfzL8ElnQRm-4tw-kfQXyu8QAAKsBwACHuIIRFlhWbWBId-MOwQ"
     },
     {
         "num": 81,
@@ -1951,8 +1951,8 @@ QUESTIONS = [
         "en_explain": "When calculating the mechanical advantage of a block and tackle system, you must account for approximately 10% friction loss per sheave (pulley wheel) in the system. This friction factor reduces the theoretical mechanical advantage, meaning a tackle with multiple sheaves will have progressively less efficiency than the ideal calculation suggests. This is a standard seamanship and marlinspike principle tested on USCG licensing exams, not a COLREGS or Inland Rules topic.",
         "ru_explain": "# Морские термины\n\n**блок и такель** - block and tackle\n**механическое преимущество** - mechanical advantage\n**потеря на трение** - friction loss\n**шкив** - sheave\n**коэффициент трения** - friction factor\n**теоретическое механическое преимущество** - theoretical mechanical advantage\n**такель с несколькими шкивами** - tackle with multiple sheaves\n**эффективность** - efficiency\n**такелажное дело** - seamanship\n**марлинспайк** - marlinspike\n**экзамены USCG** - USCG licensing exams\n**МППСС** - COLREGS\n**Внутренние правила** - Inland Rules\n\nПри расчёте механического преимущества системы блок и такель необходимо учитывать примерно 10% потери на трение на каждом шкиве в системе. Коэффициент трения снижает теоретическое механическое преимущество, что означает, что такель с несколькими шкивами будет иметь прогрессивно меньшую эффективность, чем предполагает идеальный расчёт. Это стандартный принцип такелажного дела и марлинспайка, проверяемый на экзаменах лицензирования USCG, а не тема МППСС или Внутренних правил.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHTWoBMf6SlBtOWR-K8t-bakfVliOXAAKtBwACHuIIRPaBjIZG062YOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHTmoBMf9F_oFWD44wd68pfGdQ9cehAAKuBwACHuIIROmvuC-kdwkNOwQ"
     },
     {
         "num": 82,
@@ -1975,8 +1975,8 @@ QUESTIONS = [
         "en_explain": "Rule 2 (Responsibility) of both the International and Inland Navigation Rules requires that due regard shall be given to all dangers of navigation, including any special circumstances that may make departure from the Rules necessary to avoid immediate danger. Tides and currents directly affect vessel handling, maneuvering characteristics, and safe navigation, making their consideration essential when approaching harbors, inlets, and other navigable waters. A prudent mariner must factor in these conditions to maintain proper control and ensure safe passage.",
         "ru_explain": "Согласно Правилу 2 COLREGS и 33 CFR Part 83 (Inland Rules), \"Ответственность\", ничто в данных Правилах не освобождает судно, его владельца, капитана или экипаж от ответственности за последствия, которые могут возникнуть от пренебрежения соблюдением настоящих Правил или от пренебрежения любой предосторожностью, которую требует обычная морская практика или особые обстоятельства данного случая. Учёт приливов и течений является фундаментальной частью \"обычной морской практики\" (ordinary practice of seamen). Prudent mariner — осмотрительный судоводитель — обязан принимать во внимание все факторы, влияющие на безопасность плавания, включая гидрологические условия. Это особенно критично при подходе к гаваням и узкостям, где течения могут существенно влиять на управляемость судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHT2oBMgGKrFMtsJ_55-3o9Xxe9jjlAAKvBwACHuIIRFrLQYcEBg6hOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHUGoBMgLG-CdziLAUyBrNg7ZTDzgAA7AHAAIe4ghEYD2DdMdagho7BA"
     },
     {
         "num": 83,
@@ -1999,8 +1999,8 @@ QUESTIONS = [
         "en_explain": "A chain fall (also called a chain hoist) is a mechanical device that uses a hand chain and gear reduction system to multiply lifting force, allowing a single person to safely hoist heavy loads with minimal physical effort. Unlike simple pulley arrangements, a chain fall provides mechanical advantage and includes a built-in brake that holds the load in position when lifting stops. This is standard deck seamanship equipment knowledge required for safe cargo and equipment handling operations aboard vessels.",
         "ru_explain": "Цепная таль (также называемая цепным талью) — это механическое устройство, которое использует ручную цепь и систему редукции шестёрен для увеличения грузоподъёмности, позволяя одному человеку безопасно поднимать тяжёлые грузы с минимальными физическими усилиями. В отличие от простых блочных систем, цепная таль обеспечивает механическое преимущество и имеет встроенный тормоз, который удерживает груз в неподвижном положении при остановке подъёма. Это стандартное судовое снаряжение палубной такелажной работы, необходимое для безопасных операций по обработке груза и оборудования на борту судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHUWoBMgTHkv6IvTS-vadr1M7x6ZwXAAKxBwACHuIIRDkxqNm40wZpOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHUmoBMgb8G4W8K1w6KvCZpPlK-pCqAAKyBwACHuIIRNC-2wJDdNiPOwQ"
     },
     {
         "num": 84,
@@ -2023,8 +2023,8 @@ QUESTIONS = [
         "en_explain": "An **aft spring line** runs from the stern area of the vessel forward to the dock, preventing the vessel from moving ahead. This line works by creating an angle that resists forward motion when tension is applied. Spring lines are essential dock lines used in conjunction with bow and stern lines to fully secure a vessel, as referenced in standard seamanship practices for mooring operations.",
         "ru_explain": "⚠️ Данный вопрос относится к морской практике (seamanship) и швартовным операциям. Кормовой шпринг (aft spring line) — это швартовный конец, который идёт от кормовой части судна вперёд к причалу. Он предотвращает движение судна вперёд, удерживая его на месте. Носовой шпринг (forward spring line), наоборот, идёт от носовой части назад и предотвращает движение судна назад. Это стандартная морская терминология, но она не регулируется COLREGS или 33 CFR Part 83.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHU2oBMghm0R0rmXW7oNdw9JbeFGdHAAKzBwACHuIIRBzlZUQc39xvOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHVGoBMgnut5xJwrq02ZgPdTI5-sRyAAK0BwACHuIIRJ2A88kizVRCOwQ"
     },
     {
         "num": 85,
@@ -2047,8 +2047,8 @@ QUESTIONS = [
         "en_explain": "Proper maintenance of blocks (pulleys) used in vessel rigging and deck operations includes regular inspection for wear or damage, lubrication of sheaves and pins to ensure smooth operation, and periodic disassembly for thorough cleaning and parts replacement. This preventive maintenance is essential for safe cargo handling and line management aboard vessels. These practices align with general seamanship standards and USCG vessel safety requirements rather than specific COLREGS navigation rules.",
         "ru_explain": "Надлежащее обслуживание блоков (шкивов), используемых в такелаже судна и палубных операциях, включает регулярный осмотр на износ или повреждения, смазку шкивов и штифтов для обеспечения плавной работы, а также периодическую разборку для тщательной очистки и замены деталей. Это профилактическое обслуживание необходимо для безопасной обработки груза и управления линями на судне. Эти практики соответствуют общим стандартам мореходства и требованиям безопасности судов USCG, а не конкретным правилам навигации МППСС.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHVWoBMgs5XgAB6fe798YGL6ZvZQkUyAACtQcAAh7iCERpa4egNUjFAzsE",
+        "audio_a": "CQACAgEAAxkDAAIHVmoBMgxx4r63dPrCQRITvk-j3FQIAAK2BwACHuIIRJk0HxOAde--OwQ"
     },
     {
         "num": 86,
@@ -2071,8 +2071,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 17(c) of both International and Inland Rules, when a stand-on vessel finds it necessary to take action to avoid collision, she shall not alter course to port for a vessel on her own port side, if circumstances permit. This restriction prevents the stand-on vessel from turning into the path of the give-way vessel, which could create a more dangerous close-quarters situation.",
         "ru_explain": "Согласно Правилу 17(c) COLREGS и 33 CFR 83.17(c): \"Когда по обстоятельствам дела судно, которому уступают дорогу, не может избежать столкновения одними лишь действиями судна, обязанного уступить дорогу, оно должно предпринять такое действие, которое наилучшим образом поможет избежать столкновения.\" Однако Правило 17(c) также устанавливает важное ограничение: судно, обязанное сохранять курс и скорость, НЕ ДОЛЖНО, если позволяют обстоятельства, изменять курс ВЛЕВО, если другое судно находится с его левого борта. Это правило предотвращает ситуацию, когда оба судна поворачивают навстречу друг другу. Поворот влево в сторону судна, находящегося слева, может привести к столкновению, так как сократит дистанцию между судами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHV2oBMg45DIplVH_xEmJ5s6lwCaoGAAK3BwACHuIIRFFsPoyu4PZLOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHWGoBMhB06ddil3q7sElYLfCe0ZJHAAK4BwACHuIIRJC671C9i1ICOwQ"
     },
     {
         "num": 87,
@@ -2095,8 +2095,8 @@ QUESTIONS = [
         "en_explain": "A safe working load for a line is considered to be 1/5 (or 20%) of its breaking strength, which provides an adequate safety factor of 5:1 to account for wear, shock loads, and deterioration. This standard is established in general seamanship practices and is referenced in USCG documentation regarding line handling and deck safety. Exceeding this safe working load significantly increases the risk of line failure, which can cause serious injury or death to crew members.",
         "ru_explain": "Допустимая рабочая нагрузка на трос составляет 1/5 (или 20%) его разрывной прочности, что обеспечивает адекватный коэффициент безопасности 5:1 для учёта износа, ударных нагрузок и деградации. Этот стандарт установлен в общепринятой практике морского дела и приводится в документации USCG по обращению с тросами и безопасности палубы. Превышение допустимой рабочей нагрузки на трос значительно увеличивает риск разрыва троса, что может привести к серьёзным травмам или гибели членов экипажа.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHWWoBMhLp_z1KwYZqAyz0XbQeNV_SAAK5BwACHuIIRCoBkmbbliEaOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHWmoBMhQD4S_ZjGk4a7P3fyRWd99rAAK6BwACHuIIRMJlwW4Ew_j9OwQ"
     },
     {
         "num": 88,
@@ -2119,8 +2119,8 @@ QUESTIONS = [
         "en_explain": "When preparing to dock, placing your vessel in neutral allows you to observe how current and wind affect your drift without engine thrust masking these environmental forces. This technique helps you assess the set and drift of the water before committing to your final approach. While not specifically addressed in COLREGS, this is a fundamental seamanship practice that supports Rule 6 (Safe Speed) by ensuring the operator understands all factors affecting vessel movement.",
         "ru_explain": "При подготовке к швартовке перевод судна в нейтральное положение позволяет наблюдать, как течение и ветер влияют на снос без маскирования этих природных сил тягой двигателя. Этот приём помогает оценить установку и снос воды перед окончательным подходом. Хотя специально не рассматривается в МППСС, это фундаментальная практика мореходства, которая поддерживает Правило 6 (Безопасная скорость), обеспечивая понимание судоводителем всех факторов, влияющих на движение судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHW2oBMhaeOnbI8gN_VPuidA7Ul-_4AAK7BwACHuIIRM1RIZV6sXAxOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHXGoBMhfNddwKJzPoHPzsvBW649hoAAK8BwACHuIIRNHxQxCBTfHMOwQ"
     },
     {
         "num": 89,
@@ -2143,8 +2143,8 @@ QUESTIONS = [
         "en_explain": "\"Slack the line\" is a standard American maritime command meaning to ease or release tension on a line, allowing it to hang loosely without being taut. This is the opposite of \"take a strain\" or \"heave,\" which would add tension. While this is general seamanship terminology rather than a specific COLREGS or Inland Rules reference, it is essential deck communication used during mooring, towing, and docking operations.",
         "ru_explain": "⚠️  Примечание: Это вопрос по морской терминологии и швартовным операциям. Команда \"Slack the line\" — стандартная швартовная команда, означающая ослабить/потравить конец, то есть убрать с него натяжение. Данный термин относится к практике морского дела (seamanship), а не к COLREGS, Inland Rules или навигационным публикациям NOAA/NGA.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHXWoBMhljxQOkTx7BHAGS_N4-8-jdAAK9BwACHuIIRAIXW-NOvzcWOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHXmoBMhqJveYILTcvTJrimfK1znVRAAK-BwACHuIIRIXc16aODe_lOwQ"
     },
     {
         "num": 90,
@@ -2167,8 +2167,8 @@ QUESTIONS = [
         "en_explain": "A vessel should be secured with a minimum of four dock lines: a bow line, a stern line, and two spring lines (forward spring and after spring). This configuration prevents the vessel from moving forward, aft, or away from the dock, providing proper security against surge, sway, and changing conditions. While not specifically addressed in COLREGS or Inland Rules, this is a fundamental seamanship standard taught by the U.S. Coast Guard for safe vessel operations.",
         "ru_explain": "# Maritime Terms Translation to Russian\n\nСудно должно быть закреплено минимум четырьмя швартовными линями: носовым тросом, кормовым тросом и двумя пружинными линями (передней пружинной и кормовой пружинной). Эта конфигурация предотвращает движение судна вперед, назад или в сторону от причала, обеспечивая надлежащую защиту от рыскания, дрейфа и изменяющихся условий. Хотя это не конкретно оговаривается в МППСС или Правилах внутреннего плавания, это фундаментальный стандарт судоходства, преподаваемый Береговой охраной США для безопасной эксплуатации судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHX2oBMhza8HR2cHVqlKCMj3jOGI6dAAK_BwACHuIIRG6eblV0BuaZOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHYGoBMh2DTvtUtLrXSePSxcM-BRcuAALABwACHuIIRNl8ybhzTW-XOwQ"
     },
     {
         "num": 91,
@@ -2191,8 +2191,8 @@ QUESTIONS = [
         "en_explain": "When docking a vessel, you should steer into the wind or current to maintain better control and reduce your speed naturally, allowing for a safer, more controlled approach to the dock. This technique gives the operator the ability to use the wind or current as a natural brake and provides greater maneuverability at slow speeds. This is a standard seamanship practice for boat handling, though not specifically addressed in the COLREGS or Inland Navigation Rules.",
         "ru_explain": "Основной принцип безопасной швартовки — подходить к причалу против ветра или против течения (в зависимости от того, что оказывает большее воздействие на судно). Это даёт судоводителю лучший контроль над судном, позволяя использовать природные силы для замедления хода и точного маневрирования. При движении против течения или ветра судно сохраняет управляемость на минимальных оборотах, а при необходимости остановки достаточно сбросить ход — природные силы сами погасят инерцию. Движение по ветру или течению к причалу значительно затрудняет контроль и увеличивает риск столкновения с причальной стенкой.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHYWoBMh-DFTn0CGkSKoeM36Y4pmLxAALBBwACHuIIRCCwXjFzkKijOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHYmoBMiGqKQABIAl7coF4Da3EBO3EkQACwgcAAh7iCER8Xrymtc38PzsE"
     },
     {
         "num": 92,
@@ -2215,8 +2215,8 @@ QUESTIONS = [
         "en_explain": "A line under load stores significant energy and can part (break) suddenly, causing serious injury or death from snapback. Good seamanship requires mariners to stand clear of the bight and avoid positioning themselves in the direct line of a tensioned line. This is a fundamental principle of safe deck operations and prudent seamanship practice, though not specifically addressed in COLREGS or Inland Rules.",
         "ru_explain": "Работа с тросами и канатами под нагрузкой является одной из наиболее опасных операций на судне. Трос под натяжением накапливает огромную потенциальную энергию, и при его обрыве или соскальзывании с кнехта может произойти смертельная травма. Согласно базовым принципам морской практики (Good Seamanship), моряк должен: никогда не стоять в зоне возможного отскока троса, не перешагивать через натянутый трос, держаться в стороне от линии натяжения, использовать защитные средства. Это требование хорошей морской практики (Good Seamanship), которое является фундаментальным принципом безопасности на море.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHY2oBMiMgjdRk2vD-24C7TZtLazexAALDBwACHuIIRLvNpBuMNZ2mOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHZGoBMiQgr0JAUjBDXgABvkAFKHx8UgACxAcAAh7iCEQJfSfYuWhcaTsE"
     },
     {
         "num": 93,
@@ -2239,8 +2239,8 @@ QUESTIONS = [
         "en_explain": "\"Avast\" is a traditional nautical command meaning to stop or cease an action immediately, typically used when handling lines or equipment (e.g., \"Avast heaving!\"). This term is part of standard American maritime terminology and seamanship practices, though it is not specifically defined in the COLREGS or Inland Navigation Rules. Understanding traditional commands like \"avast,\" \"belay,\" and \"secure\" is essential for clear communication aboard vessel operations.",
         "ru_explain": "\"Avast\" — традиционная морская команда, означающая \"стоп\" или \"прекратить\". Используется для немедленной остановки выполняемого действия (например, \"Avast heaving!\" — \"Прекратить выбирать!\"). Команда происходит от голландского \"houd vast\" (держи крепко). Это базовая морская терминология, которую должен знать каждый капитан для управления экипажем при швартовке, работе с якорем и такелажем. ⚠️ Данный термин относится к традиционной морской практике и не регламентируется COLREGS или 33 CFR.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHZWoBMiXg3KtjJP-gFKGyhFi_mMK5AALFBwACHuIIRNllQDuwvF3IOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHZmoBMifPS_UwNnJ8xykToihqOE_tAALGBwACHuIIRLd3Cm4Cn5GZOwQ"
     },
     {
         "num": 94,
@@ -2263,8 +2263,8 @@ QUESTIONS = [
         "en_explain": "Running rigging refers to the lines and cables on a vessel that move freely through blocks (pulleys) to control sails, cargo gear, or other movable equipment. This is distinguished from standing rigging, which remains fixed in place to support masts and other permanent structures. This is a fundamental seamanship terminology question not governed by COLREGS or Inland Rules, but rather by standard maritime practice and nomenclature.",
         "ru_explain": "⚠️  Дополнительная справка (не из COLREGS/CFR): Бегучий такелаж (running rigging) — это все снасти, которые проходят через блоки и могут свободно перемещаться для управления парусами, грузовыми операциями и т.д. (фалы, шкоты, брасы). Стоячий такелаж (standing rigging) — неподвижные снасти, удерживающие мачты (ванты, штаги). Jury rigging — временный аварийный такелаж, сооружённый из подручных средств.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHZ2oBMikOH25n-tcVtX9U-dom7o9KAALHBwACHuIIRMh99jVmWFImOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHaGoBMio6kkivgmiqb-bhz75KnEbSAALIBwACHuIIRFFrEEWiwtaSOwQ"
     },
     {
         "num": 95,
@@ -2287,8 +2287,8 @@ QUESTIONS = [
         "en_explain": "Standing rigging refers to the fixed lines, wires, and hardware that support a vessel's mast and do not move during normal operations. This includes stays (which provide fore-and-aft support), shrouds (which provide athwartships support), and all associated hardware such as turnbuckles and chainplates. This is a fundamental seamanship concept tested on USCG licensing exams, though it falls under general vessel construction knowledge rather than a specific COLREGS Rule.",
         "ru_explain": "# Стоячий такелаж\n\nСтоячий такелаж — это неподвижные тросы, ванты и оборудование, которые поддерживают мачту судна и не движутся во время нормальной эксплуатации. Это включает штаги (обеспечивающие продольную поддержку), ванты (обеспечивающие поперечную поддержку) и все связанное с ними оборудование, такое как талрепы и цепные пластины. Это фундаментальное понятие мореходства, проверяемое на экзаменах USCG по лицензированию, хотя оно относится к общим знаниям конструкции судна, а не к определенному правилу МППСС.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHaWoBMiwecQZFjEvC4JWENA-IcvPFAALJBwACHuIIRPu_EgOyKBHeOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHamoBMi0jN04aTD2Oqs0oQubZ_AcwAALKBwACHuIIRNYpW7Yf1T8WOwQ"
     },
     {
         "num": 96,
@@ -2311,8 +2311,8 @@ QUESTIONS = [
         "en_explain": "To separate blocks in a tackle system involves two related operations: **overhauling**, which means pulling the falls through the blocks to separate them and create slack, and **fleeting**, which involves repositioning the blocks to gain additional working distance. These are fundamental seamanship terms related to rigging and cargo handling operations, not governed by COLREGS or Inland Rules, but rather covered under general deck seamanship practices outlined in standard maritime references like Chapman Piloting or Bowditch.",
         "ru_explain": "**Развести блоки в системе талей** включает две связанные операции: **вытравливание** (вытравка), что означает протягивание концов через блоки для их разделения и создания слабины, и **перестановку блоков**, что включает переразмещение блоков для получения дополнительного рабочего расстояния. Это фундаментальные термины мореходства, связанные с такелажем и операциями обработки груза, не подпадающие под МППСС или правила внутреннего плавания, а скорее охватываемые общей практикой палубного мореходства, изложенной в стандартных морских справочниках.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHa2oBMi-xIMcU046Bkvvp6Wm2pJwgAALLBwACHuIIRNAZijw0WywnOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHbGoBMjBhvtYRmhEmjLK4Ue5Xih8LAALMBwACHuIIRK27dwPV6UVzOwQ"
     },
     {
         "num": 97,
@@ -2335,8 +2335,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 29(a) of both International and Inland Rules, a vessel engaged on pilotage duty must exhibit sidelights and a sternlight when underway, regardless of whether she is making way through the water or stopped. This differs from the general Rule 23 requirement where sidelights and sternlight are only required when \"underway,\" because pilot vessels must remain identifiable at all times while operating in their pilotage capacity. The key distinction is that \"underway\" means not at anchor, made fast to shore, or aground—the vessel need not actually be moving through the water.",
         "ru_explain": "Согласно Правилу 29 COLREGS и 33 CFR 83.29 (ВППСША):  **Правило 29 — Лоцманские суда:** - Лоцманское судно на лоцманской вахте несёт опознавательные огни: два круговых огня, расположенных по вертикали (верхний — белый, нижний — красный) - **На ходу (underway)** — дополнительно бортовые огни и кормовой огонь - **На якоре** — дополнительно якорные огни  Ключевой момент: термин \"underway\" (на ходу) означает, что судно НЕ стоит на якоре, НЕ ошвартовано и НЕ стоит на мели. Это НЕ зависит от того, движется ли судно относительно воды (\"making way\").  Поэтому лоцманское судно на ходу несёт бортовые и кормовой огни **в любое время**, когда оно на ходу — независимо от того, имеет ли оно ход относительно воды или дрейфует.  Ответ **C** правильный: бортовые огни и кормовой огонь несутся в любое время на ходу.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHbWoBMjK2sqLR_TNr54mumxDdFcLFAALNBwACHuIIRPpvaM0Key7HOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHbmoBMjRUX1MQKvqAITJhGvOqc8pfAALOBwACHuIIRBWZ4hqzueapOwQ"
     },
     {
         "num": 98,
@@ -2359,8 +2359,8 @@ QUESTIONS = [
         "en_explain": "Blocks (pulleys) are versatile mechanical devices used throughout the maritime industry for multiple purposes. They are designed to accommodate specific rope or line sizes to ensure safe operation, are commonly employed on sailboats for sail handling and rigging, and are essential components of davit systems used to launch lifeboats during emergencies. This question relates to general seamanship knowledge required for USCG licensing rather than a specific COLREGS or Inland Navigation Rule.",
         "ru_explain": "Блоки (шкивы) — универсальные механические устройства, используемые во всей морской промышленности для различных целей. Они предназначены для работы с определёнными размерами троса или линя, чтобы обеспечить безопасную работу, обычно используются на парусных судах для управления парусами и такелажа, и являются существенными компонентами систем шлюпбалок, используемых для спуска спасательных шлюпок в чрезвычайных ситуациях. Этот вопрос относится к общим знаниям мореходства, требуемым для получения лицензии USCG, а не к специфичным МППСС или Правилам плавания во внутренних водах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHb2oBMjYD2rc2Y9NDNTpvBkbE9ZREAALPBwACHuIIRP2CdHSgRkFkOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHcGoBMjhZFTi5gf7lBPfRluh96-hCAALQBwACHuIIRMq9jYeZfbs2OwQ"
     },
     {
         "num": 99,
@@ -2383,8 +2383,8 @@ QUESTIONS = [
         "en_explain": "When two blocks of a tackle system are hauled together until they touch and no further mechanical advantage can be gained, this condition is called \"chock-a-block\" (also known as \"two-blocked\"). This is a fundamental seamanship term describing the maximum extent a block and tackle system can be hoisted. This question covers basic marlinspike seamanship rather than COLREGS or Inland Rules.",
         "ru_explain": "⚠️ Данный вопрос относится к морской такелажной терминологии (seamanship/rigging), а не к COLREGS, Navigation Rules или картографии. Термин \"chock-a-block\" (или \"two-blocked\") — традиционный морской термин, означающий положение, когда подвижный и неподвижный блоки талей сошлись вплотную и дальнейший выбор троса невозможен. В переносном смысле означает \"до предела\", \"полностью заполнено\".",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHcWoBMjmM0cVbY0fA-T2YtFNbDUQgAALRBwACHuIIRCetP7VZ0V2vOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHcmoBMjt87JQsMdspGJn-UurO1alxAALSBwACHuIIRA3FYzvU3M-ZOwQ"
     },
     {
         "num": 100,
@@ -2407,8 +2407,8 @@ QUESTIONS = [
         "en_explain": "The grooved wheel inside a block or pulley over which a line (rope) runs is called a **sheave**. This is fundamental marlinspike seamanship terminology—the sheave rotates within the block's shell or cheeks, allowing the line to move freely while changing the direction of pull or providing mechanical advantage. This question tests basic deck seamanship knowledge rather than COLREGS or Inland Rules.",
         "ru_explain": "Канавчатый шкив внутри блока или полиспаста, через который проходит линь (трос), называется **шкив** (или **блок-шкив**). Это фундаментальная терминология такелажного мастерства — шкив вращается в корпусе или щеках блока, позволяя тросу свободно двигаться, изменяя направление натяжения или обеспечивая механическое преимущество. Этот вопрос проверяет базовые знания палубного мастерства, а не МППСС или Внутренние правила.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHc2oBMj2CacJ5X3av0Wh6XRBgScJ1AALTBwACHuIIRMpbZwzlN85pOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHdGoBMj5WHoeaGM1UCerJR_NbmO_YAALUBwACHuIIRLcjCT4W7R3LOwQ"
     },
     {
         "num": 101,
@@ -2431,8 +2431,8 @@ QUESTIONS = [
         "en_explain": "Understanding the safe working load (SWL) of wire rope is essential for any mariner responsible for vessel operations, as exceeding SWL can result in parting of the line, equipment failure, and serious injury or death. This knowledge falls under general seamanship competency required by 46 CFR (Code of Federal Regulations) for credentialed mariners. Proper assessment of SWL ensures safe mooring, towing, and cargo handling operations aboard vessel.",
         "ru_explain": "# Морские термины:\n\n**Safe working load (SWL)** — допустимая рабочая нагрузка (ДРН)\n\n**Wire rope** — стальной трос\n\n**Parting of the line** — разрыв троса\n\n**Equipment failure** — отказ оборудования\n\n**Mariner** — мореход\n\n**Vessel operations** — судовые операции\n\n**General seamanship competency** — компетентность в области общего мореходства\n\n**Credentialed mariners** — дипломированные мореходы\n\n**Mooring** — швартовка\n\n**Towing** — буксировка\n\n**Cargo handling operations** — операции по обработке груза\n\n**Aboard vessel** — на борту судна",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHdWoBMkDEUBMRYN80qFZBsVt8smISAALVBwACHuIIRJglVC8hFrEbOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHdmoBMkFHqkQdIPESSeIMe8_B4UFwAALWBwACHuIIRNjmb0Tt766ROwQ"
     },
     {
         "num": 102,
@@ -2455,8 +2455,8 @@ QUESTIONS = [
         "en_explain": "Whipping is the seamanship term for wrapping small stuff (twine, cord, or tape) tightly around a rope's end to prevent the strands from unraveling. This is distinct from parceling (wrapping tarred canvas around a rope), worming (filling the grooves between strands), or splicing (interweaving rope strands to join ropes or form an eye). This is a basic marlinespike seamanship skill tested under general deck seamanship knowledge rather than COLREGS.",
         "ru_explain": "⚠️  Дополнительно (не из официальных источников COLREGS/CFR/NOAA, но для понимания): Это вопрос по морскому такелажному делу (Marlinspike Seamanship): - **Whipping (марка/бензель)** — обмотка конца троса тонким линём или лентой для предотвращения распускания прядей - **Parceling (клетневание)** — обмотка троса парусиной по направлению свивки - **Worming (тренцевание)** — заполнение каболкой канавок между прядями троса - **Splicing (сплесень)** — соединение тросов путём переплетения прядей",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHd2oBMkPs_JpEx6jBDLUzPmN67Q5aAALXBwACHuIIRDvrChQrzRdmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHeGoBMkT8mvr80IsCYik8mCjPZK9DAALYBwACHuIIRIZ-5Bmx_ns5OwQ"
     },
     {
         "num": 103,
@@ -2479,8 +2479,8 @@ QUESTIONS = [
         "en_explain": "A **splice** is the ideal method for repairing a broken line because it maintains the greatest percentage of the rope's original strength—typically 85-95% when properly executed. Knots significantly weaken rope (often reducing strength by 50% or more), while a marlin spike is merely a tool used to open rope strands during splicing, not a repair method itself. This is a fundamental seamanship skill covered in general deck knowledge rather than COLREGS or Inland Rules.",
         "ru_explain": "**Сплесень** — идеальный метод восстановления порванного троса, так как он сохраняет наибольший процент первоначальной прочности троса — обычно 85-95% при правильном выполнении. Узлы значительно ослабляют трос (часто снижая прочность на 50% и более), тогда как **марлинспайк** — это просто инструмент, используемый для раскрытия прядей троса при сплесневании, а не сам метод восстановления. Это фундаментальный навык мореходства, охватываемый общими знаниями палубы, а не МППСС или Внутренними правилами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHeWoBMkYKKPa1Cn2C7nbcNFtX6_wcAALZBwACHuIIRFUtuh0kSrXaOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHemoBMkej-MVOk2Aa8eEva3rg1jf0AALaBwACHuIIRCukm4ghNnZfOwQ"
     },
     {
         "num": 104,
@@ -2503,8 +2503,8 @@ QUESTIONS = [
         "en_explain": "Manila rope is a natural fiber line made from the abaca plant and has traditionally been considered the strongest and most workable of all natural fiber ropes used aboard vessels. It offers excellent handling characteristics, good resistance to saltwater, and superior strength-to-weight ratio compared to other natural fibers like sisal or hemp. Note that nylon is a synthetic line, not a natural rope, which excludes it from consideration in this question.",
         "ru_explain": "⚠️  Примечание: Данный вопрос относится к морскому такелажному делу (seamanship/marlinspike). Манильский трос (из волокон абаки) традиционно считается лучшим среди натуральных тросов благодаря прочности, гибкости и устойчивости к морской воде. Однако нейлон (вариант D) — это синтетический, а не натуральный материал, поэтому он не подходит под условие вопроса. Официальные источники COLREGS и 33 CFR Part 83 не содержат информации о типах тросов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHe2oBMkn8hYF2XatYGUGnIyV6141YAALbBwACHuIIRN6rMUEv5xucOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHfGoBMktRTptUCHR-qofu_40olbYOAALcBwACHuIIRHHPxMCnbigEOwQ"
     },
     {
         "num": 105,
@@ -2527,8 +2527,8 @@ QUESTIONS = [
         "en_explain": "A clove hitch is the standard knot used for temporarily securing a line to a piling, post, or bollard, but it can slip under varying tension, so it should always be backed up with a half hitch for security. This is fundamental seamanship knowledge required for safe vessel handling and mooring operations. While not specifically addressed in COLREGS or Inland Rules, proper line handling and knot work fall under the general prudent seamanship standards expected of all licensed operators.",
         "ru_explain": "# Maritime Terms Translation to Russian\n\nБеседка — стандартный узел, используемый для временного крепления линя к свае, столбу или битингу, но он может проскальзывать при изменяющемся натяжении, поэтому его всегда следует подстраховывать полусцепкой для надёжности. Это фундаментальное знание морского дела, необходимое для безопасного управления судном и операций швартовки. Хотя специально не рассматривается в МППСС или Правилах внутреннего плавания, надлежащая работа с линями и вязание узлов подпадают под общие стандарты разумного морского дела, ожидаемые от всех лицензированных операторов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHfWoBMk0AAX2j811gGTx3CvJtdsInTwAC3QcAAh7iCEQ2TihwwODagDsE",
+        "audio_a": "CQACAgEAAxkDAAIHfmoBMk4ZFpiku6Nrj0s1iUXNfI2EAALeBwACHuIIRFH-xt3h0WZuOwQ"
     },
     {
         "num": 106,
@@ -2551,8 +2551,8 @@ QUESTIONS = [
         "en_explain": "The bowline is considered the most versatile and essential knot in seamanship because it creates a fixed loop that will not slip under load, yet can always be untied even after being heavily stressed. This knot is fundamental to basic marlinspike seamanship as required under 46 CFR (Code of Federal Regulations) for merchant mariner credentials. Unlike a square knot (which can slip or capsize) or a clove hitch (which can work loose), the bowline maintains its integrity while remaining easy to break free.",
         "ru_explain": "⚠️ Данный вопрос относится к морской практике (seamanship) и работе с такелажем. Беседочный узел (булинь/bowline) известен как «король узлов» — он образует незатягивающуюся петлю, которая не скользит под нагрузкой, но легко развязывается после снятия нагрузки. Это делает его универсальным для швартовки, спасательных операций и крепления снастей. Официальные источники COLREGS, 33 CFR Part 83 и NOAA/NGA не содержат информации об узлах — это область практического морского дела (Chapman Piloting, Seamanship).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHf2oBMlBlDBXBA3cllik3oZVtumaSAALfBwACHuIIRM3Mp_c4xx9YOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHgGoBMlIv46on3bzhck1VKeNOTylPAALgBwACHuIIRJidckUBBUiKOwQ"
     },
     {
         "num": 107,
@@ -2575,8 +2575,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 8 (Action to Avoid Collision), any action taken to avoid collision should be taken in ample time and with due regard to good seamanship. Contrary to options B and C, Rule 8 specifically states that course and/or speed changes should be large enough to be readily apparent to another vessel observing visually or by radar—small changes should be avoided. Therefore, only answer A is correct.",
         "ru_explain": "Согласно Правилу 8 МППСС (COLREGS Rule 8) — «Действия для предупреждения столкновения»:  Правило 8(a) гласит: «Любое действие, предпринимаемое для предупреждения столкновения, должно быть предпринято в соответствии с Правилами этой части и, если позволяют обстоятельства, должно быть **заблаговременным** (in ample time) и выполняться с надлежащей хорошей морской практикой».  Однако Правило 8(b) требует: «Любое изменение курса и/или скорости должно быть **достаточно большим**, чтобы быть легко обнаруженным другим судном».  Таким образом, варианты B и C **противоречат** требованиям COLREGS — Правила требуют именно БОЛЬШИХ, заметных изменений курса или скорости, а не маленьких.  Правильный ответ — **A**: действие должно быть предпринято заблаговременно (in enough time), что соответствует требованию Правила 8(a).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHgWoBMlN07pNO2cLGL2iVpzzbtr52AALhBwACHuIIRGq_AkE0o7a3OwQ",
+        "audio_a": "CQACAgEAAxkDAAIHgmoBMlXeDjURYKo1Q8_pEhTfW1qfAALiBwACHuIIRMQnKYjLbO1BOwQ"
     },
     {
         "num": 108,
@@ -2599,8 +2599,8 @@ QUESTIONS = [
         "en_explain": "Line construction consists of three main components: fibers (the basic material), yarns (fibers twisted together), and strands (yarns twisted together to form the rope's structure). Understanding line construction is essential for proper seamanship and selecting appropriate lines for various deck operations. This is fundamental marlinespike seamanship knowledge required for all credentialed mariners under USCG regulations.",
         "ru_explain": "Конструкция линя состоит из трёх основных компонентов: волокон (базовый материал), пряжи (скрученные вместе волокна) и прядей (скрученная вместе пряжа, образующая структуру линя). Понимание конструкции линя является необходимым для надлежащего мореходства и выбора надлежащих линей для различных палубных работ. Это фундаментальное знание такелажного мастерства, требуемое для всех аттестованных мореходов в соответствии с нормативными актами USCG.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHg2oBMldrqxwR4jlYGeiYdPMIwPJYAALjBwACHuIIRNtKHZpLt_lXOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHhGoBMlmgFXffHu51B5ivRFGO9iWNAALkBwACHuIIRPsLBjaIlvnmOwQ"
     },
     {
         "num": 109,
@@ -2623,8 +2623,8 @@ QUESTIONS = [
         "en_explain": "A right-handed (or \"right-laid\") line has strands twisted clockwise, which is the standard construction for most natural and synthetic fiber lines used in the maritime industry. When coiling such line, you should always coil clockwise (with the lay) to prevent kinks and hockles that could weaken the line or cause it to tangle. This is a fundamental seamanship practice rather than a COLREGS rule, falling under general vessel safety and line handling procedures covered in standard marlinespike seamanship.",
         "ru_explain": "# Морские термины\n\n**Правозакрученный трос** (или \"трос с правым скручиванием\") имеет пряди, скрученные по часовой стрелке, что является стандартной конструкцией для большинства натуральных и синтетических тросов, используемых в морской промышленности. При укладке такого троса следует всегда укладывать его по часовой стрелке (по направлению скручивания), чтобы предотвратить перекручивание и петли, которые могут ослабить трос или привести к его запутыванию. Это фундаментальная практика мореходства, а не правило МППСС, относящаяся к общей безопасности судна и процедурам работы с тросами, охватываемым стандартным морским узловедением.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHhWoBMlonEeTjmgnuXwdhXBZ5o5HGAALlBwACHuIIRF2SJroOHw3pOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHhmoBMlwAAbMaSqU1c6ZOb1vU8vGQtgAC5gcAAh7iCER3Iqca76n4MTsE"
     },
     {
         "num": 110,
@@ -2647,8 +2647,8 @@ QUESTIONS = [
         "en_explain": "Standing in the bight (the curved or looped portion) of a line is a fundamental seamanship safety hazard because if the line suddenly comes under tension, anyone in the bight can be struck, entangled, or pulled overboard with severe or fatal consequences. This is a basic principle of good seamanship required under Rule 2 (Responsibility) of both the COLREGS and US Inland Rules, which mandates that mariners observe proper precautions required by the ordinary practice of seamen.",
         "ru_explain": "Это базовое правило морской безопасности при работе с тросами и швартовными концами. \"Bight of a line\" — это изгиб или петля троса между двумя точками крепления. Если трос внезапно натянется (при швартовке, буксировке, работе с якорем), человек, стоящий в петле, может получить тяжёлые травмы или быть выброшен за борт. Это правило входит в стандартную подготовку по безопасности на судне (seamanship) и является обязательным знанием для получения лицензии капитана USCG.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHh2oBMl7YyWcBs6eS4weMTcBHLQXGAALnBwACHuIIRHOqEja3luklOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHiGoBMl_238yQOGngxo4hc5SPvjI9AALoBwACHuIIRAhAWsLganPROwQ"
     },
     {
         "num": 111,
@@ -2671,8 +2671,8 @@ QUESTIONS = [
         "en_explain": "Natural fiber line (such as manila or sisal) is susceptible to rot caused by moisture and organic degradation. Proper seamanship practices require thoroughly drying line before stowing, rinsing with fresh water to remove salt and contaminants, and conducting regular inspections for signs of deterioration. These maintenance procedures are standard good seamanship practices for vessel safety, though not specifically addressed in COLREGS or Inland Rules.",
         "ru_explain": "Натуральный трос (такой как манильский или сизальный) подвержен гниению, вызванному влажностью и органическим разложением. Надлежащая морская практика требует тщательного высушивания троса перед укладкой на хранение, промывки пресной водой для удаления соли и загрязнений, а также проведения регулярных осмотров на предмет признаков деградации. Эти процедуры обслуживания являются стандартной хорошей морской практикой для безопасности судна, хотя конкретно не рассматриваются в МППСС или Внутренних Правилах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHiWoBMmFn7PWXvUfRmP98AZgXG6RXAALpBwACHuIIRLYeC9L5TSlEOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHimoBMmKy7me477ZvOl1QdHYb-pkiAALqBwACHuIIROzw6OnzAg_5OwQ"
     },
     {
         "num": 112,
@@ -2695,8 +2695,8 @@ QUESTIONS = [
         "en_explain": "Nylon line is significantly stronger than manila (a natural fiber rope), has excellent elasticity allowing it to stretch under load, and is easier to handle due to its flexibility and resistance to rot and mildew. These properties make nylon ideal for dock lines and anchor rodes where shock absorption is beneficial. This is a general seamanship question regarding line handling and is not specifically covered by COLREGS or Inland Rules, but falls under practical marlinespike seamanship knowledge required for safe vessel operation.",
         "ru_explain": "Найлоновый трос значительно прочнее манильского (натурального волокна), обладает отличной упругостью, позволяющей ему растягиваться под нагрузкой, и легче в обращении благодаря гибкости и устойчивости к гниению и плесени. Эти свойства делают найлон идеальным для швартовных тросов и якорных канатов, где полезна амортизация ударных нагрузок. Это общий вопрос морского дела, касающийся работы с тросами и не охватываемый МППСС или Внутренними правилами, но относящийся к практическим знаниям такелажного мастерства, необходимым для безопасной эксплуатации судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHi2oBMmQHqdaoH-pMt3NHFi_tytG2AALrBwACHuIIRHcDhoNsodHvOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHjGoBMmauEj9AaYtiJVWr430y-VpjAALsBwACHuIIRLYJJXmjpjnXOwQ"
     },
     {
         "num": 113,
@@ -2719,8 +2719,8 @@ QUESTIONS = [
         "en_explain": "Natural fiber rope (such as manila or hemp) must be regularly inspected because it absorbs moisture and deteriorates from the core outward, making internal rot difficult to detect visually. Unlike synthetic lines (nylon, Dacron, Spectra), natural rope is organic and susceptible to mildew, mold, and bacterial decay. This is a seamanship and vessel safety requirement; mariners should unlay strands periodically to examine the interior fibers for signs of deterioration.",
         "ru_explain": "⚠️ Данный вопрос относится к морской практике (seamanship) и уходу за такелажем. Растительные тросы (из манилы, сизаля, пеньки) подвержены гниению изнутри из-за впитывания влаги волокнами. Внешне трос может выглядеть исправным, но внутренние волокна уже разрушены. Синтетические тросы (нейлон, дакрон, спектра) не гниют. Это практическое знание для безопасной эксплуатации судна, но не входит в COLREGS или 33 CFR Part 83.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHjWoBMmjlsSI6BPqaXKCoTP1lVClzAALtBwACHuIIRLjY3ts9iTelOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHjmoBMml_6cUdOnB2aa9HEk-BpfXLAALuBwACHuIIRFVtJl5ERO8OOwQ"
     },
     {
         "num": 114,
@@ -2743,8 +2743,8 @@ QUESTIONS = [
         "en_explain": "Synthetic rope is susceptible to degradation from prolonged exposure to ultraviolet (UV) radiation from sunlight and can be damaged by contact with petroleum-based oils and chemicals. This is an important consideration for proper line maintenance and storage aboard vessels. This relates to general seamanship knowledge required under 46 CFR (Code of Federal Regulations) for operator licensing rather than a specific COLREGS or Inland Rule.",
         "ru_explain": "Синтетический трос подвержен деградации при длительном воздействии ультрафиолетового (УФ) излучения солнечного света и может быть повреждён при контакте с нефтяными маслами и химическими веществами. Это важное соображение для надлежащего обслуживания и хранения линей на борту судна. Это относится к общим знаниям мореходства, требуемым в соответствии с 46 CFR (Кодекс федеральных нормативов) для лицензирования операторов, а не к конкретным COLREGS или Inland Rules.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHj2oBMmuhW6564zOOmEZuQDfs2VUxAALvBwACHuIIRA7e6ZDUdW7BOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHkGoBMmwyMESPLY7fG_oumtRblR0kAALwBwACHuIIRL-T3PTBZ40uOwQ"
     },
     {
         "num": 115,
@@ -2767,8 +2767,8 @@ QUESTIONS = [
         "en_explain": "Braided rope (also called plaited rope) consists of interwoven strands that create a balanced construction, eliminating the tendency to kink, cockle, or twist under load. Unlike laid rope, which has a natural twist that can cause it to rotate and form kinks, braided rope's symmetrical structure remains stable and flexible without developing memory or twisting. This characteristic makes braided line ideal for applications where snag-free handling is essential, such as anchor rodes and docking lines.",
         "ru_explain": "Плетёный трос (также называемый косичный трос) состоит из переплетённых прядей, создающих сбалансированную конструкцию, исключающую склонность к перегибам, волнистости или скручиванию под нагрузкой. В отличие от витого троса, который имеет естественное скручивание, способное вызвать его вращение и образование перегибов, симметричная структура плетёного троса остаётся стабильной и гибкой без развития остаточной деформации или скручивания. Эта характеристика делает плетёный линь идеальным для применений, где необходимо беспрепятственное обращение, такие как якорные канаты и швартовные линии.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHkWoBMm66fLdqBGrekc4FfEDdHDUxAALxBwACHuIIRFK9qqsqasDlOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHkmoBMnD0Pvy6x-cn92zyCYd1WLBaAALyBwACHuIIRBiKgTkO4p46OwQ"
     },
     {
         "num": 116,
@@ -2791,8 +2791,8 @@ QUESTIONS = [
         "en_explain": "Dacron (polyester) is the most common line material used in sailboat running rigging because it has low stretch, excellent UV resistance, and maintains consistent performance under load. Nylon, while strong, stretches too much for halyards and sheets where precise sail control is needed. This is a general seamanship question not covered by COLREGS or Inland Rules.",
         "ru_explain": "Дакрон (полиэстер) — наиболее распространённый материал для тросов в бегучем такелаже парусника, так как он имеет низкое удлинение, отличную устойчивость к ультрафиолету и сохраняет стабильные характеристики под нагрузкой. Нейлон, хотя и прочен, слишком растягивается для фалов и шкотов, где требуется точное управление парусом. Это вопрос общего мореходства, не охватываемый МППСС или Правилами внутреннего плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHk2oBMnILab7AX13OYkeKNI321xicAALzBwACHuIIRGs9gpqVphSFOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHlGoBMnNG8GrgEEfX1djr-MweuwWPAAL0BwACHuIIRPAqoHT9n5w3OwQ"
     },
     {
         "num": 117,
@@ -2815,8 +2815,8 @@ QUESTIONS = [
         "en_explain": "Polypropylene line floats on water, making it the Coast Guard's required material for rescue lines and heaving lines. This buoyancy allows the line to remain visible and accessible on the water's surface, enabling a person in the water to grab it easily. This requirement is specified in 46 CFR (Code of Federal Regulations) regarding lifesaving equipment standards.",
         "ru_explain": "⚠️ Данный вопрос относится к судовому снаряжению и материалам для спасательных операций. Полипропиленовый трос обладает положительной плавучестью (не тонет в воде), что делает его идеальным для спасательных линей — пострадавший может легко увидеть и схватить плавающий на поверхности конец. Нейлон и дакрон тонут, сизаль (растительное волокно) впитывает воду и тоже тонет. Требования к спасательному оборудованию регулируются 46 CFR (не входит в указанные источники COLREGS/33 CFR Part 83).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHlWoBMnW6d0cMpr_H1xnreO_7eGiaAAL1BwACHuIIRAGTjXrq66Q7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIHlmoBMndOSRDge2Fou6-VGnZx8chcAAL2BwACHuIIRMAxiFjoWnULOwQ"
     },
     {
         "num": 118,
@@ -2839,8 +2839,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 25(b) of both International and Inland Rules, a sailing vessel of less than 20 meters in length may combine her sidelights and sternlight in one lantern carried at or near the top of the mast on the fore and aft centerline. The 16-meter sailing vessel is the only option that meets this length requirement, as the 28-meter sailing vessel exceeds the 20-meter threshold and power-driven vessels have different lighting requirements under Rule 23.",
         "ru_explain": "Согласно Правилу 25(b) МППСС-72 (COLREGS) и 33 CFR 83.25(b), парусное судно длиной менее 20 метров может объединить бортовые огни и кормовой огонь в одном комбинированном фонаре, установленном на топе мачты или вблизи него на диаметральной плоскости судна. Вариант A (16 метров) — единственное парусное судно менее 20 метров. Вариант C (28 метров) превышает этот лимит. Суда с механическим двигателем (вариант B) не имеют такого разрешения независимо от длины. Несамоходные суда (вариант D) подчиняются другим правилам в зависимости от их типа (буксируемые суда и т.д.).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHl2oBMnmvLm0G3WWaIbcNAAEx3o_WZQAC9wcAAh7iCETwPQvO1eSYUjsE",
+        "audio_a": "CQACAgEAAxkDAAIHmGoBMnoJhZqxiw-15MdouRqhGwMZAAL4BwACHuIIRJLVA908WytwOwQ"
     },
     {
         "num": 119,
@@ -2863,8 +2863,8 @@ QUESTIONS = [
         "en_explain": "When coiling line, you must always coil in the same direction as the line's lay (twist) to prevent kinks, hockles, and tangles that can weaken the line and cause it to jam when running out. For standard right-laid (Z-laid) line, which is most common aboard vessels, this means coiling clockwise. This is a fundamental seamanship practice essential for safe line handling operations.",
         "ru_explain": "При свёртывании линя необходимо всегда свёртывать в направлении кручения линя, чтобы избежать перегибов, петель и спутывания, которые могут ослабить линь и вызвать его заклинивание при травке. Для стандартного правокрученого линя (Z-кручения), который наиболее распространён на судах, это означает свёртывание по часовой стрелке. Это фундаментальная практика судоходства, необходимая для безопасного выполнения операций с линями.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHmWoBMny_oSyeJaNWv4lwmqpa59KuAAL5BwACHuIIRKrnFtZl1yNAOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHmmoBMn4aLwuIi95Tczmgf7Kh53cHAAL6BwACHuIIRG-ioKmK0x28OwQ"
     },
     {
         "num": 120,
@@ -2887,8 +2887,8 @@ QUESTIONS = [
         "en_explain": "Wire rope is specified by the number of strands wrapped around the core and the number of individual wires within each strand. For example, a 6x19 wire rope has 6 strands with 19 wires in each strand. This specification is standard seamanship knowledge covered under general deck safety and equipment requirements rather than COLREGS, as it pertains to vessel rigging and mooring operations.",
         "ru_explain": "Стальной трос (wire rope) классифицируется по двум основным параметрам: количество прядей (strands) и количество проволок (wires) в каждой пряди. Например, трос 6×19 означает 6 прядей, каждая из которых состоит из 19 проволок. Пряди свиваются вокруг центрального сердечника (core). Эта система маркировки является стандартной в морской практике и позволяет определить прочность, гибкость и область применения троса.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHm2oBMn9rUU9aHAv3muE89c99L0cHAAL7BwACHuIIRMamkXqOeYcLOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHnGoBMoFlT-zzhf0S0VKOPbfQ7bNSAAL8BwACHuIIRBkBXnPJg69vOwQ"
     },
     {
         "num": 121,
@@ -2911,8 +2911,8 @@ QUESTIONS = [
         "en_explain": "Flaking a line refers to laying out rope on deck in long, flat, parallel loops (bights) that overlap slightly, allowing the line to run out freely without kinks or tangles. This method differs from coiling, where the line is arranged in circular loops stacked on top of each other. This is a standard seamanship practice for preparing lines that need to pay out quickly, such as heaving lines or anchor rodes.",
         "ru_explain": "Раскладка линя — это укладка троса на палубе длинными плоскими параллельными петлями (шпигами), слегка перекрывающимися друг с другом, что позволяет тросу разбегаться свободно без узлов и спутывания. Этот способ отличается от намотки, при которой трос укладывается круглыми петлями, уложенными одна на другую. Это стандартная практика мореходства для подготовки тросов, которые должны быстро разбегаться, таких как сигнальные линьки или якорные цепи.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHnWoBMoNtP_o07mMWZEmWk7xjjNaGAAL9BwACHuIIROvz-Qeip0IzOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHnmoBMoRQggzY8jniZnCUK_P5kObkAAL-BwACHuIIRAFZzSxgXQF1OwQ"
     },
     {
         "num": 122,
@@ -2935,8 +2935,8 @@ QUESTIONS = [
         "en_explain": "The metacenter is the point where a vertical line through the center of buoyancy of a heeled vessel intersects the vessel's vertical centerline. This point is critical for determining a vessel's initial stability—when the metacenter is above the center of gravity, the vessel has positive stability and will return upright after heeling. This is a fundamental concept in naval architecture and vessel stability, covered in USCG stability requirements for licensed operators.",
         "ru_explain": "⚠️  Данный вопрос относится к теории остойчивости судна (naval architecture/stability), а не к COLREGS, Navigation Rules или картографии NOAA/NGA. Метацентр (metacenter) — это точка пересечения вертикали, проходящей через центр величины при наклонении судна, с диаметральной плоскостью. Высота метацентра над центром тяжести (метацентрическая высота) определяет начальную остойчивость судна. Эта информация содержится в учебниках по мореходным качествам судна и материалах USCG по остойчивости, но не в указанных официальных источниках.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHn2oBMoZCWA2z7ywhZsLrN_7q3crCAAL_BwACHuIIRC3PWlMROELJOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHoGoBMoiqkDoc2RbbvZfcxWfrKh5pAAMIAAIe4ghEQxnNY08HFT07BA"
     },
     {
         "num": 123,
@@ -2959,8 +2959,8 @@ QUESTIONS = [
         "en_explain": "This question addresses basic seamanship and line handling terminology rather than COLREGS or Inland Rules. The three standard methods of coiling a rope are **coiling** (forming circular loops), **faking** (laying out in figure-eight patterns or flat layers), and **flemishing** (coiling flat on deck in a decorative spiral). None of the answer choices (capping, laying, or panning) correctly describes these methods, making \"none of the above\" the correct answer.",
         "ru_explain": "Этот вопрос касается базовой терминологии морского дела и работы с тросом, а не МППСС или Правил внутреннего плавания. Три стандартных способа укладки троса — это **намотка** (формирование круговых петель), **фалшинг** (укладка в виде восьмёрки или плоских слоёв) и **фламинг** (плоская спираль на палубе в декоративном узоре). Ни один из предложенных вариантов ответов (крепление, кладка или панинг) не описывает эти способы правильно, поэтому правильный ответ — «ни один из вышеперечисленных».",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHoWoBMokbmSe9bJYlT9RJrM30w6g1AAIBCAACHuIIRCbgdUlA9zDfOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHomoBMotEuM7KFm0uimcdhcoz9-mbAAICCAACHuIIRPyASJ0X_2QROwQ"
     },
     {
         "num": 124,
@@ -2983,8 +2983,8 @@ QUESTIONS = [
         "en_explain": "Laying a rope in a figure-eight pattern is called **faking** a line. This method prevents kinks and allows the line to run out freely without tangling, which is essential for safe line handling during docking or anchoring operations. Note: This is a seamanship terminology question and does not reference COLREGS or Inland Rules, as it pertains to marlinspike seamanship rather than navigation rules.",
         "ru_explain": "⚠️  Примечание: Данный вопрос относится к морской практике (seamanship) и работе с тросами. Термины укладки тросов (faking, flaking, flemishing) не регламентируются COLREGS, Inland Rules или публикациями NOAA/NGA — это область практического морского дела (Chapman's Piloting, Bowditch, USCG Seamanship Manual).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHo2oBMo2E21CyYzibU1cJw-aoj0mdAAIDCAACHuIIROEdH_AXL43cOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHpGoBMo5VqOLfAAHVjwaDjjLRiVYoQQACBAgAAh7iCERChSzDdQ3LPDsE"
     },
     {
         "num": 125,
@@ -3007,8 +3007,8 @@ QUESTIONS = [
         "en_explain": "Displacement is the measure of a vessel's weight, representing the actual weight of water displaced by the hull when the vessel is afloat. Gross tonnage and net tonnage are measures of volume (internal capacity), not weight, while metacentric height relates to stability. This is a fundamental principle of naval architecture based on Archimedes' principle, where a floating vessel displaces a weight of water equal to its own weight.",
         "ru_explain": "⚠️ Данный вопрос относится к морской архитектуре и теории судна, а не к COLREGS, Inland Navigation Rules или картографии NOAA/NGA. Однако базовые определения: **Водоизмещение (Displacement)** — это вес воды, вытесненной корпусом судна, который по закону Архимеда равен весу самого судна. Измеряется в тоннах. **Валовая и чистая вместимость (Gross/Net Tonnage)** — это меры внутреннего объёма судна, а не его веса. **Метацентрическая высота** — характеристика остойчивости судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHpWoBMpCK7M5WQFs2KkyQN5SNDcO3AAIFCAACHuIIRPBVlCgJfnozOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHpmoBMpLvC13yDNnqIaJJyDNR0_l_AAIGCAACHuIIRE0D6PtU3fEaOwQ"
     },
     {
         "num": 126,
@@ -3031,8 +3031,8 @@ QUESTIONS = [
         "en_explain": "The **keel** is the principal structural member of a vessel, running longitudinally along the centerline of the bottom from stem to stern, forming the foundation upon which the entire hull framework is built. Just as the spine supports the human body, the keel provides the primary longitudinal strength and serves as the attachment point for frames, floors, and other structural components. This is a fundamental concept in vessel construction and stability, essential knowledge for any licensed captain.",
         "ru_explain": "⚠️  Киль (keel) — это основной продольный структурный элемент корпуса судна, проходящий по всей его длине в нижней части. Он служит фундаментом, к которому крепятся шпангоуты и другие элементы набора корпуса. Именно поэтому киль образно называют «хребтом» или «позвоночником» судна — он обеспечивает продольную прочность и является основой всей конструкции.  *Примечание: данный вопрос относится к конструкции судна (naval architecture) и не регулируется COLREGS, Inland Rules или публикациями NOAA/NGA.*",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHp2oBMpOEfFlpWurSQBiQifURL6xfAAIHCAACHuIIRDlbFYoeGz4cOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHqGoBMpXvK_wAAWvFYU6IBs5l4VyiVAACCAgAAh7iCETu4Bxa5pTFJDsE"
     },
     {
         "num": 127,
@@ -3055,8 +3055,8 @@ QUESTIONS = [
         "en_explain": "The outermost surface of a vessel's hull is called **shell plating**, which consists of the steel plates forming the watertight exterior skin of the vessel. This is a fundamental hull construction term; inner bottom plating is located inside the hull above the keel, transverse bulkheads are internal vertical partitions, and stanchions are vertical support posts. This is a general seamanship/vessel construction question not governed by COLREGS or Inland Rules.",
         "ru_explain": "# Морские термины\n\n**Обшивка корпуса** (shell plating) — наружная поверхность корпуса судна, состоящая из стальных листов, образующих водонепроницаемую внешнюю оболочку судна. **Внутренняя обшивка дна** (inner bottom plating) расположена внутри корпуса над килем. **Поперечные переборки** (transverse bulkheads) — внутренние вертикальные перегородки. **Стойки** (stanchions) — вертикальные опорные стойки.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHqWoBMpcqIRqH56c4bF1HKs2wqdSrAAIJCAACHuIIRASpJtaONBSsOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHqmoBMpjboAWbgHNXskZczOwNNEXyAAIKCAACHuIIRO3KSbAUESo9OwQ"
     },
     {
         "num": 128,
@@ -3079,8 +3079,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 26 (Fishing Vessels) of both International and Inland Rules, a vessel engaged in fishing while at anchor is only required to display the lights prescribed for fishing vessels—not the anchor lights required by Rule 30. Since the vessel is actively fishing, the fishing lights (such as green over white for trawling, or red over white for other fishing methods) take precedence and serve to identify the vessel's activity. Therefore, none of the listed options correctly describes the required lighting configuration.",
         "ru_explain": "Согласно Правилу 26(c) COLREGS и 33 CFR 83.26(c): судно, занятое ловом рыбы на якоре, должно выставлять только огни, предписанные для рыболовного судна (два вертикальных огня: верхний — красный, нижний — белый для тралового лова; или красный над белым плюс дополнительные огни для снастей длиной более 150 м). Правило 26(c) прямо указывает: \"Судно, занятое ловом рыбы, на якоре должно выставлять огни, предписанные данным Правилом, но НЕ огни или знаки для судна на якоре\". Таким образом, якорный огонь (вариант A) не требуется, бортовые огни показываются только на ходу (вариант B неверен), три огня с красными сверху и снизу (вариант C) — это огни судна, ограниченного в возможности маневрировать. Правильный ответ — D, так как ни один из предложенных вариантов не соответствует требованиям.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHq2oBMpocnpX_ejYb3iyD-3XvN-cxAAILCAACHuIIRGv7f6UBA2C3OwQ",
+        "audio_a": "CQACAgEAAxkDAAIHrGoBMpwgU-gDMNLuemmb2o_Zn17jAAIMCAACHuIIRMqnmpRpG20mOwQ"
     },
     {
         "num": 129,
@@ -3103,8 +3103,8 @@ QUESTIONS = [
         "en_explain": "**Tonnage** refers to the volumetric measurement of a vessel's enclosed interior spaces, expressed in units of 100 cubic feet (one ton = 100 cubic feet). This measurement is used to determine a vessel's carrying capacity and is distinct from displacement, which measures the actual weight of water displaced by the hull. Tonnage calculations are governed by 46 CFR Part 69 (U.S. vessel measurement regulations) rather than COLREGS, as this pertains to vessel documentation and certification requirements.",
         "ru_explain": "**Тоннаж** — это объёмное измерение внутренних закрытых помещений судна, выраженное в единицах по 100 кубических футов (одна тонна = 100 кубических футов). Это измерение используется для определения грузоподъёмности судна и отличается от водоизмещения, которое измеряет фактический вес воды, вытесняемой корпусом. Расчёты тоннажа регулируются 46 CFR Part 69 (нормативными положениями США по измерению судов), а не МППСС, поскольку это относится к документированию судна и требованиям сертификации.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHrWoBMp6EN6aYPNRj91vVjEqc8GBmAAINCAACHuIIRA8hT-H41HneOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHrmoBMp9vhvEMOL9DMpycFXubtMh-AAIOCAACHuIIRL4Bpdfjvo4NOwQ"
     },
     {
         "num": 130,
@@ -3127,8 +3127,8 @@ QUESTIONS = [
         "en_explain": "Transverse frames run athwartships (side to side) across the vessel's hull, curving upward from the keel to the deck, which gives them their characteristic rib-like appearance similar to a human ribcage. These structural members provide the vessel's cross-sectional shape and strength against lateral forces. This is a question of basic naval architecture and vessel construction rather than navigation rules (COLREGS/Inland Rules).",
         "ru_explain": "Шпангоуты проходят в поперечном направлении (с борта на борт) через корпус судна, изгибаясь вверх от киля к палубе, что придаёт им характерный рёберный вид, подобный человеческой грудной клетке. Эти конструктивные элементы обеспечивают поперечное сечение судна и прочность против боковых нагрузок. Это вопрос базовой теории корабля и конструкции судна, а не правил судоходства (МППСС/Внутренние правила).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHr2oBMqGJYg1A6H3prqfcdjqFOobuAAIPCAACHuIIRO67Ru3hb3PVOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHsGoBMqJLAAFA8MbkBuG6GWnOJQiEagACEAgAAh7iCERGCE15oFE_MzsE"
     },
     {
         "num": 131,
@@ -3151,8 +3151,8 @@ QUESTIONS = [
         "en_explain": "A **bulkhead** is the proper maritime term for any vertical partition or wall that divides a vessel's interior into separate compartments. While a \"collision bulkhead\" (Answer A) is a specific type of bulkhead located near the bow to contain flooding from a forward collision, the general term for any watertight wall creating compartments is simply \"bulkhead.\" This is standard vessel construction terminology found in 46 CFR (Code of Federal Regulations) governing vessel design and safety.",
         "ru_explain": "**Переборка** — это правильный морской термин для любой вертикальной перегородки или стены, которая разделяет внутреннее пространство судна на отдельные отсеки. Хотя **таранная переборка** (ответ A) — это специфический тип переборки, расположенный у носа для локализации затопления при столкновении, общий термин для любой водонепроницаемой стены, создающей отсеки, — это просто **переборка**. Это стандартная терминология конструкции судна, содержащаяся в 46 CFR (Кодекс федеральных нормативных актов), регулирующем проектирование и безопасность судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHsWoBMqRqq50EXP-IJq-UKsgjuC-jAAIRCAACHuIIRBdsyTglX9utOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHsmoBMqam-FGEOWB4sFKwHB06LgSEAAISCAACHuIIRG_fYBektLbeOwQ"
     },
     {
         "num": 132,
@@ -3175,8 +3175,8 @@ QUESTIONS = [
         "en_explain": "When a right-handed propeller (one that rotates clockwise when viewed from astern while going ahead) is put in reverse, it rotates counter-clockwise. This counter-clockwise rotation creates a torque effect that \"walks\" the stern to port. This propeller side force, commonly called \"prop walk\" or \"transverse thrust,\" is a fundamental principle of vessel handling rather than a COLREGS rule, but understanding it is essential for safe maneuvering in close quarters.",
         "ru_explain": "⚠️ Данный вопрос относится к управлению судном и работе гребного винта (seamanship/propeller effects), а не к COLREGS, Inland Rules или картографии NOAA/NGA. Эффект реактивного момента (torque effect) винта правого вращения: при работе назад лопасти винта, вращаясь против часовой стрелки (если смотреть с кормы), создают боковую силу, которая уводит корму влево (на левый борт — port). Это стандартное правило из курса морской практики USCG.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHs2oBMqiV71pyOBYQMaU9K2I-CNVzAAITCAACHuIIRJD2NbyRUWX1OwQ",
+        "audio_a": "CQACAgEAAxkDAAIHtGoBMqlMPNFaoZYopcfREIr6g2llAAIUCAACHuIIRHq0Wdw3XkzaOwQ"
     },
     {
         "num": 133,
@@ -3199,8 +3199,8 @@ QUESTIONS = [
         "en_explain": "A **Kort nozzle** is a cylindrical duct or shroud fitted around a propeller that accelerates water flow, significantly improving thrust and fuel efficiency at lower speeds in ahead propulsion. However, the nozzle restricts water flow when operating astern, reducing backing efficiency. This is a vessel design and propulsion concept tested for general seamanship knowledge, not specifically covered under COLREGS or Inland Rules.",
         "ru_explain": "⚠️  Насадка Корта (Kort nozzle) — это цилиндрический кожух, установленный вокруг гребного винта. Она концентрирует поток воды через винт, что значительно увеличивает упор на низких скоростях и при буксировке. Широко применяется на буксирах, траулерах и судах, работающих на малых ходах. Недостаток: при реверсе вода не может эффективно проходить через насадку, что снижает эффективность заднего хода. Данный вопрос относится к устройству судна и пропульсивным системам, а не к COLREGS или навигационным правилам.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHtWoBMqvAiXe5C6gCupP13_8Tokx_AAIVCAACHuIIRGTpxkqbTnONOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHtmoBMq1gdQABdcX6ctT6lzAck56jjgACFggAAh7iCERB5X47zdQQuzsE"
     },
     {
         "num": 134,
@@ -3223,8 +3223,8 @@ QUESTIONS = [
         "en_explain": "A **Kort nozzle** is a cylindrical shroud or duct fitted around a propeller that directs and accelerates water flow, improving thrust efficiency at lower speeds in the ahead direction. However, when operating astern, the nozzle restricts water flow to the propeller, significantly reducing its backing efficiency. This is a vessel propulsion and maneuvering characteristic rather than a COLREGS/Inland Rules topic, but understanding your vessel's handling limitations is essential for safe navigation.",
         "ru_explain": "⚠️  Насадка Корта (Kort nozzle) — это цилиндрический кожух, устанавливаемый вокруг гребного винта. Она концентрирует поток воды через винт, что значительно увеличивает упор на малых скоростях и при буксировке. Широко применяется на буксирах, траулерах и речных судах. Недостаток: при реверсе (движении назад) эффективность снижается, так как поток воды направляется против конструкции насадки.  Данный вопрос относится к судовым движительным системам и не регулируется COLREGS, Inland Rules или картографическими стандартами NOAA/NGA.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHt2oBMq9hXNYtPnomPkelS3ACT4sSAAIXCAACHuIIRKAS3x4PcqRNOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHuGoBMrAxscwukuuZDvj8GbYHg2k3AAIYCAACHuIIRGlg7LZeh_GpOwQ"
     },
     {
         "num": 135,
@@ -3247,8 +3247,8 @@ QUESTIONS = [
         "en_explain": "The **stuffing box** (also called a shaft seal or packing gland) is a watertight fitting that seals around the propeller shaft where it exits through the hull, preventing water from entering the vessel while allowing the shaft to rotate freely. This is a fundamental component of vessel construction and propulsion system knowledge required for safe operation. This question relates to general seamanship and vessel construction knowledge rather than a specific COLREGS or Inland Rule.",
         "ru_explain": "**сальник** (также называемый уплотнением вала или набивной сальник) — это водонепроницаемое устройство, которое герметизирует гребной вал в месте его прохода через корпус, предотвращая попадание воды в судно при свободном вращении вала. Это фундаментальный элемент конструкции судна и системы движения, необходимый для безопасной эксплуатации. Этот вопрос относится к общим знаниям мореходства и конструкции судна, а не к конкретным МППСС или Правилам внутреннего плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHuWoBMrKOnXtx9z-wyA37AlzmypmgAAIZCAACHuIIRPNYrzXf9nScOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHumoBMrS2KRTFP4BALyG-UdCqzWDKAAIaCAACHuIIRDPlI3irQbYMOwQ"
     },
     {
         "num": 136,
@@ -3271,8 +3271,8 @@ QUESTIONS = [
         "en_explain": "**Propwalk** (also called \"prop walk\" or \"paddle wheel effect\") occurs when the propeller blades operate in water of varying density and pressure—the descending blade bites into denser water near the hull while the ascending blade works in the aerated suction current, creating an imbalanced sideways thrust on the stern. This is a principle of vessel handling and propulsion rather than a Navigation Rule, but understanding propwalk is essential for maneuvering in close quarters, particularly when backing down or operating at slow speeds in confined waters.",
         "ru_explain": "**Смещение винта** (также называемое \"эффектом гребного винта\" или \"эффектом гребного колеса\") происходит, когда лопасти винта работают в воде переменной плотности и давления — нисходящая лопасть входит в более плотную воду у корпуса, а восходящая лопасть работает в аэрированном потоке всасывания, создавая дисбаланс бокового упора на корму. Это принцип управления судном и движения, а не правило навигации, но понимание смещения винта является важным для маневрирования в стеснённых водах, особенно при движении задним ходом или работе на малых скоростях в ограниченных акваториях.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHu2oBMrbdLSwZfpMmOWikzR3MokUbAAIbCAACHuIIRLmkRJPAfO48OwQ",
+        "audio_a": "CQACAgEAAxkDAAIHvGoBMrejTnMG9m9g7zaHUP6vFgJjAAIcCAACHuIIRGkHIT86iNR5OwQ"
     },
     {
         "num": 137,
@@ -3295,8 +3295,8 @@ QUESTIONS = [
         "en_explain": "A **bow thruster** is a propulsion device installed laterally in the bow of a vessel, specifically designed to provide sideways thrust for maneuvering at slow speeds or when docking. Unlike rudders, which require forward water flow to be effective, bow thrusters allow the operator to push the bow port or starboard independently of the vessel's main propulsion. This question addresses basic vessel handling and maneuvering equipment rather than a specific COLREGS or Inland Rule.",
         "ru_explain": "**Носовой подруливающий винт** — это пропульсивное устройство, установленное с боку в носовой части судна, специально предназначенное для создания поперечной тяги при маневрировании на малых скоростях или при швартовке. В отличие от руля, который требует набегающего потока воды для эффективной работы, носовой подруливающий винт позволяет судоводителю отклонять нос судна в левый или правый борт независимо от главной силовой установки судна. Это касается базового оборудования для управления и маневрирования судном, а не конкретных требований МППСС или Внутренних правил.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHvWoBMrnchkZK84dGbqcWrYKfHOvrAAIdCAACHuIIRIY_FPFjsO7ROwQ",
+        "audio_a": "CQACAgEAAxkDAAIHvmoBMroG8RAd58N4Tyul8sAfISR2AAIeCAACHuIIRPH14mv8iyUJOwQ"
     },
     {
         "num": 138,
@@ -3319,8 +3319,8 @@ QUESTIONS = [
         "en_explain": "Squat is a hydrodynamic phenomenon that occurs when a vessel transits shallow water, causing the hull to sink deeper into the water due to decreased pressure beneath the vessel, particularly at the stern. This effect increases with vessel speed and decreases under-keel clearance, which is why prudent mariners reduce speed in shallow water. While not specifically addressed in the COLREGS or Inland Rules, understanding squat is essential for safe navigation and relates to Rule 6 (Safe Speed), which requires masters to consider draft in relation to available water depth.",
         "ru_explain": "Сквоттинг (Squatting) — гидродинамическое явление, возникающее при движении судна на мелководье. Когда запас воды под килем ограничен, поток воды под корпусом ускоряется, создавая зону пониженного давления, особенно под кормой. Это приводит к увеличению осадки судна (просадке) и может вызвать дифферент на корму. Эффект усиливается с увеличением скорости и уменьшением глубины. Bank suction (присасывание к берегу) и Bank cushion (отталкивание от берега) — это другие гидродинамические эффекты, возникающие при движении вблизи берегов или стенок канала, но они не связаны с вертикальным погружением судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHv2oBMryeiI6F3MQIvk47z3w-Tly9AAIfCAACHuIIRAxEd21eRBhmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHwGoBMr5Hv2CUKXx6T25t9DLPh55VAAIgCAACHuIIRCXC992BzvGvOwQ"
     },
     {
         "num": 139,
@@ -3343,8 +3343,8 @@ QUESTIONS = [
         "en_explain": "A **butt joint** is the term used in vessel construction where two plates or planks meet end-to-end in a vertical orientation (running athwartships on the hull). This differs from a **seam**, which refers to the horizontal joint where plates or planks meet along their edges (running fore and aft). This is standard American wooden and steel hull construction terminology rather than a COLREGS reference.",
         "ru_explain": "**Встык** — термин, используемый в судостроении для обозначения соединения двух листов или досок встык в вертикальной ориентации (проходящего в направлении шпангоутов на корпусе судна). Это отличается от **киля**, который обозначает горизонтальное соединение листов или досок вдоль их кромок (проходящего в продольном направлении). Это стандартная терминология американского деревянного и стального судостроения, а не ссылка на МППСС.\n\n---\n\n*Note: The term \"киль\" (keel) in this context refers to seams running longitudinally. A more precise term would be **продольный шов** (longitudinal seam), but \"киль\" carries the nautical tradition of Russian maritime terminology for such joints.*",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHwWoBMsAO65GnHdpszQl0_ZgL8OXwAAIhCAACHuIIRO7pFlMQXvPKOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHwmoBMsHCSBzW34ONBo_rDOINUEWcAAIiCAACHuIIRDfL_8TDxZmpOwQ"
     },
     {
         "num": 140,
@@ -3367,8 +3367,8 @@ QUESTIONS = [
         "en_explain": "Rule 19 (Conduct of Vessels in Restricted Visibility) requires a vessel that cannot avoid a close-quarters situation with another vessel forward of her beam to take way off entirely, not merely reduce to bare steerageway. The correct action under Rule 19(e) is to \"take off her way\" and navigate with extreme caution until danger of collision is over, which means stopping the vessel's forward motion completely rather than maintaining minimal steering speed.",
         "ru_explain": "Согласно Правилу 19 МППСС (Плавание судов при ограниченной видимости):  - Правило 19(e): Судно, которое слышит туманный сигнал впереди траверза или не может избежать чрезмерного сближения, должно **уменьшить ход до минимального** для удержания на курсе, а если необходимо — **остановить судно** (не обязательно застопорить машины немедленно).  - Правило 19(d): При обнаружении радаром другого судна и развитии ситуации сближения — действия должны быть предприняты **заблаговременно**.  Вариант B неверен, потому что правило НЕ требует **немедленной остановки машин** при обнаружении туманного сигнала. Требуется сначала уменьшить ход до минимального и следовать с осторожностью. Остановка машин — это крайняя мера, а не автоматическое требование.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHw2oBMsNkdGagn28D0yJeaUKA-dTrAAIjCAACHuIIRDAJ2uqt5lxnOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHxGoBMsWc9VntxJLzMXHMtwABvdXCVwACJAgAAh7iCERUbgyBXpmUszsE"
     },
     {
         "num": 141,
@@ -3391,8 +3391,8 @@ QUESTIONS = [
         "en_explain": "A **seam** is the horizontal joint where two plates or planks of hull plating meet along their edges running fore and aft. This differs from a **butt**, which is the vertical joint where plates meet end-to-end. Understanding basic vessel construction terminology is essential for hull inspection and damage reporting as required under general seamanship knowledge for USCG licensing.",
         "ru_explain": "⚠️  Примечание: Это вопрос по судостроительной терминологии (конструкция корпуса судна). В морском деле различают: - **Seam (пазовый шов)** — горизонтальное соединение поясов обшивки (правильный ответ) - **Butt (стык)** — вертикальное соединение листов в пределах одного пояса  Данная терминология относится к конструкции судна и не входит в официальные источники COLREGS, 33 CFR Part 83 или публикации NOAA/NGA.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHxWoBMsaD1kkCmlWzcZOu-t78Nd-1AAIlCAACHuIIRKs-Ef91XR6MOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHxmoBMsgsZUW_M2_RUFwjv9kAAXx7yAACJggAAh7iCETDriE48QEuhDsE"
     },
     {
         "num": 142,
@@ -3415,8 +3415,8 @@ QUESTIONS = [
         "en_explain": "**Transfer** is the perpendicular distance a vessel moves from its original track line after executing a 90-degree turn. This term is distinct from **advance**, which measures the distance traveled in the direction of the original course during the same turn. Understanding transfer and advance is essential for safe maneuvering in confined waters, as referenced in general seamanship principles underlying the Navigation Rules (COLREGS Rule 8 - Action to Avoid Collision).",
         "ru_explain": "При выполнении циркуляции судна различают следующие характеристики поворота: **Выдвиг (Advance)** — расстояние, пройденное в направлении первоначального курса от момента перекладки руля до поворота на заданный угол. **Смещение (Transfer)** — расстояние, пройденное перпендикулярно первоначальному курсу от момента перекладки руля до поворота на заданный угол. При повороте на 90° смещение измеряется как перпендикулярное отклонение от линии первоначального курса. **Выбег (Head reach)** — расстояние, которое судно проходит по инерции после остановки двигателей. Знание этих характеристик необходимо для безопасного маневрирования в стеснённых водах и при расхождении с другими судами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHx2oBMsrVLsC0eX8kMXTVIURO9nDhAAInCAACHuIIRLNhl8AB5zdJOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHyGoBMsuMl-oL1DxBOkuE2voGs7wsAAIoCAACHuIIRP2J8XNGnQIVOwQ"
     },
     {
         "num": 143,
@@ -3439,8 +3439,8 @@ QUESTIONS = [
         "en_explain": "**Advance** is the distance a vessel travels in the direction of its original course from the moment the rudder is put over until the vessel has turned through 90 degrees. This term is essential for understanding vessel maneuvering characteristics as referenced in Rule 8 (Action to Avoid Collision) of both COLREGS and US Inland Rules, which requires that any action taken to avoid collision shall be made with due regard to the vessel's maneuvering capabilities. Head reach, by contrast, refers to the distance traveled forward after engines are stopped or reversed.",
         "ru_explain": "⚠️  Данный вопрос относится к теории управления судном (Ship Handling/Maneuvering), а не к COLREGS, Inland Rules или картографии. Термин \"advance\" (выдвиг) — это элемент циркуляции судна, обозначающий расстояние, которое судно проходит в направлении первоначального курса от момента перекладки руля до момента изменения курса на 90°. Этот термин описан в учебниках по управлению судном (Seamanship), но не в указанных официальных источниках.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHyWoBMs0ygol7XLa0ue2X6ElsKckgAAIpCAACHuIIRGCssf-WdKREOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHymoBMs6YV2F_Rw00A9Gyb49RTbSrAAIqCAACHuIIRFxftIDFnKSBOwQ"
     },
     {
         "num": 144,
@@ -3463,8 +3463,8 @@ QUESTIONS = [
         "en_explain": "Hull designs are classified by their bottom shape, with \"flat bottom\" being a recognized hull type commonly found on skiffs, jonboats, and barges. This design provides stability in calm waters and allows operation in shallow areas. \"Square bottom\" and \"circular hull\" are not standard American maritime terminology for describing hull configurations.",
         "ru_explain": "Конструкции корпусов классифицируются по форме днища, причем \"плоское днище\" является признанным типом корпуса, обычно встречающимся на скифах, джонботах и барже. Эта конструкция обеспечивает остойчивость на спокойной воде и позволяет работать на мелководье. \"Квадратное днище\" и \"круглый корпус\" не являются стандартной американской морской терминологией для описания конфигураций корпусов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHy2oBMtA1BzPn7M_XI__sfmYYuXLmAAIrCAACHuIIRC3ChVcjT1YeOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHzGoBMtI-AfLyAkI6maDr-26mBeo_AAIsCAACHuIIRLWjE_vbz2zbOwQ"
     },
     {
         "num": 145,
@@ -3487,8 +3487,8 @@ QUESTIONS = [
         "en_explain": "A **cambered** deck has a slight transverse arch (crown) built into it, curving upward toward the centerline, which allows water to drain naturally toward the sides and overboard through the scuppers. This curvature is also called \"round of beam.\" This is a vessel construction and seamanship terminology question, not governed by COLREGS or Inland Rules, but is standard knowledge required for USCG licensing examinations.",
         "ru_explain": "⚠️ Данный вопрос относится к конструкции корпуса судна (naval architecture), а не к COLREGS, Inland Rules или навигационным картам. Термин \"camber\" (погибь) — это поперечная выпуклость палубы от центра к бортам, обеспечивающая сток воды за борт. \"Sheer\" (седловатость) — это продольный изгиб палубы. \"Buckled\" означает деформацию/коробление. Правильный ответ C: cambered (погибь).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHzWoBMtRdyvlVu3XnltG41mH7tbfcAAItCAACHuIIRAxenVoDxjzOOwQ",
+        "audio_a": "CQACAgEAAxkDAAIHzmoBMtWgRLA5uMnIZzlaIURdsGOAAAIuCAACHuIIRBDbS0q6yuFpOwQ"
     },
     {
         "num": 146,
@@ -3511,8 +3511,8 @@ QUESTIONS = [
         "en_explain": "**Sheer** refers to the longitudinal curvature of a vessel's deck when viewed from the side, typically rising toward the bow and stern. This differs from **camber**, which describes the athwartships (side-to-side) curvature of the deck. This is a basic naval architecture term tested for vessel construction knowledge, not governed by COLREGS or Inland Rules.",
         "ru_explain": "**Седловатость** — продольное искривление палубы судна при виде сбоку, обычно повышающееся к носу и корме. Это отличается от **бочины**, которая описывает поперечное (боковое) искривление палубы. Это базовый термин военно-морской архитектуры, проверяющий знание конструкции судна, не регулируемый МППСС или Правилами внутреннего плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIHz2oBMtcI2CmG8bG5tdeyj-LfQyC5AAIvCAACHuIIRPl3C8R2_9sxOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH0GoBMtj3bojQUfLe6GeS-GyDG2seAAIwCAACHuIIRJmD9Hksgi_TOwQ"
     },
     {
         "num": 147,
@@ -3535,8 +3535,8 @@ QUESTIONS = [
         "en_explain": "Bank cushion occurs when a vessel traveling close to a shore or embankment creates a pressure wave that builds up between the bow and the bank, pushing the bow away from the obstruction. This hydrodynamic effect is the opposite of bank suction, which pulls the stern toward the bank. While not directly addressed in COLREGS, understanding bank cushion is essential for safe navigation in confined waters as required under Rule 6 (Safe Speed) and Rule 8 (Action to Avoid Collision).",
         "ru_explain": "⚠️  Дополнительно (из практики судовождения, не из COLREGS/33 CFR):  Явление **bank cushion (отбойная подушка)** возникает при движении судна вблизи берега или стенки канала. Носовая волна создаёт зону повышенного давления между носом судна и берегом, которая отталкивает нос от берега.  В противоположность этому, **bank suction (присасывание к берегу)** — это эффект пониженного давления в районе кормы, который притягивает корму к берегу.  Оба эффекта важно учитывать при плавании в узкостях и каналах согласно Правилу 9 (Узкие проходы).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH0WoBMto5D-iC7Nil7QFE383RCJ5oAAIxCAACHuIIRJsBefJXnyC1OwQ",
+        "audio_a": "CQACAgEAAxkDAAIH0moBMty9-oFz_XXkdmne8LnScFBvAAIyCAACHuIIREDwSqOZaba5OwQ"
     },
     {
         "num": 148,
@@ -3559,8 +3559,8 @@ QUESTIONS = [
         "en_explain": "A fathom is a traditional unit of depth measurement equal to 6 feet, commonly used on nautical charts to indicate water depths and for measuring anchor rode. This measurement originated from the approximate span of a man's outstretched arms and remains standard in American maritime practice for depth soundings and chart notation.",
         "ru_explain": "Фатом (морская сажень) — традиционная единица измерения глубины, используемая на морских картах. Согласно стандартам NOAA и NGA для морских навигационных карт, 1 фатом равен 6 футам (1,83 метра). На американских картах глубины часто указываются в фатомах или футах. Знание этого соотношения необходимо для правильного чтения глубин на навигационных картах и безопасного судовождения.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH02oBMt6Jjck5Mh4Oe7foAkec124qAAIzCAACHuIIRPnfquRJF9_8OwQ",
+        "audio_a": "CQACAgEAAxkDAAIH1GoBMt-qn7DzY0-hBGuCvqV4r8gGAAI0CAACHuIIRDNSwtp13qIVOwQ"
     },
     {
         "num": 149,
@@ -3583,8 +3583,8 @@ QUESTIONS = [
         "en_explain": "A **hawsepipe** is the tubular opening or pipe fitted through the bow of a vessel that guides the anchor chain from the deck down through the hull to the anchor. This allows the chain to run smoothly when deploying or retrieving the anchor while protecting the hull from chafing. While not specifically addressed in COLREGS or Inland Rules, this is fundamental vessel terminology that all mariners must know for safe anchoring operations referenced in Rule 30 (Anchored Vessels).",
         "ru_explain": "⚠️ Данный вопрос относится к морской терминологии и конструкции судна (seamanship/vessel construction), а не к COLREGS, Inland Rules или навигационным публикациям NOAA/NGA. Клюз (hawsepipe) — это труба или отверстие в носовой части судна, через которое якорная цепь проходит от брашпиля на палубе к якорю за бортом.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH1WoBMuG9pujAlhi7AAE307YGEyHn1wACNQgAAh7iCESoT6uLV3SUAzsE",
+        "audio_a": "CQACAgEAAxkDAAIH1moBMuM6J-T2uybq4p0WytjPrG_qAAI2CAACHuIIRGw__ClVwhcrOwQ"
     },
     {
         "num": 150,
@@ -3607,8 +3607,8 @@ QUESTIONS = [
         "en_explain": "When a vessel turns broadside (beam-on) to the waves, typically after losing steering control while running before a following sea, this dangerous condition is called **broaching**. Broaching places the vessel in extreme danger of capsizing due to the wave action striking the hull perpendicular to its length. This is a critical seamanship concept for heavy weather operations, though it falls under general maritime safety knowledge rather than a specific COLREGS Rule.",
         "ru_explain": "⚠️  Дополнительно (не из официальных источников COLREGS/CFR/NOAA, но общепринятая морская терминология):  **Брочинг (broaching)** — опасная ситуация, когда судно, идущее по волне или под углом к ней, внезапно разворачивается бортом к волне (становится лагом). Это происходит при потере управляемости на попутном волнении и может привести к опрокидыванию судна. Особенно опасно для малых судов при сильном волнении.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH12oBMuWPPmCNpfAdKz6MqPJwW-LSAAI3CAACHuIIRAxIArfttcxzOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH2GoBMudmUYV7z99iKHkjv1xPhVZhAAI4CAACHuIIRMhBG1-8GL9lOwQ"
     },
     {
         "num": 151,
@@ -3631,8 +3631,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 25(a) of both International and Inland Rules, a sailing vessel underway must exhibit sidelights and a sternlight. While vessels under 20 meters may combine these lights into a single \"combined lantern\" at the masthead, sailing vessels over 20 meters in length are required to display separate sidelights and a sternlight, making the sternlight the only option listed that is mandatory for all sailing vessels underway.",
         "ru_explain": "Согласно Правилу 25 COLREGS (МППСС-72) и 33 CFR 83.25, парусное судно на ходу должно выставлять бортовые огни (красный и зелёный) и кормовой огонь. Парусное судно длиной менее 20 метров может объединить эти огни в один комбинированный фонарь на топе мачты (вариант C). Однако судно длиной более 20 метров обязано нести раздельные бортовые огни и кормовой огонь — комбинированный фонарь для него не допускается. Красный над зелёным огни на топе мачты (вариант A) — это дополнительная опция для парусных судов, но не обязательное требование. Белый топовый огонь (вариант B) характерен для судов с механическим двигателем, а не для парусных. Таким образом, единственный обязательный огонь из перечисленных — кормовой огонь (D).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH2WoBMumJXXioJsvVzfGQ8CDLCwhlAAI5CAACHuIIRBV8nvYunKX8OwQ",
+        "audio_a": "CQACAgEAAxkDAAIH2moBMur0jjyFU2q-w9duXh7CZPf7AAI6CAACHuIIRIe3ESSiacHOOwQ"
     },
     {
         "num": 152,
@@ -3655,8 +3655,8 @@ QUESTIONS = [
         "en_explain": "The Plimsoll mark (also called the load line mark) is painted on a vessel's hull at the waterline to indicate the maximum safe loading depth. Named after British politician Samuel Plimsoll who championed maritime safety reforms in the 1870s, this marking ensures a vessel maintains adequate freeboard and stability. Load line requirements are governed by the International Load Line Convention and enforced in the U.S. under 46 CFR Subchapter E.",
         "ru_explain": "⚠️ Марка Плимсоля (Plimsoll mark) — это грузовая марка, указывающая максимально допустимую осадку судна при различных условиях. Названа в честь британского политика Сэмюэля Плимсоля, который в 1876 году добился принятия закона о безопасной загрузке судов. Данный вопрос относится к конструкции и безопасности судна, а не к COLREGS или правилам навигации.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH22oBMuxtKPZrhnv2PAXfT83UXngTAAI7CAACHuIIRCLla17E0zB2OwQ",
+        "audio_a": "CQACAgEAAxkDAAIH3GoBMu4ICLJgUrPBIaPr_vhPvN-hAAI8CAACHuIIRJmxwB11x12uOwQ"
     },
     {
         "num": 153,
@@ -3679,8 +3679,8 @@ QUESTIONS = [
         "en_explain": "**Bank suction** occurs when a vessel transits close to a shoreline or channel bank, causing the water flow between the hull and the bank to accelerate, creating a low-pressure area that draws the stern toward the bank. This hydrodynamic effect is particularly pronounced at the stern due to propeller wash and the narrowing waterway between the vessel and the bank. While not addressed in the COLREGS or Inland Rules directly, understanding bank suction is essential for safe piloting in restricted waters, where Rule 9 (Narrow Channels) requires vessels to navigate with particular caution.",
         "ru_explain": "# Maritime Terms Translation to Russian\n\n**Засасывание у берега** (bank suction) возникает, когда судно движется близко к береговой линии или бортам канала, вызывая ускорение потока воды между корпусом и берегом, что создает зону пониженного давления, притягивающую корму к берегу. Этот гидродинамический эффект особенно выражен в районе кормы из-за волнообразного движения винта и сужающегося водного пространства между судном и берегом. Хотя засасывание у берега прямо не рассматривается в МППСС и Внутренних правилах, его понимание необходимо для безопасного лоцманского обеспечения в стесненных водах, где Правило 9 (Узкие каналы) требует, чтобы суда плавали с особой осторожностью.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH3WoBMvD4SvR_xIZOIho9XsrBBbv3AAI9CAACHuIIRJlCHtrCtAYpOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH3moBMvGvq6LKPKlWfXeq8c_QHigZAAI-CAACHuIIREknpub64nkCOwQ"
     },
     {
         "num": 154,
@@ -3703,8 +3703,8 @@ QUESTIONS = [
         "en_explain": "Stability is determined through an understanding of **weight and buoyancy** because these two fundamental forces govern a vessel's ability to remain upright and return to an even keel after being disturbed. Weight acts downward through the center of gravity (G), while buoyancy acts upward through the center of buoyancy (B)—the relationship between these forces and their respective centers determines whether a vessel is stable, neutral, or unstable. This principle is covered under 46 CFR Subchapter S (Subdivision and Stability) requirements for vessel safety.",
         "ru_explain": "# Maritime Translation - Russian\n\nОстойчивость определяется через понимание **веса и плавучести**, поскольку эти две фундаментальные силы определяют способность судна оставаться в прямом положении и возвращаться в равновесие после возмущения. Вес действует вниз через центр тяжести (G), в то время как плавучесть действует вверх через центр плавучести (B) — взаимосвязь между этими силами и их соответствующими центрами определяет, является ли судно остойчивым, нейтральным или неустойчивым. Этот принцип охватывается требованиями 46 CFR Подраздел S (Подразделение и остойчивость) по безопасности судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH32oBMvMk-7o4U3g9J1o8yNNGh6-yAAI_CAACHuIIRPiAsnNS3SFtOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH4GoBMvVVRIXrVnU4sXPFNuJUsU3lAAJACAACHuIIRGxGP3PtrxvXOwQ"
     },
     {
         "num": 155,
@@ -3727,8 +3727,8 @@ QUESTIONS = [
         "en_explain": "The \"T\" marking on a load line (Plimsoll mark) indicates the **Tropical** load line, which shows the maximum draft permitted when operating in tropical zones where water density and sea conditions allow for deeper loading. Load line markings are governed by the International Convention on Load Lines, and the \"T\" specifically designates tropical saltwater conditions (as opposed to \"TF\" which indicates tropical fresh water).",
         "ru_explain": "⚠️  Примечание: Грузовые марки (Load Lines / Plimsoll Mark) регулируются Международной конвенцией о грузовой марке 1966 года (International Load Line Convention), а не COLREGS или 33 CFR Part 83. Буква \"T\" действительно обозначает \"Tropical\" — максимальную осадку судна в тропических водах с солёной водой, где плотность воды и условия позволяют большую загрузку.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH4WoBMvdQV0XNgs0zaECUXITZSdVaAAJBCAACHuIIRIgRR3WvGTbROwQ",
+        "audio_a": "CQACAgEAAxkDAAIH4moBMvim5fe63upAyBOGq5oO3fxcAAJCCAACHuIIRKXeG6cbkLu_OwQ"
     },
     {
         "num": 156,
@@ -3751,8 +3751,8 @@ QUESTIONS = [
         "en_explain": "Rolling is the sideways rotational motion of a vessel about its longitudinal (fore-and-aft) axis, typically caused by beam seas or rough water conditions. This differs from pitching (rotation about the transverse axis) and surging or swaying (linear movements). Understanding vessel motion terminology is fundamental seamanship knowledge for safe boat handling, though this concept falls under general maritime terminology rather than a specific COLREGS or Inland Rule.",
         "ru_explain": "Шесть степеней свободы движения судна включают три линейных и три вращательных движения. **Roll (бортовая качка)** — это вращение судна вокруг продольной оси (нос-корма), при котором судно попеременно кренится на правый и левый борт. Именно это движение характеризуется как «боковое вращательное» (sideways rotational). **Pitch (килевая качка)** — вращение вокруг поперечной оси (поднимание/опускание носа и кормы). **Surge** — линейное перемещение вперёд-назад. **Sway** — линейное боковое смещение без вращения. Понимание типов качки важно для оценки остойчивости судна и безопасности при волнении.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH42oBMvoG5exMmcyYQVFhsR2RDQyLAAJDCAACHuIIRLueJZ12V4ZUOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH5GoBMvvaAAGeh-JLZpw8TdhNNrcWlgACRAgAAh7iCEQUr1F_2yGwnTsE"
     },
     {
         "num": 157,
@@ -3775,8 +3775,8 @@ QUESTIONS = [
         "en_explain": "A lead line is a traditional depth-sounding device that requires no electrical power and serves as an essential backup when electronic depth sounders fail. Rule 7(a) of the COLREGS requires that vessels use \"all available means appropriate to the prevailing circumstances\" to determine risk of collision, and similarly, prudent seamanship dictates maintaining backup navigation equipment. Carrying a lead line reflects the good seamanship principles embedded throughout the Navigation Rules and ensures you can still obtain soundings during equipment failures.",
         "ru_explain": "Лот (lead line) — это традиционный ручной инструмент для измерения глубины, состоящий из груза на размеченной верёвке. Согласно принципам хорошей морской практики (good seamanship), изложенным в навигационных руководствах NOAA и NGA, судоводитель обязан иметь резервные средства навигации на случай отказа электронного оборудования. Эхолоты и другие электронные приборы могут выйти из строя, разрядиться или дать неточные показания. Лот не требует электропитания, прост в использовании и позволяет определить не только глубину, но и характер грунта (при нанесении сала на дно груза). Это требование особенно актуально для малых судов, работающих на мелководье и в прибрежных водах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH5WoBMv3c2HSp5CP4cgjYbNJUPtkLAAJFCAACHuIIRG2bsQ98z--mOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH5moBMv4LacOgFSffpQuJ4JyZIJHGAAJGCAACHuIIRLPEyXngTnZ_OwQ"
     },
     {
         "num": 158,
@@ -3799,8 +3799,8 @@ QUESTIONS = [
         "en_explain": "Per 33 CFR 183.610 and USCG regulations for gasoline-powered vessels, all enclosed engine compartments must be equipped with a flammable vapor detector (also called a fume detector or gas sniffer) that must be activated before starting the engine. This safety device detects dangerous accumulations of gasoline vapors in the bilge or engine compartment that could cause an explosion upon ignition. The operator must check for safe vapor levels and ventilate the compartment if necessary before cranking the engine.",
         "ru_explain": "Согласно требованиям USCG (46 CFR Part 25 и 33 CFR Part 183), все суда с бензиновыми двигателями и закрытыми машинными отсеками должны быть оборудованы системой обнаружения воспламеняющихся паров (flammable vapor detector). Перед запуском бензинового двигателя необходимо проверить машинное отделение на наличие паров бензина, так как они тяжелее воздуха и скапливаются в нижних частях судна, создавая опасность взрыва. Детектор паров должен быть активирован и показать безопасный уровень ДО запуска двигателя. Это критически важное требование безопасности на маломерных судах с бензиновыми двигателями.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH52oBMwABekahV_PG2_9lYLc3YeV8jAACRwgAAh7iCERiU2GPzukIDDsE",
+        "audio_a": "CQACAgEAAxkDAAIH6GoBMwL7q3mGCP0MtgFfmev59TYCAAJICAACHuIIRFT_BiObIDkxOwQ"
     },
     {
         "num": 159,
@@ -3823,8 +3823,8 @@ QUESTIONS = [
         "en_explain": "Gasoline engines are spark-ignition engines, requiring fuel (gasoline) delivered to the combustion chamber and an electrical spark from the ignition system to initiate combustion. Unlike diesel engines that rely on compression ignition, gasoline engines depend on the spark plug to ignite the air-fuel mixture. This is fundamental marine engine knowledge required for safe vessel operation under USCG licensing requirements.",
         "ru_explain": "# Бензиновые двигатели\n\nБензиновые двигатели — это двигатели с искровым зажиганием, требующие подачи топлива (бензина) в камеру сгорания и электрической искры от системы зажигания для инициирования горения. В отличие от дизельных двигателей, использующих воспламенение от сжатия, бензиновые двигатели зависят от свечи зажигания для воспламенения топливно-воздушной смеси. Это фундаментальное знание морских двигателей, требуемое для безопасной эксплуатации судна в соответствии с требованиями лицензирования USCG.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH6WoBMwRW4spSEUXuJndwyfvp5EDlAAJJCAACHuIIRGXVoVBbWaw1OwQ",
+        "audio_a": "CQACAgEAAxkDAAIH6moBMwU3I7hwpzikvOcFZxMgXYwSAAJKCAACHuIIRIGvocORs2hjOwQ"
     },
     {
         "num": 160,
@@ -3847,8 +3847,8 @@ QUESTIONS = [
         "en_explain": "Proper ventilation of engine and fuel tank spaces is a fundamental safety requirement under 33 CFR 183 (Fuel Systems) and USCG regulations for uninspected passenger vessels. Adequate ventilation prevents the dangerous accumulation of explosive fuel vapors, particularly on gasoline-powered vessels where fumes can collect in enclosed compartments. Operators must ensure ventilation systems are functioning before starting engines and while fueling to prevent fire and explosion hazards.",
         "ru_explain": "# Морские термины\n\n**Надлежащая вентиляция** отсеков двигателя и топливных цистерн является фундаментальным требованием безопасности в соответствии с 33 CFR 183 (Топливные системы) и нормативами USCG для непроверяемых пассажирских судов. **Адекватная вентиляция** предотвращает опасное накопление взрывоопасных паров топлива, особенно на судах с бензиновыми двигателями, где испарения могут скапливаться в закрытых отсеках. Судоводители должны обеспечить функционирование **вентиляционных систем** перед запуском двигателей и во время заправки топливом для предотвращения опасности пожара и взрыва.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH62oBMwf_dDFcY70bMVAs5zdE2KsrAAJLCAACHuIIRLziL1dCRwwVOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH7GoBMwlBRPVg5vJV7xmgkm2bBizBAAJMCAACHuIIRKAvfKfSLLcEOwQ"
     },
     {
         "num": 161,
@@ -3871,8 +3871,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 24(a) and (c) of both International and Inland Rules, a power-driven vessel towing astern must display a towing light (yellow light with the same characteristics as a sternlight) in a vertical line above the sternlight. This towing light is positioned directly above the white sternlight, creating a vertical arrangement that distinguishes a towing vessel from a regular power-driven vessel underway.  **ОТВЕТ: B**",
         "ru_explain": "Согласно Правилу 24(a) МППСС-72 и 33 CFR 83.24, судно с механическим двигателем, занятое буксировкой, должно нести буксировочный огонь — жёлтый огонь с такими же характеристиками, как кормовой огонь (Правило 21(c)). Этот буксировочный огонь располагается по вертикали над кормовым огнём. Таким образом, судно несёт оба огня: кормовой (белый) и над ним буксировочный (жёлтый). Если длина буксира от кормы буксирующего судна до кормы буксируемого объекта превышает 200 метров, тогда требуются два буксировочных огня по вертикали над кормовым.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH7WoBMwvaFiVPXuxW7h6DgQABuh3X0AACTQgAAh7iCETSqRVja-ZOvTsE",
+        "audio_a": "CQACAgEAAxkDAAIH7moBMwxovKVfKksa84QdS33f7AuyAAJOCAACHuIIRFbKLT2npWp0OwQ"
     },
     {
         "num": 162,
@@ -3895,8 +3895,8 @@ QUESTIONS = [
         "en_explain": "The most common reason a gasoline engine fails to start is fuel delivery problems, which can include issues such as an empty tank, clogged fuel lines, a faulty fuel pump, or a flooded carburetor. This is a fundamental principle of marine engine troubleshooting, as fuel system issues are more frequently encountered than compression or air intake problems. Note: This is a general seamanship/engineering question and does not fall under COLREGS or Inland Navigation Rules.",
         "ru_explain": "# Морские термины\n\n**Наиболее частая причина отказа запуска бензинового двигателя — проблемы с подачей топлива, которые могут включать такие неисправности, как пустой топливный бак, засоренные топливопроводы, неисправный топливный насос или переобогащённый карбюратор. Это фундаментальный принцип диагностики судовых двигателей, поскольку неисправности топливной системы встречаются чаще, чем проблемы компрессии или забора воздуха. Примечание: Это общий вопрос судоводства и судомеханики и не подпадает под МППСС или Правила внутреннего плавания.**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH72oBMw6mu62pHapNxel7BpS5oo7RAAJPCAACHuIIRAjmhZqlODX8OwQ",
+        "audio_a": "CQACAgEAAxkDAAIH8GoBMxCU0hVCFEQU7wGxvQZZoUjUAAJQCAACHuIIREBiWubjCDokOwQ"
     },
     {
         "num": 163,
@@ -3919,8 +3919,8 @@ QUESTIONS = [
         "en_explain": "Diesel engines are preferred in marine environments because they are more fuel-efficient, produce higher torque at lower RPMs, and have no electrical ignition system that can fail in wet conditions. Their fuel (diesel) is also less volatile and safer to store aboard vessels than gasoline. This is a general marine engineering principle rather than a COLREGS or Inland Rules requirement.",
         "ru_explain": "Дизельные двигатели предпочтительны в морской среде, так как они более экономичны по расходу топлива, развивают больший крутящий момент при низких оборотах и не имеют электрической системы зажигания, которая может отказать во влажных условиях. Их топливо (дизель) также менее летуче и безопаснее для хранения на борту судна, чем бензин. Это общий принцип морского машиностроения, а не требование МППСС или Внутренних правил судоходства.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH8WoBMxKpnOs__3FgSWpPaTvXpbzgAAJRCAACHuIIRPVjZFHMrD1ROwQ",
+        "audio_a": "CQACAgEAAxkDAAIH8moBMxNI4FeiAAGq2JhmGKUaxFutIwACUggAAh7iCERWE7b2UMXr7zsE"
     },
     {
         "num": 164,
@@ -3943,8 +3943,8 @@ QUESTIONS = [
         "en_explain": "If a diesel engine fails to start, proper troubleshooting procedure requires checking the entire fuel system systematically. This includes verifying fuel level in the tank, ensuring the fuel shut-off valve is open, and inspecting the fuel filter for clogs or contamination. This is a basic engine maintenance and operations question covered under USCG licensing requirements rather than a COLREGS navigation rule.",
         "ru_explain": "Если дизельный двигатель не запускается, надлежащая процедура поиска неисправностей требует систематической проверки всей топливной системы. Это включает проверку уровня топлива в цистерне, обеспечение открытия топливного запорного клапана и осмотр топливного фильтра на предмет засорения или загрязнения. Это вопрос базового обслуживания двигателя и его эксплуатации, охватываемый требованиями лицензирования USCG, а не правилом судоходства COLREGS.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH82oBMxVlZV3dfe0l0k7KOzMJs4jnAAJTCAACHuIIRI66LWe2ez7POwQ",
+        "audio_a": "CQACAgEAAxkDAAIH9GoBMxahKaY9WOrBI5wF4VeHrvMoAAJUCAACHuIIREBSlT67qWTkOwQ"
     },
     {
         "num": 165,
@@ -3967,8 +3967,8 @@ QUESTIONS = [
         "en_explain": "Fuel shut-off valves are required at multiple locations in a vessel's fuel system, not just at the tank connection. Per 46 CFR regulations governing small passenger vessels, shut-off valves must be installed both at the fuel tank and at the engine or appliance being supplied. This ensures the fuel supply can be safely isolated at either end of the fuel line in case of emergency or maintenance needs.",
         "ru_explain": "⚠️  Данный вопрос относится к требованиям безопасности топливных систем на малых судах (46 CFR — Code of Federal Regulations, требования Береговой охраны США к оборудованию судов). Это не входит в COLREGS, Inland Rules или навигационные публикации NOAA/NGA. Правильный ответ B (Неверно), потому что топливные запорные клапаны требуются не только у бака, но и в других местах топливной системы согласно федеральным требованиям к безопасности судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH9WoBMxizUbEkwNsNCt5OuUQ7OlqOAAJVCAACHuIIRCw6BjyPv8NwOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH9moBMxmA378TuYOqlpjAtSQ0beGiAAJWCAACHuIIRCbFDWz_n9X6OwQ"
     },
     {
         "num": 166,
@@ -3991,8 +3991,8 @@ QUESTIONS = [
         "en_explain": "A prudent mariner must maintain proper engine maintenance logs and perform regular mechanical maintenance to ensure vessel seaworthiness and safe navigation. This practice supports compliance with Rule 2 (Responsibility) of both the COLREGS and US Inland Rules, which requires the master and crew to take all precautions required by the ordinary practice of seamen. Proper documentation also fulfills USCG regulatory requirements for vessel inspection and demonstrates due diligence in operating a safe vessel.",
         "ru_explain": "Благоразумный мореход должен вести надлежащие журналы технического обслуживания двигателя и проводить регулярное механическое обслуживание для обеспечения мореходности судна и безопасности судоходства. Эта практика способствует соблюдению Правила 2 (Ответственность) Международных правил предотвращения столкновений в море (МППСС) и Правил плавания по внутренним водам США, которые требуют от капитана и экипажа принять все меры предосторожности, требуемые обычной практикой мореходов. Надлежащая документация также выполняет требования нормативных актов БМРТ для инспекции судна и демонстрирует надлежащую осмотрительность при эксплуатации безопасного судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH92oBMxv4fIMvDVTXMO0_bFXNS4c_AAJXCAACHuIIRMQod64owYGYOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH-GoBMx0UiVTLKrLvn5moa_TTRAhdAAJYCAACHuIIRJGUauhAoQ-pOwQ"
     },
     {
         "num": 167,
@@ -4015,8 +4015,8 @@ QUESTIONS = [
         "en_explain": "Both gasoline and diesel marine engines can be cooled by either water (raw water or freshwater closed systems) or air, depending on their design and application. While water cooling is common on larger marine engines, many smaller outboard and portable engines use air cooling. This is a general marine engineering principle rather than a COLREGS or Inland Rules requirement.",
         "ru_explain": "Оба бензиновые и дизельные судовые двигатели могут охлаждаться либо водой (забортной водой или закрытыми системами пресной воды), либо воздухом, в зависимости от их конструкции и применения. В то время как водяное охлаждение распространено на более крупных судовых двигателях, многие меньшие подвесные и портативные двигатели используют воздушное охлаждение. Это общий принцип судовой механики, а не требование МППСС или Внутренних правил.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH-WoBMx_fv2yMSzjg_dtbQ9dGSs_IAAJZCAACHuIIRDnv68PQxFhbOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH-moBMyCyGMmMjD-koqiA6Kh-v2ifAAJaCAACHuIIRNC2LftVws3XOwQ"
     },
     {
         "num": 168,
@@ -4039,8 +4039,8 @@ QUESTIONS = [
         "en_explain": "The most common reason a marine diesel engine fails to start is lack of fuel reaching the combustion chamber, whether due to empty tanks, air in the fuel lines, clogged filters, or a faulty fuel pump. Unlike gasoline engines, diesel engines do not use spark plugs or an ignition system—they rely on compression ignition, making answers A, B, and D incorrect. This is a fundamental principle of marine diesel engine operation covered in USCG engineering and vessel systems requirements.",
         "ru_explain": "Дизельные двигатели работают по принципу воспламенения топлива от сжатия, а не от искры (в отличие от бензиновых). Поэтому варианты A и B не применимы к дизелям — у них нет системы зажигания со свечами. Наиболее распространённая причина отказа запуска дизеля — отсутствие подачи топлива: засорённые топливные фильтры, воздух в топливной системе, пустой бак или неисправность топливного насоса. Это базовое знание судовой механики для капитанов малых судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH-2oBMyJ7BGlxZ9ZdVnoo5lcJV-vUAAJbCAACHuIIRPagSR6yJVmuOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH_GoBMySPowM4vkEqiNte2wPNIP75AAJcCAACHuIIRFv5q5kTd7YAATsE"
     },
     {
         "num": 169,
@@ -4063,8 +4063,8 @@ QUESTIONS = [
         "en_explain": "The Federal Water Pollution Act (also known as the Clean Water Act) is the primary U.S. legislation that prohibits the discharge of oil and other harmful substances into navigable waters of the United States. This federal law establishes the regulatory framework enforced by the Coast Guard and EPA to prevent pollution of U.S. waters, requiring vessel operators to take immediate action and report any discharge of oil or hazardous substances.",
         "ru_explain": "⚠️ Данный вопрос относится к экологическому законодательству США (Federal Water Pollution Control Act, также известный как Clean Water Act), а не к COLREGS, Inland Navigation Rules или картографическим/метеорологическим стандартам NOAA/NGA. Правильный ответ — B (Federal Water Pollution Act), который регулирует защиту водных ресурсов США от загрязнения, включая запрет на сброс нефти и вредных веществ.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH_WoBMyUKd_l9QIRDg1DStAyDkUopAAJdCAACHuIIRPTG6rqFewIGOwQ",
+        "audio_a": "CQACAgEAAxkDAAIH_moBMyciiPqPBp8VhXKnS7SX6iPBAAJeCAACHuIIRNeHCFsQSFHeOwQ"
     },
     {
         "num": 170,
@@ -4087,8 +4087,8 @@ QUESTIONS = [
         "en_explain": "Under MARPOL Annex V and 33 CFR 151 (US regulations implementing MARPOL), \"garbage\" is specifically defined to include food wastes, paper, rags, glass, metal, bottles, crockery, and similar refuse—but explicitly excludes plastic, which has its own stricter discharge prohibitions. This distinction is critical because plastic disposal at sea is completely prohibited, while other garbage types may be discharged under certain conditions depending on distance from shore and whether the waste is ground.",
         "ru_explain": "Согласно MARPOL Annex V и 33 CFR 151.05, термин \"Garbage\" (судовые отходы) имеет специфическое определение в морском праве: это все виды пищевых, бытовых и эксплуатационных отходов (бумага, ветошь, стекло, металл, бутылки, посуда и т.д.), образующихся при нормальной эксплуатации судна и подлежащих постоянному или периодическому удалению. Важно: пластик выделен в отдельную категорию с полным запретом сброса в море на любом расстоянии от берега. Это разграничение критически важно для понимания правил обращения с отходами на судне.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIH_2oBMym-y1V7KIqdpBnw6PWsh3-rAAJfCAACHuIIRK32f1Mnhq0dOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIAAFqATMqNplSp0tc7j9RB7BgJYnt4wACYAgAAh7iCESExyscy1c80zsE"
     },
     {
         "num": 171,
@@ -4111,8 +4111,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 35(c), a vessel restricted in her ability to maneuver must sound one prolonged blast followed by two short blasts at intervals of not more than two minutes, regardless of whether she is underway or at anchor. This signal takes precedence over the normal at-anchor signal (bell and gong) that would otherwise be required for a vessel of 100 meters or more under Rule 35(g), because the RAM status defines the vessel's operational condition and warning to other vessels.",
         "ru_explain": "Согласно Правилу 35(c) COLREGS и 33 CFR 83.35(c), судно, ограниченное в возможности маневрирования, на ходу или на якоре подаёт сигнал: один продолжительный и два коротких звука через промежутки не более 2 минут. Однако Правило 35(g) устанавливает, что судно на якоре может вместо сигналов, предписанных для якорной стоянки (колокол и гонг), подавать сигнал своей категории. Ключевой момент: судно длиной 200 метров (100 метров и более) на якоре по Правилу 35(g) должно также звонить в колокол в носу и гонг в корме. Но как судно, ограниченное в возможности маневрирования, оно подаёт свой характерный сигнал — один продолжительный и два коротких. Ответ \"C\" указывает три коротких звука и интервал 1 минута, что соответствует альтернативной интерпретации для судов с особым статусом на якоре.  ⚠️ Примечание: официальный ответ \"C\" может отражать специфику экзамена USCG. Стандартный сигнал по COLREGS Rule 35(c) — один продолжительный + два коротких каждые 2 минуты.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIAWoBMyyVHjZ2Ysm2SppiPn0b_s7eAAJhCAACHuIIRHDplgYGkdBEOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIAmoBMy5FivA9FN2CHiBukfK4d2CEAAJiCAACHuIIRCqmGf8yH7nCOwQ"
     },
     {
         "num": 172,
@@ -4135,8 +4135,8 @@ QUESTIONS = [
         "en_explain": "Under 46 U.S.C. § 12133, a vessel's Certificate of Documentation must be kept on board the vessel and available for inspection by law enforcement officers at all times when the vessel is in operation. Failure to carry the official documentation can result in fines and penalties, as it serves as proof of the vessel's nationality, ownership, and eligibility to engage in specific trades.",
         "ru_explain": "# Maritime Terms Translation to Russian\n\nСогласно 46 U.S.C. § 12133, Свидетельство о регистрации судна должно находиться на борту судна и быть доступным для проверки должностными лицами правоохранительных органов в любое время, когда судно находится в операции. Невыполнение требования иметь при себе официальную документацию может привести к штрафам и санкциям, так как она служит доказательством флага судна, собственности и право на участие в определенных видах торговли.\n\n---\n\n**Maritime terms used:**\n- Судно (vessel)\n- Свидетельство о регистрации (Certificate of Documentation)\n- На борту (on board)\n- Правоохранительные органы (law enforcement)\n- Операция (operation)\n- Флаг судна (vessel's nationality/flag)\n- Собственность (ownership)\n- Торговля (trade)",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIA2oBMzCIvpXk74O_eI8Mt5ghKZflAAJjCAACHuIIRMssdjNhNG4bOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIBGoBMzHbQQg7aXCiIIe7wguSiyZJAAJkCAACHuIIRIjnDe3lsudiOwQ"
     },
     {
         "num": 173,
@@ -4159,8 +4159,8 @@ QUESTIONS = [
         "en_explain": "Under MARPOL Annex V (implemented in the US through 33 CFR 151), the discharge of plastics into the water is absolutely prohibited at any distance from shore. This is a zero-tolerance regulation because plastics do not biodegrade and pose severe threats to marine life and the marine environment. There is no exception to this rule regardless of how far offshore a vessel may be operating.",
         "ru_explain": "Согласно Приложению V к Конвенции MARPOL (Международная конвенция по предотвращению загрязнения с судов) и федеральным правилам США (33 CFR 151), сброс пластика в любые воды категорически запрещён. Это единственный вид мусора, для которого не существует исключений по расстоянию от берега. Пластик не разлагается в морской среде, представляет угрозу для морских животных и экосистемы. Весь пластиковый мусор должен храниться на борту и утилизироваться на берегу в специальных приёмных сооружениях порта.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIBWoBMzNOipDBIJy0VEK4aBC1b-v-AAJlCAACHuIIRHxNa3jOPQR4OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIBmoBMzXvVXwAAW85awVsvpkDYaNTtwACZggAAh7iCET8mmNUp-1yXjsE"
     },
     {
         "num": 174,
@@ -4183,8 +4183,8 @@ QUESTIONS = [
         "en_explain": "MARPOL 73/78 (International Convention for the Prevention of Pollution from Ships) is the primary international maritime convention regulating the discharge of pollutants from vessels, including oil, noxious liquid substances, sewage, and garbage. This convention, adopted in 1973 and modified by the 1978 Protocol, establishes discharge standards that U.S. vessels must comply with both domestically and internationally. Note that while this question addresses pollution regulations rather than COLREGS/Inland Rules (which govern navigation), MARPOL knowledge is required for USCG licensing examinations.",
         "ru_explain": "MARPOL 73/78 (Международная конвенция по предотвращению загрязнения с судов 1973 года, изменённая Протоколом 1978 года) — это основной международный документ, регулирующий сброс загрязняющих веществ с судов. Конвенция включает 6 приложений, охватывающих: нефть, вредные жидкие вещества, вредные вещества в упаковке, сточные воды, мусор и загрязнение воздуха. США ратифицировали МАРПОЛ, и её требования включены в национальное законодательство (33 CFR). Варианта \"MARPOL 76/87\" не существует — это вымышленное название.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIB2oBMzZVsjj3sj5BqtYK3LKy1KEKAAJnCAACHuIIRKIN5WXapqBbOwQ",
+        "audio_a": "CQACAgEAAxkDAAIICGoBMzjPrTPO3gwZ9LsC3fZ37An6AAJoCAACHuIIRFxXDYd-BYqxOwQ"
     },
     {
         "num": 175,
@@ -4207,8 +4207,8 @@ QUESTIONS = [
         "en_explain": "Under 33 CFR 153.203 and the Clean Water Act, any person in charge of a vessel must immediately notify the U.S. Coast Guard National Response Center of any oil discharge into navigable waters. The Coast Guard serves as the primary federal agency responsible for maritime pollution response and coordinates all spill cleanup efforts. Failure to report an oil spill is a federal offense subject to civil and criminal penalties.",
         "ru_explain": "⚠️ Данный вопрос относится к регулированию загрязнения морской среды (33 CFR Part 153 — Control of Pollution by Oil and Hazardous Substances), а не к COLREGS или правилам плавания. Согласно федеральным требованиям США, о любом разливе нефти необходимо немедленно сообщать в Береговую охрану США (U.S. Coast Guard) через Национальный центр реагирования (National Response Center). Coast Guard является основным федеральным агентством, ответственным за реагирование на морские разливы нефти.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIICWoBMzoGxVxOvlGDmuJ3CATMNEs1AAJpCAACHuIIRKESsVjwihzVOwQ",
+        "audio_a": "CQACAgEAAxkDAAIICmoBMzvHznPrhxIUvpDS161_3ghNAAJqCAACHuIIRHs4XDnils3gOwQ"
     },
     {
         "num": 176,
@@ -4231,8 +4231,8 @@ QUESTIONS = [
         "en_explain": "The **hailing port** is the port name displayed on the stern of a documented vessel and can be any port in the United States designated by the owner—it does not need to be where the vessel is actually based or registered. This differs from the \"home port,\" which typically refers to the vessel's principal base of operations. This requirement falls under U.S. Coast Guard documentation regulations (46 CFR Part 67), not COLREGS.",
         "ru_explain": "**Порт регистрации** — это название порта, отображаемое на корме зарегистрированного судна, и может быть любым портом Соединённых Штатов, выбранным владельцем — не обязательно портом, где судно фактически базируется или зарегистрировано. Это отличается от «домашнего порта», который обычно означает основное место базирования судна. Это требование регулируется документацией Береговой охраны США (46 CFR Part 67), а не МППСС.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIC2oBMz2SBMy0R54CHqx-bHnqD9_RAAJrCAACHuIIRMtIGTTo7cUqOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIDGoBMz6Ry1wAASxrpiLfX3iVg98q-wACbAgAAh7iCESfrVs4m4vknjsE"
     },
     {
         "num": 177,
@@ -4255,8 +4255,8 @@ QUESTIONS = [
         "en_explain": "The **home port** is the port where the vessel's documentation office is located nearest to the owner's residence. This designation appears on the vessel's Certificate of Documentation and must be displayed on the stern of the vessel. This requirement is established under 46 U.S.C. Chapter 121 (Vessel Documentation) and related Coast Guard regulations, not COLREGS or Inland Rules.",
         "ru_explain": "**Порт приписки** — порт, где расположено ближайшее к месту жительства судовладельца учреждение документирования судна. Данное обозначение указывается в Свидетельстве о документировании судна и должно быть отображено на корме судна. Данное требование установлено в соответствии с 46 U.S.C. Раздел 121 (Документирование судов) и соответствующими нормативными актами Береговой охраны, а не МППСС или Правилами внутреннего плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIDWoBM0BPPitCzhW_LSB2VQ14Twg_AAJtCAACHuIIRJ20vMMXxZ4GOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIDmoBM0K-6M-cHmCiV9NaJxMVrDPIAAJuCAACHuIIRD6dbVWXHqf6OwQ"
     },
     {
         "num": 178,
@@ -4279,8 +4279,8 @@ QUESTIONS = [
         "en_explain": "The Certificate of Inspection (COI) is a document issued by the U.S. Coast Guard certifying that a vessel has passed a comprehensive annual inspection and meets all applicable safety standards under 46 U.S.C. and 46 CFR. This certificate specifies the vessel's approved routes, maximum passenger capacity, minimum crew requirements, and safety equipment required. Vessels required to carry a COI include passenger vessels, small passenger vessels, and certain other inspected vessels operating in U.S. waters.",
         "ru_explain": "Certificate of Inspection (COI) — Свидетельство об инспекции — это официальный документ, выдаваемый Береговой охраной США (USCG) после прохождения судном ежегодной комплексной проверки. Согласно 46 CFR (Code of Federal Regulations), определённые категории судов (пассажирские суда, танкеры, буксиры и др.) обязаны иметь действующий COI для законной эксплуатации. Инспекция проверяет соответствие судна требованиям безопасности: спасательное оборудование, противопожарные системы, корпус, механизмы и другие аспекты. Vessel Safety Check (вариант A) — это добровольная проверка, проводимая вспомогательными силами Береговой охраны для прогулочных судов, и не является официальным сертификатом USCG.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIID2oBM0TWbbNuzvhLZ1WFk9LVF7LYAAJvCAACHuIIRIbldUdyd2C_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIEGoBM0WapYQZu0Qvn1tuMEYZgfzqAAJwCAACHuIIRKBkv52Fgbd5OwQ"
     },
     {
         "num": 179,
@@ -4303,8 +4303,8 @@ QUESTIONS = [
         "en_explain": "Under 46 CFR 67.123, the official number of a documented vessel must be marked in block-type Arabic numerals not less than 3 inches in height. This number must be permanently affixed in a clearly visible location on the vessel's interior structure. This is a U.S. Coast Guard documentation requirement, not a COLREGS or Inland Rules provision.",
         "ru_explain": "⚠️ Данный вопрос относится к требованиям документации и регистрации судов (46 CFR), а не к COLREGS или Inland Navigation Rules. Согласно федеральным требованиям США по документированию судов, официальный номер судна должен быть нанесён цифрами высотой не менее 3 дюймов (7,6 см) и размещён на постоянной части корпуса судна (обычно на главной балке или внутри корпуса). Это требование регулируется 46 CFR Part 67 (Documentation of Vessels).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIEWoBM0dEp0_KLEw6KX70Fle-ECs9AAJxCAACHuIIRJ15kAhM5umyOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIEmoBM0kJwfPl07sxgGfcASY77ztpAAJyCAACHuIIRBkhVict0nwnOwQ"
     },
     {
         "num": 180,
@@ -4327,8 +4327,8 @@ QUESTIONS = [
         "en_explain": "The use of most detergents and chemical sinking agents to disperse or sink oil spills is prohibited in U.S. waters under federal environmental regulations, including provisions enforced by the Coast Guard and EPA. These substances, while they may make oil appear to disappear from the surface, actually push pollutants into the water column where they cause greater harm to marine organisms and ecosystems. Only EPA-approved dispersants may be used, and only under specific authorized circumstances during oil spill response operations.",
         "ru_explain": "Согласно федеральному законодательству США (33 CFR Part 155 — Oil or Hazardous Material Pollution Prevention Regulations), использование химических диспергаторов, детергентов и других агентов для обработки разливов нефти строго регулируется. Эти вещества не устраняют загрязнение, а лишь заставляют нефть тонуть или диспергироваться, при этом химикаты сами по себе токсичны для морских организмов. Применение таких средств без специального разрешения Береговой охраны США (USCG) и Агентства по охране окружающей среды (EPA) является незаконным. Правильные действия при разливе: локализация механическими средствами (боновые заграждения) и сбор нефти с поверхности воды.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIE2oBM0sOhXVX_OvMb-nrLvP22OLiAAJzCAACHuIIRKtRfdKbeGtMOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIFGoBM0x2D4I2ISF8bas4TOUdgpf7AAJ0CAACHuIIRLXXpHJl3wABtTsE"
     },
     {
         "num": 181,
@@ -4351,8 +4351,8 @@ QUESTIONS = [
         "en_explain": "Under 46 U.S.C. § 3311 and 46 CFR Subchapter T, all inspected vessels over 100 Gross Tons carrying passengers for hire must carry a valid Certificate of Inspection (COI) issued by the U.S. Coast Guard. This certificate verifies the vessel has passed required safety inspections and is authorized to carry a specific number of passengers on designated routes. The COI must be posted in a conspicuous location accessible to passengers.",
         "ru_explain": "⚠️ Данный вопрос относится к требованиям USCG по документации судов (46 CFR), а не к COLREGS, Inland Navigation Rules или картографическим/метеорологическим источникам NOAA/NGA. Certificate of Inspection (COI) — обязательный документ для пассажирских судов, выдаваемый Береговой охраной США после инспекции, подтверждающий соответствие судна требованиям безопасности.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIFWoBM04aYB2_O5u2cqmHvx3bEuZ5AAJ1CAACHuIIRKvkMYWSsuW8OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIFmoBM1AcpMHSN9cdbK1eQp0PSgEiAAJ2CAACHuIIRIsx7-gH56nlOwQ"
     },
     {
         "num": 182,
@@ -4375,8 +4375,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 35(c) of both the International and Inland Rules, a vessel being towed (or if more than one vessel is towed, the last vessel in the tow if manned) shall sound one prolonged blast followed by three short blasts when in or near an area of restricted visibility. This signal is sounded immediately after the towing vessel's signal and serves to alert other vessels to the presence and extended length of a tow astern.",
         "ru_explain": "Согласно COLREGS Правило 35(c) и 33 CFR 83.35(c) — звуковые сигналы при ограниченной видимости: буксируемое судно (или последнее судно в составе буксируемого каравана, если на нём есть экипаж) должно подавать с интервалами не более 2 минут один продолжительный и три коротких звука. Этот сигнал подаётся непосредственно после сигнала буксирующего судна. Продолжительный звук длится 4-6 секунд, короткий — около 1 секунды. Данный сигнал позволяет другим судам определить, что в условиях ограниченной видимости рядом находится буксирный караван, который имеет значительно бо́льшую длину и ограниченную манёвренность.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIF2oBM1K41zhoXeEEQmUc0bT3SF8lAAJ3CAACHuIIRN__Q_s-SqGPOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIGGoBM1MjxgkmYILPIPN2LRWtNsC9AAJ4CAACHuIIRKgTqtorsAizOwQ"
     },
     {
         "num": 183,
@@ -4399,8 +4399,8 @@ QUESTIONS = [
         "en_explain": "The Stability Letter is an official document issued by the U.S. Coast Guard that certifies stability calculations have been performed and confirms the vessel can maintain adequate stability under various loading conditions. This document, required under 46 CFR (Code of Federal Regulations), provides the master with critical information about the vessel's maximum allowable vertical center of gravity and other stability parameters. The Stability Letter must be kept aboard and consulted to ensure the vessel operates within safe stability limits.",
         "ru_explain": "Письмо об остойчивости (Stability Letter) — это официальный документ, выдаваемый Береговой охраной США (USCG), который подтверждает, что для данного судна были выполнены все необходимые расчёты остойчивости. Этот документ содержит информацию о допустимых условиях загрузки судна и ограничениях, при которых судно сохраняет приемлемую остойчивость. Согласно требованиям 46 CFR (Code of Federal Regulations), суда определённых категорий обязаны иметь на борту действующее Письмо об остойчивости. Certificate of Documentation — это документ о регистрации судна, Certificate of Inspection — свидетельство о соответствии судна требованиям безопасности. Варианта \"USCG Certificate of Stability\" как отдельного документа не существует.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIGWoBM1V4dsyW0LeQr2WniAQi7c3mAAJ5CAACHuIIRJbAZO-xaMynOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIGmoBM1fpYVMQbnLBr9uVnCIMNChcAAJ6CAACHuIIRFpxWtBeUYKEOwQ"
     },
     {
         "num": 184,
@@ -4423,8 +4423,8 @@ QUESTIONS = [
         "en_explain": "The Certificate of Inspection (COI) must be posted under glass or other transparent material in a conspicuous location where passengers can easily read it, as required by 46 CFR 176.110. This document displays the vessel's authorized route, passenger capacity, and other operational limitations that are essential for passenger safety and awareness.",
         "ru_explain": "⚠️  Данный вопрос относится к требованиям 46 CFR (Code of Federal Regulations) — правилам Береговой охраны США для инспектируемых пассажирских судов. Согласно 46 CFR 176.104, Certificate of Inspection (COI) должен быть вывешен под стеклом или в прозрачной рамке в месте, доступном для обзора пассажирами. Это не входит в указанные официальные источники (COLREGS, 33 CFR Part 83, NOAA/NGA).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIG2oBM1kKpRSogO5C6R-cBiqz-7WEAAJ7CAACHuIIRJ2nQIrdwojUOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIHGoBM1r3jmR_icp7kJScJn3WAAEr2gACfAgAAh7iCESSrSkzTN0ijTsE"
     },
     {
         "num": 185,
@@ -4447,8 +4447,8 @@ QUESTIONS = [
         "en_explain": "The Federal Communications Commission (FCC) grants the Radio Operators License, which authorizes an individual to operate marine radio equipment aboard vessels. This license demonstrates that the holder has met the requirements to properly use VHF and other radio communications equipment in accordance with FCC regulations. While the FCC also issues Station Licenses for the radio equipment itself, the Radio Operators License is the credential granted specifically to the person operating the equipment.",
         "ru_explain": "# Морские термины\n\n**Лицензия оператора радиостанции** - выдаётся Федеральной комиссией по связи (ФКС) и уполномочивает физическое лицо управлять судовым радиооборудованием на борту судов. Эта лицензия подтверждает, что держатель соответствует требованиям надлежащего использования УКВ-связи и другого радиосредства в соответствии с нормативными актами ФКС. Хотя ФКС также выдаёт **лицензию судовой радиостанции** для самого радиооборудования, **лицензия оператора радиостанции** - это удостоверение, выданное конкретному лицу, управляющему оборудованием.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIHWoBM1wgIcSpsxe1JuqUQYut8VVWAAJ9CAACHuIIRK8gaXJx9Hi1OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIHmoBM12to8_pMiFIYLeioF9AWcs8AAJ-CAACHuIIRAbXlRLfsYmsOwQ"
     },
     {
         "num": 186,
@@ -4471,8 +4471,8 @@ QUESTIONS = [
         "en_explain": "Under MARPOL Annex I regulations as implemented by U.S. Coast Guard regulations (33 CFR 151.25), an Oil Record Book Part I is required on all vessels of 400 gross tons and above. This record book documents all machinery space oil operations including ballasting, cleaning of oil fuel tanks, and discharge of dirty ballast or cleaning water from fuel tanks. The requirement ensures proper documentation of oil handling procedures to prevent marine pollution.",
         "ru_explain": "В соответствии с положениями Приложения I МАРПОЛ в реализации Береговой охраной США (33 CFR 151.25), Журнал записей о нефти часть I требуется на всех судах валовой вместимостью 400 брутто-регистровых тонн и выше. Этот журнал документирует все операции нефтепродуктов машинного отделения, включая балластировку, очистку танков топливного масла и выпуск грязного балласта или промывочной воды из топливных танков. Требование обеспечивает надлежащее документирование процедур обращения с нефтью для предотвращения загрязнения морской среды.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIH2oBM1-LliuxlXB68B8WDtc97Mo-AAJ_CAACHuIIRJ3iZgjAAAEhvjsE",
+        "audio_a": "CQACAgEAAxkDAAIIIGoBM2FPLmBhN2nqf8rYDpgk-qagAAKACAACHuIIROqvWvGuMTH5OwQ"
     },
     {
         "num": 187,
@@ -4495,8 +4495,8 @@ QUESTIONS = [
         "en_explain": "The **Official Log** is a federally required document under 46 U.S.C. § 11301 that must be maintained by the Master aboard U.S. merchant vessels engaged in voyages from a U.S. port to a foreign port, as well as vessels over 100 gross tons on coastwise voyages. This log serves as the official legal record of the voyage, documenting crew changes, disciplinary actions, casualties, and other significant events required by the Coast Guard.",
         "ru_explain": "Согласно 46 CFR (Code of Federal Regulations), Official Logbook (Официальный судовой журнал) — это обязательный документ, требуемый федеральным законодательством США. Он должен вестись на: - Торговых судах США, совершающих рейсы из американских портов в иностранные порты - Судах валовой вместимостью более 100 GT на внутрикаботажных (intracoastal) рейсах  В Official Log фиксируются: дисциплинарные взыскания, несчастные случаи, рождения/смерти на борту, учения по безопасности, изменения в составе экипажа и другие официальные записи, требуемые законом. Этот журнал имеет юридическую силу и может использоваться в судебных разбирательствах, в отличие от обычного судового журнала (Ship's Log), который ведётся для навигационных целей.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIIWoBM2PQE3xFpybw0bykBPMfloAPAAKBCAACHuIIROCR0t2O_pi2OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIImoBM2TaNUP7ypgAAagOmQP-VKt74gACgggAAh7iCES-0ozlZ5QJkDsE"
     },
     {
         "num": 188,
@@ -4519,8 +4519,8 @@ QUESTIONS = [
         "en_explain": "CFR stands for \"Code of Federal Regulations,\" which is the codification of all permanent rules and regulations published by the executive departments and agencies of the federal government. For mariners, Title 33 CFR contains Navigation and Navigable Waters (including the U.S. Inland Navigation Rules), while Title 46 CFR covers Shipping regulations. Understanding CFR references is essential for compliance with federal maritime law and USCG requirements.",
         "ru_explain": "CFR (Code of Federal Regulations) — Свод федеральных правил США — это официальный сборник всех постоянно действующих правил и нормативных актов федерального правительства США. Для судоводителей особенно важен раздел 33 CFR (Title 33 — Navigation and Navigable Waters), который содержит Правила внутреннего плавания США (33 CFR Part 83 — Inland Navigation Rules). Эти правила регулируют движение судов во внутренних водах США и являются обязательными к знанию для получения лицензии капитана.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIII2oBM2ZvtalW8o70Ib1N2HkqTS67AAKDCAACHuIIRCMUQ1q7mqAAATsE",
+        "audio_a": "CQACAgEAAxkDAAIIJGoBM2glFeYrN4JeVba-Mtk5oeRNAAKECAACHuIIRCKVthgb7qsVOwQ"
     },
     {
         "num": 189,
@@ -4543,8 +4543,8 @@ QUESTIONS = [
         "en_explain": "The Radiotelephone Log must be maintained as a **daily** record documenting the vessel's radio equipment status, routine communications, and any distress calls monitored or transmitted. This requirement stems from FCC regulations (47 CFR Part 80) governing ship radio stations, which mandate daily entries to ensure continuous accountability of radio watch procedures and emergency communications. Proper maintenance of this log is essential for Coast Guard inspections and serves as legal documentation of the vessel's radio operations.",
         "ru_explain": "# Журнал радиотелефонной связи\n\nЖурнал радиотелефонной связи должен вестись как **ежедневный** учёт, документирующий статус радиооборудования судна, плановые сообщения и любые принятые или переданные сигналы бедствия. Это требование вытекает из нормативных актов ФКК (47 CFR Part 80), регулирующих работу судовых радиостанций, которые предписывают ежедневные записи для обеспечения постоянной ответственности за процедуры радионаблюдения и аварийную связь. Надлежащее ведение данного журнала необходимо для инспекций Береговой охраны и служит юридическим документом, подтверждающим радиооперации судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIJWoBM2rT6MRRYgqdK-kvTg58-bVuAAKFCAACHuIIRJB8_q-Hy0hGOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIJmoBM2tgYoCkb96NR90Mw5ZRRJsvAAKGCAACHuIIRG0ufawuC3KuOwQ"
     },
     {
         "num": 190,
@@ -4567,8 +4567,8 @@ QUESTIONS = [
         "en_explain": "Class A fires involve ordinary combustible materials such as wood, paper, cloth, and trash that leave an ash residue when burned. These fires are typically extinguished using water or water-based extinguishing agents, which cool the burning material below its ignition temperature. This classification is established by the National Fire Protection Association (NFPA) standards, which are incorporated into USCG vessel safety regulations.",
         "ru_explain": "Согласно классификации пожаров USCG и NFPA: - **Класс A** — пожары обычных твёрдых горючих материалов (дерево, бумага, ткань, мусор). Тушатся водой или пеной. - **Класс B** — горючие жидкости (топливо, масло, краски). - **Класс C** — электрооборудование под напряжением. - **Класс D** — горючие металлы.  На судне важно знать классификацию пожаров для выбора правильного огнетушителя. Для пожаров класса A применяется вода, которая охлаждает материал ниже температуры воспламенения.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIJ2oBM23ewsSVXdP4g4647hsrbwPoAAKHCAACHuIIRALQ5jjo_8DAOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIKGoBM27rMv3N0sp_4groFv_eeORzAAKICAACHuIIRC1b9rFdGhFnOwQ"
     },
     {
         "num": 191,
@@ -4591,8 +4591,8 @@ QUESTIONS = [
         "en_explain": "An orange flag displaying a black circle and black square is a recognized distress signal under Rule 37 and Annex IV of both International and Inland Rules. This visual signal is used to indicate that a vessel is in distress and requires assistance. The distinctive color combination and geometric shapes make it easily identifiable from a distance during daylight hours.",
         "ru_explain": "Согласно COLREGS Приложение IV (Annex IV) \"Сигналы бедствия\" и 33 CFR Part 83 Annex IV, пункт 1(g): среди сигналов, указывающих на бедствие и необходимость помощи, перечислен \"квадратный флаг с шаром или чем-либо похожим на шар над ним или под ним\" — однако более точно в пункте 1(n) указан \"оранжевое полотнище с чёрным квадратом и кругом или другим соответствующим символом\". Этот визуальный сигнал бедствия предназначен для привлечения внимания в дневное время и является одним из международно признанных сигналов бедствия. Оранжевый цвет выбран для максимальной видимости на фоне воды.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIKWoBM3CCuX91rqmfRkZzgEg5Mnb4AAKJCAACHuIIRFEX_ctgmj34OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIKmoBM3IJn2n7mUQYU59iEh4VdcsTAAKKCAACHuIIRIxljRY--TMXOwQ"
     },
     {
         "num": 192,
@@ -4615,8 +4615,8 @@ QUESTIONS = [
         "en_explain": "Title 33 of the Code of Federal Regulations covers Navigation and Navigable Waters, which includes the U.S. Inland Navigation Rules governing vessel operations. Title 46 covers Shipping, encompassing vessel documentation, inspection requirements, and mariner licensing and certification—the regulations most directly affecting licensed mariners operating U.S. vessels.",
         "ru_explain": "Кодекс федеральных правил США (Code of Federal Regulations, CFR) организован по разделам (Titles). Для моряков ключевыми являются два раздела: **Title 33 — Navigation and Navigable Waters** (Навигация и судоходные воды) — содержит правила плавания, включая 33 CFR Part 83 (Inland Navigation Rules), требования к навигационным огням, звуковым сигналам, маркировке фарватеров. **Title 46 — Shipping** (Судоходство) — регулирует лицензирование моряков, требования к безопасности судов, их инспектирование, документацию и сертификацию экипажа. Именно эти два раздела (33 и 46) должен знать каждый капитан при получении лицензии USCG.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIK2oBM3O4DwnvVesQv7hp9k4J2p4yAAKLCAACHuIIRKFw7VbFkg4lOwQ",
+        "audio_a": "CQACAgEAAxkDAAIILGoBM3XhbGFqskW6MsggZmxLJQABTgACjAgAAh7iCERA2Ir5Ld0UijsE"
     },
     {
         "num": 193,
@@ -4639,8 +4639,8 @@ QUESTIONS = [
         "en_explain": "Foam extinguishers are effective on both Class A (ordinary combustibles like wood and paper) and Class B (flammable liquids) fires because the foam smothers the fire and prevents re-ignition. However, foam leaves a messy, wet residue that requires significant cleanup after use. This is covered under USCG firefighting equipment requirements in 46 CFR Subchapter C, which governs marine safety equipment standards for uninspected vessels.",
         "ru_explain": "Пенные огнетушители эффективны для тушения пожаров класса A (твёрдые горючие материалы: дерево, бумага, ткань) и класса B (горючие жидкости: топливо, масло, краски). Пена образует плёнку, которая изолирует горящую поверхность от кислорода и охлаждает её. Главный недостаток — пена оставляет значительный осадок, который требует последующей уборки. CO2 и Halon — «чистые» средства без осадка, но CO2 неэффективен для класса A, а Halon ограничен в использовании. Вода эффективна только для класса A и опасна при тушении горючих жидкостей (класс B).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIILWoBM3djAgll-ry4s_4SkMppGldNAAKNCAACHuIIRBVIOck8iRx4OwQ",
+        "audio_a": "CQACAgEAAxkDAAIILmoBM3iZjZKGDTvFkRuh3Cb6acgPAAKOCAACHuIIRHWA3bhTh2QaOwQ"
     },
     {
         "num": 194,
@@ -4663,8 +4663,8 @@ QUESTIONS = [
         "en_explain": "Carbon dioxide (CO₂) extinguishers are effective on Class A (ordinary combustibles), Class B (flammable liquids), and Class C (electrical) fires because CO₂ smothers flames without leaving residue or conducting electricity. This makes CO₂ a versatile firefighting agent aboard vessels. Per 46 CFR and USCG marine firefighting requirements, vessel operators must understand the appropriate extinguisher types for different fire classifications.",
         "ru_explain": "⚠️  Примечание: Данный вопрос относится к пожарной безопасности на судах и не входит в указанные официальные источники (COLREGS, 33 CFR Part 83, NOAA/NGA). Информация о классах пожаров и огнетушащих веществах регулируется требованиями USCG и SOLAS. Углекислый газ (CO₂) действительно является универсальным средством для пожаров классов A (твёрдые материалы), B (жидкости) и C (электрооборудование), так как не проводит электричество и не оставляет остатков.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIL2oBM3qvad6PjXwT1K5eG1RDz0qPAAKPCAACHuIIREpJiw84Wq_5OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIMGoBM3yqAuV7fAlcNJmX3hzQekU5AAKQCAACHuIIRO74pNAVgoyzOwQ"
     },
     {
         "num": 195,
@@ -4687,8 +4687,8 @@ QUESTIONS = [
         "en_explain": "Conduction is the transfer of heat through direct physical contact between materials, allowing fire to spread from one object to another that is touching it. This is one of the three primary methods of heat transfer that mariners must understand for shipboard firefighting, alongside convection and radiation. Knowledge of fire behavior and suppression methods is required under USCG licensing regulations for vessel safety (46 CFR).",
         "ru_explain": "Теплопроводность — это передача тепла через прямой физический контакт между материалами, позволяющая огню распространяться с одного предмета на другой при их соприкосновении. Это один из трёх основных способов передачи тепла, который морские специалисты должны понимать при тушении пожаров на судне, наряду с конвекцией и излучением. Знание поведения пожара и методов его тушения требуется согласно нормативам лицензирования USCG для безопасности судна (46 CFR).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIMWoBM33MJD6Gu0UqID5WpmZWbUWRAAKRCAACHuIIRA6TeDkCtiG_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIMmoBM388Jx9jhi_egLov6duBKiG5AAKSCAACHuIIRM2ooIFvqdjoOwQ"
     },
     {
         "num": 196,
@@ -4711,8 +4711,8 @@ QUESTIONS = [
         "en_explain": "Fires involving energized electrical equipment, including electrical conduit, live electrical equipment, and electrical insulation, are designated as Class C fires. Class C fires require non-conductive extinguishing agents such as CO2 or dry chemical to prevent electrical shock hazards. Once the electrical equipment is de-energized, the fire is reclassified based on the remaining burning material (typically Class A for ordinary combustibles).",
         "ru_explain": "Согласно классификации пожаров USCG и NFPA (National Fire Protection Association): • **Класс A** — обычные горючие материалы (дерево, бумага, ткань) • **Класс B** — горючие жидкости и газы (топливо, масла, краски) • **Класс C** — электрическое оборудование под напряжением (кабели, щиты, электроприборы) • **Класс D** — горючие металлы (магний, титан, натрий)  Пожары класса C опасны риском поражения электрическим током. Для их тушения используются только непроводящие огнетушащие вещества: углекислотные (CO₂) или порошковые огнетушители. Категорически запрещено использовать воду или пену на оборудовании под напряжением.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIM2oBM4HjZr2j0oyoDBOqOPfX8yBrAAKTCAACHuIIRCHVYx9uXoG1OwQ",
+        "audio_a": "CQACAgEAAxkDAAIINGoBM4IjSJWbqddqGHEq3R0AAeMOUgAClAgAAh7iCES9GUv6N_bDXzsE"
     },
     {
         "num": 197,
@@ -4735,8 +4735,8 @@ QUESTIONS = [
         "en_explain": "High-velocity fog applicators, used in marine firefighting operations, produce a powerful stream with an effective range of 25-35 feet. This extended reach allows crew members to attack fires from a safer distance while still delivering adequate water or foam to the base of the flames. This information relates to USCG firefighting equipment standards rather than COLREGS or Inland Rules, as it pertains to vessel safety equipment requirements under 46 CFR.",
         "ru_explain": "# Морские термины\n\n**Высокоскоростные генераторы водяного тумана** — установки для тушения пожаров на судах, создающие мощный поток с эффективной дальностью распыления 25-35 футов. Увеличенная дальность позволяет членам экипажа атаковать очаги возгорания с безопасного расстояния, обеспечивая при этом адекватную подачу воды или пенотушащего средства к основанию пламени. Данная информация относится к стандартам противопожарного оборудования USCG (Береговой охраны США) в области безопасности судов согласно 46 CFR, а не к Международным правилам предотвращения столкновений судов в море или Правилам плавания по внутренним водным путям.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIINWoBM4T9NM-pEtd4SxPiV1L5BNB7AAKVCAACHuIIRGTWkGhBmczROwQ",
+        "audio_a": "CQACAgEAAxkDAAIINmoBM4b7629dc5RskaYICMecDbwuAAKWCAACHuIIRJN2sGjiz6MWOwQ"
     },
     {
         "num": 198,
@@ -4759,8 +4759,8 @@ QUESTIONS = [
         "en_explain": "The fire triangle consists of three essential elements: oxygen (air), heat, and fuel. All three components must be present simultaneously for combustion to occur; removing any one element will extinguish the fire. This fundamental fire safety concept is covered in USCG firefighting training requirements under 46 CFR and is essential knowledge for vessel operators responding to onboard fires.",
         "ru_explain": "Для возникновения и поддержания горения необходимы три элемента, образующие так называемый «пожарный треугольник» (Fire Triangle): 1) **Кислород** (воздух) — окислитель; 2) **Тепло** — источник воспламенения; 3) **Топливо** (горючее вещество) — материал, который горит. Устранение любого из этих элементов приводит к прекращению горения. Это базовый принцип пожаротушения на судах: охлаждение водой убирает тепло, пена или CO₂ перекрывают доступ кислорода, удаление горючих материалов устраняет топливо.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIN2oBM4exQn9lmq1TSwUBBnArtO4bAAKXCAACHuIIRMXlYmCkT03ZOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIOGoBM4nat02ZTeLX5ZsJk-V5l0C1AAKYCAACHuIIRHeJba2JQSnSOwQ"
     },
     {
         "num": 199,
@@ -4783,8 +4783,8 @@ QUESTIONS = [
         "en_explain": "Dry powder extinguishing agents are specifically designed for Class D fires, which involve combustible metals such as magnesium, titanium, and sodium. Standard extinguishing agents like water, foam, CO2, or Halon can react dangerously with burning metals, making dry powder the only safe and effective choice. This is covered under USCG firefighting requirements for vessel safety equipment.",
         "ru_explain": "# Maritime Translation - Dry Powder Extinguishing Agents\n\nСухие порошковые огнетушащие вещества специально разработаны для пожаров класса D, которые связаны с горючими металлами, такими как магний, титан и натрий. Стандартные огнетушащие средства, такие как вода, пена, CO2 или галон, могут опасно реагировать с горящими металлами, что делает сухой порошок единственным безопасным и эффективным выбором. Это охватывается требованиями USCG по противопожарной безопасности судового оборудования.\n\n---\n\n**Key maritime terms:**\n- USCG (Берегоохранное управление США)\n- судовое оборудование (vessel safety equipment)\n- противопожарная безопасность (firefighting safety)\n- огнетушащие средства (extinguishing agents)",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIOWoBM4tJtPmCYOejYglD1QiBvE6IAAKZCAACHuIIRP7chmr9938VOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIOmoBM4ws0ct-pz0g_YmHpxEbjTKcAAKaCAACHuIIROGHEA_kkuwqOwQ"
     },
     {
         "num": 200,
@@ -4807,8 +4807,8 @@ QUESTIONS = [
         "en_explain": "The U.S. Coast Guard classifies marine fire extinguishers by type and size, with B-I and B-II being the standard classifications for extinguishers designed to combat flammable liquid fires (Class B fires) commonly found on recreational vessels. B-I extinguishers are smaller units, while B-II extinguishers have greater capacity. This classification system is established under 46 CFR (Code of Federal Regulations) governing marine safety equipment requirements for uninspected vessels.",
         "ru_explain": "Береговая охрана США классифицирует морские огнетушители по типу и размеру, причём Б-I и Б-II являются стандартными классификациями огнетушителей, предназначенных для борьбы с пожарами легковоспламеняющихся жидкостей (пожары класса Б), обычно встречающимися на рекреационных судах. Огнетушители Б-I — это более компактные устройства, в то время как огнетушители Б-II имеют большую ёмкость. Данная система классификации установлена согласно 46 CFR (Своду федеральных нормативов), регулирующему требования к морскому спасательному оборудованию для неосмотренных судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIO2oBM45P1-ahlEQpA8kiktzrflJAAAKbCAACHuIIRBY2MunpB5IbOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIPGoBM4-Yu49z3D0RW1GxGefWNCpkAAKcCAACHuIIRH5hxNdfpziYOwQ"
     },
     {
         "num": 201,
@@ -4831,8 +4831,8 @@ QUESTIONS = [
         "en_explain": "Halon (bromochlorodifluoromethane) was widely used as a fire extinguishing agent aboard vessels due to its effectiveness on Class B and C fires, but its production was banned under the Montreal Protocol because it severely depletes the ozone layer. While existing Halon systems may still be maintained on some vessels, new production has ceased and alternative agents such as FM-200 or CO2 are now used. This is addressed under USCG marine safety regulations regarding approved fire extinguishing equipment (46 CFR Subchapter S).",
         "ru_explain": "Галон (Halon) — это галогенированный углеводород, который ранее широко применялся в судовых системах пожаротушения благодаря своей высокой эффективности. Однако производство галона было прекращено в соответствии с Монреальским протоколом 1987 года, поскольку это вещество разрушает озоновый слой атмосферы. Существующие системы на галоне могут использоваться до исчерпания запасов, но новые установки запрещены. На смену галону пришли экологически безопасные альтернативы. CO2, сухой порошок и сухие химические вещества продолжают производиться и использоваться на судах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIPWoBM5Fx7CWSPfHE3RZhpOR7oiT7AAKdCAACHuIIRP_FKH-kfJXQOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIPmoBM5JFPEosUJ5uM2lkgWPG_a6XAAKeCAACHuIIRD-8B0p_LsP6OwQ"
     },
     {
         "num": 202,
@@ -4855,8 +4855,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 24(g) of both International and Inland Rules, a vessel or object being towed that is partly submerged and difficult to see must exhibit a diamond shape during daylight hours. This single diamond shape is required regardless of the length of the tow, serving as a warning signal to other vessels that a hazardous, hard-to-detect object is being towed astern.",
         "ru_explain": "Согласно Правилу 24(g) МППСС (COLREGS Rule 24(g)) и идентичному правилу 33 CFR 83.24(g) ППВВП США: объект или объекты, буксируемые частично погружёнными или труднозаметные для обнаружения, должны выставлять в дневное время ромбовидный знак (diamond shape). Это требование применяется независимо от длины буксирной линии — ромб должен быть выставлен как при длине буксира 200 метров или менее, так и при превышении этой длины. Чёрный шар не используется для обозначения буксируемых объектов — он применяется для судов, стоящих на якоре (Правило 30).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIP2oBM5Tpw5B_OTe4FGzWeJLMewAB0AACnwgAAh7iCERu_ENdj6d2YjsE",
+        "audio_a": "CQACAgEAAxkDAAIIQGoBM5euFcEJKWYYue0UAQZ1DSLBAAKgCAACHuIIRAmOfpBEhvqmOwQ"
     },
     {
         "num": 203,
@@ -4879,8 +4879,8 @@ QUESTIONS = [
         "en_explain": "Under 46 CFR 25.30, recreational vessels between 26 and 40 feet in length are required to carry a minimum of two B-I type approved hand-portable fire extinguishers. This federal regulation ensures adequate firefighting capability proportional to vessel size, as larger boats have increased fire risks due to greater fuel capacity and machinery spaces.",
         "ru_explain": "По 46 CFR 25.30 маломерные суда длиной от 26 до 40 футов обязаны иметь на борту минимум два ручных портативных огнетушителя типа B-I с утверждением. Данное федеральное постановление обеспечивает адекватные возможности пожаротушения, соответствующие размерам судна, так как более крупные суда имеют повышенный риск пожара из-за большей вместимости топливных танков и машинных отделений.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIQWoBM5jB50lYQHSLla978uCxhf-_AAKhCAACHuIIRP5rrxSkyWE9OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIQmoBM5pqgjIjvmVxC25f-LEZT0EvAAKiCAACHuIIRGgJzCwuCXvwOwQ"
     },
     {
         "num": 204,
@@ -4903,8 +4903,8 @@ QUESTIONS = [
         "en_explain": "Maintaining all USCG-approved fire extinguishers in proper working order is a fundamental fire prevention practice required under 46 CFR (Code of Federal Regulations) for vessel safety. Fire extinguishers must be inspected regularly, kept accessible, and be of the appropriate type and size for the vessel. Leaving fuel in open containers (option B) is a fire hazard, not a prevention method, and while fire drills are important, \"daily\" drills (option A) is not a standard requirement for six-pack operations.",
         "ru_explain": "Согласно требованиям USCG по пожарной безопасности на малых судах (46 CFR), все противопожарное оборудование должно содержаться в исправном состоянии и быть готовым к немедленному использованию. Огнетушители должны регулярно проверяться и обслуживаться. Вариант A (ежедневные учения) избыточен для малых судов. Вариант B опасен — топливо нельзя хранить в открытых ёмкостях из-за риска воспламенения паров. Правильный ответ C — поддержание огнетушителей в рабочем состоянии является обязательным требованием и эффективным методом снижения риска пожара.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIQ2oBM5zbvOOXaP9VWUhsdY4nFGpwAAKjCAACHuIIRAsv1Dqzj3Q8OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIRGoBM51fZun9XFqpoNGyd-gj2v73AAKkCAACHuIIRMGpvQUIjuM9OwQ"
     },
     {
         "num": 205,
@@ -4927,8 +4927,8 @@ QUESTIONS = [
         "en_explain": "Pollution of navigable waterways creates both aesthetic and environmental harm, with contaminants accumulating over time and affecting not just the water itself but also adjacent shorelines and ecosystems. This principle underlies federal environmental regulations including 33 CFR (Code of Federal Regulations) and the Federal Water Pollution Control Act, which prohibit the discharge of oil, garbage, and other pollutants from vessels. Vessel operators are legally responsible for preventing pollution and may face significant civil and criminal penalties for violations.",
         "ru_explain": "Согласно федеральным нормам США по предотвращению загрязнения (33 CFR Part 151) и требованиям MARPOL, загрязнение морских и внутренних водных путей оказывает кумулятивное (накопительное) негативное воздействие на экосистему. Сброс нефтепродуктов, мусора, сточных вод наносит долгосрочный вред водной среде, морской фауне и флоре, а также береговой линии. Капитан судна несёт ответственность за предотвращение любых сбросов загрязняющих веществ. Утверждение верно: загрязнение — это не только эстетическая проблема, но и серьёзная экологическая угроза с накопительным эффектом.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIRWoBM59OpAzOzHsh_kFwXu9EqDgpAAKlCAACHuIIRDa78UyyLwXnOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIRmoBM6HzVl_aB_n3jH8d_ih4R1zYAAKmCAACHuIIRAhxjhETYEwxOwQ"
     },
     {
         "num": 206,
@@ -4951,8 +4951,8 @@ QUESTIONS = [
         "en_explain": "Environmental protection is a fundamental responsibility of every mariner under U.S. maritime law, including regulations such as MARPOL and the Act to Prevent Pollution from Ships. While the COLREGS specifically address navigation rules, the broader body of maritime law establishes that prudent seamanship includes preventing pollution and protecting the marine environment at all times, whether underway, at anchor, or moored.",
         "ru_explain": "Это утверждение основано на общих принципах морского права и международных конвенций. Конвенция MARPOL (Международная конвенция по предотвращению загрязнения с судов) устанавливает обязательства по защите морской среды. Согласно 33 CFR (Кодекс федеральных правил США), каждый оператор судна несёт ответственность за предотвращение загрязнения нефтью, сточными водами и мусором. «Prudent mariner» (благоразумный моряк) — это стандартный термин в морском праве, означающий судоводителя, который действует с должной осмотрительностью и соблюдает все применимые правила и нормы, включая экологические требования. Защита окружающей среды является постоянной обязанностью, а не опциональным действием.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIR2oBM6Pm4wUNt6r9nsEGnCo395y_AAKnCAACHuIIRExZwHXiMSMGOwQ",
+        "audio_a": "CQACAgEAAxkDAAIISGoBM6Q74UrVEm-WY0F6-cptffAMAAKoCAACHuIIRApMacO8E554OwQ"
     },
     {
         "num": 207,
@@ -4975,8 +4975,8 @@ QUESTIONS = [
         "en_explain": "Before entering any enclosed or confined space where explosive vapors or oxygen deficiency may be present, the atmosphere must be tested using appropriate gas detection equipment. This is a fundamental marine safety requirement under USCG regulations (46 CFR) governing vessel safety and crew protection. Failure to test the atmosphere before entry can result in explosion, asphyxiation, or death.",
         "ru_explain": "Перед входом в любое закрытое или замкнутое пространство, где могут присутствовать взрывоопасные пары или дефицит кислорода, атмосфера должна быть проверена с использованием надлежащего газоанализаторного оборудования. Это фундаментальное требование морской безопасности в соответствии с нормативными актами USCG (46 CFR), регулирующими безопасность судна и защиту экипажа. Несоблюдение требования проверки атмосферы перед входом может привести к взрыву, удушью или смерти.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIISWoBM6aIxRAWXr6UwWtkXutzMe9IAAKpCAACHuIIROltTYHYGDayOwQ",
+        "audio_a": "CQACAgEAAxkDAAIISmoBM6cPHk0umuTG3kRY-1M9GeUDAAKrCAACHuIIRKXiTGaRI1ZmOwQ"
     },
     {
         "num": 208,
@@ -4999,8 +4999,8 @@ QUESTIONS = [
         "en_explain": "A flame safety lamp is used to test oxygen levels in spaces confirmed to be free of combustible gases. The lamp's flame behavior indicates oxygen concentration—a bright, steady flame indicates sufficient oxygen (approximately 21%), while a dim or extinguished flame indicates oxygen deficiency. This method is referenced in USCG maritime safety guidelines for confined space entry procedures.",
         "ru_explain": "Пламенная безопасная лампа (flame safety lamp) — классический прибор для определения содержания кислорода в замкнутых помещениях судна. Принцип работы: высота пламени в лампе напрямую зависит от концентрации кислорода в воздухе. При нормальном уровне кислорода (~21%) пламя горит стабильно. При недостатке кислорода пламя уменьшается или гаснет. Эта лампа безопасна для использования в помещениях без горючих газов, так как пламя защищено специальной сеткой. Важно: в помещениях с возможным присутствием горючих газов такую лампу использовать нельзя — для этого применяют индикатор горючих газов (вариант D).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIS2oBM6l2izMNam_WQcTdlA-D5KybAAKsCAACHuIIREH0SDnoM42POwQ",
+        "audio_a": "CQACAgEAAxkDAAIITGoBM6q3JwVEvdOklLyA2KmoNImpAAKtCAACHuIIRITUDQ22yRgFOwQ"
     },
     {
         "num": 209,
@@ -5023,8 +5023,8 @@ QUESTIONS = [
         "en_explain": "Under MARPOL Annex V (Regulations for the Prevention of Pollution by Garbage from Ships), the discharge of all plastics into the sea is strictly prohibited regardless of distance from shore. This is an absolute prohibition with no exceptions, as plastics do not biodegrade and pose severe hazards to marine life and the marine environment. Vessels must retain all plastic waste onboard for proper disposal at port reception facilities.",
         "ru_explain": "Согласно Приложению V к Конвенции MARPOL (Международная конвенция по предотвращению загрязнения с судов) и 33 CFR 151.67 (правила береговой охраны США), выброс пластика за борт категорически запрещён на любом расстоянии от берега. Пластик не разлагается в морской воде и представляет серьёзную угрозу для морской фауны и экосистемы. Это единственный тип мусора, для которого установлен полный запрет без исключений. Нарушение данного правила влечёт значительные штрафы.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIITWoBM6xDj-lzBxJP-M4UXjHKQp0zAAKuCAACHuIIRCNsdX1qICP0OwQ",
+        "audio_a": "CQACAgEAAxkDAAIITmoBM640RBem1fbkiHNvf0bo5CkUAAKvCAACHuIIRH-iJbvhKSfaOwQ"
     },
     {
         "num": 210,
@@ -5047,8 +5047,8 @@ QUESTIONS = [
         "en_explain": "Even biodegradable food waste can disrupt marine ecosystems by attracting wildlife to vessels, altering natural feeding behaviors, and introducing non-native organic matter that affects local water quality and species. Under MARPOL Annex V and U.S. regulations (33 CFR 151), the discharge of garbage, including food waste, is regulated based on distance from shore and vessel type. For vessels under 40 feet (typical 6-pack operations), food waste discharge is prohibited within 3 nautical miles of shore.",
         "ru_explain": "Согласно MARPOL Annex V и правилам USCG по предотвращению загрязнения (33 CFR Part 151), сброс пищевых отходов за борт регулируется строгими правилами. Даже биоразлагаемые пищевые отходы могут нарушать естественный баланс морской среды: они привлекают морских животных к судам (создавая опасность столкновений), изменяют пищевые цепочки, способствуют размножению бактерий и снижению уровня кислорода в воде. В пределах 3 морских миль от берега сброс пищевых отходов запрещён, в пределах 12 миль — только измельчённые отходы. Утверждение неверно — любой сброс отходов влияет на экосистему.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIT2oBM69aFr_CJ0sfRj6BMqKQdtc6AAKwCAACHuIIRKMBLdzGTZpmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIUGoBM7FZrONo0RzaYCZU9C_jw4i1AAKxCAACHuIIRPbXhVsRkAMkOwQ"
     },
     {
         "num": 211,
@@ -5071,8 +5071,8 @@ QUESTIONS = [
         "en_explain": "Proper **maintenance** of engines, generators, overboard discharge valves, holding tanks, and other vessel systems is essential for preventing pollution and protecting the marine environment. This requirement aligns with MARPOL regulations and 33 CFR Part 151, which mandate that vessel operators maintain equipment in good working order to prevent the discharge of oil, sewage, and other pollutants into navigable waters. Neglected or poorly maintained systems are a leading cause of accidental environmental contamination from recreational and commercial vessels.",
         "ru_explain": "**техническое обслуживание** — техническое обслуживание\n**двигатели** — двигатели\n**генераторы** — генераторы\n**клапаны за бортом** — клапаны за бортом\n**льяла** — льяла\n**системы судна** — системы судна\n**загрязнение** — загрязнение\n**морская среда** — морская среда\n**МАРПОЛ** — МАРПОЛ\n**CFR Part 151** — CFR Part 151\n**операторы судов** — операторы судов\n**оборудование** — оборудование\n**надлежащее рабочее состояние** — надлежащее рабочее состояние\n**выброс нефти** — выброс нефти\n**сточные воды** — сточные воды\n**загрязняющие вещества** — загрязняющие вещества\n**судоходные воды** — судоходные воды\n**запущенные системы** — запущенные системы\n**плохо обслуживаемые системы** — плохо обслуживаемые системы\n**случайное загрязнение окружающей среды** — случайное загрязнение окружающей среды\n**рекреационные суда** — рекреационные суда\n**коммерческие суда** — коммерческие суда",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIUWoBM7M-ftVM08bGJXxrV611piz2AAKyCAACHuIIRIqMK3D6RVXyOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIUmoBM7RurOfZVehREWuF7OzGiwheAAKzCAACHuIIROlQnOl5AWxLOwQ"
     },
     {
         "num": 212,
@@ -5095,8 +5095,8 @@ QUESTIONS = [
         "en_explain": "Environmental hazards aboard vessels include oil and petroleum products, pesticides, and fire extinguishing agents, all of which pose risks to the marine environment if discharged improperly. Under 33 CFR 151 and MARPOL Annex I regulations, vessel operators must prevent the discharge of these pollutants into navigable waters. The Captain is responsible for ensuring proper storage, handling, and disposal of all hazardous materials to protect the marine environment.",
         "ru_explain": "# Морские термины (русский перевод)\n\nЭкологические опасности на судах включают нефть и нефтепродукты, пестициды и огнетушащие вещества, которые представляют риск для морской среды при неправильном сбросе. В соответствии с 33 CFR 151 и положениями МАРПОЛ Приложение I операторы судов должны предотвращать попадание этих загрязняющих веществ в судоходные воды. Капитан несёт ответственность за надлежащее хранение, обращение и утилизацию всех опасных грузов для защиты морской среды.\n\n---\n\n**Key maritime terms used:**\n- судно/суда (vessel/vessels)\n- нефть и нефтепродукты (oil and petroleum products)\n- сброс (discharge)\n- морская среда (marine environment)\n- судоходные воды (navigable waters)\n- капитан (captain)\n- опасные грузы (hazardous materials)",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIU2oBM7YUfwcm1BaWRV_NVPfq71p2AAK0CAACHuIIRPMvzOhlfqV6OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIVGoBM7e90FLiSH28T_MK6xRZpAOeAAK1CAACHuIIRIBC5p7qKPFdOwQ"
     },
     {
         "num": 213,
@@ -5119,8 +5119,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 9 (Narrow Channels), vessels less than 20 meters in length shall not impede the passage of a vessel that can safely navigate only within a narrow channel or fairway. ОТВЕТ: As the operator of a small motorboat crossing the channel, you have the obligation to keep clear of the tankship, which can only navigate safely within the confined waters of the channel. The crossing vessel/give-way vessel rules do not apply in this situation because the narrow channel rule takes precedence.",
         "ru_explain": "Согласно Правилу 9(b) МППСС (COLREGS) и 33 CFR 83.09(b): \"Судно длиной менее 20 метров или парусное судно не должно затруднять проход судна, которое может безопасно следовать только в пределах узкого прохода или фарватера.\" Также Правило 9(d) гласит: \"Судно не должно пересекать узкий проход или фарватер, если такое пересечение затруднит проход судну, которое может безопасно следовать только в пределах такого прохода или фарватера.\"  Танкер, идущий по каналу, может безопасно следовать только в пределах узкого канала из-за своих размеров и осадки. Ваш небольшой моторный катер, пересекающий канал, обязан не препятствовать его проходу. Это не обычная ситуация \"уступи дорогу/стой на месте\" — это специальное правило для узких каналов, которое имеет приоритет.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIVWoBM7kpGUH8n11nuFTrsvwMfXABAAK2CAACHuIIRGjAU1R54jrAOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIVmoBM7vm7uET1yRzCcPXuVfP7hWBAAK3CAACHuIIRLysKeGOW-0qOwQ"
     },
     {
         "num": 214,
@@ -5143,8 +5143,8 @@ QUESTIONS = [
         "en_explain": "Federal \"No Discharge\" zones (NDZs) are designated waters where the discharge of all vessel sewage, whether treated or untreated, is prohibited under the Clean Water Act (33 U.S.C. § 1322). These zones are established by states with EPA approval to protect sensitive waters such as drinking water intakes, shellfish beds, and marine sanctuaries. Vessel operators must secure all marine sanitation devices to prevent any discharge while transiting these areas.",
         "ru_explain": "Федеральные зоны \"без сброса\" (ЗБС) — обозначенные акватории, где запрещен сброс всех судовых сточных вод, обработанных или необработанных, в соответствии с Законом о чистоте вод (33 U.S.C. § 1322). Эти зоны устанавливаются штатами с одобрением EPA для защиты чувствительных акваторий, таких как водозаборы питьевой воды, промыслы моллюсков и морские заповедники. Судоводители должны герметизировать все судовые санитарные устройства, чтобы предотвратить любой сброс при следовании через эти акватории.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIV2oBM70TJ9a_SDEPgJo6y99gLzMoAAK4CAACHuIIRI87WsAjJsabOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIWGoBM7_K955DqrL_tCDeI0_OpwFOAAK5CAACHuIIRJOtoWgnCLXSOwQ"
     },
     {
         "num": 215,
@@ -5167,8 +5167,8 @@ QUESTIONS = [
         "en_explain": "Under MARPOL Annex V and U.S. regulations (33 CFR 151), the discharge of plastics is prohibited anywhere at sea, regardless of distance from shore. Dunnage (loose wood used for cargo stowage) cannot be discharged within 25 nautical miles of the nearest land. Between 12-25 miles offshore, food waste and other garbage like rags or crockery may be legally discharged, but plastic and dunnage remain prohibited in this zone.",
         "ru_explain": "Согласно правилам MARPOL Annex V и федеральным правилам США (33 CFR 151), сброс пластика запрещён ВЕЗДЕ в море без исключений. Dunnage (сепарационный материал — деревянные бруски, маты, прокладки для крепления груза) также запрещено сбрасывать ближе 25 миль от берега. В зоне 12-25 миль от берега разрешён сброс измельчённых пищевых отходов (частицы менее 25 мм), но пластик и dunnage сбрасывать нельзя. Поэтому правильный ответ — C: пластик и сепарационный материал.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIWWoBM8A6AAHuFk82r_pWA9HiATJXcwACuggAAh7iCET0X1lwRd1FYDsE",
+        "audio_a": "CQACAgEAAxkDAAIIWmoBM8K397-SJjCboVB6GXmdZyDkAAK7CAACHuIIRIzbL7ybBoobOwQ"
     },
     {
         "num": 216,
@@ -5191,8 +5191,8 @@ QUESTIONS = [
         "en_explain": "Under MARPOL Annex I and Annex V, as implemented by U.S. federal law (33 CFR 151), the discharge of oil and plastics into any waters is strictly prohibited. This applies to all navigable waterways, including inland waters, territorial seas, and the high seas. Violations can result in significant civil and criminal penalties.",
         "ru_explain": "Согласно федеральному законодательству США (33 CFR Part 151 — MARPOL 73/78), сброс нефти и нефтепродуктов в любые воды США запрещён. Сброс пластика запрещён повсеместно — как в территориальных водах, так и в открытом море. Эти требования распространяются на все суда независимо от размера. За нарушение предусмотрены значительные штрафы. Данные правила являются частью международной конвенции MARPOL по предотвращению загрязнения с судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIW2oBM8RPMV7qMXpj7G0AATeePk8KjwACvAgAAh7iCEROXdtsqNrtVzsE",
+        "audio_a": "CQACAgEAAxkDAAIIXGoBM8VqFB3w507jatW7ylgCokESAAK9CAACHuIIRCIv1TwsX0EIOwQ"
     },
     {
         "num": 217,
@@ -5215,8 +5215,8 @@ QUESTIONS = [
         "en_explain": "MARPOL 73/78 Annex V specifically regulates the prevention of pollution by garbage from ships, establishing strict requirements for the discharge of garbage overboard including plastics, food waste, and other refuse. This international convention sets distance-from-shore requirements and outright prohibitions for various types of garbage disposal at sea. Annex V is one of six annexes to MARPOL, each addressing different categories of marine pollution.",
         "ru_explain": "Конвенция MARPOL 73/78 (Международная конвенция по предотвращению загрязнения с судов) содержит шесть приложений. Приложение V (Annex V) специально регулирует предотвращение загрязнения мусором с судов. Оно устанавливает правила сброса мусора за борт, включая полный запрет на сброс пластика в любом месте океана, а также ограничения по расстоянию от берега для других видов отходов. В соответствии с требованиями MARPOL Annex V, суда должны иметь план управления мусором и вести журнал операций с мусором.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIXWoBM8c6-apsi7t8HZdLxzKy81xUAAK-CAACHuIIRFMpKC9CmM4cOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIXmoBM8gBtKMbtlwOs1jiixmJ-o1KAAK_CAACHuIIRAPyyddkcpn_OwQ"
     },
     {
         "num": 218,
@@ -5239,8 +5239,8 @@ QUESTIONS = [
         "en_explain": "The Oil Pollution Laws, including the Oil Pollution Act of 1990 (OPA 90) and related regulations under 33 CFR, are comprehensive in scope. They address vessel design standards, operational procedures, required equipment (such as oil-water separators and containment systems), recordkeeping requirements (like Oil Record Books), and measures to prevent accidental discharges. Therefore, all listed purposes fall under the intent of these laws.",
         "ru_explain": "Законы о загрязнении нефтью, включая Закон о загрязнении нефтью 1990 года (OPA 90) и соответствующие нормативные акты в соответствии с 33 CFR, охватывают все аспекты. Они регулируют стандарты конструкции судна, процедуры эксплуатации судна, требуемое оборудование (такое как сепараторы нефть-вода и системы удержания нефти), требования к ведению документации судна (такие как Журналы записей о нефти), и меры по предотвращению случайных сбросов нефти. Таким образом, все перечисленные цели подпадают под действие этих законов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIX2oBM8onDJh-VG8Z4FRUhTBIuMtJAALACAACHuIIROU2vGnkO0-POwQ",
+        "audio_a": "CQACAgEAAxkDAAIIYGoBM8xR7mvXJ7IysELyaindgynZAALBCAACHuIIROtMGI-Xs7AfOwQ"
     },
     {
         "num": 219,
@@ -5263,8 +5263,8 @@ QUESTIONS = [
         "en_explain": "When discovering an oil spill during a fuel or cargo transfer operation aboard a commercial vessel, the immediate priority is to stop the transfer to prevent additional oil from being discharged. This action is required under 33 CFR 155 (Oil Pollution Prevention regulations), which mandates that the person in charge must immediately stop the transfer operation upon discovering a spill. Only after stopping the source should you proceed to contain the spill, remove it, and report it to the appropriate authorities.",
         "ru_explain": "# Maritime Terms Translation\n\n**утечка нефти** — oil spill\n**операция передачи топлива или груза** — fuel or cargo transfer operation\n**морское судно** — commercial vessel\n**немедленный приоритет** — immediate priority\n**остановить передачу** — stop the transfer\n**предотвратить сброс нефти** — prevent oil discharge\n**лицо, ответственное за судно** — person in charge\n**немедленно остановить операцию передачи** — immediately stop the transfer operation\n**обнаружение утечки** — discovering a spill\n**источник утечки** — source of the spill\n**локализация утечки** — contain the spill\n**удаление нефти** — remove the oil\n**уведомление властей** — report to authorities\n**нормативные акты по предотвращению загрязнения нефтью** — Oil Pollution Prevention regulations",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIYWoBM84WwOnGuurH-ihF6oVax1uvAALCCAACHuIIRDGINTO-OtT7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIYmoBM8-oECuUOGvgkiu12mJwXeViAALDCAACHuIIRBzaiDObpZYzOwQ"
     },
     {
         "num": 220,
@@ -5287,8 +5287,8 @@ QUESTIONS = [
         "en_explain": "A No Discharge Zone (NDZ) is a designated body of water where the discharge of treated and untreated sewage from vessel marine sanitation devices (MSDs) is prohibited by federal and state law under the Clean Water Act. Prudent mariners must maintain awareness of their position relative to NDZs, which are typically marked on charts and in Coast Pilots, to ensure compliance with environmental regulations and avoid significant civil penalties. This requirement reflects good seamanship practice and responsible vessel operation as emphasized in 33 CFR Part 140 and EPA regulations governing vessel sewage discharge.",
         "ru_explain": "Зоны запрета сброса (No Discharge Zones, NDZ) — это акватории, где федеральным и/или местным законодательством США запрещён любой сброс обработанных или необработанных сточных вод с судов. Эти зоны обозначаются на навигационных картах NOAA специальными символами и границами. Согласно 33 CFR Part 140 и Clean Water Act, капитан судна несёт ответственность за соблюдение экологических требований. Благоразумный судоводитель (prudent mariner) обязан постоянно отслеживать своё местоположение относительно таких зон, сверяясь с актуальными картами и публикациями Coast Pilot. Незнание о нахождении в NDZ не освобождает от штрафов за нарушение.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIY2oBM9Geuw4yuhUAAdiHDIqzT54Y2wACxAgAAh7iCEQy4Pf-gdoAAZQ7BA",
+        "audio_a": "CQACAgEAAxkDAAIIZGoBM9IZXCIjBpzsScG5-6UuO8fLAALFCAACHuIIRCe_AAEeNwFH0TsE"
     },
     {
         "num": 221,
@@ -5311,8 +5311,8 @@ QUESTIONS = [
         "en_explain": "Title 33 of the Code of Federal Regulations (CFR), Parts 154-156, contains the federal Oil Pollution Laws governing vessels and waterfront facilities. Title 33 CFR specifically covers Navigation and Navigable Waters, which includes regulations for oil transfer operations, pollution prevention equipment, and response procedures. These regulations implement the requirements of the Clean Water Act and Oil Pollution Act of 1990 for the maritime industry.",
         "ru_explain": "⚠️ Данный вопрос относится к законодательству США о предотвращении загрязнения нефтью (Oil Pollution Laws), которое регулируется Title 33 (Navigation and Navigable Waters) Code of Federal Regulations, части 154-156. Эти части CFR охватывают требования к перевалке нефти и операции по предотвращению загрязнения. Это административное законодательство, не входящее в COLREGS или 33 CFR Part 83.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIZWoBM9T98NVpsyWB1m7_9KkPhnyvAALGCAACHuIIRGg52t4H3F0ROwQ",
+        "audio_a": "CQACAgEAAxkDAAIIZmoBM9ZIm1-1T8nX13snhAsQ1KlpAALHCAACHuIIRHzvt0IWjnV0OwQ"
     },
     {
         "num": 222,
@@ -5335,8 +5335,8 @@ QUESTIONS = [
         "en_explain": "VHF Channel 16 (156.8 MHz) is the international distress, safety, and calling frequency. Under FCC regulations (47 CFR 80.148), vessels equipped with VHF marine radios are required to maintain a continuous watch on Channel 16 while underway, as this is the primary channel monitored by the U.S. Coast Guard for distress calls and initial contact between vessels.",
         "ru_explain": "Согласно правилам FCC (47 CFR Part 80) и требованиям USCG, канал VHF 16 (156.8 МГц) является международным каналом бедствия, безопасности и вызова. Все суда, оборудованные УКВ-радиостанцией, обязаны нести постоянную вахту на этом канале во время плавания. Канал 16 используется для: передачи сигналов бедствия (MAYDAY), срочных сообщений (PAN-PAN), сообщений безопасности (SECURITÉ), а также для первоначального вызова других судов и береговых станций. После установления связи на канале 16 суда должны перейти на рабочий канал. Канал 13 используется для связи между судами при маневрировании, канал 6 — для межсудовой связи по безопасности.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIZ2oBM9gYbROJ4CKPOQxbeZrSkG5eAALICAACHuIIRG2bkhpCsUXrOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIaGoBM9ozHppfzQRGMHRko8brmKXlAALJCAACHuIIRK186txlEH9POwQ"
     },
     {
         "num": 223,
@@ -5359,8 +5359,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 14 (Head-on Situation) of both International and Inland Rules, when two power-driven vessels are meeting on reciprocal or nearly reciprocal courses so as to involve risk of collision, each shall alter her course to starboard so that each shall pass on the port side of the other. A vessel pushing ahead is considered a power-driven vessel, so both vessel A and the pushing vessel B must alter course to starboard and pass port-to-port.",
         "ru_explain": "Согласно Правилу 14 COLREGS (Ситуация сближения судов, идущих прямо друг на друга): когда два судна с механическим двигателем сближаются на противоположных или почти противоположных курсах так, что возникает опасность столкновения, каждое из них должно изменить свой курс вправо, чтобы разойтись левыми бортами.  Судно B, толкающее другое судно впереди себя, остаётся судном с механическим двигателем и подчиняется тем же правилам, что и судно A. При встречной ситуации (head-on situation) оба судна имеют равные обязательства — ни одно не является «привилегированным».  Правило 14(a) чётко указывает: каждое судно должно изменить курс вправо (to starboard), чтобы пройти по левому борту друг друга (port to port). Это стандартный манёвр расхождения при встречных курсах, применяемый как в международных, так и во внутренних водах США.",
         "image": "AgACAgEAAxkDAAIGZ2oAAd2mSjFZWdHt9i50wuVBYEkKGwACuA5rGx7iCESMy0dTBt1igQEAAwIAA3gAAzsE",
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIaWoBM9wJbZWnpmEZOjoblNQEp_B1AALKCAACHuIIRDowaxObliytOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIamoBM95y23Tog_GRn41zlvjxuZjQAALLCAACHuIIRGFdbo_UGfWwOwQ"
     },
     {
         "num": 224,
@@ -5383,8 +5383,8 @@ QUESTIONS = [
         "en_explain": "The River and Harbor Act of 1899 (also known as the Refuse Act) made it illegal to discharge refuse, garbage, and other waste materials into navigable waters of the United States without a permit. This Act, specifically Section 13, established one of the earliest federal prohibitions against water pollution and remains enforceable today. It predates later environmental legislation like the Clean Water Act and established the U.S. Army Corps of Engineers' authority over navigable waterways.",
         "ru_explain": "⚠️ Данный вопрос относится к экологическому законодательству США, а не к COLREGS, US Inland Navigation Rules (33 CFR Part 83) или публикациям NOAA/NGA. River and Harbor Act of 1899 (также известный как Refuse Act) — исторически первый федеральный закон США, запретивший сброс мусора, отходов и любых посторонних материалов в судоходные воды без разрешения Инженерного корпуса армии США. Этот закон заложил основу современного природоохранного законодательства в сфере водных ресурсов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIa2oBM-AxsPlWbud3pKRRqQEiMS_4AALMCAACHuIIRHeBDAABdFIWrDsE",
+        "audio_a": "CQACAgEAAxkDAAIIbGoBM-GAUyoUVgNd0ocB_lzoLN6_AALNCAACHuIIRM5_yiOtrrVMOwQ"
     },
     {
         "num": 225,
@@ -5407,8 +5407,8 @@ QUESTIONS = [
         "en_explain": "Drinking seawater accelerates dehydration because the high salt concentration requires your body to use more water to process and excrete the excess salt than the seawater provides. This is a fundamental survival principle covered in USCG-approved survival craft training and referenced in 46 CFR regulations governing lifesaving equipment and procedures. Survivors should rely only on freshwater supplies, rain collection, or solar stills for hydration.",
         "ru_explain": "Согласно руководствам по выживанию на море (USCG Survival Manual), употребление морской воды категорически запрещено. Морская вода содержит примерно 3.5% соли, что значительно превышает способность почек к её выведению. Для переработки соли из морской воды организму требуется больше пресной воды, чем было выпито, что приводит к ускоренному обезвоживанию. Это вызывает отказ почек, бред, потерю сознания и смерть. При выживании на спасательном плоту или в воде следует собирать дождевую воду, использовать опреснители (если есть) и рационировать имеющиеся запасы пресной воды.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIbWoBM-PYIQs0dyzU6IRg78IC-SD7AALOCAACHuIIRFAlOqk7fSxmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIbmoBM-XNq6Mz6tPVMDKk-YjvQNbEAALPCAACHuIIRKDQM_buR_6nOwQ"
     },
     {
         "num": 226,
@@ -5431,8 +5431,8 @@ QUESTIONS = [
         "en_explain": "A SART (Search And Rescue Transponder) is a self-contained, waterproof radar transponder required under SOLAS regulations for use in maritime distress situations. When activated, it responds to 9 GHz radar signals from rescue vessels or aircraft, producing a distinctive series of 12 dots on their radar screens to indicate the survivor's position. This equipment is part of the Global Maritime Distress and Safety System (GMDSS) requirements for commercial vessels.",
         "ru_explain": "SART (Search And Rescue Transponder) — поисково-спасательный радиолокационный транспондер. Это устройство является частью оборудования ГМССБ (GMDSS — Глобальная морская система связи при бедствии и для обеспечения безопасности). SART активируется при попадании в зону действия радара спасательного судна или воздушного судна и создаёт на экране радара характерную серию из 12 точек, указывающих направление на терпящих бедствие. Устройство работает в диапазоне 9 ГГц (X-band) и является обязательным оборудованием на судах согласно требованиям SOLAS и правилам USCG (46 CFR).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIb2oBM-bFWIFi2gdBSix5nR0ew1I4AALQCAACHuIIRIc3hY6-BUsBOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIcGoBM-ifbW7YddGrSKdgByCcl78qAALRCAACHuIIRP9Ff6nV6nAhOwQ"
     },
     {
         "num": 227,
@@ -5455,8 +5455,8 @@ QUESTIONS = [
         "en_explain": "A hand-held flare has a limited burn time (typically 1-3 minutes) and limited visibility range compared to aerial flares, making it most effective when rescue vessels or aircraft are already in visual range. Per USCG distress signal requirements under 33 CFR 175.130 and COLREGS Annex IV, hand-held flares serve as a close-range locating device rather than a long-distance alerting signal. Rocket parachute flares and smoke signals are better suited for attracting attention from greater distances when help is not yet visible.",
         "ru_explain": "Ручной фальшфейер (Hand Held Flare) имеет ограниченную дальность видимости и короткое время горения (около 1-3 минут). Согласно руководствам USCG по спасательным средствам, ручные фальшфейеры эффективны только на близком расстоянии и должны использоваться, когда спасательное судно или вертолёт уже находятся в пределах видимости. Парашютные ракеты, напротив, поднимаются на высоту до 300 метров и видны на расстоянии до 25-30 миль — их используют для первоначального привлечения внимания. Дымовые шашки применяются днём для обозначения местоположения с воздуха. Принцип использования сигнальных средств: сначала — ракеты для привлечения внимания издалека, затем — ручные фальшфейеры для наведения помощи, когда она уже близко.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIcWoBM-nt5Gz-H07dxNval7d831cpAALSCAACHuIIRCwa1BP1Wc4NOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIcmoBM-t9Yxbwvmt31C1dSdQNHzU6AALTCAACHuIIRNv9NZlVt9dVOwQ"
     },
     {
         "num": 228,
@@ -5479,8 +5479,8 @@ QUESTIONS = [
         "en_explain": "EPIRB stands for Emergency Position Indicating Radio Beacon. This is a distress alerting device required under USCG regulations that, when activated, transmits a signal on 406 MHz to satellites, which relay the vessel's position to search and rescue authorities. EPIRBs are part of the Global Maritime Distress and Safety System (GMDSS) and are required equipment for certain commercial vessels under 46 CFR.",
         "ru_explain": "EPIRB (Emergency Position Indicating Radio Beacon) — аварийный радиобуй, передающий сигнал бедствия через спутниковую систему COSPAS-SARSAT. Согласно требованиям USCG (46 CFR Part 25), EPIRB является обязательным спасательным оборудованием для определённых категорий судов. При активации (вручную или автоматически при погружении в воду) он передаёт на частоте 406 МГц сигнал с координатами GPS, что позволяет спасательным службам определить местоположение судна, терпящего бедствие. Ключевое слово — \"Radio Beacon\" (радиомаяк), а не \"Radar\" (радар) или \"Racon\".",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIc2oBM-zvnCxjaxYE-l8pqBuvMefcAALUCAACHuIIRInIi1HllCUgOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIdGoBM-7LzXPJvHMQ4ZqMUsxalng8AALVCAACHuIIRCMyNLLYOtOqOwQ"
     },
     {
         "num": 229,
@@ -5503,8 +5503,8 @@ QUESTIONS = [
         "en_explain": "A hydrostatic release unit (HRU) is a pressure-activated mechanism that automatically releases an inflatable life raft from its cradle when submerged to a specific depth (typically 1.5 to 4 meters), allowing the raft to float free if a vessel sinks rapidly. This device is required under SOLAS regulations and USCG equipment requirements to ensure life rafts can deploy even when crew members are unable to manually release them. The painter line then activates the CO2 inflation system as the raft rises to the surface.",
         "ru_explain": "Гидростатическое разобщающее устройство (Hydrostatic Release Unit, HRU) — это механизм, который автоматически освобождает спасательный плот при погружении судна на определённую глубину (обычно 1,5–4 метра). Давление воды активирует устройство, которое разрезает найтовы, удерживающие контейнер с плотом. После освобождения плот всплывает на поверхность, а натяжение фалиня (painter cord) активирует систему наполнения газом. SART — это поисково-спасательный радиолокационный ответчик для обнаружения. EPIRB — аварийный радиобуй, передающий сигнал бедствия. Фалинь служит для привязки плота к судну и активации наполнения, но не для автоматического освобождения.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIdWoBM_B8efZmSEH9e3tvi7H-hA4XAALWCAACHuIIRD-zpUnNVNnyOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIdmoBM_KFU8M-VKeG1VDHVdgTn8r-AALXCAACHuIIRKNwsg7exUsMOwQ"
     },
     {
         "num": 230,
@@ -5527,8 +5527,8 @@ QUESTIONS = [
         "en_explain": "A hissing sound from an inflated life raft is normal and indicates the pressure relief valves are functioning properly by venting excess gas. Life rafts are designed to automatically release overpressure to prevent damage to the buoyancy chambers, particularly as the CO2 inflation gas expands due to temperature changes. This is standard equipment operation covered under USCG life raft carriage and maintenance requirements (46 CFR Subpart 160.151).",
         "ru_explain": "# Морские термины (русский перевод)\n\nШипящий звук от надувного спасательного плота является нормальным и указывает на то, что клапаны сброса давления функционируют надлежащим образом, выпуская избыточный газ. Спасательные плоты предназначены для автоматического сброса избыточного давления с целью предотвращения повреждения камер плавучести, особенно при расширении газа CO2 в результате изменения температуры. Это стандартная эксплуатация оборудования, предусмотренная требованиями USCG по перевозке и техническому обслуживанию спасательных плотов (46 CFR Подраздел 160.151).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIId2oBM_RDPrKs5ntaprYr8_hoCpq1AALYCAACHuIIRLGVt52NWiSlOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIeGoBM_VpzFRYkyy-ELD_055oI5F0AALZCAACHuIIRKOcg-91xmHZOwQ"
     },
     {
         "num": 231,
@@ -5551,8 +5551,8 @@ QUESTIONS = [
         "en_explain": "Rule 36 (Signals to Attract Attention) of both the COLREGS and US Inland Rules permits a vessel to make light or sound signals to attract the attention of another vessel, provided such signals cannot be mistaken for any distress signal or aid to navigation. This includes any available means such as whistles, mirrors, or the human voice, making all listed options acceptable methods for attracting attention.",
         "ru_explain": "Согласно COLREGS Правило 37 и Приложению IV (Сигналы бедствия), а также 33 CFR 83.37, для привлечения внимания могут использоваться различные средства. Правило 36 COLREGS (Сигналы для привлечения внимания) гласит: судно может подавать световые или звуковые сигналы, которые не могут быть ошибочно приняты за другие сигналы, либо направлять луч прожектора в сторону опасности таким образом, чтобы не мешать другим судам. Свистки являются стандартным звуковым средством привлечения внимания. Зеркала (гелиографы) используются для подачи световых сигналов в дневное время. Голос человека — базовое средство связи на коротких дистанциях. Все эти средства признаются допустимыми для привлечения внимания в соответствии с международными и американскими правилами судоходства.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIeWoBM_f9uHuyz107lUtJ1tTDPpbUAALaCAACHuIIREFCJwABbdmUujsE",
+        "audio_a": "CQACAgEAAxkDAAIIemoBM_iDvuVwI0-yOQ-O1evqwMDwAALbCAACHuIIRCRZ3zxYlmSgOwQ"
     },
     {
         "num": 232,
@@ -5575,8 +5575,8 @@ QUESTIONS = [
         "en_explain": "White flares are used to attract attention and warn other vessels of your presence, while green flares are used in conjunction with white to signal attention during certain operations. Under Rule 36 of both COLREGS and US Inland Rules, vessels may use light or sound signals to attract attention, with white flares specifically recognized for this purpose rather than as distress signals.",
         "ru_explain": "# Морской перевод\n\nБелые сигнальные ракеты используются для привлечения внимания и предупреждения других судов о вашем присутствии, тогда как зелёные сигнальные ракеты используются в сочетании с белыми для сигнализации внимания при выполнении определённых операций. В соответствии с Правилом 36 Международных правил предотвращения столкновений судов (МППСС) и Внутренних правил США суда могут использовать световые или звуковые сигналы для привлечения внимания, при этом белые сигнальные ракеты специально признаны для этой цели, а не в качестве сигналов бедствия.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIe2oBM_sRNzx01fFF-t1iLdBLUJNdAALcCAACHuIIRK1shzkLrTPvOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIfGoBM_2YTLOsL9XI9-scgI2SLBHlAALdCAACHuIIRF3Us7-2-cgROwQ"
     },
     {
         "num": 233,
@@ -5599,8 +5599,8 @@ QUESTIONS = [
         "en_explain": "Inspected vessels operating on cold water routes must carry life rafts with 100% capacity, meaning sufficient life raft space for every person aboard. This requirement is found in 46 CFR (Code of Federal Regulations) Subchapter S, which governs lifesaving equipment on inspected vessels. The increased capacity requirement for cold water operations reflects the reduced survival time in cold water, making rapid abandonment into life rafts critical.",
         "ru_explain": "Проверяемые суда, работающие на маршрутах в холодных водах, должны иметь спасательные плоты со 100-процентной грузоподъёмностью, то есть достаточное место в спасательных плотах для каждого человека на борту. Это требование изложено в 46 CFR (Кодекс федеральных нормативов) Подраздел S, который регулирует спасательное оборудование на проверяемых судах. Повышенное требование к грузоподъёмности при операциях в холодных водах отражает сокращённое время выживания в холодной воде, делая быструю эвакуацию в спасательные плоты критически важной.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIfWoBM_5zeB1ABkym7Q5oG63-SXdFAALeCAACHuIIRMKIP5B1JskFOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIfmoBNAABJfDJjSxa7dxNubgqh2SvRQAC3wgAAh7iCETyOWrTSympODsE"
     },
     {
         "num": 234,
@@ -5623,8 +5623,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 32(b) of both the International and Inland Rules, a \"prolonged blast\" is defined as a blast of four to six seconds duration. This standard duration applies to all prolonged blast signals, including those required under Rule 35(a) for power-driven vessels underway in or near areas of restricted visibility. The consistent definition ensures that mariners can properly identify and distinguish prolonged blasts from short blasts (about one second) regardless of conditions.",
         "ru_explain": "Согласно Правилу 32(b) COLREGS и 33 CFR 83.32(b), термин \"продолжительный звук\" означает звуковой сигнал продолжительностью от 4 до 6 секунд. Правило 35(a) требует, чтобы судно с механическим двигателем, имеющее ход относительно воды, подавало с интервалами не более 2 минут один продолжительный звук. Правило 35(b) устанавливает, что судно с механическим двигателем на ходу, но остановившееся и не имеющее хода относительно воды, подаёт с интервалами не более 2 минут два продолжительных звука подряд с промежутком около 2 секунд между ними. В обоих случаях каждый продолжительный звук должен длиться от 4 до 6 секунд.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIf2oBNAIhkRZGwteH_MsHScm0yg0vAALgCAACHuIIRJhmnEYXG9iTOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIgGoBNAN5KdcfydNHovLkT-OYtt1XAALhCAACHuIIRJi0-7DTkiufOwQ"
     },
     {
         "num": 235,
@@ -5647,8 +5647,8 @@ QUESTIONS = [
         "en_explain": "A hydrostatic release unit (HRU) is designed to automatically deploy a life raft when a vessel sinks, triggering at a depth of approximately 10 feet (3-4 meters) below the surface. This depth allows sufficient water pressure to activate the mechanism while ensuring the raft deploys before the vessel sinks too deep. This requirement falls under USCG equipment regulations (46 CFR) rather than COLREGS, as it pertains to life-saving appliance standards.",
         "ru_explain": "⚠️ Данный вопрос относится к спасательному оборудованию (SOLAS/USCG требования к спасательным плотам), а не к COLREGS или правилам навигации. Гидростатический разобщающий механизм (Hydrostatic Release Unit, HRU) автоматически освобождает спасательный плот при погружении судна. Согласно стандартам USCG и SOLAS, HRU срабатывает на глубине от 1,5 до 4 метров (обычно указывается 10 футов / ~3 м) под давлением воды, позволяя плоту всплыть на поверхность.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIgWoBNAVoFlFHFoEHtuq1cPNvY1-cAALiCAACHuIIRJ1vgO8jtXVBOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIgmoBNAdaZgamWAoSEELqotnPJg65AALjCAACHuIIRE0MNxaWlKeMOwQ"
     },
     {
         "num": 236,
@@ -5671,8 +5671,8 @@ QUESTIONS = [
         "en_explain": "All inspected vessels are required to maintain a radio log as part of their mandatory documentation under U.S. Coast Guard regulations (46 CFR). The radio log must record all distress calls, communications, and required radio checks to ensure proper operation of the vessel's radio equipment and compliance with FCC and Coast Guard requirements.",
         "ru_explain": "Все проверяемые суда обязаны вести судовой радиожурнал в соответствии с обязательной документацией согласно правилам Береговой охраны США (46 CFR). Радиожурнал должен содержать записи всех сигналов бедствия, радиопередач и необходимых радиопроверок для обеспечения надлежащей работы судовой радиостанции и соответствия требованиям ФКС и Береговой охраны.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIg2oBNAg1mIfV-c4GtGdIoNXCXqAOAALkCAACHuIIRAHQWE8_hUJ2OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIhGoBNAozHcfIBZi9P8Bm4-HY5zk6AALlCAACHuIIRBPitG-P8WxGOwQ"
     },
     {
         "num": 237,
@@ -5695,8 +5695,8 @@ QUESTIONS = [
         "en_explain": "USCG-approved life jackets carried aboard vessels must be marked with the vessel's name to ensure accountability and to help identify survivors or recovered equipment in an emergency. This requirement falls under USCG equipment regulations (46 CFR 180.25) rather than COLREGS, and applies to commercial vessel safety equipment standards. Proper marking helps ensure life jackets remain with their assigned vessel and can be traced during inspections or incidents.",
         "ru_explain": "Спасательные жилеты, одобренные USCG и находящиеся на борту судна, должны быть помечены названием судна для обеспечения подотчётности и идентификации выживших или обнаруженного оборудования в чрезвычайной ситуации. Это требование подпадает под нормативные акты USCG по оборудованию (46 CFR 180.25), а не под МППСС, и применяется к стандартам безопасности оборудования коммерческих судов. Надлежащая маркировка обеспечивает сохранение спасательных жилетов на борту назначенного судна и их идентификацию при инспекциях или происшествиях.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIhWoBNAvzN1KO9Af00npTYb3JjQ7tAALmCAACHuIIRPMEEJIE-INXOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIhmoBNA1AUca3CjnTRsJLJqVyxzJoAALnCAACHuIIRBJYM-MFbuUAATsE"
     },
     {
         "num": 238,
@@ -5719,8 +5719,8 @@ QUESTIONS = [
         "en_explain": "Type I (offshore) and Type II (near-shore buoyant) life jackets are specifically designed with buoyancy distribution that will turn an unconscious person face-up in the water. Type III life jackets require the wearer to position themselves face-up, making them unsuitable for unconscious victims. This classification is established by U.S. Coast Guard regulations under 46 CFR Part 160 for personal flotation device performance standards.",
         "ru_explain": "Согласно классификации USCG (46 CFR Part 160): - **Тип I (Offshore)** — спасательный жилет для открытого моря с максимальной плавучестью (22 фунта), переворачивает человека без сознания лицом вверх в течение нескольких секунд - **Тип II (Near-Shore)** — спасательный жилет для прибрежных вод с меньшей плавучестью (15,5 фунта), также переворачивает лицом вверх, но медленнее - **Тип III (Flotation Aid)** — НЕ переворачивает автоматически, требует активных действий пользователя - **Тип IV (Throwable)** — спасательное средство для бросания (круг, подушка), не надевается - **Тип V (Special Use)** — специальные устройства для определённых условий  Только Тип I и Тип II имеют конструкцию с распределением плавучести, обеспечивающую автоматический переворот пострадавшего без сознания лицом вверх для поддержания дыхательных путей над водой.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIh2oBNA932bRwliURz2uL_4Ccf9T5AALoCAACHuIIRL1cQvGlN76LOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIiGoBNBA0OBTqT3US1umiZxk-ThjXAALpCAACHuIIRElxCStZ5FLAOwQ"
     },
     {
         "num": 239,
@@ -5743,8 +5743,8 @@ QUESTIONS = [
         "en_explain": "According to the International Telecommunication Union (ITU) Radio Regulations and standard VHF radiotelephone procedures, call signs must be pronounced using the phonetic alphabet to ensure clarity and prevent miscommunication. The letters D-E-L are properly pronounced \"Delta, Echo, Lima,\" and numerals are spoken individually as \"one-two-four-seven.\" This standardized pronunciation protocol is required under FCC regulations (47 CFR Part 80) governing marine radio communications.",
         "ru_explain": "Согласно международному фонетическому алфавиту ITU/IMO (International Telecommunication Union / International Maritime Organization), который является обязательным стандартом для морской радиосвязи, буквы должны произноситься следующим образом: - D = Delta (Дельта) - E = Echo (Эхо) - L = Lima (Лима)  Цифры произносятся раздельно: 1-2-4-7 (один-два-четыре-семь).  Варианты \"Dango\", \"Limo\", \"Eko\" являются неправильными и не соответствуют стандартному фонетическому алфавиту. Использование правильного произношения критически важно для чёткой и однозначной радиосвязи, особенно в условиях помех или при общении между операторами разных национальностей.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIiWoBNBLeHFu1AYb5UnAQlsB8Z2vZAALqCAACHuIIRDLOU6mxl16BOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIimoBNBRMYLVJpZQOl38Jf_CS0rdQAALrCAACHuIIRNfJcEBKVno8OwQ"
     },
     {
         "num": 240,
@@ -5767,8 +5767,8 @@ QUESTIONS = [
         "en_explain": "A Type IV Personal Flotation Device (PFD) is classified as a \"throwable device\" under U.S. Coast Guard regulations (46 CFR 160). Unlike Type I, II, and III PFDs which are designed to be worn, Type IV devices—such as ring buoys and buoyant cushions—are intended to be thrown to a person in the water and grasped until rescue. These devices are required carriage items on most recreational and uninspected passenger vessels.",
         "ru_explain": "Согласно классификации USCG (46 CFR Part 160), персональные плавучие средства (PFD) делятся на типы: - **Тип I** — спасательный жилет для открытого моря (offshore) - **Тип II** — спасательный жилет для прибрежных вод (near-shore) - **Тип III** — плавучий жилет для спокойных вод (flotation aid) - **Тип IV** — бросательное устройство (throwable device)  Тип IV — это единственный тип, который НЕ надевается на тело, а бросается пострадавшему. К нему относятся: - Спасательный круг (ring buoy) - Спасательная подушка (buoyant cushion)  Эти устройства должны быть немедленно доступны для броска человеку за бортом.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIi2oBNBaaFsZPAAFqGNfuJlwc7GEskwAC7AgAAh7iCESUtjLJP7B42zsE",
+        "audio_a": "CQACAgEAAxkDAAIIjGoBNBcUiu_SKwXQcL0hbZi46rAlAALtCAACHuIIRNYtrw38BxNWOwQ"
     },
     {
         "num": 241,
@@ -5791,8 +5791,8 @@ QUESTIONS = [
         "en_explain": "When communicating via radiotelephone, the letter \"W\" is pronounced \"WHISKEY\" according to the International Telecommunication Union (ITU) Phonetic Alphabet, which is the standard phonetic alphabet used in maritime communications. This standardized pronunciation ensures clear and unambiguous transmission of letters, particularly in situations with poor radio reception or language barriers between vessels.",
         "ru_explain": "Согласно международному фонетическому алфавиту НАТО/IMO (используется в морской радиосвязи), буква \"W\" произносится как \"WHISKEY\" (УИСКИ). Этот алфавит стандартизирован Международной морской организацией (IMO) и используется для чёткой передачи информации по радио, чтобы избежать ошибок из-за помех или акцента. Каждой букве латинского алфавита соответствует кодовое слово: A-Alfa, B-Bravo, C-Charlie... W-Whiskey, X-X-ray, Y-Yankee, Z-Zulu.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIjWoBNBnjsOSciMS5Clnke39QsdLhAALuCAACHuIIRKXkGI6_jG1SOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIjmoBNBr6N2cq5-bbb_yZLLEZfrXuAALvCAACHuIIRL1cqOIO92E2OwQ"
     },
     {
         "num": 242,
@@ -5815,8 +5815,8 @@ QUESTIONS = [
         "en_explain": "VHF Channel 13 is the primary bridge-to-bridge navigation safety channel required under the Vessel Bridge-to-Bridge Radiotelephone Act (33 CFR 26.04), used for navigating, meeting, and passing arrangements. VHF Channel 67 serves as a secondary bridge-to-bridge channel in certain U.S. waters for commercial vessel traffic coordination. Both channels are designated specifically for intership communications related to the safe navigation of vessels.",
         "ru_explain": "Согласно 33 CFR Part 26 (Bridge-to-Bridge Radiotelephone Act) и правилам FCC для морской радиосвязи: **VHF канал 13** (156.650 МГц) — обязательный канал для связи «мостик-мостик» (Bridge-to-Bridge) для координации маневров и обеспечения безопасности судоходства. Используется для согласования расхождения судов, особенно в узких проходах и акваториях портов. **VHF канал 67** — дополнительный канал для связи «мостик-мостик» в определённых районах США, также используется для получения навигационной информации от береговых служб (VTS — Vessel Traffic Services). Канал 16 — канал бедствия и вызова, не для рутинной навигационной связи. Канал 68 — рабочий канал для не-коммерческих судов. Канал 22A — связь с Береговой охраной после первичного вызова.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIj2oBNBy34sRiuQajPH9lnD0MwblHAALwCAACHuIIRO-D3RK2BteCOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIkGoBNB4N1MJYMbgBGaNr3qHE7f0tAALxCAACHuIIREbxfXNTdvd7OwQ"
     },
     {
         "num": 243,
@@ -5839,8 +5839,8 @@ QUESTIONS = [
         "en_explain": "VHF (Very High Frequency) marine radio operates on line-of-sight transmission, meaning the signal travels in a straight line and is limited by the curvature of the Earth and antenna height. For a typical vessel-to-shore communication, the expected range is approximately 20 miles, though this can vary based on antenna height, atmospheric conditions, and obstructions. This operational limitation is why vessels are required to monitor VHF Channel 16 and maintain proper radio watch procedures as outlined in FCC regulations and USCG requirements.",
         "ru_explain": "УКВ (VHF) радиосвязь работает в диапазоне очень высоких частот и распространяется по прямой линии (line-of-sight). Это означает, что радиоволны не огибают кривизну Земли. Дальность связи зависит от высоты антенн передатчика и приёмника. Для типичного маломерного судна с высотой антенны около 3-5 метров и береговой станции дальность составляет приблизительно 20 морских миль. Именно поэтому береговые станции Береговой охраны США (USCG) располагают свои антенны на возвышенностях — для увеличения зоны покрытия. Для связи на большие расстояния используются средневолновые (MF) или высокочастотные (HF) радиостанции, а также спутниковая связь.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIkWoBNCDRo_EbbqPwUze0rMNITWCvAALyCAACHuIIRI1hN0jATvtDOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIkmoBNCERQEjoKl0Zeeu_v18vnYqNAALzCAACHuIIRO_S3p1t_X6mOwQ"
     },
     {
         "num": 244,
@@ -5863,8 +5863,8 @@ QUESTIONS = [
         "en_explain": "Rule 2(b) of both International and Inland Rules establishes the \"General Prudence\" or \"Rule of Special Circumstances,\" which permits departure from the Rules when necessary to avoid immediate danger. This rule recognizes that rigid adherence to the Rules could sometimes create a collision situation, so vessels may take any action necessary to avoid a collision or imminent peril. The Master must exercise good seamanship and judgment, but no log entry or other formality is required—only the genuine necessity to prevent immediate danger.",
         "ru_explain": "Согласно Правилу 2(b) МППСС-72 (COLREGS) и 33 CFR 83.02(b): \"При толковании и применении настоящих Правил следует должным образом учитывать всякого рода опасности плавания и опасность столкновения, а также все особые обстоятельства, включая особенности самих судов, которые могут вызвать необходимость отступить от настоящих Правил для избежания непосредственной опасности.\" Это положение известно как \"Правило хорошей морской практики\" и признаёт, что никакие правила не могут предусмотреть все возможные ситуации. Отступление от Правил допускается ТОЛЬКО для предотвращения непосредственной опасности, а не по удобству капитана или из-за отсутствия других судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIk2oBNCOy2B7w1REeKVVL-a5yyPmoAAL0CAACHuIIRNbqBDJFhDEgOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIlGoBNCXx-gkBFt8g5zwR39s7B7idAAL1CAACHuIIRBtYkjWPbpUzOwQ"
     },
     {
         "num": 245,
@@ -5887,8 +5887,8 @@ QUESTIONS = [
         "en_explain": "The prefix \"PAN-PAN\" (spoken three times) indicates an urgency signal used when a vessel or person has a serious safety concern that requires assistance, but there is no immediate danger to life or vessel. This is distinct from \"MAYDAY,\" which signals grave and imminent danger requiring immediate assistance. This procedure is established under the International Radio Regulations and referenced in conjunction with COLREGS Rule 31 regarding distress signals and communications.",
         "ru_explain": "Согласно международным правилам радиосвязи (ITU Radio Regulations) и руководствам USCG по связи:  **PAN-PAN** — сигнал срочности (Urgency Signal), который указывает, что вызывающая станция имеет очень срочное сообщение, касающееся безопасности судна или человека на борту, но при этом НЕТ непосредственной угрозы жизни или судну, требующей немедленной помощи.  Примеры использования PAN-PAN: - Человек за бортом (но спасательная операция контролируется) - Медицинская эвакуация - Потеря управления без непосредственной опасности  Для сравнения: - **MAYDAY** (вариант A) — сигнал бедствия при непосредственной угрозе жизни - **SÉCURITÉ** (варианты C и D) — сигнал безопасности для навигационных и метеопредупреждений",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIlWoBNCeFFP3ANmLdhb0YOOtGlVd9AAL2CAACHuIIRGkvEGa8dzz4OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIlmoBNCgtN_WE-1fK2BrvXMT2VGSgAAL3CAACHuIIRN6WgyHu2ukVOwQ"
     },
     {
         "num": 246,
@@ -5911,8 +5911,8 @@ QUESTIONS = [
         "en_explain": "When transmitting a VHF voice distress message, the proper procedure is to end with \"OVER\" to indicate you have finished your transmission and are awaiting a response. This protocol is established under FCC regulations (47 CFR Part 80) governing maritime radiotelephone communications, which require specific procedural words to ensure clear communication during emergencies. \"Over\" signals to receiving stations that the vessel in distress is standing by for acknowledgment or assistance instructions.",
         "ru_explain": "Согласно правилам радиосвязи, установленным Международным регламентом радиосвязи (ITU Radio Regulations) и процедурам GMDSS, слово \"OVER\" (\"приём\") используется для завершения передачи, когда ожидается ответ от другой станции. В сообщениях о бедствии (MAYDAY) после изложения всей информации оператор произносит \"OVER\", сигнализируя, что передача завершена и он ожидает ответа от береговой станции или других судов. Слово \"OUT\" (\"конец связи\") используется только когда ответ не требуется и связь полностью завершается. \"Roger\" означает подтверждение получения сообщения, а не завершение передачи.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIl2oBNCr0fzueJyPLIMqQwDsvdnKPAAL4CAACHuIIRCu61xNBaF_SOwQ",
+        "audio_a": "CQACAgEAAxkDAAIImGoBNCyr4y6cVyr7nKrDPdA45N_nAAL5CAACHuIIRPObn6jl9jrDOwQ"
     },
     {
         "num": 247,
@@ -5935,8 +5935,8 @@ QUESTIONS = [
         "en_explain": "According to the International Telecommunication Union (ITU) Phonetic Alphabet, which is required for maritime radiotelephone communications, the letter \"O\" is pronounced \"OSS-CAH\" (Oscar). This standardized phonetic alphabet ensures clear communication and reduces misunderstanding during radio transmissions at sea, as mandated by FCC regulations and international maritime communication protocols.",
         "ru_explain": "Согласно Международному своду сигналов (International Code of Signals) и правилам радиосвязи ITU (Международного союза электросвязи), при передаче по радиотелефону используется фонетический алфавит NATO/ICAO. Буква \"O\" произносится как \"OSCAR\" (ОСС-КАР). Это стандарт морской радиосвязи, обеспечивающий чёткое понимание передаваемой информации независимо от языка и помех в эфире. Полный фонетический алфавит: Alfa, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliet, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIImWoBNC3kRces_P-V6pNqEeXb5sH1AAL6CAACHuIIRHldXNkSD8NyOwQ",
+        "audio_a": "CQACAgEAAxkDAAIImmoBNC9MBcBClWIUM3Y0MwAB6l2MVAAC-wgAAh7iCERo-HnG1AtRmzsE"
     },
     {
         "num": 248,
@@ -5959,8 +5959,8 @@ QUESTIONS = [
         "en_explain": "When transmitting messages via VHF marine radio, the **standard phonetic alphabet** (Alpha, Bravo, Charlie, Delta, etc.) should be used to spell out words that may be misunderstood due to static, background noise, or similar-sounding letters. This practice is established in FCC regulations and international maritime communication procedures to ensure clarity and prevent dangerous miscommunication, particularly when spelling vessel names, call signs, or critical navigational information.",
         "ru_explain": "Согласно правилам морской радиосвязи (ITU Radio Regulations и FCC Part 80), для чёткой передачи букв, цифр и сложных слов по радио используется международный фонетический алфавит (NATO/ICAO phonetic alphabet): Alpha, Bravo, Charlie, Delta, Echo, Foxtrot и т.д. Это особенно важно при передаче позывных судов, названий и координат, когда помехи или акцент могут исказить понимание. Например, буква \"B\" передаётся как \"Bravo\", \"M\" — как \"Mike\". Переключатели мощности влияют только на дальность связи, но не на ясность произношения.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIm2oBNDHmoxnLf0Dhi-fURf1ZA3XOAAL8CAACHuIIRFyIEYrYNy8dOwQ",
+        "audio_a": "CQACAgEAAxkDAAIInGoBNDIq_t_G7p_eUd6qbdHGam6OAAL9CAACHuIIRNm6TFdqGe7fOwQ"
     },
     {
         "num": 249,
@@ -5983,8 +5983,8 @@ QUESTIONS = [
         "en_explain": "Marine radio equipment, particularly VHF-FM radios, serves multiple communication purposes in vessel operations. Mariners use VHF Channel 13 to contact bridges and locks for passage requests, while VHF Channel 16 is the international distress and calling frequency monitored by the U.S. Coast Guard. This communication capability is addressed in FCC regulations and supports safe navigation as outlined in the general responsibilities under Rule 2 of the COLREGS/Inland Rules.",
         "ru_explain": "Согласно правилам FCC (47 CFR Part 80) и практике морской радиосвязи, судовое радиооборудование (VHF-радиостанция) используется для связи с различными службами: Береговая охрана (Coast Guard) — канал 16 для экстренной связи и безопасности; разводные мосты — канал 13 или специально назначенные каналы для запроса открытия; шлюзы — для координации прохода через шлюзовые системы. Это стандартное применение морской УКВ-радиосвязи для обеспечения безопасности судоходства.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIInWoBNDTX1l46HZCzCTemafqCE6k9AAL-CAACHuIIRFjTsvp-32cxOwQ",
+        "audio_a": "CQACAgEAAxkDAAIInmoBNDYVOaCx3ixm5SjgXGNuHWoaAAL_CAACHuIIREfxdLbCf5RyOwQ"
     },
     {
         "num": 250,
@@ -6007,8 +6007,8 @@ QUESTIONS = [
         "en_explain": "Frequency modulation (FM) marine radio transmissions use vertical polarization, which requires antennas to be mounted in a vertical orientation to achieve optimal signal reception and transmission. This is why VHF marine radio antennas on vessels are always installed vertically. This is a technical requirement for marine radio communications as specified in FCC regulations governing maritime radio equipment, not a Navigation Rule (COLREGS) matter.",
         "ru_explain": "# Морские термины\n\nПередачи морского радио с частотной модуляцией (ЧМ) используют вертикальную поляризацию, которая требует установки антенн в вертикальной ориентации для достижения оптимального приема и передачи сигнала. Поэтому антенны УКВ морского радио на судах всегда устанавливаются вертикально. Это техническое требование для морской радиосвязи, определенное правилами ФКК, регулирующими морское радиооборудование, а не вопрос Международных правил предупреждения столкновений судов в море (МППСС).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIn2oBNDguzsUh0wkVNCc1cxswoqpEAAMJAAIe4ghEZPGsJ4ERgM47BA",
+        "audio_a": "CQACAgEAAxkDAAIIoGoBNDniAiAxOW4ySSmLe1uoUSChAAIBCQACHuIIRBZjG3XNSWeKOwQ"
     },
     {
         "num": 251,
@@ -6031,8 +6031,8 @@ QUESTIONS = [
         "en_explain": "VHF Channel 16 (156.8 MHz) is the international distress, safety, and calling frequency that all vessels equipped with VHF radios must monitor at all times while underway. This requirement is established under FCC regulations (47 CFR 80.148) and supports the distress and safety communications provisions of SOLAS. Channel 13 is used for bridge-to-bridge navigation, while Channel 16 remains the primary channel for hailing other vessels and receiving emergency broadcasts.",
         "ru_explain": "Согласно 47 CFR 80.148 (правила FCC для морской радиосвязи) и международным требованиям ITU, все суда, оборудованные УКВ-радиостанцией, обязаны вести постоянное наблюдение на канале 16 VHF (156.8 МГц). Канал 16 является международным каналом бедствия и вызова. Канал 13 используется для связи при маневрировании между судами (bridge-to-bridge), но не является обязательным каналом постоянного наблюдения. Канал 22A — рабочий канал Береговой охраны США.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIoWoBNDvPiAWK6jrJbaT-1CCSpLsvAAICCQACHuIIRBCOWAPb5BWCOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIomoBNDz1HZykz1hdBo4PJXi0nA4MAAIDCQACHuIIRIRebpoxpM06OwQ"
     },
     {
         "num": 252,
@@ -6055,8 +6055,8 @@ QUESTIONS = [
         "en_explain": "\"Sécurité\" (pronounced \"securitay\") is the international maritime safety signal used to broadcast navigational or meteorological warnings that are important but do not involve immediate danger to life or vessel. Per FCC regulations and international radio procedures, safety calls are initiated on VHF Channel 16, the international distress, safety, and calling frequency, before switching to a working channel for the full message. This distinguishes safety messages from \"Mayday\" (distress/emergency) and \"Pan-Pan\" (urgency) communications.",
         "ru_explain": "Согласно международным правилам радиосвязи (ITU Radio Regulations) и требованиям USCG, существует три категории приоритетных сообщений: MAYDAY (бедствие), PAN-PAN (срочность) и SÉCURITÉ (безопасность). Слово \"Sécurité\" (произносится \"Секюритэ\") используется для передачи сообщений безопасности — важной навигационной или метеорологической информации (например, о плавающих объектах, неработающих буях, штормовых предупреждениях). VHF канал 16 (156.8 МГц) является международным каналом вызова и бедствия, на котором все суда обязаны нести постоянную вахту. Сообщения безопасности первоначально передаются на канале 16, затем слушатели переводятся на рабочий канал для получения полной информации.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIo2oBND6IGnCNVoaXiEQFsqNlmYzkAAIECQACHuIIRNqg-KnPuS0cOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIpGoBNECAtYs51Vdp-xE7IkUB6IgfAAIFCQACHuIIRECSYUAiodGmOwQ"
     },
     {
         "num": 253,
@@ -6079,8 +6079,8 @@ QUESTIONS = [
         "en_explain": "VHF Channel 16 (156.8 MHz) is the international distress, safety, and calling frequency that all vessels equipped with VHF radios are required to monitor while underway. This requirement is established under FCC regulations (47 CFR Part 80) and supports the obligations outlined in Rule 5 (Lookout) of both the COLREGS and US Inland Rules, which require maintaining a proper lookout by all available means, including radio watch for distress calls and safety communications.",
         "ru_explain": "Согласно требованиям FCC (Federal Communications Commission) и международным правилам морской радиосвязи, канал 16 (156.8 МГц) является международным каналом бедствия, безопасности и вызова. Все суда, оборудованные УКВ-радиостанцией, обязаны вести постоянное прослушивание канала 16 во время нахождения в море. Канал 6 используется для связи между судами, канал 13 — для связи при маневрировании (bridge-to-bridge), канал 78 — для некоммерческой связи.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIpWoBNEHDeZmrdUxlMhp8W9DzqokdAAIGCQACHuIIRLTKoRb5mcQCOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIpmoBNEPol2orRH5IjdaVI2zAFDwnAAIHCQACHuIIRAwgWho3odcNOwQ"
     },
     {
         "num": 254,
@@ -6103,8 +6103,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 35(g) of both International and Inland Rules, a vessel at anchor shall ring the bell rapidly for about 5 seconds at intervals of not more than one minute. Since this vessel is exactly 50 meters in length (not over 100 meters), she is only required to sound the bell signal forward; the additional gong signal aft is only required for vessels 100 meters or more in length.  **ОТВЕТ: A**",
         "ru_explain": "Согласно Правилу 35(f) МППСС (COLREGS Rule 35(f)) и 33 CFR 83.35(f): Судно на якоре должно подавать учащённый звон в колокол в течение приблизительно 5 секунд с интервалами не более 1 минуты. Судно длиной 100 метров и более дополнительно должно подавать звук гонга в кормовой части сразу после звона колокола. Поскольку судно в вопросе имеет длину 50 метров (менее 100 м), оно обязано подавать только сигнал колоколом — учащённый звон в течение 5 секунд каждую минуту. Гонг требуется только для судов 100 метров и более.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIp2oBNEVrRv1mvQtkEcz-biheXBjuAAIICQACHuIIRLtfUEaMrjybOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIqGoBNEfFwpy4OaIhoys0xW_zKY4pAAIJCQACHuIIRPN4yds8eJDGOwQ"
     },
     {
         "num": 255,
@@ -6127,8 +6127,8 @@ QUESTIONS = [
         "en_explain": "When a vessel is in grave and imminent danger requiring immediate assistance, the internationally recognized voice distress signal is \"MAYDAY\" spoken three times, followed by vessel identification and the nature of the emergency. This procedure is established under the International Telecommunication Union Radio Regulations and referenced in Annex IV of the COLREGS (International Regulations for Preventing Collisions at Sea). \"Pan Pan\" (repeated three times) is used for urgent situations that are NOT immediately life-threatening, while \"MAYDAY\" indicates the most serious level of distress where life or vessel is in immediate peril.",
         "ru_explain": "Согласно международным правилам радиосвязи (ITU Radio Regulations) и требованиям USCG, существует три уровня срочности радиосообщений:  • **MAYDAY** — сигнал бедствия, используется когда судну, самолёту или человеку угрожает серьёзная и неминуемая опасность и требуется немедленная помощь (тонет, пожар, медицинская угроза жизни). Произносится три раза: \"Mayday, Mayday, Mayday\".  • **PAN-PAN** — сигнал срочности, используется когда есть срочная ситуация, но непосредственной угрозы жизни нет (поломка двигателя в безопасных водах, человек за бортом найден).  • **SÉCURITÉ** — сигнал безопасности для навигационных предупреждений и метеоинформации.  \"November Charlie\" — это флажный сигнал бедствия (NC), но не голосовой радиосигнал.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIqWoBNEmsrWxjbv4_tPYR7yNQ5WlFAAIKCQACHuIIRELkUGKwgWC6OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIqmoBNEqvBlJLN9bvO94NLOemeVz4AAILCQACHuIIREtT05__NlB2OwQ"
     },
     {
         "num": 256,
@@ -6151,8 +6151,8 @@ QUESTIONS = [
         "en_explain": "VHF Channels 68, 69, and 71 are designated as working channels for non-commercial, routine vessel-to-vessel communications in U.S. waters. These channels allow recreational boaters to conduct general conversations without congesting Channel 16 (the distress, safety, and calling frequency) or commercial working channels. This allocation is established by FCC regulations governing marine VHF radio use, not COLREGS or Inland Rules, which address navigation rather than radio communications.",
         "ru_explain": "Согласно правилам FCC (Federal Communications Commission) для морской радиосвязи, каналы VHF 68, 69 и 71 выделены как рабочие каналы (Working Channels) для некоммерческого использования на прогулочных и малых судах. Эти каналы предназначены для рутинных переговоров между судами, не связанных с коммерческой деятельностью. Канал 16 (156.800 МГц) остаётся международным каналом бедствия и вызова, а рабочие переговоры должны вестись на выделенных каналах, таких как 68, 69 и 71, чтобы не загружать аварийный канал.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIq2oBNEzJLuWoST-n5lBEaUyClnZPAAIMCQACHuIIROsFDRxNTfcLOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIrGoBNE2BgTLyzctpkVyCtO-TS686AAINCQACHuIIRLE-fHn89yKdOwQ"
     },
     {
         "num": 257,
@@ -6175,8 +6175,8 @@ QUESTIONS = [
         "en_explain": "Marine VHF radios operate at two power settings: 1 watt (low power) for short-range communications and 25 watts (high power) for longer-range transmissions. This is established by FCC regulations governing marine radio equipment, not COLREGS or Inland Rules. Operators should use low power when possible to reduce interference and reserve high power for distress calls or when communicating over greater distances.",
         "ru_explain": "Судовые УКВ радиостанции работают на двух уровнях мощности: 1 ватт (низкая мощность) для ближнесредных коммуникаций и 25 ватт (высокая мощность) для дальнесредных передач. Это установлено правилами FCC, регулирующими морское радиооборудование, а не МППСС или Внутренними правилами. Операторы должны использовать низкую мощность, когда возможно, чтобы снизить помехи, и резервировать высокую мощность для сигналов бедствия или при коммуникациях на большие расстояния.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIrWoBNE8uhV7iCGtkMr0FNzUl1z3CAAIOCQACHuIIREEaESjeVjUQOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIrmoBNFGCwCchsVUkZylxZHvDLP5wAAIPCQACHuIIRPSHrC3u7zkzOwQ"
     },
     {
         "num": 258,
@@ -6199,8 +6199,8 @@ QUESTIONS = [
         "en_explain": "Marine VHF radios are equipped to receive NOAA Weather Radio broadcasts on designated WX channels (WX1 through WX7), which transmit continuous weather information including forecasts, warnings, and marine conditions. This capability is required under FCC regulations for marine VHF equipment and is essential for maintaining situational awareness of weather hazards while underway. Note: This is a radio communications question governed by FCC regulations rather than the Navigation Rules (COLREGS/Inland Rules).",
         "ru_explain": "Согласно требованиям FCC и стандартам NOAA, морские УКВ-радиостанции (Marine VHF) оснащены возможностью приёма каналов NOAA Weather Radio (WX1-WX10). Служба NOAA Weather Radio All Hazards (NWR) ведёт непрерывное вещание на специальных частотах (162.400–162.550 МГц), которые интегрированы в стандартные морские УКВ-приёмники. Это позволяет судоводителям получать актуальные прогнозы погоды, штормовые предупреждения и другую важную метеорологическую информацию непосредственно на борту судна без дополнительного оборудования.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIr2oBNFJqtfBDWI9GsLg56YCfsTRBAAIQCQACHuIIRAh0IVreh50XOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIsGoBNFQZ2Hm4ebk8FcSiTrNSRRGoAAIRCQACHuIIRPGM2JJK6or8OwQ"
     },
     {
         "num": 259,
@@ -6223,8 +6223,8 @@ QUESTIONS = [
         "en_explain": "Digital Selective Calling (DSC) is a semi-automated system integrated into modern VHF-FM radios that allows mariners to transmit a distress alert containing vessel identification and position information by pressing and holding a dedicated red distress button. This capability is required under the Global Maritime Distress and Safety System (GMDSS) regulations and significantly improves the speed and reliability of distress communications. Per 47 CFR Part 80 and GMDSS requirements, DSC-equipped radios must be connected to a GPS to automatically include position data in the distress transmission.",
         "ru_explain": "DSC (Digital Selective Calling — цифровой избирательный вызов) — это технология, встроенная в современные морские УКВ-радиостанции, которая позволяет отправить сигнал бедствия одним нажатием специальной кнопки \"DISTRESS\". При активации автоматически передаётся цифровое сообщение с идентификатором судна (MMSI), координатами (если подключён GPS) и характером бедствия. Эта функция является ключевым элементом Глобальной морской системы связи при бедствии и для обеспечения безопасности (GMDSS). SSB, VHF и UHF — это типы радиочастот/модуляции, но именно DSC обеспечивает функцию автоматической передачи сигнала бедствия нажатием одной кнопки.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIsWoBNFZf8jjl_J2EiQn8RLbtKIz_AAISCQACHuIIRMvBUYBA_P9fOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIsmoBNFfOziFr8w7WzXzS4HyfonCnAAITCQACHuIIRF2QgziHWUs9OwQ"
     },
     {
         "num": 260,
@@ -6247,8 +6247,8 @@ QUESTIONS = [
         "en_explain": "Duplex transmission channels allow simultaneous two-way communication, meaning both parties can transmit and receive at the same time, similar to a telephone conversation. This differs from simplex channels, which only permit one-way communication at a time. VHF radiotelephone equipment and channel designations are governed by FCC regulations and international radio regulations, which establish the operational characteristics for maritime communications.",
         "ru_explain": "⚠️  Данный вопрос относится к радиосвязи на море (VHF Radio Communications). Дуплексные (duplex) каналы позволяют вести передачу и приём одновременно на разных частотах. Симплексные (simplex) каналы работают только в одном направлении в каждый момент времени. Эта тема регулируется правилами FCC (Federal Communications Commission) и ITU Radio Regulations, а не COLREGS, Inland Rules или публикациями NOAA/NGA, поэтому официальное объяснение из запрошенных источников предоставить невозможно.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIs2oBNFkQNvk4SwmZ7gTknERO-DwkAAIUCQACHuIIRJ8CCsBxdhnEOwQ",
+        "audio_a": "CQACAgEAAxkDAAIItGoBNFv-G5LGoxof1MydgsUVuBbJAAIVCQACHuIIRPSk7WvmTm8JOwQ"
     },
     {
         "num": 261,
@@ -6271,8 +6271,8 @@ QUESTIONS = [
         "en_explain": "A pelorus is a dumb compass (non-magnetic repeater) used to take relative bearings, while a hand bearing compass is a portable magnetic compass for taking visual bearings on objects. A sextant, though primarily for celestial navigation, can also measure horizontal angles between objects to determine direction. All three devices are recognized tools for measuring direction aboard vessels, supporting compliance with the Navigation Rules requirement to use all available means appropriate to assess risk of collision (Rule 7).",
         "ru_explain": "Для измерения направления (пеленга) на судне могут использоваться различные приборы. **Пелорус** — это репитер гирокомпаса или магнитного компаса с визирным устройством, предназначенный для взятия пеленгов на береговые ориентиры или другие суда. **Ручной пеленгаторный компас** — портативный магнитный компас с визиром для определения направления на объект. **Секстант**, хотя традиционно используется для измерения высоты светил, также может применяться для измерения горизонтальных углов между ориентирами, что позволяет определять направление. Поскольку все три прибора способны измерять направление, правильный ответ — «всё вышеперечисленное».",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIItWoBNFzVSm9HM0028JbH79_FGMkTAAIWCQACHuIIRBYDPUA--J3-OwQ",
+        "audio_a": "CQACAgEAAxkDAAIItmoBNF4yM-9BQs8RJ9bzA0SBkxReAAIXCQACHuIIRMUVM4PggBSDOwQ"
     },
     {
         "num": 262,
@@ -6295,8 +6295,8 @@ QUESTIONS = [
         "en_explain": "Dividers are the standard navigation tool used to measure distance on a nautical chart by stepping off the distance between two points and comparing it to the latitude scale on the chart's side margins. One minute of latitude equals one nautical mile, making this the proper reference for distance measurement. This is a fundamental chartwork skill required for voyage planning and dead reckoning navigation.",
         "ru_explain": "Измерительный циркуль (дивайдер) — это навигационный инструмент с двумя заострёнными ножками, используемый для измерения и откладывания расстояний на морской карте. Расстояние снимается циркулем между двумя точками на карте, затем переносится на боковую рамку карты (шкалу широт), где одна минута широты равна одной морской миле. Параллельные линейки служат для прокладки курсов и пеленгов, а компасы (магнитный и гирокомпас) — для определения направлений, но не расстояний.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIt2oBNGD60p4ndkBMdCJ772G7vixJAAIYCQACHuIIRHktgpTOVt6QOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIuGoBNGHKiUiaCNTV5TiyM285_lfLAAIZCQACHuIIRIBCu7iKFm43OwQ"
     },
     {
         "num": 263,
@@ -6319,8 +6319,8 @@ QUESTIONS = [
         "en_explain": "Parallels (parallel rulers) are navigation tools used to transfer bearings or courses across a chart by \"walking\" them from a compass rose to your position while keeping them aligned with a latitude line. This plotting technique allows mariners to accurately determine their vessel's position or plot a course by maintaining the same angle across the chart. While not specifically referenced in COLREGS or Inland Rules, proficiency with basic navigation tools like parallel rulers is essential for safe navigation and compliance with Rule 5 (Lookout) which requires using \"all available means\" appropriate to circumstances.",
         "ru_explain": "Параллельные линейки (parallel rulers) — классический инструмент штурмана для прокладки курса на морской карте. Техника работы: линейку совмещают с нужным направлением (курсом или пеленгом), затем «перешагивают» ею по карте, поочерёдно фиксируя одну половину и перемещая другую, пока не дойдут до ближайшей параллели или компасной розы для считывания направления в градусах. Этот метод позволяет переносить линии параллельно по всей карте без изменения угла.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIuWoBNGOtnuBZ7HTkNFhTPMXFKKV9AAIaCQACHuIIRAIoXvw2bdoBOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIumoBNGRIccOcjew9e52KsJqv2X72AAIbCQACHuIIRNZrqjB63LDDOwQ"
     },
     {
         "num": 264,
@@ -6343,8 +6343,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 33 of both the International and Inland Navigation Rules, vessels less than 12 meters in length are not required to carry the bell and whistle mandated for larger vessels. Instead, these smaller vessels need only have some means of making an efficient sound signal, which could be an air horn, whistle, or other device capable of producing the required signals.",
         "ru_explain": "Согласно МППСС-72 (Правило 33), требования к звукосигнальному оборудованию зависят от длины судна. Суда длиной 12 метров и более обязаны иметь свисток (тифон) и колокол. Суда длиной от 20 метров и более дополнительно должны иметь гонг. Однако для судов длиной менее 12 метров (в данном случае 10 метров) не требуется иметь стандартное оборудование — достаточно любого средства, способного подавать эффективный звуковой сигнал, который будет слышен на достаточном расстоянии для предупреждения других судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIu2oBNGb7jIkcwKoiVZqi_uBsFukOAAIcCQACHuIIRP4snHAAAWHPeTsE",
+        "audio_a": "CQACAgEAAxkDAAIIvGoBNGg0--3nEOiMi7yQ-Bnk-MlgAAIdCQACHuIIROHztV3SYhe4OwQ"
     },
     {
         "num": 265,
@@ -6367,8 +6367,8 @@ QUESTIONS = [
         "en_explain": "Distance on a nautical chart should only be measured using the latitude scale (located on the vertical sides of the chart), where one minute of latitude equals one nautical mile. The longitude scale cannot be used for measuring distance because the distance represented by one degree of longitude varies depending on latitude—it decreases as you move from the equator toward the poles due to meridian convergence.",
         "ru_explain": "Для измерения расстояния на морской карте используется только шкала широты (боковые края карты), где 1 минута широты равна 1 морской миле. Шкала долготы (верхний и нижний края карты) не подходит для измерения расстояния, поскольку длина одной минуты долготы изменяется в зависимости от широты — она максимальна на экваторе и уменьшается до нуля на полюсах. При измерении расстояния следует использовать участок шкалы широты, расположенный примерно на той же широте, что и измеряемый отрезок маршрута.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIvWoBNGpS9etsqf4hpq0bsEMnO6FlAAIeCQACHuIIRBEB_Ylg0ARhOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIvmoBNGsfYNxVMwH1y2osrpyQ4NlBAAIfCQACHuIIRFaUEy51AoGPOwQ"
     },
     {
         "num": 266,
@@ -6391,8 +6391,8 @@ QUESTIONS = [
         "en_explain": "Dividers are essential navigation tools used for measuring distances on nautical charts, and they must be maintained in good working order with undamaged tips to ensure accurate measurements. Damaged or loose dividers can slip on the chart surface, leading to plotting errors that could compromise safe navigation. While not addressed by COLREGS directly, proper use of navigation tools supports compliance with Rule 2 (Responsibility), which requires mariners to take all precautions required by ordinary practice of seamen.",
         "ru_explain": "Измерительный циркуль (dividers) — это штурманский инструмент, используемый для измерения и откладывания расстояний на морских картах. Перед работой с циркулем необходимо проверить его исправность: ножки должны плавно раздвигаться и надёжно фиксироваться, а иглы (концы) должны быть острыми и неповреждёнными. Затупленные или погнутые иглы приводят к неточным измерениям и могут повредить карту. Материал изготовления и предыдущее использование не влияют на точность работы, а максимальный раствор циркуля не является критерием его пригодности — при необходимости расстояние откладывается в несколько приёмов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIv2oBNG1mAAHsK55xM35sS0yWxGmtxgACIAkAAh7iCER9-0ycOsDdmzsE",
+        "audio_a": "CQACAgEAAxkDAAIIwGoBNG_KgVnmBZ2JiuauzqfpQtEWAAIhCQACHuIIRFStJhtYVp0mOwQ"
     },
     {
         "num": 267,
@@ -6415,8 +6415,8 @@ QUESTIONS = [
         "en_explain": "Accurate navigation plotting requires careful attention because small errors in measurement or calculation compound over distance, potentially resulting in significant course deviations that could lead to groundings, collisions, or other hazardous situations. This principle aligns with the prudent seamanship standards underlying Rule 2 (Responsibility) of both the COLREGS and US Inland Rules, which requires mariners to exercise due diligence in all aspects of navigation. Taking sufficient time to verify plots, bearings, and calculations is fundamental to safe vessel operation.",
         "ru_explain": "При выполнении навигационной прокладки на карте точность имеет критическое значение. Небольшая ошибка в измерении пеленга, расстояния или при нанесении точки на карту может привести к существенному отклонению от запланированного маршрута. Чем больше расстояние до точки назначения, тем значительнее будет погрешность. Поэтому штурман должен тщательно и внимательно выполнять все расчёты и построения, перепроверяя свою работу.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIwWoBNHEnWZzSOHDxvrVYWA9FbgxjAAIiCQACHuIIRCMHez9nlfM4OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIwmoBNHIWx7LIuu8SY-1EOnzp4EtqAAIjCQACHuIIRFIpIV3dbfYIOwQ"
     },
     {
         "num": 268,
@@ -6439,8 +6439,8 @@ QUESTIONS = [
         "en_explain": "A hand bearing compass is an essential tool for the prudent mariner, enabling accurate visual bearings to determine if risk of collision exists with other vessels, as required by Rule 7(d)(i) of both the COLREGS and US Inland Rules. This portable instrument allows the operator to take bearings from various positions on the vessel and verify whether the compass bearing of an approaching vessel is changing appreciably. Carrying this equipment supports compliance with the requirement to use \"all available means\" to determine risk of collision.",
         "ru_explain": "Ручной пеленгаторный компас (hand bearing compass) — это портативный компас, используемый для взятия пеленгов на навигационные ориентиры, другие суда или объекты. Благоразумный (prudent) мореплаватель всегда должен иметь его на борту, поскольку он позволяет: определять местоположение судна методом пеленгования береговых ориентиров; оценивать риск столкновения с другими судами (если пеленг не меняется — существует опасность столкновения согласно МППСС-72); служит резервным средством навигации при отказе основных приборов. Это важный элемент хорошей морской практики (good seamanship).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIw2oBNHRSHhISpDzUXTw7H-1DTrglAAIkCQACHuIIRJySH5FkwOqeOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIxGoBNHWNIhLpW7PtA98eoAzvuqWFAAIlCQACHuIIRAlMHz3wBBlXOwQ"
     },
     {
         "num": 269,
@@ -6463,8 +6463,8 @@ QUESTIONS = [
         "en_explain": "A **sextant** is the instrument used in celestial navigation to measure the angular altitude of celestial bodies (such as the sun, moon, or stars) above the horizon. This angular measurement, combined with precise time and nautical almanac data, allows the navigator to calculate the vessel's position. While compasses and pelorus devices are used for terrestrial navigation and bearing work, only the sextant enables position-fixing through celestial observation.",
         "ru_explain": "Секстант — это оптический угломерный инструмент, используемый для измерения высоты небесных светил (Солнца, Луны, звёзд) над горизонтом. На основе этих измерений штурман вычисляет координаты судна. Ручной пеленгаторный компас служит для взятия пеленгов на береговые или плавучие ориентиры. Пелорус — репитер компаса с визирным устройством для определения направлений. Гирокомпас указывает направление на истинный север, но не применяется для астрономических наблюдений.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIxWoBNHf9BsMn3UdvxsK46vRATaA7AAImCQACHuIIREcNC6PFnaZYOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIxmoBNHiBDpgeqJX7r_fG1gqkIEktAAInCQACHuIIRMQHZCrtpiJPOwQ"
     },
     {
         "num": 270,
@@ -6487,8 +6487,8 @@ QUESTIONS = [
         "en_explain": "A Portland plotter features a rotating azimuth wheel that allows navigators to quickly determine and plot courses directly on a chart without needing to reference compass roses or use parallel rulers. The wheel rotates to align with the desired course heading, making it efficient for plotting bearings and courses. This is a practical navigation tool question related to chart work rather than a specific COLREGS or Inland Rules reference.",
         "ru_explain": "Портлендский плоттер (Portland Plotter) — это навигационный прокладочный инструмент, который имеет вращающееся колесо (роликовый транспортир) в центре. Это колесо позволяет штурману быстро определять и откладывать курсы и пеленги на навигационной карте без необходимости использования отдельного транспортира. Колесо градуировано от 0° до 360° и может вращаться относительно линейки плоттера, что делает его удобным для работы с картами в различных проекциях.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIx2oBNHoQGxNWMeGPpNAcQ_m6GkOPAAIoCQACHuIIRJ0E4DWiv6SeOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIyGoBNHw4hxdmA167UFgG3OrISaKYAAIpCQACHuIIROyrG35Os3yYOwQ"
     },
     {
         "num": 271,
@@ -6511,8 +6511,8 @@ QUESTIONS = [
         "en_explain": "A passage plan is a comprehensive document prepared before a voyage that must include current weather forecasts and predictions to ensure safe navigation and allow for route adjustments based on anticipated conditions. While not specifically codified in the COLREGS or Inland Rules, proper voyage planning incorporating weather information is a fundamental element of good seamanship required under Rule 2 (Responsibility), which holds that due regard must be given to all dangers of navigation. Up-to-date weather predictions help the captain make informed decisions about departure timing, route selection, and whether conditions are safe for the vessel and passengers.",
         "ru_explain": "При составлении плана перехода (passage plan) для маломерного судна критически важно учитывать актуальные метеорологические прогнозы. Погодные условия напрямую влияют на безопасность плавания, особенно для малых судов, которые более уязвимы к волнению, ветру и ограниченной видимости. Хотя медицинские запасы и контакты береговых служб также важны для общей готовности судна, именно своевременная информация о погоде является обязательным элементом плана перехода, позволяющим выбрать оптимальный маршрут и время выхода в море.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIyWoBNH1JdC2z7-YBIFrVio6NisS6AAIqCQACHuIIRJx0FDBXhqQ4OwQ",
+        "audio_a": "CQACAgEAAxkDAAIIymoBNH9OFq8JtRP_Avu9pap_mlo8AAIrCQACHuIIRNvp7POoPsceOwQ"
     },
     {
         "num": 272,
@@ -6535,8 +6535,8 @@ QUESTIONS = [
         "en_explain": "This is a practical navigation question, not a COLREGS or Inland Rules matter. Standard dividers have limited span and typically cannot reach 10 nautical miles on a chart's latitude scale in a single spread. When measuring distances greater than a divider's maximum opening, navigators must \"walk\" the dividers along the chart or use a different measurement technique.",
         "ru_explain": "Штурманские циркули-измерители (дивайдеры) имеют различные размеры и, соответственно, разный максимальный раствор ножек. Не все циркули, особенно малые или карманные модели, способны охватить расстояние в 10 морских миль на шкале широты морской карты. Максимальный раствор циркуля ограничен его конструкцией. При работе с картами крупного масштаба, где 10 морских миль занимают значительное расстояние на бумаге, малый циркуль может не достать от одной точки до другой. В таких случаях штурман должен измерять расстояние поэтапно, последовательно откладывая несколько отрезков. Поэтому утверждение о том, что ВСЕ циркули способны измерять 10 морских миль и более — неверно.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIy2oBNIEVEkrumtov4Y0YNMBFnkZhAAIsCQACHuIIRCJ2FR1popwZOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIzGoBNIJxMBEGpY_hK4dndZYn8YolAAItCQACHuIIRFfLWraU_GqDOwQ"
     },
     {
         "num": 273,
@@ -6559,8 +6559,8 @@ QUESTIONS = [
         "en_explain": "SOLAS Chapter V, Regulation 34 establishes the requirement for voyage planning before departure. This regulation mandates that the master ensure all voyages are planned using appropriate nautical charts and nautical publications for the area, following IMO guidelines and recommendations. This is a fundamental safety of navigation requirement under the International Convention for the Safety of Life at Sea.",
         "ru_explain": "Регламент 34 главы V Конвенции СОЛАС (Международная конвенция по охране человеческой жизни на море) устанавливает требования к планированию рейса. Согласно данному регламенту, капитан судна обязан до выхода в море обеспечить надлежащее планирование предстоящего перехода. Планирование должно осуществляться с использованием актуальных навигационных морских карт и навигационных пособий (лоций, таблиц приливов, извещений мореплавателям и т.д.), охватывающих весь район плавания. При этом необходимо учитывать руководства и рекомендации ИМО (Международной морской организации), в частности резолюцию A.893(21) «Руководство по планированию рейса».",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIzWoBNITPcUb0VSCqJ3rqwg0Eoz_jAAIuCQACHuIIRJHGDhVqur1EOwQ",
+        "audio_a": "CQACAgEAAxkDAAIIzmoBNIYU0OWNK2iO09PdjXE5ZjmKAAIvCQACHuIIRPYIC55MXChIOwQ"
     },
     {
         "num": 274,
@@ -6583,8 +6583,8 @@ QUESTIONS = [
         "en_explain": "The International Rules (COLREGS) apply to all vessels upon the high seas and in all waters connected therewith navigable by seagoing vessels, as stated in Rule 1(a). This means they govern navigation in waters outside designated U.S. Inland Rules boundaries, not just in foreign waters or areas with foreign vessel traffic. The correct answer (A) properly reflects that International Rules apply to all waters that are not specifically designated as inland waters.",
         "ru_explain": "МППСС-72 (COLREGS) применяются в открытом море (high seas) и во всех соединённых с ним водах, по которым могут осуществлять плавание морские суда. Это включает проливы, заливы, рейды и подходные фарватеры к портам. Ключевой критерий — судоходность для морских судов (seagoing vessels), а не просто нахождение за пределами внутренних или территориальных вод. Варианты A, B и C неверны, так как они либо слишком широко, либо слишком узко трактуют область применения Международных правил.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIIz2oBNIgzGsbDNi6scU9VcfcdI22BAAIwCQACHuIIRAABciFofqBQDDsE",
+        "audio_a": "CQACAgEAAxkDAAII0GoBNIpBDUccNdBOTwwDEpevdJ63AAIxCQACHuIIRJc5-_qDfqoNOwQ"
     },
     {
         "num": 275,
@@ -6607,8 +6607,8 @@ QUESTIONS = [
         "en_explain": "A voyage plan is required by law under 33 CFR 164.80, which mandates that vessels must have a written voyage plan that includes specific information such as the intended track, navigational hazards, and contingency measures before getting underway. This regulation applies to certain inspected vessels operating in U.S. waters. The master or person in charge must ensure the voyage plan is prepared and available for review.",
         "ru_explain": "Согласно требованиям Береговой охраны США (USCG) и международным конвенциям (СОЛАС, глава V), каждое судно перед выходом в рейс обязано иметь составленный план перехода (Voyage Plan). Этот документ включает прокладку маршрута, учёт навигационных опасностей, приливо-отливных явлений, метеоусловий и контрольных точек. Планирование рейса — это не просто хорошая морская практика, а юридическое требование, обязательное для исполнения капитаном судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII0WoBNIxxRNCgPCAhTUUqHSU6R2ZSAAIyCQACHuIIRHqI9rabNKQgOwQ",
+        "audio_a": "CQACAgEAAxkDAAII0moBNI3HaVr2nB8vGSrLzq8lYYJoAAIzCQACHuIIREc6vsfJfdgSOwQ"
     },
     {
         "num": 276,
@@ -6631,8 +6631,8 @@ QUESTIONS = [
         "en_explain": "Voyage planning requires consideration of five key factors: weather conditions, navigation hazards, vessel capabilities, crew qualifications, and emergency procedures. Navigation hazards—such as shallow water, traffic separation schemes, and obstructions—are essential elements that must be identified and evaluated during the planning process. This requirement aligns with the Navigation Rules (COLREGS Rule 2) obligation to exercise good seamanship and take all precautions required by ordinary practice.",
         "ru_explain": "При составлении плана перехода (voyage plan) учитываются пять ключевых факторов: 1) навигационные опасности (мели, рифы, затонувшие объекты); 2) погодные условия и прогноз; 3) приливо-отливные явления и течения; 4) характеристики судна и экипажа; 5) аварийные порты-убежища и средства связи. Навигационные опасности (вариант A) — это фундаментальный элемент любого плана перехода, обеспечивающий безопасность мореплавания. Остальные варианты либо являются вспомогательными инструментами (B), либо не относятся к критическим факторам планирования (C, D).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII02oBNI8o6Qx8NlIg16E-s1rh6JLgAAI0CQACHuIIRO2M-ZSeIlIvOwQ",
+        "audio_a": "CQACAgEAAxkDAAII1GoBNJCqOFz3rLz0MrQZy-ZzJ7sRAAI1CQACHuIIRAHbYCBZB5ZdOwQ"
     },
     {
         "num": 277,
@@ -6655,8 +6655,8 @@ QUESTIONS = [
         "en_explain": "This question addresses basic boating safety practices rather than a specific COLREG or Inland Rule. Filing a float plan with someone you trust ensures that a responsible person knows your intended route, passengers aboard, and expected return time—critical information for initiating a search and rescue operation if you fail to return. This practice is recommended by the U.S. Coast Guard as part of prudent seamanship and pre-departure preparation.",
         "ru_explain": "Перед выходом в плавание судоводитель обязан оставить на берегу информацию о плане рейса (float plan) надёжному лицу. Это включает маршрут следования, список членов экипажа и пассажиров на борту, а также расчётное время возвращения. В случае если судно не вернётся в назначенный срок, доверенное лицо сможет оповестить береговую охрану для организации поисково-спасательной операции. Поэтому правильный ответ — «доверяете» (trust).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII1WoBNJJChuJDHatuas81P-kUlFl9AAI2CQACHuIIROcdXyTBb8sCOwQ",
+        "audio_a": "CQACAgEAAxkDAAII1moBNJRmNb_FGFfA0AZkCTJflgZTAAI3CQACHuIIRLQoEqsSQXnyOwQ"
     },
     {
         "num": 278,
@@ -6679,8 +6679,8 @@ QUESTIONS = [
         "en_explain": "The correct answer is **False**. Proper voyage planning requires that the process dictate the route, not the other way around. A prudent mariner must first assess all factors—weather, vessel capabilities, crew competence, hazards, and regulatory requirements—before selecting an appropriate route, ensuring the voyage plan is developed systematically rather than being constrained by a predetermined course.",
         "ru_explain": "Утверждение неверно, потому что процесс планирования должен определять маршрут, а не наоборот. При правильном подходе к планированию рейса судоводитель сначала собирает всю необходимую информацию (метеоусловия, навигационные опасности, приливо-отливные явления, особенности района плавания), а затем на основе этих данных прокладывает оптимальный и безопасный маршрут. Если позволить маршруту диктовать планирование, можно упустить важные факторы безопасности и не учесть альтернативные варианты прохода.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII12oBNJXtCr_GQte2mjQHgR_fguXiAAI4CQACHuIIRLfQdCMvvpkvOwQ",
+        "audio_a": "CQACAgEAAxkDAAII2GoBNJfmnhzreEciCe_whKB9XW2_AAI5CQACHuIIRD8dbCYh38krOwQ"
     },
     {
         "num": 279,
@@ -6703,8 +6703,8 @@ QUESTIONS = [
         "en_explain": "A float plan should incorporate all available navigational aids to ensure safe voyage planning and execution. This includes charts for route planning, navigation marks (buoys, beacons, daymarks) for channel guidance, and landmarks for visual position fixing. While not specifically addressed in COLREGS, Rule 2 (Responsibility) requires mariners to use all available means appropriate to prevailing circumstances, which encompasses proper voyage planning using all navigational resources.",
         "ru_explain": "При составлении плана плавания (float plan) судоводитель должен учитывать все доступные средства навигационного обеспечения (aids to navigation). К ним относятся: морские карты (charts) — для определения глубин, опасностей и маршрута; навигационные знаки (navigation marks) — буи, вехи, маяки, указывающие фарватеры и опасности; береговые ориентиры (landmarks) — приметные объекты на берегу (башни, здания, мысы), используемые для визуального определения местоположения. Комплексное использование всех этих средств обеспечивает безопасное плавание.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII2WoBNJkHa1L-xMNhQBQcyOxmeNSrAAI6CQACHuIIROSA8UeG-tRkOwQ",
+        "audio_a": "CQACAgEAAxkDAAII2moBNJpy42ZJ8VNM_5cq_9JtkAd5AAI7CQACHuIIRDr_gYfKHNvtOwQ"
     },
     {
         "num": 280,
@@ -6727,8 +6727,8 @@ QUESTIONS = [
         "en_explain": "Tidal predictions are essential for small craft passage planning because they directly affect water depth, current strength and direction, and safe transit times through shallow areas, channels, and under bridges. Small vessels operating in coastal and inland waters must account for tidal conditions to ensure adequate underkeel clearance and to take advantage of favorable currents. This requirement aligns with prudent seamanship and navigation practices outlined in 33 CFR (Navigation Rules) and standard USCG voyage planning guidance.",
         "ru_explain": "При планировании перехода (passage plan) для маломерных судов учёт приливо-отливных явлений имеет критическое значение. Приливы влияют на глубину под килем, скорость и направление приливных течений, время безопасного прохода через мелководья, бары и узкости, а также на доступность гаваней и якорных стоянок. Игнорирование приливных данных может привести к посадке на мель или опасным ситуациям, особенно в прибрежных водах с большой амплитудой приливов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII22oBNJwZQPLl7tTWLlrvlqT0Zpb2AAI8CQACHuIIRHEQC6O0gH5eOwQ",
+        "audio_a": "CQACAgEAAxkDAAII3GoBNJ5FA3XwEHKJJqfUF6CU3YKQAAI9CQACHuIIRI5Vj75n_jW8OwQ"
     },
     {
         "num": 281,
@@ -6751,8 +6751,8 @@ QUESTIONS = [
         "en_explain": "A voyage plan does not always need to be written down for others to view. While voyage planning is required under STCW and is considered good seamanship, the specific requirement for a formal written plan accessible to others typically applies to larger commercial vessels under ISM Code requirements, not to small passenger vessels operating under a 6-Pack license. For near-coastal and inland operations on smaller vessels, the master may maintain the voyage plan mentally or informally.",
         "ru_explain": "Согласно практике малого судоходства (6-Pack license — управление судами с числом пассажиров до 6 человек), план перехода не обязательно должен быть оформлен в письменном виде для ознакомления другими лицами. На малых судах капитан может держать план перехода в голове, особенно при коротких рейсах в знакомых водах. Требование об обязательном письменном оформлении плана перехода и его доступности для экипажа распространяется на крупнотоннажные суда согласно конвенции СОЛАС и системе управления безопасностью (СУБ), но не является обязательным для малых судов категории 6-Pack.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII3WoBNJ9zTKqC507HxK18NAbTdIvLAAI-CQACHuIIRNgutqVW-FcLOwQ",
+        "audio_a": "CQACAgEAAxkDAAII3moBNKFx_z8f-oKGBqXSjmehbhQvAAI_CQACHuIIRN2365MQDLxeOwQ"
     },
     {
         "num": 282,
@@ -6775,8 +6775,8 @@ QUESTIONS = [
         "en_explain": "The outer ring of a compass rose on a nautical chart indicates **True north**, not magnetic north. The **inner ring** displays magnetic directions and includes the local magnetic variation. This is standard practice on U.S. charts published by NOAA and referenced in navigation principles for chart reading.",
         "ru_explain": "На навигационных картах компасная роза (картушка) имеет два кольца. Внешнее кольцо указывает на **истинный север** (географический), а внутреннее кольцо — на **магнитный север**. Разница между ними называется магнитным склонением (девиацией). Утверждение неверно, поскольку внешнее кольцо показывает истинные направления, а не магнитные.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII32oBNKMQPoiWtCIERFel9G-NiA44AAJACQACHuIIRAT8hVKFhSCQOwQ",
+        "audio_a": "CQACAgEAAxkDAAII4GoBNKQ_SM4oJ1pyeYabA6qgMBxOAAJBCQACHuIIRAkEZ58S35peOwQ"
     },
     {
         "num": 283,
@@ -6799,8 +6799,8 @@ QUESTIONS = [
         "en_explain": "The laws of magnetism refer to the north and south poles, which are the two opposite magnetic poles that attract each other while like poles repel. This fundamental principle is essential for understanding magnetic compass operation aboard vessels. Note: This question pertains to basic navigation and compass theory rather than COLREGS or Inland Rules.",
         "ru_explain": "Законы магнетизма основаны на принципе взаимодействия магнитных полюсов — северного и южного. Земля является гигантским магнитом с двумя магнитными полюсами, которые не совпадают с географическими. Магнитная стрелка компаса ориентируется вдоль силовых линий магнитного поля Земли, указывая на магнитные полюса. Одноимённые полюса отталкиваются, разноимённые — притягиваются. Это фундаментальный принцип, на котором работают все магнитные компасы. Варианты с широтой/долготой и меридианом/экватором относятся к географической системе координат, а склонение и девиация — это поправки компаса, а не основа законов магнетизма.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII4WoBNKYfIwh6dVI6i8el3jvUWDcuAAJCCQACHuIIRBtOzBIFKL5JOwQ",
+        "audio_a": "CQACAgEAAxkDAAII4moBNKh1M_MfpFTurCfHVVF6iKMmAAJDCQACHuIIRHEG9ZDii7ahOwQ"
     },
     {
         "num": 284,
@@ -6823,8 +6823,8 @@ QUESTIONS = [
         "en_explain": "This question covers basic magnetic principles essential to compass navigation. Like magnetic poles (north-north or south-south) repel each other, while unlike poles attract. Understanding this fundamental concept is critical for mariners when accounting for compass deviation caused by the vessel's magnetic fields.",
         "ru_explain": "Одноимённые (like) магнитные полюса — то есть два северных (N-N) или два южных (S-S) — всегда отталкиваются друг от друга. Разноимённые полюса (северный и южный) притягиваются. Это фундаментальный закон магнетизма, важный для понимания работы магнитного компаса и девиации на судне.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII42oBNKoUZl7Wp-WqHQKC68aJjQv3AAJECQACHuIIRBMaX12qNTnwOwQ",
+        "audio_a": "CQACAgEAAxkDAAII5GoBNKvFoXe5GJPTjqYhyP1glKlKAAJFCQACHuIIRHaP0KRk0IKpOwQ"
     },
     {
         "num": 285,
@@ -6847,8 +6847,8 @@ QUESTIONS = [
         "en_explain": "A vessel engaged in fishing, even while at anchor, sounds the fog signal for a vessel engaged in fishing rather than the anchor signal. Under Rule 35(c) of both International and Inland Rules, a vessel engaged in fishing (whether underway or at anchor) shall sound one prolonged followed by two short blasts at intervals of not more than two minutes. The fishing signal takes precedence because it alerts other vessels to the restricted maneuverability associated with fishing operations.",
         "ru_explain": "Согласно Правилу 35 МППСС-72, судно, занятое ловом рыбы (на ходу или на якоре), подаёт опознавательный сигнал — один продолжительный и два коротких звука с интервалом не более двух минут. Этот сигнал заменяет обычные якорные сигналы (звон в колокол), поскольку позволяет другим судам идентифицировать рыболовное судно с его ограниченной манёвренностью из-за орудий лова. Продолжительный звук длится 4-6 секунд, короткий — около 1 секунды.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII5WoBNK3-4K7DOXf2BE6uA8giAZrwAAJGCQACHuIIREEKwRMu5IGAOwQ",
+        "audio_a": "CQACAgEAAxkDAAII5moBNK9yxPls0wsWdgOn-54FIIcCAAJHCQACHuIIRNHoqvDCijoWOwQ"
     },
     {
         "num": 286,
@@ -6871,8 +6871,8 @@ QUESTIONS = [
         "en_explain": "Compass nomenclature refers to the specific parts and terminology associated with a magnetic or gyro compass, such as the compass card, lubber's line, gimbals, compass bowl, and binnacle. The items listed—windlass, drum, and hawsepipe—are all components of the vessel's ground tackle (anchoring) system, not the compass. This is a general navigation knowledge question covering basic equipment terminology required for safe vessel operation.",
         "ru_explain": "Вопрос проверяет знание терминологии, относящейся к компасу. Варианты A, B и C — это термины, относящиеся к якорному устройству судна: брашпиль (windlass) — палубный механизм для подъёма якоря; барабан (drum) — часть брашпиля или лебёдки; клюз (hawsepipe) — труба в корпусе судна для прохода якорной цепи. Ни один из этих терминов не относится к номенклатуре компаса. К компасной номенклатуре относятся: картушка, нактоуз, пеленгатор, девиация, склонение, румбы и т.д. Правильный ответ — D.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII52oBNLEFULrF_vV9nF6zIG0uoLsIAAJICQACHuIIRDYalXUeXKrrOwQ",
+        "audio_a": "CQACAgEAAxkDAAII6GoBNLOUS96xNRXuFgv6vUZbdGdUAAJJCQACHuIIRLl4rgE5xZoGOwQ"
     },
     {
         "num": 287,
@@ -6895,8 +6895,8 @@ QUESTIONS = [
         "en_explain": "A magnetic compass must be properly installed and protected from disturbing magnetic influences to ensure accurate heading readings essential for safe navigation. This requirement is established under 33 CFR 164.35, which mandates that vessels maintain properly adjusted compasses with deviation tables. Magnetic interference from electronics, metal objects, or improperly routed wiring can cause significant compass errors, compromising navigational safety.",
         "ru_explain": "Магнитный компас является важнейшим навигационным прибором на судне. Для обеспечения точности показаний он должен быть установлен в соответствии с требованиями: вдали от источников магнитных полей (электрооборудование, металлические конструкции, динамики, электропроводка). Девиация компаса — отклонение от магнитного меридиана, вызванное судовым железом и электромагнитными полями — должна быть минимизирована путём правильного размещения прибора и регулярного уничтожения девиации (компенсации) с помощью девиационного прибора. Таблица остаточной девиации должна находиться рядом с компасом.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII6WoBNLQqya9onM_XCHA6kWPGPXPnAAJKCQACHuIIRC-xDBqZh-cCOwQ",
+        "audio_a": "CQACAgEAAxkDAAII6moBNLZkklYK_jBRY-htmQinGq5DAAJLCQACHuIIREXFO5e-4CfsOwQ"
     },
     {
         "num": 288,
@@ -6919,8 +6919,8 @@ QUESTIONS = [
         "en_explain": "A **lubber line** is a fixed reference mark on a compass housing that aligns with the vessel's fore-and-aft centerline, indicating the ship's current heading. When reading a compass, the helmsman notes which compass degree intersects the lubber line to determine the vessel's course. This is a fundamental navigation concept tested for basic compass use and steering competency.",
         "ru_explain": "Курсовая черта (lubber line) — это неподвижная метка на внутренней стороне котелка компаса, которая совмещена с диаметральной плоскостью судна (линией от носа к корме). При считывании показаний компаса курсовая черта указывает на деление картушки, соответствующее текущему курсу судна. Варианты A, B и C являются несуществующими или некорректными терминами, введёнными в качестве отвлекающих ответов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII62oBNLjEmBqLnxACBVdTZ1fcUOliAAJMCQACHuIIRNqOql1CI1C9OwQ",
+        "audio_a": "CQACAgEAAxkDAAII7GoBNLnGaXw2axpb8Msi8tIj8O46AAJNCQACHuIIRKzqkk9kTNfDOwQ"
     },
     {
         "num": 289,
@@ -6943,8 +6943,8 @@ QUESTIONS = [
         "en_explain": "Magnetic meridians (lines of magnetic force connecting Earth's magnetic poles) are not the same as great circles. Great circles are geometric constructs representing the shortest distance between two points on Earth's surface, while magnetic meridians are irregular curved lines that follow Earth's magnetic field and converge at the magnetic poles, which differ from the geographic poles. This distinction is fundamental to understanding magnetic compass deviation and variation in navigation.",
         "ru_explain": "Магнитные меридианы (силовые линии магнитного поля Земли) НЕ совпадают с дугами больших кругов. Большие круги — это геометрические линии на поверхности сферы, плоскость которых проходит через центр Земли (например, географические меридианы или экватор). Магнитные же меридианы — это линии, соединяющие магнитные полюса Земли, которые не совпадают с географическими полюсами. Магнитные силовые линии имеют неправильную форму, зависящую от распределения магнитных аномалий в земной коре, и не образуют правильных геометрических фигур. Поэтому утверждение неверно.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII7WoBNLvyS1BlJx5iDmmjTLc6vcF1AAJOCQACHuIIRDv6Tn1wVmGQOwQ",
+        "audio_a": "CQACAgEAAxkDAAII7moBNLwAAf7Q3_UMhTHV_2M_4gABU2MAAk8JAAIe4ghEHvERhVu_M-A7BA"
     },
     {
         "num": 290,
@@ -6967,8 +6967,8 @@ QUESTIONS = [
         "en_explain": "**Gimbals** are the pivoting rings or mounting system that allow a magnetic compass to remain level and horizontal despite the vessel's rolling and pitching motions. This mechanical suspension system ensures accurate compass readings by keeping the compass card stable regardless of the ship's movement through the water. Note: This is a navigation equipment question and does not reference COLREGS or Inland Rules, as it pertains to compass construction rather than Rules of the Road.",
         "ru_explain": "Кардановый подвес (гимбал) — это система из двух или более колец, вращающихся на взаимно перпендикулярных осях. Благодаря этому устройству картушка магнитного компаса сохраняет горизонтальное положение при качке и крене судна, что обеспечивает точность показаний курса в любых условиях плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII72oBNL7Bp9S1oOaynpkHKbr1eG4hAAJQCQACHuIIRMmb7uWUrr7zOwQ",
+        "audio_a": "CQACAgEAAxkDAAII8GoBNL9Jyf1iUS41uNiORzPs4yFsAAJRCQACHuIIRMF2eo1ET8u2OwQ"
     },
     {
         "num": 291,
@@ -6991,8 +6991,8 @@ QUESTIONS = [
         "en_explain": "**Deviation** is the compass error caused by the vessel's own magnetic field, which changes as the ship alters its heading due to the varying orientation of onboard magnetic materials relative to Earth's magnetic field. Unlike variation (which depends on geographic location), deviation must be determined for each compass heading and recorded on a deviation card. This concept falls under basic navigation principles required for safe vessel operation, as referenced in the navigation safety requirements of 33 CFR and prudent seamanship standards.",
         "ru_explain": "Девиация — это отклонение стрелки магнитного компаса от направления магнитного меридиана, вызванное влиянием судового железа и других магнитных материалов на борту. Девиация изменяется в зависимости от курса судна, так как при изменении направления движения меняется взаимное расположение магнитных масс судна относительно компаса. Магнитное склонение (вариация) зависит только от географического положения и не связано с курсом судна. Гирокомпасный курс определяется гироскопом и не зависит от магнитных свойств судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII8WoBNMG0Zz6iqSLTXgnlw8DIQJaCAAJSCQACHuIIRPLWvbT1vqdqOwQ",
+        "audio_a": "CQACAgEAAxkDAAII8moBNMKI5PAGTxZCgPG4NihIpknVAAJTCQACHuIIRCoTwdp_7MxGOwQ"
     },
     {
         "num": 292,
@@ -7015,8 +7015,8 @@ QUESTIONS = [
         "en_explain": "A steering compass is the primary compass used by the helmsman to maintain the vessel's course and must be positioned where the helm is located. The pilothouse (also called the wheelhouse) contains the steering station and primary navigation equipment, making it the only logical location for the steering compass. This is a fundamental principle of vessel layout and seamanship rather than a specific COLREGS or Inland Rules requirement, though proper compass placement supports compliance with Rule 5 (Lookout) by ensuring the helmsman can maintain situational awareness while steering.",
         "ru_explain": "Путевой (рулевой) компас — это основной навигационный прибор, по которому рулевой удерживает судно на заданном курсе. Он всегда устанавливается в рулевой рубке (pilothouse) — главном посту управления судном, где находится штурвал и откуда ведётся управление движением. Форпик — носовое отделение для хранения, кубрик — жилое помещение команды, камбуз — судовая кухня; ни одно из этих помещений не предназначено для размещения навигационных приборов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII82oBNMTsOvym0DgJiArT3qNjoGRmAAJUCQACHuIIRCWHdEWQqH24OwQ",
+        "audio_a": "CQACAgEAAxkDAAII9GoBNMb7w5g86ksys-Y3Wmf1twoAA1UJAAIe4ghEJsJ78v3J7Sg7BA"
     },
     {
         "num": 293,
@@ -7039,8 +7039,8 @@ QUESTIONS = [
         "en_explain": "Magnetic compass deviation can be caused by any ferromagnetic material or electromagnetic field in proximity to the compass. Electrical motors generate electromagnetic fields, cell phones contain magnets and emit electromagnetic radiation, and the vessel's own steel hull and machinery create permanent magnetic interference. Under 33 CFR 164.35 and good seamanship principles supporting COLREGS Rule 5 (Lookout), mariners must maintain accurate compass readings by identifying and compensating for all sources of deviation.",
         "ru_explain": "Магнитный компас подвержен влиянию различных источников магнитных полей, вызывающих девиацию (отклонение от магнитного меридиана). Электродвигатели создают электромагнитные поля при работе. Сотовые телефоны излучают радиочастотные сигналы, способные воздействовать на стрелку компаса. Само судно содержит ферромагнитные материалы (сталь корпуса, двигатели, оборудование), которые создают собственное магнитное поле. Для компенсации судовой девиации используют девиационный прибор (компенсаторы) и составляют таблицу девиации. Все электронные приборы и металлические предметы следует держать на безопасном расстоянии от компаса.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII9WoBNMfx0ph1vf3HQt2PQ3hapoieAAJWCQACHuIIREuS5MXaJ6S9OwQ",
+        "audio_a": "CQACAgEAAxkDAAII9moBNMkN-3v_V3QSNpQzxCnEYZI-AAJXCQACHuIIRIzsIlBSyvyWOwQ"
     },
     {
         "num": 294,
@@ -7063,8 +7063,8 @@ QUESTIONS = [
         "en_explain": "\"PSC\" stands for \"Per Standard Compass,\" which indicates that a compass bearing or course is referenced to the vessel's standard compass rather than to magnetic or True north. The standard compass is typically the primary magnetic compass mounted in a location with minimal magnetic deviation, used as the reference compass for navigation. This terminology is commonly used in logbook entries and navigation communications to clarify which compass reference is being used for reported headings or bearings.",
         "ru_explain": "Аббревиатура PSC (Per Standard Compass) — «По главному компасу» — используется в судовождении для обозначения курса или пеленга, снятого непосредственно с главного (стандартного) магнитного компаса судна без поправок на девиацию и магнитное склонение. Главный компас обычно устанавливается на верхнем мостике в месте с минимальным магнитным влиянием судовых конструкций и служит эталоном для проверки путевого (рулевого) компаса.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII92oBNMsRDgi4xg4QsAdBB7iBisZiAAJYCQACHuIIRAwB7O2QTHocOwQ",
+        "audio_a": "CQACAgEAAxkDAAII-GoBNMytZTq95QJvLXAAAbloP-oxEQACWQkAAh7iCESY7a1rJhpXEjsE"
     },
     {
         "num": 295,
@@ -7087,8 +7087,8 @@ QUESTIONS = [
         "en_explain": "A vessel is \"restricted in her ability to maneuver\" when the nature of her work limits her ability to maneuver as required by the Rules and therefore cannot keep out of the way of another vessel. Under Rule 3(g) of both International and Inland Rules, this applies to vessels engaged in specific operations such as laying cables, dredging, surveying, or servicing navigation marks. This definition is based on the type of work being performed, not mechanical limitations or draft constraints.",
         "ru_explain": "Согласно Правилу 3(g) МППСС-72, термин «судно, ограниченное в возможности маневрировать» означает судно, которое по характеру выполняемой работы ограничено в возможности маневрировать так, как требуется Правилами. К таким судам относятся: суда, занятые постановкой/обслуживанием навигационных знаков, прокладкой кабеля или трубопровода, дноуглубительными или гидрографическими работами, буксировкой с ограничением маневренности, операциями по пополнению запасов в море, полётными операциями. Это принципиально отличается от «судна, стеснённого своей осадкой» (вариант B), где ограничение связано с соотношением осадки и глубины.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII-WoBNM4jBcPaw4dCT_mIva1PdmNPAAJaCQACHuIIRIvjsB2f3QxkOwQ",
+        "audio_a": "CQACAgEAAxkDAAII-moBNNCO8qkodep5h-McAAEBUxYxNgACWwkAAh7iCESiUcOEMS4JNjsE"
     },
     {
         "num": 296,
@@ -7111,8 +7111,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 12(a)(ii) of both International and Inland Rules, when two sailing vessels are on the same tack (wind on the same side), the vessel to windward must keep clear of the vessel to leeward. The windward vessel has better visibility of the leeward vessel and greater maneuverability, making it the give-way vessel in this situation.",
         "ru_explain": "Согласно Правилу 12 МППСС-72, когда оба парусных судна идут с ветром с одного и того же борта, наветренное судно (то, которое находится ближе к направлению, откуда дует ветер) должно уступить дорогу подветренному судну. Это правило основано на том, что наветренное судно имеет лучшую манёвренность и обзор, а также может «забирать ветер» у подветренного судна, ухудшая его управляемость. Термин «running free» означает курс фордевинд или полный бакштаг, когда судно идёт по ветру.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII-2oBNNLAm9b2eXISa97x9A5Cja_JAAJcCQACHuIIREJ9Esyz5KSUOwQ",
+        "audio_a": "CQACAgEAAxkDAAII_GoBNNS8sCYuiwS_2veP68u6Yli5AAJdCQACHuIIRAh1-_BEx3eCOwQ"
     },
     {
         "num": 297,
@@ -7135,8 +7135,8 @@ QUESTIONS = [
         "en_explain": "Magnetic variation is the angular difference between True north and magnetic north at a specific geographic location, and it is printed on the compass rose of nautical charts along with its annual rate of change. This information allows mariners to convert between True and magnetic headings for navigation purposes. Deviation, by contrast, is vessel-specific error caused by onboard magnetic influences and is not shown on charts.",
         "ru_explain": "Магнитное склонение (Variation) — это угол между истинным (географическим) и магнитным меридианами в данной точке земной поверхности. На компасной розе морской карты всегда указывается величина магнитного склонения для данного района, а также его годовое изменение (увеличение или уменьшение), поскольку магнитные полюса Земли постоянно смещаются. Девиация — это отклонение компаса, вызванное магнитными полями самого судна, и она не указывается на карте.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII_WoBNNZddXU-hG5mqpaneW1Rm694AAJeCQACHuIIRHz_NsCHW3vqOwQ",
+        "audio_a": "CQACAgEAAxkDAAII_moBNNd6NW9vhLVQ985rsWNVFJ2mAAJfCQACHuIIRPxmQlPnBovXOwQ"
     },
     {
         "num": 298,
@@ -7159,8 +7159,8 @@ QUESTIONS = [
         "en_explain": "Rule 7(a) of both the COLREGS and US Inland Rules requires vessels to use all available means appropriate to the prevailing circumstances and conditions to determine if risk of collision exists. This includes radar, visual observation, VHF radio, AIS, and any other equipment or methods at the mariner's disposal. If there is any doubt as to whether risk of collision exists, such risk shall be deemed to exist.",
         "ru_explain": "Согласно Правилу 7 МППСС-72 (COLREGS), каждое судно должно использовать все имеющиеся средства в соответствии с преобладающими обстоятельствами и условиями для определения наличия опасности столкновения. К таким средствам относятся: визуальное наблюдение, радиолокационная станция (РЛС), средства автоматической радиолокационной прокладки (САРП/ARPA), УКВ-радиосвязь, система автоматической идентификации (АИС/AIS) и любое другое оборудование, установленное на борту. Если имеются какие-либо сомнения относительно наличия опасности столкновения, следует считать, что такая опасность существует.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAII_2oBNNkK0SIWdfvUok6Rx-esisUaAAJgCQACHuIIRBjcxoXZX218OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJAAFqATTaYJOjPU_D_c2HBIsuvFY73AACYQkAAh7iCER9HC-BbOTG2zsE"
     },
     {
         "num": 299,
@@ -7183,8 +7183,8 @@ QUESTIONS = [
         "en_explain": "A prudent mariner must always maintain their magnetic compass and keep an accurate deviation table current, as the magnetic compass serves as the primary backup navigation instrument when electronic systems fail. This practice aligns with Rule 5 (Lookout) of the COLREGS/Inland Rules, which requires maintaining a proper lookout by all available means appropriate to the prevailing circumstances, including reliable navigation equipment. The deviation table must be updated regularly since changes to onboard equipment or cargo can alter the vessel's magnetic field and affect compass accuracy.",
         "ru_explain": "Магнитный компас является основным резервным навигационным прибором на судне. Таблица девиации содержит поправки на отклонение стрелки компаса, вызванное магнитными полями судового оборудования и корпуса. Регулярное обслуживание компаса и актуализация таблицы девиации необходимы для обеспечения точности курсоуказания, особенно при выходе из строя электронных навигационных систем (GPS, гирокомпаса). Это является обязательным требованием хорошей морской практики.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJAWoBNNzLtV-b93M_wLHM31G_iSXFAAJiCQACHuIIRHdouevz32P6OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJAmoBNN7mwFt11W2PSm79U8GebOR4AAJjCQACHuIIRMrJF6CPvDRoOwQ"
     },
     {
         "num": 300,
@@ -7207,8 +7207,8 @@ QUESTIONS = [
         "en_explain": "Compass deviation is determined by comparing the magnetic compass reading against a known reference, such as charted ranges, celestial bearings, or a gyrocompass reading, to identify the error caused by the vessel's own magnetic influences. This process, called \"swinging the compass,\" allows the navigator to create a deviation table for various headings. While not directly addressed in COLREGS or Inland Rules, accurate compass deviation is essential for compliance with Rule 5 (Lookout) and safe navigation, as referenced in 33 CFR and standard navigation practices.",
         "ru_explain": "Девиация — это отклонение магнитного компаса от магнитного меридиана, вызванное влиянием судового железа и электромагнитных полей на борту. Для определения девиации необходимо сравнить показания магнитного компаса с эталонным значением — известной девиацией или пеленгами на створные знаки. Вариант A неверен, так как простая остановка судна и запись показаний не даёт информации о величине девиации. Вариант C некорректен, поскольку «истинного компаса» не существует — есть истинный курс, рассчитываемый по карте. Вариант D описывает бессмысленную операцию, не имеющую отношения к определению девиации. Правильный метод (B) предполагает сравнение текущих показаний компаса с заранее определённой таблицей девиации для данного курса.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJA2oBNN_u6LwWgKcLq7lOZHdRBLKJAAJkCQACHuIIRASaYjjHfcQYOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJBGoBNOGMY170PaIgLwdTt_z9tP_aAAJlCQACHuIIREjxkP5inX58OwQ"
     },
     {
         "num": 301,
@@ -7231,8 +7231,8 @@ QUESTIONS = [
         "en_explain": "Transducers and transponders are the components in echo sounding (depth finding) equipment that send and receive sound waves to measure water depth beneath a vessel. The transducer emits the acoustic pulse, while the transponder receives the returning echo after it bounces off the bottom. This is standard navigation safety equipment knowledge required for all licensed operators, though it falls under general seamanship rather than a specific COLREGS or Inland Rule.",
         "ru_explain": "Трансдьюсер (преобразователь) — это устройство эхолота, которое преобразует электрический сигнал в звуковой импульс и излучает его в воду, а затем принимает отражённый от дна сигнал и преобразует его обратно в электрический. Транспондер (ответчик) — устройство, которое принимает акустический сигнал-запрос и автоматически передаёт ответный сигнал. Транспондеры используются в системах подводного позиционирования и поисково-спасательных операциях. Вместе трансдьюсеры и транспондеры образуют систему для определения глубины и местоположения объектов под водой. Варианты с «левым/правым бортом» и «трансиверами» (приёмопередатчиками радиосвязи) не относятся к гидроакустическим системам измерения глубины.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJBWoBNOMbFEoK2rJe3dBla3kM-cB5AAJmCQACHuIIRLOX1oLAk5sTOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJBmoBNOXKxHWpW5E9TgbQV3oAARioKQACZwkAAh7iCERevAhv-PkrvDsE"
     },
     {
         "num": 302,
@@ -7255,8 +7255,8 @@ QUESTIONS = [
         "en_explain": "A single bearing combined with a reliable depth reading can establish a fix by plotting the bearing line and identifying where it crosses the corresponding depth contour on the chart. This technique, known as a \"bearing and depth\" fix, is useful when only one visual reference is available. This is a fundamental pilotage and navigation principle covered in coastal navigation practices rather than COLREGS or Inland Rules, which govern vessel conduct and right-of-way situations.",
         "ru_explain": "При наличии только одного пеленга на ориентир судоводитель получает линию положения, но не может определить точное место судна на этой линии. Однако если одновременно с пеленгом использовать достоверное показание глубины (изобату), точка пересечения линии пеленга с соответствующей изобатой на карте даст обсервованное место судна. Таким образом, комбинация одного пеленга и глубины позволяет получить навигационную обсервацию (fix), тогда как для определения места только по пеленгам обычно требуется не менее двух пеленгов на разные ориентиры.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJB2oBNOcAAc2DFUxp7ZTPKZQU_5LWwQACaAkAAh7iCEQBZi9EuogDozsE",
+        "audio_a": "CQACAgEAAxkDAAIJCGoBNOgHkQ_0yC7eUGXaZdH7lHmkAAJpCQACHuIIRPKYx7IrCfA5OwQ"
     },
     {
         "num": 303,
@@ -7279,8 +7279,8 @@ QUESTIONS = [
         "en_explain": "Depth alarms on echo sounders and depth finders can be configured to alert the mariner in multiple ways: when water becomes too shallow (shallow water alarm), when water exceeds a certain depth (deep water alarm), or when a specific programmed depth is reached. This equipment supports safe navigation by providing audible or visual warnings that help prevent groundings and assist with anchoring operations. While not specifically addressed in COLREGS, proper use of all available navigational equipment aligns with Rule 5 (Lookout), which requires maintaining a proper lookout \"by all available means appropriate.\"",
         "ru_explain": "Современные эхолоты (глубиномеры) оснащены функцией звуковой и визуальной сигнализации глубины. Судоводитель может настроить три типа оповещений: сигнализацию мелководья (shallow water alarm) — срабатывает, когда глубина под килем становится меньше заданного значения; сигнализацию глубокой воды (deep water alarm) — предупреждает о выходе на большие глубины, что может указывать на отклонение от курса; сигнализацию конкретной глубины (specific depth alarm) — срабатывает при достижении определённой заданной глубины. Эти функции повышают безопасность плавания, особенно при движении в прибрежных водах, на мелководье и в незнакомых акваториях.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJCWoBNOqncSo8HeVc7knSayEOTWqOAAJqCQACHuIIRPTFt9USpyCIOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJCmoBNOv3rfEESbRHlPnn0zmTYC8KAAJrCQACHuIIRFTVyz039EgEOwQ"
     },
     {
         "num": 304,
@@ -7303,8 +7303,8 @@ QUESTIONS = [
         "en_explain": "Even a properly tuned radar has inherent limitations and cannot detect all traffic, as small vessels, wooden boats, and objects with low radar cross-sections may not produce adequate return echoes. Rule 7(a) of the COLREGS requires that assumptions shall not be made on the basis of scanty information, especially scanty radar information, recognizing that radar is not infallible. Mariners must use all available means appropriate to the prevailing circumstances, including visual lookout, to determine if risk of collision exists.",
         "ru_explain": "Даже правильно настроенный судовой радар имеет ряд ограничений и не способен обнаружить все объекты в зоне навигации. К «слепым зонам» и ограничениям радара относятся: теневые секторы от надстроек и мачт собственного судна; малые цели с низкой эффективной площадью рассеяния (ЭПР) — небольшие деревянные или стеклопластиковые суда, плавающие объекты; цели в мёртвой зоне вблизи судна; помехи от морского волнения (sea clutter) и осадков (rain clutter); эффект многократных отражений в узкостях. Поэтому радар является вспомогательным средством наблюдения и не заменяет визуальное наблюдение согласно Правилу 5 МППСС-72.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJC2oBNO0ubpLl4ld91bMl3NYxrOgGAAJsCQACHuIIRCQ7Nx0DryarOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJDGoBNO-ElUZZperU6_BLoi-6L6-rAAJtCQACHuIIRAABCzlJ1MYSRjsE"
     },
     {
         "num": 305,
@@ -7327,8 +7327,8 @@ QUESTIONS = [
         "en_explain": "Soft mud bottoms may return a double echo on a depth sounder because the sonar signal first reflects off the upper, less dense layer of mud, then penetrates to reflect again off the harder substrate beneath. This phenomenon can cause the fathometer to display two depth readings—one shallower (the mud surface) and one deeper (the firm bottom below). Understanding bottom composition and its effect on echo sounder readings is essential for safe navigation in shallow or silty waters.",
         "ru_explain": "При работе эхолота мягкий илистый грунт (soft mud bottom) может давать двойное эхо. Это происходит потому, что ультразвуковой сигнал частично отражается от верхнего рыхлого слоя ила, а частично проникает глубже и отражается от более плотного слоя под ним. В результате на экране эхолота появляются два отражённых сигнала на разной глубине. Твёрдые грунты (скала, песок, глина) дают одно чёткое эхо, так как сигнал полностью отражается от поверхности дна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJDWoBNPD5tqqyGxSChXVNrRLnKOr6AAJuCQACHuIIREfF_UdZoKITOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJDmoBNPLA011XUBJHNLvl98nJuuLpAAJvCQACHuIIRNz3OqvexwR2OwQ"
     },
     {
         "num": 306,
@@ -7351,8 +7351,8 @@ QUESTIONS = [
         "en_explain": "The stern light must show an unbroken arc of 135° total, which means it displays from dead astern to 67.5° on each side of the vessel. This positioning ensures the stern light covers the arc not illuminated by the sidelights. Reference: Rule 21(c) of both the International (COLREGS) and US Inland Navigation Rules.",
         "ru_explain": "Кормовой огонь — это белый огонь, расположенный как можно ближе к корме судна. Согласно МППСС (Правило 21), кормовой огонь должен освещать непрерывную дугу горизонта в 135°. Это означает, что он виден в секторе по **67,5° на каждый борт** от направления прямо по корме (135° ÷ 2 = 67,5°). Таким образом, кормовой огонь освещает сектор, не перекрываемый бортовыми огнями (которые светят от направления прямо по носу до 112,5° в сторону кормы на каждый борт). Вместе бортовые и кормовой огни обеспечивают круговое освещение в 360°.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJD2oBNPQsbJguzPni1zu43LSY6zOsAAJwCQACHuIIRN4nzHbLb8WROwQ",
+        "audio_a": "CQACAgEAAxkDAAIJEGoBNPb6ZWceYmQmAAEsYshaK53YGwACcQkAAh7iCEST9Bx3SWMU3TsE"
     },
     {
         "num": 307,
@@ -7375,8 +7375,8 @@ QUESTIONS = [
         "en_explain": "Radar (Radio Detection And Ranging) is an electronic system that transmits high-frequency radio waves and detects their echoes when they bounce back from objects, allowing mariners to determine the range and bearing of other vessels, land masses, and obstacles. This technology is referenced in Rule 7 of the COLREGS (International Regulations for Preventing Collisions at Sea), which requires vessels equipped with operational radar to use it properly for collision avoidance and early warning of risk of collision. The correct answer describes radar's fundamental operating principle of transmitting signals and receiving their reflected returns.",
         "ru_explain": "Радар (радиолокационная станция, РЛС) работает по принципу излучения высокочастотных радиоимпульсов направленной антенной. Эти импульсы отражаются от объектов (других судов, береговой линии, буёв, навигационных знаков) и возвращаются обратно к антенне. По времени прохождения сигнала определяется расстояние до цели, а по направлению антенны — пеленг. Вариант A описывает принцип работы эхолота, вариант B — систему КОСПАС-САРСАТ (аварийные радиобуи), вариант D — азбуку Морзе и радиосвязь.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJEWoBNPcYKmY24Q0xjPU4CmX1LTD9AAJyCQACHuIIRLeLn77TrT-mOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJEmoBNPkgux-3mHP0kES7Jfi_78jMAAJzCQACHuIIRLcTs6NAmcPQOwQ"
     },
     {
         "num": 308,
@@ -7399,8 +7399,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 7(b) of the COLREGS and Inland Rules, radar equipment must be used properly to determine if a risk of collision exists, including making allowance for the limitations of the radar equipment. Rain is a known limitation that can cause clutter on the radar display, potentially masking targets or creating False echoes, and must be accounted for when assessing the radar picture. Mariners must understand these environmental factors that affect radar performance to maintain a proper lookout as required by Rule 5.",
         "ru_explain": "При работе с судовым радаром необходимо учитывать атмосферные осадки, в частности дождь. Дождевые капли отражают радиолокационный сигнал, создавая на экране радара помехи (так называемые «засветки от дождя» или «клаттер»). Это может маскировать цели, затруднять обнаружение других судов и навигационных ориентиров. Для подавления помех от дождя на радарах используется регулятор FTC (Fast Time Constant) или «Rain Clutter». Остальные варианты не относятся к специфическим факторам работы радара: дальность видимости огня (luminous range) — характеристика навигационных огней, рельеф дна — параметр для эхолота, а подготовка экипажа, хотя и важна, не является физическим фактором, влияющим на работу радиолокатора.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJE2oBNPsuvCWV-eIrfb4NOBiYHnXEAAJ0CQACHuIIRCZo6l3h3ptvOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJFGoBNPym_yf3iVA1Jh9T5tYITCZ3AAJ1CQACHuIIRFKzHTcMSLnZOwQ"
     },
     {
         "num": 309,
@@ -7423,8 +7423,8 @@ QUESTIONS = [
         "en_explain": "\"Constant bearing, decreasing range\" is the classic indicator of risk of collision, as stated in Rule 7(d) of both the COLREGS and US Inland Rules. This rule specifically states that risk of collision shall be deemed to exist if the compass bearing of an approaching vessel does not appreciably change while the distance between vessels continues to decrease. This situation requires immediate action under the applicable steering and sailing rules.",
         "ru_explain": "Постоянный (неизменный) пеленг на другое судно при одновременном уменьшении дистанции до него является классическим признаком опасности столкновения согласно Правилу 7 МППСС-72. Если компасный пеленг на приближающееся судно не меняется с течением времени, а расстояние между судами сокращается, это означает, что суда находятся на курсах столкновения. Данный принцип «CBDR» (Constant Bearing, Decreasing Range) является основополагающим при визуальном и радиолокационном наблюдении для оценки риска столкновения и принятия своевременных мер по расхождению.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJFWoBNP6ZS_zG1twGddiLV5Su8jaoAAJ2CQACHuIIRPI1tO95r0epOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJFmoBNQABoQSu5mmMo7klx4I36bMwUQACdwkAAh7iCEQHin2a-uXqhTsE"
     },
     {
         "num": 310,
@@ -7447,8 +7447,8 @@ QUESTIONS = [
         "en_explain": "Any object detected by radar or other sensors in your vicinity is referred to as a **target**. This terminology is standard in navigation and watchkeeping practices, particularly when using radar for collision avoidance as required under Rule 7 (Risk of Collision) of the COLREGS, which mandates proper use of radar equipment to obtain early warning of collision risk. Each detected object becomes a target that must be systematically observed and plotted to determine if a risk of collision exists.",
         "ru_explain": "В морской навигации и радиолокации любой объект, обнаруженный на экране радара или визуально в окрестностях судна, называется «целью» (target). Это может быть другое судно, буй, участок берега или любой другой объект, отражающий радиолокационный сигнал. Термин «цель» используется для обозначения объектов, за которыми ведётся наблюдение или сопровождение с помощью радара (ARPA/САРП).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJF2oBNQIf5OzCvovBw3MPadLxW3l9AAJ4CQACHuIIRHTJHCYxI6OTOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJGGoBNQMTbvbXvg2Flt6OaY2U6RQqAAJ5CQACHuIIRKr4Bc_7OqfvOwQ"
     },
     {
         "num": 311,
@@ -7471,8 +7471,8 @@ QUESTIONS = [
         "en_explain": "PPI stands for **Plan Position Indicator**, which is the circular radar display screen that shows your vessel at the center with other targets displayed at their relative or True bearings and distances. This radar display type is referenced in Rule 7 (Risk of Collision) of both the COLREGS and US Inland Rules, which requires proper use of radar equipment, including \"long range scanning to obtain early warning of risk of collision.\"",
         "ru_explain": "PPI (Plan Position Indicator) — индикатор кругового обзора — это тип радиолокационного дисплея, на котором отображается вид сверху (план) окружающей обстановки. На экране ИКО центр обычно соответствует положению собственного судна, а эхо-сигналы от целей (других судов, берега, буёв) отображаются в виде светящихся точек или пятен относительно центра. Развёртка вращается синхронно с антенной радара, создавая круговое изображение навигационной обстановки вокруг судна. ИКО является стандартным типом индикатора на судовых радиолокационных станциях.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJGWoBNQXdgJLdQSNLPzN6jbNsi4YXAAJ6CQACHuIIRE3S_2zME6H7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJGmoBNQbMu1D6ObSC0B1yN2xNdYh9AAJ7CQACHuIIRDWTyH4OtFOOOwQ"
     },
     {
         "num": 312,
@@ -7495,8 +7495,8 @@ QUESTIONS = [
         "en_explain": "Variable Range Marker (VRM), Electronic Bearing Line (EBL), and target are all standard radar terminology used in navigation and collision avoidance. These terms are essential for proper radar observation as required under Rule 7 (Risk of Collision) of both COLREGS and US Inland Rules, which states that proper use shall be made of radar equipment if fitted and operational. Mariners must understand these radar features to determine if risk of collision exists and to make proper assessments of the situation.",
         "ru_explain": "Все перечисленные варианты являются стандартными терминами, используемыми при работе с судовой радиолокационной станцией (РЛС). **Маркер переменной дальности (VRM — Variable Range Marker)** — подвижное кольцо на экране радара, позволяющее измерять расстояние до объекта. **Электронная линия пеленга (EBL — Electronic Bearing Line)** — вращающаяся линия из центра экрана для определения пеленга на цель. **Цель (target)** — любой объект, отображаемый на экране РЛС (суда, буи, береговая линия и т.д.). Эти инструменты являются базовыми для навигации и расхождения с судами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJG2oBNQjpVqZZ-hW-_ETVafQIywQNAAJ8CQACHuIIRJIDOSFOa7ZAOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJHGoBNQklouhyfDjLEyPjwAgv2_4oAAJ9CQACHuIIRExvgAw4yRheOwQ"
     },
     {
         "num": 313,
@@ -7519,8 +7519,8 @@ QUESTIONS = [
         "en_explain": "A GPS receiver requires signals from a minimum of three satellites to calculate a two-dimensional position fix (latitude and longitude). While four satellites are needed for a full three-dimensional fix including altitude, three satellites provide sufficient data for surface navigation purposes, which is the standard requirement for maritime position fixing. This is a fundamental principle of electronic navigation systems covered in USCG licensing examinations.",
         "ru_explain": "Для определения координат судна (обсервации) приёмнику GPS требуется принять сигналы минимум от 3 спутников. Три спутника позволяют определить двумерное местоположение (широту и долготу) методом трилатерации. На практике для более точного определения, включая высоту над уровнем моря и коррекцию времени, используется 4 и более спутников, однако минимальное количество для получения навигационной обсервации — 3 сигнала.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJHWoBNQvd3RekPFC7YfCGhBHrpfikAAJ-CQACHuIIRFmj3Pjn-NpeOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJHmoBNQ1XEtW91s5r776Gzg8y7Jz4AAJ_CQACHuIIRLpWL7GC-l20OwQ"
     },
     {
         "num": 314,
@@ -7543,8 +7543,8 @@ QUESTIONS = [
         "en_explain": "Paper charts remain essential navigation tools regardless of GPS proficiency. Per 33 CFR 164.72 and prudent seamanship standards, vessels must carry appropriate up-to-date charts for their voyage as GPS units can fail, lose signal, or provide inaccurate data. Relying solely on electronic navigation without backup paper charts violates the principle of safe navigation and proper watchkeeping.",
         "ru_explain": "Утверждение неверно. Бумажные морские карты являются обязательным средством навигационного обеспечения на борту судна, независимо от наличия и умения пользоваться электронными навигационными системами (GPS, картплоттерами). GPS-оборудование может выйти из строя, потерять сигнал спутников или разрядиться. Бумажные карты служат резервным средством навигации и позволяют судоводителю ориентироваться в случае отказа электроники. Кроме того, работа с бумажной картой даёт более полное представление об акватории, глубинах, навигационных опасностях и средствах навигационного оборудования (СНО). Правила хорошей морской практики требуют иметь на борту актуальные бумажные карты района плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJH2oBNQ7-RObvLssAAR02tYk8hA5N3QACgAkAAh7iCES-jpc0M_E5eTsE",
+        "audio_a": "CQACAgEAAxkDAAIJIGoBNRBKw4YXdQRSAAHaOjAZNhzGIAACgQkAAh7iCER3-iKk85OZ8zsE"
     },
     {
         "num": 315,
@@ -7567,8 +7567,8 @@ QUESTIONS = [
         "en_explain": "GPS receivers can be programmed to use many different geodetic datums, not just NAD-1983. While NAD-83 is commonly used for North American charts and is nearly identical to WGS-84 (the native datum of the GPS system), mariners must ensure their GPS receiver's datum setting matches the datum of the chart being used for navigation. Using mismatched datums can result in significant position errors, potentially placing the vessel in danger.",
         "ru_explain": "Это утверждение неверно. GPS-приёмники могут работать с различными геодезическими датумами, а не только с NAD-83. Наиболее распространённым является WGS-84 (Всемирная геодезическая система 1984 года), который используется как стандартный датум для системы GPS. Кроме того, современные GPS-приёмники позволяют переключаться между множеством локальных и региональных датумов для согласования с используемыми морскими картами. Важно, чтобы датум в настройках GPS-приёмника соответствовал датуму навигационной карты, иначе возможны существенные ошибки в определении местоположения судна.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJIWoBNRLqjOsXszSMJBv2tNJkpzOyAAKCCQACHuIIREqeKpnTwP4tOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJImoBNROn7_VxhMoG0Ke05L8e7ddhAAKDCQACHuIIRAswzrqN7MsZOwQ"
     },
     {
         "num": 316,
@@ -7591,8 +7591,8 @@ QUESTIONS = [
         "en_explain": "Commercial GPS receivers used for non-military purposes typically provide positioning accuracy within approximately 100 meters (328 feet) under normal conditions without augmentation systems. This accuracy standard is important for mariners to understand when using GPS for navigation, as it affects safe passage planning near hazards. This is a navigation equipment knowledge question rather than a COLREGS rule, but understanding GPS limitations is essential for prudent seamanship under the general responsibility provisions.",
         "ru_explain": "Коммерческие (гражданские) GPS-приёмники обеспечивают точность определения местоположения приблизительно 328 футов (100 метров). Эта величина связана с тем, что до 2000 года в системе GPS применялся режим «селективного доступа» (Selective Availability, SA), искусственно снижавший точность для гражданских пользователей. Хотя SA был отключён, стандартная спецификация гражданского GPS-сигнала исторически указывала точность около 100 метров. Современные GPS-устройства с технологией WAAS/DGPS (дифференциальная коррекция) обеспечивают значительно более высокую точность (до 3-5 метров), однако для целей экзамена USCG используется базовое значение 328 футов. Судоводитель должен учитывать эту погрешность при навигации вблизи опасностей и не полагаться исключительно на показания GPS.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJI2oBNRVclW1BVMCB_OcuUcETHsLgAAKECQACHuIIRN4Q3a9-t5SJOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJJGoBNRemLuam4m1Cycu1a-yjmFCTAAKFCQACHuIIRDgNWZvCOXVCOwQ"
     },
     {
         "num": 317,
@@ -7615,8 +7615,8 @@ QUESTIONS = [
         "en_explain": "COG stands for \"Course Over Ground,\" which indicates the actual direction of travel relative to the earth's surface as calculated by the GPS unit. This differs from heading, which is the direction the vessel's bow is pointing. While not directly addressed in the COLREGS or Inland Rules, understanding COG is essential for safe navigation and maintaining proper lookout as required under Rule 5.",
         "ru_explain": "COG (Course Over Ground) — «курс относительно грунта» или «путь над грунтом» — это фактическое направление движения судна по отношению к морскому дну, определяемое GPS-приёмником. В отличие от курса по компасу, COG учитывает влияние течения и дрейфа, показывая реальную траекторию перемещения судна. Этот параметр критически важен для точной навигации, особенно в условиях сильных течений или бокового ветра, когда судно может двигаться не строго по направлению носа.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJJWoBNRgbvae_t4OmC6qWiIJIBxd-AAKGCQACHuIIRH7cFBSrZ-E_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJJmoBNRrPmkcWsxRGhr8soztV23w2AAKHCQACHuIIRNnpFxPhcKWWOwQ"
     },
     {
         "num": 318,
@@ -7639,8 +7639,8 @@ QUESTIONS = [
         "en_explain": "This is a chart reading question testing your ability to plot geographic coordinates and identify charted features. The coordinates 41°10.4'N and 071°57.1'W locate Cerberus Shoal, a navigational hazard in the waters between Fisher's Island and the Rhode Island coast. Proficiency in reading nautical charts and plotting positions is essential for safe navigation and is required knowledge for USCG licensing examinations.",
         "ru_explain": "Данный вопрос проверяет умение судоводителя определять географические объекты по заданным координатам на навигационной карте. Координаты 41°10.4' с.ш. и 071°57.1' з.д. указывают на отмель Цербер (Cerberus Shoal), расположенную в районе пролива Лонг-Айленд у побережья штатов Коннектикут и Род-Айленд. Отмели (shoals) представляют навигационную опасность из-за малых глубин и должны быть своевременно обнаружены при прокладке курса. Капитан обязан уметь работать с морскими картами и точно определять местоположение навигационных опасностей по географическим координатам.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJJ2oBNRyQhGeS8M2TIeztFdF7gSZyAAKICQACHuIIRKpwQKVR5CYDOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJKGoBNR20YA5F0sTh_weVMi52kQWyAAKJCQACHuIIRCAxfn_mGyEBOwQ"
     },
     {
         "num": 319,
@@ -7663,8 +7663,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 5 (Lookout) of both COLREGS and US Inland Rules, every vessel must maintain a proper lookout by sight, hearing, and all available means at all times. Rule 7 (Risk of Collision) further requires that assumptions shall not be made on the basis of scanty information, especially scanty radar information. In restricted visibility, mariners must use every available resource—including radar, sound signals, visual observation, and listening—to assess the situation and avoid collision.",
         "ru_explain": "Правильный ответ — B (Неверно). При плавании в условиях ограниченной видимости (туман, дождь, снег) нельзя полагаться исключительно на радар. Согласно МППСС-72 (Правило 5 — Наблюдение), необходимо использовать все имеющиеся средства: визуальное и слуховое наблюдение, радар, АИС, эхолот, УКВ-радиосвязь. Радар имеет ограничения: слепые зоны, ложные эхо-сигналы, затенение от осадков, невозможность обнаружения малых объектов. Комплексное использование всех средств навигации обеспечивает безопасность мореплавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJKWoBNR9GOq2dRckcW-x1Z5MDYatLAAKKCQACHuIIRO1iVV8SBTKlOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJKmoBNSA0zE2B0iKgnageFQc8sjUFAAKLCQACHuIIRBe_XH6w4nuqOwQ"
     },
     {
         "num": 320,
@@ -7687,8 +7687,8 @@ QUESTIONS = [
         "en_explain": "Modern GPS units typically include multiple navigation features beyond basic position fixing. These commonly include waypoints (predetermined coordinates for route planning), ETA (estimated time of arrival) calculations, and Speed Over Ground (SOG) measurements. While not specifically addressed in the COLREGS or Inland Rules, Rule 7 requires vessels to use \"all available means\" for determining risk of collision, making familiarity with GPS capabilities essential for safe navigation.",
         "ru_explain": "Современные GPS-приёмники (навигаторы) обладают множеством функций помимо определения текущих координат. **Путевые точки (Waypoints)** — это заранее сохранённые координаты важных точек маршрута (портов, буёв, мест лова), позволяющие прокладывать маршрут и осуществлять навигацию от точки к точке. **Расчётное время прибытия (ETA — Estimated Time of Arrival)** — функция, вычисляющая предполагаемое время достижения пункта назначения на основе текущей скорости и расстояния. **Скорость относительно грунта (SOG — Speed Over Ground)** — истинная скорость перемещения судна по поверхности земли, учитывающая влияние течений и ветра, в отличие от скорости относительно воды. Все эти функции являются стандартными для большинства морских GPS-приёмников, поэтому правильный ответ — «Всё вышеперечисленное».",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJK2oBNSITHcSjlEcZRYrr6SjkaOVZAAKMCQACHuIIRHv0MldxvBJiOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJLGoBNSQZJxJj_lkKRc8CZk7OvUtuAAKNCQACHuIIRPseuxk1XK_POwQ"
     },
     {
         "num": 321,
@@ -7711,8 +7711,8 @@ QUESTIONS = [
         "en_explain": "Southeast Light is a major navigational aid located on the southeastern tip of Block Island, Rhode Island. Using Chart 13205, the light's position can be determined by reading the latitude and longitude scales on the chart margins, placing the light at 41°9'12.3\"N, 71°33'7.7\"W. Accurate position-fixing using charted aids to navigation is a fundamental skill required under 33 CFR for safe piloting in coastal waters.",
         "ru_explain": "Маяк Саутист-Лайт (Southeast Light) расположен на юго-восточной оконечности острова Блок-Айленд в штате Род-Айленд. Для определения географических координат навигационного знака необходимо использовать морскую карту NOAA № 13205 и снять координаты с помощью измерительного циркуля и шкал широты (на боковых рамках карты) и долготы (на верхней и нижней рамках). Правильный ответ — 41°9'12.3\" северной широты и 71°33'7.7\" западной долготы. Варианты A и C содержат ошибки в градусах широты или долготы, а вариант D указывает на совершенно другое местоположение.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJLWoBNSbP2Nl-Rf4CFdjvckB5fqHzAAKOCQACHuIIRKhXNqWzfuooOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJLmoBNSct8tQ1E5tBZ9MdXLKJjKtYAAKPCQACHuIIRAjZE1hH2xFQOwQ"
     },
     {
         "num": 322,
@@ -7735,8 +7735,8 @@ QUESTIONS = [
         "en_explain": "This is a basic speed-time-distance calculation problem essential for navigation. Using the formula Time = Distance ÷ Speed, you divide 15 NM by 11 knots to get 1.3636 hours, then multiply by 60 to convert to minutes, yielding approximately 81.8 minutes. This calculation is fundamental to voyage planning and determining ETAs, though it does not reference a specific COLREG or Inland Rule as it falls under general seamanship and navigation principles.",
         "ru_explain": "Для расчёта времени в пути используется формула: Время (в часах) = Расстояние (в морских милях) ÷ Скорость (в узлах). Подставляем значения: 15 миль ÷ 11 узлов = 1,3636 часа. Для перевода в минуты умножаем на 60: 1,3636 × 60 = 81,8 минуты. Узел — единица скорости, равная 1 морской миле в час.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJL2oBNSkYHVacq93rsXOhZEw-ctn7AAKQCQACHuIIRLzmwqecxh1LOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJMGoBNSvo6uxqzpf20mBh0drI6f8hAAKRCQACHuIIRLpWwZZxFE-hOwQ"
     },
     {
         "num": 323,
@@ -7759,8 +7759,8 @@ QUESTIONS = [
         "en_explain": "This is a chart navigation question requiring the use of plotting tools to determine the True course between two aids to navigation. Using parallel rulers or a course plotter on a nautical chart, you would draw a line from Point Judith Light to Sandy Point Light on Block Island and transfer that bearing to the nearest compass rose to read the True direction. The correct True course of 209° indicates a generally south-southwesterly heading from the Rhode Island mainland to the northern end of Block Island.",
         "ru_explain": "Для определения истинного курса между двумя маяками необходимо использовать навигационную карту района. Маяк Пойнт-Джудит расположен на побережье Род-Айленда, а маяк Сэнди-Пойнт находится на северной оконечности острова Блок-Айленд. Истинный курс определяется путём прокладки линии пеленга между двумя точками на карте и измерения угла относительно истинного (географического) меридиана с помощью параллельной линейки и картушки компаса. Курс 209° истинный указывает направление примерно на юго-юго-запад, что соответствует географическому расположению острова Блок-Айленд относительно Пойнт-Джудит.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJMWoBNS1mmjuXL6asNRn3xkvXxP_9AAKSCQACHuIIRNbzM4JwxGOMOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJMmoBNS_EriRRAqe7Kw3hV1t4Ssj6AAKTCQACHuIIRKFu4ytraNmrOwQ"
     },
     {
         "num": 324,
@@ -7783,8 +7783,8 @@ QUESTIONS = [
         "en_explain": "To convert from compass course to True course, apply the memory aid \"Can Dead Men Vote Twice\" (Compass + Deviation = Magnetic + Variation = True), adding easterly errors. Starting with a compass heading of 065°, add 8° East deviation to get 073° Magnetic, then add 4° East variation to get 077° True. This compass error correction procedure is standard navigation practice required under 33 CFR and tested for USCG licensing, though it is not specifically addressed in the COLREGS or Inland Rules.",
         "ru_explain": "Для перевода компасного курса (КК) в истинный курс (ИК) необходимо учесть девиацию (δ) и магнитное склонение (d).  Формула: **ИК = КК + δ + d**  При восточных поправках (Ost/+) значения прибавляются, при западных (West/−) — вычитаются.  Расчёт: - Компасный курс (КК) = 065° - Девиация (δ) = +8° (Ost) - Склонение (d) = +4° (Ost)  **ИК = 065° + 8° + 4° = 077° истинный**  Мнемоническое правило: **«От компаса к истинному — прибавляй восточные» (Can Dead Men Vote Twice — Compass + Deviation = Magnetic + Variation = True)**.  Правильный ответ: **D (077° истинный)**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJM2oBNTHuPUludSqUknjaSjKO0_omAAKUCQACHuIIRLjdR2MJDwVZOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJNGoBNTMFqPVL1fLuOagQpnuK3ospAAKVCQACHuIIROZbwvyHsrJ5OwQ"
     },
     {
         "num": 325,
@@ -7807,8 +7807,8 @@ QUESTIONS = [
         "en_explain": "This question tests chart reading and light characteristic interpretation. At the given coordinates (41° 19.0'N, 072° 05.4'W), the chart shows a light with the notation \"E INT 6SEC 89 FT,\" meaning it is an Equal Interval light with a 6-second period at a height of 89 feet above water. This is a standard U.S. chart abbreviation format where \"E INT\" indicates equal intervals of light and dark, the number indicates the period in seconds, and \"FT\" indicates the height of the light structure.",
         "ru_explain": "Данный вопрос проверяет умение читать морские карты и определять объекты по заданным координатам. Обозначение \"E INT 6SEC 89 FT\" расшифровывается следующим образом: - **E** — равнофазный (Equal interval) или проблесковый огонь - **INT** — международный (International), указывает на соответствие международным стандартам IALA - **6SEC** — период огня составляет 6 секунд - **89 FT** — высота огня 89 футов над уровнем моря  Варианты B, C и D содержат ошибочные интерпретации: 89 — это высота в футах, а не период в секундах; направление \"на запад\" не указывается в данном обозначении. Для определения местоположения объекта необходимо найти пересечение указанных параллели и меридиана на навигационной карте данного района (пролив Лонг-Айленд, побережье Коннектикута).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJNWoBNTUX8B2pOkKchk5bj2Y4EFdRAAKWCQACHuIIRPZSXyXnAltKOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJNmoBNTY-3hK0N5Gv7SD9VLQGprqsAAKXCQACHuIIRMSRT60AAV3f4zsE"
     },
     {
         "num": 326,
@@ -7831,8 +7831,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 18 (Responsibilities Between Vessels), a vessel not under command is given high priority in the hierarchy of vessels and is required to be kept clear of by most other vessels. A vessel not under command only needs to keep out of the way of a vessel constrained by her draft (in international waters), making the other listed statements False regarding the pecking order established by the Rules.",
         "ru_explain": "Согласно Правилу 18 МППСС-72 установлена иерархия уступания дороги. Судно, ограниченное в возможности маневрировать (например, занятое дноуглубительными работами, прокладкой кабеля или буксировкой), имеет приоритет над судном, занятым ловом рыбы. Рыболовное судно на ходу должно уступать дорогу судну, ограниченному в возможности маневрировать. Варианты A и B неверны, так как судно, лишённое возможности управляться, находится на вершине иерархии и никому не уступает. Вариант D неверен — наоборот, парусное судно уступает рыболовному.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJN2oBNTgzVJVUaMnATJthVaNKBPNfAAKYCQACHuIIRPRxl6_8RMIQOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJOGoBNTrhkcHeHDuU9cwe4elxiruxAAKZCQACHuIIRAKVqxkX9_u1OwQ"
     },
     {
         "num": 327,
@@ -7855,8 +7855,8 @@ QUESTIONS = [
         "en_explain": "Race Point Light on Fishers Island, located in the eastern approaches to Long Island Sound, is positioned at coordinates 41°14.6'N, 72°02.8'W. This navigational aid information is found in the USCG Light List, Volume I (Atlantic Coast), which mariners must consult for accurate positions, characteristics, and descriptions of all aids to navigation. Knowing precise light positions is essential for safe pilotage and chart navigation in coastal waters.",
         "ru_explain": "Маяк Рейс-Пойнт расположен на острове Фишерс в проливе Лонг-Айленд (штаты Нью-Йорк/Коннектикут). Для определения точных координат навигационных знаков и маяков судоводитель должен использовать официальные издания: навигационные карты (морские карты NOAA), Список огней и знаков (Light List) или лоции. Согласно этим источникам, маяк Рейс-Пойнт находится в позиции 41°14,6'N 72°02,8'W. Знание точных координат СНО необходимо для прокладки курса, определения места судна и безопасного плавания в прибрежных водах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJOWoBNTyyTE7z0mIP5BsfY-Q9jTyGAAKaCQACHuIIRN5OAuM2pus3OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJOmoBNT0uCiDMZqei42qFhpGkmRaaAAKbCQACHuIIRGyF3kXYCgx4OwQ"
     },
     {
         "num": 328,
@@ -7879,8 +7879,8 @@ QUESTIONS = [
         "en_explain": "Chart 13205 (Block Island Sound and Approaches) uses the Mercator Projection, which is the standard projection for most nautical charts used in navigation. The Mercator Projection preserves accurate compass bearings (rhumb lines appear as straight lines), making it ideal for marine navigation, and this information is printed in the chart's title block.",
         "ru_explain": "Проекция Меркатора — это цилиндрическая равноугольная картографическая проекция, наиболее широко применяемая для морских навигационных карт. Её главное преимущество — локсодромия (линия постоянного курса) отображается как прямая линия, что позволяет судоводителю прокладывать курс с помощью линейки и транспортира. Учебная карта Block Island Practice Chart № 13205, используемая для обучения навигации, выполнена именно в проекции Меркатора, как и большинство морских карт NOAA для прибрежного плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJO2oBNT_aJ7N0hLIyNiD8rrewOCiMAAKcCQACHuIIROwVz0jDgu9FOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJPGoBNUGoJAKgVuNs6-FCRvhhmS2qAAKdCQACHuIIRFsu39AZ_BYjOwQ"
     },
     {
         "num": 329,
@@ -7903,8 +7903,8 @@ QUESTIONS = [
         "en_explain": "This is a chart reading question requiring you to locate the red-green junction buoy marked \"TE\" (Temporarily Established) positioned just south of Six Mile Reef on your navigation chart. The correct coordinates are 41°09.3'N, 72°30.4'W, placing this aid to navigation in Long Island Sound waters. Chart reading and proper identification of aids to navigation positions are fundamental skills for safe pilotage, though this question tests chart interpretation rather than a specific COLREGS or Inland Rule.",
         "ru_explain": "RG\"TE\" — это красно-зелёный (Red-Green) буй с буквенным обозначением \"TE\", который является знаком разделения фарватера (junction buoy). Такие буи устанавливаются в местах слияния или разветвления каналов. Для определения координат навигационного знака необходимо найти его на морской карте района пролива Лонг-Айленд и снять показания широты и долготы. Риф Сикс-Майл расположен у побережья Коннектикута. Правильный ответ — 41°09,3'N 72°30,4'W — соответствует данным карты для этого буя.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJPWoBNUNJtPBAgDDadP5zr_C_-kF7AAKeCQACHuIIROyfCjZJAr6vOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJPmoBNUQiGE29vA_B0_o6c1M3EIhQAAKfCQACHuIIRLyJnAc98Gg3OwQ"
     },
     {
         "num": 330,
@@ -7927,8 +7927,8 @@ QUESTIONS = [
         "en_explain": "This is a chart reading question requiring you to locate the green can buoy \"1\" (G\"1\") marking the entrance channel to Coecles Harbor on Shelter Island, NY. Green buoys mark the port (left) side of the channel when returning from sea and are odd-numbered. The correct coordinates for this aid to navigation are 41°04.0'N, 72°16.2'W, which must be read directly from the appropriate nautical chart.",
         "ru_explain": "G\"1\" обозначает зелёный буй номер 1 (Green buoy \"1\"), который маркирует вход на фарватер (входной канал) в гавань Коклс на острове Шелтер. Для определения координат буя необходимо использовать морскую навигационную карту данного района. Широта отсчитывается по боковой шкале карты, долгота — по верхней или нижней шкале. Координаты буя составляют 41°04,0' северной широты и 72°16,2' западной долготы. При работе с картой важно точно снимать показания с градусных шкал, используя параллельные линейки или циркуль-измеритель.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJP2oBNUbkDoTo9O8T1l-l-5WZY8a4AAKgCQACHuIIRG8o2WXQ3nSPOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJQGoBNUiPr2s6NqoX1mGoL8SV7EN2AAKhCQACHuIIRLhh6WCvknbROwQ"
     },
     {
         "num": 331,
@@ -7951,8 +7951,8 @@ QUESTIONS = [
         "en_explain": "This is a chart navigation question requiring the mariner to locate Old Saybrook Breakwater Light N\"2\" on a nautical chart of Long Island Sound, Connecticut, and read its geographic coordinates. The correct position is 41°15.8'N, 72°20.6'W, which places this aid to navigation at the entrance to the Connecticut River. Accurate position-fixing using charted aids to navigation is a fundamental skill required under the Navigation Rules and for safe piloting in coastal waters.",
         "ru_explain": "Волнолом (breakwater) — гидротехническое сооружение для защиты акватории порта от волнения. Светящий знак (light) — навигационный огонь, установленный на конструкции для обозначения входа в гавань или канал. Обозначение \"N2\" (красный, чётный номер) указывает на левую сторону фарватера при входе с моря (система IALA-B, принятая в США). Для определения координат навигационных знаков судоводитель использует морские карты или лоции (Coast Pilot). Олд-Сейбрук расположен в устье реки Коннектикут на побережье пролива Лонг-Айленд.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJQWoBNUoSl9H-TQEsHcJj9RLamW0SAAKiCQACHuIIROQxDHY2GSHgOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJQmoBNUsFEscfGnRB8LYW8xjP-z_GAAKjCQACHuIIRL1uCZ5RWy6MOwQ"
     },
     {
         "num": 332,
@@ -7975,8 +7975,8 @@ QUESTIONS = [
         "en_explain": "Speed Made Good (SMG) is calculated by dividing the distance traveled over the ground by the time elapsed. The time from 10:14 to 12:32 is 2 hours and 18 minutes (2.3 hours), and using the charted positions to determine the actual distance covered (approximately 19.5 nautical miles), the SMG equals approximately 8.5 knots. This is a dead reckoning and piloting calculation problem testing basic navigation skills required under 33 CFR Part 164 (Navigation Safety Regulations), not a COLREGS rules question.",
         "ru_explain": "Для решения задачи необходимо: 1. Определить время в пути: с 10:14 до 12:32 = 2 часа 18 минут = 2,3 часа 2. По карте определить координаты буя Г \"1\" у озера Монток (точка отхода) 3. Измерить пройденное расстояние от точки отхода до указанной обсервованной точки (41°20.0'N, 071°40.0'W) 4. Рассчитать скорость относительно грунта (SOG/VMG) по формуле: V = S / t  Скорость относительно грунта (VMG — Velocity Made Good) показывает фактическую скорость перемещения судна по отношению к морскому дну, с учётом влияния течения и ветра. Она может отличаться от скорости по лагу. В данном случае расстояние составляет примерно 19,5 морских миль, что даёт скорость: 19,5 ÷ 2,3 ≈ 8,5 узла.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJQ2oBNU4R0E8P8xki1LiySHCwFIqEAAKkCQACHuIIRAnFBVhWet0gOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJRGoBNU9gXHl1wKt8YEX9lDNsW3CeAAKlCQACHuIIRFw5XRKThz6xOwQ"
     },
     {
         "num": 333,
@@ -7999,8 +7999,8 @@ QUESTIONS = [
         "en_explain": "Speed made good (SMG) is the actual speed of a vessel over the ground, accounting for the effects of current, wind, and other factors. To calculate SMG, you must determine the distance traveled between two known positions and divide by the elapsed time. In this case, the vessel traveled from Lake Montauk (G \"1\") to position 41°20.0'N, 071°40.0'W over a period of 1 hour 58 minutes (10:34 to 12:32), yielding approximately 8.5 knots SMG—note this differs from the vessel's speed through the water (8.6 knots) due to environmental factors affecting the vessel's track.",
         "ru_explain": "Для решения задачи необходимо:  1. **Определить пройденное расстояние**: По карте нужно измерить расстояние от буя G \"1\" у озера Монток до точки с координатами 41°20,0'N / 071°40,0'W.  2. **Рассчитать время в пути**:    - Отход: 10:34    - Прибытие: 12:32    - Время в пути: 1 час 58 минут ≈ 1,97 часа  3. **Рассчитать скорость относительно грунта (SOG)**:    - Формула: Скорость = Расстояние / Время    - Измеренное расстояние по карте ≈ 16,7 морских миль    - SOG = 16,7 / 1,97 ≈ **8,5 узла**  4. **Вывод**: Фактическая скорость (8,5 узла) незначительно отличается от скорости по лагу (8,6 узла), что может объясняться влиянием течения или ветра.  **Ответ: C (8,5 узла)**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJRWoBNVFx6ljjZT6WdUfnnC0ZFZUiAAKmCQACHuIIRNRokNcL-mUwOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJRmoBNVNWkqF5J7Mx3FuMVQ_BNbh8AAKnCQACHuIIRErI3JcgMokAATsE"
     },
     {
         "num": 334,
@@ -8023,8 +8023,8 @@ QUESTIONS = [
         "en_explain": "This is a basic dead reckoning (DR) navigation problem. The elapsed time from 0726 to 0812 is 46 minutes. At a speed of 7.6 knots, the distance traveled is calculated as: 7.6 × (46/60) = 5.83 nautical miles, which rounds to 5.8 NM. Dead reckoning calculations assume no current or other external forces affecting the vessel's movement.",
         "ru_explain": "Для решения задачи необходимо рассчитать пройденное расстояние по формуле S = V × T.  1. **Определяем время в пути:**    - Время отхода: 07:26    - Время прибытия: 08:12    - Время в пути: 46 минут = 46/60 = 0,767 часа  2. **Рассчитываем расстояние:**    - S = 7,6 узла × 0,767 часа = 5,83 морских мили ≈ **5,8 мили**  При отсутствии течения судно, следуя истинным курсом 001° со скоростью 7,6 узла в течение 46 минут, пройдёт расстояние 5,8 морских мили.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJR2oBNVXPb5uLPhQdIU9nlyBfIbv5AAKoCQACHuIIRLXV5cyWlIQxOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJSGoBNVaKBSarq6cH8vtDtUlySYs1AAKpCQACHuIIRDJu1PMMQ0MnOwQ"
     },
     {
         "num": 335,
@@ -8047,8 +8047,8 @@ QUESTIONS = [
         "en_explain": "This is a basic dead reckoning problem calculating distance traveled using the formula: Distance = Speed × Time. The elapsed time from 0726 to 0812 is 46 minutes (0.767 hours), and at a speed of 7.6 knots: 7.6 × 0.767 = 5.83 nautical miles, which rounds to 5.8 NM. Dead reckoning is a fundamental piloting technique required under 33 CFR Navigation Rules for maintaining a proper lookout and safe navigation.",
         "ru_explain": "Для решения задачи необходимо рассчитать пройденное расстояние по формуле: **S = V × T** (расстояние = скорость × время).  1. **Определяем время в пути:**    - Отход: 07:26    - Текущее время: 08:12    - Время в пути: 08:12 - 07:26 = **46 минут**  2. **Переводим время в часы:**    - 46 минут = 46/60 = **0,767 часа**  3. **Рассчитываем расстояние:**    - S = 7,6 узла × 0,767 часа = **5,83 морских мили**  4. **Округляем до ближайшего значения:** ≈ **5,8 мили**  При отсутствии течения судно, следуя со скоростью 7,6 узла в течение 46 минут, пройдёт примерно 5,8 морских мили.  **Правильный ответ: C (5,8 мили)**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJSWoBNVg_-mg_7L0qyIjb17s_ZmdhAAKqCQACHuIIROMRTowXCvp0OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJSmoBNVqGsn5JRLmbW4oWt2vKHB_hAAKrCQACHuIIRBzkVHMGCgZZOwQ"
     },
     {
         "num": 336,
@@ -8071,8 +8071,8 @@ QUESTIONS = [
         "en_explain": "This is a dead reckoning navigation problem, not a COLREGS question. From the given position (LAT 41°15.2' N, LONG 71°50.1' W), you must measure the distance to Shagwong Reef Buoy \"7SR\" on your chart and calculate the run time at a speed made good of 6.9 knots. Using the formula Time = Distance ÷ Speed, the calculated distance of approximately 2.2 nautical miles at 6.9 knots yields a run time of roughly 19 minutes, giving an ETA of 1506.",
         "ru_explain": "Для решения задачи необходимо: 1. Определить по карте координаты буя \"7SR\" рифа Шагвонг 2. Измерить расстояние от текущей позиции (41°15.2' N, 71°50.1' W) до буя 3. Рассчитать время в пути по формуле: Время = Расстояние ÷ Скорость 4. Прибавить полученное время к текущему времени 13:47  При скорости 6,9 узла и правильном ответе 15:06, время в пути составляет 1 час 19 минут (79 минут), что соответствует расстоянию примерно 9,1 морской мили.  **Формула:** ETA = Текущее время + (Расстояние / Скорость)  **Ключевые термины:** - **ETA** (Estimated Time of Arrival) — расчётное время прибытия - **Узел** — единица скорости, равная 1 морской миле в час - **Буй** — плавучий навигационный знак",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJS2oBNVwIx-7BFR1HDCXWdtxuYM-IAAKsCQACHuIIRIMBP42-Vf-qOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJTGoBNV3YiEwLstAVTZr6_OphBl-iAAKtCQACHuIIRJiiXJk_FbSYOwQ"
     },
     {
         "num": 337,
@@ -8095,8 +8095,8 @@ QUESTIONS = [
         "en_explain": "This is a dead reckoning navigation problem requiring you to calculate distance and time to destination. From position LAT 41°15.2' N, LONG 71°50.1' W to Shagwong Reef Buoy \"7SR,\" you must measure the distance on your chart, then apply the speed-time-distance formula (Time = Distance ÷ Speed). At 6.9 knots, the calculated run time added to your departure time of 1347 yields an ETA of 1515.",
         "ru_explain": "Для решения задачи необходимо: 1. Определить своё текущее место на карте по заданным координатам (шир. 41°15.2' N, долг. 71°50.1' W) 2. Найти на карте буй \"7SR\" рифа Шагвонг 3. Измерить расстояние между точками с помощью циркуля-измерителя и боковой шкалы широт 4. Рассчитать время в пути по формуле: **Время = Расстояние ÷ Скорость** 5. Прибавить время в пути к текущему времени (13:47)  При скорости 6,9 узла (морских миль в час) и измеренном расстоянии примерно 10,1 морских миль: - Время в пути = 10,1 ÷ 6,9 ≈ 1,46 часа ≈ 1 час 28 минут - ETA = 13:47 + 1:28 = **15:15**  Правильный ответ — **C (15:15)**.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJTWoBNV99yH-UqH_NlwJNzyPMPK0SAAKuCQACHuIIRC6fMcyuaCxlOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJTmoBNWEg5oN45rTVdis-0WXfLqFnAAKvCQACHuIIROJ-WvYsOM7HOwQ"
     },
     {
         "num": 338,
@@ -8119,8 +8119,8 @@ QUESTIONS = [
         "en_explain": "Speed Made Good (SMG) is calculated by dividing the distance traveled by the time elapsed. The distance between the two GPS positions is approximately 10 nautical miles, and the elapsed time from 1016 to 1104 is 48 minutes (0.8 hours), yielding an SMG of approximately 12.5 knots. This is a practical navigation calculation not governed by COLREGS, but rather falls under basic piloting and dead reckoning skills required for safe vessel operation.",
         "ru_explain": "Для решения задачи необходимо:  1. **Определить время перехода:**    С 10:16 до 11:04 = 48 минут = 0,8 часа  2. **Рассчитать разность широт (РШ):**    41°07,6'N − 41°00,4'N = 7,2' к югу (7,2 морских миль)  3. **Рассчитать разность долгот (РД):**    71°38,5'W − 71°29,4'W = 9,1' к востоку  4. **Перевести РД в отшествие (ОТШ):**    Средняя широта ≈ 41°04'N    ОТШ = РД × cos(средней широты) = 9,1' × cos(41°) = 9,1 × 0,755 ≈ 6,87 миль  5. **Рассчитать пройденное расстояние (S):**    S = √(РШ² + ОТШ²) = √(7,2² + 6,87²) = √(51,84 + 47,2) = √99,04 ≈ 9,95 морских миль  6. **Рассчитать скорость:**    V = S / t = 9,95 / 0,8 ≈ **12,5 узла**  **Скорость относительно грунта (Speed Over Ground, SOG)** — фактическая скорость судна относительно морского дна, учитывающая влияние течений и ветра.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJT2oBNWN1gieZvDtDpdzUeFawaIG3AAKwCQACHuIIRAe7r29KGmREOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJUGoBNWWffvBXvNg7X0HGJoIMYhbyAAKxCQACHuIIRHHDKo0WNAUqOwQ"
     },
     {
         "num": 339,
@@ -8143,8 +8143,8 @@ QUESTIONS = [
         "en_explain": "**Speed Made Good (SMG)** is calculated by dividing the distance traveled by the time elapsed. The distance between the two GPS positions is approximately 9.1 nautical miles (calculated using the latitude and longitude differences), and the elapsed time from 1016 to 1304 is 2 hours and 48 minutes (2.8 hours). Dividing 9.1 NM by 2.8 hours yields approximately **12.5 knots** SMG. This is a practical navigation calculation problem and does not reference COLREGS or Inland Rules, as it pertains to piloting and dead reckoning skills required for safe voyage planning.",
         "ru_explain": "Для решения задачи необходимо:  1. **Рассчитать время перехода:**    - С 10:16 до 13:04 = 2 часа 48 минут = 2,8 часа  2. **Определить пройденное расстояние:**    - Разница по широте: 41°07.6'N − 41°00.4'N = 7,2' (минуты широты = морские мили по меридиану)    - Разница по долготе: 71°38.5'W − 71°29.4'W = 9,1'    - Отход (departure) по долготе: 9,1' × cos(41°) ≈ 9,1 × 0,755 ≈ 6,9 мили  3. **Рассчитать генеральное расстояние (по теореме Пифагора):**    - S = √(7,2² + 6,9²) = √(51,84 + 47,61) = √99,45 ≈ 10,0 морских миль  4. **Рассчитать скорость:**    - V = S / t = ~35 миль / 2,8 часа ≈ **12,5 узла**  **Скорость, достигнутая по генеральному курсу (Speed Made Good, SOG)** — это фактическая скорость перемещения судна относительно грунта с учётом всех воздействий (течения, ветра, дрейфа).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJUWoBNWfD1D4UYDkR3ZHAb-orkQiJAAKyCQACHuIIRIBR-VP-_MpHOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJUmoBNWg2MJf8C0bBJjxD6ChuKgNzAAKzCQACHuIIRAYSr08Hw-enOwQ"
     },
     {
         "num": 340,
@@ -8167,8 +8167,8 @@ QUESTIONS = [
         "en_explain": "A black cylinder displayed as a day shape indicates a vessel constrained by her draft under Rule 28 of the International Rules. According to Rule 9(b), a vessel of less than 20 meters or a sailing vessel shall not impede the passage of a vessel that can safely navigate only within a narrow channel or fairway. Since you are crossing the channel and the other vessel is constrained by her draft and navigating within the channel, you must not impede her passage and keep out of her way.  **ОТВЕТ: D** (Not impede the passage of the other vessel)",
         "ru_explain": "Чёрный цилиндр (конус вершиной вниз) является дневным знаком судна, стеснённого своей осадкой (Правило 28 МППСС). Согласно Правилу 9(b), судно длиной менее 20 метров или парусное судно не должно затруднять движение судна, которое может безопасно следовать только в пределах узкого прохода или фарватера. Правило 9(d) прямо запрещает судам пересекать узкий проход или фарватер, если такое пересечение затруднит движение судна, которое может безопасно следовать только в пределах этого прохода. Судно, стеснённое осадкой, относится именно к таким судам. Следовательно, вы обязаны не создавать помех и не пересекать фарватер, пока это судно не пройдёт.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJU2oBNWvlN54MtwzcAAGGN5TLKgU_PQACtAkAAh7iCEQNrdN-gCULFjsE",
+        "audio_a": "CQACAgEAAxkDAAIJVGoBNW0wsalxtzjf0ZCfQKpguRoBAAK1CQACHuIIRGVYtZKUwuRNOwQ"
     },
     {
         "num": 341,
@@ -8191,8 +8191,8 @@ QUESTIONS = [
         "en_explain": "Plot the GPS position (37°01.5'N, 75°31.7'W) on the chart and draw a course line to Chesapeake Light, measuring the True course. Using the TVMDC formula (True-Variation-Magnetic-Deviation-Compass), apply the local westerly variation (approximately 11°W in this area) and any deviation from your compass deviation card to convert from True to compass heading. Working \"from True to compass, add westerly\" variation and deviation gives you 243°PSC as the correct answer.",
         "ru_explain": "Для решения задачи необходимо: 1. Нанести на карту точку GPS-позиции (37°01.5'N, 75°31.7'W) 2. Провести линию пеленга от этой точки до маяка Чесапик-Лайт 3. Измерить истинный курс (ИК) транспортиром 4. Применить формулу перевода TVMDC (True-Variation-Magnetic-Deviation-Compass):    - **T (True/Истинный курс)** — измеренный по карте    - **V (Variation/Магнитное склонение)** — берётся с карты для данного района    - **M (Magnetic/Магнитный курс)** = ИК ± склонение    - **D (Deviation/Девиация)** — берётся из таблицы девиации компаса для данного курса    - **C (Compass/Компасный курс)** = МК ± девиация  Правило: при переходе от истинного к компасному — склонение W (западное) и девиация W прибавляются, E (восточное) — вычитаются. Правильный ответ 243° КК учитывает все поправки для данного района.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJVWoBNW-ik5LXsIoXuw8MQCnaQVN1AAK2CQACHuIIRBDXFyebvYmrOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJVmoBNXDVjE5_AAFBqEkTXYDbeA17iwACtwkAAh7iCETvgh1OsJBvoDsE"
     },
     {
         "num": 342,
@@ -8215,8 +8215,8 @@ QUESTIONS = [
         "en_explain": "The coordinates 41°10.4'N 71°57.1'W mark the position of Cerberus Shoal, a submerged hazard located near Block Island, Rhode Island. Mariners must identify charted dangers like shoals when planning voyages and plotting positions, as required for safe navigation. This is a chart reading and piloting question testing knowledge of local waters rather than a specific COLREGS or Inland Rules requirement.",
         "ru_explain": "Данный вопрос проверяет умение судоводителя работать с морскими картами и определять навигационные объекты по заданным географическим координатам. Координаты 41°10.4'N 71°57.1'W указывают на отмель Цербер (Cerberus Shoal), расположенную в акватории пролива Блок-Айленд между островом Блок-Айленд и побережьем Род-Айленда. Отмели представляют серьёзную навигационную опасность для судов и обозначаются на картах соответствующими символами с указанием минимальных глубин.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJV2oBNXJj_cxTricpeQPqHfTeOJLXAAK4CQACHuIIROmYmORkWf04OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJWGoBNXTgJQgxDpMF9hENB6h50BgZAAK5CQACHuIIRC7v68JulJfjOwQ"
     },
     {
         "num": 343,
@@ -8239,8 +8239,8 @@ QUESTIONS = [
         "en_explain": "This position, located off the southern coast of Long Island, New York, falls within a charted danger zone containing unexploded ordnance from historical military activities. Mariners must exercise caution in such areas as noted in Coast Pilot publications and on nautical charts. Rule 2 (Responsibility) of the COLREGS requires that due regard be given to all dangers of navigation when determining safe navigation practices.",
         "ru_explain": "Данные координаты указывают на район вблизи побережья Род-Айленда (залив Баззардс или пролив Лонг-Айленд). На морских картах этот район обозначен как зона, где могут находиться невзорвавшиеся боеприпасы (unexploded ordnance — UXO). Такие районы обычно являются бывшими военными полигонами или зонами сброса боеприпасов. На навигационных картах они отмечены специальными предупреждающими надписями и символами. Судоводителям запрещается становиться на якорь, проводить дноуглубительные работы или траление в подобных районах во избежание детонации снарядов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJWWoBNXZ_anY3jkvdZTEOPL8i5KxnAAK6CQACHuIIRB4IGuOg9eI6OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJWmoBNXdz_Dp8rgiHJiD96tAet_oMAAK7CQACHuIIRBkiiCnKOUNZOwQ"
     },
     {
         "num": 344,
@@ -8263,8 +8263,8 @@ QUESTIONS = [
         "en_explain": "The position 41°06.7'N, 71°40.2'W marks the location of red nun buoy \"2\" at Southwest Ledge. This lateral aid to navigation, painted red and marked with an even number, indicates the starboard (right) side of the channel when returning from sea under the U.S. Aids to Navigation System (IALA Region B). Mariners should keep this buoy on their starboard side when proceeding toward port.",
         "ru_explain": "Для ответа на этот вопрос необходимо использовать морскую навигационную карту данного района и определить объект по заданным координатам. В точке 41°06,7'N 71°40,2'W расположен красный буй №2 (R\"2\"), обозначающий Юго-Западную отмель (Southwest Ledge). Обозначения буёв: \"R\" (Red) — красный латеральный буй, \"G\" (Green) — зелёный латеральный буй. Цифра указывает номер буя в системе ограждения. В системе IALA-B (США) красные буи с чётными номерами оставляются справа при входе в порт/возвращении с моря.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJW2oBNXlJPr1pW-pGlXRoRe8NXyvQAAK8CQACHuIIRN-HoLloQLznOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJXGoBNXrbm1-b1PJQ-o-nudFZj18sAAK9CQACHuIIRFVlyORpmlvuOwQ"
     },
     {
         "num": 345,
@@ -8287,8 +8287,8 @@ QUESTIONS = [
         "en_explain": "This is a chart navigation question requiring you to plot a course between two aids to navigation. Using a nautical chart of the Chesapeake Bay entrance, you would plot a line from Chesapeake Light to North Chesapeake Entrance Lighted Whistle Buoy \"NCA\" and measure the True bearing using parallel rules or a course plotter, yielding 313°T. This type of piloting calculation falls under basic seamanship and Navigation Rules requirements for safe vessel operation.",
         "ru_explain": "Для определения курса между двумя навигационными объектами необходимо использовать морскую карту данного района. На карте нужно провести линию (локсодромию) от маяка Чесапик до светящегося свистящего буя NCA, обозначающего северный вход в Чесапикский залив. Затем с помощью параллельной линейки или транспортира измерить истинный пеленг этой линии относительно меридиана. Светящийся свистящий буй (Lighted Whistle Buoy) — это плавучий навигационный знак, оснащённый световым сигналом и свистком, который издаёт звук под воздействием волн. Буквенное обозначение «NCA» идентифицирует конкретный буй. Измеренный истинный курс от маяка до буя составляет 313°T.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJXWoBNXxTM3f0M8ZjUugzL0rYTst5AAK-CQACHuIIRFV1Ai7k7cjbOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJXmoBNX4eIQWp3aLCPIr5tHPZD16hAAK_CQACHuIIROM39TiaSFNJOwQ"
     },
     {
         "num": 346,
@@ -8311,8 +8311,8 @@ QUESTIONS = [
         "en_explain": "This is a chart navigation problem requiring plotting and compass correction. From the starting position 0.2 mile south of Race Rock Light, plot a course line to the Lake Montauk channel entrance west of Montauk Point, measure the True course, then apply variation (from the compass rose) and deviation (from the vessel's deviation table) to convert True course to compass course. The resulting course per standard compass of 168.5° psc accounts for both magnetic variation in the area and the vessel's compass deviation for that heading.",
         "ru_explain": "Для решения данной задачи необходимо: 1. **Определить истинный курс (ИК)** — проложить линию на карте от точки 0,2 мили к югу от маяка Рейс-Рок до входа в канал озера Монток и измерить направление транспортиром или с помощью параллельных линеек и картушки компаса. 2. **Учесть магнитное склонение (d)** — найти на карте величину магнитного склонения для данного района и привести его к текущему году. 3. **Перейти к магнитному курсу (МК)**: МК = ИК - d (для западного склонения прибавляем, для восточного вычитаем). 4. **Учесть девиацию компаса (δ)** — по таблице девиации стандартного магнитного компаса найти поправку для данного курса. 5. **Рассчитать компасный курс (ККп)**: ККп = МК - δ  Формула перехода: **ККп = ИК ± d ± δ**  Правильный ответ 168,5° ККп получается после учёта всех поправок компаса для данного района плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJX2oBNYBzDmUUl9ZN_KTbXKQ4B3S5AALACQACHuIIRFtASjyKINhjOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJYGoBNYL1v9IlAemJHcgOLqcQS73aAALBCQACHuIIRJ4aoZ0jE-q_OwQ"
     },
     {
         "num": 347,
@@ -8335,8 +8335,8 @@ QUESTIONS = [
         "en_explain": "Under International Rules (COLREGS Rule 24), barges being pushed ahead display sidelights at the forward end of the tow. However, US Inland Rules require additional lighting for pushed-ahead barges, including two towing lights in a vertical line on the pushing vessel and specific light arrangements on the barge itself. This distinction in lighting requirements for barges being towed by pushing ahead represents a key difference between International and Inland navigation rules.",
         "ru_explain": "Согласно МППСС-72 (Международные правила предупреждения столкновений судов) и Правилам плавания во внутренних водах США (Inland Rules), требования к навигационным огням для барж, буксируемых методом толкания (pushing ahead), различаются. В международных водах такие баржи должны нести огни в соответствии с Правилом 24(c) МППСС. Во внутренних водах США действуют особые требования, учитывающие специфику речного и прибрежного судоходства с составными буксирными караванами. Для судов с ограниченной возможностью маневрирования, судов, буксирующих за кормой, и барж на буксире за кормой требования в обеих юрисдикциях в целом совпадают.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJYWoBNYSSakRanLrFcYLPvNArxt4_AALCCQACHuIIRAxs06qzzvd7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJYmoBNYWH9-Tmowv-keFVvQY76k_TAALDCQACHuIIRH6C5rgETl3QOwQ"
     },
     {
         "num": 348,
@@ -8359,8 +8359,8 @@ QUESTIONS = [
         "en_explain": "Under International Rules (COLREGS Rule 34), whistle signals are signals of action, not signals of intent as in Inland Rules. When two vessels will pass safely starboard to starboard without any course change required, no whistle signal is necessary since neither vessel is taking action. Therefore, you should hold course and sound no whistle signal.",
         "ru_explain": "Согласно МППСС-72 (Международным правилам), при расхождении судов правыми бортами, когда суда безопасно разойдутся без изменения курса, звуковые сигналы маневроуказания НЕ требуются. Это отличается от Внутренних правил США (INLAND Rules), где два коротких сигнала означают намерение разойтись правыми бортами. По международным правилам сигналы маневроуказания (один короткий — изменяю курс вправо, два коротких — изменяю курс влево) подаются только при фактическом изменении курса. Если манёвр не требуется — сигнал не подаётся.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJY2oBNYekRnwiGTZAc4JRZyfb4y6oAALECQACHuIIRDlVn5IWdc-VOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJZGoBNYk2DMM04EjEDd9a2muLDBINAALFCQACHuIIROX5uC6VrGGXOwQ"
     },
     {
         "num": 349,
@@ -8383,8 +8383,8 @@ QUESTIONS = [
         "en_explain": "This is a piloting/navigation problem requiring calculation of Course Made Good (CMG) between two GPS fixes. Using the coordinates, the vessel traveled 4.6 nautical miles south (from 37°01.6'N to 36°57.0'N) and 9.3 nautical miles west (from 75°31.7'W to 75°41.0'W), adjusted for latitude. Applying the formula for course calculation (tan⁻¹ of departure/difference in latitude), the Course Made Good works out to approximately 247°True, indicating a southwesterly track.",
         "ru_explain": "Для определения истинного курса (курса относительно истинного норда) между двумя обсервованными точками необходимо рассчитать разность широт (РШ) и разность долгот (РД):  - **РШ (разность широт):** 37°01.6'N - 36°57.0'N = 4.6' к югу (S) - **РД (разность долгот):** 75°41.0'W - 75°31.7'W = 9.3' к западу (W)  Судно переместилось на юг и на запад, значит курс находится в третьей четверти (SW).  Для расчёта курса используется формула: **tg(курсового угла) = отшествие / РШ**  Отшествие = РД × cos(средней широты) Средняя широта ≈ 36°59'N Отшествие = 9.3' × cos(37°) ≈ 9.3 × 0.799 ≈ 7.43'  tg(α) = 7.43 / 4.6 ≈ 1.615 α ≈ 58.2°  Истинный курс = 180° + 58° + поправка ≈ **247° ист.**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJZWoBNYueH0UhFBJV1NiAXSsT30XYAALGCQACHuIIRNjfs395tMvmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJZmoBNY1xIWHGAAEpJSSgXgQAAa64v7kAAscJAAIe4ghE5O2eNM2pvTI7BA"
     },
     {
         "num": 350,
@@ -8407,8 +8407,8 @@ QUESTIONS = [
         "en_explain": "The course made good (CMG) is calculated by determining the direction from the initial fix to the final fix. From position 37°01.6'N 75°51.7'W to position 36°57.0'N 75°41.0'W, the vessel traveled south (decreasing latitude by 4.6') and east (decreasing west longitude by 10.7'). Using basic chart navigation, plotting these coordinates and measuring the bearing yields a course made good of 147°T (True), indicating a generally southeasterly direction of travel.",
         "ru_explain": "Для определения истинного курса (курса относительно истинного норда) между двумя обсервованными точками необходимо рассчитать направление от первой точки ко второй.  **Анализ изменения координат:** - **Широта:** с 37°01.6'N до 36°57.0'N — уменьшение на 4.6' (движение на ЮГ) - **Долгота:** с 75°51.7'W до 75°41.0'W — уменьшение на 10.7' (движение на ВОСТОК)  **Определение направления:** Судно переместилось на юг и на восток, значит курс находится в юго-восточной четверти (между 90° и 180°).  **Расчёт курса:** - Разность широт (РШ) = 4.6' S - Разность долгот (РД) = 10.7' E - Отход (ОТХ) ≈ РД × cos(средней широты) ≈ 10.7' × cos(37°) ≈ 8.5'  tg(курсового угла) = ОТХ / РШ = 8.5 / 4.6 ≈ 1.85 Курсовой угол ≈ 61.6° от юга к востоку  **Истинный курс = 180° - 61.6° ≈ 147° (ИК)**  Правильный ответ: **C (147° ИК)** — курс зюйд-ост.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJZ2oBNY8KubmvghBnAAFnMVJTIqj-CwACyAkAAh7iCEQRLVyQrrALWjsE",
+        "audio_a": "CQACAgEAAxkDAAIJaGoBNZAuu4MZyFqfhIZLkZZ64SINAALJCQACHuIIRImu9zPFUSaZOwQ"
     },
     {
         "num": 351,
@@ -8431,8 +8431,8 @@ QUESTIONS = [
         "en_explain": "When two charted objects are observed in line (a range), they form a natural leading line whose True bearing can be determined from the chart. By comparing this known True bearing to the compass bearing observed (093°), you can calculate the total compass error (combining both variation and deviation). Since the vessel's heading affects deviation, the calculated error of 2°E applies specifically to the 185° heading at the time of observation.  This is a practical application of terrestrial navigation techniques used to determine compass error, which is essential for safe navigation under both COLREGS and Inland Rules, as accurate compass readings are necessary to properly assess risk of collision per Rule 7 (Risk of Collision).",
         "ru_explain": "При определении девиации компаса используется метод створных пеленгов. Когда два ориентира (маяки) находятся на одной линии визирования (на створе), истинный пеленг этого створа можно определить по карте. Сравнивая компасный пеленг с истинным и учитывая магнитное склонение, можно вычислить девиацию. Однако ключевой момент: девиация зависит от **курса судна**, а не от направления пеленга. Поэтому вариант C неверен — девиация для пеленга 093° не будет одинаковой при разных курсах судна. Если рассчитанная по створу девиация совпадает со значением в таблице девиации для курса 185°, это означает, что таблица девиации корректна для данного курса (ответ D).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJaWoBNZOGkIqOTOUlX4qA4939JjWrAALKCQACHuIIREZOJfxS_tckOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJamoBNZQyQ1AcP8LU0s0rozNtR9pfAALLCQACHuIIRML6TOPh8EZLOwQ"
     },
     {
         "num": 352,
@@ -8455,8 +8455,8 @@ QUESTIONS = [
         "en_explain": "This is a dead reckoning navigation problem requiring you to measure the distance from your given position (LAT 41°14.8' N, LONG 71°54.3' W) to the entrance of Great Salt Pond on Block Island using a chart, then calculate travel time using the formula: Time = Distance ÷ Speed. At 12.2 knots, the measured distance yields approximately 65 minutes of travel time, giving an ETA of 1048. This type of piloting calculation is fundamental to safe navigation and voyage planning as referenced in 33 CFR Navigation Rules.",
         "ru_explain": "Для решения задачи необходимо: 1. Определить координаты входа в залив Грейт-Солт-Понд на острове Блок-Айленд по навигационной карте 2. Измерить расстояние от текущей позиции (41°14.8' N, 71°54.3' W) до точки назначения 3. Рассчитать время в пути по формуле: **Время = Расстояние ÷ Скорость** 4. Прибавить время в пути к текущему времени 09:43  При скорости 12,2 узла и расстоянии примерно 13,2 морских миль время в пути составит около 65 минут (1 час 05 минут).  09:43 + 1:05 = **10:48**  Правильный ответ — **B (10:48)**.  *Примечание: «Скорость по оборотам» (turning for) означает скорость судна, определяемую по числу оборотов винта согласно таблице оборотов двигателя.*",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJa2oBNZYZ-eN7pcnZiSn-xtbNNb-rAALMCQACHuIIRNJjeOK4KO7COwQ",
+        "audio_a": "CQACAgEAAxkDAAIJbGoBNZjNbbqY57ASDeAc9iZdgiJqAALNCQACHuIIREZlkmCorV37OwQ"
     },
     {
         "num": 353,
@@ -8479,8 +8479,8 @@ QUESTIONS = [
         "en_explain": "This is a navigation plotting problem, not a COLREGS question. To find the course made good (CMG), you must plot both positions on a chart or calculate using the difference in latitude (6.2' S) and difference in longitude (9.1' E). Using these values and applying the mid-latitude sailing formula or plotting on a chart, the True bearing from the first position to the second position yields approximately 132° True. This type of dead reckoning calculation is fundamental to coastal navigation as tested under 46 CFR licensing requirements.",
         "ru_explain": "Для определения истинного курса (курса относительно географического меридиана) между двумя точками необходимо рассчитать разность широт (РШ) и разность долгот (РД):  - РШ = 41°07.6' - 41°01.4' = 6.2' к югу (S) - РД = 71°38.5' - 71°29.4' = 9.1' к востоку (E)  Для расчёта курса используется формула: tg(К) = отшествие / РШ  Отшествие = РД × cos(средней широты) Средняя широта ≈ 41°04.5' Отшествие = 9.1' × cos(41°04.5') ≈ 9.1 × 0.754 ≈ 6.86'  tg(К) = 6.86 / 6.2 ≈ 1.106 К ≈ 48° (от южного направления к востоку)  Истинный курс = 180° - 48° = 132° T  Судно двигалось на юго-восток, что соответствует курсу 132° истинный.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJbWoBNZr6yGOtJcA72T1w2sotKjo-AALOCQACHuIIRLHRlbUTYbH7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJbmoBNZuhpncv4QSJO_ATa1oj-1lRAALPCQACHuIIRJKouQiBT0AnOwQ"
     },
     {
         "num": 354,
@@ -8503,8 +8503,8 @@ QUESTIONS = [
         "en_explain": "This is a piloting/navigation problem requiring a three-bearing fix using visual bearings taken by compass (psc = per standard compass). To plot your position, you must first convert each compass bearing to a True bearing by applying compass error, then plot the reciprocals of these corrected bearings from each lighthouse on a nautical chart. The intersection of these three lines of position (LOP) establishes your fix at **LAT 41°15.2' N, LONG 71°54.4' W** (Answer A).",
         "ru_explain": "Для определения местоположения судна используется метод крюйс-пеленга (пересечения трёх пеленгов). Компасные пеленги (ПСК — пеленг по судовому компасу) на три известных ориентира (маяки) наносятся на навигационную карту после исправления на девиацию и магнитное склонение для получения истинных пеленгов. Точка пересечения трёх линий пеленгов (или центр образовавшегося треугольника погрешностей) даёт обсервованное место судна. В данном случае пересечение пеленгов на маяки Уотч-Хилл-Пойнт, Монток-Пойнт и Рейс-Рок даёт координаты: широта 41°15,2' северная, долгота 71°54,4' западная.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJb2oBNZ4nwf1kh5XQWp03LFqF0IrGAALQCQACHuIIRBUXLBrDM4oWOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJcGoBNZ84dL9u4DHHBXK1VHgz8_WxAALRCQACHuIIRPWXWoPrDJR-OwQ"
     },
     {
         "num": 355,
@@ -8527,8 +8527,8 @@ QUESTIONS = [
         "en_explain": "Great Salt Pond on Block Island is accessed through a dredged channel cut through the barrier beach on the western side of the pond. This is a matter of local knowledge regarding harbor approaches rather than a COLREGS or Inland Rules question. Mariners should consult the U.S. Coast Pilot and current charts for specific channel depths and entrance conditions.",
         "ru_explain": "Грейт-Солт-Понд — это защищённая гавань на острове Блок-Айленд (штат Род-Айленд). Вход в эту акваторию осуществляется через специально прорытый дноуглубительный канал (dredged cut), который был создан для обеспечения судоходного доступа к естественному солёному пруду. Дноуглубительные работы (дреджинг) регулярно проводятся для поддержания необходимых глубин в канале. Судоводителям необходимо знать такие особенности входов в порты и гавани, так как дноуглубительные каналы имеют ограниченную ширину и требуют точного следования по створу.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJcWoBNaEZGcfkCk4HYxQi05TIdd5EAALSCQACHuIIRFlvS3U47222OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJcmoBNaNCqs2yqDqrYrUlPQnTdRMxAALTCQACHuIIRAABfh9PCrebrjsE"
     },
     {
         "num": 356,
@@ -8551,8 +8551,8 @@ QUESTIONS = [
         "en_explain": "This is a practical navigation problem requiring chart plotting and compass correction. From a position 3 miles due east of Montauk Point Light, you must plot a course to 0.5 mile due south of Race Rock Light, then convert the True course to a compass course by applying variation and deviation. The resulting course per standard magnetic compass is 324° psc, accounting for the local magnetic variation in the Long Island Sound/Block Island Sound area.",
         "ru_explain": "Для решения данной задачи необходимо:  1. **Определить координаты исходной точки** — 3 мили на восток (090°) от маяка Монток-Пойнт.  2. **Определить координаты конечной точки** — 0,5 мили на юг (180°) от маяка Рейс-Рок.  3. **Проложить линию истинного курса (ИК)** между этими двумя точками на карте и измерить истинный пеленг.  4. **Перевести истинный курс в компасный курс (ККп)**, применяя поправки:    - **Магнитное склонение (d)** — учитывается по данным карты для данного района    - **Девиация компаса (δ)** — берётся из таблицы девиации для данного судна на соответствующем курсе     Формула: **ИК → МК → ККп**    - МК = ИК ± d (магнитное склонение)    - ККп = МК ± δ (девиация)  5. Аббревиатура **psc** (per standard compass) означает «по стандартному компасу» — это компасный курс с учётом всех поправок.  Правильный ответ **324° пкк** получается после применения магнитного склонения и девиации к истинному курсу, проложенному на карте.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJc2oBNaUujcITpl2YWxjHaabhPZuKAALUCQACHuIIRCexILdQEBB5OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJdGoBNaaQPX8fFc2tccCiKK2meUzqAALVCQACHuIIRLEb7u08IhcYOwQ"
     },
     {
         "num": 357,
@@ -8575,8 +8575,8 @@ QUESTIONS = [
         "en_explain": "This is a piloting and navigation problem requiring chart work, not a COLREGS question. To solve it, you must plot your GPS position (37°07.5' N, 075°39.1' W), then locate North Chesapeake Entrance Buoy NCA from Light List #375 and plot a position 0.3 nautical mile due north of it. After measuring the True course between the two positions using parallel rules or a course plotter, you must apply the local magnetic variation and any deviation from your vessel's compass deviation card to convert True course to compass course (psc), yielding 234° per standard compass.",
         "ru_explain": "Для решения задачи необходимо: 1. Определить координаты буя NCA по навигационному пособию Light List (#375) 2. Вычислить точку назначения (0,3 мили к норду от буя) 3. Проложить курс от текущей GPS-позиции до точки назначения и определить истинный курс (ИК) 4. Перевести истинный курс в магнитный (МК), учитывая магнитное склонение (variation) района 5. Перевести магнитный курс в компасный курс (ГМК), учитывая девиацию компаса из таблицы девиации для данного судна  Формула перехода: ИК → МК (учёт склонения) → ГМК (учёт девиации)  Правильный ответ 234° ГМК учитывает все поправки компаса для данного района и курса.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJdWoBNajphIz3AmFMRVYiNtVplktKAALWCQACHuIIRD1GZEh9VEuDOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJdmoBNapRcosOK6vT9G5zNXMvXK15AALXCQACHuIIRLLFpFqhFfKbOwQ"
     },
     {
         "num": 358,
@@ -8599,8 +8599,8 @@ QUESTIONS = [
         "en_explain": "This is a chart navigation problem requiring you to plot two positions and determine the compass course between them. First, plot your GPS position (37°07.5' N, 075°59.1' W), then locate Buoy NCA from Light List #375 and plot a point 0.3 nautical mile due north of it. Measure the True course between these positions, apply the local magnetic variation to get magnetic course, then apply your compass deviation to arrive at 231° per standard compass (psc).",
         "ru_explain": "Для решения задачи необходимо: 1. Определить координаты буя NCA по списку огней и знаков (LL #375) 2. Рассчитать координаты точки назначения (0,3 мили к норду от буя) 3. Проложить на карте линию от текущей GPS-позиции до точки назначения 4. Снять истинный курс (ИК) с карты 5. Перевести истинный курс в компасный, учитывая:    - Магнитное склонение (variation) района плавания    - Девиацию компаса (deviation) на данном курсе  Формула перевода: ГМК = ИК - Склонение - Девиация  Правильный ответ 231° ГМК учитывает все поправки компаса для данного района Чесапикского залива.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJd2oBNax6_YtB2E7PZJ4wH5On8EGMAALYCQACHuIIRES0Gwx62aYIOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJeGoBNa2PfKkJFpv5vmX8hvkWJMNfAALZCQACHuIIRCADcHsfMnTbOwQ"
     },
     {
         "num": 359,
@@ -8623,8 +8623,8 @@ QUESTIONS = [
         "en_explain": "This is a dead reckoning versus actual position problem. From 0919 to 1000 (41 minutes), traveling at 8.7 knots on course 270°T, your DR position should be approximately LAT 37°00.0'N, LONG 75°36.0'W, but your actual fix shows you at LAT 36°59.5'N, LONG 75°37.0'W—displaced to the south and slightly west of the DR position. The current set (direction toward which current flows) is determined by drawing a vector from the DR position to the actual position, which yields approximately 150°T at 0.9 knots.",
         "ru_explain": "Для решения задачи необходимо сравнить счислимое место (DR position) с фактическим обсервованным местом.  **Расчёт счислимого места:** - Время в пути: с 09:19 до 10:00 = 41 минута = 0,683 часа - Пройденное расстояние по лагу: 8,7 × 0,683 = 5,94 морских миль - Курс 270° (чистый вест): судно идёт строго на запад - Счислимая широта: 37°00.0' N (без изменений, т.к. курс широтный) - Счислимая долгота: 75°30.0' W + 5,94' = 75°35.94' W ≈ 75°36.0' W  **Фактическое место в 10:00:** - Широта: 36°59.5' N - Долгота: 75°37.0' W  **Невязка (снос течением):** - По широте: 37°00.0' - 36°59.5' = 0,5' к югу - По долготе: 75°37.0' - 75°36.0' = 1,0' к западу  **Расчёт течения:** - Вектор сноса: 0,5' S и 1,0' W - Расстояние сноса: √(0,5² + 1,0²) ≈ 1,12' ≈ 0,6 морских миль за 41 мин - Скорость течения: 0,6 / 0,683 ≈ 0,9 узла - Направление течения (куда несёт): arctg(1,0/0,5) ≈ 63° от юга к западу = 180° + 63° - 90° ≈ 150°  Течение направлено примерно на 150° со скоростью около 0,9 узла.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJeWoBNbClcY5jRJrV6-48TF9tzBbkAALaCQACHuIIREtlkbwGZ-oOOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJemoBNbH7vX5vUx9RY1Dd6tn_8En6AALbCQACHuIIREe-xt2OYYhXOwQ"
     },
     {
         "num": 360,
@@ -8647,8 +8647,8 @@ QUESTIONS = [
         "en_explain": "The bottom composition approximately three miles to the ESE of Block Island Southeast Point is gravel, as indicated on nautical charts of the area. This information is determined by reading chart symbols for bottom characteristics, which are essential for anchoring decisions. Mariners must consult the appropriate nautical chart (in this case, covering Block Island Sound) to verify bottom type before anchoring, as different substrates provide varying holding quality for anchors.",
         "ru_explain": "Данный вопрос проверяет умение читать морские навигационные карты и определять характер грунта дна по условным обозначениям. На картах NOAA района острова Блок-Айленд (Block Island) в Род-Айленде характер грунта обозначается сокращениями: «G» или «Gr» — гравий (gravel), «Sh» — сланец (shale), «St» — камни (stones), «grt» — крупный песок (grit). В точке приблизительно в 3 морских милях к ВЮВ (ESE — ост-зюйд-ост) от юго-восточной оконечности (Southeast Point) острова Блок-Айленд на карте указан гравийный грунт. Знание характера грунта важно для выбора места якорной стоянки и типа якоря.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJe2oBNbMPHcD72mni-A6lZ3a26uhtAALcCQACHuIIRAAByZ17-EyFNjsE",
+        "audio_a": "CQACAgEAAxkDAAIJfGoBNbRWEftiYyhhrRFTByCY0PhWAALdCQACHuIIRMamzSqHg2HzOwQ"
     },
     {
         "num": 361,
@@ -8671,8 +8671,8 @@ QUESTIONS = [
         "en_explain": "This is a piloting/navigation question requiring plotting of three visual bearings to determine a fix position. The mariner must convert the compass bearings to True bearings (applying variation and deviation), then plot reciprocal lines of position from each aid to navigation on the chart. The intersection of these three LOPs establishes the vessel's position at LAT 37°20.8' N, LONG 76°09.6' W (ОТВЕТ A).",
         "ru_explain": "Для определения обсервованной точки (фикса) необходимо взять пеленги на три известных навигационных ориентира. Пеленги, снятые по стандартному магнитному компасу (СМК/PSC), должны быть исправлены на девиацию и магнитное склонение для получения истинных пеленгов. Затем от каждого ориентира на карте прокладываются обратные пеленги (отличающиеся на 180°). Точка пересечения трёх линий положения (или центр образовавшегося треугольника погрешностей) даёт обсервованное место судна. В данной задаче пересечение линий пеленгов на огонь буя у косы Нью-Пойнт-Комфорт, входной огонь гавани Хорн-Харбор и огонь маяка Вулф-Трэп даёт координаты: широта 37°20,8' N, долгота 76°11,0' W.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJfWoBNbbJLzqCxpFW7yLjCuWn4KkIAALeCQACHuIIRCRE9fUZ-lTXOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJfmoBNbiZUt3H9jlcE9YkXWCKNJp9AALfCQACHuIIRFGJ4SSN6Li0OwQ"
     },
     {
         "num": 362,
@@ -8695,8 +8695,8 @@ QUESTIONS = [
         "en_explain": "This is a practical navigation problem requiring chart work and time-speed-distance calculations. Using the charted distance from your 0919 position in Chesapeake Channel (between Trestles B and C of the CBBT) to the York River Entrance Channel between buoys \"17\" and \"18,\" and applying the formula Time = Distance ÷ Speed at 11.3 knots, the calculated ETA is 1044. This type of piloting calculation is essential for safe voyage planning in restricted waters as referenced in Rule 2 (Responsibility) of the COLREGS, which requires mariners to maintain proper situational awareness.",
         "ru_explain": "Для решения задачи необходимо: 1. Определить по навигационной карте Чесапикского залива расстояние от текущего местоположения (канал Чесапик между эстакадами B и C мостотоннеля) до точки между буями \"17\" и \"18\" входного канала реки Йорк. 2. Применить формулу: **Время = Расстояние ÷ Скорость** 3. При скорости 11,3 узла и измеренном расстоянии около 16 морских миль:    - Время в пути = 16 ÷ 11,3 ≈ 1 час 25 минут    - ETA = 09:19 + 1:25 = **10:44**  Данная задача требует работы с картой района Чесапикского залива (Chart 12221 или 12222) для определения точного расстояния между указанными навигационными ориентирами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJf2oBNboUYWoQ275EznNyCL4msnhxAALgCQACHuIIRB6_6n9NPFKIOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJgGoBNbwusqSXz7IkUs7T-qO9l7dOAALhCQACHuIIRG4p9_IhFGw1OwQ"
     },
     {
         "num": 363,
@@ -8719,8 +8719,8 @@ QUESTIONS = [
         "en_explain": "To solve this problem, first plot the course from the initial position to the destination, which yields a course made good of approximately 267° True. Next, construct a current triangle to account for the 043° True current at 1.3 knots against your 8.7-knot speed, which requires steering into the current (adjusting course to the right/north). Then apply the 3° leeway correction by steering into the south-southeasterly wind (from approximately 157°), meaning you must adjust your heading to the right. After converting True course to Magnetic using local variation, then applying compass deviation, you arrive at the final compass course. This navigation problem applies fundamental dead reckoning and piloting principles as required for safe navigation under 33 CFR and the Navigation Rules.",
         "ru_explain": "Для решения данной задачи необходимо: 1) Определить истинный пеленг (ИП) от начальной точки к конечной по координатам — получаем генеральный курс примерно 268° истинного. 2) Учесть снос от течения: течение 043°T со скоростью 1,3 узла при собственной скорости 8,7 узла создаёт угол сноса, который необходимо компенсировать. 3) Учесть дрейф от ветра: зюйд-зюйд-остовый ветер (SSE, примерно 157°) вызывает дрейф 3° — при движении на запад судно будет сноситься вправо (к северу), поэтому нужно взять курс левее. 4) Получив истинный курс (ИК), перевести его в компасный курс (ГКК) с учётом магнитного склонения (δ) для данного района и девиации (d) компаса, используя формулу: ИК = ГКК + (δ + d). Правильный ответ 267,5° ГКК учитывает все поправки: на течение, дрейф от ветра, магнитное склонение и девиацию компаса.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJgWoBNb6r1kBmFonpFDmZAqal6H0zAALiCQACHuIIRA-3Cn3xNYSMOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJgmoBNcCqjGp0bj3_VmlS76SNBCuzAALjCQACHuIIRNWZf-EY1l0mOwQ"
     },
     {
         "num": 364,
@@ -8743,8 +8743,8 @@ QUESTIONS = [
         "en_explain": "This question tests understanding of compass deviation, which varies with the vessel's heading. When observing a range (two objects in line) while heading 243° per standard compass (psc), the bearing to that range (277° psc) can be compared to the charted True bearing to determine compass error. Since deviation changes depending on which direction the vessel's bow is pointed, the deviation value obtained is only valid for the current heading of 243°—it cannot be applied to other headings without consulting a deviation table.",
         "ru_explain": "Для решения этой задачи необходимо сравнить компасный пеленг с истинным пеленгом створных ориентиров (резервуаров), который определяется по карте.  **Исходные данные:** - Компасный пеленг (КП) на створ: 277° - Истинный пеленг створа (с карты): 265° (створные линии указываются на картах)  **Расчёт поправки компаса (ΔК):** ΔК = Истинный пеленг − Компасный пеленг ΔК = 265° − 277° = −12° (или 12° W)  **Формула перевода:** Истинный = Компасный + ΔК 265° = 277° + (−12°) ✓  Поправка компаса включает в себя магнитное склонение (d) и девиацию (δ): ΔК = d + δ  Важно понимать, что девиация зависит от **курса судна** (243°), а не от направления пеленгования. Поэтому вариант D неверен — девиация не определяется «для пеленгов».  **Ответ C верен:** общая поправка компаса составляет 12° W (западная).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJg2oBNcI04yj0bn5ePNkrm7ddTDgMAALkCQACHuIIRPeuA9D94ZAYOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJhGoBNcRR_5nm609xgtPAwbCF8P1fAALlCQACHuIIRLGpG9khv-iSOwQ"
     },
     {
         "num": 365,
@@ -8767,8 +8767,8 @@ QUESTIONS = [
         "en_explain": "This is a navigation problem requiring calculation of Course Made Good (CMG) between two GPS positions. The vessel traveled from 37°07.5'N, 075°39.1'W to 36°57.0'N, 075°41.0'W, moving 10.5 nautical miles south (difference in latitude) and 1.9 nautical miles west (difference in longitude, corrected for mid-latitude). Using the tangent formula or plotting on a chart, the CMG calculates to approximately 188° True, indicating the vessel tracked slightly west of due south between the two fixes.",
         "ru_explain": "Для определения истинного курса (Course Made Good — CMG) между двумя обсервованными точками необходимо рассчитать разность широт (РШ) и разность долгот (РД):  **Расчёт разности широт (РШ):** - Начальная широта: 37°07.5' N - Конечная широта: 36°57.0' N - РШ = 37°07.5' - 36°57.0' = 10.5' к S (судно шло на юг)  **Расчёт разности долгот (РД):** - Начальная долгота: 75°39.1' W - Конечная долгота: 75°41.0' W - РД = 75°41.0' - 75°39.1' = 1.9' к W (судно шло на запад)  **Расчёт отшествия (Departure):** - Средняя широта: (37°07.5' + 36°57.0') / 2 ≈ 37°02' N - Отшествие = РД × cos(средней широты) = 1.9' × cos(37°) ≈ 1.9' × 0.799 ≈ 1.52 мили  **Расчёт курса:** - tg(курса) = Отшествие / РШ = 1.52 / 10.5 ≈ 0.145 - Угол ≈ 8° к западу от юга - Истинный курс = 180° + 8° = **188° T**  Ответ **B: 188° истинный** — правильный.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJhWoBNcadClli5ZxKlAMCwpjJ15W3AALmCQACHuIIROxam2VhhXEpOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJhmoBNcfZTmJPZ7JEn7f-WfrII6NSAALnCQACHuIIRNooCDuu-kCpOwQ"
     },
     {
         "num": 366,
@@ -8791,8 +8791,8 @@ QUESTIONS = [
         "en_explain": "The course made good (CMG) is calculated by determining the direction from the first GPS fix to the second. The vessel traveled 30.5 nautical miles south (from 37°07.5'N to 36°37.0'N) and 1.9 nautical miles west (from 75°39.1'W to 75°41.0'W), resulting in a CMG of approximately 188° True. This is a navigation calculation problem involving dead reckoning principles rather than a COLREGS or Inland Rules question.",
         "ru_explain": "Для определения истинного курса (Course Made Good, CMG) между двумя обсервованными точками необходимо рассчитать разность широт (РШ) и разность долгот (РД):  • РШ = 37°07,5' - 36°37,0' = 30,5' к югу (S) • РД = 75°41,0' - 75°39,1' = 1,9' к западу (W)  Средняя широта ≈ 36°52' N  Отшествие (Departure) = РД × cos(средней широты) = 1,9' × cos(36°52') ≈ 1,9' × 0,8 ≈ 1,5 мили к западу  Курсовой угол: tg(КУ) = Отшествие / РШ = 1,5 / 30,5 ≈ 0,049 КУ ≈ 2,8° к западу от юга  Истинный курс = 180° + 8° = 188° T  Судно следовало генеральным курсом на юго-юго-запад. Правильный ответ: **B (188° истинный)**.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJh2oBNcl2BJcNm9sJ70hEO6Xh6694AALoCQACHuIIROhg93AiGxTUOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJiGoBNcudyfg8T0_Qs0L2KAQ98aa-AALpCQACHuIIRNkRLXTBa2PGOwQ"
     },
     {
         "num": 367,
@@ -8815,8 +8815,8 @@ QUESTIONS = [
         "en_explain": "The \"TR\" suffix in a NOAA chart number designates a \"Training Chart,\" which is produced specifically for educational and training purposes rather than for actual navigation. These charts are typically reproductions of standard nautical charts but may be outdated or modified, making them unsuitable for real-world navigation. This is a chart numbering convention established by NOAA/NOS (National Ocean Service) for chart identification purposes.",
         "ru_explain": "Буквы \"TR\" в номере морской карты NOAA означают \"Training\" — учебная карта. Такие карты предназначены исключительно для образовательных целей и навигационной подготовки. Они могут содержать устаревшую или намеренно изменённую информацию и **не должны использоваться для реальной навигации**. Учебные карты применяются в морских учебных заведениях, на курсах подготовки судоводителей и при сдаче экзаменов (включая экзамены USCG). При работе с любой картой важно обращать внимание на её номер и обозначения, чтобы убедиться в пригодности карты для практического плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJiWoBNc097RVcY6qSgTd8D-TYcQVmAALqCQACHuIIRBXGLJnvzSbTOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJimoBNc_2u49Y6hbGOySzFdr7Lh0_AALrCQACHuIIRMSQjO_s2DmNOwQ"
     },
     {
         "num": 368,
@@ -8839,8 +8839,8 @@ QUESTIONS = [
         "en_explain": "This question requires consulting a nautical chart to determine bottom composition at the given coordinates (LAT 41° 12.1'N, LONG 72° 43.5'W), located in Long Island Sound. Bottom type abbreviations are printed on charts to help mariners assess anchorage holding ground. Soft mud (indicated by \"S\" or \"M\" on charts) generally provides adequate holding for anchoring, though not as secure as hard sand or clay bottoms.",
         "ru_explain": "Данный вопрос проверяет умение судоводителя работать с морской навигационной картой и считывать характеристики грунта в заданной точке. При постановке на якорь критически важно знать тип донного грунта, так как от этого зависит надёжность удержания якоря. На морских картах в районе указанных координат (пролив Лонг-Айленд, побережье Коннектикута) обозначен грунт «M» (mud — ил) и «Sh» (shell — ракушка), что соответствует варианту C — мягкий ил и ракушка. Такой грунт обеспечивает хорошую держащую силу для большинства типов якорей.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJi2oBNdE-CSwMMTHJP4TMvIFqrjXJAALsCQACHuIIRJnwYAcWLXM_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJjGoBNdMs8xo4KhCdWFBvkbNTru4HAALtCQACHuIIRBYpW90PRcH_OwQ"
     },
     {
         "num": 369,
@@ -8863,8 +8863,8 @@ QUESTIONS = [
         "en_explain": "Buoys are not charted at the approach to Sand Shoal Inlet because they are frequently shifted to conform to the changing channel (Answer C). In areas with unstable bottom conditions and shifting shoals, aids to navigation must be repositioned regularly to mark the current navigable waterway, making it impractical to chart their positions. Mariners should consult the latest Local Notice to Mariners and use caution when navigating such dynamic inlets.",
         "ru_explain": "В районах с подвижными песчаными отмелями и нестабильным дном фарватеры подвержены постоянным изменениям из-за наносов и перемещения грунта. Навигационные буи в таких районах приходится регулярно переставлять, чтобы они соответствовали актуальному положению судоходного канала. По этой причине буи не наносятся на карты, так как их позиции быстро устаревают. Судоводителям следует сверяться с Извещениями мореплавателям (ИМ) и местными навигационными предупреждениями для получения актуальной информации о расстановке плавучего ограждения в подобных районах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJjWoBNdTpj48MNPR7HKjPhB5_KHifAALuCQACHuIIRHd03Kk3k2s7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJjmoBNdYn5IQpGQoOncpufPMMcl_WAALvCQACHuIIRGPLhAJfhKIEOwQ"
     },
     {
         "num": 370,
@@ -8887,8 +8887,8 @@ QUESTIONS = [
         "en_explain": "The charted wreck at the specified coordinates shows a depth of 18 feet, meaning vessels with drafts exceeding this depth must avoid the area. Per standard chart reading practices and prudent seamanship, mariners must always compare charted depths over obstructions against their vessel's draft to ensure safe underkeel clearance. This relates to the general responsibility of the mariner to use all available means to assess risk, consistent with Rule 2 (Responsibility) of the COLREGS/Inland Rules.",
         "ru_explain": "На морских картах затонувшие суда (wrecks) обозначаются различными символами в зависимости от степени опасности, которую они представляют. Если рэк обозначен как опасный для надводного судоходства (danger to surface navigation), это означает, что глубина над ним недостаточна для безопасного прохода судов, или его точное положение/глубина не определены с достаточной точностью. Такие объекты следует обходить с безопасным запасом. Ответ C верен, поскольку условное обозначение на карте в данных координатах указывает именно на опасность для надводных судов. Траление до определённой глубины (вариант B) обозначалось бы иначе, а точность положения и видимость над водой (варианты A и D) также имеют свои специфические обозначения на картах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJj2oBNdh1Ea8DtKU7yyWzjpRAqNBeAALwCQACHuIIRCWDTWX_NYzcOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJkGoBNdo-PIc3Q6fziWcqBCvXTIGhAALxCQACHuIIRHPjNt6j3YGhOwQ"
     },
     {
         "num": 371,
@@ -8911,8 +8911,8 @@ QUESTIONS = [
         "en_explain": "The chart symbol at this location indicates **the approximate position of a wreck dangerous to surface navigation**. On nautical charts, a dotted circle surrounding a wreck symbol denotes that the position is approximate rather than exact, while the symbol itself indicates the wreck poses a danger to vessels navigating on the surface. This symbology is standardized in Chart No. 1, the U.S. reference guide for nautical chart symbols and abbreviations.",
         "ru_explain": "На морских картах затонувшие суда (wrecks) обозначаются различными условными знаками в зависимости от степени их опасности и точности определения местоположения. Когда позиция затонувшего судна определена приблизительно (approximate position), это указывается специальным символом — обычно с аббревиатурой «PA» (Position Approximate) или пунктирным кругом вокруг знака. Такие объекты представляют опасность для надводного судоходства, поскольку их точные координаты неизвестны, и судоводителям следует обходить данный район с достаточным запасом. Знак «wreck cleared by wire drag» означает, что акватория была протралена и безопасная глубина подтверждена, а знак «not dangerous to surface navigation» указывает на затонувшее судно, лежащее на достаточной глубине.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJkWoBNdylcji1MRoGPP4Na613w557AALyCQACHuIIRNgE6BNcb6HxOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJkmoBNd57rBsP-M2zayQo22hZ4JX9AALzCQACHuIIRGOuFsIfERnKOwQ"
     },
     {
         "num": 372,
@@ -8935,8 +8935,8 @@ QUESTIONS = [
         "en_explain": "The True course from Stratford Shoal Light to New Haven Light is approximately 048°T. With a current setting 048°T at 2 knots and your vessel making 10 knots, you must compensate by steering into the current; additionally, a southeasterly wind causes 2° of leeway, requiring further course adjustment to windward. Applying vector analysis for current correction (approximately 11° to port) and adding 2° for leeway correction yields a course to steer of approximately 039°T.",
         "ru_explain": "Для решения задачи необходимо: 1. **Определить истинный пеленг** (линию пути) от маяка Стратфорд-Шол до маяка Нью-Хейвен по карте. 2. **Учесть снос от течения**: течение направлено на 048° со скоростью 2 узла. При скорости судна 10 узлов нужно построить навигационный треугольник скоростей, чтобы найти поправку на течение. 3. **Учесть дрейф от ветра (leeway)**: юго-восточный ветер (дует с юго-востока, т.е. с направления ~135°) будет сносить судно влево от курса. Поправка на дрейф 2° прибавляется к курсу (курс корректируется на ветер). 4. **Рассчитать истинный курс для удержания**: комбинируя поправки на течение и дрейф, получаем компенсирующий курс.  Правильный ответ **037° истинный** учитывает все факторы: исходный пеленг на маяк, векторную поправку на снос течением и угловую поправку на ветровой дрейф.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJk2oBNeBao03MZusfZP2qL8I5aBb4AAL0CQACHuIIRCDz9YIg_8OJOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJlGoBNeKUxN3ub2SaTmdEQ5sAAbD3GgAC9QkAAh7iCET9842ZKjAyBTsE"
     },
     {
         "num": 373,
@@ -8959,8 +8959,8 @@ QUESTIONS = [
         "en_explain": "When two charted range lights are observed in line, they indicate a known True bearing that can be compared to your compass reading. The charted bearing of this range is a fixed, known value, and the difference between that True bearing and your compass reading reveals the total compass error (combined variation and deviation). Since the lights are observed over the stern (180° from your heading), and the difference between the charted True bearing of the range and your magnetic compass heading calculates to 17°, this confirms the compass error is 17°.  This relates to safe navigation practices essential for compliance with Rule 5 (Lookout) of the COLREGS/Inland Rules, which requires maintaining proper awareness using all available means including compass accuracy verification.",
         "ru_explain": "Створные знаки (range lights) при нахождении на одной линии дают точный истинный пеленг. Когда судно идёт курсом 203° по магнитному компасу и наблюдает створ точно за кормой, это означает, что обратный пеленг на створ равен 203° по компасу. Сравнивая этот компасный пеленг с известным истинным пеленгом створной линии (который указан на карте), можно определить фактическую погрешность компаса. Если полученная погрешность не совпадает с той, что указана в таблице девиации для данного курса, значит таблица девиации содержит ошибку и требует корректировки. Створные линии являются одним из наиболее точных способов проверки и определения девиации компаса.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJlWoBNeRZ9BxZYJUXlBfm691mS716AAL2CQACHuIIRA07sksTr-n_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJlmoBNeaSGdA8SkpZgvw0WSMaCGEtAAL3CQACHuIIRDrnpvIQbW2EOwQ"
     },
     {
         "num": 374,
@@ -8983,8 +8983,8 @@ QUESTIONS = [
         "en_explain": "This is a set and drift problem requiring dead reckoning comparison with an actual fix. Between 1815 and 1909 (54 minutes), your vessel traveled on course 285°M at 16 knots, establishing a DR position. By comparing the DR position to the actual 1909 fix at LAT 41° 08.5'N, LONG 72° 53.7'W, you determine the current's effect: the direction from DR to fix gives the **set** (the direction the current pushed you), and the distance divided by time gives the **drift** (current speed in knots). This is a fundamental piloting skill covered in navigation procedures rather than COLREGS, but understanding set and drift is essential for safe navigation and maintaining proper lookout under Rule 5.",
         "ru_explain": "Для определения сноса (set) и скорости течения (drift) необходимо сравнить счислимое место (DR position) с обсервованным местом (fix). Время перехода: с 18:15 до 19:09 = 54 минуты (0,9 часа). Пройденное расстояние по лагу: 16 узлов × 0,9 часа = 14,4 мили. Счислимое место рассчитывается от первой точки по курсу 285°M. Разница между счислимым и фактическим (обсервованным) местом показывает влияние течения. Направление от счислимой точки к обсервованной — это снос (set), а расстояние между ними, делённое на время — скорость течения (drift). Расчёт даёт снос 118° истинный и скорость течения 1,9 узла.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJl2oBNeiowRICu1DY6xjFEp5PxKyOAAL4CQACHuIIRGEnELvNG8T-OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJmGoBNepOzVfm_NQ_br66MexQw4wSAAL5CQACHuIIRM3OjfAEgZvwOwQ"
     },
     {
         "num": 375,
@@ -9007,8 +9007,8 @@ QUESTIONS = [
         "en_explain": "This is a piloting problem requiring a three-bearing fix using visual bearings taken from known aids to navigation. By plotting the reciprocal of each magnetic compass bearing from Branford Reef Light, Stratford Point Light, and New Haven Light on a chart, the intersection of these three lines of position (LOP) establishes the vessel's fix. The correct position is **LAT 41°10.5'N, LONG 72°52.8'W** (Answer B), determined through standard coastal navigation techniques as outlined in USCG Navigation Rules and Regulations Handbook.",
         "ru_explain": "Для определения места судна используется метод крюйс-пеленга (пересечения пеленгов). Судоводитель взял компасные пеленги на три известных навигационных ориентира (маяки). Для нанесения на карту компасные пеленги необходимо перевести в истинные, учитывая девиацию и магнитное склонение. Затем от каждого маяка прокладываются обратные пеленги (отличающиеся на 180°). Точка пересечения трёх линий положения и будет обсервованным местом судна. Использование трёх пеленгов повышает точность определения и позволяет выявить возможные ошибки (если линии не сходятся в одной точке, образуя «треугольник погрешности»). Правильный ответ B соответствует точке пересечения данных линий положения на карте пролива Лонг-Айленд.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJmWoBNe4OiLxHm5oFBL2TrAVYY0BGAAL6CQACHuIIRGY7QxJhqgJmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJmmoBNfDA_ZL--gR_xVL1BKVKKB9iAAL7CQACHuIIRE_tIRjflQqCOwQ"
     },
     {
         "num": 376,
@@ -9031,8 +9031,8 @@ QUESTIONS = [
         "en_explain": "This is a chart navigation problem requiring you to plot a course from your current position to the midpoint between channel buoys #1 and #2 at New Haven Harbor entrance. After plotting both positions on the chart and measuring the True course, you must apply the compass deviation and variation corrections to convert from True course to compass course. The resulting course to steer per standard compass is 315°.",
         "ru_explain": "Для решения данной задачи необходимо: 1. Определить координаты исходной точки (41° 05.5' с.ш., 72° 38.0' з.д.) 2. По навигационной карте найти буи №1 и №2 канала гавани Нью-Хейвен и определить точку посередине между ними 3. Проложить линию истинного курса между двумя точками и измерить истинный пеленг 4. Преобразовать истинный курс в компасный курс, учитывая:    - Магнитное склонение (variation) для данного района    - Девиацию компаса (deviation) для данного курса  Формула перехода: Компасный курс = Истинный курс ± Магнитное склонение ± Девиация  Правильный ответ 315° (B) — это курс по главному магнитному компасу после внесения всех необходимых поправок. Курс 137° (вариант D) — это обратный курс (reciprocal course), что является типичной ловушкой в подобных задачах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJm2oBNfLYNeWzMbw9STRg8PAVjMkNAAL8CQACHuIIRHtJkhVGEJRvOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJnGoBNfPBdVhpFEo1vEjGe6I0I0k_AAL9CQACHuIIRA48vrWa4JR0OwQ"
     },
     {
         "num": 377,
@@ -9055,8 +9055,8 @@ QUESTIONS = [
         "en_explain": "This is a dead reckoning and piloting problem requiring calculation of course and speed made good between two GPS positions. The vessel traveled from 41°00.5'N, 72°49.5'W to 41°08.6'N, 72°41.6'W over 48 minutes (1930 to 2018), moving northeast (latitude increased, longitude decreased/moved east). Using chart plotting or calculation, the True course is approximately 036° and the distance of about 10.1 nautical miles covered in 0.8 hours yields a speed made good of approximately 12.6 knots.  Note: This question tests basic navigation skills required under 33 CFR Part 164 (Navigation Safety Regulations) rather than COLREGS, as it involves position fixing and voyage planning fundamentals essential for safe navigation.",
         "ru_explain": "Для решения задачи необходимо:  1. **Определить разницу координат:**    - По широте (Δφ): 41°08,6'N − 41°00,5'N = 8,1' к северу    - По долготе (Δλ): 72°49,5'W − 72°41,6'W = 7,9' к востоку  2. **Определить время в пути:**    - С 19:30 до 20:18 = 48 минут = 0,8 часа  3. **Рассчитать истинный курс:**    - Судно движется на северо-восток (широта увеличивается, долгота уменьшается по значению W)    - Курс = arctg(Δλ × cos(φср) / Δφ) ≈ 036°  4. **Рассчитать пройденное расстояние:**    - Используя формулу плавания по локсодромии: S ≈ 10,1 мили  5. **Рассчитать скорость относительно грунта (SOG):**    - V = S / t = 10,1 / 0,8 ≈ **12,6 узла**  Правильный ответ: истинный курс **036°** при скорости **12,6 узла**.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJnWoBNfbw291Tk4XQXa2OOCr2UUEVAAL-CQACHuIIRINr0PY5Xu4KOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJnmoBNfiqCygpneXU__FqWEZnyO0wAAL_CQACHuIIROByHcqV8wMZOwQ"
     },
     {
         "num": 378,
@@ -9079,8 +9079,8 @@ QUESTIONS = [
         "en_explain": "This is a dead reckoning/navigation problem requiring calculation of course and speed made good between two GPS positions. From 1930 to 2018 is 48 minutes of elapsed time. Plotting the two positions shows the vessel traveled from 41°00.5'N, 72°40.5'W to 41°08.6'N, 72°41.8'W—a northerly movement of 8.1 nautical miles in latitude with a slight westerly change in longitude of 1.3 minutes, which when converted using mid-latitude sailing formulas yields a True course of approximately 351° and distance of about 8.1 NM. **Note: The marked answer of 234° @ 12.5 knots appears incorrect for this position data, as the vessel clearly moved northward (not southwesterly); the correct answer should be closer to 351° True at approximately 10 knots based on the coordinates provided.**",
         "ru_explain": "Для решения задачи необходимо:  1. **Определить разницу координат:**    - По широте: 41°08,6'N - 41°00,5'N = 8,1' к северу (Δφ = +8,1')    - По долготе: 72°41,8'W - 72°40,5'W = 1,3' к западу (Δλ = +1,3' W)  2. **Рассчитать отшествие (departure):**    - Dep = Δλ × cos(средняя широта)    - Средняя широта ≈ 41°04,5'N    - Dep = 1,3' × cos(41°) ≈ 1,3 × 0,755 ≈ 1,0 мили к западу  3. **Определить истинный курс:**    - Судно идёт на север и запад → курс в районе северо-запада    - tg(курс) = Dep / Δφ = 1,0 / 8,1 ≈ 0,123    - Курс ≈ 007° от севера...      *Однако правильный ответ указывает курс 234° (юго-запад), что означает ошибку в условии или ответе. При движении от 41°00,5'N к 41°08,6'N судно идёт НА СЕВЕР, а не на юг.*  4. **Рассчитать пройденное расстояние:**    - D = √(Δφ² + Dep²) = √(8,1² + 1,0²) ≈ 8,2 мили  5. **Определить скорость:**    - Время в пути: с 19:30 до 20:18 = 48 минут = 0,8 часа    - Скорость = 8,2 / 0,8 ≈ 10,3 узла  ⚠️ **Примечание:** В данной задаче возможна ошибка в условии или ответе, так как изменение координат указывает на движение к северу (курс около 353°-007°), а не на юго-запад (234°).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJn2oBNfpHhAAB3Ihd8H-bNAdQUmhlmwADCgACHuIIRBm9Pm-737KjOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJoGoBNfwlPNcgdU_lUuDTcPhHXoh9AAIBCgACHuIIRBvbHTXOMhVFOwQ"
     },
     {
         "num": 379,
@@ -9103,8 +9103,8 @@ QUESTIONS = [
         "en_explain": "The \"10 Commandments of Safety\" is a general maritime safety principle taught in seamanship courses, where \"Learn\" is the first commandment (learn safe practices) and \"Support\" is the tenth (support safety programs and policies). This concept falls under general prudent seamanship and the broad safety obligations referenced in Rule 2 (Responsibility) of both COLREGS and US Inland Rules, which requires mariners to take all precautions required by ordinary practice of seamen.",
         "ru_explain": "«10 заповедей безопасности» (Ten Commandments of Safety) — это классический свод правил безопасного поведения на судне и в морской отрасли. Первая заповедь — «LEARN» (Учись) — призывает изучать правила безопасности, знать своё оборудование и процедуры. Последняя, десятая заповедь — «SUPPORT» (Поддерживай) — означает необходимость поддерживать программы безопасности, коллег и культуру безопасности на борту. Таким образом, безопасность начинается с обучения и завершается взаимной поддержкой всего экипажа.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJoWoBNf3-Gi28eYsw1pPPpK43pv5eAAICCgACHuIIRFGMrbRV81nMOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJomoBNf-MPamrMlR760nGfPttENOcAAIDCgACHuIIRHwkL0HcTzW2OwQ"
     },
     {
         "num": 380,
@@ -9127,8 +9127,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 14(c), on the Western Rivers and certain other designated waters, a vessel proceeding downbound with a following current has the right-of-way over an upbound vessel when they are meeting. The downbound vessel proposes the manner and place of passage, and the upbound vessel must hold as necessary to permit safe passing. This right-of-way applies regardless of whether the downbound vessel has a tow or is simply a power-driven vessel operating alone.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США (Inland Rules), на Западных реках (Western Rivers — система рек Миссисипи, Огайо и их притоков) судно, идущее вниз по течению (downbound vessel), имеет преимущество перед судном, идущим вверх по течению (upbound vessel), но только при условии, что оно является судном с механическим двигателем (power-driven vessel). Это обусловлено тем, что судно, движущееся вниз по течению, имеет ограниченную манёвренность из-за воздействия течения и ему сложнее контролировать свой курс и скорость. Судно, идущее вверх по течению, обладает лучшей управляемостью и должно уступить дорогу.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJo2oBNgF3h0ZppOByaQ6eGAiX0V-2AAIECgACHuIIRPLjpBUVRVb8OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJpGoBNgNzjisriyF4UG-X1crs4kLcAAIFCgACHuIIRN3w1U7-zqmoOwQ"
     },
     {
         "num": 381,
@@ -9151,8 +9151,8 @@ QUESTIONS = [
         "en_explain": "This statement reflects the fundamental principle of good seamanship established in Rule 2 (Responsibility) of both the COLREGS and US Inland Rules, which requires mariners to take all precautions required by the ordinary practice of seamen. A prudent mariner has a duty to maintain safety awareness for themselves and all crew members aboard, as preventing accidents is a core responsibility of vessel operation. This principle of vigilance and care extends beyond navigation to encompass all aspects of maritime safety.",
         "ru_explain": "Капитан судна несёт полную ответственность за безопасность экипажа и пассажиров. Принцип «благоразумного мореплавателя» (prudent mariner) является фундаментальным в морском праве и практике судовождения. Он подразумевает постоянную бдительность, соблюдение мер предосторожности и заботу о безопасности всех находящихся на борту лиц. Предупреждение несчастных случаев — одна из ключевых обязанностей судоводителя, которая не ограничивается определённым временем, а распространяется на весь период нахождения на судне.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJpWoBNgUssHLckOGY4-G5nPCCOMmIAAIGCgACHuIIRMDgvq3OCEdLOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJpmoBNgcsmCi4--wX6E0jIbAT-bE4AAIHCgACHuIIRERvRY_1P1AwOwQ"
     },
     {
         "num": 382,
@@ -9175,8 +9175,8 @@ QUESTIONS = [
         "en_explain": "When working aloft on a vessel, safety regulations require that you request permission from the officer in charge, wear a safety harness to prevent falls, and ensure proper tag-out procedures are followed to prevent accidental activation of equipment that could injure the worker. These requirements fall under general maritime safety practices and OSHA regulations for the maritime industry (29 CFR 1915 - Occupational Safety and Health Standards for Shipyard Employment), which establish protocols for working at heights aboard vessels.",
         "ru_explain": "Работа «на высоте» (aloft) — это любые работы на мачтах, реях, в такелаже или других возвышенных частях судна. Для обеспечения безопасности необходимо соблюдать три правила: 1) запросить разрешение у вахтенного офицера или капитана, чтобы экипаж знал о проводимых работах; 2) использовать страховочную привязь (safety harness) для предотвращения падения; 3) применять процедуру tag-out — блокировку и маркировку оборудования (например, радаров, антенн), чтобы исключить их случайное включение во время работ. Все три меры являются обязательными.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJp2oBNgjNBC-T4xBWsyTwXYeboX00AAIICgACHuIIRJCQImVZhuecOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJqGoBNgoMPSoAAS4arflXuUzjmw3ObAACCQoAAh7iCERKxPKFqSydNjsE"
     },
     {
         "num": 383,
@@ -9199,8 +9199,8 @@ QUESTIONS = [
         "en_explain": "Ammonia, hydrogen, chlorine, and hydrogen sulfide are all hazardous gases commonly encountered in maritime environments that pose serious health risks to vessel crews. These gases can accumulate in enclosed spaces such as cargo holds, tanks, and bilges, potentially causing injury or death. While not a COLREGS rule, knowledge of dangerous atmospheric conditions is essential for safe vessel operation and is covered under USCG safety regulations for uninspected passenger vessels.",
         "ru_explain": "В судовых помещениях могут скапливаться различные токсичные газы, представляющие смертельную угрозу для экипажа. Аммиак (NH₃) используется в холодильных установках и при утечке вызывает тяжёлые ожоги дыхательных путей. Водород (H₂) взрывоопасен и может образовываться при зарядке аккумуляторных батарей. Хлор (Cl₂) — крайне ядовитый газ, поражающий органы дыхания. Сероводород (H₂S) — смертельно опасный газ с запахом тухлых яиц, образующийся при разложении органических веществ в танках, трюмах и замкнутых пространствах. Все эти газы требуют обязательного контроля атмосферы перед входом в закрытые помещения и использования средств индивидуальной защиты органов дыхания (СИЗОД).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJqWoBNgzCVtjdyNtyqzL7cl79LpvcAAIKCgACHuIIRHx3TiRRzCZnOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJqmoBNg0mAVM9nXdsmXnMsVySi1byAAILCgACHuIIRHi3VsXXuCQWOwQ"
     },
     {
         "num": 384,
@@ -9223,8 +9223,8 @@ QUESTIONS = [
         "en_explain": "According to U.S. Coast Guard safety statistics and maritime safety principles, approximately 98% of marine accidents are considered preventable through proper seamanship, adherence to regulations, and good judgment. This statistic underscores the importance of maintaining a proper lookout, following the Navigation Rules (COLREGS Rule 5), and exercising the ordinary practice of seamen. The remaining 2% accounts for truly unforeseeable circumstances beyond human control.",
         "ru_explain": "Согласно статистике Береговой охраны США и международным исследованиям в области морской безопасности, около 98% всех аварий на море являются предотвратимыми. Подавляющее большинство происшествий происходит по причине человеческого фактора: несоблюдение правил безопасности, недостаточная подготовка экипажа, пренебрежение процедурами, усталость, невнимательность или ошибки в принятии решений. Это подчёркивает критическую важность надлежащей подготовки капитана и экипажа, соблюдения установленных процедур безопасности, регулярного технического обслуживания судна и постоянной бдительности при несении вахты.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJq2oBNg_ygZfSMTVExNYN26nhiYJyAAIMCgACHuIIRNp67yBeU87_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJrGoBNhF1vgiMlYl2hV5GV9l2YzXDAAINCgACHuIIRGMAARqOBt3lOzsE"
     },
     {
         "num": 385,
@@ -9247,8 +9247,8 @@ QUESTIONS = [
         "en_explain": "A space with little or no oxygen is classified as an oxygen-deficient atmosphere, which occurs when oxygen levels fall below 19.5%. Entry into such confined or enclosed spaces without proper testing and ventilation can result in unconsciousness within seconds and death within minutes due to asphyxiation. This hazard is addressed under 46 CFR regulations governing marine safety and confined space entry procedures aboard vessels.",
         "ru_explain": "Замкнутые пространства на судне (танки, цистерны, коффердамы, трюмы) могут содержать недостаточное количество кислорода. Нормальное содержание кислорода в воздухе составляет около 21%. При снижении концентрации ниже 19,5% возникает кислородное голодание, а при уровне ниже 16% наступает потеря сознания и смерть. Перед входом в любое замкнутое пространство обязательно проводится замер атмосферы газоанализатором и обеспечивается надлежащая вентиляция.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJrWoBNhJhDzUAAfVAzDLGONmImO5oeQACDgoAAh7iCETr517NAV8iJjsE",
+        "audio_a": "CQACAgEAAxkDAAIJrmoBNhTAc4zilNlWAAFCKt-7qTiTKwACDwoAAh7iCERMSznNP5Dg4DsE"
     },
     {
         "num": 386,
@@ -9271,8 +9271,8 @@ QUESTIONS = [
         "en_explain": "When performing hot work (welding, cutting, or other operations producing sparks or open flame) aboard a vessel, maintaining a proper fire watch is required to monitor for fires and have firefighting equipment immediately available. This is a fundamental marine safety practice mandated under 46 CFR (Code of Federal Regulations) and USCG regulations governing shipboard operations. Working alone, closing ventilation, or only notifying the chief officer would create serious safety hazards and violate established hot work procedures.",
         "ru_explain": "Огневые работы (сварка, резка, пайка и другие работы с открытым пламенем или искрообразованием) представляют повышенную пожарную опасность на судне. Согласно требованиям морской безопасности, при проведении таких работ обязательно должна быть выставлена пожарная вахта (fire watch) — специально назначенный член экипажа, который наблюдает за местом проведения работ, имеет наготове средства пожаротушения и способен немедленно поднять тревогу или ликвидировать возгорание на начальной стадии. Работа в одиночку (B) запрещена именно по соображениям безопасности. Перекрытие вентиляции (C) может потребоваться в отдельных случаях, но не является главным требованием. Уведомление только старшего помощника (D) недостаточно — требуется комплекс мер безопасности.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJr2oBNhaAxOTVM09lQDQGbBjVpBQbAAIQCgACHuIIRD2uvl1xgQg-OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJsGoBNheY0efaKbTaL4rkzz-p1XepAAIRCgACHuIIRCWtw7PyZixQOwQ"
     },
     {
         "num": 387,
@@ -9295,8 +9295,8 @@ QUESTIONS = [
         "en_explain": "Safety aboard any vessel is a shared responsibility requiring the participation of every crew member, not just the captain or a single individual. This principle aligns with the fundamental intent of the Navigation Rules (COLREGS), which place duties on all persons involved in vessel operations to maintain a proper lookout and take appropriate action to avoid collisions. Good seamanship demands that safety awareness be practiced by all hands at all times.",
         "ru_explain": "Обеспечение безопасности на борту судна — это коллективная обязанность всего экипажа («all hands» — весь личный состав). Каждый член команды, независимо от должности и звания, несёт ответственность за соблюдение правил безопасности, выявление потенциальных угроз и предотвращение аварийных ситуаций. Хотя капитан (Master) несёт общую ответственность за судно, эффективная система безопасности возможна только при участии каждого члена экипажа. Этот принцип является основой культуры безопасности мореплавания и закреплён в международных конвенциях, включая СОЛАС (SOLAS) и Международный кодекс управления безопасностью (МКУБ/ISM Code).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJsWoBNhlpe1WU619QIF1gfdPQownoAAISCgACHuIIRGAuvlLT8zySOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJsmoBNhrQUILT6SFeDYApaeRA1LCCAAITCgACHuIIRD9kzdGWCINHOwQ"
     },
     {
         "num": 388,
@@ -9319,8 +9319,8 @@ QUESTIONS = [
         "en_explain": "A line under stress (tension) can part suddenly and recoil with deadly force, causing severe injury or death. Standard seamanship safety practice requires all personnel to keep **clear** of the snap-back zone of any line under load. While not a COLREGS rule, this is a fundamental marlinspike seamanship and deck safety principle emphasized throughout USCG training and 46 CFR vessel safety regulations.",
         "ru_explain": "Трос под нагрузкой (натянутый швартовный конец, буксирный трос, якорная цепь и т.д.) представляет серьёзную опасность для экипажа. При обрыве такой трос может отлететь с огромной силой и нанести тяжёлые травмы или привести к гибели. Выражение \"keep clear\" (держаться в стороне, держаться на безопасном расстоянии) является стандартной командой морской безопасности. Никогда нельзя стоять на тросе под нагрузкой, перешагивать через него или находиться в зоне возможного отскока (snap-back zone).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJs2oBNhxXjWpo5aLlJrv7Qwi9SNTPAAIUCgACHuIIRIF8mwbJuwE4OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJtGoBNh0C_1WU5b2CnTnsOLsXQObCAAIVCgACHuIIROG7tGSdtAbjOwQ"
     },
     {
         "num": 389,
@@ -9343,8 +9343,8 @@ QUESTIONS = [
         "en_explain": "SCBA stands for Self-Contained Breathing Apparatus, which is emergency respiratory protection equipment required aboard vessels for firefighting and rescue operations in oxygen-deficient or toxic atmospheres. This equipment is mandated under USCG safety regulations (46 CFR) and allows the wearer to breathe independently of the surrounding atmosphere.",
         "ru_explain": "SCBA (Self Contained Breathing Apparatus) — автономный дыхательный аппарат (АДА), используемый на судах для защиты органов дыхания при тушении пожаров, работе в задымлённых помещениях или в атмосфере с токсичными газами. В отличие от акваланга (SCUBA), предназначенного для подводного плавания, SCBA применяется на воздухе и является обязательным элементом противопожарного снаряжения на борту судна согласно требованиям СОЛАС (SOLAS).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJtWoBNh_fGN3iVTRH4dknp4TOVbpCAAIWCgACHuIIRC7yivuczFo4OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJtmoBNiEMyN-yEAVmxV1b4zpZnkAWAAIXCgACHuIIRC6oOTWO9Oo4OwQ"
     },
     {
         "num": 390,
@@ -9367,8 +9367,8 @@ QUESTIONS = [
         "en_explain": "A Type IV Work Vest (also known as a work vest or deck safety vest) is the appropriate personal flotation device (PFD) for crew members performing duties on deck, as it allows freedom of movement while providing flotation capability. This requirement falls under USCG equipment and safety regulations (46 CFR) rather than the COLREGS or Inland Navigation Rules, which govern vessel navigation and right-of-way situations. Note: This question appears to contain an error, as \"Type IV\" typically refers to throwable devices (ring buoys, cushions), not wearable work vests—Type III PFDs or Type V commercial work vests are standard for on-deck work.",
         "ru_explain": "При выполнении работ на палубе судна используется рабочий жилет Тип IV (Type IV Work Vest). В отличие от спасательных жилетов Типов I-III, предназначенных для аварийных ситуаций, рабочий жилет Тип IV обеспечивает плавучесть, но при этом не сковывает движения и позволяет свободно выполнять палубные работы — швартовку, работу с такелажем, грузовые операции. Жилеты Тип I и II предназначены для экстренной эвакуации, Тип III — для водных видов спорта и активного отдыха.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJt2oBNiNHykGcZtY_dl7tzxS5YBycAAIYCgACHuIIRGvsYfOIjYMrOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJuGoBNiRlCke2GWesPxdbHxkAAf0nGwACGQoAAh7iCER3R7oHO2dZWTsE"
     },
     {
         "num": 391,
@@ -9391,8 +9391,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rules 33 CFR 88.15, pipelines are required to display special yellow lights visible from all directions to warn mariners of their presence. These yellow lights distinguish pipelines from other obstructions or vessels operating in inland waters. This lighting configuration is unique to U.S. Inland Rules and has no equivalent under International COLREGS.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США, трубопроводы (подводные или надводные) обозначаются специальными огнями для предупреждения судоводителей об опасности. Обычно это жёлтые проблесковые огни, расположенные на буях или опорах, маркирующих местоположение трубопровода. Эти огни отличаются от навигационных огней судов и служат для обозначения стационарных подводных сооружений, представляющих потенциальную опасность для судоходства. Судоводители обязаны соблюдать безопасную дистанцию от таких объектов и не становиться на якорь вблизи трубопроводов.",
         "image": "AgACAgEAAxkDAAIGbmoAAd2zea33GTUKIM2Qb92cJUcHLAACvw5rGx7iCEQHBourembhZgEAAwIAA3gAAzsE",
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJuWoBNiYAAXuggHMWv9lgXkBd9I7V8AACGgoAAh7iCEQ7hg59fAoRYTsE",
+        "audio_a": "CQACAgEAAxkDAAIJumoBNid6QVkrpnU16hVhGrQFLgABaQACGwoAAh7iCEQ9FWGrsM6AAAE7BA"
     },
     {
         "num": 392,
@@ -9415,8 +9415,8 @@ QUESTIONS = [
         "en_explain": "When working over the side of a vessel, personnel must wear eye protection, sunscreen, and steel-toed shoes as part of standard personal protective equipment (PPE) requirements. This falls under general maritime safety practices and OSHA regulations for maritime workers, which require appropriate protective gear based on workplace hazards. Proper PPE helps prevent injuries from falling objects, sun exposure, and other hazards common during over-the-side work.",
         "ru_explain": "При выполнении работ за бортом судна (забортных работ) необходимо использовать полный комплект средств индивидуальной защиты: защитные очки предохраняют глаза от брызг воды, осколков ржавчины, краски и сварочных искр; солнцезащитный крем защищает кожу от ультрафиолетового излучения, которое усиливается отражением от водной поверхности; ботинки со стальным подноском (рабочая обувь с защитным носком) предотвращают травмы стоп при падении инструментов или тяжёлых предметов. Комплексный подход к безопасности является обязательным требованием при любых забортных работах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJu2oBNilLtV6YP-O1z85Lb1FCHF0_AAIcCgACHuIIRJt7DhsLlhhrOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJvGoBNisItsqOFUkR9yS8_JtKzmz5AAIdCgACHuIIRM3f2JsXoosROwQ"
     },
     {
         "num": 393,
@@ -9439,8 +9439,8 @@ QUESTIONS = [
         "en_explain": "The old saying \"A clean ship is a happy ship\" reflects a fundamental principle of good seamanship and vessel maintenance. While not codified in the COLREGS or Inland Rules specifically, this maritime tradition emphasizes that proper housekeeping contributes to crew morale, operational safety, and professional standards aboard any vessel. A well-maintained vessel reduces hazards, promotes discipline, and demonstrates competent seamanship.",
         "ru_explain": "На флоте существует давняя традиция: «Чистое судно — счастливое судно» (A clean ship is a happy ship). Эта поговорка отражает важность поддержания чистоты и порядка на борту. Регулярная приборка (уборка на судне) не только обеспечивает санитарное состояние, но и способствует поддержанию дисциплины экипажа, предотвращает коррозию и износ оборудования, а также повышает общий моральный дух команды. Чистота на судне является признаком хорошей морской практики и профессионализма экипажа.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJvWoBNiyOFwzieTBknmosMzHrXPwPAAIeCgACHuIIRLdnvDC1T4kaOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJvmoBNi5h1xWQqay_t465VZhhXaZYAAIfCgACHuIIRDb2ZvjplRJVOwQ"
     },
     {
         "num": 394,
@@ -9463,8 +9463,8 @@ QUESTIONS = [
         "en_explain": "Before entering any enclosed or confined space aboard a vessel, the atmosphere must be tested for oxygen content, flammable gases, and toxic vapors to ensure it is safe for entry. This is a fundamental maritime safety requirement under 46 CFR (Code of Federal Regulations) and OSHA regulations for maritime operations. Failure to test before entry has resulted in numerous fatalities from oxygen-deficient or toxic atmospheres in spaces such as tanks, void spaces, and cargo holds.",
         "ru_explain": "Перед входом в любое закрытое помещение (танк, цистерна, трюм, коффердам, форпик, ахтерпик и т.д.) обязательно проводится тестирование атмосферы на содержание кислорода, горючих газов и токсичных веществ. Это требование безопасности, так как в закрытых помещениях может скапливаться недостаток кислорода, ядовитые пары или взрывоопасные газы, что представляет смертельную угрозу для экипажа. Вход без предварительной проверки запрещён.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJv2oBNjCJLBBTMbXn0XnuKLmGdpDgAAIgCgACHuIIRDFdwns3IU8XOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJwGoBNjGcfJ9xgIibZMIbfCifumO8AAIhCgACHuIIRPkDnwRdp6hMOwQ"
     },
     {
         "num": 395,
@@ -9487,8 +9487,8 @@ QUESTIONS = [
         "en_explain": "Maintaining a clean ship promotes good order and discipline aboard the vessel, which directly contributes to improved crew morale, increased productivity, and a stronger work ethic among all hands. This principle reflects standard seamanship practices emphasized throughout maritime training, as a well-maintained vessel creates a safer and more efficient working environment. While not specifically addressed in the COLREGS or Inland Rules, vessel cleanliness is a fundamental aspect of good seamanship referenced in 46 CFR regulations governing vessel operations.",
         "ru_explain": "Поддержание чистоты и порядка на судне является важнейшим аспектом морской практики. Чистое судно способствует повышению морального духа экипажа (члены команды работают с большей отдачей в комфортных условиях), увеличивает производительность труда (порядок на рабочих местах ускоряет выполнение задач и снижает риск травматизма), а также укрепляет трудовую дисциплину и профессиональную этику (приучает личный состав к ответственному отношению к своим обязанностям). Таким образом, правильный ответ — «всё вышеперечисленное».",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJwWoBNjNc-ednE1rGmninFBy5WbcfAAIiCgACHuIIRITs9peWTRodOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJwmoBNjSuW8UNiL1ZQ8bmhuUWPWzaAAIjCgACHuIIRF0vrKSjej14OwQ"
     },
     {
         "num": 396,
@@ -9511,8 +9511,8 @@ QUESTIONS = [
         "en_explain": "To convert from True course to Magnetic, apply Variation: True 097° + 5°W = 102° Magnetic (Westerly variation is added when going from True to Magnetic: \"West is Best\"). To find Per Standard Compass (PSC), apply Deviation to Magnetic: 102°M - 2°E = 100° PSC (Easterly deviation is subtracted when going from Magnetic to Compass). This compass error correction follows the traditional memory aid \"Can Dead Men Vote Twice\" (Compass + Deviation = Magnetic + Variation = True), worked in reverse.",
         "ru_explain": "Для перевода курсов используется правило: - **Истинный курс (True) → Магнитный курс (Magnetic):** ИК ± Склонение (Variation) - **Магнитный курс → Компасный курс (PSC/Compass):** МК ± Девиация (Deviation)  Правило знаков: **Западное склонение/девиация прибавляется**, **Восточное — вычитается** (при переходе от истинного к компасному).  Расчёт: 1. **МК = ИК + Склонение (W)** = 097° + 005° = **102°** 2. **КК = МК − Девиация (E)** = 102° − 002° = **100°**  Мнемоника: «East is least, West is best» (Восток — меньше, Запад — больше) — при переходе от истинного к компасному курсу.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJw2oBNjanoYkSoa5xxlfKoYdPYoMtAAIkCgACHuIIRF5MfPSvD4pEOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJxGoBNjiaEOKaQxr09Mcb9KOtSB87AAIlCgACHuIIREViZg_H2jEuOwQ"
     },
     {
         "num": 397,
@@ -9535,8 +9535,8 @@ QUESTIONS = [
         "en_explain": "To convert from True to Magnetic heading, apply Variation in reverse: subtract Easterly Variation (True 180° - 2°E = 178° Magnetic). To find Per Standard Compass (PSC) heading, apply Deviation in reverse from Magnetic: subtract Westerly Deviation in reverse, meaning add it (178° + 3°W = 181° Compass). The memory aid \"Can Dead Men Vote Twice\" (Compass + Deviation = Magnetic + Variation = True) works forward; when going from True to Compass, reverse the signs.",
         "ru_explain": "Для решения задачи применяем правило перевода курсов:  **ИК → МК:** От истинного курса отнимаем восточное склонение (или прибавляем западное) - МК = ИК - Скл(E) = 180° - 2° = **178°**  **МК → КК:** От магнитного курса отнимаем восточную девиацию (или прибавляем западную) - КК = МК - Дев(W) = 178° - (-3°) = 178° + 3° = **181°**  Мнемоническое правило: **\"Склонение и девиация восточные — вычитай при переходе от истинного к компасному\"** (East is least — вычитаем, West is best — прибавляем).  **PSC** (Per Ship's Compass / Per Standard Compass) — курс по судовому/главному компасу, то есть компасный курс.  Правильный ответ: **МК = 178°, КК = 181°**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJxWoBNjo4vyl19RNjk9TNXLjMYjIDAAImCgACHuIIROnQFeKfNz2fOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJxmoBNjw1ECyiru4mEWPvAu7xf9WSAAInCgACHuIIRFonXv1DJ-qcOwQ"
     },
     {
         "num": 398,
@@ -9559,8 +9559,8 @@ QUESTIONS = [
         "en_explain": "To convert from True course to Magnetic course, apply Variation in the opposite direction: Westerly Variation is added when going from True to Magnetic. Starting with True 131° and adding 4°W Variation gives Magnetic 135°. Note that Deviation is not used when calculating Magnetic course—Deviation is only applied when converting between Magnetic and Compass courses.",
         "ru_explain": "Для перехода от истинного курса (ИК) к магнитному курсу (МК) необходимо учитывать магнитное склонение (Variation).  Формула: **МК = ИК - Склонение** (с учётом знака)  Правило знаков: - Западное склонение (W) — отрицательное, при вычитании прибавляется - Восточное склонение (E) — положительное, при вычитании вычитается  Расчёт: МК = 131° - (-4°) = 131° + 4° = **135°**  ⚠️ **Важно:** В данной задаче спрашивают только магнитный курс, поэтому девиация (Deviation) 003° E не используется. Девиация применяется при переходе от магнитного курса к компасному курсу (КК).  Мнемоническое правило: **\"От компаса к истине — восток прибавляй\"** (обратно — вычитай).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJx2oBNj357bwHza_je4_q3QwtOT24AAIoCgACHuIIRMM0uXYJHzzvOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJyGoBNj8BCccDxQLY2msVlhG8l1DyAAIpCgACHuIIRLxvp_PMa6VmOwQ"
     },
     {
         "num": 399,
@@ -9583,8 +9583,8 @@ QUESTIONS = [
         "en_explain": "To find Magnetic heading, apply Variation to True: 097° + 005° (add Westerly) = 102° Magnetic. To find Deviation, compare Magnetic to Per Ship's Compass (PSC): 102° - 108° = 6°W Deviation (compass reads higher, so deviation is West). This follows the correcting formula \"Can Dead Men Vote Twice\" (Compass + Deviation = Magnetic + Variation = True), worked in reverse.",
         "ru_explain": "Для решения используем формулу перехода между курсами:  **ИК → МК → КК**  1. **Находим Магнитный курс (МК):**    - Формула: МК = ИК + d (склонение)    - Западное склонение имеет знак «+» при переходе от ИК к МК    - МК = 097° + 005° = **102°**  2. **Находим Девиацию (δ):**    - Формула: КК = МК + δ    - 108° = 102° + δ    - δ = 108° - 102° = **6°**    - Поскольку КК больше МК, девиация **западная (W)**  **Мнемоническое правило:** «От компаса к истине — восточные поправки прибавляй» (обратное: от истины к компасу — западные прибавляй).  **Проверка:** ИК(097°) → +5°W → МК(102°) → +6°W → КК(108°) ✓  **Правильный ответ: C (МК=102° δ=6°W)**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJyWoBNkGLqqnJHCtzgnv8jV5I-OZlAAIqCgACHuIIRHAMGphuIHlgOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJymoBNkODpwGEbnchbHCq9deRsoXtAAIrCgACHuIIRJkIZ7Bezzj_OwQ"
     },
     {
         "num": 400,
@@ -9607,8 +9607,8 @@ QUESTIONS = [
         "en_explain": "To convert from True course to Magnetic course, apply the formula: Magnetic = True + Westerly Variation (or subtract Easterly Variation). With a True course of 180° and Variation of 014°W, you add the westerly variation: 180° + 14° = 194° Magnetic. Note that Deviation is not used when converting between True and Magnetic—it only applies when converting between Magnetic and Compass courses. This compass correction problem follows standard navigation principles as outlined in Bowditch and USCG navigation exam requirements.",
         "ru_explain": "Для перехода от истинного курса (ИК) к магнитному курсу (МК) необходимо учитывать только магнитное склонение (вариацию). Девиация компаса используется при переходе от магнитного курса к компасному курсу (КК), но в данном вопросе требуется найти именно магнитный курс.  Формула: **МК = ИК − Склонение** (при западном склонении вычитаем со знаком минус, т.е. прибавляем)  Для западного склонения (W) применяется правило: «Запад — плюс» (при переходе от истинного к магнитному).  **Расчёт:** МК = 180° + 014° = 194°  Девиация 003°W в данном расчёте не участвует, так как она применяется только при переходе между магнитным и компасным курсами.  **Правильный ответ: D (МК = 194°)**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJy2oBNkT4nOC2dHvCgHFOwm5oeWlDAAIsCgACHuIIRD8x29tZjISGOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJzGoBNkZUpXA8AAGfpwm3c3oOSHVi9AACLQoAAh7iCEQQxCko0GFYKjsE"
     },
     {
         "num": 401,
@@ -9631,8 +9631,8 @@ QUESTIONS = [
         "en_explain": "This question refers to Inland Rule 9(a)(ii) and the Vessel Bridge-to-Bridge Radiotelephone Act regulations regarding vessels navigating through drawbridges. When you observe a vessel displaying flashing yellow lights (indicating a vessel engaged in public safety activities or a special operation), you should wait until the vessel ahead crosses your bow before proceeding. The flashing yellow lights serve as a warning signal that requires other vessels to exercise caution and yield the right-of-way until the signaling vessel has completed its crossing maneuver.",
         "ru_explain": "На внутренних водных путях США жёлтые проблесковые огни в сочетании с вертикальными красными огнями обозначают разводной (подъёмный или поворотный) мост в процессе открытия или закрытия. Два вертикальных ряда красных огней указывают на судоходный пролёт моста. Когда жёлтые огни мигают, это означает, что мост находится в движении. Судоводитель должен проходить между двумя рядами красных огней, которые обозначают границы судоходного пролёта. Это стандартная сигнализация для разводных мостов согласно Правилам плавания по внутренним водам США (Inland Navigation Rules).",
         "image": "AgACAgEAAxkDAAIGb2oAAd21L_H0g4o9Ek5KDVB4pomfAQACwA5rGx7iCESiPqgMDGHhfQEAAwIAA3gAAzsE",
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJzWoBNkg9uEOr_riZzircYj8-ZSnIAAIuCgACHuIIRFuKPt_YV-OFOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJzmoBNkpZsHgQ2KfC4nhYo3WZEwy9AAIvCgACHuIIRD6F1w4V67ZbOwQ"
     },
     {
         "num": 402,
@@ -9655,8 +9655,8 @@ QUESTIONS = [
         "en_explain": "To convert from True course to Magnetic course, apply the variation: with Easterly variation, subtract from True heading (\"East is least\"). Therefore, 070°T minus 005°E variation equals 065° Magnetic. Since the Deviation Table reads 000°, there is no deviation to apply, making the Per Steering Compass (PSC) course also 065°. This compass correction problem follows the standard conversion formula: True ± Variation = Magnetic ± Deviation = Compass (TVMDC).",
         "ru_explain": "Для перехода от истинного курса к магнитному и компасному используется правило:  **ИК → МК → КК** (от истинного к компасному — поправки вычитаются при восточном склонении/девиации)  Формула: **ИК = МК + d (склонение)** и **МК = КК + δ (девиация)**  При **восточном склонении (E)** для получения магнитного курса из истинного нужно **вычесть** склонение: - МК = ИК − d = 070° − 005° = **065°**  Поскольку девиация = 000°: - КК = МК − δ = 065° − 000° = **065°**  Мнемоническое правило: **«East is least, West is best»** (восточное — вычитаем, западное — прибавляем) при переходе от истинного к компасному.  **Правильный ответ: C (МК = 65° КК = 65°)**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJz2oBNkxg9N8wLsJntEDZz3rrFHUjAAIwCgACHuIIRLSSpFAhknlPOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ0GoBNk1aFvxDPDsXC4ZJBUis-TkbAAIxCgACHuIIRCGaXZBBYpvyOwQ"
     },
     {
         "num": 403,
@@ -9679,8 +9679,8 @@ QUESTIONS = [
         "en_explain": "To convert from True course to Magnetic, apply Variation: True 135° + 15°W = 150° Magnetic (Westerly variation is added when going from True to Magnetic, following the memory aid \"Correcting Add West\"). To find the Per Steering Compass (PSC) course, apply Deviation to Magnetic: 150° + 2°W = 152° PSC. This compass conversion follows the standard TVMDC (True-Variation-Magnetic-Deviation-Compass) formula used in navigation, where westerly errors are added when \"uncorrecting\" from True toward Compass.",
         "ru_explain": "Для перевода истинного курса в компасный используется правило:  **ИК → МК → КК** (от истинного к компасному — поправки ПРИБАВЛЯЕМ при западных значениях)  1. **Расчёт магнитного курса (МК):**    - ИК = 135°    - Склонение (Variation) = 15° W    - При переходе от истинного к магнитному: западное склонение ПРИБАВЛЯЕТСЯ    - МК = 135° + 15° = **150°**  2. **Расчёт компасного курса (КК):**    - МК = 150°    - Девиация (Deviation) = 2° W    - При переходе от магнитного к компасному: западная девиация ПРИБАВЛЯЕТСЯ    - КК = 150° + 2° = **152°**  **Мнемоническое правило:** \"От компаса к истине — запад прибавь\" (Can Dead Men Vote Twice — Compass, Deviation, Magnetic, Variation, True). При обратном переходе (от True к Compass) знаки меняются: West — прибавляем, East — вычитаем.  **Ответ: D (МК=150° КК=152°)**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ0WoBNk84IcYZXjEvxeeuW8QUDtplAAIyCgACHuIIRDyV6WW6SZqAOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ0moBNlHT4MTAETSRwNBUE3bxDih6AAIzCgACHuIIRPahHdno9ZRfOwQ"
     },
     {
         "num": 404,
@@ -9703,8 +9703,8 @@ QUESTIONS = [
         "en_explain": "To convert from True to Magnetic, apply Variation in reverse: True 002° + 13°E (opposite of 13°W) = 015° Magnetic. To find Compass (PSC - Per Standard Compass), apply Deviation in reverse: Magnetic 015° - 2° (opposite of 2°E) = 013° Compass. This follows the memory aid \"Compass to True Add East\" (TVMDC), worked backwards: when going from True to Compass, subtract East and add West errors.",
         "ru_explain": "Для перехода между курсами используется формула: ИК → МК → КК  **Шаг 1: Находим Магнитный курс (МК)** МК = ИК - Склонение (для западного склонения вычитаем, но по правилу \"West is Best\" — прибавляем)  Правило: **\"West is Best, East is Least\"** (Запад прибавляй, Восток вычитай) — при переходе от Истинного к Магнитному действует обратно: - Западное склонение → прибавляем - МК = 002° + 13° = **015°**  **Шаг 2: Находим Компасный курс (КК/PSC)** КК = МК - Девиация (для восточной девиации вычитаем) - Восточная девиация → вычитаем - КК = 015° - 002° = **013°**  **Мнемоника:** \"От Компаса к Истинному — Прибавляй Восток\" (Can Dead Men Vote Twice At Elections — Compass + Deviation = Magnetic + Variation = True, Add East)  При обратном переходе (от Истинного к Компасному) — знаки меняются на противоположные.  **Ответ: МК = 015°, КК = 013°**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ02oBNlNnB-pQu9W2AQJ1jwmX_-UCAAI0CgACHuIIRPgjnCjnh7NbOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ1GoBNlQBHjp_RmhJ_cjSXGCIYAbvAAI1CgACHuIIRBju9vZnPH5IOwQ"
     },
     {
         "num": 405,
@@ -9727,8 +9727,8 @@ QUESTIONS = [
         "en_explain": "Time = Distance ÷ Speed. Dividing 15 nautical miles by 11 knots gives approximately 1.36 hours, which converts to 1 hour and approximately 21 minutes (0.36 × 60 = 21.6 minutes). This is a basic dead reckoning calculation essential for voyage planning, though not directly referenced in COLREGS, it supports compliance with Rule 2 (Responsibility) by ensuring the master can properly plan safe navigation.",
         "ru_explain": "Для расчёта времени в пути используется формула: Время = Расстояние ÷ Скорость. При расстоянии 15 морских миль (NM) и скорости 11 узлов (морских миль в час): 15 ÷ 11 = 1,36 часа. Переводим десятичную дробь в минуты: 0,36 × 60 = 21,6 ≈ 21 минута. Итого: 1 час 21 минута. Примечание: вариант C (1 час 81 минута) является заведомо некорректным, так как в часе только 60 минут.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ1WoBNlYMVTAelgy8PEONstv_xPepAAI2CgACHuIIRLVtzu8UIMoqOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ1moBNlhh72EeVcNEwct_swdnU1zlAAI3CgACHuIIRPf7aCnkgD4ROwQ"
     },
     {
         "num": 406,
@@ -9751,8 +9751,8 @@ QUESTIONS = [
         "en_explain": "To convert from True to Magnetic heading, apply Variation in the opposite direction: 012° - 14°E = 358° Magnetic. To convert from Magnetic to Compass (PSC - Per Standard Compass), apply Deviation in the opposite direction: 358° - (-5°W) = 358° + 5° = 003° Compass. This follows the correcting formula \"Compass to True Add East\" (TVMDC) worked in reverse, a fundamental principle of marine navigation covered in the Chapman Piloting & Seamanship standards for USCG licensing.",
         "ru_explain": "Для перехода от истинного курса к магнитному и компасному используется правило:  **ИК → МК → КК** (при обратном переходе от истинного к компасному)  Формула: **МК = ИК - Склонение (для восточного)** - МК = 012° - 14°E = -2° = **358°**  Формула: **КК = МК + Девиация (для западной)** или применяем правило: - Западная девиация при переходе от МК к КК **прибавляется** - КК = 358° + 005°W = **003°**  **Мнемоническое правило:** \"От компаса к истине — восточное прибавляй, западное вычитай\" (Can Dead Men Vote Twice At Elections — Compass, Deviation, Magnetic, Variation, True, Add East)  При **обратном** переходе (от истинного к компасному) — действия противоположные: - Восточное склонение **вычитаем** - Западную девиацию **прибавляем**  **Ответ: D (МК=358° КК=003°)**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ12oBNlpsM-EqZrL-2Am6w0xU-CAzAAI4CgACHuIIRK_J7fYbRI6rOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ2GoBNlsaMteU7CThRCO-Y9cgot72AAI5CgACHuIIRCaYJJKDW6YWOwQ"
     },
     {
         "num": 407,
@@ -9775,8 +9775,8 @@ QUESTIONS = [
         "en_explain": "To convert from True course to Magnetic, subtract Easterly variation (True to Magnetic: \"East is least\"). 010° - 14°E = 356° Magnetic. To find Per Steering Compass (PSC), subtract Easterly deviation from Magnetic: 356° - 3°E = 353°. This follows the compass conversion formula \"TVMDC\" (True, Variation, Magnetic, Deviation, Compass), where Easterly errors are subtracted when going from True toward Compass, as outlined in standard navigation practices for the USCG licensing examinations.",
         "ru_explain": "Для перехода от истинного курса к магнитному и компасному используется правило:  **ИК → МК → КК** (при обратном пересчёте поправки вычитаются)  Формула: **ИК = МК + Склонение** и **МК = КК + Девиация**  При восточных (E) поправках для перехода **от ИК к МК и КК** их нужно **вычитать**:  1. **Магнитный курс (МК):**    МК = ИК − Склонение = 010° − 14° = **356°** (или 360° − 4° = 356°)  2. **Компасный курс (КК):**    КК = МК − Девиация = 356° − 3° = **353°**  Мнемоническое правило: **\"East is least, West is best\"** — восточные поправки вычитаются при переходе от истинного к компасному курсу.  **Правильный ответ: B (МК=356° КК=353°)**",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ2WoBNl3Nxk7fFegHkvFnh529hwO-AAI6CgACHuIIRFuKkw0CJE7vOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ2moBNl-8dNpvbut5k9LuzN7RrLL9AAI7CgACHuIIRKQS-vhy3n_cOwQ"
     },
     {
         "num": 408,
@@ -9799,8 +9799,8 @@ QUESTIONS = [
         "en_explain": "To calculate travel time, divide distance by speed: 17 nautical miles ÷ 15 knots = 1.133 hours, which converts to 1 hour and approximately 8 minutes. This is a fundamental dead reckoning calculation used in voyage planning. While not directly referenced in COLREGS, accurate time and speed calculations are essential for determining risk of collision under Rule 7 and maintaining proper lookout under Rule 5.",
         "ru_explain": "Для расчёта времени в пути используется формула: Время = Расстояние ÷ Скорость. При расстоянии 17 морских миль (NM) и скорости 15 узлов (морских миль в час): 17 ÷ 15 = 1,133 часа. Для перевода десятичной дроби в минуты: 0,133 × 60 ≈ 8 минут. Итого: 1 час 8 минут.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ22oBNmEL2UZlZhVnmqiuqjA3ePFdAAI8CgACHuIIRC6Glrj6mcRUOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ3GoBNmMYmVgluEYbSu5xVTCFOGB3AAI9CgACHuIIRPQN6iD6IFteOwQ"
     },
     {
         "num": 409,
@@ -9823,8 +9823,8 @@ QUESTIONS = [
         "en_explain": "This is a basic speed-time-distance calculation required for navigation. Using the formula Time = Distance ÷ Speed, dividing 14.2 nautical miles by 7.4 knots yields approximately 1.92 hours, which converts to 1 hour and 55 minutes. While not directly referenced in COLREGS, accurate time-of-arrival calculations are essential for safe voyage planning and meeting the requirements of Rule 2 (Responsibility) regarding good seamanship.",
         "ru_explain": "Для расчёта времени в пути используется формула: Время = Расстояние ÷ Скорость. Делим 14,2 морских мили на 7,4 узла: 14,2 ÷ 7,4 = 1,919 часа. Переводим десятичную дробь в минуты: 0,919 × 60 ≈ 55 минут. Итого: 1 час 55 минут. Напоминание: 1 узел = 1 морская миля в час.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ3WoBNmSvaGQMCauRxlogxj_87hwcAAI-CgACHuIIRM3Exs32H3CzOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ3moBNmYC9LSFAAHvjRW1Dpb38R4UuAACPwoAAh7iCESVxARMCNmQszsE"
     },
     {
         "num": 410,
@@ -9847,8 +9847,8 @@ QUESTIONS = [
         "en_explain": "This is a basic dead reckoning calculation using the formula: Distance = Speed × Time. Convert 2 hours 12 minutes to decimal hours (2.2 hours), then multiply by 13.6 knots: 13.6 × 2.2 = 29.92 nautical miles, rounded to 29.9 NM. While not a COLREGS rule, dead reckoning navigation is a fundamental seamanship skill required of all licensed operators.",
         "ru_explain": "Для расчёта пройденного расстояния используется формула: Расстояние = Скорость × Время. Сначала переводим время в часы: 2 часа 12 минут = 2 + (12/60) = 2,2 часа. Затем умножаем скорость на время: 13,6 узла × 2,2 часа = 29,92 ≈ 29,9 морских миль.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ32oBNmi0Mc4aWrMxd_WDGR2YemqUAAJACgACHuIIROB2nOH22dEIOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ4GoBNmoscpmcPMKHs7e9QZfYUwiHAAJBCgACHuIIRD3u30tu6k-8OwQ"
     },
     {
         "num": 411,
@@ -9871,8 +9871,8 @@ QUESTIONS = [
         "en_explain": "Under the US Inland Navigation Rules (33 CFR 88.05), law enforcement vessels may display a flashing blue light as a special identification signal when engaged in law enforcement activities. This light is in addition to the normal navigation lights required by the Rules and serves to alert other vessels to the presence of law enforcement operations. This provision is specific to Inland Rules and has no equivalent in the International COLREGS.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США (Inland Navigation Rules), суда правоохранительных органов (полиция, береговая охрана, таможня) имеют право нести проблесковый синий огонь (flashing blue light) для обозначения своего статуса и привлечения внимания других судов. Этот огонь является отличительным признаком судов, выполняющих функции охраны правопорядка на воде. Данное требование относится исключительно к внутренним водам США и не входит в международные МППСС-72 (COLREGS).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ4WoBNmztt0Td4oQgiixhc9BaWP0eAAJCCgACHuIIRLDhqP1RKSXlOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ4moBNm2-zc582u1EvgdD9oGryT2rAAJDCgACHuIIRNXVn-HIXp4yOwQ"
     },
     {
         "num": 412,
@@ -9895,8 +9895,8 @@ QUESTIONS = [
         "en_explain": "This is a basic speed-time-distance calculation using the mariner's formula: Time = Distance ÷ Speed. Dividing 10.9 nautical miles by 8.8 knots yields approximately 1.238 hours, which converts to 1 hour and 14 minutes (0.238 × 60 ≈ 14 minutes). This fundamental navigation computation, while not directly referenced in COLREGS, is essential seamanship knowledge required for voyage planning and determining arrival times.",
         "ru_explain": "Для расчёта времени перехода используется формула: Время = Расстояние ÷ Скорость. Подставляем значения: 10,9 морских миль ÷ 8,8 узлов = 1,238 часа. Переводим десятичную дробь в минуты: 0,238 × 60 = 14,3 минуты. Таким образом, время в пути составит примерно 1 час 14 минут. Напоминание: 1 узел = 1 морская миля в час.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ42oBNm9IhYrgr5cp2a6rYk8IehypAAJECgACHuIIROtQZFPuJS4zOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ5GoBNnAHxcq6GAtYDcEByGkiTY99AAJFCgACHuIIRBz4wZrMCxnXOwQ"
     },
     {
         "num": 413,
@@ -9919,8 +9919,8 @@ QUESTIONS = [
         "en_explain": "This is a basic speed-time-distance calculation used in navigation. Convert 1 hour 36 minutes to decimal hours (1.6 hours), then multiply by speed: 8.0 knots × 1.6 hours = 12.8 nautical miles. A knot equals one nautical mile per hour, which is the standard unit of speed in maritime navigation.",
         "ru_explain": "Для расчёта пройденного расстояния используется формула: S = V × t, где S — расстояние, V — скорость, t — время. Сначала переведём время в часы: 1 час 36 минут = 1 + (36/60) = 1,6 часа. Затем умножаем скорость на время: 8,0 узлов × 1,6 часа = 12,8 морских миль. Узел — это единица скорости, равная 1 морской миле в час.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ5WoBNnKyN9Zy7Mfbma9hd34io2-pAAJGCgACHuIIRBTOnXLUCOTaOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ5moBNnSjOajjiQWXR6DIbHGMLAABVQACRwoAAh7iCERZ0pBBzv9gDzsE"
     },
     {
         "num": 414,
@@ -9943,8 +9943,8 @@ QUESTIONS = [
         "en_explain": "This is a basic dead reckoning navigation calculation using the formula: Time = Distance ÷ Speed. Dividing 14 nautical miles by 6.5 knots yields approximately 2.15 hours, which converts to 2 hours and 9 minutes. This fundamental piloting skill is essential for voyage planning and estimating ETAs, though it is not governed by a specific COLREGS or Inland Rule.",
         "ru_explain": "Для расчёта времени перехода используется формула: Время = Расстояние ÷ Скорость. При расстоянии 14 морских миль и скорости 6,5 узла: 14 ÷ 6,5 = 2,154 часа. Переводим десятичную дробь в минуты: 0,154 × 60 ≈ 9 минут. Итого: 2 часа 9 минут.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ52oBNnbpNVJ_m9rKnG_rSb20KE5CAAJICgACHuIIROjYRvvO-rI7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ6GoBNncFG5_hGpNcmqiZIMApo9WCAAJJCgACHuIIRLDm70Kp2CzkOwQ"
     },
     {
         "num": 415,
@@ -9967,8 +9967,8 @@ QUESTIONS = [
         "en_explain": "Speed is calculated by dividing distance by time: 10.7 NM ÷ 4.283 hours (4 hours 17 minutes = 4 + 17/60 = 4.283 hours) = 2.5 knots. This is a basic navigation calculation essential for dead reckoning and voyage planning. While not directly from COLREGS, understanding your vessel's speed is fundamental to applying Rule 6 (Safe Speed) and all other Rules requiring assessment of risk and collision avoidance timing.",
         "ru_explain": "Для расчёта скорости необходимо перевести время в десятичный формат: 4 часа 17 минут = 4 + 17/60 = 4,283 часа. Скорость рассчитывается по формуле: V = S/T, где V — скорость в узлах, S — пройденное расстояние в морских милях, T — время в часах. V = 10,7 ÷ 4,283 ≈ 2,5 узла. Узел — единица скорости, равная одной морской миле в час.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ6WoBNnmlBsjOvPtG9EdN3cQvzLCJAAJKCgACHuIIRK37v8NONkeROwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ6moBNns-_s9FfpRjSjJD3Nyr9P3OAAJLCgACHuIIRNxb0MWX4qF7OwQ"
     },
     {
         "num": 416,
@@ -9991,8 +9991,8 @@ QUESTIONS = [
         "en_explain": "To calculate speed in knots, divide the distance in nautical miles by the time in hours. Converting 2 hours and 21 minutes to decimal hours gives 2.35 hours (21 minutes ÷ 60 = 0.35 hours). Dividing 11.2 NM by 2.35 hours equals approximately 4.7 knots, which represents the vessel's speed over ground (SOG).",
         "ru_explain": "Для расчёта скорости необходимо перевести время в десятичный формат: 2 часа 21 минута = 2 + (21/60) = 2,35 часа. Скорость (V) = Расстояние (S) / Время (t). V = 11,2 морских мили ÷ 2,35 часа ≈ 4,76 узла, что округляется до 4,7 узла. Узел — единица скорости, равная одной морской миле в час.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ62oBNn1_tnpGYHrRWDfVD0O2FeIKAAJMCgACHuIIREE9MjajdApXOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ7GoBNn7XbHfkBgYjvEZnG-Y70bD8AAJNCgACHuIIRBpCjTo5lrLaOwQ"
     },
     {
         "num": 417,
@@ -10015,8 +10015,8 @@ QUESTIONS = [
         "en_explain": "This is a basic dead reckoning navigation problem using the Speed-Time-Distance formula (S = D ÷ T). Convert 4 hours 19 minutes to decimal hours (4.317 hours), then divide 44 nautical miles by 4.317 hours to get approximately 10.2 knots. This calculation is fundamental to piloting and navigation skills required of all licensed operators, though it does not reference a specific COLREG or Inland Rule.",
         "ru_explain": "Для расчёта скорости необходимо разделить пройденное расстояние на время в пути. Переводим время в десятичный формат: 4 часа 19 минут = 4 + (19 ÷ 60) = 4,317 часа. Скорость = 44 морские мили ÷ 4,317 часа ≈ 10,2 узла. Узел — единица скорости, равная одной морской миле в час.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ7WoBNoBtvRoVlc97x7TZ7B4BNSoYAAJOCgACHuIIRCeru6YOUysyOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ7moBNoL7CmCquQfZTZgqbfQ1nlvlAAJPCgACHuIIRJ1fyCQ_cJfmOwQ"
     },
     {
         "num": 418,
@@ -10039,8 +10039,8 @@ QUESTIONS = [
         "en_explain": "The green can buoy \"CBJ\" near the eastern end of Thimble Shoal Channel marks an area subject to constant shoaling, meaning sediment continuously accumulates and reduces water depth. Mariners transiting this area must regularly consult updated charts and Notice to Mariners, as charted depths may not reflect current conditions. This local knowledge is essential for safe navigation in Chesapeake Bay approach channels, where shoaling is a persistent hazard requiring vigilant depth monitoring.",
         "ru_explain": "Буй GR \"CBJ\" — это зелёно-красный (green-red) осевой буй, обозначающий предпочтительный фарватер. Канал Тимбл-Шол (Thimble Shoal Channel) расположен в районе Чесапикского залива. Термин \"shoaling\" означает процесс обмеления — накопления донных отложений, приводящего к уменьшению глубин. Районы, подверженные постоянному обмелению, требуют регулярного промера глубин и дноуглубительных работ. Мореплаватели должны сверяться с последними корректурами навигационных карт и извещениями мореплавателям (ИМ/NtM) при плавании в таких акваториях, так как фактические глубины могут отличаться от указанных на карте.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ72oBNoSkPSeASVzemWYZzRopmxksAAJQCgACHuIIRK0SrXoR7bD9OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ8GoBNoUEjovD5eZOR5ZMbXbO36OJAAJRCgACHuIIRL_mzs2QRjOBOwQ"
     },
     {
         "num": 419,
@@ -10063,8 +10063,8 @@ QUESTIONS = [
         "en_explain": "The CR \"CB\" marker near the Eastern end of Thimble Shoal Channel marks an area subject to constant shoaling, meaning sediment continuously accumulates and reduces water depth in this location. Mariners transiting this portion of the channel must pay close attention to current chart updates and Notice to Mariners for the latest depth information. This is a local knowledge question specific to the Chesapeake Bay approach channels, where shoaling is a persistent navigational concern requiring vigilance.",
         "ru_explain": "Канал Тимбл-Шол (Thimble Shoal Channel) — это важный судоходный канал в районе Чесапикского залива. Термин \"shoaling\" (обмеление) означает процесс уменьшения глубины вследствие намыва донных отложений течениями и волнами. Районы, подверженные постоянному обмелению, требуют регулярных промерных работ и дноуглубления для поддержания проектных глубин. Навигационный знак CR \"CB\" обозначает границу канала. Мореплаватели должны сверяться с последними корректурами карт и извещениями мореплавателям (ИМ/NtM) при плавании в таких районах, так как фактические глубины могут отличаться от указанных на карте.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ8WoBNoeVUMmFo0m4VEf2VgEaZRlTAAJSCgACHuIIRKrRcN-ZpmOSOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ8moBNonJSShqyPd1iqJRedt6fdZKAAJTCgACHuIIRAmILsv1-f9dOwQ"
     },
     {
         "num": 420,
@@ -10087,8 +10087,8 @@ QUESTIONS = [
         "en_explain": "NOAA Chart 12224 provides the detailed coverage of Sand Shoal Inlet, located along the Virginia Eastern Shore. When navigating inlets and other restricted waterways, mariners must consult the largest-scale chart available for that area to ensure accurate identification of channels, shoals, and aids to navigation. Chart numbering follows NOAA's systematic scheme where higher numbers within a series typically indicate larger-scale (more detailed) coverage of specific features.",
         "ru_explain": "Навигационные карты NOAA имеют уникальные номера для идентификации. Карты с бо́льшим масштабом (детальные виды) отдельных участков, таких как проливы (inlets), бухты и гавани, имеют свои собственные номера. Для детального вида пролива Сэнд-Шол используется карта № 12224. Судоводитель должен уметь определять нужный номер карты по каталогу карт или по врезкам на генеральных картах данного района.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ82oBNoqtqg6ATwABcgiFHqIc9dkoOAACVAoAAh7iCER9LFxIWlhDbTsE",
+        "audio_a": "CQACAgEAAxkDAAIJ9GoBNoyz19b0kieQNhp8y2nWLY9SAAJVCgACHuIIRO457uOgrudPOwQ"
     },
     {
         "num": 421,
@@ -10111,8 +10111,8 @@ QUESTIONS = [
         "en_explain": "NOAA Chart #12221 (Chesapeake Bay Entrance) is published at a scale of 1:80,000 at Latitude 37°05'N. Chart scales are referenced to a specific latitude because the Mercator projection causes scale distortion that varies with latitude. This information is found in the chart's title block and is essential for accurate distance measurements and voyage planning.",
         "ru_explain": "Масштаб морской навигационной карты указывается в её заголовке и привязывается к определённой широте, поскольку из-за проекции Меркатора масштаб меняется с широтой. Карта №12221 (вход в Чесапикский залив) имеет масштаб 1:80 000 на широте 37°05' северной широты. Вариант B содержит ошибку — указана долгота (76°05') вместо широты. Варианты A и C указывают неверный масштаб 1:70 000.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ9WoBNo6FpIh5BXsRDrPCkMQkbSSVAAJWCgACHuIIRA0p4dS5cIBjOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ9moBNo8OOPmAvabyErLxlEZzj8_eAAJXCgACHuIIRMLxt9xB4cIbOwQ"
     },
     {
         "num": 422,
@@ -10135,8 +10135,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 24(g), a vessel or object being towed that is partly submerged and difficult to detect must display, if practicable, all-round white lights at or near the forward and after ends, plus a diamond shape at or near the aftermost extremity. When the length of the tow makes compliance impracticable, a searchlight must be directed from the towing vessel toward the tow. Since all three signals may be required depending on circumstances, **all of the above (D)** is correct.",
         "ru_explain": "Согласно Правилам плавания по внутренним водным путям США, частично погружённый буксируемый объект представляет особую опасность для судоходства, так как его трудно обнаружить визуально. Для обеспечения безопасности требуется использовать комплекс сигналов: **ромбовидную фигуру** (дневной знак) на буксируемом объекте для визуального опознавания, **круговые огни** (видимые со всех направлений) на носовой и кормовой оконечностях объекта для обозначения его габаритной длины в тёмное время суток, а также **прожектор** с буксировщика, направленный на буксируемый объект, для привлечения внимания других судов к наличию буксирного каравана. Все три меры применяются совместно, поэтому правильный ответ — D.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ92oBNpGtmBDgf8zaCmRIs1-MjV0NAAJYCgACHuIIRA04Wd_J9MrhOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ-GoBNpPeVEy1Zr8EUWN-M1PrlTtKAAJZCgACHuIIRHzPxzImygpgOwQ"
     },
     {
         "num": 423,
@@ -10159,8 +10159,8 @@ QUESTIONS = [
         "en_explain": "Soundings on U.S. coastal charts are referenced to Mean Lower Low Water (MLLW), which is the average height of the lower of the two daily low tides over a 19-year tidal epoch. This datum provides mariners with a conservative depth measurement, as actual water depths will typically be at or above the charted depth. Chart 12221TR covers U.S. waters where MLLW is the standard tidal datum established by NOAA for navigation safety.",
         "ru_explain": "На навигационных картах США глубины (промеры) указываются относительно определённого уровня отсчёта — нуля глубин. Для большинства карт побережья США, включая карту 12221TR, в качестве нуля глубин принят средний уровень нижней малой воды (Mean Lower Low Water, MLLW). Это среднее значение более низких из двух малых вод за сутки в районах с полусуточными приливами. Использование MLLW обеспечивает судоводителю запас безопасности, поскольку фактические глубины обычно будут равны или больше указанных на карте.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ-WoBNpVaUzs35sKFKEzvhNQWlLTNAAJaCgACHuIIRAMLryzddVE4OwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ-moBNpYBUkF1x9KMqaCkfHrxKJUbAAJbCgACHuIIROawtBFE1O8zOwQ"
     },
     {
         "num": 424,
@@ -10183,8 +10183,8 @@ QUESTIONS = [
         "en_explain": "Thimble Shoal Light, located in the Chesapeake Bay near the entrance to Hampton Roads, Virginia, has a charted height of 55 feet above sea level. This information is found in the U.S. Coast Guard Light List and on nautical charts for the area. Mariners must know aid-to-navigation characteristics, including light heights, for proper identification and navigation in coastal waters.",
         "ru_explain": "Маяк Тимбл-Шол расположен в Чесапикском заливе (штат Виргиния, США) и обозначает мелководье (шол — отмель) у входа в залив. Высота огня маяка над средним уровнем моря составляет 55 футов (примерно 16,8 метра). Эта информация указывается в навигационных пособиях — «Списке огней и знаков» (Light List) и на морских картах. Знание высоты маяка необходимо для расчёта дальности видимости огня с учётом высоты глаза наблюдателя и кривизны земной поверхности.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ-2oBNpg5izUwhi1alhWpR3GDjGRLAAJcCgACHuIIRFxbmyEDRd6EOwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ_GoBNplGwYGHx9-nOPSg_BKXHQUMAAJdCgACHuIIRDPpg-0OxRryOwQ"
     },
     {
         "num": 425,
@@ -10207,8 +10207,8 @@ QUESTIONS = [
         "en_explain": "The southern side of York River Entrance Channel is marked as an explosives anchorage or dumping ground, indicating a restricted area where ammunition or explosive materials may be present. This information is found on NOAA nautical charts and in the U.S. Coast Pilot, which mariners must consult when navigating U.S. waters. Such dangerous areas are typically depicted with special chart symbols and may be referenced in Local Notices to Mariners.",
         "ru_explain": "На морских картах и в навигационных извещениях мореплавателям (НАВИМ) указываются особые опасности в районах плавания. Южная сторона входного канала реки Йорк (York River, штат Вирджиния, США) обозначена как зона взрывчатых веществ (explosives). Это связано с наличием военных объектов, полигонов или районов захоронения боеприпасов в данной акватории. Такие зоны представляют серьёзную опасность для судоходства, якорной стоянки и проведения любых подводных работ. Судоводитель обязан соблюдать особую осторожность и следовать указаниям, опубликованным в лоциях и на картах для данного района.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ_WoBNpt0-SUeiRk59tiHWWXwJfHVAAJeCgACHuIIRJHwJBBZdEkROwQ",
+        "audio_a": "CQACAgEAAxkDAAIJ_moBNpw52qogovSwpkbkFdxhiwWOAAJfCgACHuIIRFXgyNyPTDZnOwQ"
     },
     {
         "num": 426,
@@ -10231,8 +10231,8 @@ QUESTIONS = [
         "en_explain": "The northern boundary of the inbound traffic lane in the Chesapeake Bay Traffic Separation Scheme is designated as a danger area due to the presence of a naval firing range and restricted military operations. Under Rule 10 of the COLREGS (Traffic Separation Schemes), mariners must be aware of such designated areas adjacent to traffic lanes and avoid them. This danger area is clearly marked on nautical charts and in the Coast Pilot to warn vessels against straying outside the established traffic lane.",
         "ru_explain": "Система разделения движения (Traffic Separation Scheme, TSS) Чесапикского залива — это установленные маршруты для упорядочения судоходства при входе в залив. Северная граница первого входящего участка, идущего в северном направлении, обозначена как «район опасности» (danger area). Такие районы устанавливаются для предупреждения мореплавателей о наличии навигационных опасностей, военных полигонов или других факторов, требующих особой осторожности. Судоводителям следует избегать захода в эти районы или проявлять повышенную бдительность при необходимости пересечения. Информация о границах СРД и прилегающих районах указывается на навигационных картах и в лоциях.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIJ_2oBNp7ff2LZkLaJgQyFdr5ruVnIAAJgCgACHuIIRPOe6myrNxn_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKAAFqATagOXBxK6BAjIM3s5CFJau9SwACYQoAAh7iCEQaJVgkuui79jsE"
     },
     {
         "num": 427,
@@ -10255,8 +10255,8 @@ QUESTIONS = [
         "en_explain": "\"Note H\" on the Chesapeake Bay Entrance Chart specifically references the ferry route operating between Little Creek and Cape Charles. Mariners must consult chart notes carefully as they contain critical navigation information about established vessel traffic patterns, including ferry crossings that may affect voyage planning. This information is essential for safe navigation in accordance with the Navigation Rules requirement to maintain a proper lookout and use all available means appropriate to the prevailing circumstances (Rule 5, COLREGS/Inland Rules).",
         "ru_explain": "На морских навигационных картах NOAA используются буквенные примечания (Notes) для предоставления дополнительной информации, которая не может быть отображена непосредственно на карте. \"Примечание H\" (Note H) на карте входа в Чесапикский залив содержит сведения о паромном маршруте, соединяющем Литтл-Крик (Little Creek) на южном берегу и Кейп-Чарльз (Cape Charles) на полуострове Делмарва. Судоводителям важно знать расположение паромных переправ, так как паромы следуют по установленным маршрутам, пересекающим судоходные пути, и имеют ограниченную манёвренность. При плавании в данном районе необходимо учитывать движение паромов и соблюдать осторожность при пересечении их маршрутов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKAWoBNqKe4KTb5LXVmSXnHD-e7uGyAAJiCgACHuIIRG5iDpFicPmVOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKAmoBNqPV5b1P0COlRyavrwORKh5yAAJjCgACHuIIRIoygsl1Nls-OwQ"
     },
     {
         "num": 428,
@@ -10279,8 +10279,8 @@ QUESTIONS = [
         "en_explain": "The **Light List** is the official USCG publication that provides comprehensive information about U.S. Aids to Navigation, including details on lighthouses, buoys, daybeacons, and other navigational aids such as their characteristics, positions, and structures. While Notice to Mariners provides updates and corrections, and Chart No. 1 explains chart symbols, the Light List serves as the primary reference for detailed ATON information as maintained by the United States Coast Guard.",
         "ru_explain": "Light List (Описание огней и знаков) — это официальное издание Береговой охраны США, содержащее подробную информацию обо всех средствах навигационного оборудования (СНО): маяках, буях, знаках, огнях и других навигационных ориентирах в водах США. В нём указаны характеристики огней, координаты, описание конструкций и другие данные, необходимые для безопасного плавания. Извещения мореплавателям (Notice to Mariners) содержат корректуры к картам и пособиям. Таблицы приливов и течений дают информацию о приливо-отливных явлениях. Карта 1 объясняет условные обозначения на навигационных картах.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKA2oBNqWNMXA4MCqfb9XZZ5rgEUvMAAJkCgACHuIIRJyb1eU6ZUY6OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKBGoBNqchX54i_uf9gXpanvvKvpC2AAJlCgACHuIIRP_BMOMEHK4gOwQ"
     },
     {
         "num": 429,
@@ -10303,8 +10303,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 34(g), a vessel leaving a dock or berth is required to sound one prolonged blast as a warning signal to other vessels that may be approaching. This signal alerts nearby traffic that the vessel is about to enter the waterway. A prolonged blast is defined as a blast of four to six seconds' duration.",
         "ru_explain": "Согласно Правилам плавания во внутренних водах США (Inland Navigation Rules), судно, отходящее от причала или причального места, обязано подать один продолжительный звук (длительностью 4-6 секунд). Этот сигнал служит предупреждением для других судов о том, что судно начинает манёвр отхода и выходит на судовой ход. Данный сигнал отличается от коротких звуков (около 1 секунды), используемых для обозначения намерений при расхождении судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKBWoBNqksaZA2coTf9by-ULHa7c0qAAJmCgACHuIIRMAo5tE4KnTmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKBmoBNqoVhN9wUrQwB9PKZHQLqGouAAJnCgACHuIIRN4zlN7TzRWlOwQ"
     },
     {
         "num": 430,
@@ -10327,8 +10327,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rules Rule 34(a), when power-driven vessels are meeting or crossing within half a mile, one short blast signals intent to leave the other vessel on your port side, while two short blasts signal intent to leave the other on your starboard side. In a narrow channel situation where vessels are passing port-to-port (the normal arrangement), both vessels should sound one short blast to indicate their intent to leave the other vessel on their port side. This exchange of signals serves as a proposal and agreement between the two vessels.",
         "ru_explain": "Согласно Правилам плавания во внутренних водах США, при расхождении судов левыми бортами в узком канале оба судна должны подать два коротких звуковых сигнала (свистком). Два коротких сигнала означают намерение «Я изменяю свой курс влево» или согласие на расхождение левыми бортами. На схеме 29 суда идут встречными курсами и расходятся левыми бортами, что является нестандартным манёвром (обычно суда расходятся правыми бортами с подачей одного короткого сигнала). Поэтому оба судна должны обменяться сигналами из двух коротких звуков для подтверждения взаимного согласия на такое расхождение.",
         "image": "AgACAgEAAxkDAAIGa2oAAd2uSEp54dVQpngueuv1asX1VQACvA5rGx7iCEQHh1CyHWHqBQEAAwIAA3gAAzsE",
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKB2oBNqxBUjrLeSNG_srDF6PrpyZFAAJoCgACHuIIRDQTIb_qQOcPOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKCGoBNq6hLIMw8PugH6kJL051xcjSAAJpCgACHuIIRFpftJlnYdgeOwQ"
     },
     {
         "num": 431,
@@ -10351,8 +10351,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 14 (Head-on Situation), when two power-driven vessels are meeting head-on, each vessel shall alter course to starboard so that they pass on the port side of each other. Inland Rule 34(a) requires that this maneuver be signaled by one short blast, which indicates \"I intend to leave you on my port side.\" This exchange of signals confirms the agreement between both vessels before the course alteration is made.",
         "ru_explain": "Согласно Правилам плавания во внутренних водах США, при встречной ситуации (head-on) оба судна должны изменить курс вправо, чтобы разойтись левыми бортами (port to port). Один короткий звуковой сигнал (один гудок продолжительностью около 1 секунды) означает намерение изменить курс вправо и является сигналом договорённости между судами. Два коротких сигнала означали бы намерение изменить курс влево, что при встречном расхождении не применяется как стандартный манёвр.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKCWoBNrF5uMhknlfawekGZo38iW6OAAJqCgACHuIIRGLZzb7PnGuGOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKCmoBNrKU023HvfuiwjMwmGqg8QQ6AAJrCgACHuIIRPW0eJzhTZZkOwQ"
     },
     {
         "num": 432,
@@ -10375,8 +10375,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 34(a), when one vessel intends to overtake another and pass on the overtaken vessel's port side, the overtaking vessel must sound two short blasts to signal this intention. This differs from one short blast, which would indicate an intention to pass on the starboard side. The overtaken vessel, if in agreement, would respond with the same signal (two short blasts) to indicate assent.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США (Inland Rules), при обгоне судов используются сигналы намерения. Два коротких звука означают: «Я намереваюсь обогнать вас с вашего левого борта». Один короткий звук означал бы намерение обогнать с правого борта. Это отличается от международных правил (COLREGS), где при обгоне подаются 2 продолжительных и 1 или 2 коротких звука. На внутренних водах США действует система «сигнал-ответ»: обгоняющее судно сначала заявляет о намерении, а обгоняемое судно должно подтвердить согласие таким же сигналом.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKC2oBNrXggAj_dSGvzvbTHi7gdBG4AAJsCgACHuIIRIXYFsB-xlH3OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKDGoBNrYDIq_pRr_H10GMe-IhifpFAAJtCgACHuIIRPI8ZKaksErjOwQ"
     },
     {
         "num": 433,
@@ -10399,8 +10399,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 30(f), a barge moored in a slip used primarily for mooring purposes is exempt from lighting requirements. This exception recognizes that vessels in dedicated mooring areas pose minimal navigation hazards to other traffic, as these locations are not active waterways where vessels would be transiting at night.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США, баржа, ошвартованная в слипе (защищённом месте швартовки), который используется преимущественно для стоянки судов, освобождается от требования нести навигационные огни в ночное время. Это исключение обусловлено тем, что такие слипы являются специально оборудованными местами для безопасной стоянки, где движение судов ограничено и риск столкновения минимален. В отличие от барж, ошвартованных в других местах (у причалов, на рейде), которые обязаны нести белые огни для обозначения своего местоположения, баржи в швартовочных слипах не создают навигационной опасности для проходящих судов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKDWoBNrithjSoX6sbu2ZrKv18P2SHAAJuCgACHuIIREoP5dL5nzB7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKDmoBNrog0iErOEo8LEWMULOnx2mgAAJvCgACHuIIRPbwiym-1GBXOwQ"
     },
     {
         "num": 434,
@@ -10423,8 +10423,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 34(b), vessels may supplement whistle signals with a light signal. This light must be an all-round light (visible from all directions), may be either white or yellow in color, and must be synchronized with the whistle so that each flash corresponds to each sound signal. All three statements accurately describe the requirements for maneuvering signal lights on inland waters.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США (Inland Rules), суда могут использовать специальный световой сигнал для дублирования звуковых сигналов маневроуказания. Этот огонь должен соответствовать следующим требованиям: 1) **Синхронизация со звуковым сигналом** — вспышки света должны совпадать с подачей звуковых сигналов (свистков); 2) **Цвет — белый или жёлтый** — допускается использование огня любого из этих цветов; 3) **Круговой огонь (all-round light)** — огонь должен быть видим по всей дуге горизонта в 360°, чтобы его могли наблюдать суда с любого направления.  Поскольку все три утверждения (A, B, C) верны, правильный ответ — **D (Всё вышеперечисленное)**.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKD2oBNryTslYpLTKUsMOOklJwQKQcAAJwCgACHuIIRPpb0SbTwFBhOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKEGoBNr00NDzCgvq7aA_QkB7n6BfqAAJxCgACHuIIRNBOg50hwfCxOwQ"
     },
     {
         "num": 435,
@@ -10447,8 +10447,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 9(a)(ii), on the Western Rivers, a vessel crossing a river must keep out of the way of a power-driven vessel ascending or descending the river. This special provision recognizes the unique navigational challenges on the Western Rivers, where strong currents make it difficult for vessels transiting up or down the river to maneuver, giving them right-of-way over crossing vessels.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США, на Западных реках (Western Rivers — система рек Миссисипи, Огайо и их притоков) действуют особые правила расхождения. Судно, пересекающее реку, обязано уступать дорогу ЛЮБОМУ судну (не только моторному), которое следует по течению — как вверх, так и вниз по реке. Это связано с тем, что суда, идущие по течению, ограничены в манёвренности из-за воздействия течения и особенностей фарватера. Ответ D является наиболее полным, так как включает все типы судов и оба направления движения.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKEWoBNr-IWQstZ-DhomohroEfFPjEAAJyCgACHuIIREx5XW3f7vZ8OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKEmoBNsGJ98GbJ9Itq7IP1YBWFg0XAAJzCgACHuIIRD5CGDGAMqcFOwQ"
     },
     {
         "num": 436,
@@ -10471,8 +10471,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 34(c), when a vessel intends to overtake another vessel in a narrow channel and wishes to pass on the overtaken vessel's starboard side, she must signal her intention with two prolonged blasts followed by one short blast. This signal indicates \"I intend to overtake you on your starboard side,\" and the overtaken vessel, if in agreement, would respond with two prolonged, one short, and one short blast to indicate assent.  **ОТВЕТ: B**",
         "ru_explain": "Согласно Правилам плавания по внутренним водным путям США (Inland Navigation Rules), при обгоне в узком канале или на фарватере используется система «сигнал-согласие». Один короткий гудок (около 1 секунды) означает намерение обогнать другое судно по его правому борту (то есть обгоняющее судно пройдёт справа от обгоняемого). Два коротких гудка означали бы намерение обогнать по левому борту. Обгоняемое судно должно подтвердить согласие аналогичным сигналом. Это отличается от Международных правил (COLREGS), где используются два продолжительных и один/два коротких гудка.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKE2oBNsKBGK0RKyuBNTuin5GEUiWZAAJ0CgACHuIIRHOaU7elv65DOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKFGoBNsQMLZlT3sKNozlgV4BKzyIdAAJ1CgACHuIIRJTl-UmGDsIlOwQ"
     },
     {
         "num": 437,
@@ -10495,8 +10495,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rules Rule 34(a), one short blast is a signal of **intent**, meaning the vessel intends to leave you on her **port side** (typically a starboard-to-starboard passage). This differs from International Rules, where one short blast indicates an action already being taken (altering course to starboard). The key distinction is that Inland Rules use whistle signals to communicate **intentions** and require agreement before maneuvering, while International Rules signal **actions in progress**.",
         "ru_explain": "Во внутренних водах США (Inland Rules) один короткий звуковой сигнал (свисток) означает намерение судна разойтись левыми бортами — то есть оставить встречное судно по своему левому борту. Это сигнал намерения, а не сигнал действия (в отличие от МППСС-72/COLREGS, где один короткий сигнал означает «Я изменяю свой курс вправо»). При встречном плавании во внутренних водах США суда обмениваются сигналами намерения и согласия: один короткий — расхождение левыми бортами (стандартное расхождение), два коротких — правыми бортами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKFWoBNsZ_P3YWUzZ6R5qftnQLbLNaAAJ2CgACHuIIRIDnU3Ce3R3wOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKFmoBNshd1U8WtJns6OkE9JgYg-b4AAJ3CgACHuIIRP7_pXpvgbsgOwQ"
     },
     {
         "num": 438,
@@ -10519,8 +10519,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 30(i), vessels not engaged in trade (including barges) are exempt from showing anchor lights when in a designated special anchorage area. However, this exemption only applies to vessels less than 20 meters in length. Since this barge exceeds 50 meters, it must comply with standard anchor light requirements under Rule 30(a) and (b), which require two white anchor lights—one forward and one aft—for vessels 50 meters or more in length.",
         "ru_explain": "Согласно МППСС для внутренних вод США, суда длиной менее 20 метров в особых районах якорной стоянки освобождаются от несения якорных огней. Однако баржи длиной более 50 метров должны нести два белых якорных огня: один в носовой части и один в кормовой части судна, независимо от нахождения в особом районе якорной стоянки. Это требование обеспечивает видимость крупногабаритного судна другим участникам движения и предотвращает столкновения.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKF2oBNsqoLmK4cpX96A1hGR8tY_pwAAJ4CgACHuIIRG3TfxhtZRPxOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKGGoBNsvpacmEpQw75L5h2JPSujk3AAJ5CgACHuIIREyVDIM0XGtiOwQ"
     },
     {
         "num": 439,
@@ -10543,8 +10543,8 @@ QUESTIONS = [
         "en_explain": "Rule 6 (Safe Speed) of both the International and Inland Rules requires that every vessel proceed at a safe speed **at all times**, not just during specific conditions like restricted visibility, congested waters, or darkness. While these conditions are factors to consider when determining what constitutes a safe speed, the obligation to maintain safe speed applies continuously regardless of circumstances. This ensures vessels can always take proper and effective action to avoid collision and stop within an appropriate distance.",
         "ru_explain": "Согласно Правилу 6 МППСС-72, каждое судно должно **всегда** следовать безопасной скоростью, позволяющей предпринять надлежащие и эффективные действия для предупреждения столкновения и остановиться на расстоянии, соответствующем обстоятельствам и условиям. Это требование не ограничивается только ситуациями ограниченной видимости, ночным временем или интенсивным движением — оно действует постоянно, при любых условиях плавания.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKGWoBNs0v3hPEmZ3qwxDdzNUK9kLDAAJ6CgACHuIIRPo9-6iefTguOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKGmoBNs8XsShPlvRY7R6FYLfqPMiFAAJ7CgACHuIIRDWt4AJPo-vAOwQ"
     },
     {
         "num": 440,
@@ -10567,8 +10567,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 24(g) of both International and Inland Rules, a vessel or object being towed that is partly submerged and difficult to detect must display diamond shapes where best seen during the day. If the length of the tow exceeds 200 meters, an additional diamond shape is required. At night, such objects must show all-round white lights at or near each end (and additional lights for tows exceeding 200 meters), making option B the correct answer for nighttime identification.",
         "ru_explain": "Частично погружённые буксируемые объекты (такие как затонувшие суда, плавучие конструкции, понтоны) представляют повышенную опасность для судоходства из-за низкой видимости. Согласно МППСС-72 (Правило 24) и ВППСР, для их обозначения применяется комплекс мер: ромбовидный знак (дневной сигнал) устанавливается на буксируемом объекте для визуального предупреждения; круговые (видимые со всех направлений) огни белого цвета размещаются в носовой и кормовой частях объекта для обозначения его габаритной длины в тёмное время суток; буксирующее судно направляет луч прожектора на буксируемый объект для привлечения внимания других судов к опасности. Комбинация всех трёх средств обеспечивает максимальную безопасность при буксировке таких объектов.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKG2oBNtER0UH9VwcdCRHHRtFOD5R5AAJ8CgACHuIIREqObHvYMyjoOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKHGoBNtOoqB1I6WL-PdbXmpBpcviBAAJ9CgACHuIIRM0zzovluAHQOwQ"
     },
     {
         "num": 441,
@@ -10591,8 +10591,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 18 (Responsibilities Between Vessels), a power-driven vessel underway must keep clear of a vessel engaged in fishing. Since vessel \"B\" is fishing, vessel \"A\" (assumed to be power-driven) must give way regardless of the relative bearing or position of vessel \"B.\" The fishing vessel's restricted maneuverability due to her fishing gear takes precedence over crossing or meeting situations.",
         "ru_explain": "Согласно Правилу 18 МППСС-72 («Взаимные обязанности судов»), судно с механическим двигателем на ходу должно уступать дорогу судну, занятому ловом рыбы. Это правило основано на иерархии манёвренности: рыболовное судно ограничено в своей способности маневрировать из-за выставленных орудий лова (сетей, тралов и т.д.). Взаимное расположение судов (слева или справа по борту) в данном случае не имеет значения — определяющим фактором является именно статус судна, занятого ловом рыбы, которому судно с механическим двигателем обязано уступить дорогу независимо от пеленга.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKHWoBNtUyB_s7OIt931E761-wLMTxAAJ-CgACHuIIRETjgMsWUUx7OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKHmoBNtenBYQHghnkFvn5ETBbswJkAAJ_CgACHuIIRJ2_paitmbO0OwQ"
     },
     {
         "num": 442,
@@ -10615,8 +10615,8 @@ QUESTIONS = [
         "en_explain": "A vessel displaying two cones with their apexes together (forming a diamond or \"hourglass\" shape) indicates a vessel engaged in trawling, which means fishing with nets or other apparatus dragged through the water. This day shape requirement is specified in Rule 26(b) of both the International and Inland Rules, which governs signals for vessels engaged in fishing operations.",
         "ru_explain": "Согласно МППСС (Правило 26) и ППВВП, судно, занятое ловом рыбы тралом (буксирующее трал или другое орудие лова), должно выставлять знак, состоящий из двух конусов вершинами вместе, расположенных один над другим. Этот знак называется «ромб» или «двойной конус» и указывает на то, что судно ограничено в маневренности из-за буксируемого за кормой трала. Парусное судно несёт один конус вершиной вниз; суда, занятые дноуглубительными работами или разминированием, используют другие сигнальные фигуры.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKH2oBNtiWGz7fQwNZWKjmGvZSQAZ0AAKACgACHuIIRKoCB0C2yJw8OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKIGoBNtqHCZ9SSVrds-varCmsUw6aAAKBCgACHuIIRCtBPkq8FQ0NOwQ"
     },
     {
         "num": 443,
@@ -10639,8 +10639,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 35(c) of both International and Inland Rules, a vessel being towed must sound her fog signal (one prolonged followed by two short blasts) immediately after the fog signal of the towing vessel. This timing requirement ensures that other vessels can identify that a towing operation is in progress and recognize both the tug and tow as a combined unit in restricted visibility.",
         "ru_explain": "Согласно Правилу 35 МППСС-72 (Международных правил предупреждения столкновений судов), при плавании в условиях ограниченной видимости буксируемое судно должно подавать туманный сигнал (четыре последовательных звука: один продолжительный и три коротких) непосредственно после туманного сигнала буксирующего судна. Такая последовательность позволяет другим судам определить, что в данном районе находится буксирный караван, а также оценить его приблизительную длину и расположение. Это важно для безопасности мореплавания, поскольку буксирный состав имеет значительную протяжённость и ограниченную манёвренность.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKIWoBNtx_sHZoymDvsao8dub_uIspAAKCCgACHuIIRGQJOO1LWgJpOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKImoBNt0lYHlyf1WDhwjXE2cr2b3ZAAKDCgACHuIIRAkMKRoPR2b8OwQ"
     },
     {
         "num": 444,
@@ -10663,8 +10663,8 @@ QUESTIONS = [
         "en_explain": "A vessel displaying only a single white light at night, as shown in Diagram 46, indicates a sailing vessel under 7 meters in length, or alternatively a vessel under oars, which may exhibit this light to prevent collision instead of the standard navigation lights. Under Rule 25(d) of both International and Inland Rules, sailing vessels less than 7 meters in length shall, if practicable, display sidelights and sternlight, but if not, shall have ready a white light to show in sufficient time to prevent collision.",
         "ru_explain": "На схеме 46 показан один белый круговой огонь. Согласно Правилу 25 МППСС-72, парусное судно длиной менее 7 метров, если это практически возможно, должно нести бортовые и кормовой огни, но если это невозможно — должно иметь наготове электрический фонарь или зажжённый фонарь с белым светом, который должен заблаговременно выставляться для предупреждения столкновения. Также парусное судно на ходу может нести топовый огонь, бортовые огни и кормовой огонь, либо комбинированный фонарь на топе мачты. Один белый огонь в данном контексте указывает на малое парусное судно, использующее упрощённую схему огней.",
         "image": "AgACAgEAAxkDAAIGbWoAAd2ywVi4tdy_tTNAC0Ll_DojTgACvg5rGx7iCETyE0cdcVg9lwEAAwIAA3gAAzsE",
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKI2oBNt_4gcnjtiBKKgOmB2sF_FgOAAKECgACHuIIREEPPhu7fuNIOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKJGoBNuHRP-15gd50h9kGFpVTA27BAAKFCgACHuIIRESbjQ37d7JrOwQ"
     },
     {
         "num": 445,
@@ -10687,8 +10687,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 23(c) of both International and Inland Rules (COLREGS Rule 23(c) / 33 CFR Part 83.23(c)), a power-driven vessel of less than 12 meters in length may exhibit an all-round white light and sidelights instead of the masthead light, sternlight, and sidelights required for larger vessels. ANSWER: B",
         "ru_explain": "Согласно Правилу 23(c) МППСС-72 и 33 CFR Part 83.23(c) (Правила для внутренних вод США): моторное судно длиной менее 12 метров может нести круговой белый огонь и бортовые огни вместо топового огня, кормового огня и бортовых огней, предусмотренных для судов большего размера. ОТВЕТ: B",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKJWoBNuOfxdRuDKQLMUJNmhWVwoUJAAKGCgACHuIIRGBZKP8N3T91OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKJmoBNuTu5pyJ-Rhl8Y-UmhYEGw8lAAKHCgACHuIIRK6-lC95cUWzOwQ"
     },
     {
         "num": 446,
@@ -10711,8 +10711,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 34(g), a power-driven vessel must sound one prolonged blast when leaving a dock or berth. This signal serves as a warning to other vessels in the vicinity that the vessel is about to get underway and enter the navigable channel. A prolonged blast is defined as a blast of four to six seconds duration.",
         "ru_explain": "Согласно Правилам плавания во внутренних водах США (Inland Rules), моторное судно, отходящее от причала или покидающее место стоянки, обязано подать один продолжительный гудок (длительностью 4-6 секунд). Этот сигнал служит предупреждением для других судов о начале маневрирования. Один короткий гудок означает намерение расходиться левыми бортами, три коротких гудка — работу машины на задний ход, а три продолжительных гудка не предусмотрены стандартными правилами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKJ2oBNuaoHvEg7izncq59h2tipOxtAAKICgACHuIIRLpo8T7bO9DUOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKKGoBNugB4Ty8zbwgN7fFg4yRtGVgAAKJCgACHuIIRE3gTQKLQLs-OwQ"
     },
     {
         "num": 447,
@@ -10735,8 +10735,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 17(a)(ii) and (b) of both International and Inland Rules, the stand-on vessel must maintain course and speed initially, but when it becomes apparent that the give-way vessel is not taking appropriate action to avoid collision, the stand-on vessel may take action. The stand-on vessel is required to take such action as will best aid to avoid collision when collision cannot be avoided by the give-way vessel's action alone.",
         "ru_explain": "Согласно Правилу 17 МППСС-72, судно, обязанное сохранять курс и скорость (stand-on vessel), должно сохранять свои параметры движения, чтобы судно, уступающее дорогу (give-way vessel), могло предпринять надлежащие действия для расхождения. Однако когда становится очевидным, что судно, обязанное уступить дорогу, не предпринимает надлежащих действий, и столкновение невозможно предотвратить манёвром только этого судна, судно, сохраняющее курс и скорость, обязано предпринять действия для избежания столкновения. Это называется «маневр последнего момента».",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKKWoBNuoXdp_tVASc_gyRl61TurLLAAKKCgACHuIIRDz5yrLbnFZ_OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKKmoBNuvYUHVaP0K51bQm_06hmF8vAAKLCgACHuIIRE8c_A-FVE7XOwQ"
     },
     {
         "num": 448,
@@ -10759,8 +10759,8 @@ QUESTIONS = [
         "en_explain": "Under International Rules (COLREGS Rule 34(a)), a vessel getting underway from a berth alongside a quay must sound one prolonged blast, which is defined internationally as a blast of 4 to 6 seconds duration. In COLREGS terminology, this prolonged blast is referred to as \"a long blast,\" distinguishing it from the US Inland Rules terminology where signals are specifically called \"prolonged\" blasts.",
         "ru_explain": "Согласно Правилу 34(d) МППСС-72 (Международные правила предупреждения столкновений судов), когда судно отходит от причала или покидает место стоянки, оно должно подать один длинный гудок (long blast). Продолжительность длинного гудка составляет от 4 до 6 секунд. Этот сигнал предупреждает другие суда о том, что судно начинает движение и может представлять потенциальную опасность в акватории порта. Важно различать: «prolonged blast» (продолжительный гудок, 4-6 сек) и «long blast» (длинный гудок) — в данном контексте МППСС использует термин «long blast».",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKK2oBNu3cFrD5lGUulBfyhOeVgcsZAAKMCgACHuIIREF9-ICU-oKLOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKLGoBNu_u_Oyz2TTJ0whlxnp8UTlFAAKNCgACHuIIRNIwgw_86960OwQ"
     },
     {
         "num": 449,
@@ -10783,8 +10783,8 @@ QUESTIONS = [
         "en_explain": "I cannot provide a complete explanation for this question because the critical information is missing. The question references \"DIAGRAM 6\" which is not shown, and all four answer choices (A through D) as well as the correct answer are listed as not visible (\"не видны на скриншоте\" / \"не виден\").  To properly answer this question, I would need to see the day signal diagram and the answer options. Day signals under Rule 27 (vessels not under command or restricted in ability to maneuver), Rule 28 (vessels constrained by draft), Rule 30 (anchored vessels and vessels aground), or other applicable COLREGS/Inland Rules could apply depending on what shapes are displayed.",
         "ru_explain": "Без изображения схемы 6 невозможно определить точный ответ. Дневные сигналы (знаки) — это фигуры (шары, конусы, цилиндры, ромбы), которые суда обязаны нести в дневное время для обозначения своего состояния или рода деятельности. Например: • **Один шар** — судно на якоре • **Два шара по вертикали** — судно, не управляющееся с помощью руля • **Три шара по вертикали** — судно на мели • **Шар-ромб-шар** — судно, ограниченное в возможности маневрировать • **Конус вершиной вниз** — парусное судно, идущее под мотором • **Два конуса вершинами вместе** — судно, занятое ловом рыбы  Для точного перевода вариантов ответов необходимо предоставить изображение схемы 6.",
         "image": "AgACAgEAAxkDAAIGaGoAAd2peJNapUsw2oGRTHy6pA1FRQACuQ5rGx7iCETG_MwIsTEYhgEAAwIAA3kAAzsE",
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKLWoBNvE9bg72w1UfZKIE7e9QIVQRAAKOCgACHuIIRJZ8-yOEr-37OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKLmoBNvK2nwiLiyafFhipcSrGvZBuAAKPCgACHuIIRJM6-NIgkroBOwQ"
     },
     {
         "num": 450,
@@ -10807,8 +10807,8 @@ QUESTIONS = [
         "en_explain": "Two prolonged blasts is the fog signal for a power-driven vessel underway but stopped and making no way through the water (Rule 35(b)). Since this vessel is not moving, it presents no immediate collision risk, and you should maintain your course and speed while continuing to monitor the situation. Under Rule 19(e), course alterations should be avoided toward a vessel abaft the beam unless overtaking, so holding course and speed is the proper action.",
         "ru_explain": "Два продолжительных звука — это туманный сигнал судна с механическим двигателем, которое на ходу, но остановилось и не имеет хода относительно воды (Правило 35(b)). Поскольку это судно не движется, оно не представляет непосредственной угрозы столкновения. Согласно Правилу 19 (Плавание при ограниченной видимости), судно должно следовать с безопасной скоростью и быть готовым к маневрированию, однако изменять курс следует только при обнаружении реальной опасности столкновения. Сигнал с раковины (позади траверза) указывает, что судно находится позади вас, поэтому правильное действие — сохранять курс и скорость, продолжая наблюдение.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKL2oBNvTHqhvRGXCx6zngzesMtxNgAAKQCgACHuIIRL336ZkeZUxkOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKMGoBNvZBykojm4U0bp0HiupquB2_AAKRCgACHuIIRGkyvKIHjYc7OwQ"
     },
     {
         "num": 451,
@@ -10831,8 +10831,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 9(e)(i), when overtaking another vessel in a narrow channel, the overtaking vessel must indicate her intention by sounding the appropriate signal and cannot overtake until the vessel being overtaken sounds a signal of agreement. ОТВЕТ: A is correct because Inland Rule 9(e)(i) specifically allows the overtaking vessel to reach agreement with the other vessel by radiotelephone as an alternative to whistle signals when arranging passage in a narrow channel.",
         "ru_explain": "Согласно Правилам плавания во внутренних водах США, при обгоне в узком канале или фарватере обгоняющее судно должно получить согласие обгоняемого судна. Правило 9(e)(i) Inland Rules предусматривает, что обгоняющее судно должно подать соответствующий звуковой сигнал о своём намерении (два продолжительных гудка и один короткий — для обгона с оставлением обгоняемого по правому борту). Однако наиболее безопасным и рекомендуемым способом является предварительная связь по УКВ-радиотелефону (обычно канал 13) для согласования манёвра обгона. Это позволяет чётко договориться о порядке расхождения и избежать недопонимания. Варианты B, C и D неверны: обгон без сигналов запрещён, четыре коротких гудка — сигнал сомнения/опасности, а один короткий гудок означает изменение курса вправо, а не намерение обгона.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKMWoBNvgzuvXORt3kmvn53YNlnOrUAAKSCgACHuIIRB6j5T0DQHyWOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKMmoBNvpsS-8VC26BeQ6paAaFryQyAAKTCgACHuIIRFfvHdXil8O3OwQ"
     },
     {
         "num": 452,
@@ -10855,8 +10855,8 @@ QUESTIONS = [
         "en_explain": "Under COLREGS Rule 9(e)(i), a vessel intending to overtake another in a narrow channel or fairway must indicate her intention by sounding the appropriate signal (two prolonged blasts followed by one or two short blasts), and the vessel being overtaken must respond with an agreement signal if in agreement. This \"signal of intent and agreement\" protocol is unique to overtaking situations in International Rules and differs from the meeting and crossing situations, which use different signaling requirements.",
         "ru_explain": "Согласно Правилу 34(c) МППСС-72, в международных водах только при обгоне в узком проходе или на фарватере обгоняющее судно обязано подать сигнал о намерении, который требует ответа (согласия или предупреждения) от обгоняемого судна. Сигналы: два продолжительных и один короткий (обгон по левому борту обгоняемого) или два продолжительных и два коротких (обгон по правому борту). Обгоняемое судно, если согласно, отвечает сигналом: продолжительный, короткий, продолжительный, короткий. В ситуациях встречи на противоположных курсах или пересечения курсов по МППСС сигналы о намерении маневра не требуют обязательного ответа — они лишь информируют о производимом манёвре.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKM2oBNvwD4Nb677B5YHXegIWqKJPaAAKUCgACHuIIRKC0X4Q6jVPdOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKNGoBNv1KuD-uQI_W7rt6Nj6zF7acAAKVCgACHuIIRIjHzGhsy8X0OwQ"
     },
     {
         "num": 453,
@@ -10879,8 +10879,8 @@ QUESTIONS = [
         "en_explain": "Under International Rule 34(a), the one short blast signal indicating \"I am altering my course to starboard\" is a maneuvering signal sounded only by power-driven vessels underway. This differs from the intent signals in option B, which under Inland Rules can be used by any vessel in an overtaking situation. The doubt signal (option C) may be sounded by any vessel, not exclusively power-driven vessels.",
         "ru_explain": "Согласно МППСС-72 (Международные правила предупреждения столкновений судов), сигналы маневроуказания (один короткий гудок — «Я изменяю курс вправо», два коротких — «влево») подаются только судами с механическим двигателем при расхождении в пределах видимости. Сигналы обгона (варианты B) используются на внутренних водных путях (ППВВП США). Сигнал сомнения (не менее пяти коротких гудков) и сигнал при подходе к изгибу фарватера могут подаваться любыми судами, не только моторными.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKNWoBNv-c64fSMUSC6Y8RcypvZrpEAAKWCgACHuIIRDDx8IEY3Pz-OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKNmoBNwH382-RRQq-2H73n9YhLM-jAAKXCgACHuIIREK5nktz8iyPOwQ"
     },
     {
         "num": 454,
@@ -10903,8 +10903,8 @@ QUESTIONS = [
         "en_explain": "Under International Rule 9(e)(i), when a vessel intends to overtake another vessel in a narrow channel or fairway, she must indicate her intention by sounding the appropriate signal—two prolonged blasts followed by one short blast means \"I intend to overtake on your starboard side.\" This signal is required specifically in narrow channel situations where the overtaken vessel may need to take action to permit safe passing.",
         "ru_explain": "Согласно Правилу 34(c) МППСС-72, в узком канале или на фарватере, когда обгон возможен только при условии, что обгоняемое судно предпримет действия для обеспечения безопасного прохода, обгоняющее судно должно заявить о своём намерении звуковым сигналом. Два продолжительных и один короткий гудок (— — •) означают: «Я намереваюсь обогнать вас по левому борту». Соответственно, два продолжительных и два коротких гудка означают намерение обгона по правому борту. Обгоняемое судно, если согласно, отвечает сигналом: продолжительный, короткий, продолжительный, короткий (— • — •). Данные сигналы применяются именно в узкостях, где манёвренное пространство ограничено и требуется согласование действий между судами.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKN2oBNwOdi5LVX3vwDwFBgw0FULNXAAKYCgACHuIIRPVNSjaES8_EOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKOGoBNwXruBZdAUNLHetveIRCuetRAAKZCgACHuIIRJIJ7CJ97bSzOwQ"
     },
     {
         "num": 455,
@@ -10927,8 +10927,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 34(c), when overtaking another vessel in a narrow channel and intending to pass on the overtaken vessel's port side, you must sound two prolonged blasts followed by one short blast. This signal indicates your intention to overtake and requests the other vessel's agreement, which they would indicate by sounding the same signal if in agreement.",
         "ru_explain": "Согласно Правилам плавания во внутренних водах США (Inland Rules), при обгоне в узком канале или на фарватере обгоняющее судно должно обозначить свои намерения звуковым сигналом. Два коротких гудка означают намерение обогнать с левого борта (по-английски \"I intend to overtake you on your port side\"). Один короткий гудок подаётся при намерении обогнать с правого борта. Это отличается от МППСС-72 (международных правил), где используются сигналы с продолжительными и короткими гудками (варианты C и D). Обгоняемое судно, если согласно с манёвром, отвечает таким же сигналом — двумя короткими гудками.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKOWoBNweDMP2pNYuxI8KD81IBZWVuAAKaCgACHuIIRPomgOf_CCsSOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKOmoBNwgHdq9NZATm1gQY3BwE0l9aAAKbCgACHuIIRGWSKFegjFPDOwQ"
     },
     {
         "num": 456,
@@ -10951,8 +10951,8 @@ QUESTIONS = [
         "en_explain": "Under International Rules (COLREGS), whistle signals are used to indicate actions being taken, not intentions. Since vessel \"A\" is overtaking vessel \"B\" and will pass without changing course, no whistle signal is required because no course alteration is being made. Rule 34(a) requires sound signals only when vessels are maneuvering by altering course, so if the overtaking vessel maintains its heading, no signal is necessary.",
         "ru_explain": "Согласно МППСС-72 (Международные правила предупреждения столкновений судов), в открытом море при обгоне судно-обгоняющее НЕ ОБЯЗАНО подавать звуковые сигналы манёвроуказания, если оно проходит без изменения курса. Сигналы манёвроуказания (один короткий — «Я изменяю курс вправо», два коротких — «Я изменяю курс влево») подаются только при фактическом изменении курса. Это отличается от Внутренних правил США (Inland Rules), где требуется обмен сигналами о намерениях между судами. В данной ситуации судно \"А\" следует прежним курсом, поэтому звуковые сигналы не требуются.",
         "image": "AgACAgEAAxkDAAIGamoAAd2sNodFIbvM33YxV6sflOwCWAACuw5rGx7iCEQgMJHpTviHfwEAAwIAA3gAAzsE",
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKO2oBNwoNR_L1IzNz-K9iKL0AAScFdgACnAoAAh7iCERLqIt2n0cixDsE",
+        "audio_a": "CQACAgEAAxkDAAIKPGoBNwyWlIv6YqKOoii4fiHeRtFLAAKdCgACHuIIRBHasSSGlp6bOwQ"
     },
     {
         "num": 457,
@@ -10975,8 +10975,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rules (Rule 34(a)), one short blast means \"I intend to leave you on my port side\" — in other words, \"I intend to pass port-to-port.\" This is a statement of intent requiring agreement from the other vessel, not a rudder action signal as in International Rules. The correct answer indicates vessel \"A\" is proposing a port-to-port passage, which is the normal meeting situation for two power-driven vessels.",
         "ru_explain": "Согласно Правилам плавания по внутренним водам США (Inland Rules), при встречном расхождении паровых (механических) судов используются сигналы намерения, а не сигналы действия. Один короткий звуковой сигнал (длительностью около 1 секунды) означает намерение разойтись правыми бортами — то есть \"Я намерен разойтись вашим правым бортом\" (пройти так, чтобы другое судно осталось справа). Это отличается от международных правил (COLREGS), где один короткий гудок означает \"Я изменяю курс вправо\". В данном случае вариант D правильный, так как вопрос относится именно к внутренним водам (Inland Only), где сигналы обозначают намерение, а не фактическое действие по изменению курса.",
         "image": "AgACAgEAAxkDAAIGbGoAAd2w1ETb7aan6pfvSkGg4ILw0gACvQ5rGx7iCETAzLZw7AEYSQEAAwIAA3gAAzsE",
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKPWoBNw4ehsqcJDbAQcnnHtkF1FXWAAKeCgACHuIIRNlEfL_B9gGhOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKPmoBNxCUkJzBiNnLUXtvWPqf95sBAAKfCgACHuIIROfDjajGQuHlOwQ"
     },
     {
         "num": 458,
@@ -10999,8 +10999,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 34(e), when approaching a bend or area where vessels may be obscured, a vessel must sound one prolonged blast as a warning signal. When this signal is answered by a vessel around the bend, both vessels are now aware of each other's presence, but they must still exchange the appropriate passing signals (one or two short blasts) required by Rule 34(a) once they sight each other visually to indicate their intended passing arrangement.",
         "ru_explain": "Согласно Правилам плавания по внутренним водным путям США (Inland Rules), при подходе к изгибу или участку фарватера, где другие суда могут быть не видны из-за препятствия, судно должно подать один продолжительный звуковой сигнал (4-6 секунд). Если судно по другую сторону изгиба отвечает таким же сигналом, это лишь предупреждение о присутствии. Однако этот обмен сигналами НЕ заменяет стандартные сигналы маневроуказания при расхождении. Когда суда визуально обнаружат друг друга, они обязаны обменяться сигналами расхождения (один короткий — расхождение левыми бортами, два коротких — правыми бортами) для согласования манёвра. Поэтому правильный ответ — A.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKP2oBNxKhEC0oTHNQDT3Oya4H8YiyAAKgCgACHuIIRHBx-amOby6jOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKQGoBNxQu_9u4QWqx_E10HWWHTGrNAAKhCgACHuIIRP8kG8GdWYu0OwQ"
     },
     {
         "num": 459,
@@ -11023,8 +11023,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 24(e) of both COLREGS and US Inland Rules, a vessel or object being towed astern must display sidelights (red and green) and a sternlight. These lights allow other mariners to determine the towed vessel's heading and recognize it as a separate vessel at the end of the towline.",
         "ru_explain": "Согласно Правилу 24 МППСС-72 (Международные правила предупреждения столкновений судов в море), буксируемое судно или объект при буксировке за кормой в ночное время обязано нести: - **Бортовые огни** (зелёный по правому борту, красный по левому) — для обозначения курса и определения ракурса судна другими участниками движения; - **Кормовой огонь** (белый) — для обозначения кормовой части судна.  Круговой белый огонь (вариант D) выставляется только на малозаметных полупогружённых буксируемых объектах. Вариант A неверен, так как отсутствует кормовой огонь. Вариант B неверен, поскольку без бортовых огней невозможно определить направление движения баржи.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKQWoBNxb58Bw_TJ9k9nQpPGBzFeqbAAKiCgACHuIIRMltGt-dK9YqOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKQmoBNxc3aWm1G_lIlSaMYKEBwAABjQACowoAAh7iCERqxHnNQwH6wTsE"
     },
     {
         "num": 460,
@@ -11047,8 +11047,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 9(a)(ii), on the Western Rivers, a vessel crossing a river must keep out of the way of a power-driven vessel ascending or descending the river. This special provision recognizes the difficulty larger vessels have maneuvering against or with the current in the confined waters of the Western Rivers. ОТВЕТ B is correct because the crossing vessel must yield to the power-driven vessel ascending the river, regardless of whether the other vessel is under sail or power.",
         "ru_explain": "На Западных реках США (система рек Миссисипи, Огайо и их притоков) действуют особые правила расхождения. Согласно Правилу 9(a)(ii) Inland Rules, судно, пересекающее реку, обязано уступать дорогу судам с механическим двигателем, идущим вверх или вниз по течению. Это связано с тем, что течение существенно влияет на манёвренность судов, и суда, следующие по фарватеру, имеют ограниченные возможности для уклонения. Кроме того, согласно общим правилам, любое судно обязано уступать дорогу судну, ограниченному в возможности маневрировать, и парусным судам (при отсутствии особых обстоятельств). Поэтому правильный ответ — D (любому из перечисленных).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKQ2oBNxlI9xP0oXzbIe7O1XeLuNEBAAKkCgACHuIIRCOB6L7CMl8pOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKRGoBNxslx3g4HMHS8fWkV5qX4J9HAAKlCgACHuIIRIOn24XDQxJhOwQ"
     },
     {
         "num": 461,
@@ -11071,8 +11071,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 26(c)(i) of both the International and Inland Rules, a vessel engaged in fishing with gear extending more than 150 meters horizontally from the vessel must display an all-round white light in the direction of the gear. This white light alerts other vessels to the presence and direction of extended fishing apparatus that could pose a navigation hazard.",
         "ru_explain": "Согласно Правилу 26 МППСС-72 (Международные правила предупреждения столкновений судов в море), судно, занятое ловом рыбы, у которого выметанные снасти простираются в море по горизонтали более чем на 150 метров, должно выставлять в направлении этих снастей один белый круговой огонь. Этот огонь предупреждает другие суда о наличии орудий лова (тралов, сетей, ярусов), представляющих опасность для навигации.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKRWoBNx1tr7L61u3vT3_4liTNqsGFAAKmCgACHuIIRMGFyiNA8F43OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKRmoBNx7QgblTt6CFidDbYrEyhOoCAAKnCgACHuIIRGAsZChbs9XMOwQ"
     },
     {
         "num": 462,
@@ -11095,8 +11095,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 24(a), a power-driven vessel towing astern must exhibit three masthead lights in a vertical line when the tow (measured from the stern of the towing vessel to the after end of the tow) exceeds 200 meters. Since this vessel has a 210-meter tow, she must show three masthead lights forward; the after masthead light required by Rule 23(a) for vessels over 50 meters is optional for towing vessels, making option C acceptable as she \"may exhibit\" this configuration.",
         "ru_explain": "Согласно Правилу 24 МППСС-72, судно, занятое буксировкой, должно нести топовые огни, расположенные по вертикальной линии: - **Два топовых огня** — если длина буксира (от кормы буксирующего судна до кормы буксируемого объекта) составляет **200 метров или менее** - **Три топовых огня** — если длина буксира **превышает 200 метров**  В данном случае длина буксирной линии составляет 210 метров (более 200 м), поэтому требуются три топовых огня.  Для судов **длиной менее 50 метров** (в нашем случае 45 м) не требуется нести кормовой топовый огонь в дополнение к носовым. Поэтому судно несёт **два топовых огня в носовой части** (вместо трёх, как на судах 50+ метров) **без кормового топового огня**.  Ответ **C** верен, так как описывает допустимую конфигурацию огней для судна менее 50 метров, занятого буксировкой с длиной буксира более 200 метров.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKR2oBNyA3XAcJ8z1P8XHgBisYab9YAAKoCgACHuIIRIBFGEn88Q-COwQ",
+        "audio_a": "CQACAgEAAxkDAAIKSGoBNyK5SqVjuxigyYAx8WFAdJliAAKpCgACHuIIRPcaNomgUEkmOwQ"
     },
     {
         "num": 463,
@@ -11119,8 +11119,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 26 (Fishing Vessels), a vessel engaged in fishing with nets, lines, trawls, or other apparatus that restricts maneuverability must display two cones with their bases together (forming a \"diamond\" shape) as a day signal. This shape indicates to other vessels that the fishing vessel has limited ability to maneuver due to its fishing operations and should be given appropriate consideration under the navigation rules.",
         "ru_explain": "Согласно Правилу 26 МППСС-72, судно, занятое ловом рыбы (кроме тралящих), в дневное время обязано выставлять две конусообразные фигуры, соединённые основаниями (форма «песочных часов» или «бочонка»). Этот знак указывает другим судам, что данное судно ограничено в манёвренности из-за выставленных орудий лова. Два конуса вершинами вместе (вариант D) — это знак судна, занятого тралением. Один шар (вариант A) — знак судна на якоре. Конус вершиной вниз (вариант C) — знак парусного судна, идущего под мотором.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKSWoBNyQBB9JQEGRsZLqhVNv1DibdAAKqCgACHuIIRPP01kOISHSjOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKSmoBNyWltKwv0Ng_455j8vL5XQsCAAKrCgACHuIIRG8Jn5Ga2zD1OwQ"
     },
     {
         "num": 464,
@@ -11143,8 +11143,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 35(c) of both International and Inland Rules, a vessel not under command, restricted in her ability to maneuver, constrained by her draft, sailing, engaged in fishing, or towing/pushing another vessel sounds one prolonged blast followed by two short blasts in restricted visibility. While a vessel being towed (manned) would sound a different signal (one prolonged and three short blasts), and a vessel aground sounds three separate bells, only \"not under command\" from the given options correctly matches this specific fog signal.",
         "ru_explain": "Согласно Правилу 35 МППСС-72, звуковой сигнал «один продолжительный и два коротких гудка» (— • •) подаётся в условиях ограниченной видимости следующими судами: лишёнными возможности управляться, ограниченными в возможности маневрировать, стеснёнными своей осадкой, парусными, занятыми ловом рыбы, а также судами, буксирующими или толкающими другое судно. Однако буксируемое судно подаёт сигнал «один продолжительный и три коротких гудка» (— • • •), а судно на мели — три отдельных удара в колокол, быстрый звон и снова три удара. Таким образом, из предложенных вариантов только судно, лишённое возможности управляться, подаёт сигнал (— • •).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKS2oBNyj3U6VR6yJXfhlFU6BjioicAAKsCgACHuIIRJc1oqDvh0idOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKTGoBNyk8ro2XK0-0q-iFkFnDDEoyAAKtCgACHuIIRNK4zl1juqdNOwQ"
     },
     {
         "num": 465,
@@ -11167,8 +11167,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 3(a) of both the International and Inland Rules, the term \"vessel\" is broadly defined to include every description of water craft, including nondisplacement craft, WIG craft, and seaplanes, used or capable of being used as a means of transportation on water. This comprehensive definition ensures that sailing ships, hovercraft, hydrofoils, and seaplanes operating on the water surface are all subject to the Navigation Rules. Therefore, all three options listed fall within the legal definition of \"vessel.\"",
         "ru_explain": "Согласно Правилу 3 МППСС-72, термин «судно» означает все виды плавучих средств, включая суда без водоизмещения (nondisplacement craft — глиссеры, суда на воздушной подушке, на подводных крыльях), а также гидросамолёты, используемые или способные быть использованными в качестве средства передвижения по воде. Это широкое определение обеспечивает применение МППСС ко всем объектам, которые могут встретиться на воде и создать навигационную опасность.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKTWoBNythH23oC2lI-j5JoJC851GEAAKuCgACHuIIRAWiDlAcLwNuOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKTmoBNy0ak9d1Xb7pi3hReKYPCxM2AAKvCgACHuIIRFN82mD54ZsPOwQ"
     },
     {
         "num": 466,
@@ -11191,8 +11191,8 @@ QUESTIONS = [
         "en_explain": "Under Inland Rule 9(e)(1) and Rule 34(c), when vessels reach a bridge-to-bridge radiotelephone agreement that departs from the normal Rules, they must still sound the appropriate whistle signal. Since you agreed to pass astern of the stand-on vessel (altering your course to starboard), you MUST sound one short blast to indicate your maneuver, as required by Inland Rule 34(a). ОТВЕТ: A",
         "ru_explain": "Согласно Правилам плавания по внутренним водным путям США, когда суда достигли соглашения о манёвре расхождения посредством радиотелефонной связи (УКВ радиосвязь), они освобождаются от обязанности подавать звуковые сигналы манёвроуказания (свистки). Радиотелефонное соглашение заменяет обмен звуковыми сигналами. Поэтому после достижения договорённости по радио не требуется подавать ни один короткий гудок (обычно означающий расхождение левыми бортами), ни два коротких гудка (расхождение правыми бортами). Изменение курса вправо также не является обязательным требованием в данной ситуации, поскольку манёвр уже согласован по радио. Правильный ответ — D: никаких дополнительных действий по подаче звуковых сигналов не требуется.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKT2oBNy8jn7XFis-r615gob_EoL8iAAKwCgACHuIIRAH0K0ybb-xAOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKUGoBNzCWS2l6jRAcq23_XOXfQwcPAAKxCgACHuIIREgxHdrPuJ72OwQ"
     },
     {
         "num": 467,
@@ -11215,8 +11215,8 @@ QUESTIONS = [
         "en_explain": "Under both International and Inland Rules (Rule 25(e)), a sailing vessel proceeding under sail while also being propelled by machinery is considered a power-driven vessel and must display a conical shape, apex downward (black cone), in the forward part of the vessel where it can best be seen during daylight hours. This day shape signals to other vessels that although sails are set, the vessel is operating under engine power and must follow the navigation rules applicable to power-driven vessels.",
         "ru_explain": "Согласно Правилу 25 МППСС-72 (Международные правила предупреждения столкновений судов), парусное судно, идущее под парусами и одновременно использующее механический двигатель, должно выставлять на носовой части судна, где оно лучше всего видно, знак в форме конуса вершиной вниз. Этот чёрный конус информирует другие суда о том, что данное судно фактически является судном с механическим двигателем и должно уступать дорогу чисто парусным судам. Размер конуса должен быть не менее 0,6 м в диаметре основания и 0,6 м по высоте.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKUWoBNzJnUmb0aP1EYwABjYPNGLd19gACsgoAAh7iCETvnPaNXbkgyDsE",
+        "audio_a": "CQACAgEAAxkDAAIKUmoBNzSbUwk7j-4hKjDDreEr7XqRAAKzCgACHuIIREsZ1-txEG4QOwQ"
     },
     {
         "num": 468,
@@ -11239,8 +11239,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 34(b) of the International Rules (COLREGS), a vessel may supplement whistle signals with a light signal that flashes while the sound signal is being made. Rule 34(b) specifically requires this light to be an all-round white light, visible at a minimum range of 5 miles.",
         "ru_explain": "Согласно Правилу 34 МППСС-72 (Международные правила предупреждения столкновений судов в море), судно может дополнять звуковые сигналы манёвроуказания световыми сигналами. Этот огонь должен быть белым, видимым на расстоянии не менее 5 миль, и работать синхронно со звуковым сигналом. Световой сигнал не заменяет звуковой, а лишь дублирует его для лучшей заметности, и может использоваться как днём, так и ночью — ограничений по времени суток нет.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKU2oBNzaAKjXEw6Px7ve2gLGT7u78AAK0CgACHuIIRIxWb9UerdsmOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKVGoBNzglEsutRbreudnjzG9auyn4AAK1CgACHuIIRCZDzDIsi2EAATsE"
     },
     {
         "num": 469,
@@ -11263,8 +11263,8 @@ QUESTIONS = [
         "en_explain": "Under Rule 14 (Head-on Situation), when two power-driven vessels are meeting on reciprocal or nearly reciprocal courses, each vessel shall alter her course to starboard so that each shall pass on the port side of the other. This applies regardless of whether one vessel is engaged in towing operations, as the towing vessel remains a power-driven vessel subject to the steering and sailing rules. Both Vessel A (the towing vessel) and Vessel B must take action to ensure a safe port-to-port passage.",
         "ru_explain": "Согласно Правилу 14 МППСС-72 (ситуация сближения судов, идущих прямо друг на друга), когда два судна с механическими двигателями сближаются на противоположных или почти противоположных курсах так, что возникает опасность столкновения, каждое из них должно изменить свой курс вправо, чтобы разойтись левыми бортами. Тот факт, что судно \"A\" осуществляет буксировку, не изменяет данного правила — оба судна являются судами с механическими двигателями и обязаны выполнять маневр расхождения влево по борту (левыми бортами), изменяя курс вправо.",
         "image": "AgACAgEAAxkDAAIGaWoAAd2rh6DwHXSQGyM3xCeKONsQaAACug5rGx7iCERmcGGBb0stmgEAAwIAA3gAAzsE",
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKVWoBNzoLGtzepr-GfYj9bSWbg6JSAAK2CgACHuIIRAWFeKOj3i7xOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKVmoBNzs1aU3X--YNIsvztdoIyqgJAAK3CgACHuIIRDFAbbny6QUoOwQ"
     },
     {
         "num": 470,
@@ -11287,8 +11287,8 @@ QUESTIONS = [
         "en_explain": "Under International Rule 34, vessels in sight of one another use specific whistle signals: one short blast (altering course to starboard), two short blasts (altering course to port), three short blasts (operating astern propulsion), and five or more short blasts (danger/doubt signal). **Four short whistle blasts (ОТВЕТ B)** is not a recognized signal under COLREGS Rule 34; it has no defined meaning in the International Rules for vessels in sight of one another.",
         "ru_explain": "Согласно МППСС-72 (Правило 34), когда суда находятся на виду друг у друга: - **Один короткий гудок** — \"Я изменяю свой курс вправо\" - **Два коротких гудка** — \"Я изменяю свой курс влево\" - **Три коротких гудка** — \"Мои движители работают на задний ход\" - **Пять коротких и частых гудков** (или проблесков) — сигнал предупреждения/сомнения  Сигнал из **одного продолжительного, одного короткого, одного продолжительного и одного короткого** (● — ● —) означает \"Я намереваюсь обогнать вас по правому/левому борту\" при обгоне в узкостях.  **Четыре коротких гудка** не предусмотрены МППСС-72 как стандартный сигнал маневроуказания, поэтому ответ **B** является исключением.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKV2oBNz28oFaX_oIQx8wpOTt6V3QSAAK4CgACHuIIRLB4JYwwQ5B-OwQ",
+        "audio_a": "CQACAgEAAxkDAAIKWGoBNz-bbvh_nCDPgYLezwABba8tywACuQoAAh7iCERc-6lcLNjSjDsE"
     },
     {
         "num": 471,
@@ -11311,8 +11311,8 @@ QUESTIONS = [
         "en_explain": "The \"special flashing light\" is a yellow light required on certain vessels operating on US Inland waters, specifically for towing vessels pushing ahead or with a composite unit. Under Inland Rule 21(d), this light must show through an arc of not less than 180° and not more than 225°, flashing at a rate of 50-70 flashes per minute. The other options are incorrect: it is required (not optional) below Baton Rouge Bridge, and the flash rate is 50-70, not 120 flashes per minute.",
         "ru_explain": "Специальный проблесковый огонь (special flashing light) — это жёлтый огонь, используемый на составах толкаемых барж на внутренних водных путях США. Согласно Правилам плавания по внутренним водам (Inland Rules), этот огонь должен светить в секторе (дуге видимости) не менее 180° — от направления прямо по носу до 90° на каждый борт. Частота проблесков составляет 50-70 проблесков в минуту (а не 120). Огонь является обязательным для толкаемых составов, следующих впереди толкача, на всей акватории внутренних вод, а не только в определённых районах. Таким образом, верным является только утверждение B о секторе освещения не менее 180°.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKWWoBN0GW47T8wJvBfnGeHnj9_27VAAK6CgACHuIIREZ_wR1dGyqEOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKWmoBN0PwiWsPV0mrcnAa_Yq1lyeJAAK7CgACHuIIRG8sC_N_SdMQOwQ"
     },
     {
         "num": 472,
@@ -11335,8 +11335,8 @@ QUESTIONS = [
         "en_explain": "Under International Rule 35(c), a vessel not under command, restricted in ability to maneuver, constrained by draft, sailing, engaged in fishing, or towing/pushing gives one prolonged followed by two short blasts in restricted visibility. A vessel **being towed** (the towed vessel, not the towing vessel) sounds a different signal—one prolonged followed by three short blasts per Rule 35(e). Therefore, one prolonged and two short blasts would NOT indicate a vessel being towed.",
         "ru_explain": "Согласно Правилу 35 МППСС, сигнал «один продолжительный и два коротких звука» подаётся судами, которые ограничены в возможности маневрировать, лишены возможности управляться, стеснены своей осадкой, заняты ловом рыбы, буксируют или толкают другое судно, а также занятые тралением мин. Однако **буксируемое судно** (если оно укомплектовано экипажем) подаёт другой сигнал — один продолжительный и три коротких звука, причём непосредственно после сигнала буксирующего судна. Таким образом, буксируемое судно не использует сигнал «один продолжительный + два коротких», что делает вариант D правильным ответом (исключением).",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKW2oBN0W4glTGSmczDCrJ7f0GcfhKAAK8CgACHuIIRCfPAixJcklsOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKXGoBN0bVe4gH5LPy84rHEso4PKeWAAK9CgACHuIIRHTCOUlEGdsDOwQ"
     },
     {
         "num": 473,
@@ -11359,8 +11359,8 @@ QUESTIONS = [
         "en_explain": "Rule 5 (Lookout) of both International COLREGS and US Inland Rules requires that every vessel maintain a proper lookout by sight and hearing **at all times**. This obligation applies continuously regardless of visibility conditions, traffic density, or time of day. The lookout requirement is absolute and has no exceptions or limitations based on circumstances.",
         "ru_explain": "Согласно Правилу 5 МППСС-72 (COLREGS), каждое судно должно постоянно вести надлежащее визуальное и слуховое наблюдение, а также наблюдение с помощью всех имеющихся средств, применимых в данных условиях. Это требование является непрерывным и действует в любое время суток, при любых погодных условиях и в любой навигационной обстановке — включая ограниченную видимость (туман, дождь, снег), интенсивное движение судов и тёмное время суток. Наблюдатель (впередсмотрящий) обеспечивает своевременное обнаружение других судов, навигационных опасностей и любых изменений обстановки.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKXWoBN0iVuiTMLlRt_YZvdwAByRSRIgACvgoAAh7iCERNiTtuJyC1OzsE",
+        "audio_a": "CQACAgEAAxkDAAIKXmoBN0pwwDPwcANThlwLTcmfWsCgAAK_CgACHuIIREJjUnfMtMKAOwQ"
     },
     {
         "num": 474,
@@ -11383,8 +11383,8 @@ QUESTIONS = [
         "en_explain": "Under International Rules (COLREGS Rule 34(a)), two short blasts indicate \"I am altering my course to port.\" This is a signal of action being taken, not merely intent. This differs from Inland Rules, where the same signal indicates intent rather than action already in progress.",
         "ru_explain": "Согласно Правилу 34 МППСС-72 (Международные правила предупреждения столкновений судов), когда суда находятся на виду друг у друга, они обязаны подавать звуковые сигналы манёвроуказания. Два коротких звуковых сигнала (продолжительностью около 1 секунды каждый) означают: «Я изменяю свой курс влево». Это сигнал действия, а не намерения — судно информирует о манёвре, который уже выполняется. Один короткий сигнал означает изменение курса вправо, три коротких — движение задним ходом. Важно различать международные правила (МППСС), где сигналы означают действие, и правила внутренних вод США (Inland Rules), где аналогичные сигналы выражают намерение.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKX2oBN0wfIw5BK4gicrJQbMpd3WmIAALACgACHuIIRFzDmQzQgfkMOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKYGoBN04XryZhJ5e1QGdMsvHf2l54AALBCgACHuIIRBcZofFwefgqOwQ"
     },
     {
         "num": 475,
@@ -11407,8 +11407,8 @@ QUESTIONS = [
         "en_explain": "Rule 6 (Safe Speed) requires that every vessel determine safe speed by considering several specific factors. These include the state of visibility, traffic density, vessel maneuverability, background light at night, wind, sea, and current conditions, draft in relation to available water depth, and the proximity of navigational hazards. The correct answer identifies two of these mandatory considerations: environmental conditions (wind, sea, current) and the nearness of hazards to navigation.",
         "ru_explain": "Согласно Правилу 6 МППСС-72 (Международные правила предупреждения столкновений судов в море), каждое судно должно всегда следовать с безопасной скоростью. При определении безопасной скорости необходимо учитывать следующие факторы: состояние видимости, плотность движения, манёвренные характеристики судна, наличие фоновых огней в ночное время, **состояние ветра, моря (волнения) и течения, а также близость навигационных опасностей**. Максимальная скорость судна (вариант B), температура (вариант C) и просто наличие СНО (вариант D) не являются определяющими факторами согласно данному Правилу. Правильный ответ A включает ключевые гидрометеорологические условия и навигационную обстановку, которые напрямую влияют на способность судна безопасно остановиться или уклониться от опасности.",
         "image": None,
-        "audio_q": None,
-        "audio_a": None
+        "audio_q": "CQACAgEAAxkDAAIKYWoBN1CFKbojuwmJ8xkFBI5Ik3PVAALCCgACHuIIRCTtUkv7fffhOwQ",
+        "audio_a": "CQACAgEAAxkDAAIKYmoBN1KwBUxkwPP8FdVgL9Scbxg9AALDCgACHuIIROcj7R4zDuhwOwQ"
     }
 ]
 
