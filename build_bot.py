@@ -262,10 +262,12 @@ def button(update: Update, context: CallbackContext):
             except Exception:
                 pass
         state["audio_msg_ids"] = []
-        try:
-            query.message.delete()
-        except Exception:
-            pass
+        current_msg_id = query.message.message_id
+        for msg_id in range(current_msg_id, max(current_msg_id - 20, 0), -1):
+            try:
+                context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
+            except Exception:
+                pass
         context.bot.send_message(chat_id=query.message.chat_id, text=MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
 
     elif query.data == "main_menu_from_progress":
