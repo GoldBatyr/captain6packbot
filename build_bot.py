@@ -452,7 +452,7 @@ def build_question_keyboard(state):
         [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
     ]
     if q.get("audio_q"):
-        buttons.insert(2, [InlineKeyboardButton("▶️ Play / Слушать", callback_data="play_q")])
+        buttons.insert(2, [InlineKeyboardButton("▶️ Listen/Слушать вопрос🇺🇸", callback_data="play_q")])
     return InlineKeyboardMarkup(buttons)
 
 
@@ -696,7 +696,7 @@ def button(update, context):
             [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
         ]
         if q.get("audio_a"):
-            buttons.insert(1, [InlineKeyboardButton("▶️ Play / Слушать", callback_data="play_a")])
+            buttons.insert(1, [InlineKeyboardButton("▶️ Listen/Слушать ответ🇺🇸", callback_data="play_a")])
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "back_to_question":
@@ -719,7 +719,7 @@ def button(update, context):
             [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
         ]
         if q.get("audio_a"):
-            buttons.insert(1, [InlineKeyboardButton("▶️ Play / Слушать", callback_data="play_a")])
+            buttons.insert(1, [InlineKeyboardButton("▶️ Listen/Слушать ответ🇺🇸", callback_data="play_a")])
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "next_question":
