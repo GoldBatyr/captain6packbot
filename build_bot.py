@@ -20,6 +20,18 @@ rest = (
     '        conn = sqlite3.connect(DB_PATH)\n'
     '        c = conn.cursor()\n'
     '        c.execute("CREATE TABLE IF NOT EXISTS users (user_id INTEGER PRIMARY KEY, username TEXT, first_seen TEXT, last_seen TEXT, source TEXT, is_paid INTEGER DEFAULT 0, is_banned INTEGER DEFAULT 0, questions_answered INTEGER DEFAULT 0)")\n'
+    '        try:\n'
+    '            c.execute("ALTER TABLE users ADD COLUMN is_banned INTEGER DEFAULT 0")\n'
+    '        except Exception:\n'
+    '            pass\n'
+    '        try:\n'
+    '            c.execute("ALTER TABLE users ADD COLUMN is_paid INTEGER DEFAULT 0")\n'
+    '        except Exception:\n'
+    '            pass\n'
+    '        try:\n'
+    '            c.execute("ALTER TABLE users ADD COLUMN questions_answered INTEGER DEFAULT 0")\n'
+    '        except Exception:\n'
+    '            pass\n'
     '        c.execute("CREATE TABLE IF NOT EXISTS progress (user_id INTEGER PRIMARY KEY, progress_en TEXT DEFAULT \'\', progress_ru TEXT DEFAULT \'\', progress_audio TEXT DEFAULT \'\', last_snapshot_en INTEGER DEFAULT 0, last_snapshot_ru INTEGER DEFAULT 0, last_snapshot_audio INTEGER DEFAULT 0)")\n'
     '        c.execute("CREATE TABLE IF NOT EXISTS events (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, event_type TEXT, detail TEXT, created_at TEXT)")\n'
     '        conn.commit()\n'
@@ -421,6 +433,7 @@ def send_glossary(chat_id, context, index, old_msg_id=None):
 def strip_letter(opt_text):
     if len(opt_text) >= 3 and opt_text[1] == ")":
         return opt_text[3:].strip()
+    return opt_text[3:].strip()
     return opt_text.strip()
 
 
