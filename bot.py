@@ -11419,28 +11419,16 @@ import threading
 DB_PATH = os.environ.get("DB_PATH", "/data/progress.db")
 DB_LOCK = threading.Lock()
 ADMIN_ID = 5291782708
+SUSPICIOUS_THRESHOLD = 30
+SUSPICIOUS_MINUTES = 5
 
 def init_db():
     with DB_LOCK:
         conn = sqlite3.connect(DB_PATH)
         c = conn.cursor()
-        c.execute(
-            "CREATE TABLE IF NOT EXISTS users "
-            "(user_id INTEGER PRIMARY KEY, username TEXT, first_seen TEXT, "
-            "last_seen TEXT, source TEXT, is_paid INTEGER DEFAULT 0, questions_answered INTEGER DEFAULT 0)"
-        )
-        c.execute(
-            "CREATE TABLE IF NOT EXISTS progress "
-            "(user_id INTEGER PRIMARY KEY, progress_en TEXT DEFAULT '', "
-            "progress_ru TEXT DEFAULT '', progress_audio TEXT DEFAULT '', "
-            "last_snapshot_en INTEGER DEFAULT 0, last_snapshot_ru INTEGER DEFAULT 0, "
-            "last_snapshot_audio INTEGER DEFAULT 0)"
-        )
-        c.execute(
-            "CREATE TABLE IF NOT EXISTS events "
-            "(id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, "
-            "event_type TEXT, detail TEXT, created_at TEXT)"
-        )
+        c.execute("CREATE TABLE IF NOT EXISTS users (user_id INTEGER PRIMARY KEY, username TEXT, first_seen TEXT, last_seen TEXT, source TEXT, is_paid INTEGER DEFAULT 0, is_banned INTEGER DEFAULT 0, questions_answered INTEGER DEFAULT 0)")
+        c.execute("CREATE TABLE IF NOT EXISTS progress (user_id INTEGER PRIMARY KEY, progress_en TEXT DEFAULT '', progress_ru TEXT DEFAULT '', progress_audio TEXT DEFAULT '', last_snapshot_en INTEGER DEFAULT 0, last_snapshot_ru INTEGER DEFAULT 0, last_snapshot_audio INTEGER DEFAULT 0)")
+        c.execute("CREATE TABLE IF NOT EXISTS events (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, event_type TEXT, detail TEXT, created_at TEXT)")
         conn.commit()
         conn.close()
 
@@ -11453,9 +11441,25 @@ def db_upsert_user(user_id, username, source=None):
         if c.fetchone():
             c.execute("UPDATE users SET last_seen=?, username=? WHERE user_id=?", (now, username, user_id))
         else:
-            c.execute("INSERT INTO users (user_id, username, first_seen, last_seen, source) VALUES (?,?,?,?,?)",
-                      (user_id, username, now, now, source or "direct"))
+            c.execute("INSERT INTO users (user_id, username, first_seen, last_seen, source) VALUES (?,?,?,?,?)", (user_id, username, now, now, source or "direct"))
             c.execute("INSERT OR IGNORE INTO progress (user_id) VALUES (?)", (user_id,))
+        conn.commit()
+        conn.close()
+
+def db_is_banned(user_id):
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("SELECT is_banned FROM users WHERE user_id=?", (user_id,))
+        row = c.fetchone()
+        conn.close()
+    return row and row[0] == 1
+
+def db_ban_user(user_id, banned=True):
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("UPDATE users SET is_banned=? WHERE user_id=?", (1 if banned else 0, user_id))
         conn.commit()
         conn.close()
 
@@ -11464,10 +11468,20 @@ def db_log_event(user_id, event_type, detail=""):
     with DB_LOCK:
         conn = sqlite3.connect(DB_PATH)
         c = conn.cursor()
-        c.execute("INSERT INTO events (user_id, event_type, detail, created_at) VALUES (?,?,?,?)",
-                  (user_id, event_type, detail, now))
+        c.execute("INSERT INTO events (user_id, event_type, detail, created_at) VALUES (?,?,?,?)", (user_id, event_type, detail, now))
         conn.commit()
         conn.close()
+
+def db_check_suspicious(user_id):
+    now = datetime.now(ZoneInfo("America/Los_Angeles"))
+    cutoff = now.replace(minute=max(0, now.minute - SUSPICIOUS_MINUTES)).isoformat()
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("SELECT COUNT(*) FROM events WHERE user_id=? AND event_type='answer' AND created_at >= ?", (user_id, cutoff))
+        count = c.fetchone()[0]
+        conn.close()
+    return count >= SUSPICIOUS_THRESHOLD
 
 def db_save_progress(user_id, progress_en, progress_ru, progress_audio):
     with DB_LOCK:
@@ -11476,14 +11490,8 @@ def db_save_progress(user_id, progress_en, progress_ru, progress_audio):
         en_str = ",".join(str(x) for x in progress_en)
         ru_str = ",".join(str(x) for x in progress_ru)
         audio_str = ",".join(str(x) for x in progress_audio)
-        c.execute(
-            "INSERT INTO progress (user_id, progress_en, progress_ru, progress_audio) VALUES (?,?,?,?) "
-            "ON CONFLICT(user_id) DO UPDATE SET progress_en=excluded.progress_en, "
-            "progress_ru=excluded.progress_ru, progress_audio=excluded.progress_audio",
-            (user_id, en_str, ru_str, audio_str)
-        )
-        c.execute("UPDATE users SET questions_answered=? WHERE user_id=?",
-                  (len(progress_en) + len(progress_ru), user_id))
+        c.execute("INSERT INTO progress (user_id, progress_en, progress_ru, progress_audio) VALUES (?,?,?,?) ON CONFLICT(user_id) DO UPDATE SET progress_en=excluded.progress_en, progress_ru=excluded.progress_ru, progress_audio=excluded.progress_audio", (user_id, en_str, ru_str, audio_str))
+        c.execute("UPDATE users SET questions_answered=? WHERE user_id=?", (len(progress_en) + len(progress_ru), user_id))
         conn.commit()
         conn.close()
 
@@ -11508,10 +11516,18 @@ def db_save_snapshot(user_id, en, ru, audio):
     with DB_LOCK:
         conn = sqlite3.connect(DB_PATH)
         c = conn.cursor()
-        c.execute("UPDATE progress SET last_snapshot_en=?, last_snapshot_ru=?, last_snapshot_audio=? WHERE user_id=?",
-                  (en, ru, audio, user_id))
+        c.execute("UPDATE progress SET last_snapshot_en=?, last_snapshot_ru=?, last_snapshot_audio=? WHERE user_id=?", (en, ru, audio, user_id))
         conn.commit()
         conn.close()
+
+def db_get_users(limit=50):
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("SELECT user_id, username, first_seen, last_seen, is_paid, is_banned, questions_answered FROM users ORDER BY last_seen DESC LIMIT ?", (limit,))
+        rows = c.fetchall()
+        conn.close()
+    return rows
 
 def db_get_stats():
     now = datetime.now(ZoneInfo("America/Los_Angeles"))
@@ -11520,19 +11536,21 @@ def db_get_stats():
     with DB_LOCK:
         conn = sqlite3.connect(DB_PATH)
         c = conn.cursor()
-        c.execute("SELECT COUNT(*) FROM users")
+        c.execute("SELECT COUNT(*) FROM users WHERE is_banned=0")
         total = c.fetchone()[0]
-        c.execute("SELECT COUNT(*) FROM users WHERE first_seen LIKE ?", (today + "%",))
+        c.execute("SELECT COUNT(*) FROM users WHERE first_seen LIKE ? AND is_banned=0", (today + "%",))
         new_today = c.fetchone()[0]
-        c.execute("SELECT COUNT(*) FROM users WHERE last_seen >= ?", (week_ago,))
+        c.execute("SELECT COUNT(*) FROM users WHERE last_seen >= ? AND is_banned=0", (week_ago,))
         active_week = c.fetchone()[0]
         c.execute("SELECT COUNT(*) FROM users WHERE is_paid=1")
         paid = c.fetchone()[0]
+        c.execute("SELECT COUNT(*) FROM users WHERE is_banned=1")
+        banned = c.fetchone()[0]
         c.execute("SELECT COUNT(DISTINCT user_id) FROM events WHERE event_type='paywall'")
         hit_paywall = c.fetchone()[0]
         c.execute("SELECT detail, COUNT(*) as cnt FROM events WHERE event_type='topic' GROUP BY detail ORDER BY cnt DESC LIMIT 5")
         top_topics = c.fetchall()
-        c.execute("SELECT COUNT(DISTINCT user_id) FROM users WHERE last_seen < ? AND questions_answered > 0", (week_ago,))
+        c.execute("SELECT COUNT(DISTINCT user_id) FROM users WHERE last_seen < ? AND questions_answered > 0 AND is_banned=0", (week_ago,))
         sleeping = c.fetchone()[0]
         conn.close()
     conv_paywall = str(round(hit_paywall / total * 100)) + "%" if total > 0 else "0%"
@@ -11549,6 +11567,7 @@ def db_get_stats():
         + "\U0001f525 Active 7 days: " + str(active_week) + "\n"
         + "\U0001f634 Sleeping (7+ days): " + str(sleeping) + "\n"
         + "\U0001f4b0 Paid: " + str(paid) + "\n"
+        + "\U0001f6ab Banned: " + str(banned) + "\n"
         + "-" * 25 + "\n"
         + "\U0001f3af Funnel:\n"
         + "  Hit paywall: " + str(hit_paywall) + " (" + conv_paywall + ")\n"
@@ -11561,20 +11580,27 @@ def db_get_stats():
 
 user_state = {}
 
-MAIN_MENU_TEXT = "\u2693 Welcome to Captain6PackBot!\n\nChoose mode / Choose mode:"
+MAIN_MENU_TEXT = "⚓ Добро пожаловать! / Welcome to Captain6PackBot!\n\nВыберите режим / Choose mode:"
+COPYRIGHT = "© Captain6PackBot · Все права защищены / All rights reserved"
+START_COPYRIGHT = (
+    "\n\n⚠️ Копирование, пересылка и распространение материалов бота "
+    "запрещено и является нарушением авторских прав.\n"
+    "Copying, forwarding or distributing bot content is prohibited "
+    "under Copyright Act (17 U.S.C.)."
+)
 
 TOPICS = {
-    "sound_signals":   {"ru": "\U0001f50a Zvukovye signaly",      "en": "Sound Signals"},
-    "lights_shapes":   {"ru": "\U0001f4a1 Ogni i znaki",           "en": "Lights & Shapes"},
-    "steering_rules":  {"ru": "\U0001f6a2 Mavrirovanie",           "en": "Steering Rules"},
-    "narrow_channels": {"ru": "\U0001f30a Uzkie kanaly",           "en": "Narrow Channels"},
-    "visibility":      {"ru": "\U0001f32b Ogranichennaya vidimost","en": "Visibility"},
-    "distress":        {"ru": "\U0001f198 Signaly bedstviya",      "en": "Distress Signals"},
-    "charts":          {"ru": "\U0001f5fa Karty i publikacii",     "en": "Charts & Publications"},
-    "weather":         {"ru": "\U0001f326 Pogoda",                 "en": "Weather"},
-    "navigation":      {"ru": "\U0001f9ed Navigaciya",             "en": "Navigation"},
-    "tides_currents":  {"ru": "\U0001f30a Prilivy i techeniya",    "en": "Tides & Currents"},
-    "seamanship":      {"ru": "\u2693 Morskaya praktika",          "en": "Seamanship"},
+    "sound_signals":   {"ru": "🔊 Звуковые сигналы",       "en": "Sound Signals"},
+    "lights_shapes":   {"ru": "💡 Огни и знаки",            "en": "Lights & Shapes"},
+    "steering_rules":  {"ru": "🚢 Маневрирование",          "en": "Steering Rules"},
+    "narrow_channels": {"ru": "🌊 Узкие каналы",            "en": "Narrow Channels"},
+    "visibility":      {"ru": "🌫️ Ограниченная видимость",  "en": "Visibility"},
+    "distress":        {"ru": "🆘 Сигналы бедствия",        "en": "Distress Signals"},
+    "charts":          {"ru": "🗺️ Карты и публикации",      "en": "Charts & Publications"},
+    "weather":         {"ru": "🌦️ Погода",                  "en": "Weather"},
+    "navigation":      {"ru": "🧭 Навигация",               "en": "Navigation"},
+    "tides_currents":  {"ru": "🌊 Приливы и течения",       "en": "Tides & Currents"},
+    "seamanship":      {"ru": "⚓ Морская практика",        "en": "Seamanship"},
 }
 
 GLOSSARY = [
@@ -11634,12 +11660,22 @@ def get_or_init_state(user_id):
     return user_state[user_id]
 
 
+def notify_admin(context, text):
+    try:
+        context.bot.send_message(chat_id=ADMIN_ID, text=text)
+    except Exception as e:
+        logging.error(f"NOTIFY_ADMIN ERROR: {e}")
+
+
 def start(update, context):
     user = update.message.from_user
     user_id = user.id
     username = user.username or user.first_name or str(user_id)
     args = context.args
     source = args[0] if args else "direct"
+    if db_is_banned(user_id):
+        update.message.reply_text("🚫 Ваш аккаунт заблокирован за нарушение правил использования.\nYour account has been banned for violating terms of use.")
+        return
     db_upsert_user(user_id, username, source)
     db_log_event(user_id, "start", source)
     state = get_or_init_state(user_id)
@@ -11652,25 +11688,96 @@ def start(update, context):
         update.message.delete()
     except Exception:
         pass
-    msg = update.message.reply_text(MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
+    msg = update.message.reply_text(MAIN_MENU_TEXT + START_COPYRIGHT, reply_markup=get_main_menu_keyboard())
     state["last_menu_id"] = msg.message_id
 
 
 def cmd_stats(update, context):
-    user_id = update.message.from_user.id
-    if user_id != ADMIN_ID:
+    if update.message.from_user.id != ADMIN_ID:
         return
     try:
         update.message.delete()
     except Exception:
         pass
-    text = db_get_stats()
-    context.bot.send_message(chat_id=update.message.chat_id, text=text)
+    context.bot.send_message(chat_id=update.message.chat_id, text=db_get_stats())
+
+
+def cmd_users(update, context):
+    if update.message.from_user.id != ADMIN_ID:
+        return
+    try:
+        update.message.delete()
+    except Exception:
+        pass
+    rows = db_get_users(50)
+    if not rows:
+        context.bot.send_message(chat_id=update.message.chat_id, text="Пользователей пока нет.")
+        return
+    lines = ["👥 Пользователи Captain6PackBot\n" + "-" * 30]
+    for i, (uid, uname, first, last, paid, banned, answered) in enumerate(rows, 1):
+        uname_str = "@" + uname if uname else "no username"
+        status = "🚫" if banned else ("💰" if paid else "🆓")
+        first_short = first[:10] if first else "?"
+        last_short = last[:10] if last else "?"
+        lines.append(f"{i}. {status} {uname_str}\n   ID: {uid}\n   Joined: {first_short} | Last: {last_short}\n   Questions: {answered}")
+    text = "\n\n".join(lines)
+    for i in range(0, len(text), 4000):
+        context.bot.send_message(chat_id=update.message.chat_id, text=text[i:i+4000])
+
+
+def cmd_send(update, context):
+    if update.message.from_user.id != ADMIN_ID:
+        return
+    args = context.args
+    if len(args) < 2:
+        update.message.reply_text("Usage: /send <user_id> <text>")
+        return
+    try:
+        target_id = int(args[0])
+        text = " ".join(args[1:])
+        context.bot.send_message(chat_id=target_id, text=f"📬 Сообщение от Captain6PackBot:\n\n{text}")
+        update.message.reply_text(f"✅ Отправлено пользователю {target_id}")
+    except Exception as e:
+        update.message.reply_text(f"❌ Ошибка: {e}")
+
+
+def cmd_ban(update, context):
+    if update.message.from_user.id != ADMIN_ID:
+        return
+    args = context.args
+    if not args:
+        update.message.reply_text("Usage: /ban <user_id>")
+        return
+    try:
+        target_id = int(args[0])
+        db_ban_user(target_id, True)
+        try:
+            context.bot.send_message(chat_id=target_id, text="🚫 Ваш аккаунт заблокирован за нарушение правил использования.\nYour account has been banned for violating terms of use.")
+        except Exception:
+            pass
+        update.message.reply_text(f"✅ Пользователь {target_id} заблокирован.")
+        db_log_event(target_id, "banned", "by_admin")
+    except Exception as e:
+        update.message.reply_text(f"❌ Ошибка: {e}")
+
+
+def cmd_ok(update, context):
+    if update.message.from_user.id != ADMIN_ID:
+        return
+    args = context.args
+    if not args:
+        update.message.reply_text("Usage: /ok <user_id>")
+        return
+    try:
+        target_id = int(args[0])
+        db_ban_user(target_id, False)
+        update.message.reply_text(f"✅ Пользователь {target_id} разблокирован.")
+    except Exception as e:
+        update.message.reply_text(f"❌ Ошибка: {e}")
 
 
 def cmd_broadcast(update, context):
-    user_id = update.message.from_user.id
-    if user_id != ADMIN_ID:
+    if update.message.from_user.id != ADMIN_ID:
         return
     text = " ".join(context.args)
     if not text:
@@ -11679,7 +11786,7 @@ def cmd_broadcast(update, context):
     with DB_LOCK:
         conn = sqlite3.connect(DB_PATH)
         c = conn.cursor()
-        c.execute("SELECT user_id FROM users")
+        c.execute("SELECT user_id FROM users WHERE is_banned=0")
         ids = [row[0] for row in c.fetchall()]
         conn.close()
     sent = 0
@@ -11690,7 +11797,7 @@ def cmd_broadcast(update, context):
             sent += 1
         except Exception:
             failed += 1
-    update.message.reply_text(f"Sent: {sent}\nFailed: {failed}")
+    update.message.reply_text(f"✅ Отправлено: {sent}\n❌ Не доставлено: {failed}")
 
 
 def send_glossary(chat_id, context, index, old_msg_id=None):
@@ -11703,7 +11810,7 @@ def send_glossary(chat_id, context, index, old_msg_id=None):
         context.bot.send_message(chat_id=chat_id, text=MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
         return
     term = GLOSSARY[index]
-    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}"
+    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}\n\n{COPYRIGHT}"
     try:
         context.bot.send_audio(
             chat_id=chat_id, audio=term["file_id"], caption=caption,
@@ -11753,7 +11860,7 @@ def send_question(query, state, context):
     question = q["ru_q"] if lang == "ru" else q["en_q"]
     options = q["ru_options"] if lang == "ru" else q["en_options"]
     options_text = "\n".join(options)
-    full_text = f"❓ Вопрос {q['num']} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
+    full_text = f"❓ Вопрос {q['num']} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}\n\n{COPYRIGHT}"
     keyboard = build_question_keyboard(state)
     if q.get("image"):
         try:
@@ -11777,7 +11884,7 @@ def send_question_no_delete(query, state, context):
     question = q["ru_q"] if lang == "ru" else q["en_q"]
     options = q["ru_options"] if lang == "ru" else q["en_options"]
     options_text = "\n".join(options)
-    full_text = f"❓ Вопрос {q['num']} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}"
+    full_text = f"❓ Вопрос {q['num']} из {len(QUESTIONS)}\n\n{question}\n\n{options_text}\n\n{COPYRIGHT}"
     keyboard = build_question_keyboard(state)
     try:
         query.edit_message_text(full_text, reply_markup=keyboard)
@@ -11853,6 +11960,11 @@ def button(update, context):
     user = query.from_user
     user_id = user.id
     username = user.username or user.first_name or str(user_id)
+
+    if db_is_banned(user_id):
+        query.edit_message_text("🚫 Ваш аккаунт заблокирован.\nYour account has been banned.")
+        return
+
     db_upsert_user(user_id, username)
     state = get_or_init_state(user_id)
 
@@ -11950,15 +12062,24 @@ def button(update, context):
                 state["progress_ru"].add(q_num)
         db_save_progress(user_id, state["progress_en"], state["progress_ru"], state["progress_audio"])
         db_log_event(user_id, "answer", f"{q_num}:{'correct' if chosen == q['correct'] else 'wrong'}")
+        if db_check_suspicious(user_id):
+            uname_str = "@" + username if username else str(user_id)
+            notify_admin(context,
+                f"⚠️ Подозрительная активность!\n"
+                f"Пользователь {uname_str} прошёл {SUSPICIOUS_THRESHOLD}+ вопросов за {SUSPICIOUS_MINUTES} минут\n"
+                f"ID: {user_id}\n\n"
+                f"/ban {user_id} — заблокировать\n"
+                f"/ok {user_id} — игнорировать"
+            )
         explain = q["ru_explain"] if lang == "ru" else q["en_explain"]
         correct_idx = q["correct"]
         options = q["ru_options"] if lang == "ru" else q["en_options"]
         correct_answer_text = strip_letter(options[correct_idx])
         if chosen == correct_idx:
-            result = f"✅ Правильно! / Correct!\n\n📌 {correct_answer_text}\n\n{explain}"
+            result = f"✅ Правильно! / Correct!\n\n📌 {correct_answer_text}\n\n{explain}\n\n{COPYRIGHT}"
         else:
             chosen_answer_text = strip_letter(options[chosen])
-            result = f"❌ Неверно! / Wrong!\n\nВаш ответ: {chosen_answer_text}\nПравильный ответ: {correct_answer_text}\n\n{explain}"
+            result = f"❌ Неверно! / Wrong!\n\nВаш ответ: {chosen_answer_text}\nПравильный ответ: {correct_answer_text}\n\n{explain}\n\n{COPYRIGHT}"
         lang_btn = "🌐 English / На русском" if lang == "ru" else "🌐 Russian / На английском"
         buttons = [
             [InlineKeyboardButton("⬅️ Back / Назад", callback_data="back_to_question"),
@@ -11982,7 +12103,7 @@ def button(update, context):
         options = q["ru_options"] if lang == "ru" else q["en_options"]
         correct_answer_text = strip_letter(options[correct_idx])
         lang_btn = "🌐 English / На русском" if lang == "ru" else "🌐 Russian / На английском"
-        result = f"💡 Правильный ответ: {correct_answer_text}\n\n{explain}"
+        result = f"💡 Правильный ответ: {correct_answer_text}\n\n{explain}\n\n{COPYRIGHT}"
         buttons = [
             [InlineKeyboardButton("⬅️ Back / Назад", callback_data="back_to_question"),
              InlineKeyboardButton("➡️ Next / Далее", callback_data="next_question")],
@@ -12047,6 +12168,10 @@ def main():
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("stats", cmd_stats))
+    dp.add_handler(CommandHandler("users", cmd_users))
+    dp.add_handler(CommandHandler("send", cmd_send))
+    dp.add_handler(CommandHandler("ban", cmd_ban))
+    dp.add_handler(CommandHandler("ok", cmd_ok))
     dp.add_handler(CommandHandler("broadcast", cmd_broadcast))
     dp.add_handler(CallbackQueryHandler(button))
     dp.add_handler(MessageHandler(Filters.photo | Filters.audio | Filters.document, get_file_id))
