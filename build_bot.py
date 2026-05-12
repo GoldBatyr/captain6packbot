@@ -5,25 +5,173 @@ with open('/Users/Batyr/Documents/exam_screens/questions.json', encoding='utf-8'
 
 q_str = "QUESTIONS = " + json.dumps(data, ensure_ascii=False, indent=4).replace("null", "None").replace("true", "True").replace("false", "False")
 
-rest = r"""
-user_state = {}
+rest = (
+    'import sqlite3\n'
+    'import threading\n'
+    '\n'
+    'DB_PATH = os.environ.get("DB_PATH", "/data/progress.db")\n'
+    'DB_LOCK = threading.Lock()\n'
+    'ADMIN_ID = 5291782708\n'
+    '\n'
+    'def init_db():\n'
+    '    with DB_LOCK:\n'
+    '        conn = sqlite3.connect(DB_PATH)\n'
+    '        c = conn.cursor()\n'
+    '        c.execute(\n'
+    '            "CREATE TABLE IF NOT EXISTS users "\n'
+    '            "(user_id INTEGER PRIMARY KEY, username TEXT, first_seen TEXT, "\n'
+    '            "last_seen TEXT, source TEXT, is_paid INTEGER DEFAULT 0, questions_answered INTEGER DEFAULT 0)"\n'
+    '        )\n'
+    '        c.execute(\n'
+    '            "CREATE TABLE IF NOT EXISTS progress "\n'
+    '            "(user_id INTEGER PRIMARY KEY, progress_en TEXT DEFAULT \'\', "\n'
+    '            "progress_ru TEXT DEFAULT \'\', progress_audio TEXT DEFAULT \'\', "\n'
+    '            "last_snapshot_en INTEGER DEFAULT 0, last_snapshot_ru INTEGER DEFAULT 0, "\n'
+    '            "last_snapshot_audio INTEGER DEFAULT 0)"\n'
+    '        )\n'
+    '        c.execute(\n'
+    '            "CREATE TABLE IF NOT EXISTS events "\n'
+    '            "(id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, "\n'
+    '            "event_type TEXT, detail TEXT, created_at TEXT)"\n'
+    '        )\n'
+    '        conn.commit()\n'
+    '        conn.close()\n'
+    '\n'
+    'def db_upsert_user(user_id, username, source=None):\n'
+    '    now = datetime.now(ZoneInfo("America/Los_Angeles")).isoformat()\n'
+    '    with DB_LOCK:\n'
+    '        conn = sqlite3.connect(DB_PATH)\n'
+    '        c = conn.cursor()\n'
+    '        c.execute("SELECT user_id FROM users WHERE user_id=?", (user_id,))\n'
+    '        if c.fetchone():\n'
+    '            c.execute("UPDATE users SET last_seen=?, username=? WHERE user_id=?", (now, username, user_id))\n'
+    '        else:\n'
+    '            c.execute("INSERT INTO users (user_id, username, first_seen, last_seen, source) VALUES (?,?,?,?,?)",\n'
+    '                      (user_id, username, now, now, source or "direct"))\n'
+    '            c.execute("INSERT OR IGNORE INTO progress (user_id) VALUES (?)", (user_id,))\n'
+    '        conn.commit()\n'
+    '        conn.close()\n'
+    '\n'
+    'def db_log_event(user_id, event_type, detail=""):\n'
+    '    now = datetime.now(ZoneInfo("America/Los_Angeles")).isoformat()\n'
+    '    with DB_LOCK:\n'
+    '        conn = sqlite3.connect(DB_PATH)\n'
+    '        c = conn.cursor()\n'
+    '        c.execute("INSERT INTO events (user_id, event_type, detail, created_at) VALUES (?,?,?,?)",\n'
+    '                  (user_id, event_type, detail, now))\n'
+    '        conn.commit()\n'
+    '        conn.close()\n'
+    '\n'
+    'def db_save_progress(user_id, progress_en, progress_ru, progress_audio):\n'
+    '    with DB_LOCK:\n'
+    '        conn = sqlite3.connect(DB_PATH)\n'
+    '        c = conn.cursor()\n'
+    '        en_str = ",".join(str(x) for x in progress_en)\n'
+    '        ru_str = ",".join(str(x) for x in progress_ru)\n'
+    '        audio_str = ",".join(str(x) for x in progress_audio)\n'
+    '        c.execute(\n'
+    '            "INSERT INTO progress (user_id, progress_en, progress_ru, progress_audio) VALUES (?,?,?,?) "\n'
+    '            "ON CONFLICT(user_id) DO UPDATE SET progress_en=excluded.progress_en, "\n'
+    '            "progress_ru=excluded.progress_ru, progress_audio=excluded.progress_audio",\n'
+    '            (user_id, en_str, ru_str, audio_str)\n'
+    '        )\n'
+    '        c.execute("UPDATE users SET questions_answered=? WHERE user_id=?",\n'
+    '                  (len(progress_en) + len(progress_ru), user_id))\n'
+    '        conn.commit()\n'
+    '        conn.close()\n'
+    '\n'
+    'def db_load_progress(user_id):\n'
+    '    with DB_LOCK:\n'
+    '        conn = sqlite3.connect(DB_PATH)\n'
+    '        c = conn.cursor()\n'
+    '        c.execute("SELECT progress_en, progress_ru, progress_audio, last_snapshot_en, last_snapshot_ru, last_snapshot_audio FROM progress WHERE user_id=?", (user_id,))\n'
+    '        row = c.fetchone()\n'
+    '        conn.close()\n'
+    '    if not row:\n'
+    '        return set(), set(), set(), None\n'
+    '    def parse(s):\n'
+    '        return set(int(x) for x in s.split(",") if x.strip())\n'
+    '    en = parse(row[0])\n'
+    '    ru = parse(row[1])\n'
+    '    audio = parse(row[2])\n'
+    '    snapshot = {"en": row[3], "ru": row[4], "audio": row[5]} if (row[3] or row[4] or row[5]) else None\n'
+    '    return en, ru, audio, snapshot\n'
+    '\n'
+    'def db_save_snapshot(user_id, en, ru, audio):\n'
+    '    with DB_LOCK:\n'
+    '        conn = sqlite3.connect(DB_PATH)\n'
+    '        c = conn.cursor()\n'
+    '        c.execute("UPDATE progress SET last_snapshot_en=?, last_snapshot_ru=?, last_snapshot_audio=? WHERE user_id=?",\n'
+    '                  (en, ru, audio, user_id))\n'
+    '        conn.commit()\n'
+    '        conn.close()\n'
+    '\n'
+    'def db_get_stats():\n'
+    '    now = datetime.now(ZoneInfo("America/Los_Angeles"))\n'
+    '    today = now.strftime("%Y-%m-%d")\n'
+    '    week_ago = now.replace(day=max(1, now.day - 7)).isoformat()\n'
+    '    with DB_LOCK:\n'
+    '        conn = sqlite3.connect(DB_PATH)\n'
+    '        c = conn.cursor()\n'
+    '        c.execute("SELECT COUNT(*) FROM users")\n'
+    '        total = c.fetchone()[0]\n'
+    '        c.execute("SELECT COUNT(*) FROM users WHERE first_seen LIKE ?", (today + "%",))\n'
+    '        new_today = c.fetchone()[0]\n'
+    '        c.execute("SELECT COUNT(*) FROM users WHERE last_seen >= ?", (week_ago,))\n'
+    '        active_week = c.fetchone()[0]\n'
+    '        c.execute("SELECT COUNT(*) FROM users WHERE is_paid=1")\n'
+    '        paid = c.fetchone()[0]\n'
+    '        c.execute("SELECT COUNT(DISTINCT user_id) FROM events WHERE event_type=\'paywall\'")\n'
+    '        hit_paywall = c.fetchone()[0]\n'
+    '        c.execute("SELECT detail, COUNT(*) as cnt FROM events WHERE event_type=\'topic\' GROUP BY detail ORDER BY cnt DESC LIMIT 5")\n'
+    '        top_topics = c.fetchall()\n'
+    '        c.execute("SELECT COUNT(DISTINCT user_id) FROM users WHERE last_seen < ? AND questions_answered > 0", (week_ago,))\n'
+    '        sleeping = c.fetchone()[0]\n'
+    '        conn.close()\n'
+    '    conv_paywall = str(round(hit_paywall / total * 100)) + "%" if total > 0 else "0%"\n'
+    '    conv_paid = str(round(paid / hit_paywall * 100)) + "%" if hit_paywall > 0 else "0%"\n'
+    '    topics_text = ""\n'
+    '    for t, cnt in top_topics:\n'
+    '        name = TOPICS.get(t, {}).get("en", t)\n'
+    '        topics_text += "\\n  * " + name + ": " + str(cnt)\n'
+    '    return (\n'
+    '        "\\U0001f4ca Stats Captain6PackBot\\n"\n'
+    '        + "-" * 25 + "\\n"\n'
+    '        + "\\U0001f465 Total users: " + str(total) + "\\n"\n'
+    '        + "\\U0001f195 New today: " + str(new_today) + "\\n"\n'
+    '        + "\\U0001f525 Active 7 days: " + str(active_week) + "\\n"\n'
+    '        + "\\U0001f634 Sleeping (7+ days): " + str(sleeping) + "\\n"\n'
+    '        + "\\U0001f4b0 Paid: " + str(paid) + "\\n"\n'
+    '        + "-" * 25 + "\\n"\n'
+    '        + "\\U0001f3af Funnel:\\n"\n'
+    '        + "  Hit paywall: " + str(hit_paywall) + " (" + conv_paywall + ")\\n"\n'
+    '        + "  Of those paid: " + str(paid) + " (" + conv_paid + ")\\n"\n'
+    '        + "-" * 25 + "\\n"\n'
+    '        + "\\U0001f3c6 Top topics:" + topics_text + "\\n"\n'
+    '        + "-" * 25 + "\\n"\n'
+    '        + now.strftime("%d %b %Y %H:%M") + " PT"\n'
+    '    )\n'
+    '\n'
+    'user_state = {}\n'
+    '\n'
+    'MAIN_MENU_TEXT = "\\u2693 Welcome to Captain6PackBot!\\n\\nChoose mode / Choose mode:"\n'
+    '\n'
+    'TOPICS = {\n'
+    '    "sound_signals":   {"ru": "\\U0001f50a Zvukovye signaly",      "en": "Sound Signals"},\n'
+    '    "lights_shapes":   {"ru": "\\U0001f4a1 Ogni i znaki",           "en": "Lights & Shapes"},\n'
+    '    "steering_rules":  {"ru": "\\U0001f6a2 Mavrirovanie",           "en": "Steering Rules"},\n'
+    '    "narrow_channels": {"ru": "\\U0001f30a Uzkie kanaly",           "en": "Narrow Channels"},\n'
+    '    "visibility":      {"ru": "\\U0001f32b Ogranichennaya vidimost","en": "Visibility"},\n'
+    '    "distress":        {"ru": "\\U0001f198 Signaly bedstviya",      "en": "Distress Signals"},\n'
+    '    "charts":          {"ru": "\\U0001f5fa Karty i publikacii",     "en": "Charts & Publications"},\n'
+    '    "weather":         {"ru": "\\U0001f326 Pogoda",                 "en": "Weather"},\n'
+    '    "navigation":      {"ru": "\\U0001f9ed Navigaciya",             "en": "Navigation"},\n'
+    '    "tides_currents":  {"ru": "\\U0001f30a Prilivy i techeniya",    "en": "Tides & Currents"},\n'
+    '    "seamanship":      {"ru": "\\u2693 Morskaya praktika",          "en": "Seamanship"},\n'
+    '}\n'
+)
 
-MAIN_MENU_TEXT = "⚓ Добро пожаловать! / Welcome to Captain6PackBot!\n\nВыберите режим / Choose mode:"
-
-TOPICS = {
-    "sound_signals":   {"ru": "🔊 Звуковые сигналы",       "en": "Sound Signals"},
-    "lights_shapes":   {"ru": "💡 Огни и знаки",            "en": "Lights & Shapes"},
-    "steering_rules":  {"ru": "🚢 Маневрирование",          "en": "Steering Rules"},
-    "narrow_channels": {"ru": "🌊 Узкие каналы",            "en": "Narrow Channels"},
-    "visibility":      {"ru": "🌫️ Ограниченная видимость",  "en": "Visibility"},
-    "distress":        {"ru": "🆘 Сигналы бедствия",        "en": "Distress Signals"},
-    "charts":          {"ru": "🗺️ Карты и публикации",      "en": "Charts & Publications"},
-    "weather":         {"ru": "🌦️ Погода",                  "en": "Weather"},
-    "navigation":      {"ru": "🧭 Навигация",               "en": "Navigation"},
-    "tides_currents":  {"ru": "🌊 Приливы и течения",       "en": "Tides & Currents"},
-    "seamanship":      {"ru": "⚓ Морская практика",        "en": "Seamanship"},
-}
-
+rest2 = r"""
 GLOSSARY = [
     {"term": "Port", "ru": "Левый борт", "file_id": "CQACAgIAAxkBAAIDpmnd33oq7vcbl3C-HGPr_Y6J2b1lAAIclAACwGnxSlm-Tt506gAB5jsE"},
     {"term": "Starboard", "ru": "Правый борт", "file_id": "CQACAgIAAxkBAAIDomnd33qbRs51tSAVvE0nryvGzWbiAAIYlAACwGnxSl0Q_m9ht5HwOwQ"},
@@ -64,15 +212,35 @@ def get_topic_start_keyboard(topic_key):
     ])
 
 
-def start(update: Update, context: CallbackContext):
-    user_id = update.message.from_user.id
-    # Удаляем старое меню если есть
-    if user_id in user_state and user_state[user_id].get("last_menu_id"):
+def get_or_init_state(user_id):
+    if user_id not in user_state:
+        order = list(range(len(QUESTIONS)))
+        random.shuffle(order)
+        en, ru, audio, snapshot = db_load_progress(user_id)
+        user_state[user_id] = {
+            "lang": "ru", "pos": 0, "g_index": 0, "order": order,
+            "audio_msg_ids": [],
+            "progress_en": en,
+            "progress_ru": ru,
+            "progress_audio": audio,
+            "last_snapshot": snapshot,
+            "last_menu_id": None,
+        }
+    return user_state[user_id]
+
+
+def start(update, context):
+    user = update.message.from_user
+    user_id = user.id
+    username = user.username or user.first_name or str(user_id)
+    args = context.args
+    source = args[0] if args else "direct"
+    db_upsert_user(user_id, username, source)
+    db_log_event(user_id, "start", source)
+    state = get_or_init_state(user_id)
+    if state.get("last_menu_id"):
         try:
-            update.message.bot.delete_message(
-                chat_id=update.message.chat_id,
-                message_id=user_state[user_id]["last_menu_id"]
-            )
+            update.message.bot.delete_message(chat_id=update.message.chat_id, message_id=state["last_menu_id"])
         except Exception:
             pass
     try:
@@ -80,8 +248,44 @@ def start(update: Update, context: CallbackContext):
     except Exception:
         pass
     msg = update.message.reply_text(MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
-    if user_id in user_state:
-        user_state[user_id]["last_menu_id"] = msg.message_id
+    state["last_menu_id"] = msg.message_id
+
+
+def cmd_stats(update, context):
+    user_id = update.message.from_user.id
+    if user_id != ADMIN_ID:
+        return
+    try:
+        update.message.delete()
+    except Exception:
+        pass
+    text = db_get_stats()
+    context.bot.send_message(chat_id=update.message.chat_id, text=text)
+
+
+def cmd_broadcast(update, context):
+    user_id = update.message.from_user.id
+    if user_id != ADMIN_ID:
+        return
+    text = " ".join(context.args)
+    if not text:
+        update.message.reply_text("Usage: /broadcast <text>")
+        return
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("SELECT user_id FROM users")
+        ids = [row[0] for row in c.fetchall()]
+        conn.close()
+    sent = 0
+    failed = 0
+    for uid in ids:
+        try:
+            context.bot.send_message(chat_id=uid, text=text)
+            sent += 1
+        except Exception:
+            failed += 1
+    update.message.reply_text(f"Sent: {sent}\nFailed: {failed}")
 
 
 def send_glossary(chat_id, context, index, old_msg_id=None):
@@ -128,7 +332,7 @@ def build_question_keyboard(state):
         [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
     ]
     if q.get("audio_q"):
-        buttons.insert(2, [InlineKeyboardButton("▶️ Listen/Слушать вопрос🇺🇸", callback_data="play_q")])
+        buttons.insert(2, [InlineKeyboardButton("▶️ Play / Слушать", callback_data="play_q")])
     return InlineKeyboardMarkup(buttons)
 
 
@@ -176,7 +380,7 @@ def send_question_no_delete(query, state, context):
         pass
 
 
-def get_file_id(update: Update, context: CallbackContext):
+def get_file_id(update, context):
     if update.message.photo:
         file_id = update.message.photo[-1].file_id
         update.message.reply_text(f"🖼 Photo file_id:\n<code>{file_id}</code>", parse_mode="HTML")
@@ -186,7 +390,7 @@ def get_file_id(update: Update, context: CallbackContext):
         update.message.reply_text(f"📎 {update.message.document.file_name}:\n<code>{update.message.document.file_id}</code>", parse_mode="HTML")
 
 
-def send_progress_snapshot(chat_id, context, state):
+def send_progress_snapshot(chat_id, context, state, user_id):
     total = len(QUESTIONS)
     en_done = len(state["progress_en"])
     ru_done = len(state["progress_ru"])
@@ -217,7 +421,7 @@ def send_progress_snapshot(chat_id, context, state):
             f"📅 {date_str} — since last time / с прошлого раза:\n"
             f"EN: +{en_done - last['en']}\n"
             f"RU: +{ru_done - last['ru']}\n"
-            f"🎧 Audio: +{audio_done - last['audio']}"
+            f"Audio: +{audio_done - last['audio']}"
         )
 
     text = (
@@ -234,26 +438,18 @@ def send_progress_snapshot(chat_id, context, state):
         f"{delta_text}"
     )
     state["last_snapshot"] = {"en": en_done, "ru": ru_done, "audio": audio_done}
+    db_save_snapshot(user_id, en_done, ru_done, audio_done)
     context.bot.send_message(chat_id=chat_id, text=text, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu_from_progress")]]))
 
 
-def button(update: Update, context: CallbackContext):
+def button(update, context):
     query = update.callback_query
     query.answer()
-    user_id = query.from_user.id
-    if user_id not in user_state:
-        order = list(range(len(QUESTIONS)))
-        random.shuffle(order)
-        user_state[user_id] = {
-            "lang": "ru", "pos": 0, "g_index": 0, "order": order, "audio_msg_ids": [],
-            "progress_en": set(), "progress_ru": set(), "progress_audio": set(), "last_snapshot": None, "last_menu_id": None,
-        }
-    state = user_state[user_id]
-    for key in ["audio_msg_ids", "progress_en", "progress_ru", "progress_audio"]:
-        if key not in state:
-            state[key] = [] if key == "audio_msg_ids" else set()
-    if "last_snapshot" not in state:
-        state["last_snapshot"] = None
+    user = query.from_user
+    user_id = user.id
+    username = user.username or user.first_name or str(user_id)
+    db_upsert_user(user_id, username)
+    state = get_or_init_state(user_id)
 
     if query.data in ("main_menu", "main_menu_from_glo"):
         for msg_id in state.get("audio_msg_ids", []):
@@ -262,12 +458,10 @@ def button(update: Update, context: CallbackContext):
             except Exception:
                 pass
         state["audio_msg_ids"] = []
-        current_msg_id = query.message.message_id
-        for msg_id in range(current_msg_id, max(current_msg_id - 20, 0), -1):
-            try:
-                context.bot.delete_message(chat_id=query.message.chat_id, message_id=msg_id)
-            except Exception:
-                pass
+        try:
+            query.message.delete()
+        except Exception:
+            pass
         context.bot.send_message(chat_id=query.message.chat_id, text=MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
 
     elif query.data == "main_menu_from_progress":
@@ -282,6 +476,7 @@ def button(update: Update, context: CallbackContext):
         random.shuffle(order)
         state["order"] = order
         state["pos"] = 0
+        db_log_event(user_id, "quiz_start", "all")
         send_question(query, state, context)
 
     elif query.data == "menu_topics":
@@ -296,6 +491,7 @@ def button(update: Update, context: CallbackContext):
         topic = TOPICS.get(topic_key, {})
         count = sum(1 for q in QUESTIONS if q.get("topic") == topic_key)
         text = f"{topic.get('en', '')} / {topic.get('ru', '')}\n\n{count} questions / {count} вопросов\n\nQuestions on this topic only / Вопросы только по этой теме"
+        db_log_event(user_id, "topic", topic_key)
         try:
             query.edit_message_text(text, reply_markup=get_topic_start_keyboard(topic_key))
         except Exception:
@@ -319,6 +515,7 @@ def button(update: Update, context: CallbackContext):
             msg = context.bot.send_audio(chat_id=query.message.chat_id, audio=q["audio_q"])
             state["audio_msg_ids"].append(msg.message_id)
             state["progress_audio"].add(q["num"])
+            db_save_progress(user_id, state["progress_en"], state["progress_ru"], state["progress_audio"])
 
     elif query.data == "play_a":
         q = QUESTIONS[state["order"][state["pos"]]]
@@ -326,17 +523,28 @@ def button(update: Update, context: CallbackContext):
             msg = context.bot.send_audio(chat_id=query.message.chat_id, audio=q["audio_a"])
             state["audio_msg_ids"].append(msg.message_id)
             state["progress_audio"].add(q["num"])
+            db_save_progress(user_id, state["progress_en"], state["progress_ru"], state["progress_audio"])
 
     elif query.data.startswith("answer_"):
         chosen = int(query.data.split("_")[1])
         q = QUESTIONS[state["order"][state["pos"]]]
         lang = state["lang"]
         q_num = q["num"]
+        total_answered = len(state["progress_en"]) + len(state["progress_ru"])
+        if total_answered >= 8:
+            db_log_event(user_id, "paywall", str(q_num))
+            query.edit_message_text(
+                "🔒 Free access: 8 questions\n\nFor full access — 467 questions, all topics, audio.\n\nComing soon! / Скоро!",
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]])
+            )
+            return
         if q_num not in state["progress_en"] and q_num not in state["progress_ru"]:
             if lang == "en":
                 state["progress_en"].add(q_num)
             else:
                 state["progress_ru"].add(q_num)
+        db_save_progress(user_id, state["progress_en"], state["progress_ru"], state["progress_audio"])
+        db_log_event(user_id, "answer", f"{q_num}:{'correct' if chosen == q['correct'] else 'wrong'}")
         explain = q["ru_explain"] if lang == "ru" else q["en_explain"]
         correct_idx = q["correct"]
         options = q["ru_options"] if lang == "ru" else q["en_options"]
@@ -354,7 +562,7 @@ def button(update: Update, context: CallbackContext):
             [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
         ]
         if q.get("audio_a"):
-            buttons.insert(1, [InlineKeyboardButton("▶️ Listen/Слушать ответ🇺🇸", callback_data="play_a")])
+            buttons.insert(1, [InlineKeyboardButton("▶️ Play / Слушать", callback_data="play_a")])
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "back_to_question":
@@ -377,7 +585,7 @@ def button(update: Update, context: CallbackContext):
             [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")],
         ]
         if q.get("audio_a"):
-            buttons.insert(1, [InlineKeyboardButton("▶️ Listen/Слушать ответ🇺🇸", callback_data="play_a")])
+            buttons.insert(1, [InlineKeyboardButton("▶️ Play / Слушать", callback_data="play_a")])
         query.edit_message_text(result, reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "next_question":
@@ -419,19 +627,22 @@ def button(update: Update, context: CallbackContext):
             query.message.delete()
         except Exception:
             pass
-        send_progress_snapshot(query.message.chat_id, context, state)
+        send_progress_snapshot(query.message.chat_id, context, state, user_id)
 
     elif query.data == "menu_drive":
         query.edit_message_text(
-            "🔊👂 Режим аудирования в разработке / Listening mode coming soon! 🚗 🏋️",
+            "🔊👂 Listening mode coming soon! 🚗 🏋️",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]])
         )
 
 
 def main():
+    init_db()
     updater = Updater(TOKEN)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
+    dp.add_handler(CommandHandler("stats", cmd_stats))
+    dp.add_handler(CommandHandler("broadcast", cmd_broadcast))
     dp.add_handler(CallbackQueryHandler(button))
     dp.add_handler(MessageHandler(Filters.photo | Filters.audio | Filters.document, get_file_id))
     updater.start_polling()
@@ -445,6 +656,8 @@ if __name__ == "__main__":
 header = """# -*- coding: utf-8 -*-
 import logging
 import random
+import sqlite3
+import threading
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -460,6 +673,7 @@ with open('/Users/Batyr/Documents/exam_screens/bot.py', 'w', encoding='utf-8') a
     f.write(q_str)
     f.write('\n')
     f.write(rest)
+    f.write(rest2)
 
 print('bot.py готов!')
 import ast
