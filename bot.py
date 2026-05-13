@@ -11486,6 +11486,15 @@ def db_set_paid(user_id, paid=True):
         c = conn.cursor()
         c.execute("UPDATE users SET is_paid=? WHERE user_id=?", (1 if paid else 0, user_id))
         conn.commit()
+
+def db_set_beta(user_id, beta=True):
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("UPDATE users SET is_beta=? WHERE user_id=?", (1 if beta else 0, user_id))
+        conn.commit()
+        conn.close()
+
         conn.close()
 
 def db_ban_user(user_id, banned=True):
