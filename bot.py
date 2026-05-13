@@ -11439,6 +11439,10 @@ def init_db():
             c.execute("ALTER TABLE users ADD COLUMN questions_answered INTEGER DEFAULT 0")
         except Exception:
             pass
+        try:
+            c.execute("ALTER TABLE users ADD COLUMN is_beta INTEGER DEFAULT 0")
+        except Exception:
+            pass
         c.execute("CREATE TABLE IF NOT EXISTS progress (user_id INTEGER PRIMARY KEY, progress_en TEXT DEFAULT '', progress_ru TEXT DEFAULT '', progress_audio TEXT DEFAULT '', last_snapshot_en INTEGER DEFAULT 0, last_snapshot_ru INTEGER DEFAULT 0, last_snapshot_audio INTEGER DEFAULT 0)")
         c.execute("CREATE TABLE IF NOT EXISTS events (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, event_type TEXT, detail TEXT, created_at TEXT)")
         conn.commit()
@@ -11471,10 +11475,10 @@ def db_is_paid(user_id):
     with DB_LOCK:
         conn = sqlite3.connect(DB_PATH)
         c = conn.cursor()
-        c.execute("SELECT is_paid FROM users WHERE user_id=?", (user_id,))
+        c.execute("SELECT is_paid, is_beta FROM users WHERE user_id=?", (user_id,))
         row = c.fetchone()
         conn.close()
-    return row and row[0] == 1
+    return row and (row[0] == 1 or row[1] == 1)
 
 def db_set_paid(user_id, paid=True):
     with DB_LOCK:
@@ -11571,8 +11575,10 @@ def db_get_stats():
         new_today = c.fetchone()[0]
         c.execute("SELECT COUNT(*) FROM users WHERE last_seen >= ? AND is_banned=0", (week_ago,))
         active_week = c.fetchone()[0]
-        c.execute("SELECT COUNT(*) FROM users WHERE is_paid=1")
+        c.execute("SELECT COUNT(*) FROM users WHERE is_paid=1 AND is_beta=0")
         paid = c.fetchone()[0]
+        c.execute("SELECT user_id, username FROM users WHERE is_beta=1 AND is_banned=0 ORDER BY last_seen DESC")
+        beta_users = c.fetchall()
         c.execute("SELECT COUNT(*) FROM users WHERE is_banned=1")
         banned = c.fetchone()[0]
         c.execute("SELECT COUNT(DISTINCT user_id) FROM events WHERE event_type='paywall'")
@@ -11595,7 +11601,8 @@ def db_get_stats():
         + "\U0001f195 New today: " + str(new_today) + "\n"
         + "\U0001f525 Active 7 days: " + str(active_week) + "\n"
         + "\U0001f634 Sleeping (7+ days): " + str(sleeping) + "\n"
-        + "\U0001f4b0 Paid: " + str(paid) + "\n"
+        + "\U0001f4b0 Real paid: " + str(paid) + "\n"
+        + "\U0001f9ea Beta testers (" + str(len(beta_users)) + "): " + (", ".join(("@" + u[1] if u[1] else str(u[0])) for u in beta_users) if beta_users else "none") + "\n"
         + "\U0001f6ab Banned: " + str(banned) + "\n"
         + "-" * 25 + "\n"
         + "\U0001f3af Funnel:\n"
