@@ -717,7 +717,7 @@ def button(update, context):
         if total_answered >= 8 and not db_is_paid(user_id):
             db_log_event(user_id, "paywall", str(q_num))
             query.edit_message_text(
-                "🔒 Бот уже на финишной прямой, скоро запускаемся!\nСледите за рекламой.\n\nFull access launching soon!\nStay tuned!",
+                "🔒 Бот уже на финишной прямой, скоро запускаемся!\nСледите за рекламой.\n\nХотите ранний доступ? Напишите нам: @SurfWhisperer\n\nFull access launching soon!\nStay tuned!\nEarly access? Contact us: @SurfWhisperer",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]])
             )
             return
@@ -806,6 +806,14 @@ def button(update, context):
             send_question(query, state, context)
 
     elif query.data == "menu_glossary":
+        total_answered = len(state["progress_en"]) + len(state["progress_ru"])
+        if total_answered >= 8 and not db_is_paid(user_id):
+            db_log_event(user_id, "paywall", "glossary")
+            query.edit_message_text(
+                "🔒 Бот уже на финишной прямой, скоро запускаемся!\nСледите за рекламой.\n\nХотите ранний доступ? Напишите нам: @SurfWhisperer\n\nFull access launching soon!\nStay tuned!\nEarly access? Contact us: @SurfWhisperer",
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]])
+            )
+            return
         state["g_index"] = 0
         send_glossary(query.message.chat_id, context, 0, old_msg_id=query.message.message_id)
 
