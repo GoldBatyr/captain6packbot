@@ -8174,7 +8174,7 @@ QUESTIONS = [
     },
     {
         "num": 341,
-        "topic": "lights_shapes",
+        "topic": "navigation",
         "en_q": "Your GPS shows a position of 37 01.5'N, 75 31.7'W. What is the course per standard magnetic compass (PSC) to Chesapeake Light? HINT: We always plot in True. Remember TVMDC?",
         "ru_q": "Ваш GPS показывает координаты 37°01.5'N, 75°31.7'W. Каков курс по стандартному магнитному компасу (КК) на маяк Чесапик-Лайт? ПОДСКАЗКА: Мы всегда прокладываем в истинных румбах. Помните формулу TVMDC (ИК-М-МК-Д-КК)?",
         "en_options": [
@@ -8198,7 +8198,7 @@ QUESTIONS = [
     },
     {
         "num": 342,
-        "topic": "lights_shapes",
+        "topic": "navigation",
         "en_q": "What is located at 41 10.4'N 71 57.1'W ?",
         "ru_q": "Что расположено в точке с координатами 41°10.4'N 71°57.1'W?",
         "en_options": [
@@ -8222,7 +8222,7 @@ QUESTIONS = [
     },
     {
         "num": 343,
-        "topic": "steering_rules",
+        "topic": "navigation",
         "en_q": "When navigating in the vicinity of 40 57.8'N 71 42.5W you should use caution because of_____________.",
         "ru_q": "При плавании в районе координат 40°57,8'N 71°42,5'W следует соблюдать осторожность из-за_____________.",
         "en_options": [
@@ -8246,7 +8246,7 @@ QUESTIONS = [
     },
     {
         "num": 344,
-        "topic": "steering_rules",
+        "topic": "navigation",
         "en_q": "What is located at 41 06.7'N 71 40.2'W ?",
         "ru_q": "Что находится в точке с координатами 41°06,7'N 71°40,2'W?",
         "en_options": [
@@ -8270,7 +8270,7 @@ QUESTIONS = [
     },
     {
         "num": 345,
-        "topic": "sound_signals",
+        "topic": "navigation",
         "en_q": "What is the course to steer from Chesapeake Light to North Chesapeake Entrance Lighted Whistle Buoy NCA?",
         "ru_q": "Какой курс следует держать от маяка Чесапик (Chesapeake Light) до светящегося свистящего буя NCA у северного входа в Чесапикский залив (North Chesapeake Entrance Lighted Whistle Buoy NCA)?",
         "en_options": [
@@ -8294,7 +8294,7 @@ QUESTIONS = [
     },
     {
         "num": 346,
-        "topic": "lights_shapes",
+        "topic": "navigation",
         "en_q": "Determine the course per standard magnetic compass from 0.2 mile south of Race Rock Light (LAT 41°14.6' N, LONG 72°02.8' W) to the entrance of the channel to Lake Montauk (west of Montauk Point).",
         "ru_q": "Определите курс по стандартному магнитному компасу от точки в 0,2 мили к югу от маяка Рейс-Рок (ШИР 41°14,6' N, ДОЛГ 72°02,8' W) до входа в канал к озеру Монток (к западу от мыса Монток).",
         "en_options": [
@@ -8534,7 +8534,7 @@ QUESTIONS = [
     },
     {
         "num": 356,
-        "topic": "lights_shapes",
+        "topic": "navigation",
         "en_q": "You are 3 miles due east of Montauk Point Light. What is the course per standard magnetic compass to a position 0.5 mile due south of Race Rock Light?",
         "ru_q": "Вы находитесь в 3 милях точно на восток от маяка Монток-Пойнт. Каков курс по стандартному магнитному компасу до точки в 0,5 мили точно на юг от маяка Рейс-Рок?",
         "en_options": [
@@ -8702,7 +8702,7 @@ QUESTIONS = [
     },
     {
         "num": 363,
-        "topic": "weather",
+        "topic": "navigation",
         "en_q": "Your position is LAT 37°00.0' N, LONG 75°30.0' W. What is the course to steer per standard magnetic compass to arrive at LAT 36°59.0' N, LONG 75°48.5' W, if the current is 043° T at 1.3 knots, a south-southeasterly wind is causing 3° of leeway, and you are turning for 8.7 knots?",
         "ru_q": "Ваше местоположение: широта 37°00.0' N, долгота 75°30.0' W. Какой курс по главному магнитному компасу необходимо держать для прибытия в точку с координатами широта 36°59.0' N, долгота 75°48.5' W, если течение 043° истинного при скорости 1,3 узла, ветер от зюйд-зюйд-оста вызывает дрейф 3°, а ход судна составляет 8,7 узла?",
         "en_options": [
@@ -11467,6 +11467,23 @@ def db_is_banned(user_id):
         conn.close()
     return row and row[0] == 1
 
+def db_is_paid(user_id):
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("SELECT is_paid FROM users WHERE user_id=?", (user_id,))
+        row = c.fetchone()
+        conn.close()
+    return row and row[0] == 1
+
+def db_set_paid(user_id, paid=True):
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("UPDATE users SET is_paid=? WHERE user_id=?", (1 if paid else 0, user_id))
+        conn.commit()
+        conn.close()
+
 def db_ban_user(user_id, banned=True):
     with DB_LOCK:
         conn = sqlite3.connect(DB_PATH)
@@ -11788,6 +11805,42 @@ def cmd_ok(update, context):
         update.message.reply_text(f"❌ Ошибка: {e}")
 
 
+def cmd_beta(update, context):
+    if update.message.from_user.id != ADMIN_ID:
+        return
+    args = context.args
+    if not args:
+        update.message.reply_text("Usage: /beta <user_id>")
+        return
+    try:
+        target_id = int(args[0])
+        db_set_paid(target_id, True)
+        try:
+            context.bot.send_message(chat_id=target_id, text="✅ Вам открыт полный доступ к боту!\nFull access granted!")
+        except Exception:
+            pass
+        update.message.reply_text(f"✅ Полный доступ выдан пользователю {target_id}")
+        db_log_event(target_id, "beta_granted", "by_admin")
+    except Exception as e:
+        update.message.reply_text(f"❌ Ошибка: {e}")
+
+
+def cmd_unbeta(update, context):
+    if update.message.from_user.id != ADMIN_ID:
+        return
+    args = context.args
+    if not args:
+        update.message.reply_text("Usage: /unbeta <user_id>")
+        return
+    try:
+        target_id = int(args[0])
+        db_set_paid(target_id, False)
+        update.message.reply_text(f"✅ Полный доступ отозван у пользователя {target_id}")
+        db_log_event(target_id, "beta_revoked", "by_admin")
+    except Exception as e:
+        update.message.reply_text(f"❌ Ошибка: {e}")
+
+
 def cmd_broadcast(update, context):
     if update.message.from_user.id != ADMIN_ID:
         return
@@ -11839,7 +11892,6 @@ def strip_letter(opt_text):
     if len(opt_text) >= 3 and opt_text[1] == ")":
         return opt_text[3:].strip()
     return opt_text[3:].strip()
-    return opt_text.strip()
 
 
 def build_question_keyboard(state):
@@ -12061,10 +12113,10 @@ def button(update, context):
         lang = state["lang"]
         q_num = q["num"]
         total_answered = len(state["progress_en"]) + len(state["progress_ru"])
-        if total_answered >= 8:
+        if total_answered >= 8 and not db_is_paid(user_id):
             db_log_event(user_id, "paywall", str(q_num))
             query.edit_message_text(
-                "🔒 Free access: 8 questions\n\nFor full access — 467 questions, all topics, audio.\n\nComing soon! / Скоро!",
+                "🔒 Бот уже на финишной прямой, скоро запускаемся!\nСледите за рекламой.\n\nFull access launching soon!\nStay tuned!",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]])
             )
             return
@@ -12179,12 +12231,35 @@ def main():
     init_db()
     updater = Updater(TOKEN)
     dp = updater.dispatcher
+
+    # Set commands: only /start for users, all commands for admin
+    from telegram import BotCommand, BotCommandScopeAllPrivateChats, BotCommandScopeChat
+    user_commands = [BotCommand("start", "Главное меню")]
+    admin_commands = [
+        BotCommand("start", "Главное меню"),
+        BotCommand("stats", "Статистика (только админ)"),
+        BotCommand("users", "Список пользователей (только админ)"),
+        BotCommand("send", "Написать юзеру (только админ)"),
+        BotCommand("ban", "Заблокировать юзера (только админ)"),
+        BotCommand("ok", "Разблокировать юзера (только админ)"),
+        BotCommand("beta", "Выдать полный доступ (только админ)"),
+        BotCommand("unbeta", "Отозвать полный доступ (только админ)"),
+        BotCommand("broadcast", "Рассылка всем (только админ)"),
+    ]
+    try:
+        updater.bot.set_my_commands(user_commands, scope=BotCommandScopeAllPrivateChats())
+        updater.bot.set_my_commands(admin_commands, scope=BotCommandScopeChat(chat_id=ADMIN_ID))
+    except Exception as e:
+        logging.error(f"SET_COMMANDS ERROR: {e}")
+
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("stats", cmd_stats))
     dp.add_handler(CommandHandler("users", cmd_users))
     dp.add_handler(CommandHandler("send", cmd_send))
     dp.add_handler(CommandHandler("ban", cmd_ban))
     dp.add_handler(CommandHandler("ok", cmd_ok))
+    dp.add_handler(CommandHandler("beta", cmd_beta))
+    dp.add_handler(CommandHandler("unbeta", cmd_unbeta))
     dp.add_handler(CommandHandler("broadcast", cmd_broadcast))
     dp.add_handler(CallbackQueryHandler(button))
     dp.add_handler(MessageHandler(Filters.photo | Filters.audio | Filters.document, get_file_id))

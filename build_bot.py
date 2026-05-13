@@ -3,6 +3,12 @@ import json
 with open('/Users/Batyr/Documents/exam_screens/questions.json', encoding='utf-8') as f:
     data = json.load(f)
 
+# Fix topics for chart navigation questions
+CHART_QUESTIONS = {341, 342, 343, 344, 345, 346, 356, 363}
+for q in data:
+    if q.get("num") in CHART_QUESTIONS:
+        q["topic"] = "navigation"
+
 q_str = "QUESTIONS = " + json.dumps(data, ensure_ascii=False, indent=4).replace("null", "None").replace("true", "True").replace("false", "False")
 
 rest = (
@@ -59,6 +65,23 @@ rest = (
     '        row = c.fetchone()\n'
     '        conn.close()\n'
     '    return row and row[0] == 1\n'
+    '\n'
+    'def db_is_paid(user_id):\n'
+    '    with DB_LOCK:\n'
+    '        conn = sqlite3.connect(DB_PATH)\n'
+    '        c = conn.cursor()\n'
+    '        c.execute("SELECT is_paid FROM users WHERE user_id=?", (user_id,))\n'
+    '        row = c.fetchone()\n'
+    '        conn.close()\n'
+    '    return row and row[0] == 1\n'
+    '\n'
+    'def db_set_paid(user_id, paid=True):\n'
+    '    with DB_LOCK:\n'
+    '        conn = sqlite3.connect(DB_PATH)\n'
+    '        c = conn.cursor()\n'
+    '        c.execute("UPDATE users SET is_paid=? WHERE user_id=?", (1 if paid else 0, user_id))\n'
+    '        conn.commit()\n'
+    '        conn.close()\n'
     '\n'
     'def db_ban_user(user_id, banned=True):\n'
     '    with DB_LOCK:\n'
@@ -383,6 +406,42 @@ def cmd_ok(update, context):
         update.message.reply_text(f"❌ Ошибка: {e}")
 
 
+def cmd_beta(update, context):
+    if update.message.from_user.id != ADMIN_ID:
+        return
+    args = context.args
+    if not args:
+        update.message.reply_text("Usage: /beta <user_id>")
+        return
+    try:
+        target_id = int(args[0])
+        db_set_paid(target_id, True)
+        try:
+            context.bot.send_message(chat_id=target_id, text="✅ Вам открыт полный доступ к боту!\nFull access granted!")
+        except Exception:
+            pass
+        update.message.reply_text(f"✅ Полный доступ выдан пользователю {target_id}")
+        db_log_event(target_id, "beta_granted", "by_admin")
+    except Exception as e:
+        update.message.reply_text(f"❌ Ошибка: {e}")
+
+
+def cmd_unbeta(update, context):
+    if update.message.from_user.id != ADMIN_ID:
+        return
+    args = context.args
+    if not args:
+        update.message.reply_text("Usage: /unbeta <user_id>")
+        return
+    try:
+        target_id = int(args[0])
+        db_set_paid(target_id, False)
+        update.message.reply_text(f"✅ Полный доступ отозван у пользователя {target_id}")
+        db_log_event(target_id, "beta_revoked", "by_admin")
+    except Exception as e:
+        update.message.reply_text(f"❌ Ошибка: {e}")
+
+
 def cmd_broadcast(update, context):
     if update.message.from_user.id != ADMIN_ID:
         return
@@ -434,7 +493,6 @@ def strip_letter(opt_text):
     if len(opt_text) >= 3 and opt_text[1] == ")":
         return opt_text[3:].strip()
     return opt_text[3:].strip()
-    return opt_text.strip()
 
 
 def build_question_keyboard(state):
@@ -656,10 +714,10 @@ def button(update, context):
         lang = state["lang"]
         q_num = q["num"]
         total_answered = len(state["progress_en"]) + len(state["progress_ru"])
-        if total_answered >= 8:
+        if total_answered >= 8 and not db_is_paid(user_id):
             db_log_event(user_id, "paywall", str(q_num))
             query.edit_message_text(
-                "🔒 Free access: 8 questions\n\nFor full access — 467 questions, all topics, audio.\n\nComing soon! / Скоро!",
+                "🔒 Бот уже на финишной прямой, скоро запускаемся!\nСледите за рекламой.\n\nFull access launching soon!\nStay tuned!",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]])
             )
             return
@@ -774,12 +832,35 @@ def main():
     init_db()
     updater = Updater(TOKEN)
     dp = updater.dispatcher
+
+    # Set commands: only /start for users, all commands for admin
+    from telegram import BotCommand, BotCommandScopeAllPrivateChats, BotCommandScopeChat
+    user_commands = [BotCommand("start", "Главное меню")]
+    admin_commands = [
+        BotCommand("start", "Главное меню"),
+        BotCommand("stats", "Статистика (только админ)"),
+        BotCommand("users", "Список пользователей (только админ)"),
+        BotCommand("send", "Написать юзеру (только админ)"),
+        BotCommand("ban", "Заблокировать юзера (только админ)"),
+        BotCommand("ok", "Разблокировать юзера (только админ)"),
+        BotCommand("beta", "Выдать полный доступ (только админ)"),
+        BotCommand("unbeta", "Отозвать полный доступ (только админ)"),
+        BotCommand("broadcast", "Рассылка всем (только админ)"),
+    ]
+    try:
+        updater.bot.set_my_commands(user_commands, scope=BotCommandScopeAllPrivateChats())
+        updater.bot.set_my_commands(admin_commands, scope=BotCommandScopeChat(chat_id=ADMIN_ID))
+    except Exception as e:
+        logging.error(f"SET_COMMANDS ERROR: {e}")
+
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("stats", cmd_stats))
     dp.add_handler(CommandHandler("users", cmd_users))
     dp.add_handler(CommandHandler("send", cmd_send))
     dp.add_handler(CommandHandler("ban", cmd_ban))
     dp.add_handler(CommandHandler("ok", cmd_ok))
+    dp.add_handler(CommandHandler("beta", cmd_beta))
+    dp.add_handler(CommandHandler("unbeta", cmd_unbeta))
     dp.add_handler(CommandHandler("broadcast", cmd_broadcast))
     dp.add_handler(CallbackQueryHandler(button))
     dp.add_handler(MessageHandler(Filters.photo | Filters.audio | Filters.document, get_file_id))
