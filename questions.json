@@ -10976,13 +10976,13 @@
             "A) Both vessels must exchange passing signals when they sight each other visually.",
             "B) No further whistle signals are necessary.",
             "C) The vessel downriver must stop engines and navigate with caution.",
-            "D) —"
+            "D) Both vessels must immediately sound passing signals whether or not they are in sight of each other."
         ],
         "ru_options": [
             "A) Оба судна должны обменяться сигналами расхождения, когда они визуально обнаружат друг друга.",
             "B) Дальнейшие звуковые сигналы не требуются.",
             "C) Судно, идущее вниз по течению, должно застопорить машины и следовать с осторожностью.",
-            "D) —"
+            "D) Оба судна должны немедленно обменяться сигналами расхождения независимо от того, видят ли они друг друга."
         ],
         "correct": 0,
         "en_explain": "Under Inland Rule 34(e), when approaching a bend or area where vessels may be obscured, a vessel must sound one prolonged blast as a warning signal. When this signal is answered by a vessel around the bend, both vessels are now aware of each other's presence, but they must still exchange the appropriate passing signals (one or two short blasts) required by Rule 34(a) once they sight each other visually to indicate their intended passing arrangement.",
