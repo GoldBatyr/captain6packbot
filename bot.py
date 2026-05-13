@@ -12251,6 +12251,100 @@ def button(update, context):
         )
 
 
+
+def send_notifications(bot):
+    try:
+        now = datetime.now(ZoneInfo("America/Los_Angeles"))
+        three_days_ago = (now.replace(hour=0, minute=0, second=0) - __import__("datetime").timedelta(days=3)).isoformat()
+        seven_days_ago = (now.replace(hour=0, minute=0, second=0) - __import__("datetime").timedelta(days=7)).isoformat()
+        one_day_ago = (now.replace(hour=0, minute=0, second=0) - __import__("datetime").timedelta(days=1)).isoformat()
+        three_days_ago_pw = (now.replace(hour=0, minute=0, second=0) - __import__("datetime").timedelta(days=3)).isoformat()
+
+        with DB_LOCK:
+            conn = sqlite3.connect(DB_PATH)
+            c = conn.cursor()
+
+            # Спящие 3 дня — первое уведомление
+            c.execute("""SELECT user_id FROM users
+                WHERE is_banned=0 AND questions_answered > 0
+                AND last_seen < ? AND last_seen >= ?
+                AND user_id NOT IN (SELECT user_id FROM events WHERE event_type='notif_sleep_1')
+            """, (three_days_ago, seven_days_ago))
+            sleep_1 = [r[0] for r in c.fetchall()]
+
+            # Спящие 7 дней — последнее уведомление
+            c.execute("""SELECT user_id FROM users
+                WHERE is_banned=0 AND questions_answered > 0
+                AND last_seen < ?
+                AND user_id IN (SELECT user_id FROM events WHERE event_type='notif_sleep_1')
+                AND user_id NOT IN (SELECT user_id FROM events WHERE event_type='notif_sleep_2')
+            """, (seven_days_ago,))
+            sleep_2 = [r[0] for r in c.fetchall()]
+
+            # Завис на paywall 24ч — первое уведомление
+            c.execute("""SELECT DISTINCT user_id FROM events
+                WHERE event_type='paywall' AND created_at < ?
+                AND user_id NOT IN (SELECT user_id FROM events WHERE event_type='notif_paywall_1')
+                AND user_id NOT IN (SELECT user_id FROM users WHERE is_paid=1 OR is_beta=1)
+            """, (one_day_ago,))
+            paywall_1 = [r[0] for r in c.fetchall()]
+
+            # Завис на paywall 3 дня — последнее уведомление
+            c.execute("""SELECT DISTINCT user_id FROM events
+                WHERE event_type='paywall' AND created_at < ?
+                AND user_id IN (SELECT user_id FROM events WHERE event_type='notif_paywall_1')
+                AND user_id NOT IN (SELECT user_id FROM events WHERE event_type='notif_paywall_2')
+                AND user_id NOT IN (SELECT user_id FROM users WHERE is_paid=1 OR is_beta=1)
+            """, (three_days_ago_pw,))
+            paywall_2 = [r[0] for r in c.fetchall()]
+
+            conn.close()
+
+        now_iso = now.isoformat()
+
+        for uid in sleep_1:
+            try:
+                bot.send_message(chat_id=uid,
+                    text="\u23f0 \u041f\u043e\u043a\u0430 \u0442\u044b \u0441\u043c\u043e\u0442\u0440\u0435\u043b \u0441\u0435\u0440\u0438\u0430\u043b \u2014 \u043a\u0442\u043e-\u0442\u043e \u0441\u0434\u0430\u043b \u044d\u043a\u0437\u0430\u043c\u0435\u043d \u0438 \u0432\u044b\u0448\u0435\u043b \u043d\u0430 \u0432\u043e\u0434\u0443. 15 \u043c\u0438\u043d\u0443\u0442 \u0432 \u0434\u0435\u043d\u044c \u043c\u0435\u043d\u044f\u044e\u0442 \u0432\u0441\u0451. \u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0438 \u2192 @Captain6PackBotRU")
+                db_log_event(uid, 'notif_sleep_1', now_iso)
+            except Exception as e:
+                logging.error(f"NOTIF sleep_1 {uid}: {e}")
+
+        for uid in sleep_2:
+            try:
+                bot.send_message(chat_id=uid,
+                    text="\u2693 \u041a\u0430\u043f\u0438\u0442\u0430\u043d\u0441\u043a\u0430\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u0441\u0430\u043c\u0430 \u0441\u0435\u0431\u044f \u043d\u0435 \u0441\u0434\u0430\u0441\u0442. \u0422\u0432\u043e\u0439 \u043f\u0440\u043e\u0433\u0440\u0435\u0441\u0441 \u0436\u0434\u0451\u0442 \u0442\u0435\u0431\u044f.")
+                db_log_event(uid, 'notif_sleep_2', now_iso)
+            except Exception as e:
+                logging.error(f"NOTIF sleep_2 {uid}: {e}")
+
+        for uid in paywall_1:
+            try:
+                bot.send_message(chat_id=uid,
+                    text="\U0001f3af Uber \u043f\u0440\u0438\u0432\u043e\u0437\u0438\u0442 \u0435\u0434\u0443. \u041a\u0430\u043f\u0438\u0442\u0430\u043d\u0441\u043a\u0430\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u043f\u0440\u0438\u0432\u043e\u0437\u0438\u0442 \u0441\u0432\u043e\u0431\u043e\u0434\u0443 \u0438 \u0434\u0435\u043d\u044c\u0433\u0438. \u041d\u0430\u043f\u0438\u0448\u0438 @SurfWhisperer \u2014 \u0440\u0430\u0437\u0431\u0435\u0440\u0451\u043c\u0441\u044f.")
+                db_log_event(uid, 'notif_paywall_1', now_iso)
+            except Exception as e:
+                logging.error(f"NOTIF paywall_1 {uid}: {e}")
+
+        for uid in paywall_2:
+            try:
+                bot.send_message(chat_id=uid,
+                    text="\U0001f6a2 \u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0440\u0430\u0437 \u043f\u0438\u0448\u0443. \u0422\u0435 \u043a\u0442\u043e \u043d\u0430\u0447\u0430\u043b \u043c\u0435\u0441\u044f\u0446 \u043d\u0430\u0437\u0430\u0434 \u2014 \u0443\u0436\u0435 \u0433\u043e\u0442\u043e\u0432\u044f\u0442\u0441\u044f \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443. \u041d\u0430\u043f\u0438\u0448\u0438 @SurfWhisperer \u043f\u043e\u043a\u0430 \u043c\u0435\u0441\u0442\u043e \u0435\u0441\u0442\u044c.")
+                db_log_event(uid, 'notif_paywall_2', now_iso)
+            except Exception as e:
+                logging.error(f"NOTIF paywall_2 {uid}: {e}")
+
+    except Exception as e:
+        logging.error(f"SEND_NOTIFICATIONS ERROR: {e}")
+
+
+def notification_loop(bot):
+    import time
+    while True:
+        send_notifications(bot)
+        time.sleep(3600)  # проверяем каждый час
+
+
 def main():
     init_db()
     updater = Updater(TOKEN)
@@ -12288,6 +12382,9 @@ def main():
     dp.add_handler(CallbackQueryHandler(button))
     dp.add_handler(MessageHandler(Filters.photo | Filters.audio | Filters.document, get_file_id))
     updater.start_polling()
+    import threading
+    notif_thread = threading.Thread(target=notification_loop, args=(updater.bot,), daemon=True)
+    notif_thread.start()
     updater.idle()
 
 
