@@ -11814,7 +11814,7 @@ def cmd_beta(update, context):
         return
     try:
         target_id = int(args[0])
-        db_set_paid(target_id, True)
+        db_set_beta(target_id, True)
         try:
             context.bot.send_message(chat_id=target_id, text="✅ Вам открыт полный доступ к боту!\nFull access granted!")
         except Exception:
@@ -11834,7 +11834,7 @@ def cmd_unbeta(update, context):
         return
     try:
         target_id = int(args[0])
-        db_set_paid(target_id, False)
+        db_set_beta(target_id, False)
         update.message.reply_text(f"✅ Полный доступ отозван у пользователя {target_id}")
         db_log_event(target_id, "beta_revoked", "by_admin")
     except Exception as e:
