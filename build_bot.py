@@ -234,15 +234,67 @@ TOPICS = {
 }
 
 GLOSSARY = [
-    {"term": "Port", "ru": "Левый борт", "file_id": "CQACAgIAAxkBAAIDpmnd33oq7vcbl3C-HGPr_Y6J2b1lAAIclAACwGnxSlm-Tt506gAB5jsE"},
-    {"term": "Starboard", "ru": "Правый борт", "file_id": "CQACAgIAAxkBAAIDomnd33qbRs51tSAVvE0nryvGzWbiAAIYlAACwGnxSl0Q_m9ht5HwOwQ"},
-    {"term": "Underway", "ru": "На ходу", "file_id": "CQACAgIAAxkBAAIDp2nd33p35ayaxoqPNzwJYN641FA0AAIdlAACwGnxSh9PEQJydsOFOwQ"},
-    {"term": "Overtaking", "ru": "Обгон", "file_id": "CQACAgIAAxkBAAIDqGnd33oW1nO6ZBHubCbuKyxT_UH0AAIelAACwGnxSsBO4PBX4-ieOwQ"},
-    {"term": "Stand-on vessel", "ru": "Привилегированное судно", "file_id": "CQACAgIAAxkBAAIDo2nd33pzNbV5R2gB0i-p2r-Y7YobAAIZlAACwGnxSnvglY2QQHKVOwQ"},
-    {"term": "Give-way vessel", "ru": "Уступающее судно", "file_id": "CQACAgIAAxkBAAIDpGnd33pmRKGYLIMxhkpqbMaEEHFuAAIalAACwGnxSjVVyCDZokm5OwQ"},
-    {"term": "Rules of the Road", "ru": "Правила плавания", "file_id": "CQACAgIAAxkBAAIDpWnd33on0t1CyfrTMrJpL0DfoRa0AAIblAACwGnxSj3l3wm9tbZoOwQ"},
+    {"term": "Bow", "ru": "Нос судна", "file_id": "CQACAgEAAxkDAAIMDGoFuurtIcRTwihPGwABDFNoVG3cZQAC-AcAAlAOMERzGkObnfs-vTsE"},
+    {"term": "Stern", "ru": "Корма судна", "file_id": "CQACAgEAAxkDAAIMDWoFuuyEkyr_7YSZBTAklymr56wIAAL5BwACUA4wRJ6iHG_fp91sOwQ"},
+    {"term": "Port", "ru": "Левый борт", "file_id": "CQACAgEAAxkDAAIMDmoFuu3niiLhwAVvy0Lq6AABV05EGQAC-gcAAlAOMES2RN6HugarqTsE"},
+    {"term": "Starboard", "ru": "Правый борт", "file_id": "CQACAgEAAxkDAAIMD2oFuu5QmmuKI1NdeI9eQFmfbfZFAAL7BwACUA4wRNNwamv1sa8yOwQ"},
+    {"term": "Beam", "ru": "Траверз / миделевое сечение", "file_id": "CQACAgEAAxkDAAIMEGoFuu9aeipWtxMJdiWtWYWxXJV4AAL8BwACUA4wRMu3EgwnOSCmOwQ"},
+    {"term": "Draft", "ru": "Осадка судна", "file_id": "CQACAgEAAxkDAAIMEWoFuvATbKjfxKcwE9jsK7RusJw2AAL9BwACUA4wRBjT-9rD9GL_OwQ"},
+    {"term": "Keel", "ru": "Киль", "file_id": "CQACAgEAAxkDAAIMEmoFuvFPNzRMmkxNA3e9jNdJx5a5AAL-BwACUA4wRG9tHyHNZe25OwQ"},
+    {"term": "Helm", "ru": "Штурвал / руль", "file_id": "CQACAgEAAxkDAAIME2oFuvMkdp1vTuhRYejCDFkxoXFRAAL_BwACUA4wRJ8PDPsbHb8rOwQ"},
+    {"term": "Underway", "ru": "На ходу (не на якоре и не пришвартовано)", "file_id": "CQACAgEAAxkDAAIMFGoFuvRMn8bc3vdNg9FjWxQJGAMeAAMIAAJQDjBEOENRfdTDq0Y7BA"},
+    {"term": "Headway", "ru": "Движение вперёд", "file_id": "CQACAgEAAxkDAAIMFWoFuvXFSiMVoyv5ifkxgCGroHLsAAIBCAACUA4wRKunjZBTzkJuOwQ"},
+    {"term": "Sternway", "ru": "Движение назад", "file_id": "CQACAgEAAxkDAAIMFmoFuvaC8kIWbbegFxNBY8-GC1TWAAICCAACUA4wRFhYkaoGXAWgOwQ"},
+    {"term": "Leeway", "ru": "Снос (дрейф под ветром)", "file_id": "CQACAgEAAxkDAAIMF2oFuvd0Lk5aIE--84rC7v1ge0_JAAIDCAACUA4wRAtTcK-j_zzTOwQ"},
+    {"term": "Overtaking", "ru": "Обгон", "file_id": "CQACAgEAAxkDAAIMGGoFuvibuNFqWQHgaYfzWcs-rPvHAAIECAACUA4wRNUZguCzOLS2OwQ"},
+    {"term": "Stand-on vessel", "ru": "Привилегированное судно", "file_id": "CQACAgEAAxkDAAIMGWoFuvlNKNf-DJIOgvT6oYC8p9HxAAIFCAACUA4wRK8g7PO-T5ScOwQ"},
+    {"term": "Give-way vessel", "ru": "Уступающее судно", "file_id": "CQACAgEAAxkDAAIMGmoFuvrFoo4cDlIlpGSW6AABzGzaBQACBggAAlAOMETpOfHCGUkntTsE"},
+    {"term": "Safe speed", "ru": "Безопасная скорость", "file_id": "CQACAgEAAxkDAAIMG2oFuvuACbXKbnpTFGcYlcsBYXLRAAIHCAACUA4wREpplAWZO4AvOwQ"},
+    {"term": "Proper lookout", "ru": "Надлежащее наблюдение", "file_id": "CQACAgEAAxkDAAIMHGoFuvws65PhGYAQA9qRJbg81PrPAAIICAACUA4wRPTpNoDt4d-qOwQ"},
+    {"term": "Collision course", "ru": "Курс сближения", "file_id": "CQACAgEAAxkDAAIMHWoFuv1iGbrBiLIebc6Df-A5CR6TAAIJCAACUA4wRNa4NC2XqzEMOwQ"},
+    {"term": "Masthead light", "ru": "Топовый огонь", "file_id": "CQACAgEAAxkDAAIMHmoFuv6-nqIZlhnsTj3_SotwOUoBAAIKCAACUA4wRDvOKYH-Usf6OwQ"},
+    {"term": "Sternlight", "ru": "Кормовой огонь", "file_id": "CQACAgEAAxkDAAIMH2oFuv9CPbX4jW9TKPcX0I5Y7YN8AAILCAACUA4wRCSN_fxTKTnvOwQ"},
+    {"term": "Sidelights", "ru": "Бортовые огни", "file_id": "CQACAgEAAxkDAAIMIGoFuwG8FGKsNV25P6VIQaEc4uehAAIMCAACUA4wRHxtDrkh-L_KOwQ"},
+    {"term": "All-round light", "ru": "Круговой огонь", "file_id": "CQACAgEAAxkDAAIMIWoFuwL3LhwYIziN12qLKX8UiudnAAINCAACUA4wRIENmidgcLArOwQ"},
+    {"term": "Anchor light", "ru": "Якорный огонь", "file_id": "CQACAgEAAxkDAAIMImoFuwP8hWITUR75gUsMfgABc0sSvgACDggAAlAOMESbs9-T6bUB1jsE"},
+    {"term": "Towing light", "ru": "Буксировочный огонь", "file_id": "CQACAgEAAxkDAAIMI2oFuwSLM_-R0RhCA8T8r1F5Uar0AAIPCAACUA4wRPMxi3bCslnnOwQ"},
+    {"term": "Flashing light", "ru": "Проблесковый огонь", "file_id": "CQACAgEAAxkDAAIMJGoFuwWF3UFxwtx1btFkkAYJNk2iAAIQCAACUA4wRHbclcoLiA6QOwQ"},
+    {"term": "Riding light", "ru": "Якорный огонь (на ходу)", "file_id": "CQACAgEAAxkDAAIMJWoFuwbvaP9UVXwFtXpAtNabKZiEAAIRCAACUA4wRLmz4XDwIptaOwQ"},
+    {"term": "Prolonged blast", "ru": "Продолжительный гудок (4-6 сек)", "file_id": "CQACAgEAAxkDAAIMJmoFuwfA8IYv96yY05bb9aui7KITAAISCAACUA4wRBk3L3p85BdAOwQ"},
+    {"term": "Short blast", "ru": "Короткий гудок (около 1 сек)", "file_id": "CQACAgEAAxkDAAIMJ2oFuwgHevXDztcwIwE7UZVihHG7AAITCAACUA4wRGGJ2XPlZcUSOwQ"},
+    {"term": "Whistle", "ru": "Звуковой сигнальный прибор (свисток/сирена)", "file_id": "CQACAgEAAxkDAAIMKGoFuwn__MzS3oszK9nXBo4nYOylAAIUCAACUA4wRFNMN7PvehKgOwQ"},
+    {"term": "Bell", "ru": "Колокол", "file_id": "CQACAgEAAxkDAAIMKWoFuwoIHtj3fK14IfJSx5jSYCHzAAIVCAACUA4wRA0x2wesq0lIOwQ"},
+    {"term": "Gong", "ru": "Гонг", "file_id": "CQACAgEAAxkDAAIMKmoFuwujo2z57Evn4-4_iRLzpV2hAAIWCAACUA4wRLMsy99S05f7OwQ"},
+    {"term": "Fog signal", "ru": "Туманный сигнал", "file_id": "CQACAgEAAxkDAAIMK2oFuwyxyiX5bbMUqU-qf1_jYnWiAAIXCAACUA4wRLwyZLlDdvppOwQ"},
+    {"term": "PDV", "ru": "Судно с механическим двигателем на ходу", "file_id": "CQACAgEAAxkDAAIMLGoFuw2jPTZ4-ovN--ATGn-Sm6I3AAIYCAACUA4wRHeOw3dJpvdeOwQ"},
+    {"term": "SV", "ru": "Парусное судно", "file_id": "CQACAgEAAxkDAAIMLWoFuw5IG6VARDOjVbzjGsub93arAAIZCAACUA4wRF-QmrE5X52pOwQ"},
+    {"term": "Vessel under oars", "ru": "Судно на вёслах", "file_id": "CQACAgEAAxkDAAIMLmoFuw98_rg77jbWV7SpXu9sgOL2AAIaCAACUA4wROvFtThT7CHuOwQ"},
+    {"term": "NUC", "ru": "Судно, лишённое управления", "file_id": "CQACAgEAAxkDAAIML2oFuxHj43yvIxRhxClOPgmXnYyfAAIbCAACUA4wRBMUAxTeh6edOwQ"},
+    {"term": "RAM", "ru": "Судно, ограниченное в возможности маневрировать", "file_id": "CQACAgEAAxkDAAIMMGoFuxLbrxPOmpqCc9dvlJvZdkawAAIcCAACUA4wRB-2D0N8w9O6OwQ"},
+    {"term": "CBD", "ru": "Судно, стеснённое своей осадкой", "file_id": "CQACAgEAAxkDAAIMMWoFuxPdwuUoRwsyH-9aKiakx_WfAAIdCAACUA4wRI5IVDI2Vr5tOwQ"},
+    {"term": "Vessel engaged in fishing", "ru": "Судно, занятое ловом рыбы", "file_id": "CQACAgEAAxkDAAIMMmoFuxSBpfmwEhwEizkuLRRIjSpKAAIeCAACUA4wREC3DQW9s6OvOwQ"},
+    {"term": "Seaplane", "ru": "Гидросамолёт", "file_id": "CQACAgEAAxkDAAIMM2oFuxVKXIgqRoXzPawNNFpwORhrAAIfCAACUA4wRKk0cYTBsQwnOwQ"},
+    {"term": "Narrow channel", "ru": "Узкий проход", "file_id": "CQACAgEAAxkDAAIMNGoFuxYvFqFkncQJQRZ1eSq9OxE0AAIgCAACUA4wRNTQKyEojyhvOwQ"},
+    {"term": "TSS", "ru": "Система разделения движения", "file_id": "CQACAgEAAxkDAAIMNWoFuxipNvKKz_9Z0lOIBlG6C0mVAAIhCAACUA4wRMFKU78ig3QdOwQ"},
+    {"term": "Fairway", "ru": "Фарватер", "file_id": "CQACAgEAAxkDAAIMNmoFuxkh-j0jW9sr2J881QpxreCTAAIiCAACUA4wRPAp9cvAdPwTOwQ"},
+    {"term": "Anchorage", "ru": "Место якорной стоянки", "file_id": "CQACAgEAAxkDAAIMN2oFuxqao7suiAgqXm3d4dOd2j2dAAIjCAACUA4wREzq28FrTTJFOwQ"},
+    {"term": "Shoal", "ru": "Мель / отмель", "file_id": "CQACAgEAAxkDAAIMOGoFuxsahc-chHO3aAPfmcTiAAHIOAACJAgAAlAOMEQnd7G8bJrSQTsE"},
+    {"term": "Fathom", "ru": "Морская сажень (1,83 м / 6 футов)", "file_id": "CQACAgEAAxkDAAIMOWoFuxxT81qF5v7qRu3Oaf9LAAHBRgACJQgAAlAOMEQSKCDZVgRuhDsE"},
+    {"term": "Compass rose", "ru": "Роза ветров / картушка компаса", "file_id": "CQACAgEAAxkDAAIMOmoFux0_E61yD6WtrUvzymNkB0moAAImCAACUA4wRLcKnponUW_JOwQ"},
+    {"term": "Lubber line", "ru": "Курсовая черта компаса", "file_id": "CQACAgEAAxkDAAIMO2oFux686_CxxrH4lbIEZ9PEdbN0AAInCAACUA4wRAx8dJhFLEpyOwQ"},
+    {"term": "DR", "ru": "Счислимое место (Dead Reckoning)", "file_id": "CQACAgEAAxkDAAIMPGoFux_UYrWXaJuDQnWyjw_zYUbeAAIoCAACUA4wRMCwQoVogDgDOwQ"},
+    {"term": "Variation", "ru": "Магнитное склонение", "file_id": "CQACAgEAAxkDAAIMPWoFuyC4ZUkj4ENBFupxXR1JlhzsAAIpCAACUA4wRIqP57J8VwxbOwQ"},
+    {"term": "Deviation", "ru": "Девиация компаса", "file_id": "CQACAgEAAxkDAAIMPmoFuyLVWFXRc3gwnBN59l6FOP1EAAIqCAACUA4wRFTZGdLfsp-6OwQ"},
+    {"term": "WPT", "ru": "Путевая точка (Waypoint)", "file_id": "CQACAgEAAxkDAAIMP2oFuyNkOYRRu5pWPQ4_wZ9qIYqCAAIrCAACUA4wRMXemSzF2eHEOwQ"},
+    {"term": "Bearing", "ru": "Пеленг", "file_id": "CQACAgEAAxkDAAIMQGoFuyQRL6rIFhDP8YzKsWTs_CdOAAIsCAACUA4wRP0wN4zq9pAtOwQ"},
+    {"term": "Fix", "ru": "Обсервованное место", "file_id": "CQACAgEAAxkDAAIMQWoFuyWpdig2kH8zlgABCb-CTdOZvwACLQgAAlAOMESz9Desku6GujsE"},
+    {"term": "Wake boat", "ru": "Катер для вейксёрфинга/вейкборда", "file_id": "CQACAgEAAxkDAAIMQmoFuyZS93-pM0ISnFHT3O2ntWbLAAIuCAACUA4wRJrO9_jnXzoJOwQ"},
+    {"term": "PWC", "ru": "Гидроцикл (Personal Watercraft)", "file_id": "CQACAgEAAxkDAAIMQ2oFuyd7RWzG77wcuhMplhZfKNstAAIvCAACUA4wRIwCmRf64LB_OwQ"},
+    {"term": "Charter vessel", "ru": "Чартерное судно", "file_id": "CQACAgEAAxkDAAIMRGoFuyiE68ZGsJ1iYDSkFds8F2W6AAIwCAACUA4wRMtJ_X1tL_RhOwQ"},
+    {"term": "Recreational vessel", "ru": "Прогулочное судно", "file_id": "CQACAgEAAxkDAAIMRWoFuylIz6IwRtUpfw2pLH43P_KWAAIxCAACUA4wRFGDnhmOBkHzOwQ"},
+    {"term": "Auxiliary sail", "ru": "Вспомогательный парус (мотосейлер)", "file_id": "CQACAgEAAxkDAAIMRmoFuyrpGlqs46AtV9zKyQt1URcFAAIyCAACUA4wRP0q5-zHS6cIOwQ"},
+    {"term": "Dinghy", "ru": "Динги / малая шлюпка", "file_id": "CQACAgEAAxkDAAIMR2oFuysfxenEOrGplCZ6_sbf-kvbAAIzCAACUA4wRNForVV6SzaAOwQ"},
 ]
-
 
 def get_main_menu_keyboard():
     return InlineKeyboardMarkup([
@@ -476,13 +528,19 @@ def send_glossary(chat_id, context, index, old_msg_id=None):
         context.bot.send_message(chat_id=chat_id, text=MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
         return
     term = GLOSSARY[index]
-    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}\n\n{COPYRIGHT}"
+    caption = (
+        f"📖 {index + 1} / {len(GLOSSARY)}\n\n"
+        f"EN:  {term['term']}\n"
+        f"RU:  {term['ru']}\n\n"
+        f"{COPYRIGHT}"
+    )
     try:
         context.bot.send_audio(
             chat_id=chat_id, audio=term["file_id"], caption=caption,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("Next", callback_data=f"glo_{index + 1}")],
-                [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu_from_glo")],
+                [InlineKeyboardButton("▶️ Listen / Слушать 🇺🇸", callback_data=f"glo_audio_{index}")],
+                [InlineKeyboardButton("Next ➡️", callback_data=f"glo_{index + 1}")],
+                [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu_from_glo")],
             ])
         )
     except Exception as e:
@@ -815,7 +873,15 @@ def button(update, context):
             )
             return
         state["g_index"] = 0
-        send_glossary(query.message.chat_id, context, 0, old_msg_id=query.message.message_id)
+        try:
+            context.bot.edit_message_text(
+                chat_id=query.message.chat_id,
+                message_id=query.message.message_id,
+                text="🔄 База постоянно пополняется. Новые термины — первыми для участников $249 и $499",
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📖 Начать / Start", callback_data="glo_0")]])
+            )
+        except Exception as e:
+            logging.error(f"GLOSSARY INTRO ERROR: {e}")
 
     elif query.data.startswith("glo_"):
         index = int(query.data[4:])

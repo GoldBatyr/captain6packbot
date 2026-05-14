@@ -11439,10 +11439,6 @@ def init_db():
             c.execute("ALTER TABLE users ADD COLUMN questions_answered INTEGER DEFAULT 0")
         except Exception:
             pass
-        try:
-            c.execute("ALTER TABLE users ADD COLUMN is_beta INTEGER DEFAULT 0")
-        except Exception:
-            pass
         c.execute("CREATE TABLE IF NOT EXISTS progress (user_id INTEGER PRIMARY KEY, progress_en TEXT DEFAULT '', progress_ru TEXT DEFAULT '', progress_audio TEXT DEFAULT '', last_snapshot_en INTEGER DEFAULT 0, last_snapshot_ru INTEGER DEFAULT 0, last_snapshot_audio INTEGER DEFAULT 0)")
         c.execute("CREATE TABLE IF NOT EXISTS events (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER, event_type TEXT, detail TEXT, created_at TEXT)")
         conn.commit()
@@ -11475,10 +11471,10 @@ def db_is_paid(user_id):
     with DB_LOCK:
         conn = sqlite3.connect(DB_PATH)
         c = conn.cursor()
-        c.execute("SELECT is_paid, is_beta FROM users WHERE user_id=?", (user_id,))
+        c.execute("SELECT is_paid FROM users WHERE user_id=?", (user_id,))
         row = c.fetchone()
         conn.close()
-    return row and (row[0] == 1 or row[1] == 1)
+    return row and row[0] == 1
 
 def db_set_paid(user_id, paid=True):
     with DB_LOCK:
@@ -11486,15 +11482,6 @@ def db_set_paid(user_id, paid=True):
         c = conn.cursor()
         c.execute("UPDATE users SET is_paid=? WHERE user_id=?", (1 if paid else 0, user_id))
         conn.commit()
-
-def db_set_beta(user_id, beta=True):
-    with DB_LOCK:
-        conn = sqlite3.connect(DB_PATH)
-        c = conn.cursor()
-        c.execute("UPDATE users SET is_beta=? WHERE user_id=?", (1 if beta else 0, user_id))
-        conn.commit()
-        conn.close()
-
         conn.close()
 
 def db_ban_user(user_id, banned=True):
@@ -11584,10 +11571,8 @@ def db_get_stats():
         new_today = c.fetchone()[0]
         c.execute("SELECT COUNT(*) FROM users WHERE last_seen >= ? AND is_banned=0", (week_ago,))
         active_week = c.fetchone()[0]
-        c.execute("SELECT COUNT(*) FROM users WHERE is_paid=1 AND is_beta=0")
+        c.execute("SELECT COUNT(*) FROM users WHERE is_paid=1")
         paid = c.fetchone()[0]
-        c.execute("SELECT user_id, username FROM users WHERE is_beta=1 AND is_banned=0 ORDER BY last_seen DESC")
-        beta_users = c.fetchall()
         c.execute("SELECT COUNT(*) FROM users WHERE is_banned=1")
         banned = c.fetchone()[0]
         c.execute("SELECT COUNT(DISTINCT user_id) FROM events WHERE event_type='paywall'")
@@ -11610,8 +11595,7 @@ def db_get_stats():
         + "\U0001f195 New today: " + str(new_today) + "\n"
         + "\U0001f525 Active 7 days: " + str(active_week) + "\n"
         + "\U0001f634 Sleeping (7+ days): " + str(sleeping) + "\n"
-        + "\U0001f4b0 Real paid: " + str(paid) + "\n"
-        + "\U0001f9ea Beta testers (" + str(len(beta_users)) + "): " + (", ".join(("@" + u[1] if u[1] else str(u[0])) for u in beta_users) if beta_users else "none") + "\n"
+        + "\U0001f4b0 Paid: " + str(paid) + "\n"
         + "\U0001f6ab Banned: " + str(banned) + "\n"
         + "-" * 25 + "\n"
         + "\U0001f3af Funnel:\n"
@@ -11649,15 +11633,67 @@ TOPICS = {
 }
 
 GLOSSARY = [
-    {"term": "Port", "ru": "Левый борт", "file_id": "CQACAgIAAxkBAAIDpmnd33oq7vcbl3C-HGPr_Y6J2b1lAAIclAACwGnxSlm-Tt506gAB5jsE"},
-    {"term": "Starboard", "ru": "Правый борт", "file_id": "CQACAgIAAxkBAAIDomnd33qbRs51tSAVvE0nryvGzWbiAAIYlAACwGnxSl0Q_m9ht5HwOwQ"},
-    {"term": "Underway", "ru": "На ходу", "file_id": "CQACAgIAAxkBAAIDp2nd33p35ayaxoqPNzwJYN641FA0AAIdlAACwGnxSh9PEQJydsOFOwQ"},
-    {"term": "Overtaking", "ru": "Обгон", "file_id": "CQACAgIAAxkBAAIDqGnd33oW1nO6ZBHubCbuKyxT_UH0AAIelAACwGnxSsBO4PBX4-ieOwQ"},
-    {"term": "Stand-on vessel", "ru": "Привилегированное судно", "file_id": "CQACAgIAAxkBAAIDo2nd33pzNbV5R2gB0i-p2r-Y7YobAAIZlAACwGnxSnvglY2QQHKVOwQ"},
-    {"term": "Give-way vessel", "ru": "Уступающее судно", "file_id": "CQACAgIAAxkBAAIDpGnd33pmRKGYLIMxhkpqbMaEEHFuAAIalAACwGnxSjVVyCDZokm5OwQ"},
-    {"term": "Rules of the Road", "ru": "Правила плавания", "file_id": "CQACAgIAAxkBAAIDpWnd33on0t1CyfrTMrJpL0DfoRa0AAIblAACwGnxSj3l3wm9tbZoOwQ"},
+    {"term": "Bow", "ru": "Нос судна", "file_id": "CQACAgEAAxkDAAIMDGoFuurtIcRTwihPGwABDFNoVG3cZQAC-AcAAlAOMERzGkObnfs-vTsE"},
+    {"term": "Stern", "ru": "Корма судна", "file_id": "CQACAgEAAxkDAAIMDWoFuuyEkyr_7YSZBTAklymr56wIAAL5BwACUA4wRJ6iHG_fp91sOwQ"},
+    {"term": "Port", "ru": "Левый борт", "file_id": "CQACAgEAAxkDAAIMDmoFuu3niiLhwAVvy0Lq6AABV05EGQAC-gcAAlAOMES2RN6HugarqTsE"},
+    {"term": "Starboard", "ru": "Правый борт", "file_id": "CQACAgEAAxkDAAIMD2oFuu5QmmuKI1NdeI9eQFmfbfZFAAL7BwACUA4wRNNwamv1sa8yOwQ"},
+    {"term": "Beam", "ru": "Траверз / миделевое сечение", "file_id": "CQACAgEAAxkDAAIMEGoFuu9aeipWtxMJdiWtWYWxXJV4AAL8BwACUA4wRMu3EgwnOSCmOwQ"},
+    {"term": "Draft", "ru": "Осадка судна", "file_id": "CQACAgEAAxkDAAIMEWoFuvATbKjfxKcwE9jsK7RusJw2AAL9BwACUA4wRBjT-9rD9GL_OwQ"},
+    {"term": "Keel", "ru": "Киль", "file_id": "CQACAgEAAxkDAAIMEmoFuvFPNzRMmkxNA3e9jNdJx5a5AAL-BwACUA4wRG9tHyHNZe25OwQ"},
+    {"term": "Helm", "ru": "Штурвал / руль", "file_id": "CQACAgEAAxkDAAIME2oFuvMkdp1vTuhRYejCDFkxoXFRAAL_BwACUA4wRJ8PDPsbHb8rOwQ"},
+    {"term": "Underway", "ru": "На ходу (не на якоре и не пришвартовано)", "file_id": "CQACAgEAAxkDAAIMFGoFuvRMn8bc3vdNg9FjWxQJGAMeAAMIAAJQDjBEOENRfdTDq0Y7BA"},
+    {"term": "Headway", "ru": "Движение вперёд", "file_id": "CQACAgEAAxkDAAIMFWoFuvXFSiMVoyv5ifkxgCGroHLsAAIBCAACUA4wRKunjZBTzkJuOwQ"},
+    {"term": "Sternway", "ru": "Движение назад", "file_id": "CQACAgEAAxkDAAIMFmoFuvaC8kIWbbegFxNBY8-GC1TWAAICCAACUA4wRFhYkaoGXAWgOwQ"},
+    {"term": "Leeway", "ru": "Снос (дрейф под ветром)", "file_id": "CQACAgEAAxkDAAIMF2oFuvd0Lk5aIE--84rC7v1ge0_JAAIDCAACUA4wRAtTcK-j_zzTOwQ"},
+    {"term": "Overtaking", "ru": "Обгон", "file_id": "CQACAgEAAxkDAAIMGGoFuvibuNFqWQHgaYfzWcs-rPvHAAIECAACUA4wRNUZguCzOLS2OwQ"},
+    {"term": "Stand-on vessel", "ru": "Привилегированное судно", "file_id": "CQACAgEAAxkDAAIMGWoFuvlNKNf-DJIOgvT6oYC8p9HxAAIFCAACUA4wRK8g7PO-T5ScOwQ"},
+    {"term": "Give-way vessel", "ru": "Уступающее судно", "file_id": "CQACAgEAAxkDAAIMGmoFuvrFoo4cDlIlpGSW6AABzGzaBQACBggAAlAOMETpOfHCGUkntTsE"},
+    {"term": "Safe speed", "ru": "Безопасная скорость", "file_id": "CQACAgEAAxkDAAIMG2oFuvuACbXKbnpTFGcYlcsBYXLRAAIHCAACUA4wREpplAWZO4AvOwQ"},
+    {"term": "Proper lookout", "ru": "Надлежащее наблюдение", "file_id": "CQACAgEAAxkDAAIMHGoFuvws65PhGYAQA9qRJbg81PrPAAIICAACUA4wRPTpNoDt4d-qOwQ"},
+    {"term": "Collision course", "ru": "Курс сближения", "file_id": "CQACAgEAAxkDAAIMHWoFuv1iGbrBiLIebc6Df-A5CR6TAAIJCAACUA4wRNa4NC2XqzEMOwQ"},
+    {"term": "Masthead light", "ru": "Топовый огонь", "file_id": "CQACAgEAAxkDAAIMHmoFuv6-nqIZlhnsTj3_SotwOUoBAAIKCAACUA4wRDvOKYH-Usf6OwQ"},
+    {"term": "Sternlight", "ru": "Кормовой огонь", "file_id": "CQACAgEAAxkDAAIMH2oFuv9CPbX4jW9TKPcX0I5Y7YN8AAILCAACUA4wRCSN_fxTKTnvOwQ"},
+    {"term": "Sidelights", "ru": "Бортовые огни", "file_id": "CQACAgEAAxkDAAIMIGoFuwG8FGKsNV25P6VIQaEc4uehAAIMCAACUA4wRHxtDrkh-L_KOwQ"},
+    {"term": "All-round light", "ru": "Круговой огонь", "file_id": "CQACAgEAAxkDAAIMIWoFuwL3LhwYIziN12qLKX8UiudnAAINCAACUA4wRIENmidgcLArOwQ"},
+    {"term": "Anchor light", "ru": "Якорный огонь", "file_id": "CQACAgEAAxkDAAIMImoFuwP8hWITUR75gUsMfgABc0sSvgACDggAAlAOMESbs9-T6bUB1jsE"},
+    {"term": "Towing light", "ru": "Буксировочный огонь", "file_id": "CQACAgEAAxkDAAIMI2oFuwSLM_-R0RhCA8T8r1F5Uar0AAIPCAACUA4wRPMxi3bCslnnOwQ"},
+    {"term": "Flashing light", "ru": "Проблесковый огонь", "file_id": "CQACAgEAAxkDAAIMJGoFuwWF3UFxwtx1btFkkAYJNk2iAAIQCAACUA4wRHbclcoLiA6QOwQ"},
+    {"term": "Riding light", "ru": "Якорный огонь (на ходу)", "file_id": "CQACAgEAAxkDAAIMJWoFuwbvaP9UVXwFtXpAtNabKZiEAAIRCAACUA4wRLmz4XDwIptaOwQ"},
+    {"term": "Prolonged blast", "ru": "Продолжительный гудок (4-6 сек)", "file_id": "CQACAgEAAxkDAAIMJmoFuwfA8IYv96yY05bb9aui7KITAAISCAACUA4wRBk3L3p85BdAOwQ"},
+    {"term": "Short blast", "ru": "Короткий гудок (около 1 сек)", "file_id": "CQACAgEAAxkDAAIMJ2oFuwgHevXDztcwIwE7UZVihHG7AAITCAACUA4wRGGJ2XPlZcUSOwQ"},
+    {"term": "Whistle", "ru": "Звуковой сигнальный прибор (свисток/сирена)", "file_id": "CQACAgEAAxkDAAIMKGoFuwn__MzS3oszK9nXBo4nYOylAAIUCAACUA4wRFNMN7PvehKgOwQ"},
+    {"term": "Bell", "ru": "Колокол", "file_id": "CQACAgEAAxkDAAIMKWoFuwoIHtj3fK14IfJSx5jSYCHzAAIVCAACUA4wRA0x2wesq0lIOwQ"},
+    {"term": "Gong", "ru": "Гонг", "file_id": "CQACAgEAAxkDAAIMKmoFuwujo2z57Evn4-4_iRLzpV2hAAIWCAACUA4wRLMsy99S05f7OwQ"},
+    {"term": "Fog signal", "ru": "Туманный сигнал", "file_id": "CQACAgEAAxkDAAIMK2oFuwyxyiX5bbMUqU-qf1_jYnWiAAIXCAACUA4wRLwyZLlDdvppOwQ"},
+    {"term": "PDV", "ru": "Судно с механическим двигателем на ходу", "file_id": "CQACAgEAAxkDAAIMLGoFuw2jPTZ4-ovN--ATGn-Sm6I3AAIYCAACUA4wRHeOw3dJpvdeOwQ"},
+    {"term": "SV", "ru": "Парусное судно", "file_id": "CQACAgEAAxkDAAIMLWoFuw5IG6VARDOjVbzjGsub93arAAIZCAACUA4wRF-QmrE5X52pOwQ"},
+    {"term": "Vessel under oars", "ru": "Судно на вёслах", "file_id": "CQACAgEAAxkDAAIMLmoFuw98_rg77jbWV7SpXu9sgOL2AAIaCAACUA4wROvFtThT7CHuOwQ"},
+    {"term": "NUC", "ru": "Судно, лишённое управления", "file_id": "CQACAgEAAxkDAAIML2oFuxHj43yvIxRhxClOPgmXnYyfAAIbCAACUA4wRBMUAxTeh6edOwQ"},
+    {"term": "RAM", "ru": "Судно, ограниченное в возможности маневрировать", "file_id": "CQACAgEAAxkDAAIMMGoFuxLbrxPOmpqCc9dvlJvZdkawAAIcCAACUA4wRB-2D0N8w9O6OwQ"},
+    {"term": "CBD", "ru": "Судно, стеснённое своей осадкой", "file_id": "CQACAgEAAxkDAAIMMWoFuxPdwuUoRwsyH-9aKiakx_WfAAIdCAACUA4wRI5IVDI2Vr5tOwQ"},
+    {"term": "Vessel engaged in fishing", "ru": "Судно, занятое ловом рыбы", "file_id": "CQACAgEAAxkDAAIMMmoFuxSBpfmwEhwEizkuLRRIjSpKAAIeCAACUA4wREC3DQW9s6OvOwQ"},
+    {"term": "Seaplane", "ru": "Гидросамолёт", "file_id": "CQACAgEAAxkDAAIMM2oFuxVKXIgqRoXzPawNNFpwORhrAAIfCAACUA4wRKk0cYTBsQwnOwQ"},
+    {"term": "Narrow channel", "ru": "Узкий проход", "file_id": "CQACAgEAAxkDAAIMNGoFuxYvFqFkncQJQRZ1eSq9OxE0AAIgCAACUA4wRNTQKyEojyhvOwQ"},
+    {"term": "TSS", "ru": "Система разделения движения", "file_id": "CQACAgEAAxkDAAIMNWoFuxipNvKKz_9Z0lOIBlG6C0mVAAIhCAACUA4wRMFKU78ig3QdOwQ"},
+    {"term": "Fairway", "ru": "Фарватер", "file_id": "CQACAgEAAxkDAAIMNmoFuxkh-j0jW9sr2J881QpxreCTAAIiCAACUA4wRPAp9cvAdPwTOwQ"},
+    {"term": "Anchorage", "ru": "Место якорной стоянки", "file_id": "CQACAgEAAxkDAAIMN2oFuxqao7suiAgqXm3d4dOd2j2dAAIjCAACUA4wREzq28FrTTJFOwQ"},
+    {"term": "Shoal", "ru": "Мель / отмель", "file_id": "CQACAgEAAxkDAAIMOGoFuxsahc-chHO3aAPfmcTiAAHIOAACJAgAAlAOMEQnd7G8bJrSQTsE"},
+    {"term": "Fathom", "ru": "Морская сажень (1,83 м / 6 футов)", "file_id": "CQACAgEAAxkDAAIMOWoFuxxT81qF5v7qRu3Oaf9LAAHBRgACJQgAAlAOMEQSKCDZVgRuhDsE"},
+    {"term": "Compass rose", "ru": "Роза ветров / картушка компаса", "file_id": "CQACAgEAAxkDAAIMOmoFux0_E61yD6WtrUvzymNkB0moAAImCAACUA4wRLcKnponUW_JOwQ"},
+    {"term": "Lubber line", "ru": "Курсовая черта компаса", "file_id": "CQACAgEAAxkDAAIMO2oFux686_CxxrH4lbIEZ9PEdbN0AAInCAACUA4wRAx8dJhFLEpyOwQ"},
+    {"term": "DR", "ru": "Счислимое место (Dead Reckoning)", "file_id": "CQACAgEAAxkDAAIMPGoFux_UYrWXaJuDQnWyjw_zYUbeAAIoCAACUA4wRMCwQoVogDgDOwQ"},
+    {"term": "Variation", "ru": "Магнитное склонение", "file_id": "CQACAgEAAxkDAAIMPWoFuyC4ZUkj4ENBFupxXR1JlhzsAAIpCAACUA4wRIqP57J8VwxbOwQ"},
+    {"term": "Deviation", "ru": "Девиация компаса", "file_id": "CQACAgEAAxkDAAIMPmoFuyLVWFXRc3gwnBN59l6FOP1EAAIqCAACUA4wRFTZGdLfsp-6OwQ"},
+    {"term": "WPT", "ru": "Путевая точка (Waypoint)", "file_id": "CQACAgEAAxkDAAIMP2oFuyNkOYRRu5pWPQ4_wZ9qIYqCAAIrCAACUA4wRMXemSzF2eHEOwQ"},
+    {"term": "Bearing", "ru": "Пеленг", "file_id": "CQACAgEAAxkDAAIMQGoFuyQRL6rIFhDP8YzKsWTs_CdOAAIsCAACUA4wRP0wN4zq9pAtOwQ"},
+    {"term": "Fix", "ru": "Обсервованное место", "file_id": "CQACAgEAAxkDAAIMQWoFuyWpdig2kH8zlgABCb-CTdOZvwACLQgAAlAOMESz9Desku6GujsE"},
+    {"term": "Wake boat", "ru": "Катер для вейксёрфинга/вейкборда", "file_id": "CQACAgEAAxkDAAIMQmoFuyZS93-pM0ISnFHT3O2ntWbLAAIuCAACUA4wRJrO9_jnXzoJOwQ"},
+    {"term": "PWC", "ru": "Гидроцикл (Personal Watercraft)", "file_id": "CQACAgEAAxkDAAIMQ2oFuyd7RWzG77wcuhMplhZfKNstAAIvCAACUA4wRIwCmRf64LB_OwQ"},
+    {"term": "Charter vessel", "ru": "Чартерное судно", "file_id": "CQACAgEAAxkDAAIMRGoFuyiE68ZGsJ1iYDSkFds8F2W6AAIwCAACUA4wRMtJ_X1tL_RhOwQ"},
+    {"term": "Recreational vessel", "ru": "Прогулочное судно", "file_id": "CQACAgEAAxkDAAIMRWoFuylIz6IwRtUpfw2pLH43P_KWAAIxCAACUA4wRFGDnhmOBkHzOwQ"},
+    {"term": "Auxiliary sail", "ru": "Вспомогательный парус (мотосейлер)", "file_id": "CQACAgEAAxkDAAIMRmoFuyrpGlqs46AtV9zKyQt1URcFAAIyCAACUA4wRP0q5-zHS6cIOwQ"},
+    {"term": "Dinghy", "ru": "Динги / малая шлюпка", "file_id": "CQACAgEAAxkDAAIMR2oFuysfxenEOrGplCZ6_sbf-kvbAAIzCAACUA4wRNForVV6SzaAOwQ"},
 ]
-
 
 def get_main_menu_keyboard():
     return InlineKeyboardMarkup([
@@ -11891,13 +11927,19 @@ def send_glossary(chat_id, context, index, old_msg_id=None):
         context.bot.send_message(chat_id=chat_id, text=MAIN_MENU_TEXT, reply_markup=get_main_menu_keyboard())
         return
     term = GLOSSARY[index]
-    caption = f"📖 {index + 1} из {len(GLOSSARY)}\n\nEN: {term['term']}\nRU: {term['ru']}\n\n{COPYRIGHT}"
+    caption = (
+        f"📖 {index + 1} / {len(GLOSSARY)}\n\n"
+        f"EN:  {term['term']}\n"
+        f"RU:  {term['ru']}\n\n"
+        f"{COPYRIGHT}"
+    )
     try:
         context.bot.send_audio(
             chat_id=chat_id, audio=term["file_id"], caption=caption,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("Next", callback_data=f"glo_{index + 1}")],
-                [InlineKeyboardButton("🏠 Меню / Menu", callback_data="main_menu_from_glo")],
+                [InlineKeyboardButton("▶️ Listen / Слушать 🇺🇸", callback_data=f"glo_audio_{index}")],
+                [InlineKeyboardButton("Next ➡️", callback_data=f"glo_{index + 1}")],
+                [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu_from_glo")],
             ])
         )
     except Exception as e:
@@ -12230,7 +12272,15 @@ def button(update, context):
             )
             return
         state["g_index"] = 0
-        send_glossary(query.message.chat_id, context, 0, old_msg_id=query.message.message_id)
+        try:
+            context.bot.edit_message_text(
+                chat_id=query.message.chat_id,
+                message_id=query.message.message_id,
+                text="🔄 База постоянно пополняется. Новые термины — первыми для участников $249 и $499",
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📖 Начать / Start", callback_data="glo_0")]])
+            )
+        except Exception as e:
+            logging.error(f"GLOSSARY INTRO ERROR: {e}")
 
     elif query.data.startswith("glo_"):
         index = int(query.data[4:])
@@ -12249,100 +12299,6 @@ def button(update, context):
             "🔊👂 Listening mode coming soon! 🚗 🏋️",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]])
         )
-
-
-
-def send_notifications(bot):
-    try:
-        now = datetime.now(ZoneInfo("America/Los_Angeles"))
-        three_days_ago = (now.replace(hour=0, minute=0, second=0) - __import__("datetime").timedelta(days=3)).isoformat()
-        seven_days_ago = (now.replace(hour=0, minute=0, second=0) - __import__("datetime").timedelta(days=7)).isoformat()
-        one_day_ago = (now.replace(hour=0, minute=0, second=0) - __import__("datetime").timedelta(days=1)).isoformat()
-        three_days_ago_pw = (now.replace(hour=0, minute=0, second=0) - __import__("datetime").timedelta(days=3)).isoformat()
-
-        with DB_LOCK:
-            conn = sqlite3.connect(DB_PATH)
-            c = conn.cursor()
-
-            # Спящие 3 дня — первое уведомление
-            c.execute("""SELECT user_id FROM users
-                WHERE is_banned=0 AND questions_answered > 0
-                AND last_seen < ? AND last_seen >= ?
-                AND user_id NOT IN (SELECT user_id FROM events WHERE event_type='notif_sleep_1')
-            """, (three_days_ago, seven_days_ago))
-            sleep_1 = [r[0] for r in c.fetchall()]
-
-            # Спящие 7 дней — последнее уведомление
-            c.execute("""SELECT user_id FROM users
-                WHERE is_banned=0 AND questions_answered > 0
-                AND last_seen < ?
-                AND user_id IN (SELECT user_id FROM events WHERE event_type='notif_sleep_1')
-                AND user_id NOT IN (SELECT user_id FROM events WHERE event_type='notif_sleep_2')
-            """, (seven_days_ago,))
-            sleep_2 = [r[0] for r in c.fetchall()]
-
-            # Завис на paywall 24ч — первое уведомление
-            c.execute("""SELECT DISTINCT user_id FROM events
-                WHERE event_type='paywall' AND created_at < ?
-                AND user_id NOT IN (SELECT user_id FROM events WHERE event_type='notif_paywall_1')
-                AND user_id NOT IN (SELECT user_id FROM users WHERE is_paid=1 OR is_beta=1)
-            """, (one_day_ago,))
-            paywall_1 = [r[0] for r in c.fetchall()]
-
-            # Завис на paywall 3 дня — последнее уведомление
-            c.execute("""SELECT DISTINCT user_id FROM events
-                WHERE event_type='paywall' AND created_at < ?
-                AND user_id IN (SELECT user_id FROM events WHERE event_type='notif_paywall_1')
-                AND user_id NOT IN (SELECT user_id FROM events WHERE event_type='notif_paywall_2')
-                AND user_id NOT IN (SELECT user_id FROM users WHERE is_paid=1 OR is_beta=1)
-            """, (three_days_ago_pw,))
-            paywall_2 = [r[0] for r in c.fetchall()]
-
-            conn.close()
-
-        now_iso = now.isoformat()
-
-        for uid in sleep_1:
-            try:
-                bot.send_message(chat_id=uid,
-                    text="\u23f0 \u041f\u043e\u043a\u0430 \u0442\u044b \u0441\u043c\u043e\u0442\u0440\u0435\u043b \u0441\u0435\u0440\u0438\u0430\u043b \u2014 \u043a\u0442\u043e-\u0442\u043e \u0441\u0434\u0430\u043b \u044d\u043a\u0437\u0430\u043c\u0435\u043d \u0438 \u0432\u044b\u0448\u0435\u043b \u043d\u0430 \u0432\u043e\u0434\u0443. 15 \u043c\u0438\u043d\u0443\u0442 \u0432 \u0434\u0435\u043d\u044c \u043c\u0435\u043d\u044f\u044e\u0442 \u0432\u0441\u0451. \u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0438 \u2192 @Captain6PackBotRU")
-                db_log_event(uid, 'notif_sleep_1', now_iso)
-            except Exception as e:
-                logging.error(f"NOTIF sleep_1 {uid}: {e}")
-
-        for uid in sleep_2:
-            try:
-                bot.send_message(chat_id=uid,
-                    text="\u2693 \u041a\u0430\u043f\u0438\u0442\u0430\u043d\u0441\u043a\u0430\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u0441\u0430\u043c\u0430 \u0441\u0435\u0431\u044f \u043d\u0435 \u0441\u0434\u0430\u0441\u0442. \u0422\u0432\u043e\u0439 \u043f\u0440\u043e\u0433\u0440\u0435\u0441\u0441 \u0436\u0434\u0451\u0442 \u0442\u0435\u0431\u044f.")
-                db_log_event(uid, 'notif_sleep_2', now_iso)
-            except Exception as e:
-                logging.error(f"NOTIF sleep_2 {uid}: {e}")
-
-        for uid in paywall_1:
-            try:
-                bot.send_message(chat_id=uid,
-                    text="\U0001f3af Uber \u043f\u0440\u0438\u0432\u043e\u0437\u0438\u0442 \u0435\u0434\u0443. \u041a\u0430\u043f\u0438\u0442\u0430\u043d\u0441\u043a\u0430\u044f \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u044f \u043f\u0440\u0438\u0432\u043e\u0437\u0438\u0442 \u0441\u0432\u043e\u0431\u043e\u0434\u0443 \u0438 \u0434\u0435\u043d\u044c\u0433\u0438. \u041d\u0430\u043f\u0438\u0448\u0438 @SurfWhisperer \u2014 \u0440\u0430\u0437\u0431\u0435\u0440\u0451\u043c\u0441\u044f.")
-                db_log_event(uid, 'notif_paywall_1', now_iso)
-            except Exception as e:
-                logging.error(f"NOTIF paywall_1 {uid}: {e}")
-
-        for uid in paywall_2:
-            try:
-                bot.send_message(chat_id=uid,
-                    text="\U0001f6a2 \u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0439 \u0440\u0430\u0437 \u043f\u0438\u0448\u0443. \u0422\u0435 \u043a\u0442\u043e \u043d\u0430\u0447\u0430\u043b \u043c\u0435\u0441\u044f\u0446 \u043d\u0430\u0437\u0430\u0434 \u2014 \u0443\u0436\u0435 \u0433\u043e\u0442\u043e\u0432\u044f\u0442\u0441\u044f \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443. \u041d\u0430\u043f\u0438\u0448\u0438 @SurfWhisperer \u043f\u043e\u043a\u0430 \u043c\u0435\u0441\u0442\u043e \u0435\u0441\u0442\u044c.")
-                db_log_event(uid, 'notif_paywall_2', now_iso)
-            except Exception as e:
-                logging.error(f"NOTIF paywall_2 {uid}: {e}")
-
-    except Exception as e:
-        logging.error(f"SEND_NOTIFICATIONS ERROR: {e}")
-
-
-def notification_loop(bot):
-    import time
-    while True:
-        send_notifications(bot)
-        time.sleep(3600)  # проверяем каждый час
 
 
 def main():
@@ -12382,9 +12338,6 @@ def main():
     dp.add_handler(CallbackQueryHandler(button))
     dp.add_handler(MessageHandler(Filters.photo | Filters.audio | Filters.document, get_file_id))
     updater.start_polling()
-    import threading
-    notif_thread = threading.Thread(target=notification_loop, args=(updater.bot,), daemon=True)
-    notif_thread.start()
     updater.idle()
 
 
