@@ -538,7 +538,6 @@ def send_glossary(chat_id, context, index, old_msg_id=None):
         context.bot.send_audio(
             chat_id=chat_id, audio=term["file_id"], caption=caption,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("▶️ Listen / Слушать 🇺🇸", callback_data=f"glo_audio_{index}")],
                 [InlineKeyboardButton("Next ➡️", callback_data=f"glo_{index + 1}")],
                 [InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu_from_glo")],
             ])
