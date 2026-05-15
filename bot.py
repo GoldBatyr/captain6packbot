@@ -11796,7 +11796,6 @@ def cmd_users(update, context):
         return
     lines = ["👥 Пользователи Captain6PackBot\n" + "-" * 30]
     for i, (uid, uname, first, last, paid, banned, answered) in enumerate(rows, 1):
-        beta = db_is_beta(uid)
         uname_str = "@" + uname if uname else "no username"
         status = "🚫" if banned else ("💰" if (paid and not beta) else ("🧪" if beta else "👤"))
         first_short = first[:10] if first else "?"
