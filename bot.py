@@ -12282,7 +12282,6 @@ def button(update, context):
                 chat_id=query.message.chat_id,
                 message_id=query.message.message_id,
                 text="🔄 База постоянно пополняется.\nПокупатели пакетов за $249 и $499 получают новые термины и все обновления бота раньше всех — в автоматическом режиме.",
-Покупатели пакетов за $249 и $499 получают новые термины и все обновления бота раньше всех — в автоматическом режиме.",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📖 Начать / Start", callback_data="glo_0")]])
             )
         except Exception as e:
@@ -12304,7 +12303,6 @@ def button(update, context):
         query.edit_message_text(
             "🔊👂 Listening / Аудирование 🚗🏋️\n\n🚧 Режим в разработке.\nПокупатели пакетов за $249 и $499 получают новые функции раньше всех — автоматически.\n\n🚧 Coming soon.\nMembers on $249 and $499 plans get new features first — automatically.",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]]))
-        )
 
 
 def main():
