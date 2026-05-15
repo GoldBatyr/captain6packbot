@@ -903,8 +903,8 @@ def button(update, context):
 
     elif query.data == "menu_drive":
         query.edit_message_text(
-            "🔊👂 Listening mode coming soon! 🚗 🏋️",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]])
+            "🔊👂 Listening / Аудирование 🚗🏋️\n\n🚧 Режим в разработке.\nПокупатели пакетов за $249 и $499 получают новые функции раньше всех — автоматически.\n\n🚧 Coming soon.\nMembers on $249 and $499 plans get new features first — automatically.",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]]))
         )
 
 
