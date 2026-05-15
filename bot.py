@@ -11871,6 +11871,15 @@ def cmd_ok(update, context):
         update.message.reply_text(f"❌ Ошибка: {e}")
 
 
+def db_is_beta(user_id):
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("SELECT is_beta FROM users WHERE user_id=?", (user_id,))
+        row = c.fetchone()
+        conn.close()
+        return bool(row[0]) if row else False
+
 def db_set_beta(user_id, value):
     with DB_LOCK:
         conn = sqlite3.connect(DB_PATH)
