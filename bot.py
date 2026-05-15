@@ -12281,7 +12281,7 @@ def button(update, context):
             context.bot.edit_message_text(
                 chat_id=query.message.chat_id,
                 message_id=query.message.message_id,
-                text="🔄 База постоянно пополняется.
+                text="🔄 База постоянно пополняется.\nПокупатели пакетов за $249 и $499 получают новые термины и все обновления бота раньше всех — в автоматическом режиме.",
 Покупатели пакетов за $249 и $499 получают новые термины и все обновления бота раньше всех — в автоматическом режиме.",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📖 Начать / Start", callback_data="glo_0")]])
             )
