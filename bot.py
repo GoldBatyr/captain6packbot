@@ -11796,7 +11796,7 @@ def cmd_users(update, context):
         return
     lines = ["👥 Пользователи Captain6PackBot\n" + "-" * 30]
     for i, (uid, uname, first, last, paid, banned, answered) in enumerate(rows, 1):
-            beta = db_is_beta(uid)
+        beta = db_is_beta(uid)
         uname_str = "@" + uname if uname else "no username"
         status = "🚫" if banned else ("💰" if (paid and not beta) else ("🧪" if beta else "👤"))
         first_short = first[:10] if first else "?"
@@ -12278,12 +12278,12 @@ def button(update, context):
             )
             return
         state["g_index"] = 0
+        intro = "🔄 Base is growing. $249 and $499 members get updates first."
         try:
             context.bot.edit_message_text(
                 chat_id=query.message.chat_id,
                 message_id=query.message.message_id,
-                text="🔄 База постоянно пополняется.\nПокупатели пакетов за $249 и $499 получают новые термины и все обновления бота раньше всех — в автоматическом режиме.",
-Покупатели пакетов за $249 и $499 получают новые термины и все обновления бота раньше всех — в автоматическом режиме.",
+                text=intro,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📖 Начать / Start", callback_data="glo_0")]])
             )
         except Exception as e:
@@ -12305,7 +12305,6 @@ def button(update, context):
         query.edit_message_text(
             "🔊👂 Listening / Аудирование 🚗🏋️\n\n🚧 Режим в разработке.\nПокупатели пакетов за $249 и $499 получают новые функции раньше всех — автоматически.\n\n🚧 Coming soon.\nMembers on $249 and $499 plans get new features first — automatically.",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Menu / Меню", callback_data="main_menu")]]))
-        )
 
 
 def main():
