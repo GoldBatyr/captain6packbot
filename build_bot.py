@@ -879,7 +879,7 @@ def button(update, context):
             )
             return
         state["g_index"] = 0
-        intro = "🔄 Base is growing. $249 and $499 members get updates first."
+        intro = "🔄 База постоянно пополняется. Покупатели пакетов за $249 и $499 получают новые термины и все обновления бота раньше всех в автоматическом режиме. Base is growing. $249 and $499 members get updates first."
         try:
             context.bot.edit_message_text(
                 chat_id=query.message.chat_id,
