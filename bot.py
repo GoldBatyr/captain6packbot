@@ -11797,7 +11797,17 @@ def cmd_users(update, context):
     lines = ["👥 Пользователи Captain6PackBot\n" + "-" * 30]
     for i, (uid, uname, first, last, paid, banned, answered) in enumerate(rows, 1):
         uname_str = "@" + uname if uname else "no username"
-        beta = db_is_beta(uid)
+        beta = False
+        try:
+            with DB_LOCK:
+                conn2 = sqlite3.connect(DB_PATH)
+                c2 = conn2.cursor()
+                c2.execute("SELECT is_beta FROM users WHERE user_id=?", (uid,))
+                row2 = c2.fetchone()
+                beta = bool(row2[0]) if row2 else False
+                conn2.close()
+        except Exception:
+            beta = False
         status = "🚫" if banned else ("🧪" if beta else ("💰" if paid else "👤"))
         first_short = first[:10] if first else "?"
         last_short = last[:10] if last else "?"
