@@ -11571,8 +11571,10 @@ def db_get_stats():
         new_today = c.fetchone()[0]
         c.execute("SELECT COUNT(*) FROM users WHERE last_seen >= ? AND is_banned=0", (week_ago,))
         active_week = c.fetchone()[0]
-        c.execute("SELECT COUNT(*) FROM users WHERE is_paid=1")
+        c.execute("SELECT COUNT(*) FROM users WHERE is_paid=1 AND is_beta=0")
         paid = c.fetchone()[0]
+        c.execute("SELECT COUNT(*) FROM users WHERE is_beta=1")
+        beta_count = c.fetchone()[0]
         c.execute("SELECT COUNT(*) FROM users WHERE is_banned=1")
         banned = c.fetchone()[0]
         c.execute("SELECT COUNT(DISTINCT user_id) FROM events WHERE event_type='paywall'")
