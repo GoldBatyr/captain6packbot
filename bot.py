@@ -11871,6 +11871,14 @@ def cmd_ok(update, context):
         update.message.reply_text(f"❌ Ошибка: {e}")
 
 
+def db_set_beta(user_id, value):
+    with DB_LOCK:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute("UPDATE users SET is_beta=? WHERE user_id=?", (1 if value else 0, user_id))
+        conn.commit()
+        conn.close()
+
 def cmd_beta(update, context):
     if update.message.from_user.id != ADMIN_ID:
         return
