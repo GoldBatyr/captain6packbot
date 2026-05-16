@@ -12207,7 +12207,7 @@ def button(update, context):
         lang = state["lang"]
         q_num = q["num"]
         total_answered = len(state["progress_en"]) + len(state["progress_ru"])
-        if total_answered >= 8 and not db_is_paid(user_id):
+        if total_answered >= 8 and not db_is_paid(user_id) and not db_is_beta(user_id):
             db_log_event(user_id, "paywall", str(q_num))
             query.edit_message_text(
                 "🔒 Бот уже на финишной прямой, скоро запускаемся!\nСледите за рекламой.\n\nХотите ранний доступ? Напишите нам: @SurfWhisperer\n\nFull access launching soon!\nStay tuned!\nEarly access? Contact us: @SurfWhisperer",
@@ -12300,7 +12300,7 @@ def button(update, context):
 
     elif query.data == "menu_glossary":
         total_answered = len(state["progress_en"]) + len(state["progress_ru"])
-        if total_answered >= 8 and not db_is_paid(user_id):
+        if total_answered >= 8 and not db_is_paid(user_id) and not db_is_beta(user_id):
             db_log_event(user_id, "paywall", "glossary")
             query.edit_message_text(
                 "🔒 Бот уже на финишной прямой, скоро запускаемся!\nСледите за рекламой.\n\nХотите ранний доступ? Напишите нам: @SurfWhisperer\n\nFull access launching soon!\nStay tuned!\nEarly access? Contact us: @SurfWhisperer",
